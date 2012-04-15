@@ -4,3 +4,5 @@
 *.egg-info
 
 *.db
+/.project
+/.pydevproject
