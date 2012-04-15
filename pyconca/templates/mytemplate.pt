@@ -46,10 +46,8 @@
           <div class="nav-collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
             </ul>
-            <p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>
+            <p class="navbar-text pull-right">Work in progress</p>
           </div><!--/.nav-collapse -->
         </div>
       </div>
@@ -57,7 +55,7 @@
 
     <div class="container-fluid">
       <div class="row-fluid">
-        <div class="span9">
+        <div class="span12">
           <div class="hero-unit">
             <h1>PyCon Canada</h1>
             <br />
@@ -100,27 +98,6 @@
           </div><!--/row-->
         </div><!--/span-->
 
-        <div class="span3">
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li class="nav-header">Python - International</li>
-              <li><a href="http://python.org/">Official Python Website</a></li>
-              <li><a href="http://python.org/psf/">Python Software Foundation</a></li>
-              <li><a href="http://python.org/community/jobs/">Python Jobs</a></li>
-              <li><a href="http://planet.python.org/">Planet Python</a></li>
-              <li class="nav-header">Python - Canada</li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li class="nav-header">Python - Online</li>
-              <li><a href="http://reddit.com/r/Python">Reddit - Python</a></li>
-              <li><a href="http://stackoverflow.com/questions/tagged/python">Stack Overflow - Python</a></li>
-              <li><a href="#">Link</a></li>
-            </ul>
-          </div><!--/.well -->
-        </div><!--/span-->
       </div><!--/row-->
 
       <hr>
