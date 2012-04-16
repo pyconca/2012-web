@@ -6,3 +6,5 @@
 *.db
 /.project
 /.pydevproject
+
+assets/.DS_Store
