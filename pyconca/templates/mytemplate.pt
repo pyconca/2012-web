@@ -61,39 +61,39 @@
             <br />
             <p>Building a Canadian Python community.</p>
             <p>Working together to showcase Canadian talent at PyCon in Montréal in 2014 and 2015.</p>
-            <p>We want you, yes <b>you</b>, to be representing us at PyCon 2014.</p>
+            <p>Can't make it to PyCon? There's still lots here for you! Learn new skills, share your ideas, or join the team helping to create and support PyCon Canada.</p>
           </div>
           <div class="row-fluid">
             <div class="span4">
               <h2>Contact Us</h2>
-              <p>Don't be shy! We'd love to hear your ideas around growing the Canadian Python community. This is only the beginning...</p>
+              <p>Don't be shy! Tell us your ideas around growing the Canadian Python community.</p>
               <p>twitter: <a href="https://twitter.com/pyconca">@pyconca</a></p>
               <p>email: pyconca@gmail.com</p>
             </div><!--/span-->
             <div class="span4">
               <h2>Join Us</h2>
-              <p>We have a ton to do before PyCon comes to Canada in 2014. Be a part of it! We need all kinds: writers, project managers, designers, developers, system administrators, etc.</p>
+              <p>Be a part of the fun! Developer or not, there are lots of ways you can help, from PyCon planning and coordination to developing and maintaining this web site. It's a great way to learn, share knowledge, and network with others across Canada.</p>
               <p>github: <a href="https://github.com/pyconca">https://github.com/pyconca</a></p>
             </div><!--/span-->
             <div class="span4">
               <h2>Sponsor Us</h2>
-              <p>As we ramp up for Python 2014 in Montréal, we're going to need space for meet-ups to practice our presentations, cover our hosting needs, etc. Show your support, and we'll promote for your company here!</p>
+              <p>PyCon Canada is a volunteer effort. As we prepare for Python 2014, we'll need spaces to meet and practice presentations, and help to cover costs such as web hosting for the PyCon Canada site. Show your support, and we'll promote your company here!</p>
             </div><!--/span-->
           </div><!--/row-->
           <div class="row-fluid">
             <div class="span4">
-              <h2>Meet-ups</h2>
-              <p>Do you already have an established Python Meet-up? Let us know, and we'll promote it here.</p>
-              <p>Want to start a new Python meet-up? Let us help. We're working to encourage safe places to practice public speaking, with PyCon 2014 in mind.</p>
+              <h2>Community</h2>
+              <p>Python user groups in Canada. If your group isn't listed, just let us know!</p>
+              <p>Want to start your own local user group? We can help. We're working to encourage safe places to practice public speaking, with PyCon 2014 in mind.</p>
             </div><!--/span-->
             <div class="span4">
-              <h2>Mentoring</h2>
-              <p>Encourage mentoring: public speaking, poster sessions, PyCon Canada site: technical blog posts, development, content, design, promotion, and hosting.</p>
+              <h2>Learn</h2>
+              <p>Share what you know and learn from others. Improve your technical skills and presentation skills. Find out how to run effective meetings and events. Mentor others or find a mentor. Find schools that teach Python.</p>
             </div><!--/span-->
             <div class="span4">
-              <h2>Python Jobs</h2>
-              <p>Create a job Canadian Python board.</p>
-              <p>Aggregate a list of Canadian companies using Python.</p>
+              <h2>Career</h2>
+              <p>Find Python jobs on the Canadian job board. Find out what companies in Canada use Python.</p>
+              <p>Employers: send us your open Python positions and we'll post them here.</p>
             </div><!--/span-->
           </div><!--/row-->
         </div><!--/span-->
