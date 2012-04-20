@@ -8,13 +8,25 @@ from .models import (
     MyModel,
     )
 
-@view_config(route_name='home', renderer='templates/mytemplate.pt')
-def my_view(request):
+@view_config(route_name='index', renderer='templates/index.pt')
+def index(request):
     try:
         one = DBSession.query(MyModel).filter(MyModel.name=='one').first()
     except DBAPIError:
         return Response(conn_err_msg, content_type='text/plain', status_int=500)
     return {'one':one, 'project':'pyconca'}
+
+@view_config(route_name='jobs', renderer='templates/jobs.pt')
+def jobs(request):
+    return {}
+
+@view_config(route_name='events', renderer='templates/events.pt')
+def events(request):
+    return {}
+
+@view_config(route_name='sponsors', renderer='templates/sponsors.pt')
+def sponsors(request):
+    return {}
 
 conn_err_msg = """\
 Pyramid is having a problem using your SQL database.  The problem

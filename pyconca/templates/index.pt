@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>PyCon Canada</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="${request.static_url('pyconca:static/pyconca.css')}" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+    </style>
+    <link href="${request.static_url('pyconca:static/twitter-bootstrap/css/bootstrap-responsive.css')}" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="${request.static_url('pyconca:static/twitter-bootstrap/ico/favicon.ico')}">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="${request.static_url('pyconca:static/twitter-bootstrap/ico/apple-touch-icon-114-precomposed.png')}">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="${request.static_url('pyconca:static/twitter-bootstrap/ico/apple-touch-icon-72-precomposed.png')}">
+    <link rel="apple-touch-icon-precomposed" href="${request.static_url('pyconca:static/twitter-bootstrap/ico/apple-touch-icon-57-precomposed.png')}">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="${request.application_url}">PyCon Canada</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="${request.application_url}">Home</a></li>
+              <li class="active"><a href="${request.application_url}/events">Events</a></li>
+              <li class="active"><a href="${request.application_url}/jobs">Jobs</a></li>
+              <li class="active"><a href="${request.application_url}/sponsors">Sponsors</a></li>
+            </ul>
+            <p class="navbar-text pull-right">Work in progress</p>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span12">
+          <div class="row-fluid">
+            <div class="span3">
+              <div class="hero-unit hero-unit-even">
+                <h1>PyCon Canada</h1>
+              </div>
+            </div>
+            <div class="span9">
+              <div class="row-fluid">
+                <div class="span4 hero-mini hero-mini-even">
+                  <h3>Contact Us</h3>
+                  <p>
+                    Working together to showcase Canadian talent at PyCon in Montréal in 2014 and 2015.
+                    <br />
+                    <br />
+                    twitter: <a href="https://twitter.com/pyconca">@pyconca</a>
+                    <br />
+                    email: pyconca@gmail.com
+                    <br />
+                    github: <a href="https://github.com/pyconca">https://github.com/pyconca</a>
+                  </p>
+                </div><!--/span-->
+                <div class="span4 hero-mini hero-mini-even">
+                  <h3>Join Us</h3>
+                  <p>Be a part of the fun! Developer or not, there are lots of ways you can help, from PyCon planning and coordination to developing and maintaining this web site. It's a great way to learn, share knowledge, and network with others across Canada.</p>
+                </div><!--/span-->
+                <div class="span4 hero-mini hero-mini-even">
+                  <h3>Sponsor Us</h3>
+                  <p>PyCon Canada is a volunteer effort. As we prepare for PyCon 2014, we'll need spaces to practice presentations, and help to cover costs such as web hosting for the PyCon Canada site. Show your support, and we'll promote your company here!</p>
+                  <p><a class="btn" href="${request.application_url}/sponsors">Sponsors &raquo;</a></p>
+                </div><!--/span-->
+              </div><!--/row-->
+            </div>
+          </div>
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <div class="row-fluid">
+        <div class="span12">
+          <div class="row-fluid">
+            <div class="span3">
+              <div class="hero-unit hero-unit-odd">
+                <h1>Python Canada</h1>
+              </div>
+            </div>
+            <div class="span9">
+              <div class="row-fluid">
+                <div class="span4 hero-mini hero-mini-odd">
+                  <h3>Community</h3>
+                  <p>
+                  Python user groups in Canada. If your group isn't listed, just let us know!
+                  We're working to encourage safe places to practice public speaking, with PyCon 2014 in mind.
+                  <br />
+                  <br />
+                  </p>
+                </div><!--/span-->
+                <div class="span4 hero-mini hero-mini-odd">
+                  <h3>Learn</h3>
+                  <p>Share what you know and learn from others. Improve your technical skills and presentation skills. Find out how to run effective meetings and events. Mentor others or find a mentor.</p>
+                </div><!--/span-->
+                <div class="span4 hero-mini hero-mini-odd">
+                  <h3>Career</h3>
+                  <p>
+                  Find Python jobs on the Canadian job board. Find out what companies in Canada use Python.
+                  Employers: send us your open Python positions and we'll post them here.
+                  </p>
+                  <p><a class="btn" href="${request.application_url}/jobs">Job Board &raquo;</a></p>
+                </div><!--/span-->
+              </div><!--/row-->
+            </div>
+          </div>
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <div class="row-fluid">
+        <div class="span12">
+          <div class="row-fluid">
+            <div class="span3">
+              <div class="hero-unit hero-unit-even">
+                <h1>Featured Events</h1>
+              </div>
+            </div>
+            <div class="span9">
+              <div class="row-fluid">
+                <div class="span4 hero-mini hero-mini-even">
+                  <h3>PyCon Canada Sprint</h3>
+                  <p>
+                      Sunday, <strong>April 22 2012</strong>
+                      <br />
+                      4:00 PM to 8:00 PM
+                      <br />
+                      City: <strong>Toronto</strong>
+                      <br />
+                      More Info: pyconca@gmail.com
+                 </p>
+                </div><!--/span-->
+                <div class="span4 hero-mini hero-mini-even">
+                  <h3>Beginners Python</h3>
+                  <p>
+                    Saturday, <strong>April 28 2012</strong>
+                    <br />
+                    10:00 AM to 5:30 PM
+                    <br />
+                    City: <strong>Toronto</strong>
+                    <br />
+                    Location: <a href="http://socialinnovation.ca/home">Centre for Social Innovation</a>
+                    <br />
+                    Organization: <a href="http://ladieslearningcode.com">Ladies Learning Code</a>
+                    <p><a class="btn" href="http://ladieslearningcodeapr28-eorg.eventbrite.com">Sign-up &raquo;</a></p>
+                  </p>
+                </div><!--/span-->
+                <div class="span4 hero-mini hero-mini-even">
+                  <h3>Django-Toronto</h3>
+                  <p>
+                      Friday, <strong>May 17 2012</strong>
+                      <br />
+                      7:00 PM to 9:00 PM
+                      <br />
+                      City: <strong>Toronto</strong>
+                      <br />
+                      Location: <a href="http://waveaccounting.com">Wave Accounting</a>
+                      <br />
+                      <br />
+                      <p><a class="btn" href="http://plancast.com/p/aytu/django-meetup-toronto">Sign-up &raquo;</a></p>
+                 </p>
+                </div><!--/span-->
+              </div><!--/row-->
+            </div>
+          </div>
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <div class="row-fluid">
+        <div class="span12">
+          <div class="row-fluid">
+            <div class="span3">
+              <div class="hero-unit hero-unit-odd">
+                <h1>Featured Sponsors</h1>
+              </div>
+            </div>
+            <div class="span9">
+              <div class="row-fluid">
+                <div class="span4 hero-mini hero-mini-odd">
+                  <h3>VM Farms</h3>
+                  <p>
+                  <br />
+                  <a href="http://http://vmfarms.com/">
+                    <img width="140" height="70" src="${request.static_url('pyconca:static/vmfarms-logo.png')}">
+                  </a>
+                  </p>
+                </div><!--/span-->
+              </div><!--/row-->
+            </div>
+          </div>
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p class="navbar-text pull-right">&copy; PyCon Canada 2012</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="${request.static_url('pyconca:static/twitter-bootstrap/js/jquery.js')}"></script>
+    <script src="${request.static_url('pyconca:static/twitter-bootstrap/js/bootstrap-transition.js')}"></script>
+    <script src="${request.static_url('pyconca:static/twitter-bootstrap/js/bootstrap-alert.js')}"></script>
+    <script src="${request.static_url('pyconca:static/twitter-bootstrap/js/bootstrap-modal.js')}"></script>
+    <script src="${request.static_url('pyconca:static/twitter-bootstrap/js/bootstrap-dropdown.js')}"></script>
+    <script src="${request.static_url('pyconca:static/twitter-bootstrap/js/bootstrap-scrollspy.js')}"></script>
+    <script src="${request.static_url('pyconca:static/twitter-bootstrap/js/bootstrap-tab.js')}"></script>
+    <script src="${request.static_url('pyconca:static/twitter-bootstrap/js/bootstrap-tooltip.js')}"></script>
+    <script src="${request.static_url('pyconca:static/twitter-bootstrap/js/bootstrap-popover.js')}"></script>
+    <script src="${request.static_url('pyconca:static/twitter-bootstrap/js/bootstrap-button.js')}"></script>
+    <script src="${request.static_url('pyconca:static/twitter-bootstrap/js/bootstrap-collapse.js')}"></script>
+    <script src="${request.static_url('pyconca:static/twitter-bootstrap/js/bootstrap-carousel.js')}"></script>
+    <script src="${request.static_url('pyconca:static/twitter-bootstrap/js/bootstrap-typeahead.js')}"></script>
+
+  </body>
+</html>
