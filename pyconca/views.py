@@ -1,3 +1,4 @@
+from pyramid.renderers import get_renderer
 from pyramid.response import Response
 from pyramid.view import view_config
 
@@ -8,25 +9,30 @@ from .models import (
     MyModel,
     )
 
+def site_layout():
+    renderer = get_renderer("templates/layout.pt")
+    layout = renderer.implementation().macros['layout']
+    return layout
+
 @view_config(route_name='index', renderer='templates/index.pt')
 def index(request):
     try:
         one = DBSession.query(MyModel).filter(MyModel.name=='one').first()
     except DBAPIError:
         return Response(conn_err_msg, content_type='text/plain', status_int=500)
-    return {'one':one, 'project':'pyconca'}
+    return {"layout": site_layout()}
 
 @view_config(route_name='jobs', renderer='templates/jobs.pt')
 def jobs(request):
-    return {}
+    return {"layout": site_layout()}
 
 @view_config(route_name='events', renderer='templates/events.pt')
 def events(request):
-    return {}
+    return {"layout": site_layout()}
 
 @view_config(route_name='sponsors', renderer='templates/sponsors.pt')
 def sponsors(request):
-    return {}
+    return {"layout": site_layout()}
 
 conn_err_msg = """\
 Pyramid is having a problem using your SQL database.  The problem
