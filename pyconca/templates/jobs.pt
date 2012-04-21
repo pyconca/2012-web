@@ -60,15 +60,135 @@
 
       <div class="row-fluid">
         <div class="span12">
-          <div class="row-fluid">
-            <div class="span3">
-              <div class="hero-unit hero-unit-even">
-                <h1>Jobs</h1>
-              </div>
-            </div>
+          <div class="hero-unit hero-unit-odd">
+            <h1>Jobs</h1>
           </div>
-        </div><!--/span-->
-      </div><!--/row-->
+        </div>
+      </div>
+
+      <div class="row-fluid">
+        <div class="span3">
+          <p>
+          <a href="http://http://chango.com/">
+            <img width="140" height="70" src="${request.static_url('pyconca:static/chango.jpeg')}">
+          </a>
+          </p>
+          <p>
+            <strong>
+              Company: <a href="http://http://chango.com/">Chango</a>
+              <br />
+              Location: Toronto, Ontario, Canada
+              <br />
+              Title: Python Developer
+              <br />
+              Posted: April 18, 2012
+            </strong>
+          </p>
+          <iframe width="300" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.ca/maps?q=488+Wellington+St.+West+Suite+304+Toronto,+Canada+M5V+1E3&amp;output=embed&amp;iwloc=&amp;z=14"></iframe>
+        </div>
+
+        <div class="span9">
+            <h3>Python Developer</h3>
+                <p>
+                    Chango is seeking an energetic, motivated and intelligent software developer to join our engineering team. 
+                </p>
+                <p>
+                    You will be working on an exciting product, contributing to different aspects of the system as required with room for growth into more senior positions. You will gain exposure to a high transaction “cloud scale” application that processes over 200,000 requests per second. You will work with Python and Django and get a taste of Erlang.
+                <p>
+                <p>
+                    Chango is a successful, rapidly growing venture backed start-up, headquartered in Toronto, Canada, with growing offices in New York and San Francisco. Chango is changing the way advertisers buy display media, allowing advertisers to speak directly to consumers based on their recent searches on Google, Yahoo!, and Bing, among others.
+                </p>
+                <p>
+                    This is an opportunity to join one of the most innovative companies of 2011 (AdTech IA, Deloitte CTW). We are growing rapidly to meet the needs of our impressive client base, including major, well known retailers (Bloomingdale’s) and internationally recognized agencies (iCrossing) in the US and Canada.
+                </p>
+            <h3>Requirements</h3> 
+                <ul> 
+                    <li>High energy and enthusiasm to develop the next big thing in internet advertising.</li>
+                    <li>Self-starter with great verbal communication skills.</li>
+                    <li>Experience with Python and Django is required.</li>
+                    <li>Experience with Erlang, Ruby, or Java is a plus.</li>
+                    <li>Unix / Linux skills, including shell scripting and basic administration is a huge plus.</li>
+                    <li>Familiarity with Python automated testing tools and continuous integration is ideal.</li>
+                    <li>Front-end development skills: CSS, JavaScript with familiarity with Firebug or WebKit Development Tools.</li>
+                    <li>Knowledge of relational databases including query optimization is required.</li>
+                    <li>Highly analytical, demonstrating meticulous attention to detail.</li>
+                </ul>
+            <h3>Apply</h3>
+              <p>Send an email with your resume (and any relevant details) to jobs+dev@chango.com</p> 
+        </div>
+      </div>
+
+
+      <hr>
+
+      <div class="row-fluid">
+        <div class="span3">
+          <p>
+          <a href="http://http://chango.com/">
+            <img width="140" height="70" src="${request.static_url('pyconca:static/chango.jpeg')}">
+          </a>
+          </p>
+          <p>
+            <strong>
+              Company: <a href="http://http://chango.com/">Chango</a>
+              <br />
+              Location: Toronto, Ontario, Canada
+              <br />
+              Title: Dev Ops / Systems Engineer
+              <br />
+              Posted: April 18, 2012
+            </strong>
+          </p>
+          <iframe width="300" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.ca/maps?q=488+Wellington+St.+West+Suite+304+Toronto,+Canada+M5V+1E3&amp;output=embed&amp;iwloc=&amp;z=14"></iframe>
+        </div>
+
+        <div class="span9">
+            <h3>Dev Ops / Systems Engineer</h3>
+                <p>
+                Does the idea of working on an infrastructure that supports over 200,000 requests/second sound exciting?
+                </p>
+                <p>
+                We are looking for an experienced Dev Ops / Systems Administrator to join our Infrastructure team, to be based in Toronto, Ontario office. The ideal candidate should be excited to join one of Canada’s leading start-ups and be motivated by the challenges of pushing the borders of web technology. As a point of reference, Twitter handles about 9000 tweets/second at peak!
+                </p>
+                <p>
+                Our infrastructure is based on Python and all managed through Puppet.
+                </p>
+            <h3>Skills & Requirements</h3> 
+                <ul> 
+                  <li>High energy and enthusiasm to work on the next big thing in Ad Technology</li>
+                  <li>Live and breath Linux (CentOS and Ubuntu)</li>
+                  <li>Experience with Python (and Django) installations</li>
+                  <li>Experience with Puppet (or similar configuration systems)</li>
+                  <li>Experience with Mac OS X (on the desktop)</li>
+                  <li>Familiarity with Erlang, Ruby, or Java</li>
+                  <li>Familiarity with Security tools and best-practices</li>
+                  <li>Familiarity with BuildBot (or other continuous integration tools)</li>
+                  <li>Familiarity with Content Distribution Networks (such as Akamai)</li>
+                  <li>Familiarity with implementing Disaster Recovery and High Availability</li>
+                </ul>
+                <p>
+                You will be working in an agile environment, collaborating with our engineering team and other DevOps Systems Administrators to enhance, support and maintain the systems.
+                </p>
+                <p>
+                This will require a combination of research and development of new secure systems, upgrade of current Linux systems, networks, and associated hardware and software, and maintenance / support activities.
+                </p>
+                <p>
+                This role will make the most of your solid knowledge and experience across the full stack of data centre and application technologies including: Linux (Ubuntu, and CentOS), Apache, Memcached / CouchBase, PostgresSQL, Postfix, iptables, IPVS load balancing, VRRP, collectd, keepalived, shell scripting, Nagios, Graphite, Munin, Xen virtualisation, and IP networking (layer 2/3 switching/routing, policy based routing, etc). Our daily toolkit includes Python, Puppet, and Mercurial.
+                </p>
+                <p>
+                You will be embedded in the engineering team: attending iteration meetings, collecting requirements for to the Infrastructure team, participating in root-cause analysis and iteration retrospectives.
+                </p>
+            <h3>About Chango</h3>
+                <p>
+                Chango is a successful, rapidly growing venture backed start-up, headquartered in Toronto, Canada, with growing offices in New York and San Francisco. Chango is changing the way advertisers buy display media, allowing advertisers to speak directly to consumers based on their recent searches on Google, Yahoo!, and Bing, among others.
+                </p>
+                <p>
+                This is an opportunity to join one of the most innovative companies of 2011 (AdTech IA, Deloitte CTW). We are growing rapidly to meet the needs of our impressive client base, including major, well known retailers (Bloomingdale’s) and internationally recognized agencies (iCrossing) in the US and Canada.
+                </p>
+            <h3>Apply</h3>
+              <p>Send an email with your resume (and any relevant details) to jobs+dev-ops@chango.com</p> 
+        </div>
+      </div>
 
       <hr>
 

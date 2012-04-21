@@ -1,13 +1,14 @@
 @import url(twitter-bootstrap/css/bootstrap.css);
 
+/* hero-unit */
 .hero-unit {
   padding: 10px;
 }
-
 .hero-unit h1 {
   font-size: 20px;
 }
 
+/* hero-mini */
 .hero-mini h3 {
   background-color: #E8E8E8;
   -webkit-border-radius: 6px;
