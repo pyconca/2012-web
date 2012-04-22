@@ -1,224 +1,189 @@
 <div metal:use-macro="layout">
-    <div metal:fill-slot="content">
-      <div class="row-fluid">
-
-        <div class="span9">
-          <div class="hero-unit" style="height: 350px">
-            <!-- fix the height to simulate content... For now. -->
-          </div>
+  <div metal:fill-slot="content">
+    <div class="row-fluid">
+      <div class="span9">
+        <div class="hero-unit" style="height: 350px">
+          <!-- fix the height to simulate content... For now. -->
         </div>
+      </div>
 
-        <div class="span3" style="margin-bottom: 30px">
-          <div>
-            <script>
-                new TWTR.Widget({
-                  version: 2,
-                  type: 'search',
-                  search: 'pyconca',
-                  interval: 6000,
-                  title: 'PyCon Canada Twitter Feed',
-                  subject: '',
-                  width: 'auto',
-                  theme: {
-                    shell: {
-                      background: '#92ED6B',
-                      color: '#333333',
-                    },
-                    tweets: {
-                      background: '#ffffff',
-                      color: '#444444',
-                      links: '#0776A0'
-                    }
+      <div class="span3" style="margin-bottom: 30px">
+        <div>
+          <script>
+              new TWTR.Widget({
+                version: 2,
+                type: 'search',
+                search: 'pyconca',
+                interval: 6000,
+                title: 'PyCon Canada Twitter Feed',
+                subject: '',
+                width: 'auto',
+                theme: {
+                  shell: {
+                    background: '#92ED6B',
+                    color: '#333333',
                   },
-                  features: {
-                    scrollbar: true,
-                    loop: true,
-                    live: true,
-                    hashtags: true,
-                    timestamp: true,
-                    avatars: true,
-                    toptweets: true,
-                    behavior: 'default'
+                  tweets: {
+                    background: '#ffffff',
+                    color: '#444444',
+                    links: '#0776A0'
                   }
-                }).render().start();
-            </script>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="row-fluid">
-        <div class="span12">
-          <div class="row-fluid">
-            <div class="span3">
-              <div class="hero-unit hero-unit-even">
-                <h1>PyCon Canada</h1>
-              </div>
-            </div>
-            <div class="span9">
-              <div class="row-fluid">
-                <div class="span4 hero-mini hero-mini-even">
-                  <h3>Contact Us</h3>
-                  <p>
-                    Working together to showcase Canadian talent at PyCon in Montréal in 2014 and 2015.
-                    <br />
-                    <br />
-                    twitter: <a href="https://twitter.com/pyconca">@pyconca</a>
-                    <br />
-                    email: pyconca@gmail.com
-                    <br />
-                    github: <a href="https://github.com/pyconca">https://github.com/pyconca</a>
-                  </p>
-                </div>
-                <div class="span4 hero-mini hero-mini-even">
-                  <h3>Join Us</h3>
-                  <p>Be a part of the fun! Developer or not, there are lots of ways you can help, from PyCon planning and coordination to developing and maintaining this web site. It's a great way to learn, share knowledge, and network with others across Canada.</p>
-                </div>
-                <div class="span4 hero-mini hero-mini-even">
-                  <h3>Sponsor Us</h3>
-                  <p>PyCon Canada is a volunteer effort. As we prepare for PyCon 2014, we'll need spaces to practice presentations, and help to cover costs such as web hosting for the PyCon Canada site. Show your support, and we'll promote your company here!</p>
-                  <p><a class="btn" href="${request.application_url}/sponsors">Sponsors &raquo;</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
+                },
+                features: {
+                  scrollbar: true,
+                  loop: true,
+                  live: true,
+                  hashtags: true,
+                  timestamp: true,
+                  avatars: true,
+                  toptweets: true,
+                  behavior: 'default'
+                }
+              }).render().start();
+          </script>
         </div>
       </div>
+    </div>
 
-      <hr>
-
-      <div class="row-fluid">
-        <div class="span12">
-          <div class="row-fluid">
-            <div class="span3">
-              <div class="hero-unit hero-unit-odd">
-                <h1>Python Canada</h1>
-              </div>
-            </div>
-            <div class="span9">
-              <div class="row-fluid">
-                <div class="span4 hero-mini hero-mini-odd">
-                  <h3>Community</h3>
-                  <p>
-                  Python user groups in Canada. If your group isn't listed, just let us know!
-                  We're working to encourage safe places to practice public speaking, with PyCon 2014 in mind.
-                  <br />
-                  <br />
-                  </p>
-                </div>
-                <div class="span4 hero-mini hero-mini-odd">
-                  <h3>Learn</h3>
-                  <p>Share what you know and learn from others. Improve your technical skills and presentation skills. Find out how to run effective meetings and events. Mentor others or find a mentor.</p>
-                </div>
-                <div class="span4 hero-mini hero-mini-odd">
-                  <h3>Career</h3>
-                  <p>
-                  Find Python jobs on the Canadian job board. Find out what companies in Canada use Python.
-                  Employers: send us your open Python positions and we'll post them here.
-                  </p>
-                  <p><a class="btn" href="${request.application_url}/jobs">Job Board &raquo;</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
+    <div class="row-fluid">
+      <div class="span3">
+        <div class="hero-unit hero-unit-even">
+          <h1>PyCon Canada</h1>
         </div>
       </div>
+      <div class="span3 hero-mini hero-mini-even">
+        <h3>Contact Us</h3>
+        <p>
+          Working together to showcase Canadian talent at PyCon in Montréal in 2014 and 2015.
+          <br />
+          <br />
+          twitter: <a href="https://twitter.com/pyconca">@pyconca</a>
+          <br />
+          email: pyconca@gmail.com
+          <br />
+          github: <a href="https://github.com/pyconca">https://github.com/pyconca</a>
+        </p>
+      </div>
+      <div class="span3 hero-mini hero-mini-even">
+        <h3>Join Us</h3>
+        <p>Be a part of the fun! Developer or not, there are lots of ways you can help, from PyCon planning and coordination to developing and maintaining this web site. It's a great way to learn, share knowledge, and network with others across Canada.</p>
+      </div>
+      <div class="span3 hero-mini hero-mini-even">
+        <h3>Sponsor Us</h3>
+        <p>PyCon Canada is a volunteer effort. As we prepare for PyCon 2014, we'll need spaces to practice presentations, and help to cover costs such as web hosting for the PyCon Canada site. Show your support, and we'll promote your company here!</p>
+        <p><a class="btn" href="${request.application_url}/sponsors">Sponsors &raquo;</a></p>
+      </div>
+    </div>
 
-      <hr>
+    <hr>
 
-      <div class="row-fluid">
-        <div class="span12">
-          <div class="row-fluid">
-            <div class="span3">
-              <div class="hero-unit hero-unit-even">
-                <h1>Featured Events</h1>
-              </div>
-            </div>
-            <div class="span9">
-              <div class="row-fluid">
-                <div class="span4 hero-mini hero-mini-even">
-                  <h3>PyCon Canada Sprint</h3>
-                  <p>
-                      Sunday, <strong>April 22 2012</strong>
-                      <br />
-                      4:00 PM to 8:00 PM
-                      <br />
-                      City: <strong>Toronto</strong>
-                      <br />
-                      More Info: pyconca@gmail.com
-                 </p>
-                </div>
-                <div class="span4 hero-mini hero-mini-even">
-                  <h3>Beginners Python</h3>
-                  <p>
-                    Saturday, <strong>April 28 2012</strong>
-                    <br />
-                    10:00 AM to 5:30 PM
-                    <br />
-                    City: <strong>Toronto</strong>
-                    <br />
-                    Location: <a href="http://socialinnovation.ca/home">Centre for Social Innovation</a>
-                    <br />
-                    Organization: <a href="http://ladieslearningcode.com">Ladies Learning Code</a>
-                    <p><a class="btn" href="http://ladieslearningcodeapr28-eorg.eventbrite.com">Sign-up &raquo;</a></p>
-                  </p>
-                </div>
-                <div class="span4 hero-mini hero-mini-even">
-                  <h3>Django-Toronto</h3>
-                  <p>
-                      Friday, <strong>May 17 2012</strong>
-                      <br />
-                      7:00 PM to 9:00 PM
-                      <br />
-                      City: <strong>Toronto</strong>
-                      <br />
-                      Location: <a href="http://waveaccounting.com">Wave Accounting</a>
-                      <br />
-                      <br />
-                      <p><a class="btn" href="http://plancast.com/p/aytu/django-meetup-toronto">Sign-up &raquo;</a></p>
-                 </p>
-                </div>
-              </div>
-            </div>
-          </div>
+    <div class="row-fluid">
+      <div class="span3">
+        <div class="hero-unit hero-unit-odd">
+          <h1>Python Canada</h1>
         </div>
       </div>
+      <div class="span3 hero-mini hero-mini-odd">
+        <h3>Community</h3>
+        <p>
+        Python user groups in Canada. If your group isn't listed, just let us know!
+        We're working to encourage safe places to practice public speaking, with PyCon 2014 in mind.
+        <br />
+        <br />
+        </p>
+      </div>
+      <div class="span3 hero-mini hero-mini-odd">
+        <h3>Learn</h3>
+        <p>Share what you know and learn from others. Improve your technical skills and presentation skills. Find out how to run effective meetings and events. Mentor others or find a mentor.</p>
+      </div>
+      <div class="span3 hero-mini hero-mini-odd">
+        <h3>Career</h3>
+        <p>
+        Find Python jobs on the Canadian job board. Find out what companies in Canada use Python.
+        Employers: send us your open Python positions and we'll post them here.
+        </p>
+        <p><a class="btn" href="${request.application_url}/jobs">Job Board &raquo;</a></p>
+      </div>
+    </div>
 
-      <hr>
+    <hr>
 
-      <div class="row-fluid">
-        <div class="span12">
-          <div class="row-fluid">
-            <div class="span3">
-              <div class="hero-unit hero-unit-odd">
-                <h1>Featured Sponsors</h1>
-              </div>
-            </div>
-            <div class="span9">
-              <div class="row-fluid">
-                <div class="span4 hero-mini hero-mini-odd">
-                  <h3>VM Farms</h3>
-                  <p>
-                  <br />
-                  <a href="http://http://vmfarms.com/">
-                    <img width="140" height="70" src="${request.static_url('pyconca:static/vmfarms-logo.png')}">
-                  </a>
-                  </p>
-                </div>
-                <div class="span4 hero-mini hero-mini-odd">
-                  <h3>Chango</h3>
-                  <p>
-                  <br />
-                  <a href="http://http://chango.com/">
-                    <img width="140" height="70" src="${request.static_url('pyconca:static/chango.jpeg')}">
-                  </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+    <div class="row-fluid">
+      <div class="span3">
+        <div class="hero-unit hero-unit-even">
+          <h1>Featured Events</h1>
         </div>
       </div>
+      <div class="span3 hero-mini hero-mini-even">
+        <h3>PyCon Canada Sprint</h3>
+        <p>
+            Sunday, <strong>April 22 2012</strong>
+            <br />
+            4:00 PM to 8:00 PM
+            <br />
+            City: <strong>Toronto</strong>
+            <br />
+            More Info: pyconca@gmail.com
+       </p>
+      </div>
+      <div class="span3 hero-mini hero-mini-even">
+        <h3>Beginners Python</h3>
+        <p>
+          Saturday, <strong>April 28 2012</strong>
+          <br />
+          10:00 AM to 5:30 PM
+          <br />
+          City: <strong>Toronto</strong>
+          <br />
+          Location: <a href="http://socialinnovation.ca/home">Centre for Social Innovation</a>
+          <br />
+          Organization: <a href="http://ladieslearningcode.com">Ladies Learning Code</a>
+          <p><a class="btn" href="http://ladieslearningcodeapr28-eorg.eventbrite.com">Sign-up &raquo;</a></p>
+        </p>
+      </div>
+      <div class="span3 hero-mini hero-mini-even">
+        <h3>Django-Toronto</h3>
+        <p>
+            Friday, <strong>May 17 2012</strong>
+            <br />
+            7:00 PM to 9:00 PM
+            <br />
+            City: <strong>Toronto</strong>
+            <br />
+            Location: <a href="http://waveaccounting.com">Wave Accounting</a>
+            <br />
+            <br />
+            <p><a class="btn" href="http://plancast.com/p/aytu/django-meetup-toronto">Sign-up &raquo;</a></p>
+       </p>
+      </div>
+    </div>
 
+    <hr>
+
+    <div class="row-fluid">
+      <div class="span3">
+        <div class="hero-unit hero-unit-odd">
+          <h1>Featured Sponsors</h1>
+        </div>
+      </div>
+      <div class="span3 hero-mini hero-mini-odd">
+        <h3>VM Farms</h3>
+        <p>
+        <br />
+        <a href="http://http://vmfarms.com/">
+          <img width="140" height="70" src="${request.static_url('pyconca:static/vmfarms-logo.png')}">
+        </a>
+        </p>
+      </div>
+      <div class="span3 hero-mini hero-mini-odd">
+        <h3>Chango</h3>
+        <p>
+        <br />
+        <a href="http://http://chango.com/">
+          <img width="140" height="70" src="${request.static_url('pyconca:static/chango.jpeg')}">
+        </a>
+        </p>
+      </div>
+    </div>
   </div>
 </div>
