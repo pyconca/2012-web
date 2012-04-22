@@ -12,3 +12,7 @@
 *~
 tags
 .env
+
+bin
+include
+lib
