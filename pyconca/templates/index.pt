@@ -3,23 +3,13 @@
       <div class="row-fluid">
 
         <div class="span9">
-          <div class="hero-unit">
-            <h1></h1>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
+          <div class="hero-unit" style="height: 350px">
+            <!-- fix the height to simulate content... For now. -->
           </div>
         </div>
 
-        <div class="span3">
-          <div style="padding: 6px; float: right;">
+        <div class="span3" style="margin-bottom: 30px">
+          <div>
             <script>
                 new TWTR.Widget({
                   version: 2,
@@ -28,6 +18,7 @@
                   interval: 6000,
                   title: 'PyCon Canada Twitter Feed',
                   subject: '',
+                  width: 'auto',
                   theme: {
                     shell: {
                       background: '#92ED6B',
@@ -51,7 +42,6 @@
                   }
                 }).render().start();
             </script>
-            <br />
           </div>
         </div>
 

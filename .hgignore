@@ -2,7 +2,7 @@ syntax: glob
 *.class
 *.o
 *.pyc
-*.sqlite3
+*.db
 *.sw[op]
 *~
 .DS_Store
@@ -12,5 +12,5 @@ bin/*
 tags
 *.beam
 *.dump
-env/
+.env/
 *egg-info*
