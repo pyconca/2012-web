@@ -5,7 +5,7 @@ from pyramid import testing
 
 from .models import DBSession
 
-class TestMyView(unittest.TestCase):
+class TestIndex(unittest.TestCase):
     def setUp(self):
         self.config = testing.setUp()
         from sqlalchemy import create_engine
@@ -25,8 +25,8 @@ class TestMyView(unittest.TestCase):
         testing.tearDown()
 
     def test_it(self):
-        from .views import my_view
+        from .views import index
         request = testing.DummyRequest()
-        info = my_view(request)
+        info = index(request)
         self.assertEqual(info['one'].name, 'one')
         self.assertEqual(info['project'], 'pyconca')

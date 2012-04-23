@@ -20,19 +20,7 @@ def index(request):
         one = DBSession.query(MyModel).filter(MyModel.name=='one').first()
     except DBAPIError:
         return Response(conn_err_msg, content_type='text/plain', status_int=500)
-    return {"layout": site_layout()}
-
-@view_config(route_name='jobs', renderer='templates/jobs.pt')
-def jobs(request):
-    return {"layout": site_layout()}
-
-@view_config(route_name='events', renderer='templates/events.pt')
-def events(request):
-    return {"layout": site_layout()}
-
-@view_config(route_name='sponsors', renderer='templates/sponsors.pt')
-def sponsors(request):
-    return {"layout": site_layout()}
+    return {'layout': site_layout(), 'one': one, 'project': 'pyconca'}
 
 conn_err_msg = """\
 Pyramid is having a problem using your SQL database.  The problem

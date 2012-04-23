@@ -1,55 +1,10 @@
 @import url(twitter-bootstrap/css/bootstrap.css);
 
-/* hero-unit */
-.hero-unit {
-  padding: 10px;
-}
-.hero-unit h1 {
-  font-size: 20px;
-}
-
-/* hero-mini */
-.hero-mini h3 {
-  background-color: #E8E8E8;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-  padding: 6px;
-}
-.hero-mini p {
-  padding: 3px;
-}
-
-/* green */
-.hero-mini-odd h3 {
-  color: #2B8E00;
-}
-.hero-unit-odd {
-  background-color: #92ED6B;
-}
-.hero-mini-odd a {
-  color: #2B8E00;
+a {
+  color: red;
   text-decoration: none;
 }
-.hero-mini-odd a:hover {
-  color: #7CB02C;
+a:hover {
+  color: red;
   text-decoration: underline;
 }
-
-
-/* blue */
-.hero-unit-even {
-  background-color: #3BA6D0;
-}
-.hero-mini-even h3 {
-  color: #0776A0;
-}
-.hero-mini-even a {
-  color: #0776A0;
-  text-decoration: none;
-}
-.hero-mini-even a:hover {
-  color: #3BA6D0;
-  text-decoration: underline;
-}
-  
