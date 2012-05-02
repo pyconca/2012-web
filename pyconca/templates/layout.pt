@@ -47,10 +47,10 @@
           <div class="nav-collapse">
             <ul class="nav">
               <li>
-                <a href="${request.application_url}"><i class="icon-home icon-white"></i>Home</a>
+                <a href="${request.application_url}"><i class="icon-home icon-white nav-icon"></i>Home</a>
               </li>
               <li>
-                <a href="${request.application_url}/about">About</a>
+                <a href="${request.application_url}/about"><i class="icon-info-sign icon-white nav-icon"></i>About</a>
               </li>
             </ul>
           </div><!--/.nav-collapse -->
