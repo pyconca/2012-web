@@ -1,0 +1,45 @@
+<style>
+  .about-content {
+    margin: 30px 0;
+    text-align: center;
+  }
+
+  .committee-list li {
+    margin-top: 3px;
+  }
+</style>
+
+<div metal:use-macro="layout">
+  <div metal:fill-slot="content">
+
+    <div class="row-fluid">
+      <div class="span12 about-content">
+        <h2>The PyCon Canada 2012 Organizing Committee</h2>
+        
+        <ul class="unstyled committee-list">
+          <li>
+            Diana Clarke (@diana_clarke)
+          </li>
+
+          <li>
+            Taavi Burns (@jaaaarel)
+          </li>
+
+          <li>
+            Nicola Yap (@ncurious)
+          </li>
+
+          <li>
+            David Wolever (@wolever)
+          </li>
+
+          <li>
+            Yi Qing Sim (@yiqingsim)
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div><!-- content slot -->
+</div><!-- layout template -->

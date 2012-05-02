@@ -50,7 +50,7 @@
                 <a href="${request.application_url}"><i class="icon-home icon-white"></i>Home</a>
               </li>
               <li>
-                <a href="${request.application_url}">About us</a>
+                <a href="${request.application_url}/about">About</a>
               </li>
             </ul>
           </div><!--/.nav-collapse -->

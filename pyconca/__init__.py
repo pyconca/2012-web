@@ -11,6 +11,7 @@ def main(global_config, **settings):
     config = Configurator(settings=settings)
     config.add_static_view('static', 'static', cache_max_age=3600)
     config.add_route('index', '/')
+    config.add_route('about', '/about')
     config.add_route('jobs', '/jobs')
     config.add_route('events', '/events')
     config.add_route('sponsors', '/sponsors')

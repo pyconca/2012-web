@@ -1,9 +1,0 @@
-<div metal:use-macro="layout">
-  <div metal:fill-slot="content">
-
-    <div class="row-fluid">
-      <p>This page is under construction.</p>
-    </div>
-
-  </div><!-- content slot -->
-</div><!-- layout template -->
