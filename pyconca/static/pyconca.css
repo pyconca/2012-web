@@ -8,3 +8,90 @@ a:hover {
   color: red;
   text-decoration: underline;
 }
+
+.main-nav {
+  max-width: 960px;
+  margin: auto;
+}
+
+.main-body {
+  background-color: #B52A2A;
+}
+
+.main-container {
+  max-width: 960px;
+  margin: auto;
+  background-color: #fff;
+}
+
+.row-top {
+  height: 260px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  height: 100%;
+  text-align: center;
+}
+
+.logo img {
+  margin-top: 20px;
+}
+
+.headline {
+  height: 100%;
+}
+
+.headline h1 {
+  margin: 50px 20px;
+  font-size: 42px;
+  line-height: 52px;
+}
+
+.row-feature {
+  height: 331px;
+  border: 1px solid #e1e1e8;
+  background-color: #f7f7f9;
+  margin-bottom: 20px;
+}
+
+.feature-left, .feature-img {
+  display: inline-block;
+}
+
+.feature-left {
+  padding: 25px;
+}
+
+.feature-left > * {
+  width: 400px;
+}
+
+.feature-left h1 {
+  margin-bottom: 10px;
+}
+
+.feature-img {
+  float: right;
+}
+
+.row-content {
+  height: 200px;
+}
+
+.join-us p, .sponsor-us p {
+  line-height: 21px;
+}
+
+.join-us p, .sponsor-us p {
+  margin-top: 1em;
+}
+
+.contact-info dd {
+  margin-bottom: 4px;
+}
+
+footer {
+  margin-bottom: 20px;
+  text-align: center;
+}

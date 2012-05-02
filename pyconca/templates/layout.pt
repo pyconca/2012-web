@@ -33,31 +33,39 @@
 
   </head>
 
-  <body>
+  <body class="main-body">
 
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
-        <div class="container-fluid">
+        <div class="container-fluid main-nav">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="${request.application_url}">Home</a>
+          <a class="brand" href="${request.application_url}">PyCon Canada</a>
           <div class="nav-collapse">
+            <ul class="nav">
+              <li>
+                <a href="${request.application_url}"><i class="icon-home icon-white"></i>Home</a>
+              </li>
+              <li>
+                <a href="${request.application_url}">About us</a>
+              </li>
+            </ul>
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid main-container">
 
       <div metal:define-slot="content"></div>
 
       <hr>
 
       <footer>
-        <p class="navbar-text pull-right">&copy; PyCon Canada 2012</p>
+        <h6>&copy; PyCon Canada 2012</h6>
       </footer>
 
     </div><!--/.fluid-container-->
