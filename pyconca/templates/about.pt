@@ -121,11 +121,13 @@
           <div class="span2 person-info">
             <h3>Taavi Burns</h3>
             <h4><a href="https://twitter.com/jaaaarel"><img class="sm-icon" src="${request.static_url('pyconca:static/icons/elegantmediaicons/PNG/twitter.png')}">@jaaaarel</a></h4>
+            <a href="http://taaviburns.ca/blog/"><img class="sm-icon" src="${request.static_url('pyconca:static/icons/elegantmediaicons/PNG/rss.png')}"></a>
           </div>
 
           <div class="span8 person-bio">
             <p>
-              Taavi is a cowboy.
+              Defect Poacher, Futurist, and Musician. &ldquo;Jäääärel&rdquo; is an awesome word. He knits continental.
+              He also used to work at IBM (which is not where he met Nicola), but now works at FreshBooks (and loving it).
             </p>
           </div>
         </div>
