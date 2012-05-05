@@ -1,0 +1,52 @@
+<div metal:use-macro="layout">
+    <div metal:fill-slot="content">
+
+        <div class="row-fluid">
+            <div class="span12">
+                <br>
+                <h1>
+                    <a tal:attributes="href index_url">users</a> / 
+                    <span tal:condition="user.id" tal:replace="user.username">
+                    <span tal:condition="not user.id">create</span>
+                </h1>
+                <hr>
+                <form class="form-horizontal" action="" method="">
+
+                    <div class="control-group">
+                        <label class="control-label" for="first_name">First Name</label>
+                        <div class="controls">
+                            <input type="text" maxlength="100" name="first_name" value="${user.first_name}">
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="last_name">Last Name</label>
+                        <div class="controls">
+                            <input type="text" maxlength="100" name="last_name" value="${user.last_name}">
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="username">Username</label>
+                        <div class="controls">
+                            <input type="text" maxlength="30" name="username" value="${user.username}">
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="email">Email Address</label>
+                        <div class="controls">
+                            <input type="text" maxlength="100" name="email" value="${user.email}">
+                        </div>
+                    </div>
+
+                    <input class="btn btn-primary" type="submit" value="Save" 
+                           onclick="this.form.action='${user.save_url}';this.form.method='POST';"/>
+                    <input class="btn" type="submit" value="Cancel" 
+                           onclick="this.form.action='${index_url}';this.form.method='GET';"/>
+                </form>
+            </div>
+        </div>
+
+    </div><!-- content slot -->
+</div><!-- layout template -->

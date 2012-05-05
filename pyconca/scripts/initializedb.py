@@ -2,23 +2,19 @@ import os
 import sys
 import transaction
 
+from pyramid.paster import get_appsettings
+from pyramid.paster import setup_logging
+
 from sqlalchemy import engine_from_config
 
-from pyramid.paster import (
-    get_appsettings,
-    setup_logging,
-    )
-
-from ..models import (
-    DBSession,
-    MyModel,
-    Base,
-    )
+from ..models import Base
+from ..models import DBSession
+from ..models import User
 
 def usage(argv):
     cmd = os.path.basename(argv[0])
     print('usage: %s <config_uri>\n'
-          '(example: "%s development.ini")' % (cmd, cmd)) 
+          '(example: "%s development.ini")' % (cmd, cmd))
     sys.exit(1)
 
 def main(argv=sys.argv):
@@ -31,5 +27,7 @@ def main(argv=sys.argv):
     DBSession.configure(bind=engine)
     Base.metadata.create_all(engine)
     with transaction.manager:
-        model = MyModel(name='one', value=1)
-        DBSession.add(model)
+        taavi = User(username='taavi', first_name='Taavi', last_name='Burns')
+        diana = User(username='diana', first_name='Diana', last_name='Clarke')
+        DBSession.add(taavi)
+        DBSession.add(diana)
