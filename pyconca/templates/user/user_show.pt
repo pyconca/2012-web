@@ -21,12 +21,10 @@
 
                 <br>
                 <br>
-                <div>
                 <form action="${user.delete_url}" method="POST">
                     <a class="btn btn-primary" href='${user.update_url}'>Edit</a>
                     <input class="btn" type="submit" value="Delete"/>
                 </form>
-            </div>
             </div>
         </div>
 
