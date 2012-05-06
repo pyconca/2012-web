@@ -14,3 +14,7 @@ def index(request):
 @view_config(route_name='about', renderer='templates/about.pt')
 def about_us(request):
     return {'layout': site_layout()}
+
+@view_config(route_name='venue', renderer='templates/venue.pt')
+def venue(request):
+    return {'layout': site_layout()}
