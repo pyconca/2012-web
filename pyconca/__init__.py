@@ -47,6 +47,7 @@ def main(global_config, **settings):
 
     config.add_route('index', '/')
     config.add_route('about', '/about')
+    config.add_route('venue', '/venue')
 
     _add_resource(config, 'user')
 
