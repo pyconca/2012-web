@@ -42,8 +42,7 @@
 
                     <input class="btn btn-primary" type="submit" value="Save" 
                            onclick="this.form.action='${user.save_url}';this.form.method='POST';"/>
-                    <input class="btn" type="submit" value="Cancel" 
-                           onclick="this.form.action='${index_url}';this.form.method='GET';"/>
+                    <a class="btn" type="submit" href='${index_url}'>Cancel</a>
                 </form>
             </div>
         </div>

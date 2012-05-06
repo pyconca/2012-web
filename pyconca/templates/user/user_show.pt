@@ -21,12 +21,12 @@
 
                 <br>
                 <br>
-                <form action="" method="">
-                    <input class="btn btn-primary" type="submit" value="Edit" 
-                           onclick="this.form.action='${user.update_url}';this.form.method='GET';"/>
-                    <input class="btn" type="submit" value="Delete" 
-                           onclick="this.form.action='${user.delete_url}';this.form.method='POST';"/>
+                <div>
+                <form action="${user.delete_url}" method="POST">
+                    <a class="btn btn-primary" href='${user.update_url}'>Edit</a>
+                    <input class="btn" type="submit" value="Delete"/>
                 </form>
+            </div>
             </div>
         </div>
 
