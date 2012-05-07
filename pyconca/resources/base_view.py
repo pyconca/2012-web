@@ -28,7 +28,7 @@ class BaseView(object):
         response_[self.name + '_list'] = models
         return response_
 
-    def show(self):
+    def get(self):
         id = self.request.matchdict['id']
         response_ = self._build_response()
         model = self.dao.get(id)
@@ -68,8 +68,8 @@ class BaseView(object):
         if self.is_post:
             try:
                 self._persist(model, is_create)
-                show_url = self._route_url('show', id=model.id)
-                return HTTPFound(location=show_url)
+                get_url = self._route_url('get', id=model.id)
+                return HTTPFound(location=get_url)
             except Invalid as e:
                 validation_dict = e.error_dict
         response_ = self._build_response(validation_dict=validation_dict)
@@ -99,7 +99,7 @@ class BaseView(object):
         if is_create:
             model.save_url = self._route_url('create')
         else:
-            model.show_url = self._route_url('show', id=model.id)
+            model.get_url = self._route_url('get', id=model.id)
             model.update_url = self._route_url('update', id=model.id)
             model.delete_url = self._route_url('delete', id=model.id)
             model.save_url = model.update_url
