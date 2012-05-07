@@ -4,6 +4,12 @@
         <div class="row-fluid">
             <div class="span12">
                 <br>
+                <div class="alert alert-error" tal:condition="validation_dict">
+                    <span tal:repeat="key validation_dict">
+                      ${validation_dict[key].msg}: ${key}
+                      <br/>
+                    </span>
+                </div>
                 <h1>
                     <a tal:attributes="href index_url">users</a> / 
                     <span tal:condition="user.id" tal:replace="user.username">
