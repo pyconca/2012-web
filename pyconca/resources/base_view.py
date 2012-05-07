@@ -1,3 +1,5 @@
+from formencode import Invalid
+
 from pyramid.httpexceptions import HTTPFound
 from pyramid.renderers import get_renderer
 from pyramid.url import route_url
@@ -16,6 +18,8 @@ class BaseView(object):
     def __init__(self, request):
         self.request = request
         self._configure()
+
+    #---------- resource views
 
     def index(self):
         response_ = self._build_response()
@@ -49,16 +53,43 @@ class BaseView(object):
         model = self.dao.create()
         return self._save(model, is_create=True)
 
+    #---------- abstract hooks
+
+    def _configure(self):
+        pass
+
+    def _populate(self):
+        pass
+
+    #---------- persist helpers
+
     def _save(self, model, is_create):
+        validation_dict = None
         if self.is_post:
-            self._populate(model, is_create)
-            self.dao.save(model)
-            show_url = self._route_url('show', id=model.id)
-            return HTTPFound(location=show_url)
-        response_ = self._build_response()
+            try:
+                self._persist(model, is_create)
+                show_url = self._route_url('show', id=model.id)
+                return HTTPFound(location=show_url)
+            except Invalid as e:
+                validation_dict = e.error_dict
+        response_ = self._build_response(validation_dict=validation_dict)
         self._wrap_model(model, is_create)
         response_[self.name] = model
         return response_
+
+    def _persist(self, model, is_create):
+        self._validate(model, is_create)
+        self._populate(model, is_create)
+        self.dao.save(model)
+
+    def _validate(self, model, is_create):
+        form = self._get_form_fields(self.schema)
+        self.schema.to_python(form)
+
+    def _get_form_fields(self, schema):
+        return {field:self.request.params[field] for field in schema.fields}
+
+    #---------- response helpers
 
     def _wrap_model_list(self, models):
         for model in models:
@@ -73,15 +104,18 @@ class BaseView(object):
             model.delete_url = self._route_url('delete', id=model.id)
             model.save_url = model.update_url
 
-    def _build_response(self):
+    def _build_response(self, validation_dict=None):
         return {
             'layout': site_layout(),
+            'validation_dict': validation_dict,
             'index_url': self._route_url('index'),
             'create_url': self._route_url('create'),
         }
 
     def _route_url(self, action, **kwargs):
         return route_url(self.name + '_' + action, self.request, **kwargs)
+
+    #---------- miscellaneous helpers
 
     @property
     def is_post(self):
