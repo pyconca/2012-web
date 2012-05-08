@@ -4,4 +4,5 @@ IFS="`printf "\n\t"`"
 set -eu
 cd "`dirname "$0"`"
 
+[[ ! -f "pyconca.db" ]] && ./reset
 pserve development.ini --reload
