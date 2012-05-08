@@ -7,7 +7,7 @@ Getting Started
 
 .. parsed-literal::
 
-    ~$ **virtualenv env-pyconca**
+    ~$ **virtualenv -p python2.7 env-pyconca**
     ~$ **source env-pyconca/bin/activate**
     (env-pyconca)~$ **cd workspace/pyconca/**
     (env-pyconca)~/workspace/pyconca$ **python setup.py develop**
