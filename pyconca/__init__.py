@@ -3,6 +3,7 @@ from sqlalchemy import engine_from_config
 
 from .models import DBSession
 
+
 def _add_resource(config, name):
     values = {'name': name}
     view = 'pyconca.resources.user_view.%sView' % (name.capitalize())
@@ -39,18 +40,22 @@ def _add_resource(config, name):
         attr='delete',
         route_name=name + '_delete')
 
+
+def _setup_routes(config):
+    config.add_route('index', '/')
+    config.add_route('about', '/about')
+    config.add_route('venue', '/venue')
+
+
 def main(global_config, **settings):
     engine = engine_from_config(settings, 'sqlalchemy.')
     DBSession.configure(bind=engine)
     config = Configurator(settings=settings)
     config.add_static_view('static', 'static', cache_max_age=3600)
 
-    config.add_route('index', '/')
-    config.add_route('about', '/about')
-    config.add_route('venue', '/venue')
+    _setup_routes(config)
 
     _add_resource(config, 'user')
 
     config.scan()
     return config.make_wsgi_app()
-
