@@ -28,7 +28,7 @@
                     <div tal:repeat="user user_list">
                         <tr>
                             <td>
-                                <a tal:attributes="href user.show_url">
+                                <a tal:attributes="href user.get_url">
                                     <span tal:replace="user.first_name">
                                     <span tal:replace="user.last_name">
                                 </a>

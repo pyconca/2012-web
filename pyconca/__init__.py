@@ -11,7 +11,7 @@ def _add_resource(config, name):
 
     config.add_route(name + '_index', '/%(name)s' % (values))
     config.add_route(name + '_create', '/new/%(name)s' % (values))
-    config.add_route(name + '_show', '/%(name)s/{id}' % (values))
+    config.add_route(name + '_get', '/%(name)s/{id}' % (values))
     config.add_route(name + '_delete', '/delete/%(name)s/{id}' % (values))
     config.add_route(name + '_update', '/edit/%(name)s/{id}' % (values))
 
@@ -22,9 +22,9 @@ def _add_resource(config, name):
         renderer=template + 'index.pt')
     config.add_view(
         view,
-        attr='show',
-        route_name=name + '_show',
-        renderer=template + 'show.pt')
+        attr='get',
+        route_name=name + '_get',
+        renderer=template + 'get.pt')
     config.add_view(
         view,
         attr='create',

@@ -1,11 +1,12 @@
 @import url(libs/bootstrap-2.0.3/css/bootstrap.css);
 
 a {
-  color: red;
+  color: #c23621;
   text-decoration: none;
 }
+
 a:hover {
-  color: red;
+  color: #c23621;
   text-decoration: underline;
 }
 
@@ -20,6 +21,8 @@ a:hover {
 
 .main-body {
   background-color: #B52A2A;
+  padding-top: 0;
+  margin-top: 40px;
 }
 
 .main-container {
