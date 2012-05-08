@@ -16,7 +16,7 @@
                     <span tal:condition="not user.id">create</span>
                 </h1>
                 <hr>
-                <form class="form-horizontal" action="" method="">
+                <form class="form-horizontal" action="${user.save_url}" method="POST">
 
                     <div class="control-group">
                         <label class="control-label" for="first_name">First Name</label>
@@ -46,10 +46,8 @@
                         </div>
                     </div>
 
-                    <input class="btn btn-primary" type="submit" value="Save" 
-                           onclick="this.form.action='${user.save_url}';this.form.method='POST';"/>
-                    <input class="btn" type="submit" value="Cancel" 
-                           onclick="this.form.action='${index_url}';this.form.method='GET';"/>
+                    <input class="btn btn-primary" type="submit" value="Save"/>
+                    <a class="btn" type="submit" href='${index_url}'>Cancel</a>
                 </form>
             </div>
         </div>
