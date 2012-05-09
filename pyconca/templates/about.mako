@@ -1,3 +1,5 @@
+<%inherit file="base.mako"/>
+
 <style>
   .about-subheading {
     margin-bottom: 5px;
@@ -37,8 +39,7 @@
   }
 </style>
 
-<div metal:use-macro="layout">
-  <div metal:fill-slot="content">
+<%block name="content">
 
     <div class="row-fluid">
       <div class="span12 about-content">
@@ -162,7 +163,7 @@
 
     <div class="row-fluid row-acknowledgements">
       <div class="span12">
-        <h2 class="about-subheading">Acknowledgements</h2>       
+        <h2 class="about-subheading">Acknowledgements</h2>
 
         <ul>
           <li>
@@ -172,9 +173,8 @@
             <a href="http://www.elegantthemes.com/blog/resources/free-social-media-icon-set">Social media icons</a> by <a href="http://www.elegantthemes.com/">Elegant Themes</a>
           </li>
         </ul>
-          
+
       </div>
     </div>
 
-  </div><!-- content slot -->
-</div><!-- layout template -->
+</%block>

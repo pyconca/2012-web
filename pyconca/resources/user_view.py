@@ -4,6 +4,7 @@ from formencode import validators
 from pyconca.dao.user_dao import UserDao
 from pyconca.resources.base_view import BaseView
 
+
 class UserView(BaseView):
 
     def _configure(self):
@@ -16,6 +17,7 @@ class UserView(BaseView):
         user.last_name = self.request.params['last_name']
         user.username = self.request.params['username']
         user.email = self.request.params['email']
+
 
 class UserSchema(Schema):
     first_name = validators.String(not_empty=True, strip=True)

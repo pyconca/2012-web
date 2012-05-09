@@ -1,17 +1,12 @@
 from formencode import Invalid
 
 from pyramid.httpexceptions import HTTPFound
-from pyramid.renderers import get_renderer
 from pyramid.url import route_url
 
 import logging
 
 log = logging.getLogger(__name__)
 
-def site_layout():
-    renderer = get_renderer('pyconca:templates/layout.pt')
-    layout = renderer.implementation().macros['layout']
-    return layout
 
 class BaseView(object):
 
@@ -87,7 +82,7 @@ class BaseView(object):
         self.schema.to_python(form)
 
     def _get_form_fields(self, schema):
-        return {field:self.request.params[field] for field in schema.fields}
+        return {field: self.request.params[field] for field in schema.fields}
 
     #---------- response helpers
 
@@ -106,7 +101,6 @@ class BaseView(object):
 
     def _build_response(self, validation_dict=None):
         return {
-            'layout': site_layout(),
             'validation_dict': validation_dict,
             'index_url': self._route_url('index'),
             'create_url': self._route_url('create'),
