@@ -19,22 +19,22 @@ def _add_resource(config, name):
         view,
         attr='index',
         route_name=name + '_index',
-        renderer=template + 'index.pt')
+        renderer=template + 'index.mako')
     config.add_view(
         view,
         attr='get',
         route_name=name + '_get',
-        renderer=template + 'get.pt')
+        renderer=template + 'get.mako')
     config.add_view(
         view,
         attr='create',
         route_name=name + '_create',
-        renderer=template + 'edit.pt')
+        renderer=template + 'edit.mako')
     config.add_view(
         view,
         attr='update',
         route_name=name + '_update',
-        renderer=template + 'edit.pt')
+        renderer=template + 'edit.mako')
     config.add_view(
         view,
         attr='delete',
