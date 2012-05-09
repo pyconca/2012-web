@@ -1,18 +1,14 @@
 <!DOCTYPE html>
-<html lang="en"
-      xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:metal="http://xml.zope.org/namespaces/metal"
-      xmlns:tal="http://xml.zope.org/namespaces/tal"
-      metal:define-macro="layout">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>PyCon Canada</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
     <!-- Le styles -->
-    <link href="${request.static_url('pyconca:static/pyconca.css')}" rel="stylesheet">
+    <link href="${request.static_url('pyconca:static/pyconca.css')}" rel="stylesheet" />
     <style type="text/css">
       body {
         padding-top: 60px;
@@ -22,7 +18,7 @@
         padding: 9px 0;
       }
     </style>
-    <link href="${request.static_url('pyconca:static/libs/bootstrap-2.0.3/css/bootstrap-responsive.css')}" rel="stylesheet">
+    <link href="${request.static_url('pyconca:static/libs/bootstrap-2.0.3/css/bootstrap-responsive.css')}" rel="stylesheet" />
     <script src="${request.static_url('pyconca:static/libs/jquery-1.7.2.min.js')}"></script>
     <script src="${request.static_url('pyconca:static/libs/bootstrap-2.0.3/js/bootstrap.min.js')}"></script>
 
@@ -76,15 +72,18 @@
 
     <div class="container-fluid main-container">
 
-      <div metal:define-slot="content"></div>
 
-      <hr>
+      <div>
+        <%block name="content"/>
+      </div>
+
+      <hr />
 
       <footer>
         <h6>&copy; PyCon Canada 2012</h6>
       </footer>
 
     </div><!--/.fluid-container-->
-    
+
   </body>
 </html>
