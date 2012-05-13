@@ -1,7 +1,11 @@
+from pyramid.authentication import AuthTktAuthenticationPolicy
+from pyramid.authorization import ACLAuthorizationPolicy
 from pyramid.config import Configurator
+
 from sqlalchemy import engine_from_config
 
 from .models import DBSession
+from .security import group_finder
 
 
 def _add_resource(config, name):
@@ -15,34 +19,33 @@ def _add_resource(config, name):
     config.add_route(name + '_delete', '/delete/%(name)s/{id}' % (values))
     config.add_route(name + '_update', '/edit/%(name)s/{id}' % (values))
 
-    config.add_view(
-        view,
-        attr='index',
+    config.add_view(view, attr='index',
         route_name=name + '_index',
         renderer=template + 'index.mako')
-    config.add_view(
-        view,
-        attr='get',
+
+    config.add_view(view, attr='get',
         route_name=name + '_get',
         renderer=template + 'get.mako')
-    config.add_view(
-        view,
-        attr='create',
+
+    config.add_view(view, attr='create',
         route_name=name + '_create',
-        renderer=template + 'edit.mako')
-    config.add_view(
-        view,
-        attr='update',
+        renderer=template + 'edit.mako',
+        permission='edit')
+
+    config.add_view(view, attr='update',
         route_name=name + '_update',
-        renderer=template + 'edit.mako')
-    config.add_view(
-        view,
-        attr='delete',
-        route_name=name + '_delete')
+        renderer=template + 'edit.mako',
+        permission='edit')
+
+    config.add_view(view, attr='delete',
+        route_name=name + '_delete',
+        permission='edit')
 
 
 def _setup_routes(config):
     config.add_route('index', '/')
+    config.add_route('login', '/login')
+    config.add_route('logout', '/logout')
     config.add_route('about', '/about')
     config.add_route('venue', '/venue')
 
@@ -50,11 +53,17 @@ def _setup_routes(config):
 def main(global_config, **settings):
     engine = engine_from_config(settings, 'sqlalchemy.')
     DBSession.configure(bind=engine)
-    config = Configurator(settings=settings)
+
+    authn_policy = AuthTktAuthenticationPolicy('so_secret',
+        callback=group_finder)
+    authz_policy = ACLAuthorizationPolicy()
+    config = Configurator(settings=settings,
+        root_factory='pyconca.security.RootFactory')
+    config.set_authentication_policy(authn_policy)
+    config.set_authorization_policy(authz_policy)
+
     config.add_static_view('static', 'static', cache_max_age=3600)
-
     _setup_routes(config)
-
     _add_resource(config, 'user')
 
     config.scan()

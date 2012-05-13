@@ -1,6 +1,7 @@
 from formencode import Invalid
 
 from pyramid.httpexceptions import HTTPFound
+from pyramid.security import authenticated_userid
 from pyramid.url import route_url
 
 import logging
@@ -101,6 +102,7 @@ class BaseView(object):
 
     def _build_response(self, validation_dict=None):
         return {
+            'logged_in': authenticated_userid(self.request),
             'validation_dict': validation_dict,
             'index_url': self._route_url('index'),
             'create_url': self._route_url('create'),

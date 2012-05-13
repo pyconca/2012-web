@@ -64,7 +64,23 @@
               </li>
 
               <li class="divider-vertical"></li>
+
+              % if logged_in:
+                  <li>
+                    <a class="nav-link" href="${request.application_url}/logout"><i class="icon-remove icon-white nav-icon"></i>Logout</a>
+                  </li>
+              % else:
+                  <li>
+                    <a class="nav-link" href="${request.application_url}/login"><i class="icon-user icon-white nav-icon"></i>Login</a>
+                  </li>
+              % endif
+
+              <li class="divider-vertical"></li>
             </ul>
+
+            % if logged_in:
+                <p class="navbar-text pull-right">Logged in as <a href="#">${logged_in}</a></p>
+            % endif
           </div><!--/.nav-collapse -->
         </div>
       </div>
