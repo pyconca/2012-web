@@ -10,10 +10,7 @@
     </div>
     <div class="span3">
         <br>
-        <form action="" method="">
-            <input class="btn btn-primary pull-right" type="submit" value="New User" 
-                   onclick="this.form.action='${create_url}';this.form.method='GET';"/>
-        </form>
+        <a class="btn btn-primary pull-right" href='${create_url}'>New User</a>
     </div>
     <hr>
 </div>
