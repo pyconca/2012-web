@@ -52,7 +52,7 @@ def login(request):
         if USERS.get(login) == password:
             headers = remember(request, login)
             return HTTPFound(location=came_from, headers=headers)
-        message = 'Failed login'
+        message = 'Login failed'
 
     response_ = _build_response(request)
     response_.update(

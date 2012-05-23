@@ -9,6 +9,7 @@ from sqlalchemy import engine_from_config
 
 from ..models import Base
 from ..models import DBSession
+from ..models import Group
 from ..models import User
 
 def usage(argv):
@@ -27,7 +28,10 @@ def main(argv=sys.argv):
     DBSession.configure(bind=engine)
     Base.metadata.create_all(engine)
     with transaction.manager:
+        admin_group = Group(name='admin')
+        DBSession.add(admin_group)
         taavi = User(username='taavi', first_name='Taavi', last_name='Burns')
         diana = User(username='diana', first_name='Diana', last_name='Clarke')
         DBSession.add(taavi)
+        diana.groups.append(admin_group)
         DBSession.add(diana)

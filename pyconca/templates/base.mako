@@ -60,7 +60,7 @@
               <li class="divider-vertical"></li>
 
               <li>
-                <a class="nav-link" href="${request.application_url}/venue"><i class="icon-asterisk icon-white nav-icon"></i>Venue</a>
+                <a class="nav-link" href="#"><i class="icon-asterisk icon-white nav-icon"></i>Venue</a>
               </li>
 
               <li class="divider-vertical"></li>
@@ -76,6 +76,13 @@
               % endif
 
               <li class="divider-vertical"></li>
+
+              <li>
+                <a class="nav-link" href="${request.application_url}/new/user"><i class="icon-star-empty icon-white nav-icon"></i>Create Account</a>
+              </li>
+
+              <li class="divider-vertical"></li>
+
             </ul>
 
             % if logged_in:
@@ -87,7 +94,6 @@
     </div>
 
     <div class="container-fluid main-container">
-
 
       <div>
         <%block name="content"/>

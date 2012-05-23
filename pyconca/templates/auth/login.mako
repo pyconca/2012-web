@@ -8,11 +8,19 @@
         <h1>Login</h1>
         <hr>
 
+        % if message:
+            <div class="alert alert-error">
+              ${message}
+              <br/>
+            </div>
+        % endif
+
         <form action="${request.application_url}/login" method="POST">
             <input type="hidden" name="came_from" value="${came_from}"/>
-            <input type="text" name="login" value="${login}"/><br/>
-            <input type="password" name="password"
-                   value="${password}"/><br/>
+            <input type="text" name="login" value="${login}"/>
+            <br/>
+            <input type="password" name="password" value="${password}"/>
+            <br/>
             <input class="btn" type="submit" name="login.submit" value="Login"/>
         </form>
 
