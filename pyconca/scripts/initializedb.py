@@ -30,8 +30,18 @@ def main(argv=sys.argv):
     with transaction.manager:
         admin_group = Group(name='admin')
         DBSession.add(admin_group)
-        taavi = User(username='taavi', first_name='Taavi', last_name='Burns')
-        diana = User(username='diana', first_name='Diana', last_name='Clarke')
+        taavi = User(
+            username='taavi',
+            password='taavi',
+            first_name='Taavi',
+            last_name='Burns',
+            email='foo')
+        diana = User(
+            username='diana',
+            password='diana',
+            first_name='Diana',
+            last_name='Clarke',
+            email='foo')
         DBSession.add(taavi)
         diana.groups.append(admin_group)
         DBSession.add(diana)

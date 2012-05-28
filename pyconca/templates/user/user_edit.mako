@@ -54,6 +54,20 @@
                 </div>
             </div>
 
+            <div class="control-group">
+                <label class="control-label" for="password">Password</label>
+                <div class="controls">
+                    <input type="password" maxlength="50" name="password" value="">
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="password_confirm">Confirm Password</label>
+                <div class="controls">
+                    <input type="password" maxlength="50" name="password_confirm" value="">
+                </div>
+            </div>
+
             <input class="btn btn-primary" type="submit" value="Save"/>
             <a class="btn" type="submit" href='${index_url}'>Cancel</a>
         </form>

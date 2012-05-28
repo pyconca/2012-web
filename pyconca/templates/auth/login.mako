@@ -17,7 +17,7 @@
 
         <form action="${request.application_url}/login" method="POST">
             <input type="hidden" name="came_from" value="${came_from}"/>
-            <input type="text" name="login" value="${login}"/>
+            <input type="text" name="username" value="${username}"/>
             <br/>
             <input type="password" name="password" value="${password}"/>
             <br/>

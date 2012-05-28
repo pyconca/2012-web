@@ -6,15 +6,14 @@ from pyramid.security import Everyone
 from pyconca.dao.user_dao import UserDao
 
 
-USERS = {'diana':'diana', 'taavi':'taavi'}
 PERMISSIONS = {'admin':['group:admin']}
 
 
 def get_user(request):
-    username = unauthenticated_userid(request)
-    if username:
+    user_id = unauthenticated_userid(request)
+    if user_id:
         user_dao = UserDao()
-        return user_dao.get_by_username(username)
+        return user_dao.get(user_id)
 
 
 def permission_finder(username, request):
@@ -45,9 +44,9 @@ class UserFactory(object):
     ]
 
     def __init__(self, request):
-        username = authenticated_userid(request)
+        user_id = authenticated_userid(request)
         user = request.user
-        if (username and user and 'id' in request.matchdict and
+        if (user_id and user and 'id' in request.matchdict and
             user.id == int(request.matchdict['id'])):
-                self.__acl__.append((Allow, username, 'user_get'))
-                self.__acl__.append((Allow, username, 'user_update'))
+                self.__acl__.append((Allow, user_id, 'user_get'))
+                self.__acl__.append((Allow, user_id, 'user_update'))

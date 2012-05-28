@@ -48,46 +48,69 @@
               <li class="divider-vertical"></li>
 
               <li>
-                <a class="nav-link" href="${request.application_url}"><i class="icon-home icon-white nav-icon"></i>Home</a>
+                <a class="nav-link" href="${request.application_url}">
+                    <i class="icon-home icon-white nav-icon"></i>
+                    Home
+                </a>
               </li>
 
               <li class="divider-vertical"></li>
 
               <li>
-                <a class="nav-link" href="${request.application_url}/about"><i class="icon-info-sign icon-white nav-icon"></i>About</a>
+                <a class="nav-link" href="${request.application_url}/about">
+                    <i class="icon-info-sign icon-white nav-icon"></i>
+                    About
+                </a>
               </li>
 
               <li class="divider-vertical"></li>
 
               <li>
-                <a class="nav-link" href="#"><i class="icon-asterisk icon-white nav-icon"></i>Venue</a>
+                <a class="nav-link" href="#">
+                    <i class="icon-asterisk icon-white nav-icon"></i>
+                    Venue
+                </a>
               </li>
 
               <li class="divider-vertical"></li>
 
               % if logged_in:
                   <li>
-                    <a class="nav-link" href="${request.application_url}/logout"><i class="icon-remove icon-white nav-icon"></i>Logout</a>
+                    <a class="nav-link" href="${request.application_url}/logout">
+                        <i class="icon-remove icon-white nav-icon"></i>
+                        Logout
+                    </a>
                   </li>
               % else:
                   <li>
-                    <a class="nav-link" href="${request.application_url}/login"><i class="icon-user icon-white nav-icon"></i>Login</a>
+                    <a class="nav-link" href="${request.application_url}/login">
+                        <i class="icon-user icon-white nav-icon"></i>
+                        Login
+                    </a>
                   </li>
               % endif
 
               <li class="divider-vertical"></li>
 
               <li>
-                <a class="nav-link" href="${request.application_url}/new/user"><i class="icon-star-empty icon-white nav-icon"></i>Create Account</a>
+                <a class="nav-link" href="${request.application_url}/new/user">
+                    <i class="icon-star-empty icon-white nav-icon"></i>
+                    Create Account
+                </a>
               </li>
 
               <li class="divider-vertical"></li>
-
             </ul>
 
             % if logged_in:
-                <p class="navbar-text pull-right">Logged in as <a href="#">${logged_in}</a></p>
+                <p class="navbar-text pull-right">
+                    Logged in as 
+                    <a href="${request.application_url}/user/${logged_in}">
+                        ${request.user.username}
+                    </a>
+                </p>
             % endif
+
           </div><!--/.nav-collapse -->
         </div>
       </div>

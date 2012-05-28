@@ -6,14 +6,24 @@ from pyramid.url import route_url
 
 import logging
 
+
 log = logging.getLogger(__name__)
 
+
+class FormencodeState(object):
+    pass
 
 class BaseView(object):
 
     def __init__(self, request):
         self.request = request
         self._configure()
+        self.state = FormencodeState()
+
+    @property
+    def id(self):
+        if 'id' in self.request.matchdict:
+            return self.request.matchdict['id']
 
     #---------- resource views
 
@@ -25,24 +35,20 @@ class BaseView(object):
         return response_
 
     def get(self):
-        id = self.request.matchdict['id']
-        response_ = self._build_response()
-        model = self.dao.get(id)
+        response_ = self._build_response(self.id)
+        model = self.dao.get(self.id)
         self._wrap_model(model)
         response_[self.name] = model
         return response_
 
     def delete(self):
-        id = self.request.matchdict['id']
-        model = self.dao.get(id)
+        model = self.dao.get(self.id)
         if self.is_post:
             self.dao.delete(model)
-        index_url = self._route_url('index')
-        return HTTPFound(location=index_url)
+        return self._post_delete()
 
     def update(self):
-        id = self.request.matchdict['id']
-        model = self.dao.get(id)
+        model = self.dao.get(self.id)
         return self._save(model, is_create=False)
 
     def create(self):
@@ -57,6 +63,16 @@ class BaseView(object):
     def _populate(self):
         pass
 
+    #---------- where next
+
+    def _post_delete(self):
+        index_url = self._route_url('index')
+        return HTTPFound(location=index_url)
+
+    def _post_save(self, id, is_create):
+        get_url = self._route_url('get', id=id)
+        return HTTPFound(location=get_url)
+
     #---------- persist helpers
 
     def _save(self, model, is_create):
@@ -64,8 +80,7 @@ class BaseView(object):
         if self.is_post:
             try:
                 self._persist(model, is_create)
-                get_url = self._route_url('get', id=model.id)
-                return HTTPFound(location=get_url)
+                return self._post_save(model.id, is_create)
             except Invalid as e:
                 validation_dict = e.error_dict
         response_ = self._build_response(validation_dict=validation_dict)
@@ -73,14 +88,18 @@ class BaseView(object):
         response_[self.name] = model
         return response_
 
+    def _state(self, model, is_create):
+        self.state.id = self.id
+
     def _persist(self, model, is_create):
+        self._state(model, is_create)
         self._validate(model, is_create)
         self._populate(model, is_create)
         self.dao.save(model)
 
     def _validate(self, model, is_create):
         form = self._get_form_fields(self.schema)
-        self.schema.to_python(form)
+        self.schema.to_python(form, self.state)
 
     def _get_form_fields(self, schema):
         return {field: self.request.params[field] for field in schema.fields}
