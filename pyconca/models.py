@@ -31,8 +31,8 @@ class AttrMixIn(object):
 
 class User(AttrMixIn, Base):
     id = Column(Integer, primary_key=True)
-    username = Column(String(length=30), unique=True, nullable=False)
-    password = Column(String(length=50), nullable=False)
+    username = Column(String(length=100), unique=True, nullable=False)
+    password = Column(String(length=100), nullable=False)
     first_name = Column(String(length=100), nullable=False)
     last_name = Column(String(length=100), nullable=False)
     email = Column(String(length=100), nullable=False)

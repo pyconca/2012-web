@@ -6,10 +6,10 @@ from formencode import validators
 
 from pyramid.httpexceptions import HTTPFound
 from pyramid.security import remember
-from pyramid.security import forget
 
 from pyconca.dao.user_dao import UserDao
 from pyconca.resources.base_view import BaseView
+from pyconca.security import generate_password
 
 
 class UserView(BaseView):
@@ -23,8 +23,8 @@ class UserView(BaseView):
         user.first_name = self.request.params['first_name']
         user.last_name = self.request.params['last_name']
         user.username = self.request.params['username']
-        user.password = self.request.params['password']
         user.email = self.request.params['email']
+        user.password =  generate_password(self.request.params['password'])
 
     def _post_save(self, id, is_create):
         if is_create:

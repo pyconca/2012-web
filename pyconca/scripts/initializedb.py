@@ -11,6 +11,7 @@ from ..models import Base
 from ..models import DBSession
 from ..models import Group
 from ..models import User
+from ..security import generate_password
 
 def usage(argv):
     cmd = os.path.basename(argv[0])
@@ -32,13 +33,13 @@ def main(argv=sys.argv):
         DBSession.add(admin_group)
         taavi = User(
             username='taavi',
-            password='taavi',
+            password=generate_password('taavi'),
             first_name='Taavi',
             last_name='Burns',
             email='foo')
         diana = User(
             username='diana',
-            password='diana',
+            password=generate_password('diana'),
             first_name='Diana',
             last_name='Clarke',
             email='foo')

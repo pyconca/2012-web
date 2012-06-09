@@ -6,6 +6,7 @@ from pyramid.view import view_config
 from pyramid.view import forbidden_view_config
 
 from pyconca.dao.user_dao import UserDao
+from pyconca.security import check_password
 
 
 @view_config(route_name='index', renderer='index.mako')
@@ -51,7 +52,7 @@ def login(request):
         password = request.params['password']
         user_dao = UserDao()
         user = user_dao.get_by_username(username)
-        if user and user.password == password:
+        if user and check_password(password, user.password):
             headers = remember(request, user.id)
             return HTTPFound(location=came_from, headers=headers)
         message = 'Login failed'
@@ -65,3 +66,4 @@ def login(request):
     )
 
     return response_
+

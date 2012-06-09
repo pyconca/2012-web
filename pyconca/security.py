@@ -1,3 +1,5 @@
+import bcrypt
+
 from pyramid.security import authenticated_userid
 from pyramid.security import unauthenticated_userid
 from pyramid.security import Allow
@@ -7,6 +9,19 @@ from pyconca.dao.user_dao import UserDao
 
 
 PERMISSIONS = {'admin':['group:admin']}
+
+
+def generate_password(password):
+    return bcrypt.hashpw(password, bcrypt.gensalt())
+
+
+def check_password(password, hashed):
+    def _constant_time_is_equal(a, b):
+        result = len(a) ^ len(b)
+        for x, y in zip(a, b):
+            result |= ord(x) ^ ord(y)
+        return result == 0
+    return _constant_time_is_equal(bcrypt.hashpw(password, hashed), hashed)
 
 
 def get_user(request):
