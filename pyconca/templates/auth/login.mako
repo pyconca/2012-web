@@ -15,14 +15,29 @@
             </div>
         % endif
 
-        <form action="${request.application_url}/login" method="POST">
+        <form class="form-horizontal" action="${request.application_url}/login" method="POST">
             <input type="hidden" name="came_from" value="${came_from}"/>
-            <input type="text" name="username" value="${username}"/>
-            <br/>
-            <input type="password" name="password" value="${password}"/>
-            <br/>
+
+            <div class="control-group">
+                <label class="control-label" for="username">Username</label>
+                <div class="controls">
+                    <input type="text" maxlength="100" name="username" value="${username}">
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="password">Password</label>
+                <div class="controls">
+                    <input type="text" maxlength="100" name="password">
+                    <br>
+                    <br>
+                    <a href="${request.application_url}/forgot">Forgot your password?</a>
+                </div>
+            </div>
+
             <input class="btn" type="submit" name="login.submit" value="Login"/>
         </form>
+
 
     </div>
 </div>

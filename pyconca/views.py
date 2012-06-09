@@ -47,6 +47,7 @@ def login(request):
     message = ''
     username = ''
     password = ''
+
     if 'login.submit' in request.params:
         username = request.params['username']
         password = request.params['password']
@@ -63,6 +64,28 @@ def login(request):
         came_from=came_from,
         username=username,
         password=password,
+    )
+
+    return response_
+
+@view_config(route_name='forgot', renderer='pyconca:templates/auth/forgot.mako')
+def forgot(request):
+    message = ''
+    username = ''
+
+    if 'forgot.submit' in request.params:
+        username = request.params['username']
+        user_dao = UserDao()
+        user = user_dao.get_by_username(username)
+        if user:
+            login = request.route_url('login')
+            return HTTPFound(location=login)
+        message = 'Unable to find username.'
+
+    response_ = _build_response(request)
+    response_.update(
+        message=message,
+        username=username,
     )
 
     return response_
