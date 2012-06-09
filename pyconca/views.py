@@ -44,7 +44,6 @@ def login(request):
         referrer = '/' # never use the login form itself as came_from
     came_from = request.params.get('came_from', referrer)
 
-    message = ''
     username = ''
     password = ''
 
@@ -56,11 +55,10 @@ def login(request):
         if user and check_password(password, user.password):
             headers = remember(request, user.id)
             return HTTPFound(location=came_from, headers=headers)
-        message = 'Login failed'
+        request.session.flash('Login failed', 'error')
 
     response_ = _build_response(request)
     response_.update(
-        message=message,
         came_from=came_from,
         username=username,
         password=password,
@@ -70,7 +68,6 @@ def login(request):
 
 @view_config(route_name='forgot', renderer='pyconca:templates/auth/forgot.mako')
 def forgot(request):
-    message = ''
     username = ''
 
     if 'forgot.submit' in request.params:
@@ -79,12 +76,13 @@ def forgot(request):
         user = user_dao.get_by_username(username)
         if user:
             login = request.route_url('login')
+            msg = ('Instructions on how to reset your password have been'
+                   ' sent to your email address.')
+            request.session.flash(msg, 'success')
             return HTTPFound(location=login)
-        message = 'Unable to find username.'
 
     response_ = _build_response(request)
     response_.update(
-        message=message,
         username=username,
     )
 

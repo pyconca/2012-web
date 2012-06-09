@@ -8,12 +8,7 @@
         <h1>Login</h1>
         <hr>
 
-        % if message:
-            <div class="alert alert-error">
-              ${message}
-              <br/>
-            </div>
-        % endif
+        <%include file="pyconca:templates/message.mako"/>
 
         <form class="form-horizontal" action="${request.application_url}/login" method="POST">
             <input type="hidden" name="came_from" value="${came_from}"/>
@@ -28,7 +23,7 @@
             <div class="control-group">
                 <label class="control-label" for="password">Password</label>
                 <div class="controls">
-                    <input type="text" maxlength="100" name="password">
+                    <input type="password" maxlength="100" name="password">
                     <br>
                     <br>
                     <a href="${request.application_url}/forgot">Forgot your password?</a>

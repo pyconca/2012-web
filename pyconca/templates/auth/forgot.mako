@@ -8,12 +8,7 @@
         <h1>Reset Password</h1>
         <hr>
 
-        % if message:
-            <div class="alert alert-error">
-              ${message}
-              <br/>
-            </div>
-        % endif
+        <%include file="pyconca:templates/message.mako"/>
 
         <form class="form-horizontal" action="${request.application_url}/forgot" method="POST">
             <div class="control-group">
