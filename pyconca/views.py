@@ -80,6 +80,8 @@ def forgot(request):
                    ' sent to your email address.')
             request.session.flash(msg, 'success')
             return HTTPFound(location=login)
+        msg = "Sorry. We couldn't find an account for that username."
+        request.session.flash(msg, 'error')
 
     response_ = _build_response(request)
     response_.update(
