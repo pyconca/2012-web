@@ -8,7 +8,7 @@
         <div id="user-get-result"></div>
         <br>
         <br>
-        <form method="POST" action="${user_delete_url}${id}">
+        <form id="delete-form" method="POST">
             <a class="btn btn-primary" href="${user_update_url}${id}">
                Edit
             </a>
@@ -55,6 +55,18 @@
         $.getJSON("${user_get_url}${id}.json", function(response) {
             render_templates(response);
         });
+    });
+
+    $("#delete-form").submit(function(event) {
+        event.preventDefault(); 
+        $.post("${user_delete_url}${id}.json")
+            .success(function() {
+                window.location.href = "${user_index_url}";
+             })
+            .error(function() {
+                alert("error");
+             })
+        ;
     });
 </script>
 
