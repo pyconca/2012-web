@@ -4,12 +4,10 @@ from formencode import Invalid
 from formencode import Schema
 from formencode import validators
 
-from pyramid.httpexceptions import HTTPFound
-from pyramid.security import remember
-
 from pyconca.api.base_api import BaseApi
 from pyconca.dao.user_dao import UserDao
 from pyconca.security import generate_password
+
 
 class UserApi(BaseApi):
 
@@ -18,20 +16,12 @@ class UserApi(BaseApi):
         self.dao = UserDao()
         self.schema = UserSchema
 
-    def _populate(self, user, is_create):
-        user.first_name = self.request.params['first_name']
-        user.last_name = self.request.params['last_name']
-        user.username = self.request.params['username']
-        user.email = self.request.params['email']
-        user.password = generate_password(self.request.params['password'])
-
-    def _post_save(self, id, is_create):
-        if is_create:
-            home = self.request.route_url('index')
-            headers = remember(self.request, id)
-            return HTTPFound(location=home, headers=headers)
-        else:
-            return BaseApi._post_save(self, id, is_create)
+    def _populate(self, user, form, is_create):
+        user.first_name = form['first_name']
+        user.last_name = form['last_name']
+        user.username = form['username']
+        user.email = form['email']
+        user.password = generate_password(form['password'])
 
 
 class UniqueUsername(FancyValidator):

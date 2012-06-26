@@ -70,7 +70,7 @@ def _add_api_resource(config, name):
 
 def _add_resource(config, name):
     values = {'name': name}
-    view = 'pyconca.resources.%s_view.%sView' % (name, name.capitalize())
+    view = 'pyconca.view.%s_view.%sView' % (name, name.capitalize())
     template = 'pyconca:templates/%(name)s/%(name)s_' % (values)
     factory = 'pyconca.security.%sFactory' % (name.capitalize())
 
