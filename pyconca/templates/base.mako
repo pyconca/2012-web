@@ -8,7 +8,7 @@
     <meta name="author" content="" />
 
     <!-- Le styles -->
-    <link href="${request.static_url('pyconca:static/pyconca.css')}" rel="stylesheet" />
+    <link href="${request.static_url("pyconca:static/pyconca.css")}" rel="stylesheet" />
     <style type="text/css">
       body {
         padding-top: 60px;
@@ -18,10 +18,10 @@
         padding: 9px 0;
       }
     </style>
-    <link href="${request.static_url('pyconca:static/libs/bootstrap-2.0.3/css/bootstrap-responsive.css')}" rel="stylesheet" />
-    <script src="${request.static_url('pyconca:static/libs/jquery-1.7.2.min.js')}"></script>
-    <script src="${request.static_url('pyconca:static/libs/bootstrap-2.0.3/js/bootstrap.min.js')}"></script>
-    <script src="${request.static_url('pyconca:static/libs/handlebars-0.9.0.pre.3.js')}"></script>
+    <link href="${request.static_url("pyconca:static/libs/bootstrap-2.0.3/css/bootstrap-responsive.css")}" rel="stylesheet" />
+    <script src="${request.static_url("pyconca:static/libs/jquery-1.7.2.min.js")}"></script>
+    <script src="${request.static_url("pyconca:static/libs/bootstrap-2.0.3/js/bootstrap.min.js")}"></script>
+    <script src="${request.static_url("pyconca:static/libs/handlebars-0.9.0.pre.3.js")}"></script>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>

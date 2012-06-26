@@ -44,11 +44,11 @@
     function render_templates(response) {
         var layout = $("#user-get-template").html();
         var template = Handlebars.compile(layout);
-        $("#user-get-result").html(template(response['data']));
+        $("#user-get-result").html(template(response["data"]));
 
         var layout = $("#breadcrumbs-template").html();
         var template = Handlebars.compile(layout);
-        $("#breadcrumbs-result").html(template(response['data']));
+        $("#breadcrumbs-result").html(template(response["data"]));
     }
 
     $(document).ready(function() {

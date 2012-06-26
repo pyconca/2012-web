@@ -6,7 +6,7 @@
 
     <div class="span3 logo">
       <img height="220" width="220" 
-        src="${request.static_url('pyconca:static/pyconlogo.png')}" 
+        src="${request.static_url("pyconca:static/pyconlogo.png")}" 
         alt="PyCon Canada Logo">
     </div>
 
@@ -40,7 +40,7 @@
 
     <img height="331" width="500"
       class="feature-img"
-      src="${request.static_url('pyconca:static/csi-main.jpg')}"
+      src="${request.static_url("pyconca:static/csi-main.jpg")}"
       alt="CSI main floor">
   </div>
 

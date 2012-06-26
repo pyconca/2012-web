@@ -84,7 +84,7 @@
         </div>
 
         <input class="btn btn-primary" type="submit" value="Save"/>
-        <a class="btn" type="submit" href='${user_index_url}'>Cancel</a>
+        <a class="btn" type="submit" href="${user_index_url}">Cancel</a>
     </form>
 </script>
 
@@ -92,11 +92,11 @@
     function render_templates(response) {
         var layout = $("#user-edit-template").html();
         var template = Handlebars.compile(layout);
-        $("#user-edit-result").html(template(response['data']));
+        $("#user-edit-result").html(template(response["data"]));
 
         var layout = $("#breadcrumbs-template").html();
         var template = Handlebars.compile(layout);
-        $("#breadcrumbs-result").html(template(response['data']));
+        $("#breadcrumbs-result").html(template(response["data"]));
     }
 
     $(document).ready(function() {
@@ -106,10 +106,10 @@
             });
         % else:
             var empty_user = {
-                first_name: '',
-                last_name: '',
-                username: '',
-                email: ''
+                first_name: "",
+                last_name: "",
+                username: "",
+                email: ""
             };
             var response = {data: {user: empty_user}};
             render_templates(response);

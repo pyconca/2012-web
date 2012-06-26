@@ -49,14 +49,14 @@
           <div class="span2 person-pic">
             <img class="profile-img"
               width="140" 
-              src="${request.static_url('pyconca:static/people/diana.jpg')}"
+              src="${request.static_url("pyconca:static/people/diana.jpg")}"
               alt="Nicola Yap">
           </div>
 
           <div class="span2 person-info">
             <h3>Diana Clarke</h3>
-            <h4><a href="https://twitter.com/diana_clarke"><img class="sm-icon" src="${request.static_url('pyconca:static/icons/elegantmediaicons/PNG/twitter.png')}">@diana_clarke</a></h4>
-            <a href="http://www.linkedin.com/in/dianajoanclarke"><img class="sm-icon" src="${request.static_url('pyconca:static/icons/elegantmediaicons/PNG/linkedin.png')}"></a>
+            <h4><a href="https://twitter.com/diana_clarke"><img class="sm-icon" src="${request.static_url("pyconca:static/icons/elegantmediaicons/PNG/twitter.png")}">@diana_clarke</a></h4>
+            <a href="http://www.linkedin.com/in/dianajoanclarke"><img class="sm-icon" src="${request.static_url("pyconca:static/icons/elegantmediaicons/PNG/linkedin.png")}"></a>
           </div>
 
           <div class="span8 person-bio">
@@ -70,14 +70,14 @@
           <div class="span2 person-pic">
             <img class="profile-img"
               width="140" height="140"
-              src="${request.static_url('pyconca:static/people/nicola.png')}"
+              src="${request.static_url("pyconca:static/people/nicola.png")}"
               alt="Nicola Yap">
           </div>
 
           <div class="span2 person-info">
             <h3>Nicola Yap</h3>
-            <h4><a href="https://twitter.com/ncurious"><img class="sm-icon" src="${request.static_url('pyconca:static/icons/elegantmediaicons/PNG/twitter.png')}">@ncurious</a></h4>
-            <a href="http://ca.linkedin.com/in/nicolayap"><img class="sm-icon" src="${request.static_url('pyconca:static/icons/elegantmediaicons/PNG/linkedin.png')}"></a>
+            <h4><a href="https://twitter.com/ncurious"><img class="sm-icon" src="${request.static_url("pyconca:static/icons/elegantmediaicons/PNG/twitter.png")}">@ncurious</a></h4>
+            <a href="http://ca.linkedin.com/in/nicolayap"><img class="sm-icon" src="${request.static_url("pyconca:static/icons/elegantmediaicons/PNG/linkedin.png")}"></a>
           </div>
 
           <div class="span8 person-bio">
@@ -97,14 +97,14 @@
           <div class="span2 person-pic">
             <img class="profile-img"
               width="140" height="140"
-              src="${request.static_url('pyconca:static/people/yiqing.png')}"
+              src="${request.static_url("pyconca:static/people/yiqing.png")}"
               alt="Yi Qing Sim">
           </div>
 
           <div class="span2 person-info">
             <h3>Yi Qing Sim</h3>
-            <h4><a href="https://twitter.com/yiqingsim"><img class="sm-icon" src="${request.static_url('pyconca:static/icons/elegantmediaicons/PNG/twitter.png')}">@yiqingsim</a></h4>
-            <a href="http://ysim.wordpress.com"><img class="sm-icon" src="${request.static_url('pyconca:static/icons/elegantmediaicons/PNG/wordpress.png')}"></a>
+            <h4><a href="https://twitter.com/yiqingsim"><img class="sm-icon" src="${request.static_url("pyconca:static/icons/elegantmediaicons/PNG/twitter.png")}">@yiqingsim</a></h4>
+            <a href="http://ysim.wordpress.com"><img class="sm-icon" src="${request.static_url("pyconca:static/icons/elegantmediaicons/PNG/wordpress.png")}"></a>
           </div>
 
           <div class="span8 person-bio">
@@ -119,14 +119,14 @@
           <div class="span2 person-pic">
             <img class="profile-img"
               width="140" height="140"
-              src="${request.static_url('pyconca:static/people/taavi.jpg')}"
+              src="${request.static_url("pyconca:static/people/taavi.jpg")}"
               alt="Taavi Burns">
           </div>
 
           <div class="span2 person-info">
             <h3>Taavi Burns</h3>
-            <h4><a href="https://twitter.com/jaaaarel"><img class="sm-icon" src="${request.static_url('pyconca:static/icons/elegantmediaicons/PNG/twitter.png')}">@jaaaarel</a></h4>
-            <a href="http://taaviburns.ca/blog/"><img class="sm-icon" src="${request.static_url('pyconca:static/icons/elegantmediaicons/PNG/rss.png')}"></a>
+            <h4><a href="https://twitter.com/jaaaarel"><img class="sm-icon" src="${request.static_url("pyconca:static/icons/elegantmediaicons/PNG/twitter.png")}">@jaaaarel</a></h4>
+            <a href="http://taaviburns.ca/blog/"><img class="sm-icon" src="${request.static_url("pyconca:static/icons/elegantmediaicons/PNG/rss.png")}"></a>
           </div>
 
           <div class="span8 person-bio">
@@ -141,14 +141,14 @@
           <div class="span2 person-pic">
             <img class="profile-img"
               width="140" height="140"
-              src="${request.static_url('pyconca:static/people/david.jpg')}"
+              src="${request.static_url("pyconca:static/people/david.jpg")}"
               alt="David Wolever">
           </div>
 
           <div class="span2 person-info">
             <h3>David Wolever</h3>
-            <h4><a href="https://twitter.com/wolever"><img class="sm-icon" src="${request.static_url('pyconca:static/icons/elegantmediaicons/PNG/twitter.png')}">@wolever</a></h4>
-            <a href="http://blog.codekills.net/"><img class="sm-icon" src="${request.static_url('pyconca:static/icons/elegantmediaicons/PNG/rss.png')}"></a>
+            <h4><a href="https://twitter.com/wolever"><img class="sm-icon" src="${request.static_url("pyconca:static/icons/elegantmediaicons/PNG/twitter.png")}">@wolever</a></h4>
+            <a href="http://blog.codekills.net/"><img class="sm-icon" src="${request.static_url("pyconca:static/icons/elegantmediaicons/PNG/rss.png")}"></a>
           </div>
 
           <div class="span8 person-bio">
@@ -167,7 +167,7 @@
 
         <ul>
           <li>
-            <a href="${request.static_url('pyconca:static/pyconlogo.png')}">PyCon logo design</a> by <a href="http://jess-sanson.com">Jess Sanson</a> (<a href="http://jess-sanson.com">jess-sanson.com</a>)
+            <a href="${request.static_url("pyconca:static/pyconlogo.png")}">PyCon logo design</a> by <a href="http://jess-sanson.com">Jess Sanson</a> (<a href="http://jess-sanson.com">jess-sanson.com</a>)
           </li>
           <li>
             <a href="http://www.elegantthemes.com/blog/resources/free-social-media-icon-set">Social media icons</a> by <a href="http://www.elegantthemes.com/">Elegant Themes</a>

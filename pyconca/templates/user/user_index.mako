@@ -10,7 +10,7 @@
     </div>
     <div class="span3">
         <br>
-        <a class="btn btn-primary pull-right" href='${user_create_url}'>
+        <a class="btn btn-primary pull-right" href="${user_create_url}">
            New User
         </a>
     </div>
@@ -48,7 +48,7 @@
     function render_templates(response) {
         var layout = $("#user-index-template").html();
         var template = Handlebars.compile(layout);
-        $("#user-index-result").html(template(response['data']));
+        $("#user-index-result").html(template(response["data"]));
     }
 
     $(document).ready(function() {
