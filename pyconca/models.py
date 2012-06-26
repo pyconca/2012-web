@@ -29,6 +29,7 @@ class AttrMixIn(object):
             'mysql_charset': 'utf8'
         }
 
+
 class User(AttrMixIn, Base):
     id = Column(Integer, primary_key=True)
     username = Column(String(length=100), unique=True, nullable=False)
@@ -37,6 +38,15 @@ class User(AttrMixIn, Base):
     last_name = Column(String(length=100), nullable=False)
     email = Column(String(length=100), nullable=False)
     groups = relationship('Group', secondary='user_group')
+
+    def to_dict(self):
+        return {
+            'id':self.id,
+            'username':self.username,
+            'first_name':self.first_name,
+            'last_name':self.last_name,
+            'email':self.email,
+        }
 
 
 class Group(AttrMixIn, Base):

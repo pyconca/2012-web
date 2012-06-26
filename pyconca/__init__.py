@@ -6,6 +6,7 @@ from pyramid.session import UnencryptedCookieSessionFactoryConfig
 from sqlalchemy import engine_from_config
 
 from .models import DBSession
+from .routes import _add_api_resource
 from .routes import _add_resource
 from .routes import _setup_routes
 from .security import get_user
@@ -30,6 +31,7 @@ def main(global_config, **settings):
     config.add_static_view('static', 'static', cache_max_age=3600)
 
     _setup_routes(config)
+    _add_api_resource(config, 'user')
     _add_resource(config, 'user')
 
     config.scan()

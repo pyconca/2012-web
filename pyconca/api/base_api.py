@@ -1,7 +1,6 @@
 from formencode import Invalid
 
 from pyramid.httpexceptions import HTTPFound
-from pyramid.security import authenticated_userid
 from pyramid.url import route_url
 
 import logging
@@ -13,7 +12,8 @@ log = logging.getLogger(__name__)
 class FormencodeState(object):
     pass
 
-class BaseView(object):
+
+class BaseApi(object):
 
     def __init__(self, request):
         self.request = request
@@ -30,16 +30,13 @@ class BaseView(object):
     def index(self):
         response_ = self._build_response()
         models = self.dao.index()
-        self._wrap_model_list(models)
-        response_[self.name + '_list'] = models
+        response_['data'][self.name + '_list'] = [m.to_dict() for m in models]
         return response_
 
     def get(self):
         response_ = self._build_response(self.id)
         model = self.dao.get(self.id)
-        self._wrap_model(model)
-        response_[self.name] = model
-        response_['id'] = self.id
+        response_['data'][self.name] = model.to_dict()
         return response_
 
     def delete(self):
@@ -87,7 +84,6 @@ class BaseView(object):
         response_ = self._build_response(validation_dict=validation_dict)
         self._wrap_model(model, is_create)
         response_[self.name] = model
-        response_['id'] = self.id
         return response_
 
     def _state(self, model, is_create):
@@ -116,17 +112,16 @@ class BaseView(object):
         if is_create:
             model.save_url = self._route_url('create')
         else:
-            model.save_url = self._route_url('update', id=self.id)
+            model.get_url = self._route_url('get', id=model.id)
+            model.update_url = self._route_url('update', id=model.id)
+            model.delete_url = self._route_url('delete', id=model.id)
+            model.save_url = model.update_url
 
     def _build_response(self, validation_dict=None):
         return {
-            'logged_in': authenticated_userid(self.request),
+            'errors':{},
+            'data':{},
             'validation_dict': validation_dict,
-            self.name + '_index_url': self._route_url('index'),
-            self.name + '_create_url': self._route_url('create'),
-            self.name + '_get_url': self._route_url('get', id=''),
-            self.name + '_update_url': self._route_url('update', id=''),
-            self.name + '_delete_url': self._route_url('delete', id=''),
         }
 
     def _route_url(self, action, **kwargs):
