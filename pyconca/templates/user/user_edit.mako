@@ -5,28 +5,21 @@
 <div class="row-fluid">
     <div class="span12">
         <br>
-        % if validation_dict:
-            <div class="alert alert-error">
-                % for key in validation_dict:
-                    <span>
-                      ${validation_dict[key].msg}: ${key}
-                      <br/>
-                    </span>
-                % endfor
-            </div>
-        % endif
         <div id="breadcrumbs-result"></div>
         <form id="edit-form" method="POST" class="form-horizontal">
             <div id="user-edit-result"></div>
             <input class="btn btn-primary" type="submit" value="Save"/>
-            <a class="btn" type="submit" href="${user_index_url}">Cancel</a>
+            <a class="btn" type="submit" 
+               href="${request.route_url('user_index')}">
+               Cancel
+            </a>
         </form>
      </div>
 </div>
 
 <script id="breadcrumbs-template" type="text/x-handlebars-template">
     <h1>
-        <a href=${user_index_url}>users</a> /
+        <a href="${request.route_url('user_index')}"}>users</a> /
         % if id:
             <span>{{user.username}}</span>
         % else:
@@ -99,7 +92,8 @@
 
     $(document).ready(function() {
         % if id:
-            $.getJSON("${user_get_url}${id}.json", function(response) {
+            var url = "${request.route_url('api_user_get', id=id)}";
+            $.getJSON(url, function(response) {
                 render_templates(response);
             });
         % else:
@@ -116,15 +110,23 @@
 
     $("#edit-form").submit(function(event) {
         event.preventDefault();
-        form_values = $("#edit-form").serializeArray();
-        user = {};
+        var form_values = $("#edit-form").serializeArray();
+        var user = {};
         for (var i in form_values) {
             user[form_values[i].name] = form_values[i].value;
         }
-        request = {user: user};
-        $.post("${user_save_url}.json", JSON.stringify(request))
+        var request = JSON.stringify({user: user});
+
+        % if id:
+            var url = "${request.route_url('api_user_update', id=id)}";
+        % else:
+            var url = "${request.route_url('api_user_create')}";
+        % endif
+
+        $.post(url, request)
             .success(function() {
-                window.location.href = "${user_index_url}";
+                var goto_url = "${request.route_url('user_index')}";
+                window.location.href = goto_url;
              })
             .error(function() {
                 alert("error");

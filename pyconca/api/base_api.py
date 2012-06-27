@@ -23,7 +23,7 @@ class BaseApi(object):
         if 'id' in self.request.matchdict:
             return self.request.matchdict['id']
 
-    #---------- resource views
+    #---------- views
 
     def index(self):
         response_ = self._build_response()
@@ -46,44 +46,43 @@ class BaseApi(object):
 
     def update(self):
         model = self.dao.get(self.id)
-        return self._save(model, is_create=False)
+        return self._save(model)
 
     def create(self):
         model = self.dao.create()
-        return self._save(model, is_create=True)
+        return self._save(model)
 
     #---------- abstract hooks
 
     def _configure(self):
         pass
 
-    def _populate(self, model, form, is_create):
+    def _populate(self, model, form):
         pass
 
     #---------- persist helpers
 
-    def _save(self, model, is_create):
+    def _save(self, model):
         response_ = self._build_response()
         if self.is_post:
             try:
-                self._persist(model, is_create)
-                return response_
+                self._persist(model)
             except Invalid as e:
                 for field, message in e.error_dict.items():
                     response_['errors'][field] = message.msg
         return response_
 
-    def _state(self, model, is_create):
+    def _state(self, model):
         self.state.id = self.id
 
-    def _persist(self, model, is_create):
+    def _persist(self, model):
         form = json.loads(self.request.body)[self.name]
-        self._state(model, is_create)
-        self._validate(model, form, is_create)
-        self._populate(model, form, is_create)
+        self._state(model)
+        self._validate(model, form)
+        self._populate(model, form)
         self.dao.save(model)
 
-    def _validate(self, model, form, is_create):
+    def _validate(self, model, form):
         self.schema.to_python(form, self.state)
 
     #---------- response helpers

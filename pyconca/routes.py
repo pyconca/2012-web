@@ -12,7 +12,7 @@ def _add_api_resource(config, name):
     view = 'pyconca.api.%s_api.%sApi' % (name, name.capitalize())
     factory = 'pyconca.security.%sFactory' % (name.capitalize())
 
-    route_name = name + '_index' + '.json'
+    route_name = 'api_%(name)s_index' % (values)
     config.add_route(
         route_name, '/%(name)s.json' % (values),
 #        factory=factory
@@ -23,7 +23,7 @@ def _add_api_resource(config, name):
 #        permission=route_name
     )
 
-    route_name = name + '_get' + '.json'
+    route_name = 'api_%(name)s_get' % (values)
     config.add_route(
         route_name, '/%(name)s/{id}.json' % (values),
 #        factory=factory
@@ -34,7 +34,7 @@ def _add_api_resource(config, name):
 #        permission=route_name,
     )
 
-    route_name = name + '_create' + '.json'
+    route_name = 'api_%(name)s_create' % (values)
     config.add_route(
         route_name, '/new/%(name)s.json' % (values),
 #        factory=factory
@@ -45,7 +45,7 @@ def _add_api_resource(config, name):
 #        permission=route_name,
     )
 
-    route_name = name + '_update' + '.json'
+    route_name = 'api_%(name)s_update' % (values)
     config.add_route(
         route_name, '/edit/%(name)s/{id}.json' % (values),
 #        factory=factory
@@ -56,7 +56,7 @@ def _add_api_resource(config, name):
 #        permission=route_name,
     )
 
-    route_name = name + '_delete' + '.json'
+    route_name = 'api_%(name)s_delete' % (values)
     config.add_route(
         route_name, '/delete/%(name)s/{id}.json' % (values),
 #        factory=factory
@@ -74,36 +74,11 @@ def _add_resource(config, name):
     template = 'pyconca:templates/%(name)s/%(name)s_' % (values)
     factory = 'pyconca.security.%sFactory' % (name.capitalize())
 
-    #---------- routes
-
-    config.add_route(
-        name + '_index', '/%(name)s' % (values),
-        factory=factory
-    )
-
-    config.add_route(
-        name + '_create', '/new/%(name)s' % (values),
-        factory=factory
-    )
-
-    config.add_route(
-        name + '_get', '/%(name)s/{id}' % (values),
-        factory=factory
-    )
-
-    config.add_route(
-        name + '_delete', '/delete/%(name)s/{id}' % (values),
-        factory=factory
-    )
-
-    config.add_route(
-        name + '_update', '/edit/%(name)s/{id}' % (values),
-        factory=factory
-    )
-
-    #---------- views
-
     route_name = name + '_index'
+    config.add_route(
+        route_name, '/%(name)s' % (values),
+        factory=factory
+    )
     config.add_view(view, attr='index',
         route_name=route_name,
         renderer=template + 'index.mako',
@@ -111,6 +86,10 @@ def _add_resource(config, name):
     )
 
     route_name = name + '_get'
+    config.add_route(
+        route_name, '/%(name)s/{id}' % (values),
+        factory=factory
+    )
     config.add_view(view, attr='get',
         route_name=route_name,
         renderer=template + 'get.mako',
@@ -118,6 +97,10 @@ def _add_resource(config, name):
     )
 
     route_name = name + '_create'
+    config.add_route(
+        route_name, '/new/%(name)s' % (values),
+        factory=factory
+    )
     config.add_view(view, attr='create',
         route_name=route_name,
         renderer=template + 'edit.mako',
@@ -125,14 +108,13 @@ def _add_resource(config, name):
     )
 
     route_name = name + '_update'
+    config.add_route(
+        route_name, '/edit/%(name)s/{id}' % (values),
+        factory=factory
+    )
     config.add_view(view, attr='update',
         route_name=route_name,
         renderer=template + 'edit.mako',
         permission=route_name,
     )
 
-    route_name = name + '_delete'
-    config.add_view(view, attr='delete',
-        route_name=route_name,
-        permission=route_name,
-    )

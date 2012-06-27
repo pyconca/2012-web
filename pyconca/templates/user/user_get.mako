@@ -9,7 +9,8 @@
         <br>
         <br>
         <form id="delete-form" method="POST">
-            <a class="btn btn-primary" href="${user_update_url}${id}">
+            <a class="btn btn-primary" 
+               href="${request.route_url('user_update', id=id)}">
                Edit
             </a>
             <input class="btn" type="submit" value="Delete"/>
@@ -20,7 +21,7 @@
 <script id="breadcrumbs-template" type="text/x-handlebars-template">
     <br>
     <h1>
-        <a href="${user_index_url}">users</a>
+        <a href="${request.route_url('user_index')}">users</a>
         <span> / {{user.username}}</span>
     </h1>
     <hr>
@@ -52,16 +53,19 @@
     }
 
     $(document).ready(function() {
-        $.getJSON("${user_get_url}${id}.json", function(response) {
+        var url = "${request.route_url('api_user_get', id=id)}";
+        $.getJSON(url, function(response) {
             render_templates(response);
         });
     });
 
     $("#delete-form").submit(function(event) {
-        event.preventDefault(); 
-        $.post("${user_delete_url}${id}.json")
+        event.preventDefault();
+        var url = "${request.route_url('api_user_delete', id=id)}"; 
+        $.post(url)
             .success(function() {
-                window.location.href = "${user_index_url}";
+                var goto_url = "${request.route_url('user_index')}";
+                window.location.href = goto_url;
              })
             .error(function() {
                 alert("error");

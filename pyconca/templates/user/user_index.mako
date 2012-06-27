@@ -10,7 +10,8 @@
     </div>
     <div class="span3">
         <br>
-        <a class="btn btn-primary pull-right" href="${user_create_url}">
+        <a class="btn btn-primary pull-right" 
+           href="${request.route_url('user_create')}">
            New User
         </a>
     </div>
@@ -33,7 +34,7 @@
         {{#user_list}}
         <tr>
           <td>
-            <a href="${user_get_url}{{id}}">
+            <a href="${request.route_url('user_index')}/{{id}}">
                 {{first_name}} {{last_name}}
             </a>
           </td>
@@ -52,7 +53,8 @@
     }
 
     $(document).ready(function() {
-        $.getJSON("${user_index_url}.json", function(response) {
+        var url = "${request.route_url('api_user_index')}";
+        $.getJSON(url, function(response) {
             render_templates(response);
         });
     });
