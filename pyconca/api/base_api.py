@@ -3,6 +3,8 @@ import logging
 
 from formencode import Invalid
 
+from pyramid.response import Response
+
 
 log = logging.getLogger(__name__)
 
@@ -17,6 +19,7 @@ class BaseApi(object):
         self.request = request
         self._configure()
         self.state = FormencodeState()
+        self.body = {'errors':{}, 'data':{}}
 
     @property
     def id(self):
@@ -26,31 +29,40 @@ class BaseApi(object):
     #---------- views
 
     def index(self):
-        response_ = self._build_response()
         models = self.dao.index()
-        response_['data'][self.name + '_list'] = [m.to_dict() for m in models]
-        return response_
+        self.body['data'][self.name + '_list'] = [m.to_dict() for m in models]
+        return self._respond(200)
 
     def get(self):
-        response_ = self._build_response()
         model = self.dao.get(self.id)
-        response_['data'][self.name] = model.to_dict()
-        return response_
+        self.body['data'][self.name] = model.to_dict()
+        return self._respond(200)
 
     def delete(self):
-        response_ = self._build_response()
         if self.is_post:
             model = self.dao.get(self.id)
             self.dao.delete(model)
-        return response_
+            return self._respond(200)
 
     def update(self):
-        model = self.dao.get(self.id)
-        return self._save(model)
+        if self.is_post:
+            model = self.dao.get(self.id)
+            try:
+                self._persist(model)
+                return self._respond(200)
+            except Invalid as invalid_exception:
+                self._add_validation_errors(invalid_exception)
+                return self._respond(400)
 
     def create(self):
-        model = self.dao.create()
-        return self._save(model)
+        if self.is_post:
+            model = self.dao.create()
+            try:
+                self._persist(model)
+                return self._respond(201)
+            except Invalid as invalid_exception:
+                self._add_validation_errors(invalid_exception)
+                return self._respond(400)
 
     #---------- abstract hooks
 
@@ -61,16 +73,6 @@ class BaseApi(object):
         pass
 
     #---------- persist helpers
-
-    def _save(self, model):
-        response_ = self._build_response()
-        if self.is_post:
-            try:
-                self._persist(model)
-            except Invalid as e:
-                for field, message in e.error_dict.items():
-                    response_['errors'][field] = message.msg
-        return response_
 
     def _state(self, model):
         self.state.id = self.id
@@ -87,8 +89,15 @@ class BaseApi(object):
 
     #---------- response helpers
 
-    def _build_response(self):
-        return {'errors':{}, 'data':{}}
+    def _add_validation_errors(self, invalid_exception):
+        for field, message in invalid_exception.error_dict.items():
+            self.body['errors'][field] = message.msg
+
+    def _respond(self, status):
+        return Response(
+            status=status,
+            body=json.dumps(self.body),
+            content_type='application/json')
 
     #---------- miscellaneous helpers
 
