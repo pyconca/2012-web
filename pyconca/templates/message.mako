@@ -10,3 +10,14 @@
         </div>
    % endif
 % endfor
+
+<script id="validation-errors-template" type="text/x-handlebars-template">
+    <div class="alert alert-error">
+    {{#errors}}
+        {{field}} - {{message}}
+        <br>
+    {{/errors}}
+    </div>
+</script>
+
+<div id="validation-errors-result"></div>

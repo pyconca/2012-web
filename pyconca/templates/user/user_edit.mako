@@ -6,6 +6,7 @@
     <div class="span12">
         <br>
         <div id="breadcrumbs-result"></div>
+        <%include file="pyconca:templates/message.mako"/>
         <form id="edit-form" method="POST" class="form-horizontal">
             <div id="user-edit-result"></div>
             <input class="btn btn-primary" type="submit" value="Save"/>
@@ -130,8 +131,11 @@
                 var goto_url = "${request.route_url('user_index')}";
                 window.location.href = goto_url;
              })
-            .error(function() {
-                alert("error");
+            .error(function(xhr) {
+                response = $.parseJSON(xhr.responseText);
+                var layout = $("#validation-errors-template").html();
+                var template = Handlebars.compile(layout);
+                $("#validation-errors-result").html(template(response));
              })
         ;
     });

@@ -19,7 +19,7 @@ class BaseApi(object):
         self.request = request
         self._configure()
         self.state = FormencodeState()
-        self.body = {'errors':{}, 'data':{}}
+        self.body = {'errors':[], 'data':{}}
 
     @property
     def id(self):
@@ -91,7 +91,8 @@ class BaseApi(object):
 
     def _add_validation_errors(self, invalid_exception):
         for field, message in invalid_exception.error_dict.items():
-            self.body['errors'][field] = message.msg
+            error = {'field':field, 'message':message.msg}
+            self.body['errors'].append(error)
 
     def _respond(self, status):
         return Response(
