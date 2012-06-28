@@ -23,13 +23,13 @@ class BaseView(object):
         return self._build_response()
 
     def get(self):
-        return self._build_response(self.id)
+        return self._build_response(id=self.id)
 
     def update(self):
-        return self._build_response(self.id)
+        return self._build_response(id=self.id, is_create=False)
 
     def create(self):
-        return self._build_response()
+        return self._build_response(is_create=True)
 
     #---------- abstract hooks
 
@@ -38,8 +38,7 @@ class BaseView(object):
 
     #---------- response helpers
 
-    def _build_response(self, id=None):
+    def _build_response(self, **kwargs):
         response_ = {'logged_in': authenticated_userid(self.request)}
-        if id:
-            response_['id'] = id
+        response_.update(kwargs)
         return response_

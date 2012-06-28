@@ -20,10 +20,10 @@
 <script id="breadcrumbs-template" type="text/x-handlebars-template">
     <h1>
         <a href="${request.route_url('user_index')}"}>users</a> /
-        % if id:
-            <span>{{user.username}}</span>
-        % else:
+        % if is_create:
             <span>create</span>
+        % else:
+            <span>{{user.username}}</span>
         % endif
     </h1>
     <hr>
@@ -71,7 +71,9 @@
     </div>
 
     <div class="control-group">
-        <label class="control-label" for="password_confirm">Confirm Password</label>
+        <label class="control-label" for="password_confirm">
+            Confirm Password
+        </label>
         <div class="controls">
             <input type="password" maxlength="50" 
                    name="password_confirm" value="">
@@ -91,12 +93,7 @@
     }
 
     $(document).ready(function() {
-        % if id:
-            var url = "${request.route_url('api_user_get', id=id)}";
-            $.getJSON(url, function(response) {
-                render_templates(response);
-            });
-        % else:
+        % if is_create:
             var empty_user = {
                 first_name: "",
                 last_name: "",
@@ -105,6 +102,11 @@
             };
             var response = {data: {user: empty_user}};
             render_templates(response);
+        % else:
+            var url = "${request.route_url('api_user_get', id=id)}";
+            $.getJSON(url, function(response) {
+                render_templates(response);
+            });
         % endif:
     });
 
@@ -117,10 +119,10 @@
         }
         var request = JSON.stringify({user: user});
 
-        % if id:
-            var url = "${request.route_url('api_user_update', id=id)}";
-        % else:
+        % if is_create:
             var url = "${request.route_url('api_user_create')}";
+        % else:
+            var url = "${request.route_url('api_user_update', id=id)}";
         % endif
 
         $.post(url, request)
