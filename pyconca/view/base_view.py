@@ -11,6 +11,7 @@ class BaseView(object):
     def __init__(self, request):
         self.request = request
         self._configure()
+        self.body = {'logged_in': authenticated_userid(self.request)}
 
     @property
     def id(self):
@@ -20,16 +21,16 @@ class BaseView(object):
     #---------- views
 
     def index(self):
-        return self._build_response()
+        return self._respond()
 
     def get(self):
-        return self._build_response(id=self.id)
+        return self._respond(id=self.id)
 
     def update(self):
-        return self._build_response(id=self.id, is_create=False)
+        return self._respond(id=self.id, is_create=False)
 
     def create(self):
-        return self._build_response(is_create=True)
+        return self._respond(is_create=True)
 
     #---------- abstract hooks
 
@@ -38,7 +39,6 @@ class BaseView(object):
 
     #---------- response helpers
 
-    def _build_response(self, **kwargs):
-        response_ = {'logged_in': authenticated_userid(self.request)}
-        response_.update(kwargs)
-        return response_
+    def _respond(self, **kwargs):
+        self.body.update(kwargs)
+        return self.body
