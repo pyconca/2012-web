@@ -9,6 +9,10 @@ from pyconca.dao.user_dao import UserDao
 from pyconca.security import check_password
 
 
+def is_not_api_request(info, request):
+    return request['PATH_INFO'].endswith('.json') == False
+
+
 @view_config(route_name='index', renderer='index.mako')
 def index(request):
     return _build_response(request)
@@ -36,7 +40,9 @@ def logout(request):
 
 
 @view_config(route_name='login', renderer='pyconca:templates/auth/login.mako')
-@forbidden_view_config(renderer='pyconca:templates/auth/login.mako')
+@forbidden_view_config(
+        renderer='pyconca:templates/auth/login.mako',
+        custom_predicates=(is_not_api_request,))
 def login(request):
     login_url = request.route_url('login')
     referrer = request.url
