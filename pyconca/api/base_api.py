@@ -8,6 +8,10 @@ from pyramid.response import Response
 
 log = logging.getLogger(__name__)
 
+HTTP_STATUS_200 = '200 OK'
+HTTP_STATUS_201 = '201 Created'
+HTTP_STATUS_400 = '400 Bad Request'
+
 
 class FormencodeState(object):
     pass
@@ -31,38 +35,35 @@ class BaseApi(object):
     def index(self):
         models = self.dao.index()
         self.body['data'][self.name + '_list'] = [m.to_dict() for m in models]
-        return self._respond(200)
+        return self._respond(HTTP_STATUS_200)
 
     def get(self):
         model = self.dao.get(self.id)
         self.body['data'][self.name] = model.to_dict()
-        return self._respond(200)
+        return self._respond(HTTP_STATUS_200)
 
     def delete(self):
-        if self.is_post:
-            model = self.dao.get(self.id)
-            self.dao.delete(model)
-            return self._respond(200)
+        model = self.dao.get(self.id)
+        self.dao.delete(model)
+        return self._respond(HTTP_STATUS_200)
 
     def update(self):
-        if self.is_post:
-            model = self.dao.get(self.id)
-            try:
-                self._persist(model)
-                return self._respond(200)
-            except Invalid as invalid_exception:
-                self._add_validation_errors(invalid_exception)
-                return self._respond(400)
+        model = self.dao.get(self.id)
+        try:
+            self._persist(model)
+            return self._respond(HTTP_STATUS_200)
+        except Invalid as invalid_exception:
+            self._add_validation_errors(invalid_exception)
+            return self._respond(HTTP_STATUS_400)
 
     def create(self):
-        if self.is_post:
-            model = self.dao.create()
-            try:
-                self._persist(model)
-                return self._respond(201)
-            except Invalid as invalid_exception:
-                self._add_validation_errors(invalid_exception)
-                return self._respond(400)
+        model = self.dao.create()
+        try:
+            self._persist(model)
+            return self._respond(HTTP_STATUS_201)
+        except Invalid as invalid_exception:
+            self._add_validation_errors(invalid_exception)
+            return self._respond(HTTP_STATUS_400)
 
     #---------- abstract hooks
 
@@ -99,9 +100,3 @@ class BaseApi(object):
             status=status,
             body=json.dumps(self.body),
             content_type='application/json')
-
-    #---------- miscellaneous helpers
-
-    @property
-    def is_post(self):
-        return self.request.environ['REQUEST_METHOD'] == 'POST'

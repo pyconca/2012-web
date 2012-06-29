@@ -56,6 +56,12 @@ class UserFactory(object):
         (Allow, 'group:admin', 'user_get'),
         (Allow, 'group:admin', 'user_update'),
         (Allow, 'group:admin', 'user_delete'),
+
+        (Allow, Everyone, 'api_user_create'),
+        (Allow, 'group:admin', 'api_user_index'),
+        (Allow, 'group:admin', 'api_user_get'),
+        (Allow, 'group:admin', 'api_user_update'),
+        (Allow, 'group:admin', 'api_user_delete'),
     ]
 
     def __init__(self, request):
@@ -64,4 +70,7 @@ class UserFactory(object):
         if (user_id and user and 'id' in request.matchdict and
             user.id == int(request.matchdict['id'])):
                 self.__acl__.append((Allow, user_id, 'user_get'))
+                self.__acl__.append((Allow, user_id, 'api_user_get'))
+
                 self.__acl__.append((Allow, user_id, 'user_update'))
+                self.__acl__.append((Allow, user_id, 'api_user_update'))
