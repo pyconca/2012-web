@@ -58,7 +58,7 @@
               <li class="divider-vertical"></li>
 
               <li>
-                <a class="nav-link" href="${request.application_url}/about">
+                <a class="nav-link" href="#">
                     <i class="icon-info-sign icon-white nav-icon"></i>
                     About
                 </a>
