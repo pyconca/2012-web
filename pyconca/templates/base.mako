@@ -32,7 +32,7 @@
 
   </head>
 
-  <body class="main-body">
+  <body>
 
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
@@ -68,7 +68,7 @@
 
               <li>
                 <a class="nav-link" href="#">
-                    <i class="icon-asterisk icon-white nav-icon"></i>
+                    <i class="icon-map-marker icon-white nav-icon"></i>
                     Venue
                 </a>
               </li>
@@ -96,7 +96,7 @@
               <li>
                 <a class="nav-link" href="${request.application_url}/new/user">
                     <i class="icon-star-empty icon-white nav-icon"></i>
-                    Create Account
+                    Sign Up
                 </a>
               </li>
 

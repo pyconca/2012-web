@@ -5,12 +5,12 @@
 <div class="row-fluid">
     <div class="span9">
         <br>
-        <h1>users</h1>
+        <h1>Users</h1>
         <br>
     </div>
     <div class="span3">
         <br>
-        <a class="btn btn-primary pull-right" 
+        <a class="btn btn-inverse pull-right" 
            href="${request.route_url('user_create')}">
            New User
         </a>

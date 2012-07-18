@@ -9,7 +9,7 @@
         <%include file="pyconca:templates/message.mako"/>
         <form id="edit-form" method="POST" class="form-horizontal">
             <div id="user-edit-result"></div>
-            <input class="btn btn-primary" type="submit" value="Save"/>
+            <input class="btn btn-inverse" type="submit" value="Save"/>
             <a class="btn" type="submit" 
                href="${request.route_url('user_index')}">
                Cancel
@@ -19,14 +19,17 @@
 </div>
 
 <script id="breadcrumbs-template" type="text/x-handlebars-template">
-    <h1>
-        <a href="${request.route_url('user_index')}"}>users</a> /
+    <ul class="breadcrumb">
+        <li><a href="${request.route_url('user_index')}"}>users</a></li>
+        <span class="divider">/</span>
         % if is_create:
-            <span>create</span>
+            <li>create</li>
         % else:
-            <span>{{user.username}}</span>
+            <li>edit</li>
+            <span class="divider">/</span>
+            <li>{{user.username}}</li>
         % endif
-    </h1>
+    </ul>
     <hr>
 </script>
 

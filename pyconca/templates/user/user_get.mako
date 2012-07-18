@@ -9,7 +9,7 @@
         <br>
         <br>
         <form id="delete-form" method="POST">
-            <a class="btn btn-primary" 
+            <a class="btn btn-inverse" 
                href="${request.route_url('user_update', id=id)}">
                Edit
             </a>
@@ -20,10 +20,11 @@
 
 <script id="breadcrumbs-template" type="text/x-handlebars-template">
     <br>
-    <h1>
-        <a href="${request.route_url('user_index')}">users</a>
-        <span> / {{user.username}}</span>
-    </h1>
+    <ul class="breadcrumb">
+        <li><a href="${request.route_url('user_index')}">users</a></li>
+        <span class="divider">/</span>
+        <li>{{user.username}}</li>
+    </ul>
     <hr>
 </script>
 
