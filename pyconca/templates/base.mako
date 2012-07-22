@@ -67,7 +67,7 @@
               <li class="divider-vertical"></li>
 
               <li>
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="${request.application_url}/venue">
                     <i class="icon-map-marker icon-white nav-icon"></i>
                     Venue
                 </a>
