@@ -55,7 +55,7 @@
               <li class="divider-vertical"></li>
 
               <li>
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="${request.application_url}/about">
                     <i class="icon-info-sign icon-white nav-icon"></i>
                     About
                 </a>
@@ -67,6 +67,15 @@
                 <a class="nav-link" href="${request.application_url}/venue">
                     <i class="icon-map-marker icon-white nav-icon"></i>
                     Venue
+                </a>
+              </li>
+
+              <li class="divider-vertical"></li>
+
+              <li>
+                <a class="nav-link" href="${request.application_url}/sponsor">
+                    <i class="icon-heart icon-white nav-icon"></i>
+                    Sponsors
                 </a>
               </li>
 

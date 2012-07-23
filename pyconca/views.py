@@ -28,6 +28,10 @@ def venue(request):
     return _build_response(request)
 
 
+@view_config(route_name='sponsor', renderer='sponsor.mako')
+def sponsor(request):
+    return _build_response(request)
+
 def _build_response(request):
     return {'logged_in': authenticated_userid(request)}
 

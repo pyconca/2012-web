@@ -2,6 +2,19 @@
 
 <%block name="content">
 
+
+<div class="row-fluid">
+  <div class="span12 hero-unit title-container" style="opacity: 0.7; color: white;">
+    <div class="pull-right">
+        <h1>Venue</h1>
+        <br>
+        <h2>206 Beverley St.</h2>
+        <h2>Toronto, Canada</h2>
+    </div>
+  </div>
+</div>
+<br>
+
 <div class="data-container">
 
   <div class="row-fluid">
