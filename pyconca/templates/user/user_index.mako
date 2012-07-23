@@ -2,6 +2,8 @@
 
 <%block name="content">
 
+<div class="data-container">
+
 <div class="row-fluid">
     <div class="span9">
         <br>
@@ -22,6 +24,8 @@
     <div class="span12">
         <div id="user-index-result"></div>
     </div>
+</div>
+
 </div>
 
 <script id="user-index-template" type="text/x-handlebars-template">

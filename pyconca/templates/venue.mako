@@ -2,6 +2,8 @@
 
 <%block name="content">
 
+<div class="data-container">
+
   <div class="row-fluid">
     <div class="span9">
       <br /><br />
@@ -58,6 +60,8 @@
       </ul>
     </div>
   </div>
+
+</div>
 
   <script>
     function createSidenav() {

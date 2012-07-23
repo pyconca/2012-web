@@ -1,53 +1,46 @@
 @import url(libs/bootstrap-2.0.3/css/bootstrap.css);
 
 body {
-  background: #333;
-  font-family: Arial, sans-serif;
+  background: black;
 }
 
 .main-body {
   padding-top: 0;
   margin-top: 40px;
-  background-color: #fff;
 }
 
 .main-container {
-  background-color: #fff;
+  opacity: 0.95;
+  background: url('toronto.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: auto;
+  background-position: bottom;
+  padding: 20px;
+  min-height: 500px;
+}
+
+.data-container {
+  width: 80%;
+  opacity: 0.90;
+  background: white;
+  padding: 20px;
+  margin: auto;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  min-height: 400px;
 }
 
 footer {
-  text-align: center;
-  height: 92px;
+  background: black;
+  margin: auto;
+  width: 90%;
 }
 
-.hero-unit-small {
-  padding: 6px;
-  margin-bottom: 6px;
-  color: #333;
-  background-color: #fff;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
+.contact-info {
+  color: #999;
 }
 
-.hero-unit-small p {
-  padding: 12px;
-}
-
-.hero-unit-small dl {
-  padding: 12px;
-}
-
-.hero-unit-small h4 {
-  padding: 6px;
-  margin-bottom: 6px;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  color: #fff;
-  background-color: #999;
-  letter-spacing: 3px;
-  border-style: solid;
-  border-color: #666;
-  border-width: thin;
-}

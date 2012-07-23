@@ -2,20 +2,24 @@
 
 <%block name="content">
 
-<div class="row-fluid">
-    <div class="span12">
-        <br>
-        <div id="breadcrumbs-result"></div>
-        <%include file="pyconca:templates/message.mako"/>
-        <form id="edit-form" method="POST" class="form-horizontal">
-            <div id="user-edit-result"></div>
-            <input class="btn btn-inverse" type="submit" value="Save"/>
-            <a class="btn" type="submit" 
-               href="${request.route_url('user_index')}">
-               Cancel
-            </a>
-        </form>
-     </div>
+<div class="data-container">
+
+    <div class="row-fluid">
+        <div class="span12">
+            <br>
+            <div id="breadcrumbs-result"></div>
+            <%include file="pyconca:templates/message.mako"/>
+            <form id="edit-form" method="POST" class="form-horizontal">
+                <div id="user-edit-result"></div>
+                <input class="btn btn-inverse" type="submit" value="Save"/>
+                <a class="btn" type="submit" 
+                   href="${request.route_url('user_index')}">
+                   Cancel
+                </a>
+            </form>
+         </div>
+    </div>
+
 </div>
 
 <script id="breadcrumbs-template" type="text/x-handlebars-template">

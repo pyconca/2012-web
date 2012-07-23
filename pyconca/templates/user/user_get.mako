@@ -1,21 +1,24 @@
 <%inherit file="pyconca:templates/base.mako"/>
 
 <%block name="content">
+<div class="data-container">
 
-<div class="row-fluid">
-    <div class="span12">
-        <div id="breadcrumbs-result"></div>
-        <div id="user-get-result"></div>
-        <br>
-        <br>
-        <form id="delete-form" method="POST">
-            <a class="btn btn-inverse" 
-               href="${request.route_url('user_update', id=id)}">
-               Edit
-            </a>
-            <input class="btn" type="submit" value="Delete"/>
-        </form>
+    <div class="row-fluid">
+        <div class="span12">
+            <div id="breadcrumbs-result"></div>
+            <div id="user-get-result"></div>
+            <br>
+            <br>
+            <form id="delete-form" method="POST">
+                <a class="btn btn-inverse" 
+                   href="${request.route_url('user_update', id=id)}">
+                   Edit
+                </a>
+                <input class="btn" type="submit" value="Delete"/>
+            </form>
+        </div>
     </div>
+
 </div>
 
 <script id="breadcrumbs-template" type="text/x-handlebars-template">

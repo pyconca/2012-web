@@ -2,39 +2,42 @@
 
 <%block name="content">
 
-<div class="row-fluid">
-    <div class="span12">
-        <br>
-        <h1>Login</h1>
-        <hr>
+<div class="data-container">
 
-        <%include file="pyconca:templates/message.mako"/>
+    <div class="row-fluid">
+        <div class="span12">
+            <br>
+            <h1>Login</h1>
+            <hr>
 
-        <form class="form-horizontal" action="${request.application_url}/login" method="POST">
-            <input type="hidden" name="came_from" value="${came_from}"/>
+            <%include file="pyconca:templates/message.mako"/>
 
-            <div class="control-group">
-                <label class="control-label" for="username">Username</label>
-                <div class="controls">
-                    <input type="text" maxlength="100" name="username" value="${username}">
+            <form class="form-horizontal" action="${request.application_url}/login" method="POST">
+                <input type="hidden" name="came_from" value="${came_from}"/>
+
+                <div class="control-group">
+                    <label class="control-label" for="username">Username</label>
+                    <div class="controls">
+                        <input type="text" maxlength="100" name="username" value="${username}">
+                    </div>
                 </div>
-            </div>
 
-            <div class="control-group">
-                <label class="control-label" for="password">Password</label>
-                <div class="controls">
-                    <input type="password" maxlength="100" name="password">
-                    <br>
-                    <br>
-                    <a href="${request.application_url}/forgot">Forgot your password?</a>
+                <div class="control-group">
+                    <label class="control-label" for="password">Password</label>
+                    <div class="controls">
+                        <input type="password" maxlength="100" name="password">
+                        <br>
+                        <br>
+                        <a href="${request.application_url}/forgot">Forgot your password?</a>
+                    </div>
                 </div>
-            </div>
 
-            <input class="btn" type="submit" name="login.submit" value="Login"/>
-        </form>
+                <input class="btn" type="submit" name="login.submit" value="Login"/>
+            </form>
 
-
+        </div>
     </div>
+
 </div>
 
 </%block>

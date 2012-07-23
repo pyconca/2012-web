@@ -120,13 +120,10 @@
         <%block name="content"/>
       </div>
 
-      <hr />
-
-      <footer>
-        <h6>&copy; PyCon Canada 2012</h6>
-      </footer>
-
     </div><!--/.fluid-container-->
+
+  <footer>
+  </footer>
 
   </body>
 </html>
