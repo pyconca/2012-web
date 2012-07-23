@@ -32,7 +32,7 @@
 
   </head>
 
-  <body>
+  <body class="main-body">
 
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
@@ -43,11 +43,8 @@
             <span class="icon-bar"></span>
           </a>
 
-          <a class="brand" href="${request.application_url}">PyCon Canada</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="divider-vertical"></li>
-
               <li>
                 <a class="nav-link" href="${request.application_url}">
                     <i class="icon-home icon-white nav-icon"></i>
