@@ -4,8 +4,9 @@ def _setup_routes(config):
     config.add_route('logout', '/logout')
     config.add_route('forgot', '/forgot')
     config.add_route('about', '/about')
-    config.add_route('sponsor', '/sponsor')
     config.add_route('venue', '/venue')
+    config.add_route('schedule ', '/schedule')
+    config.add_route('sponsor', '/sponsor')
 
 
 def _add_api_resource(config, name):

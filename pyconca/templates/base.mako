@@ -73,6 +73,15 @@
               <li class="divider-vertical"></li>
 
               <li>
+                <a class="nav-link" href="${request.application_url}/schedule">
+                    <i class="icon-time icon-white nav-icon"></i>
+                    Schedule
+                </a>
+              </li>
+
+              <li class="divider-vertical"></li>
+
+              <li>
                 <a class="nav-link" href="${request.application_url}/sponsor">
                     <i class="icon-heart icon-white nav-icon"></i>
                     Sponsors

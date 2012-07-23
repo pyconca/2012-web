@@ -28,6 +28,11 @@ def venue(request):
     return _build_response(request)
 
 
+@view_config(route_name='schedule', renderer='schedule.mako')
+def schedule(request):
+    return _build_response(request)
+
+
 @view_config(route_name='sponsor', renderer='sponsor.mako')
 def sponsor(request):
     return _build_response(request)

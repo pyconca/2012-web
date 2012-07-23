@@ -5,7 +5,7 @@
 
 <div class="row-fluid">
   <div class="span12 hero-unit title-container" style="opacity: 0.7; color: white;">
-    <h1 class="pull-right">Sponsors</h1>
+    <h1 class="pull-right">Schedule</h1>
   </div>
 </div>
 <br>
