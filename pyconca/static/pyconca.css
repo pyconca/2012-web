@@ -9,7 +9,7 @@ body {
   margin-top: 40px;
 }
 
-.main-container {
+.splash-container {
   opacity: 0.95;
   background: url('toronto.jpg') no-repeat center center;
   -webkit-background-size: cover;
@@ -22,16 +22,11 @@ body {
   min-height: 500px;
 }
 
-.data-container {
-  width: 80%;
-  opacity: 0.90;
+.main-container {
   background: white;
   padding: 20px;
   margin: auto;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-  min-height: 400px;
+  min-height: 600px;
 }
 
 footer {

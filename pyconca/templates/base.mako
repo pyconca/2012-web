@@ -114,7 +114,11 @@
       </div>
     </div>
 
-    <div class="container-fluid main-container">
+    % if request.url.rstrip('/') == request.application_url:
+        <div class="container-fluid splash-container">
+    % else:
+        <div class="container-fluid main-container">
+    % endif
 
       <div>
         <%block name="content"/>
