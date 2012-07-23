@@ -6,7 +6,8 @@ def _setup_routes(config):
     config.add_route('about', '/about')
     config.add_route('venue', '/venue')
     config.add_route('schedule', '/schedule')
-    config.add_route('sponsor', '/sponsor')
+    config.add_route('speakers', '/speakers')
+    config.add_route('sponsors', '/sponsors')
 
 
 def _add_api_resource(config, name):

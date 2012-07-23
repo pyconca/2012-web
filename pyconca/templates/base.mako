@@ -82,7 +82,16 @@
               <li class="divider-vertical"></li>
 
               <li>
-                <a class="nav-link" href="${request.application_url}/sponsor">
+                <a class="nav-link" href="${request.application_url}/speakers">
+                    <i class="icon-bullhorn icon-white nav-icon"></i>
+                    Speakers
+                </a>
+              </li>
+
+              <li class="divider-vertical"></li>
+
+              <li>
+                <a class="nav-link" href="${request.application_url}/sponsors">
                     <i class="icon-heart icon-white nav-icon"></i>
                     Sponsors
                 </a>

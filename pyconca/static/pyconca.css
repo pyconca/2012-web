@@ -39,7 +39,7 @@ body {
 
 .data-container {
   opacity: 0.90;
-  background: white;
+  background-color: #eee;
   padding: 20px;
   margin: auto;
   -webkit-border-radius: 6px;

@@ -33,8 +33,13 @@ def schedule(request):
     return _build_response(request)
 
 
-@view_config(route_name='sponsor', renderer='sponsor.mako')
-def sponsor(request):
+@view_config(route_name='speakers', renderer='speakers.mako')
+def speakers(request):
+    return _build_response(request)
+
+
+@view_config(route_name='sponsors', renderer='sponsors.mako')
+def sponsors(request):
     return _build_response(request)
 
 def _build_response(request):
