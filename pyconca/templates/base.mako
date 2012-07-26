@@ -141,20 +141,56 @@
       </div>
     </div>
 
-    % if request.url.rstrip('/') == request.application_url:
-        <div class="container-fluid splash-container">
-    % else:
-        <div class="container-fluid main-container">
-    % endif
+    <div>
+      <%block name="content"/>
+    </div>
+    
+    <footer>
+      <hr>
+  <div class="row-fluid">
 
-      <div>
-        <%block name="content"/>
-      </div>
+        <div class="span3" style="color: #fff;">
+            &copy; PyCon Canada 2012
+            &nbsp;&nbsp;
+        </div>
 
-    </div><!--/.fluid-container-->
+        <div class="span9">
+            <div class="pull-right">
+                &nbsp;&nbsp;
+                <a class="nav-link" href="${request.application_url}">
+                    Home
+                </a>
+                &nbsp;&nbsp;
+                <a class="nav-link" href="${request.application_url}/about">
+                    About
+                </a>
+                &nbsp;&nbsp;
+                <a class="nav-link" href="${request.application_url}/venue">
+                    Venue
+                </a>
+                &nbsp;&nbsp;
+                <a class="nav-link" href="${request.application_url}/schedule">
+                    Schedule
+                </a>
+                &nbsp;&nbsp;
+                <a class="nav-link" href="${request.application_url}/speakers">
+                    Speakers
+                </a>
+                &nbsp;&nbsp;
+                <a class="nav-link" href="${request.application_url}/sponsors">
+                    Sponsors
+                </a>
+                &nbsp;&nbsp;
+                <a href="https://twitter.com/pyconca">
+                    @pyconca
+                </a>
+                &nbsp;&nbsp;
+            </div>
+        </div>
 
-  <footer>
-  </footer>
+  </div>
+
+    </footer>
 
   </body>
 </html>

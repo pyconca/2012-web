@@ -1,7 +1,7 @@
 @import url(libs/bootstrap-2.0.3/css/bootstrap.css);
 
 body {
-  background: black;
+  background: #222;
 }
 
 .main-body {
@@ -18,7 +18,7 @@ body {
   margin: auto;
   background-position: bottom;
   padding: 20px;
-  min-height: 500px;
+  min-height: 600px;
 }
 
 .splash-title {
@@ -45,7 +45,7 @@ body {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
-  min-height: 400px;
+  min-height: 600px;
 }
 
 .main-container {
@@ -55,13 +55,48 @@ body {
   min-height: 600px;
 }
 
-footer {
-  background: black;
-  margin: auto;
-  width: 90%;
+.gradient {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #222), color-stop(1, #000));
+  background-image: -moz-linear-gradient(bottom, #222 0%, #000 100%);
 }
 
-.contact-info {
+.splash-footer {
+  background-color: #222;
+}
+
+.footer-section {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  padding: 6px;
+  margin-bottom: 6px;
+  color: #ccc;
+  background-color: #222;
+}
+
+.footer-section p {
+  padding: 12px;
   color: #999;
+  font-size: larger;
+}
+
+.footer-section h3 {
+  padding: 6px;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  background-color: #004099;
+  color: #222;
+  letter-spacing: 3px;
+  border-style: solid;
+  border-color: #222;
+  border-width: thin;
+}
+
+footer {
+  margin: auto;
+  width: 90%;
+  background-color: #222;
 }
 
