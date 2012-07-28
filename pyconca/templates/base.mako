@@ -45,6 +45,8 @@
 
           <div class="nav-collapse">
             <ul class="nav">
+              <li class="divider-vertical" style="margin-left: 0px;"></li>
+
               <li>
                 <a class="nav-link" href="${request.application_url}">
                     <i class="icon-home icon-white nav-icon"></i>

@@ -2,11 +2,32 @@
 
 body {
   background: #222;
+  max-width: 960px;
+  margin: auto;
+}
+
+.main-nav {
+  max-width: 960px;
+  margin: auto;
 }
 
 .main-body {
   padding-top: 0;
   margin-top: 40px;
+}
+
+.container-fluid {
+  padding: 0px;
+}
+
+.splash-row-fluid {
+  background-color: white;
+  border-right-style: solid;
+  border-right-width: thin; 
+  border-right-color: black;
+  border-left-style: solid;
+  border-left-width: thin; 
+  border-left-color: black;
 }
 
 .splash-container {
@@ -18,12 +39,11 @@ body {
   margin: auto;
   background-position: bottom;
   padding: 20px;
-  min-height: 600px;
 }
 
 .splash-title {
   opacity: 0.7;
-  height: 250px;
+  height: 150px;
 }
 
 .title-container {
