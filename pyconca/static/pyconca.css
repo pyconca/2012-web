@@ -23,6 +23,11 @@ body {
   margin: auto;
 }
 
+.navbar-inner {
+  background: #f5ead4;
+  box-shadow: none;
+}
+
 .main-body {
   margin: auto;
   padding-top: 0;
@@ -45,6 +50,24 @@ body {
   border-right-width: thin;
 }
 
+.overlay {
+    background: url('overlay.png');
+    color: #ccc;
+    align: center;
+    padding: 20px;
+}
+
+.overlay:hover {
+    background: none;
+    color: #222;
+}
+
+.black-and-white {
+  filter: url(filters.svg#grayscale);
+  filter: gray;
+  -webkit-filter: grayscale(1);
+}
+
 .splash-container {
   background: url('python.jpg') no-repeat center center;
   -webkit-background-size: cover;
@@ -54,13 +77,6 @@ body {
   margin: auto;
   background-position: bottom;
   min-height: 500px;
-}
-
-.splash-title {
-  opacity: 0;
-  color: black;
-  background-color: black;
-  height: 150px;
 }
 
 .circle-row {

@@ -3,26 +3,53 @@
 <%block name="content">
 
     <div class="row-fluid splash-container">
+        <div class="span12">
 
-        <div class="span1">
-        </div>
-
-        <div class="span10">
-            <br>
-            <div class="hero-unit splash-title">
-                <div class="pull-right">
-                    <h1>PyCon Canada</h1>
-                    <h3>Toronto, November 9th - 11th 2012</h3>
+            <div class="row-fluid">
+                <div class="span12">
                     <br>
-                    <a href="#" class="btn btn-inverse btn-large">Register</a>
+                    <br>
+                    <div class="overlay">
+                      <h1>PyCon Canada</h1>
+                      <h2>Toronto, November 9th - 11th 2012</h2>
+                      <br>
+                      <a href="#" class="btn btn-warning btn-large">Register</a>
+                      <a href="#" class="btn btn-large">Sponsor</a>
+                    </div>
+                    <br>
+                    <br>
                 </div>
             </div>
-        </div>
 
-        <div class="span1">
-        </div>
+            <div class="row-fluid">
+                <div class="span5">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div id="myCarousel" class="carousel slide" style="padding-left: 60px;">
+                      <h6>Sponsors</h6>
+                      <div class="carousel-inner" style="opacity: 0.6;">
+                        <div class="active item">
+                         <img src="${request.static_url("pyconca:static/vmfarms-logo.png")}"
+                              width="200px;" height="100px;" class="black-and-white" alt="">
+                        </div>
+                        <div class="item">
+                         <img src="${request.static_url("pyconca:static/freshbooks.gif")}"
+                              width="200px;" height="100px;" class="black-and-white" alt="">
+                        </div>
+                      </div>
+                    </div>
+                </div>
 
-     </div>
+                <div class="span7">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
 
     <div class="row-fluid circle-row">
       <div class="yellow-dotted">
@@ -198,6 +225,12 @@
         </div>
       </div>
     </div>
+
+<script>
+    $(function() {
+        $('.carousel').carousel();
+    });
+</script>
 
 </%block>
 
