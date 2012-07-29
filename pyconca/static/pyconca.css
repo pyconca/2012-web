@@ -52,14 +52,9 @@ body {
 
 .overlay {
     background: url('overlay.png');
-    color: #ccc;
+    color: #ddd;
     align: center;
     padding: 20px;
-}
-
-.overlay:hover {
-    background: none;
-    color: #222;
 }
 
 .black-and-white {

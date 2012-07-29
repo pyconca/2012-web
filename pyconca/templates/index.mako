@@ -6,23 +6,33 @@
         <div class="span12">
 
             <div class="row-fluid">
-                <div class="span12">
-                    <br>
-                    <br>
-                    <div class="overlay">
-                      <h1>PyCon Canada</h1>
-                      <h2>Toronto, November 9th - 11th 2012</h2>
-                      <br>
-                      <a href="#" class="btn btn-warning btn-large">Register</a>
-                      <a href="#" class="btn btn-large">Sponsor</a>
+                <div class="span12 overlay">
+                    <div class="row-fluid">
+                        <div class="span8">
+                          <h1>PyCon Canada</h1>
+                          <h2>Toronto, November 9th - 11th 2012</h2>
+                        </div>
+                        <div class="span4">
+                          <div class="pull-right">
+                              <br>
+                              <a href="#" class="btn btn-warning btn-large">Register</a>
+                              <a href="#" class="btn btn-large">Sponsor</a>
+                              <br>
+                          </div>
+                        </div>
                     </div>
-                    <br>
-                    <br>
                 </div>
             </div>
 
             <div class="row-fluid">
-                <div class="span5">
+                <div class="span4">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                     <br>
                     <br>
                     <br>
@@ -43,7 +53,7 @@
                     </div>
                 </div>
 
-                <div class="span7">
+                <div class="span8">
                 </div>
 
             </div>
