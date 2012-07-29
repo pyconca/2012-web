@@ -1,9 +1,21 @@
 @import url(libs/bootstrap-2.0.3/css/bootstrap.css);
 
+a {
+  color: #f2d9a1;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e4b243;
+  text-decoration: underline;
+}
+
+
 body {
-  background: #222;
   max-width: 960px;
   margin: auto;
+  color: #888;
+  line-height: 1.5;
 }
 
 .main-nav {
@@ -12,111 +24,103 @@ body {
 }
 
 .main-body {
+  margin: auto;
   padding-top: 0;
   margin-top: 40px;
+  background: #f5ead4;
 }
 
 .container-fluid {
-  padding: 0px;
+  background: #333;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
-.splash-row-fluid {
-  background-color: white;
-  border-right-style: solid;
-  border-right-width: thin; 
-  border-right-color: black;
+.left-right-border {
   border-left-style: solid;
-  border-left-width: thin; 
+  border-right-style: solid;
   border-left-color: black;
+  border-right-color: black;
+  border-left-width: thin;
+  border-right-width: thin;
 }
 
 .splash-container {
-  background: url('toronto.jpg') no-repeat center center;
+  background: url('python.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   margin: auto;
   background-position: bottom;
-  padding: 20px;
+  min-height: 500px;
 }
 
 .splash-title {
-  opacity: 0.7;
+  opacity: 0;
+  color: black;
+  background-color: black;
   height: 150px;
 }
 
-.title-container {
-  background: url('toronto-banner.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  margin: auto;
-  padding: 20px;
-  height: 250px;
-}
-
-.data-container {
-  opacity: 0.90;
-  background-color: #eee;
-  padding: 20px;
-  margin: auto;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-  min-height: 600px;
-}
-
-.main-container {
-  background: black;
-  padding: 20px;
-  margin: auto;
-  min-height: 600px;
-}
-
-.gradient {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #222), color-stop(1, #000));
-  background-image: -moz-linear-gradient(bottom, #222 0%, #000 100%);
-}
-
-.splash-footer {
-  background-color: #222;
-}
-
-.footer-section {
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-  padding: 6px;
-  margin-bottom: 6px;
-  color: #ccc;
-  background-color: #222;
-}
-
-.footer-section p {
-  padding: 12px;
-  color: #999;
+.circle-row {
+  min-height: 200px;
+  background-color: white;
   font-size: larger;
 }
 
-.footer-section h3 {
-  padding: 6px;
-  margin-bottom: 6px;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  background-color: #004099;
-  color: #222;
-  letter-spacing: 3px;
-  border-style: solid;
-  border-color: #222;
-  border-width: thin;
+.yellow-dotted {
+  margin: 0px;
+  padding: 20px;
+  color: #333;
+  background-color: #f2d9a1;
 }
 
-footer {
-  margin: auto;
-  width: 90%;
-  background-color: #222;
+.orange-dotted {
+  margin: 0px;
+  padding: 20px;
+  color: #333;
+  background-color: #eec8ac;
 }
 
+.menu {
+  width: 100px;
+  height: 100px;
+  display: block;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -khtml-border-radius: 50px;
+  font-size: 20px;
+  line-height: 100px;
+  text-decoration: none;
+  text-align: center;
+  color: #444;
+  background-color: orange;
+}
+
+.menu:hover {
+  text-decoration: none;
+  background-color: #e4b243;
+}
+
+.menu-alt {
+  width: 100px;
+  height: 100px;
+  display: block;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -khtml-border-radius: 50px;
+  font-size: 20px;
+  line-height: 100px;
+  text-decoration: none;
+  text-align: center;
+  color: #444;
+  background-color: #dd9058;
+}
+
+.menu-alt:hover {
+  text-decoration: none;
+  background-color: #DD6758;
+}

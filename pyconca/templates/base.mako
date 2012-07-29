@@ -135,6 +135,7 @@
                     <a href="${request.application_url}/user/${logged_in}">
                         ${request.user.username}
                     </a>
+                    &nbsp;
                 </p>
             % endif
 
@@ -143,15 +144,16 @@
       </div>
     </div>
 
-    <div>
-      <%block name="content"/>
-    </div>
-    
-    <footer>
-      <hr>
+<div class="container-fluid left-right-border">
+
+  <div>
+    <%block name="content"/>
+  </div>
+
   <div class="row-fluid">
 
         <div class="span3" style="color: #fff;">
+            &nbsp;&nbsp;
             &copy; PyCon Canada 2012
             &nbsp;&nbsp;
         </div>
@@ -192,7 +194,7 @@
 
   </div>
 
-    </footer>
+</div>
 
   </body>
 </html>
