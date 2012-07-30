@@ -16,6 +16,7 @@
                           <div class="pull-right">
                               <br>
                               <a href="#" class="btn btn-warning btn-large">Register</a>
+                              &nbsp;
                               <a href="#" class="btn btn-large">Sponsor</a>
                               <br>
                           </div>
@@ -67,17 +68,11 @@
 
             <div class="span1">
             </div>
-    
-            <div class="span2">
-                <br>
-                <div class="menu">
-                    About
-                </div>
-                <br>
-            </div>
 
-            <div class="span8">
-              <br>
+            <div class="span10">
+              <div class="menu">
+                 About
+              </div>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Maecenas luctus leo ut urna egestas tempor. 
@@ -85,7 +80,20 @@
                 Vestibulum ac arcu id justo tristique adipiscing.
                 <br>
                 <br>
-                <a href="${request.application_url}/about" class="btn btn-inverse">More >></a>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Maecenas luctus leo ut urna egestas tempor. 
+                Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
+                Vestibulum ac arcu id justo tristique adipiscing.
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Maecenas luctus leo ut urna egestas tempor. 
+                Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
+                Vestibulum ac arcu id justo tristique adipiscing.
+                <br>
+                <div class="pull-right">
+                  <a href="${request.application_url}/about" class="btn">More >></a>
+                </div>
               </p>
             </div>
     
@@ -103,25 +111,34 @@
         <div class="span1">
         </div>
 
-        <div class="span2">
-            <br>
-            <div class="menu-alt">
-                Speakers
-            </div>
-            <br>
-        </div>
-
-        <div class="span8">
+        <div class="span10">
           <br>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Maecenas luctus leo ut urna egestas tempor. 
-            Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
-            Vestibulum ac arcu id justo tristique adipiscing.
-            <br>
-            <br>
-            <a href="${request.application_url}/speakers" class="btn btn-inverse">More >></a>
-          </p>
+              <div class="menu-alt">
+                Speakers
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Maecenas luctus leo ut urna egestas tempor. 
+                Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
+                Vestibulum ac arcu id justo tristique adipiscing.
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Maecenas luctus leo ut urna egestas tempor. 
+                Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
+                Vestibulum ac arcu id justo tristique adipiscing.
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Maecenas luctus leo ut urna egestas tempor. 
+                Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
+                Vestibulum ac arcu id justo tristique adipiscing.
+                <br>
+                <br>
+                <div>
+                  <a href="${request.application_url}/about" class="btn">More >></a>
+                </div>
+              </p>
         </div>
 
         <div class="span1">
@@ -138,25 +155,33 @@
         <div class="span1">
         </div>
 
-        <div class="span2">
-            <br>
-            <div class="menu">
-                Sponsors
-            </div>
-            <br>
-        </div>
-
-        <div class="span8">
+        <div class="span10">
           <br>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Maecenas luctus leo ut urna egestas tempor. 
-            Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
-            Vestibulum ac arcu id justo tristique adipiscing.
-            <br>
-            <br>
-            <a href="${request.application_url}/sponsors" class="btn btn-inverse">More >></a>
-          </p>
+              <div class="menu">
+                  Sponsors
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Maecenas luctus leo ut urna egestas tempor. 
+                Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
+                Vestibulum ac arcu id justo tristique adipiscing.
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Maecenas luctus leo ut urna egestas tempor. 
+                Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
+                Vestibulum ac arcu id justo tristique adipiscing.
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Maecenas luctus leo ut urna egestas tempor. 
+                Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
+                Vestibulum ac arcu id justo tristique adipiscing.
+                <br>
+                <div class="pull-right">
+                  <a href="${request.application_url}/about" class="btn">More >></a>
+                </div>
+              </p>
         </div>
 
         <div class="span1">
@@ -173,25 +198,34 @@
         <div class="span1">
         </div>
 
-        <div class="span2">
-            <br>
-            <div class="menu-alt">
-                Venue
-            </div>
-            <br>
-        </div>
-
-        <div class="span8">
+        <div class="span10">
           <br>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Maecenas luctus leo ut urna egestas tempor. 
-            Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
-            Vestibulum ac arcu id justo tristique adipiscing.
-            <br>
-            <br>
-            <a href="${request.application_url}/venue" class="btn btn-inverse">More >></a>
-          </p>
+              <div class="menu-alt">
+                  Venue
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Maecenas luctus leo ut urna egestas tempor. 
+                Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
+                Vestibulum ac arcu id justo tristique adipiscing.
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Maecenas luctus leo ut urna egestas tempor. 
+                Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
+                Vestibulum ac arcu id justo tristique adipiscing.
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Maecenas luctus leo ut urna egestas tempor. 
+                Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
+                Vestibulum ac arcu id justo tristique adipiscing.
+                <br>
+                <br>
+                <div>
+                  <a href="${request.application_url}/about" class="btn">More >></a>
+                </div>
+              </p>
         </div>
 
         <div class="span1">
@@ -208,25 +242,33 @@
         <div class="span1">
         </div>
 
-        <div class="span2">
-            <br>
-            <div class="menu">
-                Schedule
-            </div>
-            <br>
-        </div>
-
-        <div class="span8">
+        <div class="span10">
           <br>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Maecenas luctus leo ut urna egestas tempor. 
-            Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
-            Vestibulum ac arcu id justo tristique adipiscing.
-            <br>
-            <br>
-            <a href="${request.application_url}/schedule" class="btn btn-inverse">More >></a>
-          </p>
+              <div class="menu">
+                  Schedule
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Maecenas luctus leo ut urna egestas tempor. 
+                Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
+                Vestibulum ac arcu id justo tristique adipiscing.
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Maecenas luctus leo ut urna egestas tempor. 
+                Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
+                Vestibulum ac arcu id justo tristique adipiscing.
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Maecenas luctus leo ut urna egestas tempor. 
+                Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
+                Vestibulum ac arcu id justo tristique adipiscing.
+                <br>
+                <div class="pull-right">
+                  <a href="${request.application_url}/about" class="btn">More >></a>
+                </div>
+              </p>
         </div>
 
         <div class="span1">

@@ -76,7 +76,7 @@ body {
 
 .circle-row {
   min-height: 200px;
-  background-color: white;
+  background-color: #f2d9a1;
   font-size: larger;
 }
 
@@ -91,7 +91,7 @@ body {
   margin: 0px;
   padding: 20px;
   color: #333;
-  background-color: #eec8ac;
+  background-color: #f5ead4;
 }
 
 .menu {
@@ -107,12 +107,15 @@ body {
   text-decoration: none;
   text-align: center;
   color: #444;
-  background-color: orange;
+  border-color: orange;
+  float: left;
+  margin: 20px;
+  background-color: #e4b243;
 }
 
 .menu:hover {
   text-decoration: none;
-  background-color: #e4b243;
+  background-color: orange;
 }
 
 .menu-alt {
@@ -129,6 +132,9 @@ body {
   text-align: center;
   color: #444;
   background-color: #dd9058;
+  float: right;
+  margin: 20px;
+  
 }
 
 .menu-alt:hover {
