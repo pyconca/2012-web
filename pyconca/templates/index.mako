@@ -9,8 +9,10 @@
                 <div class="span12 overlay">
                     <div class="row-fluid">
                         <div class="span8">
+                          <br>
                           <h1>PyCon Canada</h1>
                           <h2>Toronto, November 9th - 11th 2012</h2>
+                          <br>
                         </div>
                         <div class="span4">
                           <div class="pull-right">
@@ -39,7 +41,7 @@
                     <br>
                     <br>
                     <br>
-                    <div id="myCarousel" class="carousel slide" style="padding-left: 60px;">
+                    <div id="myCarousel" class="carousel slide" style="position: relative; left: 10%; bottom: 1%;">
                       <h6>Sponsors</h6>
                       <div class="carousel-inner" style="opacity: 0.6;">
                         <div class="active item">
