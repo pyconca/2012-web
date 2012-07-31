@@ -2,20 +2,41 @@
 
 <%block name="content">
 
-
-<div class="row-fluid">
-  <div class="span12 hero-unit title-container" style="opacity: 0.7; color: white;">
-    <h1 class="pull-right">Sponsors</h1>
-  </div>
+<div class="row-fluid title-container">
+    <div class="span12 overlay">
+      <div class="pull-right">
+        <br>
+        <h1>Sponsors</h1>
+        <br>
+        <br>
+      </div>
+    </div>
 </div>
-<br>
 
-<div class="data-container">
+<div class="event-container">
 
   <div class="row-fluid">
-    <div class="span12">
-      <br />
-      <br />
+
+    <div class="span4">
+      <div class="row-fluid event-side">
+        <div class="span12">
+            <br>
+            <br>
+            <br>
+        </div>
+      </div>
+    </div>
+
+    <div class="span8">
+      <div class="row-fluid event-content">
+        <div class="span12">
+            <br>
+            <br>
+            <br>
+        </div>
+      </div>
+    </div>
+
   </div>
 
 </div>
