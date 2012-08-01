@@ -57,23 +57,30 @@ body {
 }
 
 #about-row {
-  background-color: #fc7365;
+  background-color: #151515;
+  color: #cccccc;
 } 
 
 #speakers-row {
-  background-color: #8bcced;
+  background-color: #426170;
+  color: #cccccc;
 }
 
 #sponsors-row {
-  background-color: #f2f2f2;
+  background-color: #628FA6;
+  color: #cccccc;
 }
 
 #venue-row {
-  background-color: #8bc682;
+  background-color: #7BB4D1;
 }
 
 #schedule-row {
-  background-color: #61a1a1;
+  background-color: #8bcced;
+}
+
+#footer-row {
+  background-color: #f0f0f0;
 }
 
 .overlay {
