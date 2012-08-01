@@ -128,21 +128,75 @@
     <%block name="content"/>
   </div>
 
+  <div id="sponsor-carousel-row" class="row-fluid">
+    <div class="main-row">
+      <div class="span2">
+        <h3 style="text-align:right;">Sponsors</h3>
+      </div>
+
+      <div class="span10">
+        <div id="myCarousel" class="carousel slide" 
+            style="position: relative; left: 10%; bottom: 1%;">
+          <div class="carousel-inner" style="opacity: 0.6;">
+            <div class="active item">
+              <img src="${request.static_url("pyconca:static/vmfarms-logo.png")}"
+                width="200px;" height="100px;" class="black-and-white" alt="">
+            </div>
+
+            <div class="item">
+              <img src="${request.static_url("pyconca:static/freshbooks.gif")}"
+                width="200px;" height="100px;" class="black-and-white" alt="">
+            </div>
+
+          </div> <!-- carousel-inner -->
+        </div> <!-- myCarousel -->
+      </div> <!-- span4 -->
+    </div> 
+  </div> <!-- sponsors-row -->
+
+  <script>
+    $(function() {
+      $('.carousel').carousel();
+    });
+  </script>
+
   <div id="footer-row" class="row-fluid">
     <div class="main-row">
       <div class="span3">
-        <h5>&copy; PyCon Canada 2012</h5>
+        <strong>&copy; PyCon Canada 2012</strong>
       </div>
 
       <div id="footer-links" class="span9">
         <div class="pull-right">
-          <a class="nav-link" href="${request.application_url}">Home</a>
-          <a class="nav-link" href="${request.application_url}/about">About</a>
-          <a class="nav-link" href="${request.application_url}/venue">Venue</a>
-          <a class="nav-link" href="${request.application_url}/schedule">Schedule</a>
-          <a class="nav-link" href="${request.application_url}/speakers">Speakers</a>
-          <a class="nav-link" href="${request.application_url}/sponsors">Sponsors</a>
-          <a href="https://twitter.com/pyconca">@pyconca</a>
+          <ul id="footer-nav">
+            <li class="footer-nav-link">
+              <a class="nav-link" href="${request.application_url}">Home</a>
+            </li>
+
+            <li class="footer-nav-link">
+              <a class="nav-link" href="${request.application_url}/about">About</a>
+            </li>
+
+            <li class="footer-nav-link">
+              <a class="nav-link" href="${request.application_url}/venue">Venue</a>
+            </li>
+
+            <li class="footer-nav-link">
+              <a class="nav-link" href="${request.application_url}/schedule">Schedule</a>
+            </li>
+
+            <li class="footer-nav-link">
+              <a class="nav-link" href="${request.application_url}/speakers">Speakers</a>
+            </li>
+
+            <li class="footer-nav-link">
+              <a class="nav-link" href="${request.application_url}/sponsors">Sponsors</a>
+            </li>
+
+            <li class="footer-nav-link">
+              <a href="https://twitter.com/pyconca">@pyconca</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -150,5 +204,5 @@
 
 </div>
 
-  </body>
+</body>
 </html>
