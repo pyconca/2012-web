@@ -11,8 +11,14 @@ a:hover {
 }
 
 body {
+  padding-top: 60px;
   color: #444;
   line-height: 1.5;
+}
+
+.nav-row {
+  width: 960px;
+  margin: auto;
 }
 
 .main-nav {

@@ -10,9 +10,6 @@
     <!-- Le styles -->
     <link href="${request.static_url("pyconca:static/pyconca.css")}" rel="stylesheet" />
     <style type="text/css">
-      body {
-        padding-top: 60px;
-      }
       .sidebar-nav {
         padding: 9px 0;
       }
@@ -35,91 +32,93 @@
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container-fluid main-nav">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
+          <div class="nav-row">
 
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li class="nav-item">
-                <a class="nav-link" href="${request.application_url}">
-                    <i class="icon-home icon-white nav-icon"></i>
-                    Home
-                </a>
-              </li>
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
 
-              <li class="nav-item">
-                <a class="nav-link" href="${request.application_url}/about">
-                    <i class="icon-info-sign icon-white nav-icon"></i>
-                    About
-                </a>
-              </li>
+            <div class="nav-collapse">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="${request.application_url}">
+                      <i class="icon-home icon-white nav-icon"></i>
+                      Home
+                  </a>
+                </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="${request.application_url}/venue">
-                    <i class="icon-map-marker icon-white nav-icon"></i>
-                    Venue
-                </a>
-              </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="${request.application_url}/about">
+                      <i class="icon-info-sign icon-white nav-icon"></i>
+                      About
+                  </a>
+                </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="${request.application_url}/schedule">
-                    <i class="icon-time icon-white nav-icon"></i>
-                    Schedule
-                </a>
-              </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="${request.application_url}/venue">
+                      <i class="icon-map-marker icon-white nav-icon"></i>
+                      Venue
+                  </a>
+                </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="${request.application_url}/speakers">
-                    <i class="icon-bullhorn icon-white nav-icon"></i>
-                    Speakers
-                </a>
-              </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="${request.application_url}/schedule">
+                      <i class="icon-time icon-white nav-icon"></i>
+                      Schedule
+                  </a>
+                </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="${request.application_url}/sponsors">
-                    <i class="icon-heart icon-white nav-icon"></i>
-                    Sponsors
-                </a>
-              </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="${request.application_url}/speakers">
+                      <i class="icon-bullhorn icon-white nav-icon"></i>
+                      Speakers
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="${request.application_url}/sponsors">
+                      <i class="icon-heart icon-white nav-icon"></i>
+                      Sponsors
+                  </a>
+                </li>
+
+                % if logged_in:
+                    <li class="nav-item">
+                      <a class="nav-link" href="${request.application_url}/logout">
+                          <i class="icon-remove icon-white nav-icon"></i>
+                          Logout
+                      </a>
+                    </li>
+                % else:
+                    <li class="nav-item">
+                      <a class="nav-link" href="${request.application_url}/login">
+                          <i class="icon-user icon-white nav-icon"></i>
+                          Login
+                      </a>
+                    </li>
+                % endif
+
+                <li class="nav-item">
+                  <a class="nav-link" href="${request.application_url}/new/user">
+                      <i class="icon-star-empty icon-white nav-icon"></i>
+                      Sign Up
+                  </a>
+                </li>
+              </ul>
 
               % if logged_in:
-                  <li class="nav-item">
-                    <a class="nav-link" href="${request.application_url}/logout">
-                        <i class="icon-remove icon-white nav-icon"></i>
-                        Logout
-                    </a>
-                  </li>
-              % else:
-                  <li class="nav-item">
-                    <a class="nav-link" href="${request.application_url}/login">
-                        <i class="icon-user icon-white nav-icon"></i>
-                        Login
-                    </a>
-                  </li>
+                  <p class="navbar-text pull-right">
+                      Logged in as 
+                      <a href="${request.application_url}/user/${logged_in}">
+                          ${request.user.username}
+                      </a>
+                      &nbsp;
+                  </p>
               % endif
-
-              <li class="nav-item">
-                <a class="nav-link" href="${request.application_url}/new/user">
-                    <i class="icon-star-empty icon-white nav-icon"></i>
-                    Sign Up
-                </a>
-              </li>
-            </ul>
-
-            % if logged_in:
-                <p class="navbar-text pull-right">
-                    Logged in as 
-                    <a href="${request.application_url}/user/${logged_in}">
-                        ${request.user.username}
-                    </a>
-                    &nbsp;
-                </p>
-            % endif
-
-          </div><!--/.nav-collapse -->
+            </div><!--/.nav-collapse -->
+          </div> <!-- main-row -->
         </div>
       </div>
     </div>
