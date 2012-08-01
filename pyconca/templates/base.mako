@@ -12,7 +12,6 @@
     <style type="text/css">
       body {
         padding-top: 60px;
-        padding-bottom: 40px;
       }
       .sidebar-nav {
         padding: 9px 0;
@@ -29,7 +28,6 @@
     <![endif]-->
 
     <script src="http://widgets.twimg.com/j/2/widget.js"></script>
-
   </head>
 
   <body class="main-body">
@@ -45,71 +43,57 @@
 
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="divider-vertical" style="margin-left: 0px;"></li>
-
-              <li>
+              <li class="nav-item">
                 <a class="nav-link" href="${request.application_url}">
                     <i class="icon-home icon-white nav-icon"></i>
                     Home
                 </a>
               </li>
 
-              <li class="divider-vertical"></li>
-
-              <li>
+              <li class="nav-item">
                 <a class="nav-link" href="${request.application_url}/about">
                     <i class="icon-info-sign icon-white nav-icon"></i>
                     About
                 </a>
               </li>
 
-              <li class="divider-vertical"></li>
-
-              <li>
+              <li class="nav-item">
                 <a class="nav-link" href="${request.application_url}/venue">
                     <i class="icon-map-marker icon-white nav-icon"></i>
                     Venue
                 </a>
               </li>
 
-              <li class="divider-vertical"></li>
-
-              <li>
+              <li class="nav-item">
                 <a class="nav-link" href="${request.application_url}/schedule">
                     <i class="icon-time icon-white nav-icon"></i>
                     Schedule
                 </a>
               </li>
 
-              <li class="divider-vertical"></li>
-
-              <li>
+              <li class="nav-item">
                 <a class="nav-link" href="${request.application_url}/speakers">
                     <i class="icon-bullhorn icon-white nav-icon"></i>
                     Speakers
                 </a>
               </li>
 
-              <li class="divider-vertical"></li>
-
-              <li>
+              <li class="nav-item">
                 <a class="nav-link" href="${request.application_url}/sponsors">
                     <i class="icon-heart icon-white nav-icon"></i>
                     Sponsors
                 </a>
               </li>
 
-              <li class="divider-vertical"></li>
-
               % if logged_in:
-                  <li>
+                  <li class="nav-item">
                     <a class="nav-link" href="${request.application_url}/logout">
                         <i class="icon-remove icon-white nav-icon"></i>
                         Logout
                     </a>
                   </li>
               % else:
-                  <li>
+                  <li class="nav-item">
                     <a class="nav-link" href="${request.application_url}/login">
                         <i class="icon-user icon-white nav-icon"></i>
                         Login
@@ -117,16 +101,12 @@
                   </li>
               % endif
 
-              <li class="divider-vertical"></li>
-
-              <li>
+              <li class="nav-item">
                 <a class="nav-link" href="${request.application_url}/new/user">
                     <i class="icon-star-empty icon-white nav-icon"></i>
                     Sign Up
                 </a>
               </li>
-
-              <li class="divider-vertical"></li>
             </ul>
 
             % if logged_in:
@@ -144,54 +124,28 @@
       </div>
     </div>
 
-<div class="container-fluid left-right-border">
-
   <div>
     <%block name="content"/>
   </div>
 
-  <div class="row-fluid">
+  <div id="footer-row" class="row-fluid">
+    <div class="main-row">
+      <div class="span3">
+        <h5>&copy; PyCon Canada 2012</h5>
+      </div>
 
-        <div class="span3" style="color: #fff;">
-            &nbsp;&nbsp;
-            &copy; PyCon Canada 2012
-            &nbsp;&nbsp;
+      <div id="footer-links" class="span9">
+        <div class="pull-right">
+          <a class="nav-link" href="${request.application_url}">Home</a>
+          <a class="nav-link" href="${request.application_url}/about">About</a>
+          <a class="nav-link" href="${request.application_url}/venue">Venue</a>
+          <a class="nav-link" href="${request.application_url}/schedule">Schedule</a>
+          <a class="nav-link" href="${request.application_url}/speakers">Speakers</a>
+          <a class="nav-link" href="${request.application_url}/sponsors">Sponsors</a>
+          <a href="https://twitter.com/pyconca">@pyconca</a>
         </div>
-
-        <div class="span9">
-            <div class="pull-right">
-                &nbsp;&nbsp;
-                <a class="nav-link" href="${request.application_url}">
-                    Home
-                </a>
-                &nbsp;&nbsp;
-                <a class="nav-link" href="${request.application_url}/about">
-                    About
-                </a>
-                &nbsp;&nbsp;
-                <a class="nav-link" href="${request.application_url}/venue">
-                    Venue
-                </a>
-                &nbsp;&nbsp;
-                <a class="nav-link" href="${request.application_url}/schedule">
-                    Schedule
-                </a>
-                &nbsp;&nbsp;
-                <a class="nav-link" href="${request.application_url}/speakers">
-                    Speakers
-                </a>
-                &nbsp;&nbsp;
-                <a class="nav-link" href="${request.application_url}/sponsors">
-                    Sponsors
-                </a>
-                &nbsp;&nbsp;
-                <a href="https://twitter.com/pyconca">
-                    @pyconca
-                </a>
-                &nbsp;&nbsp;
-            </div>
-        </div>
-
+      </div>
+    </div>
   </div>
 
 </div>
