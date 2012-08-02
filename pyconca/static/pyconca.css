@@ -26,6 +26,7 @@ body {
 
 .navbar-inner {
   box-shadow: none;
+  background: none;
 }
 
 .nav-item {
