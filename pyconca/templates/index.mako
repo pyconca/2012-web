@@ -2,12 +2,53 @@
 <%block name="content">
 
 <div class="row-fluid main-header-image">
-  <div class="span12 top-row main-row">
-    <h1 class="header-main-text">PyCon Canada</h1>
-    <h2>Toronto, November 9th - 11th 2012</h2>
-    <br />
-    <a href="#" class="btn btn-warning btn-large">Register</a>
-    <a href="#" class="btn btn-large">Sponsor</a>
+  <div class="span12">
+
+    <div class="row-fluid">
+      <div class="span12 top-row main-row overlay">
+        <h1 class="header-main-text">PyCon Canada</h1>
+        <h2>Toronto, November 9th - 11th 2012</h2>
+        <br />
+        <a href="#" class="btn btn-warning btn-large">Register</a>
+        <a href="#" class="btn btn-large">Sponsor</a>
+      </div>
+    </div>
+
+    <div class="row-fluid">
+      <div class="span1">
+      </div>
+
+      <div class="span4">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="myCarousel" class="carousel slide">
+          <h6>Sponsors</h6>
+          <div class="carousel-inner" style="opacity: 0.6;">
+            <div class="active item">
+             <img src="${request.static_url("pyconca:static/vmfarms-logo.png")}"
+                  width="200px;" height="100px;" class="black-and-white" alt="">
+            </div>
+            <div class="item">
+             <img src="${request.static_url("pyconca:static/freshbooks.gif")}"
+                  width="200px;" height="100px;" class="black-and-white" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="span7">
+      </div>
+
+    </div>
+
   </div>
 </div>
 
@@ -36,7 +77,7 @@
       Vestibulum ac arcu id justo tristique adipiscing.
     </p>
     <div class="pull-right">
-      <a href="${request.application_url}/about" class="btn">More >></a>
+      <a href="${request.application_url}/about" class="btn btn-inverse">More >></a>
     </div>
   </div>
 </div>
@@ -147,11 +188,16 @@ Incididunt beef culpa, irure pork dolore andouille velit anim drumstick ut. Aliq
       Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
       Vestibulum ac arcu id justo tristique adipiscing.
     </p>
-
     <div class="pull-right">
-      <a href="${request.application_url}/about" class="btn">More >></a>
+      <a href="${request.application_url}/about" class="btn btn-inverse">More >></a>
     </div>
   </div>
 </div>
+
+<script>
+    $(function() {
+      $('.carousel').carousel();
+    });
+</script>
 
 </%block>

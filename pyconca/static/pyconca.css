@@ -11,7 +11,7 @@ a:hover {
 }
 
 body {
-  background-color: #101010;
+  background-color: #222;
   padding-top: 60px;
   color: #faf7f0;
   line-height: 1.5;
@@ -46,12 +46,13 @@ body {
 }
 
 .main-header-image {
-  height: 600px;
-  background: url('toronto-large.jpg') no-repeat center center;
+  min-height: 500px;
+  background: url('python.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-position: bottom;
 }
 
 .top-row {
@@ -74,75 +75,54 @@ body {
 
 #about-row {
   background-color: #151515;
-  color: #cccccc;
+  color: #777;
 } 
 
 #about-row .circle {
-  background: black;
+  color: #151515;
+  background: #444;
   float: left;
-}
-
-#about-row .circle:hover {
-  background: #cccccc;
-  color: black;
 }
 
 #speakers-row {
-  background-color: #426170;
-  color: #cccccc;
+  background-color: #e4b243;
+  color: #444;
 }
 
 #speakers-row .circle {
-  background: #151515;
+  background: #f2d9a1;
   float: right;
-}
-
-#speakers-row .circle:hover {
-  background: #cccccc;
-  color: #151515;
 }
 
 #sponsors-row {
-  background-color: #628FA6;
-  color: #cccccc;
+  background-color: #f2d9a1;
+  color: #444;
 }
 
 #sponsors-row .circle {
-  background: #426170;
+  background: #e4b243;
   float: left;
-}
-
-#sponsors-row .circle:hover {
-  background: #cccccc;
-  color: #426170;
 }
 
 #venue-row {
-  background-color: #7BB4D1;
+  background-color: #e4b243;
+  color: #444;
 }
 
 #venue-row .circle {
-  background: #628FA6;
+  background: #f2d9a1;
   float: right;
 }
 
-#venue-row .circle:hover {
-  background: white;
-  color: #628FA6;
-}
-
 #schedule-row {
-  background-color: #8bcced;
+  background-color: #151515;
+  color: #777;
 }
 
 #schedule-row .circle {
-  background: #7BB4D1;
+  color: #151515;
+  background: #444;
   float: left;
-}
-
-#schedule-row .circle:hover {
-  background: white;
-  color: #7BB4D1;
 }
 
 .circle {
@@ -197,26 +177,6 @@ body {
   -webkit-filter: grayscale(1);
 }
 
-.splash-container {
-  background: url('toronto.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  margin: auto;
-  background-position: bottom;
-}
-
-.title-container {
-  background: white;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  margin: auto;
-  background-position: middle;
-}
-
 #sponsor-carousel-row {
   height: 200px;
 }
@@ -239,5 +199,5 @@ body {
 }
 
 #footer-links a {
-  color: #3f7fbe;
+  color: #ccc;
 }
