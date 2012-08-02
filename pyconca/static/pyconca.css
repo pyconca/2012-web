@@ -11,8 +11,9 @@ a:hover {
 }
 
 body {
+  background-color: #101010;
   padding-top: 60px;
-  color: #444;
+  color: #faf7f0;
   line-height: 1.5;
 }
 
@@ -44,19 +45,32 @@ body {
   background: #333;
 }
 
-.top {
+.main-header-image {
   height: 600px;
-  background: url('toronto-bg-2.jpg') no-repeat center center;
+  background: url('toronto-large.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-#top-row {
+.top-row {
+  text-align: right;
+}
+
+.header-main-text {
+  font-size: 48px;
+  line-height: 72px;
+}
+
+.top-row-sub {
+  padding: 50px 100px;
   text-align: right;
 }
 
 .main-row {
   width: 960px;
-  padding: 50px 0;
-  margin: auto;
+  margin: 35px auto;
 }
 
 #about-row {
@@ -82,8 +96,36 @@ body {
   background-color: #8bcced;
 }
 
-#footer-row {
-  background-color: #f0f0f0;
+/* subpages */
+.sub-header-image{
+  height: 400px;
+  background: url('toronto-small.jpg') no-repeat center;
+  -webkit-background-size: 960px 400px;
+  -moz-background-size: 960px 400px;
+  -o-background-size: 960px 400px;
+  background-size: 960px 400px;
+}
+
+.content-holder {
+  width: 960px;
+  margin: auto;
+  height: 100%;
+  background-color: #000;
+}
+
+.content-holder p {
+  color: #ccc;
+}
+
+.sidenav {
+}
+
+.content-section {
+  margin: 40px 45px;
+}
+
+.content-section h1 {
+  line-height: 56px;
 }
 
 .overlay {
@@ -138,10 +180,6 @@ body {
   margin: 20px;
 }
 
-.menu:hover {
-  text-decoration: none;
-}
-
 .menu-alt {
   width: 160px;
   height: 160px;
@@ -165,13 +203,14 @@ body {
 }
 
 #sponsor-carousel-row {
+  height: 200px;
 }
 
 #footer-row {
-  background-color: #f8f8f8;
-  border-top: 1px solid #e0e0e0;
-  margin-top: -1px;
-  color: #393939;
+  background-color: #0d0d0d;
+  border-top: 1px solid #837d5c;
+  color: #383838;
+  height: 100px;
 }
 
 .footer-nav-link {

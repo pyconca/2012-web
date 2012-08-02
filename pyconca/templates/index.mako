@@ -1,9 +1,9 @@
 <%inherit file="base.mako"/>
 <%block name="content">
 
-<div class="row-fluid top">
-  <div id="top-row" class="main-row">
-    <h1>PyCon Canada</h1>
+<div class="row-fluid main-header-image">
+  <div class="top-row main-row">
+    <h1 class="header-main-text">PyCon Canada</h1>
     <h2>Toronto, November 9th - 11th 2012</h2>
     <br />
     <a href="#" class="btn btn-warning btn-large">Register</a>
@@ -79,22 +79,11 @@
     </div>
 
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      Maecenas luctus leo ut urna egestas tempor. 
-      Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
-      Vestibulum ac arcu id justo tristique adipiscing.
+Beef jowl turducken id, proident elit incididunt rump cillum pastrami pork loin shank shankle et salami. Dolor shoulder incididunt kielbasa. Tail ea do, meatball reprehenderit ut ham hock elit fatback anim deserunt chuck sausage tenderloin. Cow tenderloin short loin jerky fugiat filet mignon andouille sausage ground round beef ribs.
     </p>
+
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      Maecenas luctus leo ut urna egestas tempor. 
-      Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
-      Vestibulum ac arcu id justo tristique adipiscing.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      Maecenas luctus leo ut urna egestas tempor. 
-      Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
-      Vestibulum ac arcu id justo tristique adipiscing.
+Incididunt beef culpa, irure pork dolore andouille velit anim drumstick ut. Aliquip exercitation cow pig turkey elit irure. Salami spare ribs strip steak velit labore ad rump sunt dolor reprehenderit in nulla magna t-bone. Excepteur dolore tempor laborum flank jowl consectetur venison. Jowl fugiat swine, nostrud turducken turkey veniam dolor prosciutto proident tenderloin pork chop leberkas dolore. Dolore pig officia eu, prosciutto dolore labore shank spare ribs. Quis tenderloin enim, commodo t-bone ea do labore ut voluptate reprehenderit.
     </p>
 
     <div class="pull-right">
