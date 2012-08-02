@@ -13,7 +13,7 @@
 
 <div id="about-row" class="row-fluid">
   <div class="span12 main-row">
-    <div class="menu">
+    <div class="circle">
        About
     </div>
 
@@ -43,7 +43,7 @@
 
 <div id="speakers-row" class="row-fluid">
   <div class="span12 main-row">
-    <div class="menu-alt">
+    <div class="circle">
       Speakers
     </div>
 
@@ -74,7 +74,7 @@
 
 <div id="sponsors-row" class="row-fluid">
   <div class="span12 main-row">
-    <div class="menu">
+    <div class="circle">
         Sponsors
     </div>
 
@@ -94,7 +94,7 @@ Incididunt beef culpa, irure pork dolore andouille velit anim drumstick ut. Aliq
 
 <div id="venue-row" class="row-fluid">
   <div class="span12 main-row">
-    <div class="menu-alt">
+    <div class="circle">
       Venue
     </div>
 
@@ -125,7 +125,7 @@ Incididunt beef culpa, irure pork dolore andouille velit anim drumstick ut. Aliq
 
 <div id="schedule-row" class="row-fluid">
   <div class="span12 main-row">
-    <div class="menu">
+    <div class="circle">
       Schedule
     </div>
 
