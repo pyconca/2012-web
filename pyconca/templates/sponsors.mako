@@ -15,7 +15,7 @@
   <div class="content-holder">
     <div class="row-fluid">
       <div class="span3">
-        <ul id="sponsors-sidenav" class="nav sidenav"></ul>
+        <ul id="sponsors-sidenav" class="sidenav"></ul>
       </div>
 
       <div class="span9 content-column">
@@ -45,10 +45,13 @@
 
       navItem
         .text($(this).text())
-        .addClass("sidenav-item")
+        .addClass("sidenav-link")
         .attr("href", "#" + $(this).attr("id"));
 
-      navItemHolder.append(navItem);
+      navItemHolder
+        .append(navItem)
+        .addClass("sidenav-item");
+
       $("#sponsors-sidenav").append(navItemHolder);
     });
   };

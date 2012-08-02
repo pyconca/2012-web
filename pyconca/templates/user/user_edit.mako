@@ -11,8 +11,8 @@
             <%include file="pyconca:templates/message.mako"/>
             <form id="edit-form" method="POST" class="form-horizontal">
                 <div id="user-edit-result"></div>
-                <input class="btn btn-inverse" type="submit" value="Save"/>
-                <a class="btn" type="submit" 
+                <input class="btn btn-info" type="submit" value="Save"/>
+                <a class="btn btn-danger" type="submit" 
                    href="${request.route_url('user_index')}">
                    Cancel
                 </a>

@@ -14,7 +14,7 @@
   <div class="content-holder">
     <div class="row-fluid">
       <div class="span3">
-        <ul id="venue-sidenav" class="nav sidenav"></ul>
+        <ul id="venue-sidenav" class="sidenav"></ul>
       </div>
 
       <div class="span9 content-column">
@@ -76,10 +76,13 @@
 
       navItem
         .text($(this).text())
-        .addClass("sidenav-item")
+        .addClass("sidenav-link")
         .attr("href", "#" + $(this).attr("id"));
 
-      navItemHolder.append(navItem);
+      navItemHolder
+        .append(navItem)
+        .addClass("sidenav-item")
+
       $("#venue-sidenav").append(navItemHolder);
     });
   };
