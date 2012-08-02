@@ -2,7 +2,7 @@
 <%block name="content">
 
 <div class="row-fluid main-header-image">
-  <div class="top-row main-row">
+  <div class="span12 top-row main-row">
     <h1 class="header-main-text">PyCon Canada</h1>
     <h2>Toronto, November 9th - 11th 2012</h2>
     <br />
@@ -12,7 +12,7 @@
 </div>
 
 <div id="about-row" class="row-fluid">
-  <div class="main-row">
+  <div class="span12 main-row">
     <div class="menu">
        About
     </div>
@@ -42,7 +42,7 @@
 </div>
 
 <div id="speakers-row" class="row-fluid">
-  <div class="main-row">
+  <div class="span12 main-row">
     <div class="menu-alt">
       Speakers
     </div>
@@ -73,7 +73,7 @@
 </div>
 
 <div id="sponsors-row" class="row-fluid">
-  <div class="main-row">
+  <div class="span12 main-row">
     <div class="menu">
         Sponsors
     </div>
@@ -93,7 +93,7 @@ Incididunt beef culpa, irure pork dolore andouille velit anim drumstick ut. Aliq
 </div>
 
 <div id="venue-row" class="row-fluid">
-  <div class="main-row">
+  <div class="span12 main-row">
     <div class="menu-alt">
       Venue
     </div>
@@ -124,7 +124,7 @@ Incididunt beef culpa, irure pork dolore andouille velit anim drumstick ut. Aliq
 </div>
 
 <div id="schedule-row" class="row-fluid">
-  <div class="main-row">
+  <div class="span12 main-row">
     <div class="menu">
       Schedule
     </div>

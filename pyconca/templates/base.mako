@@ -32,7 +32,6 @@
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container-fluid main-nav">
-          <div class="nav-row">
 
             <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
               <span class="icon-bar"></span>
@@ -120,8 +119,9 @@
             </div><!--/.nav-collapse -->
           </div> <!-- main-row -->
         </div>
-      </div>
     </div>
+
+<div class="container-fluid">
 
   <div>
     <%block name="content"/>
@@ -131,12 +131,11 @@
       <div id="sponsor-holder" class="content-holder">
         <div class="row-fluid">
           <div class="span2">
-            <h3 style="text-align:right;">Sponsors</h3>
+            <h6 style="text-align:right;">Sponsors</h6>
           </div>
 
           <div class="span10">
-            <div id="myCarousel" class="carousel slide" 
-                style="position: relative; left: 10%; bottom: 1%;">
+            <div id="myCarousel" class="carousel slide">
               <div class="carousel-inner" style="opacity: 0.6;">
                 <div class="active item">
                   <img src="${request.static_url("pyconca:static/vmfarms-logo.png")}"
@@ -167,7 +166,7 @@
         <strong>&copy; PyCon Canada 2012</strong>
       </div>
 
-      <div id="footer-links" class="span9">
+      <div class="span9" id="footer-links">
         <div class="pull-right">
           <ul id="footer-nav">
             <li class="footer-nav-link">
@@ -200,6 +199,7 @@
           </ul>
         </div>
       </div>
+
     </div>
   </div>
 

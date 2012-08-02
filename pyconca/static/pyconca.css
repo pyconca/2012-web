@@ -15,16 +15,13 @@ body {
   padding-top: 60px;
   color: #faf7f0;
   line-height: 1.5;
-}
-
-.nav-row {
-  width: 960px;
-  margin: auto;
+  max-width: 960px;
 }
 
 .main-nav {
   margin: auto;
   box-shadow: none;
+  max-width: 960px;
 }
 
 .navbar-inner {
@@ -43,6 +40,8 @@ body {
 
 .container-fluid {
   background: #333;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 .main-header-image {
@@ -69,8 +68,7 @@ body {
 }
 
 .main-row {
-  width: 960px;
-  margin: 35px auto;
+  padding: 40px;
 }
 
 #about-row {
@@ -104,13 +102,6 @@ body {
   -moz-background-size: 960px 400px;
   -o-background-size: 960px 400px;
   background-size: 960px 400px;
-}
-
-.content-holder {
-  width: 960px;
-  margin: auto;
-  height: 100%;
-  background-color: #000;
 }
 
 .content-holder p {
@@ -207,7 +198,7 @@ body {
 }
 
 #sponsor-holder {
-  background-color: #090909;
+  background-color: white;
   padding: 40px 0;
 }
 
