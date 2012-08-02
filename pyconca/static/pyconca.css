@@ -82,6 +82,11 @@ body {
   float: left;
 }
 
+#about-row .circle:hover {
+  background: #cccccc;
+  color: black;
+}
+
 #speakers-row {
   background-color: #426170;
   color: #cccccc;
@@ -90,6 +95,11 @@ body {
 #speakers-row .circle {
   background: #151515;
   float: right;
+}
+
+#speakers-row .circle:hover {
+  background: #cccccc;
+  color: #151515;
 }
 
 #sponsors-row {
@@ -102,29 +112,43 @@ body {
   float: left;
 }
 
+#sponsors-row .circle:hover {
+  background: #cccccc;
+  color: #426170;
+}
+
 #venue-row {
   background-color: #7BB4D1;
 }
 
-#venue-row .circle{
+#venue-row .circle {
   background: #628FA6;
   float: right;
+}
+
+#venue-row .circle:hover {
+  background: white;
+  color: #628FA6;
 }
 
 #schedule-row {
   background-color: #8bcced;
 }
 
-#schedule-row .circle{
+#schedule-row .circle {
   background: #7BB4D1;
   float: left;
+}
+
+#schedule-row .circle:hover {
+  background: white;
+  color: #7BB4D1;
 }
 
 .circle {
   width: 160px;
   height: 160px;
   line-height: 160px;
-  display: block;
   border-radius: 80px;
   -moz-border-radius: 80px;
   -webkit-border-radius: 80px;
