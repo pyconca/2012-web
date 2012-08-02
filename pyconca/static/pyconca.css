@@ -1,16 +1,13 @@
 @import url(libs/bootstrap-2.0.3/css/bootstrap.css);
 
-p {
-  color: #ccc;
-}
-
 a {
-  color: #1087C9;
+  color: #e4b243;
+  text-decoration: none;
 }
 
 a:hover {
-  color: #4AABFF;
-  text-decoration: none;
+  color: #e4b243;
+  text-decoration: underline;
 }
 
 body {
@@ -18,20 +15,18 @@ body {
   padding-top: 60px;
   color: #faf7f0;
   line-height: 1.5;
-}
-
-.nav-row {
-  width: 960px;
-  margin: auto;
+  max-width: 960px;
 }
 
 .main-nav {
   margin: auto;
   box-shadow: none;
+  max-width: 960px;
 }
 
 .navbar-inner {
   box-shadow: none;
+  background: none;
 }
 
 .nav-item {
@@ -46,6 +41,8 @@ body {
 
 .container-fluid {
   background: #333;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 .main-header-image {
@@ -72,54 +69,70 @@ body {
 }
 
 .main-row {
-  width: 960px;
-  margin: 35px auto;
+  padding: 40px;
 }
 
 #about-row {
-  background-color: #040404;
-  color: #76b646;
+  background-color: #151515;
+  color: #cccccc;
 } 
 
-#about-row h1 {
-  color: #fbb11a;
+#about-row .circle {
+  background: black;
+  float: left;
 }
 
 #speakers-row {
-  background-color: #080808;
+  background-color: #426170;
+  color: #cccccc;
 }
 
-#speakers-row h1 {
-  color: #a1be61
+#speakers-row .circle {
+  background: #151515;
+  float: right;
 }
 
 #sponsors-row {
-  background-color: #090909;
+  background-color: #628FA6;
+  color: #cccccc;
 }
 
-#sponsors-row h1 {
-  color: #af2352;
+#sponsors-row .circle {
+  background: #426170;
+  float: left;
 }
 
 #venue-row {
-  background-color: #0a0a0a;
+  background-color: #7BB4D1;
 }
 
-#venue-row h1 {
-  color: #ea6925;
+#venue-row .circle{
+  background: #628FA6;
+  float: right;
 }
 
 #schedule-row {
-  background-color: #0b0b0b;
+  background-color: #8bcced;
 }
 
-#schedule-row h1 {
-  color: #f500ee;
+#schedule-row .circle{
+  background: #7BB4D1;
+  float: left;
 }
 
-#sponsor-carousel-row {
-  background-color: #0c0c0c;
-  height: 200px;
+.circle {
+  width: 160px;
+  height: 160px;
+  line-height: 160px;
+  display: block;
+  border-radius: 80px;
+  -moz-border-radius: 80px;
+  -webkit-border-radius: 80px;
+  -khtml-border-radius: 80px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px;
 }
 
 /* subpages */
@@ -132,37 +145,11 @@ body {
   background-size: 960px 400px;
 }
 
-.content-holder {
-  width: 960px;
-  margin: auto;
-  height: 100%;
-  background-color: #000;
+.content-holder p {
+  color: #ccc;
 }
 
 .sidenav {
-}
-
-.sidenav-item {
-  list-style-type: none;
-}
-
-.sidenav-link {
-  background-color: #0b0b0b;
-  display: block;
-  margin-bottom: 22px;
-  padding: 14px 18px;
-  font-size: 15px;
-  font-weight: bold;
-  color: #d21032;
-}
-
-.sidenav-link:hover {
-  background-color: #0e0e0e;
-  color: #ff4a3f;
-}
-
-.content-column h1 {
-  color: #d21032;
 }
 
 .content-section {
@@ -186,17 +173,47 @@ body {
   -webkit-filter: grayscale(1);
 }
 
-.form-label {
-  color: #e6e6e6;
+.splash-container {
+  background: url('toronto.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: auto;
+  background-position: bottom;
+}
+
+.title-container {
+  background: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: auto;
+  background-position: middle;
+}
+
+#sponsor-carousel-row {
+  height: 200px;
+}
+
+#sponsor-holder {
+  background-color: white;
+  padding: 40px;
 }
 
 #footer-row {
   background-color: #0d0d0d;
-  color: #575757;
-  height: 90px;
+  border-top: 1px solid #837d5c;
+  color: #383838;
+  height: 100px;
 }
 
 .footer-nav-link {
   display: inline-block;
   margin-left: 20px;
+}
+
+#footer-links a {
+  color: #3f7fbe;
 }
