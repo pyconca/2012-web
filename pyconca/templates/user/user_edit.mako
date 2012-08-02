@@ -2,11 +2,11 @@
 
 <%block name="content">
 
-<div class="data-container">
-
+<div class="row-fluid">
+  <div class="content-holder">
     <div class="row-fluid">
-        <div class="span12">
-            <br>
+      <div class="content-section">
+
             <div id="breadcrumbs-result"></div>
             <%include file="pyconca:templates/message.mako"/>
             <form id="edit-form" method="POST" class="form-horizontal">
@@ -17,9 +17,10 @@
                    Cancel
                 </a>
             </form>
-         </div>
-    </div>
 
+      </div>
+    </div>
+  </div>
 </div>
 
 <script id="breadcrumbs-template" type="text/x-handlebars-template">

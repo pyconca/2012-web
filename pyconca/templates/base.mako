@@ -128,29 +128,31 @@
   </div>
 
   <div id="sponsor-carousel-row" class="row-fluid">
-    <div class="main-row">
-      <div class="span2">
-        <h3 style="text-align:right;">Sponsors</h3>
-      </div>
+      <div id="sponsor-holder" class="content-holder">
+        <div class="row-fluid">
+          <div class="span2">
+            <h3 style="text-align:right;">Sponsors</h3>
+          </div>
 
-      <div class="span10">
-        <div id="myCarousel" class="carousel slide" 
-            style="position: relative; left: 10%; bottom: 1%;">
-          <div class="carousel-inner" style="opacity: 0.6;">
-            <div class="active item">
-              <img src="${request.static_url("pyconca:static/vmfarms-logo.png")}"
-                width="200px;" height="100px;" class="black-and-white" alt="">
-            </div>
+          <div class="span10">
+            <div id="myCarousel" class="carousel slide" 
+                style="position: relative; left: 10%; bottom: 1%;">
+              <div class="carousel-inner" style="opacity: 0.6;">
+                <div class="active item">
+                  <img src="${request.static_url("pyconca:static/vmfarms-logo.png")}"
+                    width="200px;" height="100px;" class="black-and-white" alt="">
+                </div>
 
-            <div class="item">
-              <img src="${request.static_url("pyconca:static/freshbooks.gif")}"
-                width="200px;" height="100px;" class="black-and-white" alt="">
-            </div>
+                <div class="item">
+                  <img src="${request.static_url("pyconca:static/freshbooks.gif")}"
+                    width="200px;" height="100px;" class="black-and-white" alt="">
+                </div>
 
-          </div> <!-- carousel-inner -->
-        </div> <!-- myCarousel -->
-      </div> <!-- span4 -->
-    </div> 
+              </div> <!-- carousel-inner -->
+            </div> <!-- myCarousel -->
+          </div> <!-- span4 -->
+        </div>
+      </div> <!-- sponsor-holder -->
   </div> <!-- sponsors-row -->
 
   <script>

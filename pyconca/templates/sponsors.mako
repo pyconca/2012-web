@@ -6,7 +6,7 @@
 <div class="row-fluid sub-header-image">
   <div class="main-row">
     <div class="top-row-sub">
-      <h1 class="header-main-text">Venue</h1>
+      <h1 class="header-main-text">Sponsors</h1>
     </div>
   </div>
 </div>
