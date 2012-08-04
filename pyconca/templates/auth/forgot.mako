@@ -1,29 +1,24 @@
-<%inherit file="pyconca:templates/base.mako"/>
+<%inherit file="pyconca:templates/generic.mako"/>
 
-<%block name="content">
+<%block name="title">
+    Login
+</%block>
 
-<div class="content-holder">
+<%block name="header">
+    Forgot Password
+</%block>
 
-    <div class="row-fluid">
-        <div class="span12">
-            <h1>Reset Password</h1>
+<%block name="form">
 
-            <%include file="pyconca:templates/message.mako"/>
-
-            <form class="form-horizontal" action="${request.application_url}/forgot" method="POST">
-                <div class="control-group">
-                    <label class="control-label" for="username">Username</label>
-                    <div class="controls">
-                        <input type="text" maxlength="100" name="username" value="${username}">
-                    </div>
-                </div>
-
-                <input class="btn btn-inverse" type="submit" name="forgot.submit" value="Reset"/>
-            </form>
-
+    <form class="form-horizontal" action="${request.application_url}/forgot" method="POST">
+        <div class="control-group">
+            <label class="control-label" for="username">Username</label>
+            <div class="controls">
+                <input type="text" maxlength="100" name="username" value="${username}">
+            </div>
         </div>
-    </div>
 
-</div>
+        <input class="btn btn-inverse" type="submit" name="forgot.submit" value="Reset"/>
+    </form>
 
 </%block>
