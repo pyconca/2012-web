@@ -69,6 +69,19 @@ body {
   font-family: 'Special Elite', cursive;
 }
 
+.main-info {
+  margin: -2px 0px 0px 0px;
+  background-color: white;
+  padding: 20px;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #aaa;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #aaa;
+}
+
+
 .main-row {
   padding: 40px;
 }
@@ -81,7 +94,12 @@ body {
 #about-row {
   background-color: #d3cfc7;
   color: #423f39;
-} 
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  margin-top: 20px;
+}
 
 #about-row .circle {
   color: #eee;
@@ -92,9 +110,11 @@ body {
 #speakers-row {
   background-color: #a69f8f;
   color: #423f39;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: #aaa;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  margin-top: 20px;
 }
 
 #speakers-row .circle {
@@ -106,9 +126,11 @@ body {
 #sponsors-row {
   background-color: #d3cfc7;
   color: #423f39;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: #aaa;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  margin-top: 20px;
 } 
 
 #sponsors-row .circle {
@@ -120,9 +142,11 @@ body {
 #venue-row {
   background-color: #a69f8f;
   color: #423f39;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: #aaa;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  margin-top: 20px;
 }
 
 #venue-row .circle {
@@ -134,9 +158,11 @@ body {
 #schedule-row {
   background-color: #d3cfc7;
   color: #423f39;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: #aaa;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  margin-top: 20px;
 } 
 
 #schedule-row .circle {

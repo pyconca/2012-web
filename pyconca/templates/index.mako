@@ -56,6 +56,8 @@
   </div>
 </div>
 
+<div class="main-info">
+
 <div id="about-row" class="row-fluid">
   <div class="span12 main-row">
     <div class="circle">
@@ -144,6 +146,8 @@
       <a href="${request.application_url}/about" class="btn">More >></a>
     </div>
   </div>
+</div>
+
 </div>
 
 <script>
