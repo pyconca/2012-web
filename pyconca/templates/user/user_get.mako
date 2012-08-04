@@ -1,28 +1,30 @@
-<%inherit file="pyconca:templates/base.mako"/>
+<%inherit file="pyconca:templates/generic.mako"/>
 
-<%block name="content">
-<div class="content-holder">
+<%block name="title">
+    Users
+</%block>
 
-    <div class="row-fluid">
-        <div class="span12">
-            <div id="breadcrumbs-result"></div>
-            <div id="user-get-result"></div>
-            <br>
-            <br>
-            <form id="delete-form" method="POST">
-                <a class="btn btn-inverse" 
-                   href="${request.route_url('user_update', id=id)}">
-                   Edit
-                </a>
-                <input class="btn" type="submit" value="Delete"/>
-            </form>
-        </div>
-    </div>
+<%block name="header">
+    Users
+</%block>
 
-</div>
+<%block name="form">
+
+<div id="breadcrumbs-result"></div>
+
+<div id="user-get-result"></div>
+
+<br>
+
+<form id="delete-form" method="POST">
+    <a class="btn btn-inverse" 
+       href="${request.route_url('user_update', id=id)}">
+       Edit
+    </a>
+    <input class="btn" type="submit" value="Delete"/>
+</form>
 
 <script id="breadcrumbs-template" type="text/x-handlebars-template">
-    <br>
     <ul class="breadcrumb">
         <li><a href="${request.route_url('user_index')}">users</a></li>
         <span class="divider">/</span>

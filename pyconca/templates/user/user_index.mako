@@ -1,32 +1,23 @@
-<%inherit file="pyconca:templates/base.mako"/>
+<%inherit file="pyconca:templates/generic.mako"/>
 
-<%block name="content">
+<%block name="title">
+    Users
+</%block>
 
-<div class="content-holder">
+<%block name="header">
+    Users
+</%block>
 
-<div class="row-fluid">
-    <div class="span9">
-        <br>
-        <h1>Users</h1>
-        <br>
-    </div>
-    <div class="span3">
-        <br>
-        <a class="btn btn-inverse pull-right" 
-           href="${request.route_url('user_create')}">
-           New User
-        </a>
-    </div>
-    <hr>
-</div>
+<%block name="header_right">
+    <a class="btn btn-inverse pull-right"
+       href="${request.route_url('user_create')}">
+       New User
+    </a>
+</%block>
 
-<div class="row-fluid">
-    <div class="span12">
-        <div id="user-index-result"></div>
-    </div>
-</div>
+<%block name="form">
 
-</div>
+<div id="user-index-result"></div>
 
 <script id="user-index-template" type="text/x-handlebars-template">
     <table class="table table-striped table-bordered">

@@ -1,27 +1,25 @@
-<%inherit file="pyconca:templates/base.mako"/>
+<%inherit file="pyconca:templates/generic.mako"/>
 
-<%block name="content">
+<%block name="title">
+    Users
+</%block>
 
-<div class="row-fluid">
-  <div class="content-holder">
-    <div class="row-fluid">
-      <div class="content-section">
+<%block name="header">
+    Users
+</%block>
 
-            <div id="breadcrumbs-result"></div>
-            <%include file="pyconca:templates/message.mako"/>
-            <form id="edit-form" method="POST" class="form-horizontal">
-                <div id="user-edit-result"></div>
-                <input class="btn btn-inverse" type="submit" value="Save"/>
-                <a class="btn" type="submit" 
-                   href="${request.route_url('user_index')}">
-                   Cancel
-                </a>
-            </form>
+<%block name="form">
 
-      </div>
-    </div>
-  </div>
-</div>
+<div id="breadcrumbs-result"></div>
+
+<form id="edit-form" method="POST" class="form-horizontal">
+    <div id="user-edit-result"></div>
+    <input class="btn btn-inverse" type="submit" value="Save"/>
+    <a class="btn" type="submit" 
+       href="${request.route_url('user_index')}">
+       Cancel
+    </a>
+</form>
 
 <script id="breadcrumbs-template" type="text/x-handlebars-template">
     <ul class="breadcrumb">
