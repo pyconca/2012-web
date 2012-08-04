@@ -1,37 +1,55 @@
-<%inherit file="base.mako"/>
+<%inherit file="event.mako"/>
 
-<%block name="content">
+<%block name="title">
+    Schedule
+</%block>
 
-<div class="row-fluid sub-header-image">
-  <div class="span12 top-row">
-        <h1 class="header-main-text">Schedule</h1>
-        <h2 class="header-sub-text">PyCon Canada 2012</h2>
-        <h2 class="header-sub-text">Toronto, November 9th - 11th 2012</h2>
-  </div>
-</div>
-
-<div class="row-fluid">
-  <div class="content-holder">
-
-    <div class="row-fluid">
-      <div id="day1" class="content-section">
-        <p> Day one </p>
-      </div>
+<%block name="info">
+    <div class="row-fluid content-section">
+        <h1 class="header" id="friday">Friday November 9</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Maecenas luctus leo ut urna egestas tempor. 
+          Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
+          Vestibulum ac arcu id justo tristique adipiscing.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Maecenas luctus leo ut urna egestas tempor. 
+          Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
+          Vestibulum ac arcu id justo tristique adipiscing.
+        </p>
     </div>
 
-    <div class="row-fluid">
-      <div id="day2" class="content-section">
-        <p>Day two</p>
-      </div>
+    <div class="row-fluid content-section">
+        <h1 class="header" id="saturday">Saturday November 10</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Maecenas luctus leo ut urna egestas tempor. 
+          Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
+          Vestibulum ac arcu id justo tristique adipiscing.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Maecenas luctus leo ut urna egestas tempor. 
+          Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
+          Vestibulum ac arcu id justo tristique adipiscing.
+        </p>
     </div>
 
-    <div class="row-fluid">
-      <div id="day3" class="content-section">
-        <p>Day three</p>
-      </div>
+    <div class="row-fluid content-section">
+        <h1 class="header" id="sunday">Sunday November 11</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Maecenas luctus leo ut urna egestas tempor. 
+          Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
+          Vestibulum ac arcu id justo tristique adipiscing.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Maecenas luctus leo ut urna egestas tempor. 
+          Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
+          Vestibulum ac arcu id justo tristique adipiscing.
+        </p>
     </div>
-
-  </div> <!-- content holder -->
-</div> <!-- row-fluid -->
-
 </%block>
