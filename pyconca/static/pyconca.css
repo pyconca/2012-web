@@ -14,7 +14,6 @@ body {
   background-color: #4e4e4e;
   padding-top: 60px;
   color: #faf7f0;
-  line-height: 1.5;
   max-width: 960px;
 }
 
@@ -48,6 +47,7 @@ body {
 .header {
   border-bottom: 1px solid #ccc;
   margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .header.header-first {
@@ -199,7 +199,7 @@ body {
 
 .content-holder {
   font-size: 15px;
-  line-height: 30px;
+  line-height: 20px;
   color: #423f39;
   border-radius: 6px;
   -moz-border-radius: 6px;
@@ -212,7 +212,6 @@ body {
 
 .content-holder p {
   font-size: 15px;
-  line-height: 30px;
 }
 
 .content-column {
