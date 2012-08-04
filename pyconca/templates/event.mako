@@ -13,10 +13,10 @@
 <div class="row-fluid">
   <div class="content-holder">
     <div class="row-fluid">
-      <div class="span3">
+      <div class="span4">
         <ul id="sidenav" class="sidenav"></ul>
       </div>
-      <div class="span9 content-column">
+      <div class="span8 content-column">
         <%block name="info"/>
       </div>
     </div>

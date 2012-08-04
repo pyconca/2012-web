@@ -180,6 +180,8 @@ body {
 }
 
 .content-holder {
+  font-size: 15px;
+  line-height: 30px;
   color: #423f39;
   border-radius: 6px;
   -moz-border-radius: 6px;
@@ -188,6 +190,11 @@ body {
   background-color: white;
   margin: 20px 20px 20px 20px;
   padding: 20px;
+}
+
+.content-holder p {
+  font-size: 15px;
+  line-height: 30px;
 }
 
 .content-column {

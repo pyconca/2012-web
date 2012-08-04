@@ -7,6 +7,7 @@
 <%block name="info">
     <div class="row-fluid content-section">
         <h1 class="header" id="gold">Gold sponsors</h1>
+        <hr>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
           Maecenas luctus leo ut urna egestas tempor. 
@@ -23,6 +24,7 @@
 
     <div class="row-fluid content-section">
         <h1 class="header" id="silver">Silver sponsors</h1>
+        <hr>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
           Maecenas luctus leo ut urna egestas tempor. 
@@ -39,6 +41,7 @@
 
     <div class="row-fluid content-section">
         <h1 class="header" id="bronze">Bronze sponsors</h1>
+        <hr>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
           Maecenas luctus leo ut urna egestas tempor. 
