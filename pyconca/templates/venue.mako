@@ -6,8 +6,7 @@
 
 <%block name="info">
     <div class="row-fluid content-section">
-        <h1 class="header" id="location">Location</h1>
-        <hr>
+        <h1 class="header header-first" id="location">Location</h1>
         <p>
             The conference will be held at Beverly Halls, 206 Beverly St., just
             south of College and Bevery, Toronto.
@@ -19,7 +18,6 @@
 
     <div class="row-fluid content-section">
         <h1 class="header" id="transportation">Transportation</h1>
-        <hr>
         <p>
             Beverly Halls is a short walk from a number of different public
             transit stops.
@@ -31,7 +29,6 @@
 
     <div class="row-fluid content-section">
         <h1 class="header" id="hotel">Hotel</h1>
-        <hr>
         <p>
             We are in the process of finding a recommended hotel. Contact <a
             href="mailto:hotels@pycon.ca">hotels@pycon.ca</a> if you would like
