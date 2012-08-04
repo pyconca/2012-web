@@ -4,8 +4,6 @@ import logging
 from formencode import Invalid
 
 from pyramid.response import Response
-from pyramid.view import forbidden_view_config
-from pyramid.view import notfound_view_config
 
 
 log = logging.getLogger(__name__)
@@ -15,20 +13,6 @@ HTTP_STATUS_201 = '201 Created'
 HTTP_STATUS_400 = '400 Bad Request'
 HTTP_STATUS_403 = '403 Forbidden'
 HTTP_STATUS_404 = '404 Not Found'
-
-
-def is_api_request(info, request):
-    return request['PATH_INFO'].endswith('.json')
-
-
-@forbidden_view_config(custom_predicates=(is_api_request,))
-def forbidden(request):
-    return Response('Forbidden', status=HTTP_STATUS_403)
-
-
-@notfound_view_config(custom_predicates=(is_api_request,))
-def notfound(request):
-    return Response('Not Found', status=HTTP_STATUS_404)
 
 
 class FormencodeState(object):
