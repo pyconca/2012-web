@@ -3,10 +3,10 @@
 <%block name="content">
 
 <div class="row-fluid sub-header-image">
-  <div class="main-row">
-    <div class="top-row-sub">
-      <h1 class="header-main-text">Speakers</h1>
-    </div>
+  <div class="span12 top-row">
+        <h1 class="header-main-text">Speakers</h1>
+        <h2 class="header-sub-text">PyCon Canada 2012</h2>
+        <h2 class="header-sub-text">Toronto, November 9th - 11th 2012</h2>
   </div>
 </div>
 

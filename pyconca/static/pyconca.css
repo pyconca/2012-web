@@ -11,7 +11,7 @@ a:hover {
 }
 
 body {
-  background-color: #222;
+  background-color: #4e4e4e;
   padding-top: 60px;
   color: #faf7f0;
   line-height: 1.5;
@@ -60,108 +60,144 @@ body {
 }
 
 .header-main-text {
+  font-family: 'Special Elite', cursive;
   font-size: 48px;
   line-height: 72px;
 }
 
-.top-row-sub {
-  padding: 50px 100px;
-  text-align: right;
+.header-sub-text {
+  font-family: 'Special Elite', cursive;
 }
 
 .main-row {
   padding: 40px;
 }
 
+.main-row p {
+  font-size: 22px;
+  line-height: 30px;
+}
+
 #about-row {
-  background-color: #151515;
-  color: #777;
+  background-color: #d3cfc7;
+  color: #423f39;
 } 
 
 #about-row .circle {
-  color: #151515;
-  background: #444;
+  color: #eee;
+  background: #666;
   float: left;
 }
 
 #speakers-row {
-  background-color: #e4b243;
-  color: #444;
+  background-color: #a69f8f;
+  color: #423f39;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #aaa;
 }
 
 #speakers-row .circle {
-  background: #f2d9a1;
+  color: #eee;
+  background: #423f39;
   float: right;
 }
 
 #sponsors-row {
-  background-color: #f2d9a1;
-  color: #444;
-}
+  background-color: #d3cfc7;
+  color: #423f39;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #aaa;
+} 
 
 #sponsors-row .circle {
-  background: #e4b243;
+  color: #eee;
+  background: #666;
   float: left;
 }
 
 #venue-row {
-  background-color: #e4b243;
-  color: #444;
+  background-color: #a69f8f;
+  color: #423f39;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #aaa;
 }
 
 #venue-row .circle {
-  background: #f2d9a1;
+  color: #eee;
+  background: #423f39;
   float: right;
 }
 
 #schedule-row {
-  background-color: #151515;
-  color: #777;
-}
+  background-color: #d3cfc7;
+  color: #423f39;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #aaa;
+} 
 
 #schedule-row .circle {
-  color: #151515;
-  background: #444;
+  color: #eee;
+  background: #666;
   float: left;
 }
 
 .circle {
-  width: 160px;
-  height: 160px;
-  line-height: 160px;
-  border-radius: 80px;
-  -moz-border-radius: 80px;
-  -webkit-border-radius: 80px;
-  -khtml-border-radius: 80px;
-  font-size: 30px;
+  width: 140px;
+  height: 140px;
+  line-height: 140px;
+  border-radius: 70px;
+  -moz-border-radius: 70px;
+  -webkit-border-radius: 70px;
+  -khtml-border-radius: 70px;
+  font-size: 25px;
   font-weight: bold;
   text-align: center;
-  margin: 20px;
+  margin: 0px 20px 20px 20px;
+  font-family: 'Special Elite', cursive;
 }
 
 /* subpages */
 .sub-header-image{
-  height: 400px;
-  background: url('toronto-small.jpg') no-repeat center;
-  -webkit-background-size: 960px 400px;
-  -moz-background-size: 960px 400px;
-  -o-background-size: 960px 400px;
-  background-size: 960px 400px;
+  min-height: 200px;
+  background: url('python.jpg') no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  margin: auto;
+  background-position: left;
+  background-color: #fff;
+  color: #666;
 }
 
-.content-holder p {
-  color: #ccc;
+.sub-header-image .top-row {
+  text-align: right;
+  padding: 20px;
+}
+
+.content-holder {
+  color: #423f39;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  background-color: white;
+  margin: 20px 20px 20px 20px;
+  padding: 20px;
+}
+
+.content-column {
+  border-left-color: #423f39;
+  border-left-style: solid;
+  border-left-width: 2px;
+  padding: 0px 20px 20px 20px;
 }
 
 .sidenav {
-}
-
-.content-section {
-  margin: 40px 45px;
-}
-
-.content-section h1 {
-  line-height: 56px;
 }
 
 .overlay {
@@ -187,9 +223,9 @@ body {
 }
 
 #footer-row {
-  background-color: #0d0d0d;
+  background-color: #333;
   border-top: 1px solid #837d5c;
-  color: #383838;
+  color: #ccc;
   height: 100px;
 }
 

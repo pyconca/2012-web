@@ -18,6 +18,8 @@
     <script src="${request.static_url("pyconca:static/libs/jquery-1.7.2.min.js")}"></script>
     <script src="${request.static_url("pyconca:static/libs/bootstrap-2.0.3/js/bootstrap.min.js")}"></script>
     <script src="${request.static_url("pyconca:static/libs/handlebars-0.9.0.pre.3.js")}"></script>
+    <link href='http://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>

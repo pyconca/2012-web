@@ -5,9 +5,13 @@
   <div class="span12">
 
     <div class="row-fluid">
+      <br>
+    </div>
+
+    <div class="row-fluid">
       <div class="span12 top-row main-row overlay">
         <h1 class="header-main-text">PyCon Canada</h1>
-        <h2>Toronto, November 9th - 11th 2012</h2>
+        <h2 class="header-sub-text">Toronto, November 9th - 11th 2012</h2>
         <br />
         <a href="#" class="btn btn-warning btn-large">Register</a>
         <a href="#" class="btn btn-large">Sponsor</a>
@@ -59,25 +63,13 @@
     </div>
 
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      Maecenas luctus leo ut urna egestas tempor. 
-      Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
-      Vestibulum ac arcu id justo tristique adipiscing.
+    You're invited to a kickoff conference, getting us warmed up for the first 
+    PyCon outside the US—Montréal in 2014 and 2015! And when that's done, we 
+    want to keep the momentum going to maintain a vibrant community.
     </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      Maecenas luctus leo ut urna egestas tempor. 
-      Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
-      Vestibulum ac arcu id justo tristique adipiscing.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      Maecenas luctus leo ut urna egestas tempor. 
-      Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
-      Vestibulum ac arcu id justo tristique adipiscing.
-    </p>
+
     <div class="pull-right">
-      <a href="${request.application_url}/about" class="btn btn-inverse">More >></a>
+      <a href="${request.application_url}/about" class="btn">More >></a>
     </div>
   </div>
 </div>
@@ -89,22 +81,9 @@
     </div>
 
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      Maecenas luctus leo ut urna egestas tempor. 
-      Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
-      Vestibulum ac arcu id justo tristique adipiscing.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      Maecenas luctus leo ut urna egestas tempor. 
-      Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
-      Vestibulum ac arcu id justo tristique adipiscing.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      Maecenas luctus leo ut urna egestas tempor. 
-      Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
-      Vestibulum ac arcu id justo tristique adipiscing.
+    Share your knowledge and cool ideas. Submit your proposal for a talk or 
+    tutorial by October 1st to organizers@pycon.ca. We'll be sprinting at the 
+    conference too, so you can also send us sprint ideas.
     </p>
 
     <div>
@@ -120,11 +99,9 @@
     </div>
 
     <p>
-Beef jowl turducken id, proident elit incididunt rump cillum pastrami pork loin shank shankle et salami. Dolor shoulder incididunt kielbasa. Tail ea do, meatball reprehenderit ut ham hock elit fatback anim deserunt chuck sausage tenderloin. Cow tenderloin short loin jerky fugiat filet mignon andouille sausage ground round beef ribs.
-    </p>
-
-    <p>
-Incididunt beef culpa, irure pork dolore andouille velit anim drumstick ut. Aliquip exercitation cow pig turkey elit irure. Salami spare ribs strip steak velit labore ad rump sunt dolor reprehenderit in nulla magna t-bone. Excepteur dolore tempor laborum flank jowl consectetur venison. Jowl fugiat swine, nostrud turducken turkey veniam dolor prosciutto proident tenderloin pork chop leberkas dolore. Dolore pig officia eu, prosciutto dolore labore shank spare ribs. Quis tenderloin enim, commodo t-bone ea do labore ut voluptate reprehenderit.
+    Support the Canadian Python community and get recognition, promotion, and 
+    good karma for helping to increase the expertise and visibility of 
+    developers across Canada. Various sponsorship options are available.
     </p>
 
     <div class="pull-right">
@@ -140,22 +117,9 @@ Incididunt beef culpa, irure pork dolore andouille velit anim drumstick ut. Aliq
     </div>
 
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      Maecenas luctus leo ut urna egestas tempor. 
-      Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
-      Vestibulum ac arcu id justo tristique adipiscing.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      Maecenas luctus leo ut urna egestas tempor. 
-      Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
-      Vestibulum ac arcu id justo tristique adipiscing.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      Maecenas luctus leo ut urna egestas tempor. 
-      Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
-      Vestibulum ac arcu id justo tristique adipiscing.
+    Be there November 9-11, 2012 at Beverley Halls in downtown Toronto. A short 
+    walk from the subway, so when you aren't busy coding or chatting with your 
+    colleagues you've got lots of stuff to explore nearby.
     </p>
 
     <div>
@@ -171,25 +135,13 @@ Incididunt beef culpa, irure pork dolore andouille velit anim drumstick ut. Aliq
     </div>
 
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      Maecenas luctus leo ut urna egestas tempor. 
-      Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
-      Vestibulum ac arcu id justo tristique adipiscing.
+    Start the fun Friday evening with a mix and mingle. Feed your brain at 
+    talks on Saturday, and if your sprint team is eager, you can start that 
+    night. Code with the sprinters or attend tutorials on Sunday.
     </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      Maecenas luctus leo ut urna egestas tempor. 
-      Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
-      Vestibulum ac arcu id justo tristique adipiscing.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      Maecenas luctus leo ut urna egestas tempor. 
-      Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
-      Vestibulum ac arcu id justo tristique adipiscing.
-    </p>
+
     <div class="pull-right">
-      <a href="${request.application_url}/about" class="btn btn-inverse">More >></a>
+      <a href="${request.application_url}/about" class="btn">More >></a>
     </div>
   </div>
 </div>
