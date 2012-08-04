@@ -60,7 +60,7 @@
 
 <div id="about-row" class="row-fluid">
   <div class="span12 main-row">
-    <div class="circle">
+    <div class="circle circle-odd">
        About
     </div>
 
@@ -78,7 +78,7 @@
 
 <div id="speakers-row" class="row-fluid">
   <div class="span12 main-row">
-    <div class="circle">
+    <div class="circle circle-even">
       Speakers
     </div>
 
@@ -96,7 +96,7 @@
 
 <div id="sponsors-row" class="row-fluid">
   <div class="span12 main-row">
-    <div class="circle">
+    <div class="circle circle-odd">
         Sponsors
     </div>
 
@@ -114,7 +114,7 @@
 
 <div id="venue-row" class="row-fluid">
   <div class="span12 main-row">
-    <div class="circle">
+    <div class="circle circle-even">
       Venue
     </div>
 
@@ -132,7 +132,7 @@
 
 <div id="schedule-row" class="row-fluid">
   <div class="span12 main-row">
-    <div class="circle">
+    <div class="circle circle-odd">
       Schedule
     </div>
 

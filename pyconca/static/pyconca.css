@@ -101,12 +101,6 @@ body {
   margin-top: 20px;
 }
 
-#about-row .circle {
-  color: #eee;
-  background: #666;
-  float: left;
-}
-
 #speakers-row {
   background-color: #a69f8f;
   color: #423f39;
@@ -115,12 +109,6 @@ body {
   -webkit-border-radius: 20px;
   -khtml-border-radius: 20px;
   margin-top: 20px;
-}
-
-#speakers-row .circle {
-  color: #eee;
-  background: #423f39;
-  float: right;
 }
 
 #sponsors-row {
@@ -133,12 +121,6 @@ body {
   margin-top: 20px;
 } 
 
-#sponsors-row .circle {
-  color: #eee;
-  background: #666;
-  float: left;
-}
-
 #venue-row {
   background-color: #a69f8f;
   color: #423f39;
@@ -147,12 +129,6 @@ body {
   -webkit-border-radius: 20px;
   -khtml-border-radius: 20px;
   margin-top: 20px;
-}
-
-#venue-row .circle {
-  color: #eee;
-  background: #423f39;
-  float: right;
 }
 
 #schedule-row {
@@ -165,17 +141,12 @@ body {
   margin-top: 20px;
 } 
 
-#schedule-row .circle {
-  color: #eee;
-  background: #666;
-  float: left;
-}
-
 .circle {
   width: 140px;
   height: 140px;
   line-height: 140px;
   border-radius: 70px;
+  color: #eee;
   -moz-border-radius: 70px;
   -webkit-border-radius: 70px;
   -khtml-border-radius: 70px;
@@ -184,6 +155,18 @@ body {
   text-align: center;
   margin: 0px 20px 20px 20px;
   font-family: 'Special Elite', cursive;
+}
+
+.circle-odd {
+  background: #666;
+  float: left;
+  margin-left: 0;
+}
+
+.circle-even {
+  background: #423f39;
+  float: right;
+  margin-right: 0;
 }
 
 /* subpages */
