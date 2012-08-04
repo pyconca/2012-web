@@ -242,7 +242,7 @@ body {
   background-color: #333;
   border-top: 1px solid #837d5c;
   color: #ccc;
-  height: 100px;
+  min-height: 100px;
 }
 
 .footer-nav-link {
