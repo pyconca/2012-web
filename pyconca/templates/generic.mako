@@ -1,4 +1,4 @@
-<%inherit file="base.mako"/>
+<%inherit file="pyconca:templates/base.mako"/>
 
 <%block name="content">
 
