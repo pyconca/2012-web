@@ -15,6 +15,7 @@
     <div class="row-fluid">
 
       <div class="span4">
+        <h3>Quick Links</h3>
         <ul id="sidenav" class="sidenav"></ul>
         <div id="sponsors_carousel" class="carousel slide">
           <h3>Sponsors</h3>

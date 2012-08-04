@@ -225,6 +225,29 @@ body {
 .sidenav {
 }
 
+.sidenav-item {
+  list-style-type: none;
+}
+
+.sidenav-link {
+  background-color: #d3cfc7;
+  display: block;
+  margin: 14px 14px 14px -10px;
+  padding: 14px 14px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #423f39;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -khtml-border-radius: 6px;
+}
+
+.sidenav-link:hover {
+  background-color: #a69f8f;
+  color: #423f39;
+}
+
 .overlay {
   background: url('overlay.png');
   color: #ddd;
