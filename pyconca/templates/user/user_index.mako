@@ -1,9 +1,5 @@
 <%inherit file="pyconca:templates/generic.mako"/>
 
-<%block name="title">
-    Users
-</%block>
-
 <%block name="header">
     Users
 </%block>

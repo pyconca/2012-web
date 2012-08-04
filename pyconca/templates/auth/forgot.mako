@@ -1,11 +1,7 @@
 <%inherit file="pyconca:templates/generic.mako"/>
 
-<%block name="title">
-    Login
-</%block>
-
 <%block name="header">
-    Forgot Password
+    Password Reset
 </%block>
 
 <%block name="form">
