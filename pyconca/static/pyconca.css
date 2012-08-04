@@ -285,3 +285,8 @@ body {
 #footer-links a {
   color: #ccc;
 }
+
+/* schedule.mako specific styles */
+.schedule-page .header {
+  border-bottom: none;
+}

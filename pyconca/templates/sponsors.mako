@@ -6,50 +6,11 @@
 
 <%block name="info">
     <div class="row-fluid content-section">
-        <h1 class="header header-first" id="gold">Gold sponsors</h1>
+        <h1 class="header header-first">Sponsor PyCon Canada</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Maecenas luctus leo ut urna egestas tempor. 
-          Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
-          Vestibulum ac arcu id justo tristique adipiscing.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Maecenas luctus leo ut urna egestas tempor. 
-          Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
-          Vestibulum ac arcu id justo tristique adipiscing.
-        </p>
-    </div>
-
-    <div class="row-fluid content-section">
-        <h1 class="header" id="silver">Silver sponsors</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Maecenas luctus leo ut urna egestas tempor. 
-          Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
-          Vestibulum ac arcu id justo tristique adipiscing.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Maecenas luctus leo ut urna egestas tempor. 
-          Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
-          Vestibulum ac arcu id justo tristique adipiscing.
-        </p>
-    </div>
-
-    <div class="row-fluid content-section">
-        <h1 class="header" id="bronze">Bronze sponsors</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Maecenas luctus leo ut urna egestas tempor. 
-          Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
-          Vestibulum ac arcu id justo tristique adipiscing.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Maecenas luctus leo ut urna egestas tempor. 
-          Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
-          Vestibulum ac arcu id justo tristique adipiscing.
+            We are in the process of developing a prospectus. In the mean time,
+            if you are interested in sponsoring PyCon Canada, please contact <a
+            href="mailto:sponsorship@pycon.ca">sponsorship@pycon.ca</a>.
         </p>
     </div>
 </%block>
