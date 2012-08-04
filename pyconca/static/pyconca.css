@@ -73,14 +73,7 @@ body {
   margin: -2px 0px 0px 0px;
   background-color: white;
   padding: 20px;
-  border-left-style: solid;
-  border-left-width: 1px;
-  border-left-color: #aaa;
-  border-right-style: solid;
-  border-right-width: 1px;
-  border-right-color: #aaa;
 }
-
 
 .main-row {
   padding: 40px;
@@ -89,6 +82,13 @@ body {
 .main-row p {
   font-size: 22px;
   line-height: 30px;
+}
+
+@media (max-width: 480px) { 
+  .main-row p {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 #about-row {
