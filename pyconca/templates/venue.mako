@@ -6,7 +6,7 @@
 
 <%block name="info">
     <div class="row-fluid content-section">
-        <h1 class="header" id="address">Address</h1>
+        <h1 class="header" id="location">Location</h1>
         <hr>
         <p>
             The conference will be held at Beverly Halls, 206 Beverly St., just
@@ -21,16 +21,11 @@
         <h1 class="header" id="transportation">Transportation</h1>
         <hr>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Maecenas luctus leo ut urna egestas tempor. 
-          Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
-          Vestibulum ac arcu id justo tristique adipiscing.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Maecenas luctus leo ut urna egestas tempor. 
-          Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
-          Vestibulum ac arcu id justo tristique adipiscing.
+            Beverly Halls is a short walk from a number of different public
+            transit stops.
+            <a href="http://maps.google.ca/maps?daddr=206+Beverley+St,+Toronto,+ON+M5T+1Z3&hl=en&sll=43.657192,-79.395382&sspn=0.019933,0.077162&geocode=FWYnmgId0oVE-ynn5LTlxjQriDEq_o2na7PIDw&dirflg=r&ttype=now&noexp=0&noal=0&sort=def&mra=ltm&t=m&z=14&start=0">Google Map's transit
+            directions</a> can be used to find the best route. Paid street
+            parking is also available on Beverley and surrounding side streets.
         </p>
     </div>
 
@@ -38,33 +33,9 @@
         <h1 class="header" id="hotel">Hotel</h1>
         <hr>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Maecenas luctus leo ut urna egestas tempor. 
-          Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
-          Vestibulum ac arcu id justo tristique adipiscing.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Maecenas luctus leo ut urna egestas tempor. 
-          Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
-          Vestibulum ac arcu id justo tristique adipiscing.
-        </p>
-    </div>
-
-    <div class="row-fluid content-section">
-        <h1 class="header" id="food">Food & Drink</h1>
-        <hr>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Maecenas luctus leo ut urna egestas tempor. 
-          Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
-          Vestibulum ac arcu id justo tristique adipiscing.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Maecenas luctus leo ut urna egestas tempor. 
-          Mauris volutpat vehicula arcu, ut feugiat diam consequat vitae. 
-          Vestibulum ac arcu id justo tristique adipiscing.
+            We are in the process of finding a recommended hotel. Contact <a
+            href="mailto:hotels@pycon.ca">hotels@pycon.ca</a> if you would like
+            to be notified when a hotel is chosen.
         </p>
     </div>
 </%block>
