@@ -2,13 +2,11 @@
 
 <%block name="content">
 
-<div class="data-container">
+<div class="content-holder">
 
     <div class="row-fluid">
         <div class="span12">
-            <br>
             <h1>Reset Password</h1>
-            <hr>
 
             <%include file="pyconca:templates/message.mako"/>
 
@@ -20,7 +18,7 @@
                     </div>
                 </div>
 
-                <input class="btn" type="submit" name="forgot.submit" value="Reset"/>
+                <input class="btn btn-inverse" type="submit" name="forgot.submit" value="Reset"/>
             </form>
 
         </div>

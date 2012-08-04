@@ -1,7 +1,7 @@
 <%inherit file="pyconca:templates/base.mako"/>
 
 <%block name="content">
-<div class="data-container">
+<div class="content-holder">
 
     <div class="row-fluid">
         <div class="span12">

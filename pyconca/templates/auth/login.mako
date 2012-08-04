@@ -4,11 +4,10 @@
 
 <div class="row-fluid">
 
-  <%include file="pyconca:templates/message.mako"/>
-
   <div class="content-holder">
+    <%include file="pyconca:templates/message.mako"/>
     <div class="row-fluid">
-      <div class="content-section" style="padding-bottom:300px;">
+      <div class="content-section">
 
         <h1>Login</h1>
 
@@ -32,7 +31,7 @@
                   </div>
               </div>
 
-              <input class="btn btn-success" type="submit" name="login.submit" value="Login"/>
+              <input class="btn btn-inverse" type="submit" name="login.submit" value="Login"/>
           </form>
 
       </div>
