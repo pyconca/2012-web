@@ -14,12 +14,11 @@
   <div class="content-holder">
     <div class="row-fluid">
 
-      <div class="span4">
+      <div class="span3">
         <h3>Quick Links</h3>
         <ul id="sidenav" class="sidenav"></ul>
-        <div id="sponsors_carousel" class="carousel slide">
-          <h3>Sponsors</h3>
-          <br>
+        <h3>Sponsors</h3>
+        <div id="sponsors_carousel" class="carousel slide" style="margin: 20px;">
           <div class="carousel-inner">
             <div class="active item">
              <img src="${request.static_url("pyconca:static/vmfarms-logo.png")}"
@@ -39,7 +38,7 @@
         </div>
       </div>
 
-      <div class="span8 content-column">
+      <div class="span9 content-column">
         <%block name="info"/>
       </div>
     </div>
