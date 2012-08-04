@@ -13,9 +13,31 @@
 <div class="row-fluid">
   <div class="content-holder">
     <div class="row-fluid">
+
       <div class="span4">
         <ul id="sidenav" class="sidenav"></ul>
+        <div id="sponsors_carousel" class="carousel slide">
+          <h3>Sponsors</h3>
+          <br>
+          <div class="carousel-inner">
+            <div class="active item">
+             <img src="${request.static_url("pyconca:static/vmfarms-logo.png")}"
+                  width="200px;" height="100px;" alt="">
+             <br>
+             <img src="${request.static_url("pyconca:static/freshbooks.gif")}"
+                  width="200px;" height="100px;" alt="">
+            </div>
+            <div class="item">
+             <img src="${request.static_url("pyconca:static/vmfarms-logo.png")}"
+                  width="200px;" height="100px;" alt="">
+             <br>
+             <img src="${request.static_url("pyconca:static/freshbooks.gif")}"
+                  width="200px;" height="100px;" alt="">
+            </div>
+          </div>
+        </div>
       </div>
+
       <div class="span8 content-column">
         <%block name="info"/>
       </div>
@@ -42,8 +64,11 @@
     });
   };
 
-  $(document).ready(function() {
+  $(function() {
     createSidenav();
+    $('.carousel').carousel({
+      interval: 3000
+    });
   });
 </script>
 

@@ -33,7 +33,7 @@
         <br>
         <br>
         <br>
-        <div id="myCarousel" class="carousel slide hidden-phone">
+        <div id="sponsors_carousel" class="carousel slide hidden-phone">
           <h6>Sponsors</h6>
           <div class="carousel-inner" style="opacity: 0.6;">
             <div class="active item">
