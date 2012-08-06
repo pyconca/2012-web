@@ -1,7 +1,11 @@
 <%inherit file="pyconca:templates/generic.mako"/>
 
 <%block name="header">
-    Users
+    % if is_create:
+      Sign Up
+    % else:
+      Edit Profile
+    % endif
 </%block>
 
 <%block name="form">

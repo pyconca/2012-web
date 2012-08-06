@@ -1,7 +1,7 @@
 <%inherit file="pyconca:templates/generic.mako"/>
 
 <%block name="header">
-    Users
+    User Profile
 </%block>
 
 <%block name="form">
