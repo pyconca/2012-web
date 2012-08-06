@@ -23,6 +23,13 @@ class UserApi(BaseApi):
         user.email = form['email']
         user.password = generate_password(form['password'])
 
+    def _create_flash(self, user):
+        msg = ('You have signed up for PyCon Canada!')
+        self.request.session.flash(msg, 'success')
+
+    def _update_flash(self, user):
+        msg = ('Updated user: %s' % (user.username))
+        self.request.session.flash(msg, 'success')
 
 class UniqueUsername(FancyValidator):
 

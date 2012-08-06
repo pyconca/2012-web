@@ -53,6 +53,7 @@ class BaseApi(object):
         model = self.dao.get(self.id)
         try:
             self._persist(model)
+            self._update_flash(model)
             return self._respond(HTTP_STATUS_200)
         except Invalid as invalid_exception:
             self._add_validation_errors(invalid_exception)
@@ -62,6 +63,7 @@ class BaseApi(object):
         model = self.dao.create()
         try:
             self._persist(model)
+            self._create_flash(model)
             return self._respond(HTTP_STATUS_201)
         except Invalid as invalid_exception:
             self._add_validation_errors(invalid_exception)
@@ -73,6 +75,12 @@ class BaseApi(object):
         pass
 
     def _populate(self, model, form):
+        pass
+
+    def _create_flash(self, model):
+        pass
+
+    def _update_flash(self, model, form):
         pass
 
     #---------- persist helpers
