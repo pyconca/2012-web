@@ -31,6 +31,7 @@ class UserApi(BaseApi):
         msg = ('Updated user: %s' % (user.username))
         self.request.session.flash(msg, 'success')
 
+
 class UniqueUsername(FancyValidator):
 
     def __init__(self, *args, **kwargs):

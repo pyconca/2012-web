@@ -22,7 +22,11 @@
 
 <script id="breadcrumbs-template" type="text/x-handlebars-template">
     <ul class="breadcrumb">
-        <li><a href="${request.route_url('user_index')}">users</a></li>
+        % if is_admin:
+          <li><a href="${request.route_url('user_index')}"}>users</a></li>
+        % else:
+          <li>users</li>
+        % endif
         <span class="divider">/</span>
         <li>{{user.username}}</li>
     </ul>
