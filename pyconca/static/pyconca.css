@@ -18,7 +18,7 @@ body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-@media (max-width: 480px) { 
+@media (max-width: 767px) { 
   body {
     background-color: #4e4e4e;
   }
@@ -104,7 +104,7 @@ body {
   line-height: 30px;
 }
 
-@media (max-width: 480px) { 
+@media (max-width: 767px) { 
   .main-row p {
     font-size: 16px;
     line-height: 20px;
