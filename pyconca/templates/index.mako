@@ -14,7 +14,7 @@
         <h2 class="header-sub-text">Toronto, November 9th - 11th 2012</h2>
         <br />
         <a href="#" class="btn btn-warning btn-large">Register</a>
-        <a href="#" class="btn btn-large">Sponsor</a>
+        <a href="${request.application_url}/sponsors" class="btn btn-large">Sponsor</a>
       </div>
     </div>
 
