@@ -17,7 +17,9 @@
        href="${request.route_url('user_update', id=id)}">
        Edit
     </a>
-    <input class="btn" type="submit" value="Delete"/>
+    % if is_admin:
+      <input class="btn" type="submit" value="Delete"/>
+    % endif
 </form>
 
 <script id="breadcrumbs-template" type="text/x-handlebars-template">
