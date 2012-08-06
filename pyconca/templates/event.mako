@@ -17,8 +17,9 @@
       <div class="span3">
         <h3>Quick Links</h3>
         <ul id="sidenav" class="sidenav"></ul>
-        <h3>Sponsors</h3>
-        <div id="sponsors_carousel" class="carousel slide" style="margin: 20px;">
+
+        <h3 style="padding-top:30px;">Sponsors</h3>
+        <div id="sponsors_carousel" class="carousel slide" style="margin: 10px;">
           <div class="carousel-inner">
             <div class="active item">
              <img src="${request.static_url("pyconca:static/vmfarms-logo.png")}"

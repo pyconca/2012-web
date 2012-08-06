@@ -15,6 +15,7 @@ body {
   padding-top: 60px;
   color: #faf7f0;
   max-width: 960px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .main-nav {
@@ -26,6 +27,10 @@ body {
 .navbar-inner {
   box-shadow: none;
   background: none;
+}
+
+.nav {
+  padding: 0 15px;
 }
 
 .nav-item {
@@ -46,8 +51,8 @@ body {
 
 .header {
   border-bottom: 1px solid #ccc;
-  margin-top: 10px;
-  margin-bottom: 5px;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 .header.header-first {
@@ -85,7 +90,7 @@ body {
 }
 
 .main-row {
-  padding: 40px;
+  padding: 30px 40px;
 }
 
 .main-row p {
@@ -216,9 +221,7 @@ body {
 }
 
 .content-column {
-  border-left-color: #423f39;
-  border-left-style: solid;
-  border-left-width: 2px;
+  border-left: 1px solid #d3cfc7;
   padding: 0px 20px 20px 20px;
 }
 
@@ -230,12 +233,11 @@ body {
 }
 
 .sidenav-link {
-  background-color: #d3cfc7;
+  background-color: #DED8D1;
   display: block;
   margin: 20px 0px 0px -20px;
   padding: 14px 14px;
   font-size: 15px;
-  font-weight: bold;
   color: #423f39;
   border-radius: 6px;
   -moz-border-radius: 6px;
@@ -244,8 +246,9 @@ body {
 }
 
 .sidenav-link:hover {
-  background-color: #a69f8f;
+  background-color: #e49030;
   color: #423f39;
+  text-decoration: none;
 }
 
 .overlay {
@@ -272,9 +275,9 @@ body {
 
 #footer-row {
   background-color: #333;
-  border-top: 1px solid #837d5c;
+  border-top: 1px solid #000;
   color: #ccc;
-  min-height: 100px;
+  min-height: 80px;
 }
 
 .footer-nav-link {
@@ -284,6 +287,10 @@ body {
 
 #footer-links a {
   color: #ccc;
+}
+
+#footer-links a:hover {
+  color: #E4B243;
 }
 
 /* schedule.mako specific styles */

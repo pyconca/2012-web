@@ -7,7 +7,7 @@
 <%block name="info">
   <div class="schedule-page">
     <div class="row-fluid content-section">
-      <h1 class="header header-first" id="friday">Friday November 9</h1>
+      <h1 class="header header-first" id="friday">Friday, November 9</h1>
       <table class="table table-bordered">
         <tr>
           <th>18:00</th>
@@ -27,7 +27,7 @@
     </div>
 
     <div class="row-fluid content-section">
-      <h1 class="header" id="saturday">Saturday November 10</h1>
+      <h1 class="header" id="saturday">Saturday, November 10</h1>
       <table class="table table-bordered">
         <tr>
           <th>8:30</th>
@@ -139,7 +139,7 @@
     </div>
 
     <div class="row-fluid content-section">
-      <h1 class="header" id="sunday">Sunday November 11</h1>
+      <h1 class="header" id="sunday">Sunday, November 11</h1>
       <table class="table table-bordered">
         <tr>
           <th>9:30</th>

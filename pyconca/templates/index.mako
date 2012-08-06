@@ -90,7 +90,7 @@
     </p>
 
     <div>
-      <a href="${request.application_url}/about" class="btn">More >></a>
+      <a href="${request.application_url}/speakers" class="btn">More >></a>
     </div>
   </div>
 </div>
@@ -108,7 +108,7 @@
     </p>
 
     <div class="pull-right">
-      <a href="${request.application_url}/about" class="btn">More >></a>
+      <a href="${request.application_url}/sponsors" class="btn">More >></a>
     </div>
   </div>
 </div>
@@ -144,7 +144,7 @@
     </p>
 
     <div class="pull-right">
-      <a href="${request.application_url}/about" class="btn">More >></a>
+      <a href="${request.application_url}/schedule" class="btn">More >></a>
     </div>
   </div>
 </div>
