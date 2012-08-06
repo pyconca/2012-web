@@ -99,14 +99,14 @@
                           Login
                       </a>
                     </li>
-                % endif
 
-                <li class="nav-item">
-                  <a class="nav-link" href="${request.application_url}/new/user">
-                      <i class="icon-star-empty icon-white nav-icon"></i>
-                      Sign Up
-                  </a>
-                </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="${request.application_url}/new/user">
+                          <i class="icon-star-empty icon-white nav-icon"></i>
+                          Sign Up
+                      </a>
+                    </li>
+                % endif
               </ul>
 
               % if logged_in:

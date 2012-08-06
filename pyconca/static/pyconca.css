@@ -1,17 +1,17 @@
 @import url(libs/bootstrap-2.0.3/css/bootstrap.css);
 
 a {
-  color: #e4b243;
+  color: #c07900;
   text-decoration: none;
 }
 
 a:hover {
-  color: #e4b243;
+  color: #c07900;
   text-decoration: underline;
 }
 
 body {
-  background-color: #4e4e4e;
+  background-color: #D1D1D1;
   padding-top: 60px;
   color: #faf7f0;
   max-width: 960px;
@@ -191,10 +191,26 @@ body {
   -moz-background-size: contain;
   -o-background-size: contain;
   background-size: contain;
-  margin: auto;
   background-position: left;
   background-color: #fff;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  margin: auto;
   color: #666;
+}
+
+.sub-header-container {
+  border-left-style: solid; 
+  border-left-width: 20px; 
+  border-left-color: #333;
+  border-right-style: solid; 
+  border-right-width: 20px; 
+  border-right-color: #333;
+  border-top-style: solid; 
+  border-top-width: 20px; 
+  border-top-color: #333;
 }
 
 .sub-header-image .top-row {
@@ -233,7 +249,7 @@ body {
 }
 
 .sidenav-link {
-  background-color: #DED8D1;
+  background-color: #e1e1e2;
   display: block;
   margin: 20px 0px 0px -20px;
   padding: 14px 14px;
@@ -246,7 +262,7 @@ body {
 }
 
 .sidenav-link:hover {
-  background-color: #e49030;
+  background-color: #e4b243;
   color: #423f39;
   text-decoration: none;
 }

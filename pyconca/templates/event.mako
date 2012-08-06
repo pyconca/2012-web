@@ -2,11 +2,15 @@
 
 <%block name="content">
 
-<div class="row-fluid sub-header-image">
-  <div class="span12 top-row">
+<div class="row-fluid">
+  <div class="span12 sub-header-container">
+    <div class="row-fluid sub-header-image">
+      <div class="span12 top-row">
         <h1 class="header-main-text"><%block name="title"/></h1>
         <h2 class="header-sub-text">PyCon Canada 2012</h2>
         <h2 class="header-sub-text">Toronto, November 9th - 11th</h2>
+      </div>
+    </div>
   </div>
 </div>
 
