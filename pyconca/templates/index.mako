@@ -13,7 +13,7 @@
         <h1 class="header-main-text">PyCon Canada</h1>
         <h2 class="header-sub-text">Toronto, November 9th - 11th 2012</h2>
         <br />
-        <a href="#" class="btn btn-warning btn-large">Register</a>
+        <a href="http://guestlistapp.com/events/116013" class="btn btn-warning btn-large guestlist-event-116013">Register</a>
         <a href="${request.application_url}/sponsors" class="btn btn-large">Sponsor</a>
       </div>
     </div>
@@ -156,5 +156,7 @@
       $('.carousel').carousel();
     });
 </script>
+
+<script type="text/javascript" src="http://guestlistapp.com/javascripts/guestlist-embed.js"></script>
 
 </%block>
