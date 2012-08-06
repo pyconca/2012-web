@@ -12,7 +12,7 @@
 % endfor
 
 <script id="validation-errors-template" type="text/x-handlebars-template">
-    <div class="alert alert-error">
+    <div class="alert alert-warning">
     {{#errors}}
         {{field}} - {{message}}
         <br>
