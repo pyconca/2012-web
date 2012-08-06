@@ -18,6 +18,12 @@ body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+@media (max-width: 480px) { 
+  body {
+    background-color: #4e4e4e;
+  }
+}
+
 .main-nav {
   margin: auto;
   box-shadow: none;
