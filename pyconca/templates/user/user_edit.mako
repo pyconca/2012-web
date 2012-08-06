@@ -38,7 +38,7 @@
         <div class="controls">
             <input type="text" maxlength="100" 
                    name="first_name" value="{{user.first_name}}">
-            <div class="help-block" id="first_name_error">&nbsp;</div>
+            <div class="help-block" style="display: inline;" id="first_name_error">&nbsp;</div>
         </div>
     </div>
 
@@ -47,7 +47,7 @@
         <div class="controls">
             <input type="text" maxlength="100" 
                    name="last_name" value="{{user.last_name}}">
-            <div class="help-block" id="last_name_error">&nbsp;</div>
+            <div class="help-block" style="display: inline;" id="last_name_error">&nbsp;</div>
         </div>
     </div>
 
@@ -56,7 +56,7 @@
         <div class="controls">
             <input type="text" maxlength="30" 
                    name="username" value="{{user.username}}">
-            <div class="help-block" id="username_error">&nbsp;</div>
+            <div class="help-block" style="display: inline;" id="username_error">&nbsp;</div>
         </div>
     </div>
 
@@ -65,7 +65,7 @@
         <div class="controls">
             <input type="text" maxlength="100" 
                    name="email" value="{{user.email}}">
-            <div class="help-block" id="email_error">&nbsp;</div>
+            <div class="help-block" style="display: inline;" id="email_error">&nbsp;</div>
         </div>
     </div>
 
@@ -74,7 +74,7 @@
         <div class="controls">
             <input type="password" maxlength="50" 
                    name="password" value="">
-            <div class="help-block" id="password_error">&nbsp;</div>
+            <div class="help-block" style="display: inline;" id="password_error">&nbsp;</div>
         </div>
     </div>
 
@@ -85,7 +85,7 @@
         <div class="controls">
             <input type="password" maxlength="50" 
                    name="password_confirm" value="">
-            <div class="help-block" id="password_confirm_error">&nbsp;</div>
+            <div class="help-block" style="display: inline;" id="password_confirm_error">&nbsp;</div>
         </div>
     </div>
 </script>
