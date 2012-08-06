@@ -172,29 +172,31 @@
     </div>
   </div>
 
-  <div id="footer-row" class="row-fluid visible-phone">
-     <div class="main-row">
-      <div class="span12">
-        <a class="nav-link" href="${request.application_url}">Home</a>
-        <a class="nav-link pull-right" href="${request.application_url}/schedule">Schedule</a>
-        <br>
-        <a class="nav-link" href="${request.application_url}/venue">Venue</a>
-        <a class="nav-link pull-right" href="${request.application_url}/speakers">Speakers</a>
-        <br>
-        <a class="nav-link" href="${request.application_url}/about">About</a>
-        <a class="nav-link pull-right" href="${request.application_url}/sponsors">Sponsors</a>
+  <div id="footer-links">
+      <div id="footer-row" class="row-fluid visible-phone">
+         <div class="main-row">
+          <div class="span12">
+            <a class="nav-link" href="${request.application_url}">Home</a>
+            <a class="nav-link pull-right" href="${request.application_url}/schedule">Schedule</a>
+            <br>
+            <a class="nav-link" href="${request.application_url}/venue">Venue</a>
+            <a class="nav-link pull-right" href="${request.application_url}/speakers">Speakers</a>
+            <br>
+            <a class="nav-link" href="${request.application_url}/about">About</a>
+            <a class="nav-link pull-right" href="${request.application_url}/sponsors">Sponsors</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <div id="footer-row" class="row-fluid visible-phone">
-     <div class="main-row">
-      <div class="span12" style="text-align: center;">
-        <strong>&copy; PyCon Canada 2012</strong>
-          <br>
-          <a href="https://twitter.com/pyconca">@pyconca</a>
+      <div id="footer-row" class="row-fluid visible-phone">
+         <div class="main-row">
+          <div class="span12" style="text-align: center;">
+            <strong>&copy; PyCon Canada 2012</strong>
+              <br>
+              <a href="https://twitter.com/pyconca">@pyconca</a>
+          </div>
+        </div>
       </div>
-    </div>
   </div>
 
 </div>
