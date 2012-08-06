@@ -113,6 +113,12 @@ body {
   -webkit-border-radius: 20px;
   -khtml-border-radius: 20px;
   margin-top: 20px;
+  background-image: -ms-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #d3cfc7 100%);
+  background-image: -moz-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #d3cfc7 100%);
+  background-image: -o-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #d3cfc7 100%);
+  background-image: -webkit-gradient(radial, center center, 0, center center, 497, color-stop(0, #FFFFFF), color-stop(1, #d3cfc7));
+  background-image: -webkit-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #d3cfc7 100%);
+  background-image: radial-gradient(ellipse farthest-corner at center, #FFFFFF 0%, #d3cfc7 100%);
 }
 
 #row-even {
@@ -123,6 +129,12 @@ body {
   -webkit-border-radius: 20px;
   -khtml-border-radius: 20px;
   margin-top: 20px;
+  background-image: -ms-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #A69F8F 100%);
+  background-image: -moz-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #A69F8F 100%);
+  background-image: -o-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #A69F8F 100%);
+  background-image: -webkit-gradient(radial, center center, 0, center center, 497, color-stop(0, #FFFFFF), color-stop(1, #A69F8F));
+  background-image: -webkit-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #A69F8F 100%);
+  background-image: radial-gradient(ellipse farthest-corner at center, #FFFFFF 0%, #A69F8F 100%);
 }
 
 .circle {
