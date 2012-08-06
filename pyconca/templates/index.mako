@@ -66,8 +66,9 @@
 
     <p>
     You're invited to a kickoff conference, getting us warmed up for the first 
-    PyCon outside the US—Montréal in 2014 and 2015! And when that's done, we 
-    want to keep the momentum going to maintain a vibrant community.
+    PyCon North America conference outside the US—Montréal in 2014 and 2015!
+    And when that's done, we want to keep the momentum going to maintain a
+    vibrant community.
     </p>
 
     <div class="pull-right">

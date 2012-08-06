@@ -48,13 +48,22 @@
 <script>
   function createSidenav() {
     $(".header").each(function() {
+      var $this = $(this);
       var navItemHolder = $("<li></li>");
       var navItem = $("<a></a>");
 
+      if (!$this.attr("id")) {
+        var anchor = $this.text()
+          .toLowerCase()
+          .replace(/ /g, "-")
+          .replace(/[^a-z0-9-]/g, "");
+        $this.attr("id", anchor);
+      }
+
       navItem
-        .text($(this).text())
+        .text($this.text())
         .addClass("sidenav-link")
-        .attr("href", "#" + $(this).attr("id"));
+        .attr("href", "#" + $this.attr("id"));
 
       navItemHolder
         .append(navItem)
