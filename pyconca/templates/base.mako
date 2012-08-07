@@ -128,7 +128,8 @@
     <div class="main-row">
       <div class="span4">
         <strong>&copy; PyCon Canada 2012</strong>
-        &nbsp;&nbsp;<a style="color: #aaa;"
+        &nbsp;&nbsp;
+        <a style="color: #aaa;"
            href="http://www.flickr.com/photos/camstatic/5535319505">
            photo by camstatic
         </a>
