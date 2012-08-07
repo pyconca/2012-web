@@ -96,9 +96,10 @@ def forgot(request):
         user = user_dao.get_by_username(username)
         if user:
             login = request.route_url('login')
-            msg = ('Instructions on how to reset your password have been'
-                   ' sent to your email address.')
-            request.session.flash(msg, 'success')
+            #msg = ('Instructions on how to reset your password have been'
+            #       ' sent to your email address.')
+            msg = ('Contact organizers@pycon.ca to reset your password.')
+            request.session.flash(msg, 'error')
             return HTTPFound(location=login)
         msg = "Sorry. We couldn't find an account for that username."
         request.session.flash(msg, 'error')
