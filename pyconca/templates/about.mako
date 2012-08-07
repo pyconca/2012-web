@@ -73,8 +73,10 @@
         </tr>
       </table>
 
-    Have we missed thanking someone? Don't be shy -- let us know: 
-    <a href="mailto:organizers@pycon.ca">organizers@pycon.ca</a>.
+    <p>
+      Have we missed thanking someone? Don't be shy &mdash; let us know: 
+      <a href="mailto:organizers@pycon.ca">organizers@pycon.ca</a>.
+    </p>
 
     </div>
 </%block>
