@@ -38,7 +38,7 @@
       <h1 class="header">Made in Canada!</h1>
       <p>
         Made in Canada, with help from the greater python community. 
-        <strong>Thank-you for contribution!</strong>
+        <strong>Thank-you for your contribution!</strong>
       </p>
 
       <table class="table table-bordered">
