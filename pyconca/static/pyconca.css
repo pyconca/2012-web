@@ -260,16 +260,32 @@ body {
   padding: 0px 20px 20px 20px;
 }
 
+@media (max-width: 767px) {
+  .content-column {
+    border: none;
+    padding: 0;
+  }
+}
+
+.side-block {
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+
 .sidenav {
 }
 
 .sidenav-item {
   list-style-type: none;
+  margin-top: 10px;
+}
+
+.sidenav-item:first-child {
+  margin-top: 0;
 }
 
 .sidenav-link {
   display: block;
-  margin: 20px 0px -10px -20px;
   padding: 7px 7px;
   font-size: 15px;
   text-align: left;
