@@ -27,7 +27,7 @@
             might also consider co-presenting with a more experienced
             presenter. And once you’ve rocked PyCon Canada 2012, you can take
             that experience to help you gear up for the main PyCon conference
-            in Montreal.
+            in Montréal.
         </p>
     </div>
 

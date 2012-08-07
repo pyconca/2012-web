@@ -37,7 +37,7 @@
 
       <p>
         VIA is a good alternative to the airlines if you are coming from
-        somewhere like Montreal or Ottawa. Advance pricing is often available
+        somewhere like Montréal or Ottawa. Advance pricing is often available
         at a discount.
       </p>
 

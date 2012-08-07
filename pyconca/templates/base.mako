@@ -128,6 +128,11 @@
     <div class="main-row">
       <div class="span3">
         <strong>&copy; PyCon Canada 2012</strong>
+        <br>&nbsp; &nbsp;
+        <a style="color: #aaa;"
+           href="http://www.flickr.com/photos/camstatic/5535319505">
+           photo by camstatic
+        </a>
       </div>
 
       <div class="span9" id="footer-links">
@@ -189,6 +194,12 @@
             <strong>&copy; PyCon Canada 2012</strong>
               <br>
               <a href="https://twitter.com/pyconca">@pyconca</a>
+              <br>
+              <br>
+              <a style="color: #aaa;"
+                 href="http://www.flickr.com/photos/camstatic/5535319505">
+                 photo by camstatic
+              </a>
           </div>
         </div>
       </div>
