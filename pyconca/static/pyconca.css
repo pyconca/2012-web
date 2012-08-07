@@ -123,6 +123,16 @@ body {
   line-height: 30px;
 }
 
+.main-row p a {
+  color: #423f39;
+  text-decoration: underline;
+}
+
+.main-row p a:hover {
+  color: #423f39;
+  text-decoration: underline;
+}
+
 @media (max-width: 767px) { 
   .main-row p {
     font-size: 16px;

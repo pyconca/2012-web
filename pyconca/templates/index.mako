@@ -66,9 +66,11 @@
 
     <p>
     You're invited to a kickoff conference, getting us warmed up for the first 
-    PyCon North America conference outside the US—Montréal in 2014 and 2015!
-    And when that's done, we want to keep the momentum going to maintain a
-    vibrant community.
+    <a href="http://us.pycon.org/">PyCon North America</a> conference outside the US — 
+    <a href="http://www.villagegamer.net/2011/04/11/montreal-looking-forward-to-hosting-pycon/">
+    Montréal in 2014 and 2015!</a>
+    And when that's done, let's keep the momentum going with an annual PyCon 
+    in Canada.
     </p>
 
     <div class="pull-right">
@@ -142,7 +144,7 @@
     <p>
     Start the fun Friday evening with a mix and mingle. Feed your brain at 
     talks on Saturday, and if your sprint team is eager, you can start that 
-    night. Code with the sprinters or attend tutorials on Sunday.
+    night. Sprint or attend talks and tutorials on Sunday.
     </p>
 
     <div class="pull-right">

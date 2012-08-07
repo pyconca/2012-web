@@ -8,23 +8,34 @@
     <div class="row-fluid content-section">
         <h1 class="header header-first">What is PyCon Canada?</h1>
         <p>
-          PyCon Canada is an initiative to build a Canadian Python community.
-          We have two main goals:
+          PyCon Canada is an initiative to strengthen the Canadian Python 
+          community.
+        </p>
+
+        <p>
+          Our main goals:
         </p>
 
         <ul>
           <li>
-            Support the efforts of Montreal Python as they prepare to
-            host PyCon North America in 2014 and 2015. This is the first time
-            that the main PyCon conference is going outside of the US, and we
-            want to use this opportunity to showcase Canadian talent.
+            Support the efforts of 
+            <a href="http://montrealpython.org/2011/03/pycon-2014-and-2015-in-montreal/">
+            Montréal Python</a> as they prepare to host
+            <a href="http://us.pycon.org/">PyCon North America</a>
+            in 2014 and 2015. This is the first time
+            that the main PyCon conference is going to be outside of the US.
+            Let's take this opportunity to showcase the Canadian Python
+            community, and step up to the challenge as speakers and volunteers.
           </li>
           <li>
-            Strengthen the Canadian Python community by providing
-            opportunities to for us share knowledge and ideas, providing
-            education and support for speaking at conferences, and
-            increasing the visibility of developers and organizations
+            Strengthen the Canadian Python community by providing more
+            opportunities for us to share knowledge and ideas, encourage
+            support and education for speaking at conferences, and increase
+            the visibility of developers, organizations, and companies
             within the community.
+          </li>
+          <li>
+            Host an annual Canadian PyCon confernce, starting now — 2012!
           </li>
         </ul>
 
@@ -37,7 +48,7 @@
     <div class="row-fluid content-section">
       <h1 class="header">Made in Canada!</h1>
       <p>
-        Made in Canada, with help from the greater python community. 
+        Made in Canada, with help from the greater Python community. 
         <strong>Thank-you for your contribution!</strong>
       </p>
 
