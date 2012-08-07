@@ -8,17 +8,20 @@
     <div class="row-fluid content-section">
         <h1 class="header header-first">Speakers</h1>
         <p>
-
             The schedule for PyCon 2012 includes talks, tutorials, and sprints
-            over Saturday and Sunday. 
+            over Saturday and Sunday.
+        </p>
 
+        <p>
             We welcome <em>everyone</em> in the Canadian Python community to
             come and share your ideas, experiences, and expertise. Whether
             you’re new to Python or a seasoned expert, if you’ve got something
             interesting to share, we want to hear about it. A conference with a
             diverse set of good topics will give everyone the opportunity to
             learn something new and cool.
+        </p>
 
+        <p>
             Nervous about your lack of presenter experience? We’ll work to
             connect you with resources and people to help you prepare. You
             might also consider co-presenting with a more experienced

@@ -70,12 +70,6 @@
         .addClass("sidenav-link btn")
         .attr("href", "#" + $this.attr("id"));
 
-      navItem.hover(function() {
-          $(this).addClass("btn-warning");
-        }, function() {
-          $(this).removeClass("btn-warning");
-        });
-
       navItemHolder
         .append(navItem)
         .addClass("sidenav-item");

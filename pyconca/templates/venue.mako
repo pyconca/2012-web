@@ -17,7 +17,7 @@
     </div>
 
     <div class="row-fluid content-section">
-      <h1 class="header header-first">Getting to Toronto</h1>
+      <h1 class="header">Getting to Toronto</h1>
       <p>
         Toronto has 2 major airports.
         <a href="http://www.gtaa.com">Pearson</a> is the international airport
