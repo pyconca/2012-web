@@ -126,16 +126,15 @@
 
   <div id="footer-row" class="row-fluid hidden-phone">
     <div class="main-row">
-      <div class="span3">
+      <div class="span4">
         <strong>&copy; PyCon Canada 2012</strong>
-        <br>&nbsp; &nbsp;
-        <a style="color: #aaa;"
+        &nbsp;&nbsp;<a style="color: #aaa;"
            href="http://www.flickr.com/photos/camstatic/5535319505">
            photo by camstatic
         </a>
       </div>
 
-      <div class="span9" id="footer-links">
+      <div class="span8" id="footer-links">
         <div class="pull-right">
           <ul id="footer-nav">
             <li class="footer-nav-link">
