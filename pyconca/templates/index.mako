@@ -58,7 +58,7 @@
 
 <div class="main-info">
 
-<div id="row-odd" class="row-fluid">
+<div class="row-odd row-fluid">
   <div class="span12 main-row">
     <div class="circle circle-odd">
        About
@@ -77,7 +77,7 @@
   </div>
 </div>
 
-<div id="row-even" class="row-fluid">
+<div class="row-even row-fluid">
   <div class="span12 main-row">
     <div class="circle circle-even">
       Speakers
@@ -95,7 +95,7 @@
   </div>
 </div>
 
-<div id="row-odd" class="row-fluid">
+<div class="row-odd row-fluid">
   <div class="span12 main-row">
     <div class="circle circle-odd">
         Sponsors
@@ -113,7 +113,7 @@
   </div>
 </div>
 
-<div id="row-even" class="row-fluid">
+<div class="row-even row-fluid">
   <div class="span12 main-row">
     <div class="circle circle-even">
       Venue
@@ -131,7 +131,7 @@
   </div>
 </div>
 
-<div id="row-odd" class="row-fluid">
+<div class="row-odd row-fluid">
   <div class="span12 main-row">
     <div class="circle circle-odd">
       Schedule

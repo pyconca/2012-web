@@ -111,7 +111,7 @@ body {
   }
 }
 
-#row-odd {
+.row-odd {
   background-color: #d3cfc7;
   color: #423f39;
   border-radius: 20px;
@@ -127,7 +127,7 @@ body {
   background-image: radial-gradient(ellipse farthest-corner at center, #FFFFFF 0%, #d3cfc7 100%);
 }
 
-#row-even {
+.row-even {
   background-color: #a69f8f;
   color: #423f39;
   border-radius: 20px;
