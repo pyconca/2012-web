@@ -144,7 +144,11 @@
 
         $.post(url, request)
             .success(function() {
-                var goto_url = "${request.route_url('user_index')}";
+                % if is_create:
+                    var goto_url = "${request.route_url('login')}";
+                % else:
+                    var goto_url = "${request.route_url('user_get', id=id)}";
+                % endif
                 window.location.href = goto_url;
              })
             .error(function(xhr) {
