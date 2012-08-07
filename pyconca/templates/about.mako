@@ -32,6 +32,49 @@
           PyCon Canada is entirely run by volunteers who are passionate about
           these goals. We hope to see you at the 2012 conference!
         </p>
+    </div>
+
+    <div class="row-fluid content-section">
+      <h1 class="header">Made in Canada!</h1>
+      <p>
+        Made in Canada, with help from the greater python community. 
+        <strong>Thank-you for contribution!</strong>
+      </p>
+
+      <table class="table table-bordered">
+        <tr>
+          <td>David Wolever</td>
+          <td>Diana Clarke</td>
+        </tr>
+
+        <tr>
+          <td>Nicola Yap</td>
+          <td>Taavi Burns</td>
+        </tr>
+
+        <tr>
+          <td>Kay Z</td>
+          <td>Yi Qing Sim</td>
+        </tr>
+
+        <tr>
+          <td>Greg Wilson</td>
+          <td>Zach Aysan</td>
+        </tr>
+
+        <tr>
+          <td>Jess Sanson</td>
+          <td>Kirsten Marincic</td>
+        </tr>
+
+        <tr>
+          <td>Michael DiBernardo</td>
+          <td>Daniel Langer</td>
+        </tr>
+      </table>
+
+    Have we missed thanking someone? Don't be shy -- let us know: 
+    <a href="mailto:organizers@pycon.ca">organizers@pycon.ca</a>.
 
     </div>
 </%block>
