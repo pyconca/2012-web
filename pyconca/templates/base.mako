@@ -7,21 +7,16 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <!-- Le styles -->
-    <link href="${request.static_url("pyconca:static/pyconca.css")}" rel="stylesheet" />
-    <style type="text/css">
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-    </style>
+    <link href="${request.static_url("pyconca:static/libs/bootstrap-2.0.3/css/bootstrap.css")}" rel="stylesheet" />
     <link href="${request.static_url("pyconca:static/libs/bootstrap-2.0.3/css/bootstrap-responsive.css")}" rel="stylesheet" />
+    <link href="${request.static_url("pyconca:static/pyconca.css")}" rel="stylesheet" />
+
     <script src="${request.static_url("pyconca:static/libs/jquery-1.7.2.min.js")}"></script>
     <script src="${request.static_url("pyconca:static/libs/bootstrap-2.0.3/js/bootstrap.min.js")}"></script>
     <script src="${request.static_url("pyconca:static/libs/handlebars-0.9.0.pre.3.js")}"></script>
     <link href='http://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -30,11 +25,10 @@
   </head>
 
   <body class="main-body">
-
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container-fluid main-nav">
-
+          <div class="container">
             <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -121,6 +115,7 @@
             </div><!--/.nav-collapse -->
           </div> <!-- main-row -->
         </div>
+      </div>
     </div>
 
 <div class="container-fluid">
