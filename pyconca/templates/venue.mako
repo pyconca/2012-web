@@ -8,8 +8,8 @@
     <div class="row-fluid content-section">
         <h1 class="header header-first">Location</h1>
         <p>
-          The conference will be held at Beverly Halls, 206 Beverly St., just
-          south of College and Bevery, Toronto.
+          The conference will be held at Beverley Halls, 206 Beverley St., just
+          south of College and Beverley, Toronto.
         </p>
 
         <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msid=209898849797428860102.0004c67cb66abadbf199e&amp;msa=0&amp;ie=UTF8&amp;ll=43.654196,-79.395704&amp;spn=0.01228,0.019205&amp;t=m&amp;iwloc=0004c67cb66b9121bbdbe&amp;output=embed"></iframe>
