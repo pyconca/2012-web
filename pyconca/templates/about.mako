@@ -53,7 +53,7 @@
         </tr>
 
         <tr>
-          <td>Kay Z</td>
+          <td>Kay Zhu</td>
           <td>Yi Qing Sim</td>
         </tr>
 
