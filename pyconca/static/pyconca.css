@@ -22,6 +22,11 @@ body {
   body {
     background-color: #4e4e4e;
   }
+
+  .navbar-fixed-top, .navbar-fixed-bottom {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .main-nav {
@@ -125,14 +130,18 @@ body {
   }
 }
 
-.row-odd {
-  background-color: #d3cfc7;
+.row-odd,
+.row-even {
   color: #423f39;
   border-radius: 20px;
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   -khtml-border-radius: 20px;
   margin-top: 20px;
+}
+
+.row-odd {
+  background-color: #d3cfc7;
   background-image: -ms-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #d3cfc7 100%);
   background-image: -moz-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #d3cfc7 100%);
   background-image: -o-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #d3cfc7 100%);
@@ -143,12 +152,6 @@ body {
 
 .row-even {
   background-color: #a69f8f;
-  color: #423f39;
-  border-radius: 20px;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -khtml-border-radius: 20px;
-  margin-top: 20px;
   background-image: -ms-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #A69F8F 100%);
   background-image: -moz-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #A69F8F 100%);
   background-image: -o-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #A69F8F 100%);
@@ -173,16 +176,30 @@ body {
   font-family: 'Special Elite', cursive;
 }
 
-.circle-odd {
+.row-odd .circle {
   background: #666;
   float: left;
   margin-left: 0;
 }
 
-.circle-even {
+.row-even .circle {
   background: #423f39;
   float: right;
   margin-right: 0;
+}
+
+@media (max-width: 480px) {
+  .row-odd .circle,
+  .row-even .circle {
+    display: block;
+    float: none;
+    margin-left: 0;
+  }
+
+  .row-odd .pull-right,
+  .row-even .pull-right {
+    float: none;
+  }
 }
 
 /* subpages */

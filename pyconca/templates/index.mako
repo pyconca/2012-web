@@ -60,7 +60,7 @@
 
 <div class="row-odd row-fluid">
   <div class="span12 main-row">
-    <div class="circle circle-odd">
+    <div class="circle">
        About
     </div>
 
@@ -74,12 +74,13 @@
     <div class="pull-right">
       <a href="${request.application_url}/about" class="btn">More >></a>
     </div>
+    <div class="clearfix"></div>
   </div>
 </div>
 
 <div class="row-even row-fluid">
   <div class="span12 main-row">
-    <div class="circle circle-even">
+    <div class="circle">
       Speakers
     </div>
 
@@ -97,7 +98,7 @@
 
 <div class="row-odd row-fluid">
   <div class="span12 main-row">
-    <div class="circle circle-odd">
+    <div class="circle">
         Sponsors
     </div>
 
@@ -110,12 +111,13 @@
     <div class="pull-right">
       <a href="${request.application_url}/sponsors" class="btn">More >></a>
     </div>
+    <div class="clearfix"></div>
   </div>
 </div>
 
 <div class="row-even row-fluid">
   <div class="span12 main-row">
-    <div class="circle circle-even">
+    <div class="circle">
       Venue
     </div>
 
@@ -133,7 +135,7 @@
 
 <div class="row-odd row-fluid">
   <div class="span12 main-row">
-    <div class="circle circle-odd">
+    <div class="circle">
       Schedule
     </div>
 
@@ -146,6 +148,7 @@
     <div class="pull-right">
       <a href="${request.application_url}/schedule" class="btn">More >></a>
     </div>
+    <div class="clearfix"></div>
   </div>
 </div>
 
