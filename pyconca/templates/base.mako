@@ -79,6 +79,13 @@
                   </a>
                 </li>
 
+                <li class="nav-item">
+                  <a class="nav-link" href="${request.application_url}/contact">
+                      <i class="icon-pencil icon-white nav-icon"></i>
+                      Contact
+                  </a>
+                </li>
+
                 % if logged_in:
                     <li class="nav-item">
                       <a class="nav-link" href="${request.application_url}/logout">
