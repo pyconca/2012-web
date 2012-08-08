@@ -87,19 +87,22 @@
                       </a>
                     </li>
                 % else:
-                    <li class="nav-item">
-                      <a class="nav-link" href="${request.application_url}/login">
-                          <i class="icon-user icon-white nav-icon"></i>
-                          Login
-                      </a>
-                    </li>
+                    ## Hide login-related links until we fix up the production database
+                    % if False:
+                      <li class="nav-item">
+                        <a class="nav-link" href="${request.application_url}/login">
+                            <i class="icon-user icon-white nav-icon"></i>
+                            Login
+                        </a>
+                      </li>
 
-                    <li class="nav-item">
-                      <a class="nav-link" href="${request.application_url}/new/user">
-                          <i class="icon-star-empty icon-white nav-icon"></i>
-                          Sign Up
-                      </a>
-                    </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="${request.application_url}/new/user">
+                            <i class="icon-star-empty icon-white nav-icon"></i>
+                            Sign Up
+                        </a>
+                      </li>
+                    % endif
                 % endif
               </ul>
 
