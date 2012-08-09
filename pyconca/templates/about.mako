@@ -35,7 +35,7 @@
             within the community.
           </li>
           <li>
-            Host an annual Canadian PyCon confernce, starting now — 2012!
+            Host an annual Canadian PyCon conference, starting now — 2012!
           </li>
         </ul>
 
