@@ -65,9 +65,10 @@
     </div>
 
     <p>
-    You're invited to a kickoff conference, getting us warmed up for the first 
+    You're invited to a kickoff conference, Nov 9-11 2012, in Toronto, 
+    getting us warmed up for the first 
     <a href="http://us.pycon.org/">PyCon North America</a> conference outside the US — 
-    <a href="http://www.villagegamer.net/2011/04/11/montreal-looking-forward-to-hosting-pycon/">
+    <a href="http://www.newswire.ca/en/story/731987/montreal-chosen-to-welcome-over-1-500-python-programmers-for-the-world-s-most-important-conference-on-the-subject/">
     Montréal in 2014 and 2015!</a>
     And when that's done, let's keep the momentum going with an annual PyCon 
     in Canada.
