@@ -1,21 +1,32 @@
-@import url(libs/bootstrap-2.0.3/css/bootstrap.css);
-
 a {
-  color: #e4b243;
+  color: #c07900;
   text-decoration: none;
 }
 
 a:hover {
-  color: #e4b243;
+  color: #c07900;
   text-decoration: underline;
 }
 
 body {
-  background-color: #4e4e4e;
+  background-color: #D1D1D1;
   padding-top: 60px;
+  padding-left: 0;
+  padding-right: 0;
   color: #faf7f0;
   max-width: 960px;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@media (max-width: 767px) { 
+  body {
+    background-color: #4e4e4e;
+  }
+
+  .navbar-fixed-top, .navbar-fixed-bottom {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .main-nav {
@@ -41,6 +52,20 @@ body {
   margin: auto;
   padding-top: 0;
   margin-top: 40px;
+}
+
+@media (max-width: 979px) { 
+  .main-body {
+    margin-top: 0;
+  }
+
+  .navbar-fixed-top .navbar-inner {
+    padding: 0;
+  }
+
+  .navbar-fixed-top {
+    margin-bottom: 0;
+  }
 }
 
 .container-fluid {
@@ -98,15 +123,25 @@ body {
   line-height: 30px;
 }
 
-@media (max-width: 480px) { 
+.main-row p a {
+  color: #423f39;
+  text-decoration: underline;
+}
+
+.main-row p a:hover {
+  color: #423f39;
+  text-decoration: underline;
+}
+
+@media (max-width: 767px) { 
   .main-row p {
     font-size: 16px;
     line-height: 20px;
   }
 }
 
-#about-row {
-  background-color: #d3cfc7;
+.row-odd,
+.row-even {
   color: #423f39;
   border-radius: 20px;
   -moz-border-radius: 20px;
@@ -115,45 +150,25 @@ body {
   margin-top: 20px;
 }
 
-#speakers-row {
+.row-odd {
+  background-color: #d3cfc7;
+  background-image: -ms-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #d3cfc7 100%);
+  background-image: -moz-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #d3cfc7 100%);
+  background-image: -o-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #d3cfc7 100%);
+  background-image: -webkit-gradient(radial, center center, 0, center center, 497, color-stop(0, #FFFFFF), color-stop(1, #d3cfc7));
+  background-image: -webkit-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #d3cfc7 100%);
+  background-image: radial-gradient(ellipse farthest-corner at center, #FFFFFF 0%, #d3cfc7 100%);
+}
+
+.row-even {
   background-color: #a69f8f;
-  color: #423f39;
-  border-radius: 20px;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -khtml-border-radius: 20px;
-  margin-top: 20px;
+  background-image: -ms-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #A69F8F 100%);
+  background-image: -moz-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #A69F8F 100%);
+  background-image: -o-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #A69F8F 100%);
+  background-image: -webkit-gradient(radial, center center, 0, center center, 497, color-stop(0, #FFFFFF), color-stop(1, #A69F8F));
+  background-image: -webkit-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #A69F8F 100%);
+  background-image: radial-gradient(ellipse farthest-corner at center, #FFFFFF 0%, #A69F8F 100%);
 }
-
-#sponsors-row {
-  background-color: #d3cfc7;
-  color: #423f39;
-  border-radius: 20px;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -khtml-border-radius: 20px;
-  margin-top: 20px;
-} 
-
-#venue-row {
-  background-color: #a69f8f;
-  color: #423f39;
-  border-radius: 20px;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -khtml-border-radius: 20px;
-  margin-top: 20px;
-}
-
-#schedule-row {
-  background-color: #d3cfc7;
-  color: #423f39;
-  border-radius: 20px;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -khtml-border-radius: 20px;
-  margin-top: 20px;
-} 
 
 .circle {
   width: 140px;
@@ -171,16 +186,30 @@ body {
   font-family: 'Special Elite', cursive;
 }
 
-.circle-odd {
+.row-odd .circle {
   background: #666;
   float: left;
   margin-left: 0;
 }
 
-.circle-even {
+.row-even .circle {
   background: #423f39;
   float: right;
   margin-right: 0;
+}
+
+@media (max-width: 480px) {
+  .row-odd .circle,
+  .row-even .circle {
+    display: block;
+    float: none;
+    margin-left: 0;
+  }
+
+  .row-odd .pull-right,
+  .row-even .pull-right {
+    float: none;
+  }
 }
 
 /* subpages */
@@ -191,10 +220,26 @@ body {
   -moz-background-size: contain;
   -o-background-size: contain;
   background-size: contain;
-  margin: auto;
   background-position: left;
   background-color: #fff;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  margin: auto;
   color: #666;
+}
+
+.sub-header-container {
+  border-left-style: solid; 
+  border-left-width: 20px; 
+  border-left-color: #333;
+  border-right-style: solid; 
+  border-right-width: 20px; 
+  border-right-color: #333;
+  border-top-style: solid; 
+  border-top-width: 20px; 
+  border-top-color: #333;
 }
 
 .sub-header-image .top-row {
@@ -203,8 +248,8 @@ body {
 }
 
 .content-holder {
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 22px;
   color: #423f39;
   border-radius: 6px;
   -moz-border-radius: 6px;
@@ -214,10 +259,20 @@ body {
   margin: 20px 20px 20px 20px;
   padding: 20px;
   min-height: 600px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.content-holder p {
-  font-size: 15px;
+.content-section p {
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.content-section li {
+  font-size: 18px;
+  line-height: 22px;
+  margin: 10px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .content-column {
@@ -225,30 +280,35 @@ body {
   padding: 0px 20px 20px 20px;
 }
 
+@media (max-width: 767px) {
+  .content-column {
+    border: none;
+    padding: 0;
+  }
+}
+
+.side-block {
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+
 .sidenav {
 }
 
 .sidenav-item {
   list-style-type: none;
+  margin-top: 10px;
+}
+
+.sidenav-item:first-child {
+  margin-top: 0;
 }
 
 .sidenav-link {
-  background-color: #DED8D1;
   display: block;
-  margin: 20px 0px 0px -20px;
-  padding: 14px 14px;
+  padding: 7px 7px;
   font-size: 15px;
-  color: #423f39;
-  border-radius: 6px;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -khtml-border-radius: 6px;
-}
-
-.sidenav-link:hover {
-  background-color: #e49030;
-  color: #423f39;
-  text-decoration: none;
+  text-align: left;
 }
 
 .overlay {

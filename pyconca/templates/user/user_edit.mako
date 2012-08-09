@@ -1,7 +1,11 @@
 <%inherit file="pyconca:templates/generic.mako"/>
 
 <%block name="header">
-    Users
+    % if is_create:
+      Sign Up
+    % else:
+      Edit Profile
+    % endif
 </%block>
 
 <%block name="form">
@@ -19,7 +23,11 @@
 
 <script id="breadcrumbs-template" type="text/x-handlebars-template">
     <ul class="breadcrumb">
-        <li><a href="${request.route_url('user_index')}"}>users</a></li>
+        % if is_admin:
+          <li><a href="${request.route_url('user_index')}"}>users</a></li>
+        % else:
+          <li>users</li>
+        % endif
         <span class="divider">/</span>
         % if is_create:
             <li>create</li>
@@ -38,6 +46,7 @@
         <div class="controls">
             <input type="text" maxlength="100" 
                    name="first_name" value="{{user.first_name}}">
+            <div class="help-block" style="display: inline;" id="first_name_error">&nbsp;</div>
         </div>
     </div>
 
@@ -46,6 +55,7 @@
         <div class="controls">
             <input type="text" maxlength="100" 
                    name="last_name" value="{{user.last_name}}">
+            <div class="help-block" style="display: inline;" id="last_name_error">&nbsp;</div>
         </div>
     </div>
 
@@ -54,6 +64,7 @@
         <div class="controls">
             <input type="text" maxlength="30" 
                    name="username" value="{{user.username}}">
+            <div class="help-block" style="display: inline;" id="username_error">&nbsp;</div>
         </div>
     </div>
 
@@ -62,6 +73,7 @@
         <div class="controls">
             <input type="text" maxlength="100" 
                    name="email" value="{{user.email}}">
+            <div class="help-block" style="display: inline;" id="email_error">&nbsp;</div>
         </div>
     </div>
 
@@ -70,6 +82,7 @@
         <div class="controls">
             <input type="password" maxlength="50" 
                    name="password" value="">
+            <div class="help-block" style="display: inline;" id="password_error">&nbsp;</div>
         </div>
     </div>
 
@@ -80,6 +93,7 @@
         <div class="controls">
             <input type="password" maxlength="50" 
                    name="password_confirm" value="">
+            <div class="help-block" style="display: inline;" id="password_confirm_error">&nbsp;</div>
         </div>
     </div>
 </script>
@@ -130,14 +144,28 @@
 
         $.post(url, request)
             .success(function() {
-                var goto_url = "${request.route_url('user_index')}";
+                % if is_create:
+                    var goto_url = "${request.route_url('login')}";
+                % else:
+                    var goto_url = "${request.route_url('user_get', id=id)}";
+                % endif
                 window.location.href = goto_url;
              })
             .error(function(xhr) {
+                $('.warning').each(function() {
+                    $(this).removeClass('warning');
+                });
+                $('.help-block').each(function() {
+                    $(this).hide();
+                });
                 response = $.parseJSON(xhr.responseText);
                 var layout = $("#validation-errors-template").html();
                 var template = Handlebars.compile(layout);
-                $("#validation-errors-result").html(template(response));
+                $.each(response.errors, function() {
+                   var error_slot_id = '#' + this.field + '_error';
+                   $(error_slot_id).html(this.message).fadeIn();
+                   $(error_slot_id).parents('.control-group').addClass('warning');
+                });
              })
         ;
     });

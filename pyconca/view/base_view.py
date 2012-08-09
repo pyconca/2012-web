@@ -11,12 +11,22 @@ class BaseView(object):
     def __init__(self, request):
         self.request = request
         self._configure()
-        self.body = {'logged_in': authenticated_userid(self.request)}
+        self.body = {
+            'logged_in': authenticated_userid(self.request),
+            'is_admin': self.is_admin
+        }
 
     @property
     def id(self):
         if 'id' in self.request.matchdict:
             return self.request.matchdict['id']
+
+    @property
+    def is_admin(self):
+        if getattr(self.request, 'user'):
+            groups = [group.name for group in self.request.user.groups]
+            return 'admin' in groups
+        return False
 
     #---------- views
 

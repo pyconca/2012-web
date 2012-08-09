@@ -13,8 +13,8 @@
         <h1 class="header-main-text">PyCon Canada</h1>
         <h2 class="header-sub-text">Toronto, November 9th - 11th 2012</h2>
         <br />
-        <a href="#" class="btn btn-warning btn-large">Register</a>
-        <a href="#" class="btn btn-large">Sponsor</a>
+        <a href="http://guestlistapp.com/events/116013" class="btn btn-warning btn-large guestlist-event-116013">Register</a>
+        <a href="${request.application_url}/sponsors" class="btn btn-large">Sponsor</a>
       </div>
     </div>
 
@@ -58,28 +58,32 @@
 
 <div class="main-info">
 
-<div id="about-row" class="row-fluid">
+<div class="row-odd row-fluid">
   <div class="span12 main-row">
-    <div class="circle circle-odd">
+    <div class="circle">
        About
     </div>
 
     <p>
-    You're invited to a kickoff conference, getting us warmed up for the first 
-    PyCon North America conference outside the US—Montréal in 2014 and 2015!
-    And when that's done, we want to keep the momentum going to maintain a
-    vibrant community.
+    You're invited to a kickoff conference, Nov 9-11 2012, in Toronto, 
+    getting us warmed up for the first 
+    <a href="http://us.pycon.org/">PyCon North America</a> conference outside the US — 
+    <a href="http://www.newswire.ca/en/story/731987/montreal-chosen-to-welcome-over-1-500-python-programmers-for-the-world-s-most-important-conference-on-the-subject/">
+    Montréal in 2014 and 2015!</a>
+    And when that's done, let's keep the momentum going with an annual PyCon 
+    in Canada.
     </p>
 
     <div class="pull-right">
       <a href="${request.application_url}/about" class="btn">More >></a>
     </div>
+    <div class="clearfix"></div>
   </div>
 </div>
 
-<div id="speakers-row" class="row-fluid">
+<div class="row-even row-fluid">
   <div class="span12 main-row">
-    <div class="circle circle-even">
+    <div class="circle">
       Speakers
     </div>
 
@@ -95,9 +99,9 @@
   </div>
 </div>
 
-<div id="sponsors-row" class="row-fluid">
+<div class="row-odd row-fluid">
   <div class="span12 main-row">
-    <div class="circle circle-odd">
+    <div class="circle">
         Sponsors
     </div>
 
@@ -110,12 +114,13 @@
     <div class="pull-right">
       <a href="${request.application_url}/sponsors" class="btn">More >></a>
     </div>
+    <div class="clearfix"></div>
   </div>
 </div>
 
-<div id="venue-row" class="row-fluid">
+<div class="row-even row-fluid">
   <div class="span12 main-row">
-    <div class="circle circle-even">
+    <div class="circle">
       Venue
     </div>
 
@@ -131,21 +136,22 @@
   </div>
 </div>
 
-<div id="schedule-row" class="row-fluid">
+<div class="row-odd row-fluid">
   <div class="span12 main-row">
-    <div class="circle circle-odd">
+    <div class="circle">
       Schedule
     </div>
 
     <p>
     Start the fun Friday evening with a mix and mingle. Feed your brain at 
     talks on Saturday, and if your sprint team is eager, you can start that 
-    night. Code with the sprinters or attend tutorials on Sunday.
+    night. Sprint or attend talks and tutorials on Sunday.
     </p>
 
     <div class="pull-right">
       <a href="${request.application_url}/schedule" class="btn">More >></a>
     </div>
+    <div class="clearfix"></div>
   </div>
 </div>
 
@@ -156,5 +162,7 @@
       $('.carousel').carousel();
     });
 </script>
+
+<script type="text/javascript" src="http://guestlistapp.com/javascripts/guestlist-embed.js"></script>
 
 </%block>

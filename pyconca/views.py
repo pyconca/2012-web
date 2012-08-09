@@ -42,6 +42,12 @@ def speakers(request):
 def sponsors(request):
     return _build_response(request)
 
+
+@view_config(route_name='contact', renderer='contact.mako')
+def contact(request):
+    return _build_response(request)
+
+
 def _build_response(request):
     return {'logged_in': authenticated_userid(request)}
 
@@ -96,9 +102,10 @@ def forgot(request):
         user = user_dao.get_by_username(username)
         if user:
             login = request.route_url('login')
-            msg = ('Instructions on how to reset your password have been'
-                   ' sent to your email address.')
-            request.session.flash(msg, 'success')
+            #msg = ('Instructions on how to reset your password have been'
+            #       ' sent to your email address.')
+            msg = ('Contact organizers@pycon.ca to reset your password.')
+            request.session.flash(msg, 'error')
             return HTTPFound(location=login)
         msg = "Sorry. We couldn't find an account for that username."
         request.session.flash(msg, 'error')

@@ -7,21 +7,16 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <!-- Le styles -->
-    <link href="${request.static_url("pyconca:static/pyconca.css")}" rel="stylesheet" />
-    <style type="text/css">
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-    </style>
+    <link href="${request.static_url("pyconca:static/libs/bootstrap-2.0.3/css/bootstrap.css")}" rel="stylesheet" />
     <link href="${request.static_url("pyconca:static/libs/bootstrap-2.0.3/css/bootstrap-responsive.css")}" rel="stylesheet" />
+    <link href="${request.static_url("pyconca:static/pyconca.css")}" rel="stylesheet" />
+
     <script src="${request.static_url("pyconca:static/libs/jquery-1.7.2.min.js")}"></script>
     <script src="${request.static_url("pyconca:static/libs/bootstrap-2.0.3/js/bootstrap.min.js")}"></script>
     <script src="${request.static_url("pyconca:static/libs/handlebars-1.0.0.beta.6.js")}"></script>
     <link href='http://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -30,11 +25,10 @@
   </head>
 
   <body class="main-body">
-
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container-fluid main-nav">
-
+          <div class="container">
             <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -85,6 +79,13 @@
                   </a>
                 </li>
 
+                <li class="nav-item">
+                  <a class="nav-link" href="${request.application_url}/contact">
+                      <i class="icon-pencil icon-white nav-icon"></i>
+                      Contact
+                  </a>
+                </li>
+
                 % if logged_in:
                     <li class="nav-item">
                       <a class="nav-link" href="${request.application_url}/logout">
@@ -93,20 +94,23 @@
                       </a>
                     </li>
                 % else:
-                    <li class="nav-item">
-                      <a class="nav-link" href="${request.application_url}/login">
-                          <i class="icon-user icon-white nav-icon"></i>
-                          Login
-                      </a>
-                    </li>
-                % endif
+                    ## Hide login-related links until we fix up the production database
+                    % if False:
+                      <li class="nav-item">
+                        <a class="nav-link" href="${request.application_url}/login">
+                            <i class="icon-user icon-white nav-icon"></i>
+                            Login
+                        </a>
+                      </li>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="${request.application_url}/new/user">
-                      <i class="icon-star-empty icon-white nav-icon"></i>
-                      Sign Up
-                  </a>
-                </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="${request.application_url}/new/user">
+                            <i class="icon-star-empty icon-white nav-icon"></i>
+                            Sign Up
+                        </a>
+                      </li>
+                    % endif
+                % endif
               </ul>
 
               % if logged_in:
@@ -121,6 +125,7 @@
             </div><!--/.nav-collapse -->
           </div> <!-- main-row -->
         </div>
+      </div>
     </div>
 
 <div class="container-fluid">
@@ -131,11 +136,16 @@
 
   <div id="footer-row" class="row-fluid hidden-phone">
     <div class="main-row">
-      <div class="span3">
+      <div class="span4">
         <strong>&copy; PyCon Canada 2012</strong>
+        &nbsp;&nbsp;
+        <a style="color: #aaa;"
+           href="http://www.flickr.com/photos/camstatic/5535319505">
+           photo by camstatic
+        </a>
       </div>
 
-      <div class="span9" id="footer-links">
+      <div class="span8" id="footer-links">
         <div class="pull-right">
           <ul id="footer-nav">
             <li class="footer-nav-link">
@@ -172,29 +182,37 @@
     </div>
   </div>
 
-  <div id="footer-row" class="row-fluid visible-phone">
-     <div class="main-row">
-      <div class="span12">
-        <a class="nav-link" href="${request.application_url}">Home</a>
-        <a class="nav-link pull-right" href="${request.application_url}/schedule">Schedule</a>
-        <br>
-        <a class="nav-link" href="${request.application_url}/venue">Venue</a>
-        <a class="nav-link pull-right" href="${request.application_url}/speakers">Speakers</a>
-        <br>
-        <a class="nav-link" href="${request.application_url}/about">About</a>
-        <a class="nav-link pull-right" href="${request.application_url}/sponsors">Sponsors</a>
+  <div id="footer-links">
+      <div id="footer-row" class="row-fluid visible-phone">
+         <div class="main-row">
+          <div class="span12">
+            <a class="nav-link" href="${request.application_url}">Home</a>
+            <a class="nav-link pull-right" href="${request.application_url}/schedule">Schedule</a>
+            <br>
+            <a class="nav-link" href="${request.application_url}/venue">Venue</a>
+            <a class="nav-link pull-right" href="${request.application_url}/speakers">Speakers</a>
+            <br>
+            <a class="nav-link" href="${request.application_url}/about">About</a>
+            <a class="nav-link pull-right" href="${request.application_url}/sponsors">Sponsors</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <div id="footer-row" class="row-fluid visible-phone">
-     <div class="main-row">
-      <div class="span12" style="text-align: center;">
-        <strong>&copy; PyCon Canada 2012</strong>
-          <br>
-          <a href="https://twitter.com/pyconca">@pyconca</a>
+      <div id="footer-row" class="row-fluid visible-phone">
+         <div class="main-row">
+          <div class="span12" style="text-align: center;">
+            <strong>&copy; PyCon Canada 2012</strong>
+              <br>
+              <a href="https://twitter.com/pyconca">@pyconca</a>
+              <br>
+              <br>
+              <a style="color: #aaa;"
+                 href="http://www.flickr.com/photos/camstatic/5535319505">
+                 photo by camstatic
+              </a>
+          </div>
+        </div>
       </div>
-    </div>
   </div>
 
 </div>
