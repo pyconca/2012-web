@@ -6,9 +6,10 @@ from pyramid.security import Allow
 from pyramid.security import Everyone
 
 from pyconca.dao.user_dao import UserDao
+from pyconca.dao.talk_dao import TalkDao
 
 
-PERMISSIONS = {'admin':['group:admin']}
+PERMISSIONS = {'admin': ['group:admin']}
 
 
 def generate_password(password):
@@ -74,3 +75,34 @@ class UserFactory(object):
 
                 self.__acl__.append((Allow, user_id, 'user_update'))
                 self.__acl__.append((Allow, user_id, 'api_user_update'))
+
+
+class TalkFactory(object):
+    __acl__ = [
+        (Allow, Everyone, 'talk_create'),
+        (Allow, 'group:admin', 'talk_index'),
+        (Allow, 'group:admin', 'talk_get'),
+        (Allow, 'group:admin', 'talk_update'),
+        (Allow, 'group:admin', 'talk_delete'),
+
+        (Allow, Everyone, 'api_talk_create'),
+        (Allow, 'group:admin', 'api_talk_index'),
+        (Allow, 'group:admin', 'api_talk_get'),
+        (Allow, 'group:admin', 'api_talk_update'),
+        (Allow, 'group:admin', 'api_talk_delete'),
+    ]
+
+    def __init__(self, request):
+        user_id = authenticated_userid(request)
+        user = request.user
+        talk_dao = TalkDao()
+        if (user_id and user and 'id' in request.matchdict and
+            user.id == talk_dao.get(int(request.matchdict['id'])).owner_id):
+                self.__acl__.append((Allow, user_id, 'talk_get'))
+                self.__acl__.append((Allow, user_id, 'api_talk_get'))
+
+                self.__acl__.append((Allow, user_id, 'talk_update'))
+                self.__acl__.append((Allow, user_id, 'api_talk_update'))
+
+                self.__acl__.append((Allow, user_id, 'talk_delete'))
+                self.__acl__.append((Allow, user_id, 'api_talk_delete'))
