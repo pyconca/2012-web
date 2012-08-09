@@ -163,6 +163,9 @@
     });
 </script>
 
-<script type="text/javascript" src="http://guestlistapp.com/javascripts/guestlist-embed.js"></script>
+## Removing this for now, as the popup doesn't play nicely at all with mobile
+## browsers, and it doesn't seem like there's any straight forward way to
+## hack around it.
+## <script type="text/javascript" src="http://guestlistapp.com/javascripts/guestlist-embed.js"></script>
 
 </%block>
