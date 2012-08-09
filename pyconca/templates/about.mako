@@ -85,7 +85,7 @@
 
         <tr>
           <td>David Warde-Farley</td>
-          <td>&nbsp;</td>
+          <td>Mathieu Leduc-Hamel</td>
         </tr>
       </table>
 
