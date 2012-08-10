@@ -13,8 +13,14 @@
         <h1 class="header-main-text">PyCon Canada</h1>
         <h2 class="header-sub-text">Toronto, November 9th - 11th 2012</h2>
         <br />
-        <a href="http://guestlistapp.com/events/116013" class="btn btn-warning btn-large guestlist-event-116013">Register</a>
-        <a href="${request.application_url}/sponsors" class="btn btn-large">Sponsor</a>
+        <div class="visible-desktop">
+            <a href="http://guestlistapp.com/events/116013" class="btn btn-warning btn-large guestlist-event-116013">Register</a>
+            <a href="${request.application_url}/sponsors" class="btn btn-large">Sponsor</a>
+        </div>
+        <div class="hidden-desktop">
+            <a href="http://guestlistapp.com/events/116013" class="btn btn-warning btn-large">Register</a>
+            <a href="${request.application_url}/sponsors" class="btn btn-large">Sponsor</a>
+        </div>
       </div>
     </div>
 
@@ -163,9 +169,8 @@
     });
 </script>
 
-## Removing this for now, as the popup doesn't play nicely at all with mobile
-## browsers, and it doesn't seem like there's any straight forward way to
-## hack around it.
-## <script type="text/javascript" src="http://guestlistapp.com/javascripts/guestlist-embed.js"></script>
+<script type="text/javascript"
+        src="http://guestlistapp.com/javascripts/guestlist-embed.js">
+</script>
 
 </%block>
