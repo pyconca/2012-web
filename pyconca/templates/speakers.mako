@@ -40,7 +40,8 @@
         </p>
 
         <p>
-          Send talk and tutorial proposals to
+          Submit your talk <a href="/new/talk">here</a> if you are logged in.
+          Alternatively, you can send talk and tutorial proposals to
           <a href="mailto:organizers@pycon.ca">organizers@pycon.ca</a>. Include
           the following information in talk and tutorial proposals:
         </p>
@@ -51,7 +52,10 @@
           <li>Intended audience (assumed level of knowledge)</li>
           <li>Abstract for the talk/tutorial - 200 chars max</li>
           <li>Outline of the talk/tutorial</li>
-          <li>Additional notes for the proposal reviewers. This can include additional background information such as links to other presentations you have done, or links to blog posts, articles, or code related to your presentation.</li>
+          <li>Additional notes for the proposal reviewers. This can include
+              additional background information such as links to other
+              presentations you have done, or links to blog posts, articles,
+              or code related to your presentation.</li>
         </ul>
     </div>
 </%block>
