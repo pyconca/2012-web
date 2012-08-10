@@ -34,5 +34,8 @@ def main(global_config, **settings):
     _add_api_resource(config, 'user')
     _add_resource(config, 'user')
 
+    _add_api_resource(config, 'talk')
+    _add_resource(config, 'talk')
+
     config.scan()
     return config.make_wsgi_app()
