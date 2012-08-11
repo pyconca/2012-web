@@ -36,12 +36,16 @@ class BaseApi(object):
 
     def index(self):
         models = self.dao.index()
-        self.body['data'][self.name + '_list'] = [m.to_dict() for m in models]
+        self.body['data'][self.name + '_list'] = [
+            self._post_process_for_output(m, m.to_dict())
+            for m in models
+        ]
         return self._respond(HTTP_STATUS_200)
 
     def get(self):
         model = self.dao.get(self.id)
-        self.body['data'][self.name] = model.to_dict()
+        self.body['data'][self.name] = \
+            self._post_process_for_output(model, model.to_dict())
         return self._respond(HTTP_STATUS_200)
 
     def delete(self):
@@ -76,6 +80,9 @@ class BaseApi(object):
 
     def _populate(self, model, form):
         pass
+
+    def _post_process_for_output(self, model, output):
+        return output
 
     def _create_flash(self, model):
         pass
