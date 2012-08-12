@@ -87,7 +87,7 @@ class BaseApi(object):
     def _create_flash(self, model):
         pass
 
-    def _update_flash(self, model, form):
+    def _update_flash(self, model):
         pass
 
     #---------- persist helpers

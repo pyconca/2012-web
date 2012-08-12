@@ -25,6 +25,15 @@ class TalkApi(BaseApi):
         talk.outline = form['outline']
         talk.reviewer_notes = form['reviewer_notes']
 
+    def _create_flash(self, talk):
+        msg = ('You have submitted a %s for PyCon Canada. Thank-you!' 
+            % (talk.type))
+        self.request.session.flash(msg, 'success')
+
+    def _update_flash(self, talk):
+        msg = ('Updated %s: %s' % (talk.type, talk.title))
+        self.request.session.flash(msg, 'success')
+
     def _post_process_for_output(self, model, output):
         """
         Add some extra stuff for the videographer's use.
