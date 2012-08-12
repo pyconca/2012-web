@@ -92,6 +92,7 @@
         </div>
     </div>
 
+  % if is_admin:
     <div class="control-group">
         <label class="control-label" for="reviewer_notes">Reviewer Notes</label>
         <div class="controls">
@@ -99,6 +100,7 @@
             </textarea>
         </div>
     </div>
+  % endif
 </script>
 
 <script type="text/javascript">
@@ -152,9 +154,6 @@
         % else:
             var url = "${request.route_url('api_talk_update', id=id)}";
         % endif
-
-        console.log(url);
-        console.log(request);
 
         $.post(url, request)
             .success(function() {

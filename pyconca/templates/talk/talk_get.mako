@@ -49,9 +49,11 @@
     <strong>Outline</strong>
     <span>{{talk.outline}}</span>
 
+  % if is_admin:
     <br>
     <strong>Reviewer Notes:</strong>
     <span>{{talk.reviewer_notes}}</span>
+  % endif
 </script>
 
 <script type="text/javascript">
