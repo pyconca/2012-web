@@ -38,12 +38,14 @@
         <div class="controls">
             <input type="text" maxlength="100"
                    name="title" value="{{talk.title}}">
+            <div class="help-block" style="display: inline;" id="title_error">&nbsp;</div>
         </div>
     </div>
 
     <div class="control-group">
         <label class="control-label" for="type">Type</label>
         <div class="controls">
+          <div class="help-block" style="display: inline;" id="type_error">&nbsp;</div>
           <label>
             <input type="radio" name="type" value="talk"
             {{#if_eq talk.type compare="talk"}}checked="checked"{{/if_eq}}>
@@ -65,6 +67,7 @@
     <div class="control-group">
         <label class="control-label" for="level">Difficulty Level</label>
         <div class="controls">
+          <div class="help-block" style="display: inline;" id="level_error">&nbsp;</div>
           <label>
             <input type="radio" name="level" value="novice"
               {{#if_eq talk.level compare="novice"}}checked="checked"{{/if_eq}}>
@@ -82,6 +85,7 @@
         <label class="control-label" for="abstract">Abstract</label>
         <div class="controls">
             <textarea rows=5 name="abstract">{{talk.abstract}}</textarea>
+            <div class="help-block" style="display: inline;" id="abstract_error">&nbsp;</div>
         </div>
     </div>
 
@@ -89,14 +93,15 @@
         <label class="control-label" for="outline">Outline</label>
         <div class="controls">
             <textarea rows=10 name="outline">{{talk.outline}}</textarea>
+            <div class="help-block" style="display: inline;" id="outline_error">&nbsp;</div>
         </div>
     </div>
 
     <div class="control-group">
         <label class="control-label" for="reviewer_notes">Reviewer Notes</label>
         <div class="controls">
-            <textarea rows=10 name="reviewer_notes">{{talk.reviewer_notes}}
-            </textarea>
+            <textarea rows=10 name="reviewer_notes">{{talk.reviewer_notes}}</textarea>
+            <div class="help-block" style="display: inline;" id="reviewer_notes_error">&nbsp;</div>
         </div>
     </div>
 </script>
@@ -162,10 +167,20 @@
                 window.location.href = goto_url;
              })
             .error(function(xhr) {
+                $('.warning').each(function() {
+                    $(this).removeClass('warning');
+                });
+                $('.help-block').each(function() {
+                    $(this).hide();
+                });
                 response = $.parseJSON(xhr.responseText);
                 var layout = $("#validation-errors-template").html();
                 var template = Handlebars.compile(layout);
-                $("#validation-errors-result").html(template(response));
+                $.each(response.errors, function() {
+                   var error_slot_id = '#' + this.field + '_error';
+                   $(error_slot_id).html(this.message).fadeIn();
+                   $(error_slot_id).parents('.control-group').addClass('warning');
+                });
              })
         ;
     });
