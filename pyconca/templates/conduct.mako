@@ -15,8 +15,9 @@
 
             We value the participation of each member of the Python community
             and want all attendees to have an enjoyable and fulfilling 
-            experience. Accordingly, all attendees are expected to show respect
-            and courtesy to other attendees throughout the conference and at 
+            experience. Accordingly, all attendees are expected to show 
+            <strong>respect</strong> and <strong>courtesy</strong> 
+            to other attendees throughout the conference and at 
             all conference events, whether officially sponsored by PyCon 
             Canada or not.
             <br>
@@ -43,9 +44,10 @@
             <br>
             <br>
 
-            Be kind to others. Do not insult or put down other attendees. Behave 
-            professionally. Remember that harassment and sexist, racist, or 
-            exclusionary jokes are not appropriate for PyCon Canada.
+            <strong>Be kind</strong> to others. Do not insult or put down 
+            other attendees. Behave professionally. Remember that harassment 
+            and sexist, racist, or exclusionary jokes are not appropriate for 
+            PyCon Canada.
             <br>
             <br>
 
