@@ -111,6 +111,3 @@ class TalkFactory(object):
 
                 self.__acl__.append((Allow, user_id, 'talk_update'))
                 self.__acl__.append((Allow, user_id, 'api_talk_update'))
-
-                self.__acl__.append((Allow, user_id, 'talk_delete'))
-                self.__acl__.append((Allow, user_id, 'api_talk_delete'))
