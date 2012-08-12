@@ -54,10 +54,12 @@ class TalkApi(BaseApi):
         - contact - list of email(s) of presenters.
         X released - permission to release.
         X license - CC license
-        / description - used as the description of the video (paragraphs are fine)
+        / description - used as the description of the video 
+          (paragraphs are fine)
         / conf_key - PK in source database - unique, used to update this item
         / conf_url - URL of talk page
-        X tags - comma seperated list - serch terms, including sub topics briefly discussed in your talk.
+        X tags - comma separated list - search terms, including sub topics 
+          briefly discussed in your talk.
         """
         request = get_current_request()
         new_output = output.copy()
