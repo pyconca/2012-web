@@ -17,7 +17,9 @@
        href="${request.route_url('talk_update', id=id)}">
        Edit
     </a>
-    <input class="btn" type="submit" value="Delete"/>
+    % if is_admin:
+      <input class="btn" type="submit" value="Delete"/>
+    % endif
 </form>
 
 <script id="breadcrumbs-template" type="text/x-handlebars-template">
@@ -46,12 +48,14 @@
     <span>{{talk.abstract}}</span>
 
     <br>
-    <strong>Outline</strong>
+    <strong>Outline:</strong>
     <span>{{talk.outline}}</span>
 
-    <br>
-    <strong>Reviewer Notes:</strong>
-    <span>{{talk.reviewer_notes}}</span>
+    % if is_admin:
+        <br>
+        <strong>Reviewer Notes:</strong>
+        <span>{{talk.reviewer_notes}}</span>
+    % endif
 </script>
 
 <script type="text/javascript">
