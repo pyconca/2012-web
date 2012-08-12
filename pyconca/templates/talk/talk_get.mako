@@ -32,33 +32,36 @@
 </script>
 
 <script id="talk-get-template" type="text/x-handlebars-template">
-    <strong>Title:</strong>
-    <span>{{talk.title}}</span>
+    <fieldset>
+        <legend><strong>{{talk.title}}</strong></legend>
+        <strong>User:</strong>
+        <span>{{talk.user.first_name}} {{talk.user.last_name}}</span>
+        <br>
+        <strong>Type:</strong>
+        <span>{{talk.type}}</span>
+        <br>
+        <strong>Level:</strong>
+        <span>{{talk.level}}</span>
+    </fieldset>
 
     <br>
-    <strong>User:</strong>
-    <span>{{talk.user.first_name}} {{talk.user.last_name}}</span>
+    <fieldset>
+        <legend><strong>Abstract</strong></legend>
+        <p>{{talk.abstract}}</p>
+    </fieldset>
 
     <br>
-    <strong>Type:</strong>
-    <span>{{talk.type}}</span>
-
-    <br>
-    <strong>Level:</strong>
-    <span>{{talk.level}}</span>
-
-    <br>
-    <strong>Abstract:</strong>
-    <span>{{talk.abstract}}</span>
-
-    <br>
-    <strong>Outline:</strong>
-    <span>{{talk.outline}}</span>
+    <fieldset>
+        <legend><strong>Outline</strong></legend>
+        <p>{{talk.outline}}</p>
+    </fieldset>
 
     % if is_admin:
         <br>
-        <strong>Reviewer Notes:</strong>
-        <span>{{talk.reviewer_notes}}</span>
+        <fieldset>
+            <legend><strong>Reviewer Notes</strong></legend>
+            <p>{{talk.reviewer_notes}}</p>
+        </fieldset>
     % endif
 </script>
 
