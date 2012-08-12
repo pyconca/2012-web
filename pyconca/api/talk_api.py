@@ -77,3 +77,5 @@ class TalkSchema(Schema):
     level = validators.String(not_empty=True, strip=True)
     abstract = validators.String(not_empty=True, strip=True)
     outline = validators.String(not_empty=True, strip=True)
+    reviewer_notes = validators.String(
+        not_empty=False, strip=True, if_missing='')
