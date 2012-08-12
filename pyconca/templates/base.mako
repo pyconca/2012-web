@@ -89,6 +89,7 @@
                 % if logged_in and request.user:
                   <li class="dropdown" id="menu1">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">
+                      <i class="icon-user icon-white nav-icon"></i>
                       ${request.user.username}
                       <b class="caret"></b>
                     </a>
