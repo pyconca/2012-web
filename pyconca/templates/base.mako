@@ -87,41 +87,56 @@
                 </li>
 
                 % if logged_in:
-                    <li class="nav-item">
-                      <a class="nav-link" href="${request.application_url}/logout">
-                          <i class="icon-remove icon-white nav-icon"></i>
+                  <li class="dropdown" id="menu1">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">
+                      ${request.user.username}
+                      <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="nav-link"  href="${request.application_url}/new/talk">
+                          <i class="icon-bullhorn nav-icon"></i>
+                          Submit a Talk
+                        </a>
+                      </li>
+                      <li>
+                        <a class="nav-link"  href="${request.application_url}/talk">
+                          <i class="icon-briefcase nav-icon"></i>
+                          Your Talks
+                        </a>
+                      </li>
+                      <li>
+                        <a href="${request.application_url}/user/${logged_in}">
+                          <i class="icon-cog nav-icon"></i>
+                          Settings
+                        </a>
+                      </li>
+                      <li class="divider"></li>
+                      <li>
+                        <a class="nav-link" href="${request.application_url}/logout">
+                          <i class="icon-remove nav-icon"></i>
                           Logout
-                      </a>
-                    </li>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
                 % else:
-                    ## Hide login-related links until we fix up the production database
-                    % if False:
-                      <li class="nav-item">
-                        <a class="nav-link" href="${request.application_url}/login">
-                            <i class="icon-user icon-white nav-icon"></i>
-                            Login
-                        </a>
-                      </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="${request.application_url}/login">
+                        <i class="icon-user icon-white nav-icon"></i>
+                        Login
+                    </a>
+                  </li>
 
-                      <li class="nav-item">
-                        <a class="nav-link" href="${request.application_url}/new/user">
-                            <i class="icon-star-empty icon-white nav-icon"></i>
-                            Sign Up
-                        </a>
-                      </li>
-                    % endif
+                  <li class="nav-item">
+                    <a class="nav-link" href="${request.application_url}/new/user">
+                        <i class="icon-star-empty icon-white nav-icon"></i>
+                        Sign Up
+                    </a>
+                  </li>
                 % endif
-              </ul>
 
-              % if logged_in:
-                  <p class="navbar-text pull-right">
-                      Logged in as 
-                      <a href="${request.application_url}/user/${logged_in}">
-                          ${request.user.username}
-                      </a>
-                      &nbsp;
-                  </p>
-              % endif
+              </ul>
             </div><!--/.nav-collapse -->
           </div> <!-- main-row -->
         </div>
