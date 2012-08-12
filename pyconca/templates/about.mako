@@ -46,6 +46,16 @@
     </div>
 
     <div class="row-fluid content-section">
+      <h1 class="header">Code of Conduct</h1>
+      <p>
+        Please familiarize yourself with the 
+        <a href="${request.application_url}/conduct">Code of Conduct</a>
+        and do your part to make sure PyCon Canada doesn't end up on 
+        Hacker News for all the wrong reasons.
+      </p>
+    </div>
+
+    <div class="row-fluid content-section">
       <h1 class="header">Made in Canada!</h1>
       <p>
         Made in Canada, with help from the greater Python community. 
