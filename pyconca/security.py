@@ -3,6 +3,7 @@ import bcrypt
 from pyramid.security import authenticated_userid
 from pyramid.security import unauthenticated_userid
 from pyramid.security import Allow
+from pyramid.security import Authenticated
 from pyramid.security import Everyone
 
 from pyconca.dao.user_dao import UserDao
@@ -86,13 +87,13 @@ class UserFactory(object):
 
 class TalkFactory(object):
     __acl__ = [
-        (Allow, Everyone, 'talk_create'),
+        (Allow, Authenticated, 'talk_create'),
         (Allow, 'group:admin', 'talk_index'),
         (Allow, 'group:admin', 'talk_get'),
         (Allow, 'group:admin', 'talk_update'),
         (Allow, 'group:admin', 'talk_delete'),
 
-        (Allow, Everyone, 'api_talk_create'),
+        (Allow, Authenticated, 'api_talk_create'),
         (Allow, 'group:admin', 'api_talk_index'),
         (Allow, 'group:admin', 'api_talk_get'),
         (Allow, 'group:admin', 'api_talk_update'),
