@@ -7,6 +7,7 @@ from pyramid.view import forbidden_view_config
 
 from pyconca.dao.user_dao import UserDao
 from pyconca.security import check_password
+from pyconca.security import is_admin
 
 
 def is_not_api_request(info, request):
@@ -49,7 +50,10 @@ def contact(request):
 
 
 def _build_response(request):
-    return {'logged_in': authenticated_userid(request)}
+    return {
+        'logged_in': authenticated_userid(request),
+        'is_admin': is_admin(request)
+    }
 
 
 @view_config(route_name='logout')

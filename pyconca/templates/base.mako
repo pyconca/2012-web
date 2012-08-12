@@ -94,6 +94,20 @@
                       <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
+                      % if is_admin:
+                      <li>
+                        <a class="nav-link"  href="${request.application_url}/talk">
+                          <i class="icon-file nav-icon"></i>
+                          Talks
+                        </a>
+                      </li>
+                      <li>
+                        <a class="nav-link"  href="${request.application_url}/talk">
+                          <i class="icon-th nav-icon"></i>
+                          Users
+                        </a>
+                      </li>
+                      % else:
                       <li>
                         <a class="nav-link"  href="${request.application_url}/new/talk">
                           <i class="icon-bullhorn nav-icon"></i>
@@ -106,13 +120,14 @@
                           Your Talks
                         </a>
                       </li>
+                      % endif:
+                      <li class="divider"></li>
                       <li>
                         <a href="${request.application_url}/user/${logged_in}">
                           <i class="icon-cog nav-icon"></i>
-                          Settings
+                          Your Profile
                         </a>
                       </li>
-                      <li class="divider"></li>
                       <li>
                         <a class="nav-link" href="${request.application_url}/logout">
                           <i class="icon-remove nav-icon"></i>
