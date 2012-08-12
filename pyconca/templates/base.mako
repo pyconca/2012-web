@@ -151,17 +151,8 @@
 
   <div id="footer-row" class="row-fluid hidden-phone">
     <div class="main-row">
-      <div class="span4">
-        <strong>&copy; PyCon Canada 2012</strong>
-        &nbsp;&nbsp;
-        <a style="color: #aaa;"
-           href="http://www.flickr.com/photos/camstatic/5535319505">
-           photo by camstatic
-        </a>
-      </div>
-
-      <div class="span8" id="footer-links">
-        <div class="pull-right">
+      <div class="span12" style="text-align: center;" id="footer-links">
+        <div>
           <ul id="footer-nav">
             <li class="footer-nav-link">
               <a class="nav-link" href="${request.application_url}">Home</a>
@@ -169,6 +160,10 @@
 
             <li class="footer-nav-link">
               <a class="nav-link" href="${request.application_url}/about">About</a>
+            </li>
+
+            <li class="footer-nav-link">
+              <a class="nav-link" href="${request.application_url}/contact">Contact</a>
             </li>
 
             <li class="footer-nav-link">
@@ -193,7 +188,6 @@
           </ul>
         </div>
       </div>
-
     </div>
   </div>
 
@@ -209,22 +203,24 @@
             <br>
             <a class="nav-link" href="${request.application_url}/about">About</a>
             <a class="nav-link pull-right" href="${request.application_url}/sponsors">Sponsors</a>
+            <br>
+            <a class="nav-link" href="${request.application_url}/contact">Contact</a>
+            <a class="nav-link pull-right" href="https://twitter.com/pyconca">@pyconca</a>
           </div>
         </div>
       </div>
 
-      <div id="footer-row" class="row-fluid visible-phone">
+      <div id="footer-row" class="row-fluid">
          <div class="main-row">
           <div class="span12" style="text-align: center;">
             <strong>&copy; PyCon Canada 2012</strong>
-              <br>
-              <a href="https://twitter.com/pyconca">@pyconca</a>
-              <br>
               <br>
               <a style="color: #aaa;"
                  href="http://www.flickr.com/photos/camstatic/5535319505">
                  photo by camstatic
               </a>
+              <br>
+              <br>
           </div>
         </div>
       </div>
