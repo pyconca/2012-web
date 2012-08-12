@@ -87,6 +87,16 @@
           <td>David Warde-Farley</td>
           <td>Mathieu Leduc-Hamel</td>
         </tr>
+
+        <tr>
+          <td>Camilla Bjerke</td>
+          <td>Mahdi Yusuf</td>
+        </tr>
+
+        <tr>
+          <td>Sheila Miguez</td>
+          <td>Carl Karsten</td>
+        </tr>
       </table>
 
     <p>
