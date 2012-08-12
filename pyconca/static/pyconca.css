@@ -240,6 +240,7 @@ body {
   border-top-style: solid; 
   border-top-width: 20px; 
   border-top-color: #333;
+  margin-top: -1px;
 }
 
 .sub-header-image .top-row {
