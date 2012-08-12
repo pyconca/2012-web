@@ -1,7 +1,7 @@
 <%inherit file="pyconca:templates/generic.mako"/>
 
 <%block name="header">
-    Talks
+    Talk Overview
 </%block>
 
 <%block name="form">
@@ -34,6 +34,10 @@
 <script id="talk-get-template" type="text/x-handlebars-template">
     <strong>Title:</strong>
     <span>{{talk.title}}</span>
+
+    <br>
+    <strong>User:</strong>
+    <span>{{talk.user.first_name}} {{talk.user.last_name}}</span>
 
     <br>
     <strong>Type:</strong>

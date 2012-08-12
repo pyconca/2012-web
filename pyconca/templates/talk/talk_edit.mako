@@ -1,8 +1,13 @@
 <%inherit file="pyconca:templates/generic.mako"/>
 
 <%block name="header">
-    Talks
+    % if is_create:
+      Submit Talk
+    % else:
+      Edit Talk
+    % endif
 </%block>
+
 
 <%block name="form">
 
@@ -33,6 +38,23 @@
 </script>
 
 <script id="talk-edit-template" type="text/x-handlebars-template">
+    <div class="control-group">
+        <label class="control-label" for="user">User</label>
+        <div class="controls">
+        % if is_create:
+            <input type="text"
+                   name="title" 
+                   value="${request.user.first_name} ${request.user.last_name}"
+                   disabled>
+        % else:
+            <input type="text"
+                   name="title" 
+                   value="{{talk.user.first_name}} {{talk.user.last_name}}"
+                   disabled>
+        % endif
+        </div>
+    </div>
+
     <div class="control-group">
         <label class="control-label" for="title">Title</label>
         <div class="controls">
@@ -84,7 +106,7 @@
     <div class="control-group">
         <label class="control-label" for="abstract">Abstract</label>
         <div class="controls">
-            <textarea rows=5 name="abstract">{{talk.abstract}}</textarea>
+            <textarea rows="5" name="abstract">{{talk.abstract}}</textarea>
             <div class="help-block" style="display: inline;" id="abstract_error">&nbsp;</div>
         </div>
     </div>
@@ -92,7 +114,7 @@
     <div class="control-group">
         <label class="control-label" for="outline">Outline</label>
         <div class="controls">
-            <textarea rows=10 name="outline">{{talk.outline}}</textarea>
+            <textarea rows="10" name="outline">{{talk.outline}}</textarea>
             <div class="help-block" style="display: inline;" id="outline_error">&nbsp;</div>
         </div>
     </div>
@@ -101,7 +123,7 @@
         <div class="control-group">
             <label class="control-label" for="reviewer_notes">Reviewer Notes</label>
             <div class="controls">
-                <textarea rows=10 name="reviewer_notes">{{talk.reviewer_notes}}</textarea>
+                <textarea rows="10" name="reviewer_notes">{{talk.reviewer_notes}}</textarea>
                 <div class="help-block" style="display: inline;" id="reviewer_notes_error">&nbsp;</div>
             </div>
         </div>

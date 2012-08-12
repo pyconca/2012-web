@@ -19,6 +19,7 @@
     <table class="table table-striped table-bordered">
         <tr>
             <th>Title</th>
+            <th>User</th>
             <th>Type</th>
             <th>Level</th>
             <th>Abstract</th>
@@ -32,6 +33,7 @@
                 {{title}}
             </a>
           </td>
+          <td>{{user.username}}</td>
           <td>{{type}}</td>
           <td>{{level}}</td>
           <td>{{abstract}}</td>
