@@ -25,6 +25,13 @@ def check_password(password, hashed):
     return _constant_time_is_equal(bcrypt.hashpw(password, hashed), hashed)
 
 
+def is_admin(request):
+    if getattr(request, 'user'):
+        groups = [group.name for group in request.user.groups]
+        return 'admin' in groups
+    return False
+
+
 def get_user(request):
     user_id = unauthenticated_userid(request)
     if user_id:

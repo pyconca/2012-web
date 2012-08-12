@@ -5,6 +5,8 @@ from formencode import Invalid
 
 from pyramid.response import Response
 
+from pyconca.security import is_admin
+
 
 log = logging.getLogger(__name__)
 
@@ -32,6 +34,10 @@ class BaseApi(object):
         if 'id' in self.request.matchdict:
             return self.request.matchdict['id']
 
+    @property
+    def is_admin(self):
+        return is_admin(self.request)
+
     #---------- views
 
     def index(self):
@@ -56,7 +62,7 @@ class BaseApi(object):
     def update(self):
         model = self.dao.get(self.id)
         try:
-            self._persist(model)
+            self._persist(model, is_create=False)
             self._update_flash(model)
             return self._respond(HTTP_STATUS_200)
         except Invalid as invalid_exception:
@@ -66,7 +72,7 @@ class BaseApi(object):
     def create(self):
         model = self.dao.create()
         try:
-            self._persist(model)
+            self._persist(model, is_create=True)
             self._create_flash(model)
             return self._respond(HTTP_STATUS_201)
         except Invalid as invalid_exception:
@@ -78,7 +84,7 @@ class BaseApi(object):
     def _configure(self):
         pass
 
-    def _populate(self, model, form):
+    def _populate(self, model, form, is_create):
         pass
 
     def _post_process_for_output(self, model, output):
@@ -95,11 +101,11 @@ class BaseApi(object):
     def _state(self, model):
         self.state.id = self.id
 
-    def _persist(self, model):
+    def _persist(self, model, is_create):
         form = json.loads(self.request.body)[self.name]
         self._state(model)
         self._validate(model, form)
-        self._populate(model, form)
+        self._populate(model, form, is_create)
         self.dao.save(model)
 
     def _validate(self, model, form):

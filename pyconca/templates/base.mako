@@ -86,7 +86,7 @@
                   </a>
                 </li>
 
-                % if logged_in:
+                % if logged_in and request.user:
                   <li class="dropdown" id="menu1">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">
                       ${request.user.username}

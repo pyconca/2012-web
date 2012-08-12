@@ -87,7 +87,7 @@ class Talk(AttrMixIn, Base):
                    nullable=False)
     abstract = Column(String(length=400), nullable=False)
     outline = Column(String(), nullable=False)
-    reviewer_notes = Column(String(), nullable=False)
+    reviewer_notes = Column(String(), default='')
 
     def to_dict(self):
         return {

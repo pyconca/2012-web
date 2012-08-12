@@ -97,13 +97,15 @@
         </div>
     </div>
 
-    <div class="control-group">
-        <label class="control-label" for="reviewer_notes">Reviewer Notes</label>
-        <div class="controls">
-            <textarea rows=10 name="reviewer_notes">{{talk.reviewer_notes}}</textarea>
-            <div class="help-block" style="display: inline;" id="reviewer_notes_error">&nbsp;</div>
+    % if is_admin:
+        <div class="control-group">
+            <label class="control-label" for="reviewer_notes">Reviewer Notes</label>
+            <div class="controls">
+                <textarea rows=10 name="reviewer_notes">{{talk.reviewer_notes}}</textarea>
+                <div class="help-block" style="display: inline;" id="reviewer_notes_error">&nbsp;</div>
+            </div>
         </div>
-    </div>
+    % endif:
 </script>
 
 <script type="text/javascript">

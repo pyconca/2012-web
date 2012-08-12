@@ -16,14 +16,16 @@ class TalkApi(BaseApi):
         self.dao = TalkDao()
         self.schema = TalkSchema
 
-    def _populate(self, talk, form):
-        talk.owner_id = authenticated_userid(self.request)
+    def _populate(self, talk, form, is_create):
+        if is_create:
+            talk.owner_id = authenticated_userid(self.request)
+        if self.is_admin:
+            talk.reviewer_notes = form['reviewer_notes']
         talk.title = form['title']
         talk.type = form['type']
         talk.level = form['level']
         talk.abstract = form['abstract']
         talk.outline = form['outline']
-        talk.reviewer_notes = form['reviewer_notes']
 
     def _create_flash(self, talk):
         msg = ('You have submitted a %s for PyCon Canada. Thank-you!' 
@@ -75,4 +77,4 @@ class TalkSchema(Schema):
     level = validators.String(not_empty=True, strip=True)
     abstract = validators.String(not_empty=True, strip=True)
     outline = validators.String(not_empty=True, strip=True)
-    reviewer_notes = validators.String(not_empty=True, strip=True)
+    reviewer_notes = validators.String(strip=True)
