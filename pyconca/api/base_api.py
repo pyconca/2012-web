@@ -4,6 +4,7 @@ import logging
 from formencode import Invalid
 
 from pyramid.response import Response
+from pyramid.view import forbidden_view_config
 
 from pyconca.security import is_admin
 
@@ -21,13 +22,17 @@ class FormencodeState(object):
     pass
 
 
+def is_api_request(info, request):
+    return request['PATH_INFO'].endswith('.json') is True
+
+
 class BaseApi(object):
 
     def __init__(self, request):
         self.request = request
         self._configure()
         self.state = FormencodeState()
-        self.body = {'errors':[], 'data':{}}
+        self.body = {'errors': [], 'data': {}}
 
     @property
     def id(self):
@@ -50,6 +55,8 @@ class BaseApi(object):
 
     def get(self):
         model = self.dao.get(self.id)
+        if model is None:
+            return self._respond(HTTP_STATUS_404)
         self.body['data'][self.name] = \
             self._post_process_for_output(model, model.to_dict())
         return self._respond(HTTP_STATUS_200)
@@ -115,7 +122,7 @@ class BaseApi(object):
 
     def _add_validation_errors(self, invalid_exception):
         for field, message in invalid_exception.error_dict.items():
-            error = {'field':field, 'message':message.msg}
+            error = {'field': field, 'message': message.msg}
             self.body['errors'].append(error)
 
     def _respond(self, status):
@@ -123,3 +130,9 @@ class BaseApi(object):
             status=status,
             body=json.dumps(self.body),
             content_type='application/json')
+
+    #--------- permission unmet
+    @forbidden_view_config(renderer='json',
+                           custom_predicates=(is_api_request,))
+    def _forbidden(self):
+        return self._respond(HTTP_STATUS_403)
