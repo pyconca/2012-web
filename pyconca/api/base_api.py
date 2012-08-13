@@ -41,8 +41,6 @@ class BaseApi(object):
 
     def index(self):
         models = self.dao.index()
-        if models is None:
-            return self._respond(HTTP_STATUS_404)  # TODO not sure if right
         self.body['data'][self.name + '_list'] = [m.to_dict() for m in models]
         return self._respond(HTTP_STATUS_200)
 
