@@ -2,6 +2,8 @@ import logging
 
 from pyramid.security import authenticated_userid
 
+from pyconca.security import is_admin
+
 
 log = logging.getLogger(__name__)
 
@@ -23,10 +25,7 @@ class BaseView(object):
 
     @property
     def is_admin(self):
-        if getattr(self.request, 'user'):
-            groups = [group.name for group in self.request.user.groups]
-            return 'admin' in groups
-        return False
+        return is_admin(self.request)
 
     #---------- views
 

@@ -3,8 +3,8 @@ import bcrypt
 from pyramid.security import authenticated_userid
 from pyramid.security import unauthenticated_userid
 from pyramid.security import Allow
-from pyramid.security import Everyone
 from pyramid.security import Authenticated
+from pyramid.security import Everyone
 
 from pyconca.dao.user_dao import UserDao
 from pyconca.dao.talk_dao import TalkDao
@@ -24,6 +24,13 @@ def check_password(password, hashed):
             result |= ord(x) ^ ord(y)
         return result == 0
     return _constant_time_is_equal(bcrypt.hashpw(password, hashed), hashed)
+
+
+def is_admin(request):
+    if getattr(request, 'user'):
+        groups = [group.name for group in request.user.groups]
+        return 'admin' in groups
+    return False
 
 
 def get_user(request):
@@ -105,6 +112,3 @@ class TalkFactory(object):
 
                 self.__acl__.append((Allow, user_id, 'talk_update'))
                 self.__acl__.append((Allow, user_id, 'api_talk_update'))
-
-                self.__acl__.append((Allow, user_id, 'talk_delete'))
-                self.__acl__.append((Allow, user_id, 'api_talk_delete'))

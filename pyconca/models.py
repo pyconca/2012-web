@@ -39,6 +39,8 @@ class User(AttrMixIn, Base):
     last_name = Column(String(length=100), nullable=False)
     email = Column(String(length=100), nullable=False)
     groups = relationship('Group', secondary='user_group')
+    talks = relationship('Talk', backref='user')
+
 
     def to_dict(self):
         return {
@@ -60,23 +62,6 @@ class UserGroup(AttrMixIn, Base):
     group_id = Column(Integer, ForeignKey('group.id'), primary_key=True)
 
 
-#TODO not sure if Enum is good enough.. so I leave the code here in case they
-#   are needed later on
-#class ChoiceType(types.TypeDecorator):
-
-    #impl = types.String
-
-    #def __init__(self, choices, **kwargs):
-        #self.choices = dict(choices)
-        #super(ChoiceType, self).__init__(**kwargs)
-
-    #def process_bind_param(self, value, dialect):
-        #return [k for k, v in self.choices.iteritems() if v == value][0]
-
-    #def process_result_value(self, value, dialect):
-        #return self.choices[value]
-
-
 class Talk(AttrMixIn, Base):
     id = Column(Integer, primary_key=True)
     owner_id = Column(Integer, ForeignKey('user.id'))
@@ -87,7 +72,7 @@ class Talk(AttrMixIn, Base):
                    nullable=False)
     abstract = Column(String(length=400), nullable=False)
     outline = Column(String(), nullable=False)
-    reviewer_notes = Column(String(), nullable=False)
+    reviewer_notes = Column(String(), default='')
 
     def to_dict(self):
         return {
@@ -99,4 +84,5 @@ class Talk(AttrMixIn, Base):
             'abstract': self.abstract,
             'outline': self.outline,
             'reviewer_notes': self.reviewer_notes,
+            'user': self.user.to_dict()
         }

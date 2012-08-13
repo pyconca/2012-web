@@ -1,7 +1,7 @@
 <%inherit file="pyconca:templates/generic.mako"/>
 
 <%block name="header">
-    Talks
+    Talk Overview
 </%block>
 
 <%block name="form">
@@ -17,7 +17,9 @@
        href="${request.route_url('talk_update', id=id)}">
        Edit
     </a>
-    <input class="btn" type="submit" value="Delete"/>
+    % if is_admin:
+      <input class="btn" type="submit" value="Delete"/>
+    % endif
 </form>
 
 <script id="breadcrumbs-template" type="text/x-handlebars-template">
@@ -30,30 +32,37 @@
 </script>
 
 <script id="talk-get-template" type="text/x-handlebars-template">
-    <strong>Title:</strong>
-    <span>{{talk.title}}</span>
+    <fieldset>
+        <legend><strong>{{talk.title}}</strong></legend>
+        <strong>User:</strong>
+        <span>{{talk.user.first_name}} {{talk.user.last_name}}</span>
+        <br>
+        <strong>Type:</strong>
+        <span>{{talk.type}}</span>
+        <br>
+        <strong>Level:</strong>
+        <span>{{talk.level}}</span>
+    </fieldset>
 
     <br>
-    <strong>Type:</strong>
-    <span>{{talk.type}}</span>
+    <fieldset>
+        <legend><strong>Abstract</strong></legend>
+        <p>{{talk.abstract}}</p>
+    </fieldset>
 
     <br>
-    <strong>Level:</strong>
-    <span>{{talk.level}}</span>
+    <fieldset>
+        <legend><strong>Outline</strong></legend>
+        <p>{{talk.outline}}</p>
+    </fieldset>
 
-    <br>
-    <strong>Abstract:</strong>
-    <span>{{talk.abstract}}</span>
-
-    <br>
-    <strong>Outline</strong>
-    <span>{{talk.outline}}</span>
-
-  % if is_admin:
-    <br>
-    <strong>Reviewer Notes:</strong>
-    <span>{{talk.reviewer_notes}}</span>
-  % endif
+    % if is_admin:
+        <br>
+        <fieldset>
+            <legend><strong>Reviewer Notes</strong></legend>
+            <p>{{talk.reviewer_notes}}</p>
+        </fieldset>
+    % endif
 </script>
 
 <script type="text/javascript">

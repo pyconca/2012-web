@@ -16,7 +16,7 @@ class UserApi(BaseApi):
         self.dao = UserDao()
         self.schema = UserSchema
 
-    def _populate(self, user, form):
+    def _populate(self, user, form, is_create):
         user.first_name = form['first_name']
         user.last_name = form['last_name']
         user.username = form['username']

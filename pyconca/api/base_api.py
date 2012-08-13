@@ -6,6 +6,8 @@ from formencode import Invalid
 from pyramid.response import Response
 from pyramid.view import forbidden_view_config
 
+from pyconca.security import is_admin
+
 
 log = logging.getLogger(__name__)
 
@@ -37,18 +39,26 @@ class BaseApi(object):
         if 'id' in self.request.matchdict:
             return self.request.matchdict['id']
 
+    @property
+    def is_admin(self):
+        return is_admin(self.request)
+
     #---------- views
 
     def index(self):
         models = self.dao.index()
-        self.body['data'][self.name + '_list'] = [m.to_dict() for m in models]
+        self.body['data'][self.name + '_list'] = [
+            self._post_process_for_output(m, m.to_dict())
+            for m in models
+        ]
         return self._respond(HTTP_STATUS_200)
 
     def get(self):
         model = self.dao.get(self.id)
         if model is None:
             return self._respond(HTTP_STATUS_404)
-        self.body['data'][self.name] = model.to_dict()
+        self.body['data'][self.name] = \
+            self._post_process_for_output(model, model.to_dict())
         return self._respond(HTTP_STATUS_200)
 
     def delete(self):
@@ -59,7 +69,7 @@ class BaseApi(object):
     def update(self):
         model = self.dao.get(self.id)
         try:
-            self._persist(model)
+            self._persist(model, is_create=False)
             self._update_flash(model)
             return self._respond(HTTP_STATUS_200)
         except Invalid as invalid_exception:
@@ -69,7 +79,7 @@ class BaseApi(object):
     def create(self):
         model = self.dao.create()
         try:
-            self._persist(model)
+            self._persist(model, is_create=True)
             self._create_flash(model)
             return self._respond(HTTP_STATUS_201)
         except Invalid as invalid_exception:
@@ -81,13 +91,16 @@ class BaseApi(object):
     def _configure(self):
         pass
 
-    def _populate(self, model, form):
+    def _populate(self, model, form, is_create):
         pass
+
+    def _post_process_for_output(self, model, output):
+        return output
 
     def _create_flash(self, model):
         pass
 
-    def _update_flash(self, model, form):
+    def _update_flash(self, model):
         pass
 
     #---------- persist helpers
@@ -95,11 +108,11 @@ class BaseApi(object):
     def _state(self, model):
         self.state.id = self.id
 
-    def _persist(self, model):
+    def _persist(self, model, is_create):
         form = json.loads(self.request.body)[self.name]
         self._state(model)
         self._validate(model, form)
-        self._populate(model, form)
+        self._populate(model, form, is_create)
         self.dao.save(model)
 
     def _validate(self, model, form):

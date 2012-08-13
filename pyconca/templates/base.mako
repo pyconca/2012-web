@@ -86,42 +86,73 @@
                   </a>
                 </li>
 
-                % if logged_in:
-                    <li class="nav-item">
-                      <a class="nav-link" href="${request.application_url}/logout">
-                          <i class="icon-remove icon-white nav-icon"></i>
+                % if logged_in and request.user:
+                  <li class="dropdown" id="menu1">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">
+                      <i class="icon-user icon-white nav-icon"></i>
+                      ${request.user.username}
+                      <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                      % if is_admin:
+                      <li>
+                        <a class="nav-link"  href="${request.application_url}/talk">
+                          <i class="icon-file nav-icon"></i>
+                          Talks
+                        </a>
+                      </li>
+                      <li>
+                        <a class="nav-link"  href="${request.application_url}/talk">
+                          <i class="icon-th nav-icon"></i>
+                          Users
+                        </a>
+                      </li>
+                      % else:
+                      <li>
+                        <a class="nav-link"  href="${request.application_url}/new/talk">
+                          <i class="icon-bullhorn nav-icon"></i>
+                          Submit a Talk
+                        </a>
+                      </li>
+                      <li>
+                        <a class="nav-link"  href="${request.application_url}/talk">
+                          <i class="icon-briefcase nav-icon"></i>
+                          Your Talks
+                        </a>
+                      </li>
+                      % endif:
+                      <li class="divider"></li>
+                      <li>
+                        <a href="${request.application_url}/user/${logged_in}">
+                          <i class="icon-cog nav-icon"></i>
+                          Your Profile
+                        </a>
+                      </li>
+                      <li>
+                        <a class="nav-link" href="${request.application_url}/logout">
+                          <i class="icon-remove nav-icon"></i>
                           Logout
-                      </a>
-                    </li>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
                 % else:
-                    ## Hide login-related links until we fix up the production database
-                    % if False:
-                      <li class="nav-item">
-                        <a class="nav-link" href="${request.application_url}/login">
-                            <i class="icon-user icon-white nav-icon"></i>
-                            Login
-                        </a>
-                      </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="${request.application_url}/login">
+                        <i class="icon-user icon-white nav-icon"></i>
+                        Login
+                    </a>
+                  </li>
 
-                      <li class="nav-item">
-                        <a class="nav-link" href="${request.application_url}/new/user">
-                            <i class="icon-star-empty icon-white nav-icon"></i>
-                            Sign Up
-                        </a>
-                      </li>
-                    % endif
+                  <li class="nav-item">
+                    <a class="nav-link" href="${request.application_url}/new/user">
+                        <i class="icon-star-empty icon-white nav-icon"></i>
+                        Sign Up
+                    </a>
+                  </li>
                 % endif
-              </ul>
 
-              % if logged_in:
-                  <p class="navbar-text pull-right">
-                      Logged in as 
-                      <a href="${request.application_url}/user/${logged_in}">
-                          ${request.user.username}
-                      </a>
-                      &nbsp;
-                  </p>
-              % endif
+              </ul>
             </div><!--/.nav-collapse -->
           </div> <!-- main-row -->
         </div>
@@ -136,17 +167,8 @@
 
   <div id="footer-row" class="row-fluid hidden-phone">
     <div class="main-row">
-      <div class="span4">
-        <strong>&copy; PyCon Canada 2012</strong>
-        &nbsp;&nbsp;
-        <a style="color: #aaa;"
-           href="http://www.flickr.com/photos/camstatic/5535319505">
-           photo by camstatic
-        </a>
-      </div>
-
-      <div class="span8" id="footer-links">
-        <div class="pull-right">
+      <div class="span12" style="text-align: center;" id="footer-links">
+        <div>
           <ul id="footer-nav">
             <li class="footer-nav-link">
               <a class="nav-link" href="${request.application_url}">Home</a>
@@ -154,6 +176,10 @@
 
             <li class="footer-nav-link">
               <a class="nav-link" href="${request.application_url}/about">About</a>
+            </li>
+
+            <li class="footer-nav-link">
+              <a class="nav-link" href="${request.application_url}/contact">Contact</a>
             </li>
 
             <li class="footer-nav-link">
@@ -178,7 +204,6 @@
           </ul>
         </div>
       </div>
-
     </div>
   </div>
 
@@ -194,22 +219,24 @@
             <br>
             <a class="nav-link" href="${request.application_url}/about">About</a>
             <a class="nav-link pull-right" href="${request.application_url}/sponsors">Sponsors</a>
+            <br>
+            <a class="nav-link" href="${request.application_url}/contact">Contact</a>
+            <a class="nav-link pull-right" href="https://twitter.com/pyconca">@pyconca</a>
           </div>
         </div>
       </div>
 
-      <div id="footer-row" class="row-fluid visible-phone">
+      <div id="footer-row" class="row-fluid">
          <div class="main-row">
           <div class="span12" style="text-align: center;">
             <strong>&copy; PyCon Canada 2012</strong>
-              <br>
-              <a href="https://twitter.com/pyconca">@pyconca</a>
-              <br>
               <br>
               <a style="color: #aaa;"
                  href="http://www.flickr.com/photos/camstatic/5535319505">
                  photo by camstatic
               </a>
+              <br>
+              <br>
           </div>
         </div>
       </div>
