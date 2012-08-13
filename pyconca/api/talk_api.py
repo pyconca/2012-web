@@ -9,7 +9,21 @@ from pyconca.api.base_api import BaseApi
 from pyconca.dao.talk_dao import TalkDao
 
 
+HTTP_STATUS_200 = '200 OK'
+
+
 class TalkApi(BaseApi):
+
+    def index(self):
+        if self.is_admin:
+            models = self.dao.index()
+        else:
+            models = self.dao.get_by_owner(self.request.user)
+        self.body['data'][self.name + '_list'] = [
+            self._post_process_for_output(m, m.to_dict())
+            for m in models
+        ]
+        return self._respond(HTTP_STATUS_200)
 
     def _configure(self):
         self.name = 'talk'
@@ -28,7 +42,7 @@ class TalkApi(BaseApi):
         talk.outline = form['outline']
 
     def _create_flash(self, talk):
-        msg = ('You have submitted a %s for PyCon Canada. Thank-you!' 
+        msg = ('You have submitted a %s for PyCon Canada. Thank-you!'
             % (talk.type))
         self.request.session.flash(msg, 'success')
 
@@ -54,11 +68,11 @@ class TalkApi(BaseApi):
         - contact - list of email(s) of presenters.
         X released - permission to release.
         X license - CC license
-        / description - used as the description of the video 
+        / description - used as the description of the video
           (paragraphs are fine)
         / conf_key - PK in source database - unique, used to update this item
         / conf_url - URL of talk page
-        X tags - comma separated list - search terms, including sub topics 
+        X tags - comma separated list - search terms, including sub topics
           briefly discussed in your talk.
         """
         request = get_current_request()

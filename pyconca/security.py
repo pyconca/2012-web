@@ -88,13 +88,13 @@ class UserFactory(object):
 class TalkFactory(object):
     __acl__ = [
         (Allow, Authenticated, 'talk_create'),
-        (Allow, 'group:admin', 'talk_index'),
+        (Allow, Authenticated, 'talk_index'),
         (Allow, 'group:admin', 'talk_get'),
         (Allow, 'group:admin', 'talk_update'),
         (Allow, 'group:admin', 'talk_delete'),
 
         (Allow, Authenticated, 'api_talk_create'),
-        (Allow, 'group:admin', 'api_talk_index'),
+        (Allow, Authenticated, 'api_talk_index'),
         (Allow, 'group:admin', 'api_talk_get'),
         (Allow, 'group:admin', 'api_talk_update'),
         (Allow, 'group:admin', 'api_talk_delete'),
