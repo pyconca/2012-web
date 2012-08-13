@@ -105,6 +105,7 @@ class TalkFactory(object):
         user = request.user
         talk_dao = TalkDao()
         if (user_id and user and 'id' in request.matchdict and
+            talk_dao.get(int(request.matchdict['id'])) and
             user.id == talk_dao.get(int(request.matchdict['id'])).owner_id):
                 self.__acl__.append((Allow, user_id, 'talk_get'))
                 self.__acl__.append((Allow, user_id, 'api_talk_get'))

@@ -182,9 +182,6 @@
             var url = "${request.route_url('api_talk_update', id=id)}";
         % endif
 
-        console.log(url);
-        console.log(request);
-
         $.post(url, request)
             .success(function() {
                 var goto_url = "${request.route_url('talk_index')}";
