@@ -11,6 +11,7 @@ from sqlalchemy.orm import sessionmaker
 from zope.sqlalchemy import ZopeTransactionExtension
 
 from pyramid.security import Allow
+from pyramid.security import ALL_PERMISSIONS
 
 from pyconca.util import camel_to_under
 
@@ -46,19 +47,13 @@ class User(AttrMixIn, Base):
     @property
     def __acl__(self):
         return [
+            (Allow, 'group:admin', ALL_PERMISSIONS),
+
             (Allow, self.id, 'user_get'),
             (Allow, self.id, 'api_user_get'),
 
             (Allow, self.id, 'user_update'),
             (Allow, self.id, 'api_user_update'),
-
-            (Allow, 'group:admin', 'user_get'),
-            (Allow, 'group:admin', 'user_update'),
-            (Allow, 'group:admin', 'user_delete'),
-
-            (Allow, 'group:admin', 'api_user_get'),
-            (Allow, 'group:admin', 'api_user_update'),
-            (Allow, 'group:admin', 'api_user_delete'),
         ]
 
     @property
@@ -100,19 +95,13 @@ class Talk(AttrMixIn, Base):
     @property
     def __acl__(self):
         return [
+            (Allow, 'group:admin', ALL_PERMISSIONS),
+
             (Allow, self.owner_id, 'talk_get'),
             (Allow, self.owner_id, 'api_talk_get'),
 
             (Allow, self.owner_id, 'talk_update'),
             (Allow, self.owner_id, 'api_talk_update'),
-
-            (Allow, 'group:admin', 'talk_get'),
-            (Allow, 'group:admin', 'talk_update'),
-            (Allow, 'group:admin', 'talk_delete'),
-
-            (Allow, 'group:admin', 'api_talk_get'),
-            (Allow, 'group:admin', 'api_talk_update'),
-            (Allow, 'group:admin', 'api_talk_delete'),
         ]
 
     def to_dict(self, is_admin):

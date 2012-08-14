@@ -4,6 +4,7 @@ from pyramid.security import unauthenticated_userid
 from pyramid.security import Allow
 from pyramid.security import Authenticated
 from pyramid.security import Everyone
+from pyramid.security import ALL_PERMISSIONS
 
 from pyconca.dao.user_dao import UserDao
 from pyconca.dao.talk_dao import TalkDao
@@ -49,7 +50,7 @@ def permission_finder(username, request):
 
 class RootFactory(object):
     __acl__ = [
-        (Allow, 'group:admin', 'admin')
+        (Allow, 'group:admin', ALL_PERMISSIONS),
     ]
 
     def __init__(self, request):
@@ -59,10 +60,7 @@ class RootFactory(object):
 class UserFactory(object):
     __acl__ = [
         (Allow, Everyone, 'user_create'),
-        (Allow, 'group:admin', 'user_index'),
-
         (Allow, Everyone, 'api_user_create'),
-        (Allow, 'group:admin', 'api_user_index'),
     ]
 
     def __init__(self, request):
@@ -75,9 +73,9 @@ class UserFactory(object):
 class TalkFactory(object):
     __acl__ = [
         (Allow, Authenticated, 'talk_create'),
-        (Allow, Authenticated, 'talk_index'),
-
         (Allow, Authenticated, 'api_talk_create'),
+
+        (Allow, Authenticated, 'talk_index'),
         (Allow, Authenticated, 'api_talk_index'),
     ]
 
