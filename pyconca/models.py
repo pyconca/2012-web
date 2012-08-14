@@ -51,9 +51,21 @@ class User(AttrMixIn, Base):
 
             (Allow, self.id, 'user_update'),
             (Allow, self.id, 'api_user_update'),
+
+            (Allow, 'group:admin', 'user_get'),
+            (Allow, 'group:admin', 'user_update'),
+            (Allow, 'group:admin', 'user_delete'),
+
+            (Allow, 'group:admin', 'api_user_get'),
+            (Allow, 'group:admin', 'api_user_update'),
+            (Allow, 'group:admin', 'api_user_delete'),
         ]
 
-    def to_dict(self):
+    @property
+    def is_admin(self):
+        return 'admin' in [group.name for group in self.groups]
+
+    def to_dict(self, is_admin):
         return {
             'id': self.id,
             'username': self.username,
@@ -93,10 +105,18 @@ class Talk(AttrMixIn, Base):
 
             (Allow, self.owner_id, 'talk_update'),
             (Allow, self.owner_id, 'api_talk_update'),
+
+            (Allow, 'group:admin', 'talk_get'),
+            (Allow, 'group:admin', 'talk_update'),
+            (Allow, 'group:admin', 'talk_delete'),
+
+            (Allow, 'group:admin', 'api_talk_get'),
+            (Allow, 'group:admin', 'api_talk_update'),
+            (Allow, 'group:admin', 'api_talk_delete'),
         ]
 
-    def to_dict(self):
-        return {
+    def to_dict(self, is_admin):
+        data = {
             'id': self.id,
             'owner_id': self.owner_id,
             'title': self.title,
@@ -104,6 +124,10 @@ class Talk(AttrMixIn, Base):
             'level': self.level,
             'abstract': self.abstract,
             'outline': self.outline,
-            'reviewer_notes': self.reviewer_notes,
-            'user': self.user.to_dict()
+            'user': self.user.to_dict(is_admin)
         }
+
+        if is_admin:
+            data['reviewer_notes'] = self.reviewer_notes
+
+        return data

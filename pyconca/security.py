@@ -27,8 +27,7 @@ def check_password(password, hashed):
 
 def is_admin(request):
     if getattr(request, 'user'):
-        groups = [group.name for group in request.user.groups]
-        return 'admin' in groups
+        return request.user.is_admin
     return False
 
 
@@ -54,48 +53,36 @@ class RootFactory(object):
     ]
 
     def __init__(self, request):
-        pass
+        self.request = request
 
 
 class UserFactory(object):
     __acl__ = [
         (Allow, Everyone, 'user_create'),
         (Allow, 'group:admin', 'user_index'),
-        (Allow, 'group:admin', 'user_get'),
-        (Allow, 'group:admin', 'user_update'),
-        (Allow, 'group:admin', 'user_delete'),
 
         (Allow, Everyone, 'api_user_create'),
         (Allow, 'group:admin', 'api_user_index'),
-        (Allow, 'group:admin', 'api_user_get'),
-        (Allow, 'group:admin', 'api_user_update'),
-        (Allow, 'group:admin', 'api_user_delete'),
     ]
 
     def __init__(self, request):
-        pass
+        self.request = request
 
     def __getitem__(self, id):
-        return UserDao(None).get(id)
+        return UserDao(self.request.user).get(id)
 
 
 class TalkFactory(object):
     __acl__ = [
         (Allow, Authenticated, 'talk_create'),
         (Allow, Authenticated, 'talk_index'),
-        (Allow, 'group:admin', 'talk_get'),
-        (Allow, 'group:admin', 'talk_update'),
-        (Allow, 'group:admin', 'talk_delete'),
 
         (Allow, Authenticated, 'api_talk_create'),
         (Allow, Authenticated, 'api_talk_index'),
-        (Allow, 'group:admin', 'api_talk_get'),
-        (Allow, 'group:admin', 'api_talk_update'),
-        (Allow, 'group:admin', 'api_talk_delete'),
     ]
 
     def __init__(self, request):
-        pass
+        self.request = request
 
     def __getitem__(self, id):
-        return TalkDao(None).get(id)
+        return TalkDao(self.request.user).get(id)

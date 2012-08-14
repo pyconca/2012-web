@@ -9,21 +9,7 @@ from pyconca.api.base_api import BaseApi
 from pyconca.dao.talk_dao import TalkDao
 
 
-HTTP_STATUS_200 = '200 OK'
-
-
 class TalkApi(BaseApi):
-
-    def index(self):
-        if self.is_admin:
-            models = self.dao.index()
-        else:
-            models = self.dao.get_by_owner(self.request.user)
-        self.body['data'][self.name + '_list'] = [
-            self._post_process_for_output(m, m.to_dict())
-            for m in models
-        ]
-        return self._respond(HTTP_STATUS_200)
 
     def _configure(self):
         self.name = 'talk'

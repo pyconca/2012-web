@@ -7,5 +7,11 @@ class TalkDao(BaseDao):
     def __init__(self, authenticated_user):
         BaseDao.__init__(self, authenticated_user, Talk)
 
-    def get_by_owner(self, owner):
-        return owner.talks
+    def _query(self):
+        query = BaseDao._query(self)
+        if self.is_admin:
+            return query
+        elif self.authenticated_user:
+            return query.filter_by(owner_id=self.authenticated_user.id)
+        else:
+            raise Exception # TODO

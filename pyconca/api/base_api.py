@@ -39,7 +39,7 @@ class BaseApi(Context):
     def index(self):
         models = self.dao.index()
         self.body['data'][self.name + '_list'] = [
-            self._post_process_for_output(m, m.to_dict())
+            self._post_process_for_output(m, m.to_dict(self.is_admin))
             for m in models
         ]
         return self._respond(HTTP_STATUS_200)
@@ -49,7 +49,7 @@ class BaseApi(Context):
         if model is None:
             return self._respond(HTTP_STATUS_404)
         self.body['data'][self.name] = \
-            self._post_process_for_output(model, model.to_dict())
+            self._post_process_for_output(model, model.to_dict(self.is_admin))
         return self._respond(HTTP_STATUS_200)
 
     def delete(self):
