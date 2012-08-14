@@ -31,7 +31,8 @@ def _add_api_resource(config, name):
     route_name = 'api_%(name)s_get' % (values)
     config.add_route(
         route_name, '/%(name)s/{id}.json' % (values),
-        factory=factory
+        factory=factory,
+        traverse='/{id}'
     )
     config.add_view(view, attr='get',
         route_name=route_name,
@@ -54,7 +55,8 @@ def _add_api_resource(config, name):
     route_name = 'api_%(name)s_update' % (values)
     config.add_route(
         route_name, '/edit/%(name)s/{id}.json' % (values),
-        factory=factory
+        factory=factory,
+        traverse='/{id}'
     )
     config.add_view(view, attr='update',
         route_name=route_name,
@@ -66,7 +68,8 @@ def _add_api_resource(config, name):
     route_name = 'api_%(name)s_delete' % (values)
     config.add_route(
         route_name, '/delete/%(name)s/{id}.json' % (values),
-        factory=factory
+        factory=factory,
+        traverse='/{id}'
     )
     config.add_view(view, attr='delete',
         route_name=route_name,
@@ -96,7 +99,8 @@ def _add_resource(config, name):
     route_name = name + '_get'
     config.add_route(
         route_name, '/%(name)s/{id}' % (values),
-        factory=factory
+        factory=factory,
+        traverse='/{id}'
     )
     config.add_view(view, attr='get',
         route_name=route_name,
@@ -118,7 +122,8 @@ def _add_resource(config, name):
     route_name = name + '_update'
     config.add_route(
         route_name, '/edit/%(name)s/{id}' % (values),
-        factory=factory
+        factory=factory,
+        traverse='/{id}'
     )
     config.add_view(view, attr='update',
         route_name=route_name,

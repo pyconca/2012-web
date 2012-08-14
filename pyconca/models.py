@@ -10,6 +10,8 @@ from sqlalchemy.orm import scoped_session
 from sqlalchemy.orm import sessionmaker
 from zope.sqlalchemy import ZopeTransactionExtension
 
+from pyramid.security import Allow
+
 from pyconca.util import camel_to_under
 
 
@@ -41,6 +43,15 @@ class User(AttrMixIn, Base):
     groups = relationship('Group', secondary='user_group')
     talks = relationship('Talk', backref='user')
 
+    @property
+    def __acl__(self):
+        return [
+            (Allow, self.id, 'user_get'),
+            (Allow, self.id, 'api_user_get'),
+
+            (Allow, self.id, 'user_update'),
+            (Allow, self.id, 'api_user_update'),
+        ]
 
     def to_dict(self):
         return {
@@ -73,6 +84,16 @@ class Talk(AttrMixIn, Base):
     abstract = Column(String(length=400), nullable=False)
     outline = Column(String(), nullable=False)
     reviewer_notes = Column(String(), default='')
+
+    @property
+    def __acl__(self):
+        return [
+            (Allow, self.owner_id, 'talk_get'),
+            (Allow, self.owner_id, 'api_talk_get'),
+
+            (Allow, self.owner_id, 'talk_update'),
+            (Allow, self.owner_id, 'api_talk_update'),
+        ]
 
     def to_dict(self):
         return {
