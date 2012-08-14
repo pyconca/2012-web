@@ -6,7 +6,7 @@ from formencode import Invalid
 from pyramid.response import Response
 from pyramid.view import forbidden_view_config
 
-from pyconca.security import is_admin
+from pyconca.context import Context
 
 
 log = logging.getLogger(__name__)
@@ -26,22 +26,13 @@ def is_api_request(info, request):
     return request['PATH_INFO'].endswith('.json') is True
 
 
-class BaseApi(object):
+class BaseApi(Context):
 
     def __init__(self, request):
-        self.request = request
+        Context.__init__(self, request)
         self._configure()
         self.state = FormencodeState()
         self.body = {'errors': [], 'data': {}}
-
-    @property
-    def id(self):
-        if 'id' in self.request.matchdict:
-            return self.request.matchdict['id']
-
-    @property
-    def is_admin(self):
-        return is_admin(self.request)
 
     #---------- views
 
@@ -132,6 +123,7 @@ class BaseApi(object):
             content_type='application/json')
 
     #--------- permission unmet
+
     @forbidden_view_config(renderer='json',
                            custom_predicates=(is_api_request,))
     def _forbidden(self):

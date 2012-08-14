@@ -2,30 +2,21 @@ import logging
 
 from pyramid.security import authenticated_userid
 
-from pyconca.security import is_admin
+from pyconca.context import Context
 
 
 log = logging.getLogger(__name__)
 
 
-class BaseView(object):
+class BaseView(Context):
 
     def __init__(self, request):
-        self.request = request
+        Context.__init__(self, request)
         self._configure()
         self.body = {
             'logged_in': authenticated_userid(self.request),
             'is_admin': self.is_admin
         }
-
-    @property
-    def id(self):
-        if 'id' in self.request.matchdict:
-            return self.request.matchdict['id']
-
-    @property
-    def is_admin(self):
-        return is_admin(self.request)
 
     #---------- views
 

@@ -36,7 +36,7 @@ def is_admin(request):
 def get_user(request):
     user_id = unauthenticated_userid(request)
     if user_id:
-        user_dao = UserDao()
+        user_dao = UserDao(None)
         return user_dao.get(user_id)
 
 
@@ -74,41 +74,24 @@ class UserFactory(object):
     ]
 
     def __init__(self, request):
-        user_id = authenticated_userid(request)
-        user = request.user
-        if (user_id and user and 'id' in request.matchdict and
-            user.id == int(request.matchdict['id'])):
-                self.__acl__.append((Allow, user_id, 'user_get'))
-                self.__acl__.append((Allow, user_id, 'api_user_get'))
-
-                self.__acl__.append((Allow, user_id, 'user_update'))
-                self.__acl__.append((Allow, user_id, 'api_user_update'))
+        pass
 
 
 class TalkFactory(object):
     __acl__ = [
         (Allow, Authenticated, 'talk_create'),
-        (Allow, Authenticated, 'talk_index'),
+        (Allow, 'group:admin', 'talk_index'),
         (Allow, 'group:admin', 'talk_get'),
         (Allow, 'group:admin', 'talk_update'),
         (Allow, 'group:admin', 'talk_delete'),
 
         (Allow, Authenticated, 'api_talk_create'),
-        (Allow, Authenticated, 'api_talk_index'),
+        (Allow, 'group:admin', 'api_talk_index'),
         (Allow, 'group:admin', 'api_talk_get'),
         (Allow, 'group:admin', 'api_talk_update'),
         (Allow, 'group:admin', 'api_talk_delete'),
     ]
 
     def __init__(self, request):
-        user_id = authenticated_userid(request)
-        user = request.user
-        talk_dao = TalkDao()
-        if (user_id and user and 'id' in request.matchdict and
-            talk_dao.get(int(request.matchdict['id'])) and
-            user.id == talk_dao.get(int(request.matchdict['id'])).owner_id):
-                self.__acl__.append((Allow, user_id, 'talk_get'))
-                self.__acl__.append((Allow, user_id, 'api_talk_get'))
+        pass
 
-                self.__acl__.append((Allow, user_id, 'talk_update'))
-                self.__acl__.append((Allow, user_id, 'api_talk_update'))

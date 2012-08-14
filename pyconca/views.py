@@ -85,7 +85,7 @@ def login(request):
     if 'login.submit' in request.params:
         username = request.params['username']
         password = request.params['password']
-        user_dao = UserDao()
+        user_dao = UserDao(None)
         user = user_dao.get_by_username(username)
         if user and check_password(password, user.password):
             headers = remember(request, user.id)
@@ -107,7 +107,7 @@ def forgot(request):
 
     if 'forgot.submit' in request.params:
         username = request.params['username']
-        user_dao = UserDao()
+        user_dao = UserDao(None)
         user = user_dao.get_by_username(username)
         if user:
             login = request.route_url('login')

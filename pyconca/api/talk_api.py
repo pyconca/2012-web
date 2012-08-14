@@ -27,7 +27,7 @@ class TalkApi(BaseApi):
 
     def _configure(self):
         self.name = 'talk'
-        self.dao = TalkDao()
+        self.dao = TalkDao(self.request.user)
         self.schema = TalkSchema
 
     def _populate(self, talk, form, is_create):

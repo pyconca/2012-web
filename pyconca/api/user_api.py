@@ -13,7 +13,7 @@ class UserApi(BaseApi):
 
     def _configure(self):
         self.name = 'user'
-        self.dao = UserDao()
+        self.dao = UserDao(self.request.user)
         self.schema = UserSchema
 
     def _populate(self, user, form, is_create):
@@ -36,7 +36,7 @@ class UniqueUsername(FancyValidator):
 
     def __init__(self, *args, **kwargs):
         FancyValidator.__init__(self, *args, **kwargs)
-        self.user_dao = UserDao()
+        self.user_dao = UserDao(None)
 
     def _to_python(self, value, state):
         if self.user_dao.username_already_exists(value, state.id):

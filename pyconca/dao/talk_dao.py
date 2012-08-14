@@ -4,8 +4,8 @@ from pyconca.models import Talk
 
 class TalkDao(BaseDao):
 
-    def __init__(self):
-        BaseDao.__init__(self, Talk)
+    def __init__(self, authenticated_user):
+        BaseDao.__init__(self, authenticated_user, Talk)
 
     def get_by_owner(self, owner):
         return owner.talks

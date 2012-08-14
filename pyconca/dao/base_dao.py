@@ -2,7 +2,8 @@ from pyconca.models import DBSession
 
 class BaseDao(object):
 
-    def __init__(self, model):
+    def __init__(self, authenticated_user, model):
+        self.authenticated_user = authenticated_user
         self.model = model
 
     def get(self, id):
