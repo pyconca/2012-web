@@ -4,6 +4,8 @@ from formencode import Invalid
 from formencode import Schema
 from formencode import validators
 
+from pyramid.security import remember
+
 from pyconca.api.base_api import BaseApi
 from pyconca.dao.user_dao import UserDao
 from pyconca.security import generate_password
@@ -33,6 +35,13 @@ class UserApi(BaseApi):
     def _update_flash(self, user):
         msg = ('Updated user: %s' % (user.username))
         self.request.session.flash(msg, 'success')
+
+    def create(self):
+        resp = super(UserApi, self).create()
+        if self.model.id:
+            headers = remember(self.request, self.model.id)
+            resp.headers.extend(headers)
+        return resp
 
 
 class UniqueUsername(FancyValidator):

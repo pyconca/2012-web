@@ -145,7 +145,7 @@
         $.post(url, request)
             .success(function() {
                 % if is_create:
-                    var goto_url = "${request.route_url('login')}";
+                    var goto_url = "/new/talk";
                 % else:
                     var goto_url = "${request.route_url('user_get', id=id)}";
                 % endif
