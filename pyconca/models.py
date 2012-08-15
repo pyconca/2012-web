@@ -2,6 +2,7 @@ from sqlalchemy import Column
 from sqlalchemy import ForeignKey
 from sqlalchemy import Integer
 from sqlalchemy import String
+from sqlalchemy import Text
 from sqlalchemy import Enum
 from sqlalchemy.ext.declarative import declared_attr
 from sqlalchemy.ext.declarative import declarative_base
@@ -89,8 +90,8 @@ class Talk(AttrMixIn, Base):
     level = Column(Enum('novice', 'experienced', name='talk_level'),
                    nullable=False)
     abstract = Column(String(length=400), nullable=False)
-    outline = Column(String(), nullable=False)
-    reviewer_notes = Column(String(), default='')
+    outline = Column(Text(), nullable=False)
+    reviewer_notes = Column(Text(), default='')
 
     @property
     def __acl__(self):
