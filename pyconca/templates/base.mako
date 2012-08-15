@@ -102,7 +102,7 @@
                         </a>
                       </li>
                       <li>
-                        <a class="nav-link"  href="${request.application_url}/talk">
+                        <a class="nav-link"  href="${request.application_url}/user">
                           <i class="icon-th nav-icon"></i>
                           Users
                         </a>
