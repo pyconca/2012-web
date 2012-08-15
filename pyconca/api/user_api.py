@@ -65,7 +65,7 @@ class UserSchema(Schema):
     )
     password = validators.String(not_empty=True, strip=True)
     password_confirm = validators.String(not_empty=True, strip=True)
-    email = validators.String(not_empty=True, strip=True)
+    email = validators.Email(not_empty=True, strip=True, resolve_domain=False)
     chained_validators = [
         validators.FieldsMatch('password', 'password_confirm')
     ]
