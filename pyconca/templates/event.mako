@@ -26,18 +26,29 @@
         <div id="sponsors_carousel" class="carousel slide side-block">
           <div class="carousel-inner">
             <div class="active item">
-             <img src="${request.static_url("pyconca:static/vmfarms-logo.png")}"
-                  width="200px;" height="100px;" alt="">
+             <a href="http://vmfarms.com/">
+              <img src="${request.static_url("pyconca:static/vmfarms-logo.png")}"
+                width="200px;" height="100px;" alt="">
+             </a>
              <br>
-             <img src="${request.static_url("pyconca:static/freshbooks.gif")}"
-                  width="200px;" height="100px;" alt="">
+
+             <a href="http://www.freshbooks.com/">
+              <img src="${request.static_url("pyconca:static/freshbooks.gif")}"
+                width="200px;" height="100px;" alt="">
+             </a>
             </div>
+
             <div class="item">
-             <img src="${request.static_url("pyconca:static/vmfarms-logo.png")}"
-                  width="200px;" height="100px;" alt="">
+             <a href="http://vmfarms.com/">
+              <img src="${request.static_url("pyconca:static/vmfarms-logo.png")}"
+                width="200px;" height="100px;" alt="">
+             </a>
              <br>
-             <img src="${request.static_url("pyconca:static/freshbooks.gif")}"
-                  width="200px;" height="100px;" alt="">
+
+             <a href="http://www.freshbooks.com/">
+              <img src="${request.static_url("pyconca:static/freshbooks.gif")}"
+                width="200px;" height="100px;" alt="">
+             </a>
             </div>
           </div>
         </div>
