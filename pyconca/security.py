@@ -61,6 +61,9 @@ class UserFactory(object):
     __acl__ = [
         (Allow, Everyone, 'user_create'),
         (Allow, Everyone, 'api_user_create'),
+
+        (Allow, 'group:admin', 'user_index'),
+        (Allow, 'group:admin', 'api_user_index'),
     ]
 
     def __init__(self, request):
