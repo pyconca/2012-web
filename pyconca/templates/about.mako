@@ -107,6 +107,11 @@
           <td>Sheila Miguez</td>
           <td>Carl Karsten</td>
         </tr>
+
+        <tr>
+          <td>Teresa Hulinska</td>
+          <td></td>
+        </tr>
       </table>
 
     <p>
