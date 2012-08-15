@@ -68,10 +68,10 @@ class BaseApi(Context):
             return self._respond(HTTP_STATUS_400)
 
     def create(self):
-        model = self.dao.create()
+        self.model = self.dao.create()
         try:
-            self._persist(model, is_create=True)
-            self._create_flash(model)
+            self._persist(self.model, is_create=True)
+            self._create_flash(self.model)
             return self._respond(HTTP_STATUS_201)
         except Invalid as invalid_exception:
             self._add_validation_errors(invalid_exception)
