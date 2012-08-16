@@ -13,8 +13,8 @@
           <th>18:00</th>
           <td>
             <strong>${_(u"Registration, casual mixer and venue setup")}</strong>.
-            ${_(u"""Come register, hang out, and chat. Food and drinks will be
-            provided, and the venue bar will be open.""")}
+            ${_(u"Come register, hang out, and chat. Food and drinks will be"
+            u"provided, and the venue bar will be open.")}
           </td>
         </tr>
         <tr>
@@ -114,18 +114,18 @@
         <tr>
           <th>17:00</th>
           <td colspan="2">
-            ${_(u"""<strong>Dinner</strong>. Not provided. Grab some friends and head
-            out to one of the local restaurants.""")}
+            ${_(u"<strong>Dinner</strong>. Not provided. Grab some friends and head"
+            u"out to one of the local restaurants.")}
           </td>
         </tr>
 
         <tr>
           <th>18:00</th>
           <td colspan="2">
-            ${_(u"""<strong>Open space, BoF sessions</strong>. Hang out and chat. The
-            venue bar will be open, and there will be space for
-            <a href='http://en.wikipedia.org/wiki/Birds_of_a_feather_(computing)'>
-            birds of a feather</a> sessions.""")}
+            ${_(u"<strong>Open space, BoF sessions</strong>. Hang out and chat. The"
+            u"venue bar will be open, and there will be space for"
+            u"<a href='http://en.wikipedia.org/wiki/Birds_of_a_feather_(computing)'>"
+            u"birds of a feather</a> sessions.")}
           </td>
         </tr>
 
@@ -211,26 +211,26 @@
         <tr>
           <th>16:00</th>
           <td colspan="2">
-            ${_(u"""<strong>Talks finish, venue bar opens, appetizers served</strong>.
-            Time to meet some new people in preparation for dinner.""")}
+            ${_(u"<strong>Talks finish, venue bar opens, appetizers served</strong>."
+            u"Time to meet some new people in preparation for dinner.")}
           </td>
         </tr>
 
         <tr>
           <th>17:00</th>
           <td colspan="2">
-            ${_(u"""<strong>Dinner</strong>. Not provided. Grab some friends and head
-            out to one of the local restaurants.""")}
+            ${_(u"<strong>Dinner</strong>. Not provided. Grab some friends and head"
+            u"out to one of the local restaurants.")}
           </td>
         </tr>
 
         <tr>
           <th>18:00</th>
           <td colspan="2">
-            ${_(u"""<strong>Open space, BoF sessions</strong>. Hang out and chat. The
-            venue bar will be open, and there will be space for
-            <a href='http://en.wikipedia.org/wiki/Birds_of_a_feather_(computing)'>
-            birds of a feather</a> sessions.""")}
+            ${_(u"<strong>Open space, BoF sessions</strong>. Hang out and chat. The"
+            u"venue bar will be open, and there will be space for"
+            u"<a href='http://en.wikipedia.org/wiki/Birds_of_a_feather_(computing)'>"
+            u"birds of a feather</a> sessions.")}
           </td>
         </tr>
 

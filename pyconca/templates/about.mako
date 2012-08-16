@@ -17,21 +17,21 @@
 
         <ul>
           <li>
-            ${_(u"""Support the efforts of
-            <a href="http://montrealpython.org/2011/03/pycon-2014-and-2015-in-montreal/">
-            Montreal Python</a> as they prepare to host
-            <a href="http://us.pycon.org/">PyCon North America</a>
-            in 2014 and 2015. This is the first time
-            that the main PyCon conference is going to be outside of the US.
-            Let's take this opportunity to showcase the Canadian Python
-            community, and step up to the challenge as speakers and volunteers.""")}
+            ${_(u"Support the efforts of"
+            u"<a href='http://montrealpython.org/2011/03/pycon-2014-and-2015-in-montreal/'>"
+            u"Montreal Python</a> as they prepare to host"
+            u"<ua href='http://us.pycon.org/'>PyCon North America</a>"
+            u"in 2014 and 2015. This is the first time"
+            u"that the main PyCon conference is going to be outside of the US."
+            u"Let's take this opportunity to showcase the Canadian Python"
+            u"community, and step up to the challenge as speakers and volunteers.")}
           </li>
           <li>
-            ${_(u"""Strengthen the Canadian Python community by providing more
-            opportunities for us to share knowledge and ideas, encourage
-            support and education for speaking at conferences, and increase
-            the visibility of developers, organizations, and companies
-            within the community.""")}
+            ${_(u"Strengthen the Canadian Python community by providing more"
+            u"opportunities for us to share knowledge and ideas, encourage"
+            u"support and education for speaking at conferences, and increase"
+            u"the visibility of developers, organizations, and companies"
+            u"within the community.")}
           </li>
           <li>
             ${_(u"Host an annual Canadian PyCon conference, starting now - 2012!")}
@@ -39,8 +39,8 @@
         </ul>
 
         <p>
-          ${_(u"""PyCon Canada is entirely run by volunteers who are passionate about
-          these goals. We hope to see you at the 2012 conference!""")}
+          ${_(u"PyCon Canada is entirely run by volunteers who are passionate about"
+          u"these goals. We hope to see you at the 2012 conference!")}
         </p>
     </div>
 

@@ -65,12 +65,12 @@
     </div>
 
     <p>
-    ${_(u"""You're invited to a kickoff conference, getting us warmed up for the first
-    <a href='http://us.pycon.org/'>PyCon North America</a> conference outside the US -
-    <a href='http://www.villagegamer.net/2011/04/11/montreal-looking-forward-to-hosting-pycon/'>
-    Montreal in 2014 and 2015!</a>
-    And when that's done, let's keep the momentum going with an annual PyCon
-    in Canada.""")}
+    ${_(u"You're invited to a kickoff conference, getting us warmed up for the first"
+    u"<ua href='http://us.pycon.org/'>PyCon North America</a> conference outside the US -"
+    u"<a href='http://www.villagegamer.net/2011/04/11/montreal-looking-forward-to-hosting-pycon/'>"
+    u"Montreal in 2014 and 2015!</a>"
+    u"And when that's done, let's keep the momentum going with an annual PyCon"
+    u"in Canada.")}
     </p>
 
     <div class="pull-right">
@@ -87,9 +87,9 @@
     </div>
 
     <p>
-    ${_(u"""Share your knowledge and cool ideas. Submit your proposal for a talk or
-    tutorial by October 1st to organizers@pycon.ca. We'll be sprinting at the
-    conference too, so you can also send us sprint ideas.""")}
+    ${_(u"Share your knowledge and cool ideas. Submit your proposal for a talk or"
+    "tutorial by October 1st to organizers@pycon.ca. We'll be sprinting at the"
+    "conference too, so you can also send us sprint ideas.")}
     </p>
 
     <div>
@@ -105,9 +105,9 @@
     </div>
 
     <p>
-    ${_(u"""Support the Canadian Python community and get recognition, promotion, and
-    good karma for helping to increase the expertise and visibility of
-    developers across Canada. Various sponsorship options are available.""")}
+    ${_(u"Support the Canadian Python community and get recognition, promotion, and"
+    u"good karma for helping to increase the expertise and visibility of"
+    u"developers across Canada. Various sponsorship options are available.")}
     </p>
 
     <div class="pull-right">
@@ -124,9 +124,9 @@
     </div>
 
     <p>
-    ${_(u"""Be there November 9-11, 2012 at Beverley Halls in downtown Toronto. A short
-    walk from the subway, so when you aren't busy coding or chatting with your
-    colleagues you've got lots of stuff to explore nearby.""")}
+    ${_(u"Be there November 9-11, 2012 at Beverley Halls in downtown Toronto. A short"
+    u"walk from the subway, so when you aren't busy coding or chatting with your"
+    u"colleagues you've got lots of stuff to explore nearby.")}
     </p>
 
     <div>
@@ -142,9 +142,9 @@
     </div>
 
     <p>
-    ${_(u"""Start the fun Friday evening with a mix and mingle. Feed your brain at
-    talks on Saturday, and if your sprint team is eager, you can start that
-    night. Sprint or attend talks and tutorials on Sunday.""")}
+    ${_(u"Start the fun Friday evening with a mix and mingle. Feed your brain at"
+    u"talks on Saturday, and if your sprint team is eager, you can start that"
+    u"night. Sprint or attend talks and tutorials on Sunday.")}
     </p>
 
     <div class="pull-right">
