@@ -68,20 +68,27 @@
                 <li class="nav-item">
                   <a class="nav-link" href="${request.application_url}/speakers">
                       <i class="icon-bullhorn icon-white nav-icon"></i>
-                      Speakers
+                      Speak
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="${request.application_url}/learn">
+                      <i class="icon-pencil icon-white nav-icon"></i>
+                      Learn
                   </a>
                 </li>
 
                 <li class="nav-item">
                   <a class="nav-link" href="${request.application_url}/sponsors">
                       <i class="icon-heart icon-white nav-icon"></i>
-                      Sponsors
+                      Sponsor
                   </a>
                 </li>
 
                 <li class="nav-item">
                   <a class="nav-link" href="${request.application_url}/contact">
-                      <i class="icon-pencil icon-white nav-icon"></i>
+                      <i class="icon-envelope icon-white nav-icon"></i>
                       Contact
                   </a>
                 </li>
@@ -191,11 +198,15 @@
             </li>
 
             <li class="footer-nav-link">
-              <a class="nav-link" href="${request.application_url}/speakers">Speakers</a>
+              <a class="nav-link" href="${request.application_url}/speakers">Speak</a>
             </li>
 
             <li class="footer-nav-link">
-              <a class="nav-link" href="${request.application_url}/sponsors">Sponsors</a>
+              <a class="nav-link" href="${request.application_url}/learn">Learn</a>
+            </li>
+
+            <li class="footer-nav-link">
+              <a class="nav-link" href="${request.application_url}/sponsors">Sponsor</a>
             </li>
 
             <li class="footer-nav-link">
@@ -212,16 +223,16 @@
          <div class="main-row">
           <div class="span12">
             <a class="nav-link" href="${request.application_url}">Home</a>
-            <a class="nav-link pull-right" href="${request.application_url}/schedule">Schedule</a>
+            <a class="nav-link pull-right" href="${request.application_url}/speakers">Speak</a>
             <br>
             <a class="nav-link" href="${request.application_url}/venue">Venue</a>
-            <a class="nav-link pull-right" href="${request.application_url}/speakers">Speakers</a>
+            <a class="nav-link pull-right" href="${request.application_url}/learn">Learn</a>
             <br>
             <a class="nav-link" href="${request.application_url}/about">About</a>
-            <a class="nav-link pull-right" href="${request.application_url}/sponsors">Sponsors</a>
+            <a class="nav-link pull-right" href="${request.application_url}/schedule">Schedule</a>
             <br>
             <a class="nav-link" href="${request.application_url}/contact">Contact</a>
-            <a class="nav-link pull-right" href="https://twitter.com/pyconca">@pyconca</a>
+            <a class="nav-link pull-right" href="${request.application_url}/sponsors">Sponsor</a>
           </div>
         </div>
       </div>

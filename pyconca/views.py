@@ -39,6 +39,11 @@ def speakers(request):
     return _build_response(request)
 
 
+@view_config(route_name='learn', renderer='learn.mako')
+def learn(request):
+    return _build_response(request)
+
+
 @view_config(route_name='sponsors', renderer='sponsors.mako')
 def sponsors(request):
     return _build_response(request)

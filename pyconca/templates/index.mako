@@ -95,7 +95,7 @@
 <div class="row-even row-fluid">
   <div class="span12 main-row">
     <div class="circle">
-      Speakers
+      Speak
     </div>
 
     <p>
@@ -113,17 +113,18 @@
 <div class="row-odd row-fluid">
   <div class="span12 main-row">
     <div class="circle">
-        Sponsors
+      Learn
     </div>
 
     <p>
-    Support the Canadian Python community and get recognition, promotion, and 
-    good karma for helping to increase the expertise and visibility of 
-    developers across Canada. Various sponsorship options are available.
+    One of PyCon Canada's goals is to bring experts from the greater Python 
+    community to Canada; giving you the opportunity to be inspired and learn 
+    from the best! To get you excited, we'll be announcing our featured 
+    speakers, one by one, over the coming weeks. Check them out:
     </p>
 
     <div class="pull-right">
-      <a href="${request.application_url}/sponsors" class="btn">More >></a>
+      <a href="${request.application_url}/learn" class="btn">More >></a>
     </div>
     <div class="clearfix"></div>
   </div>
@@ -161,6 +162,25 @@
 
     <div class="pull-right">
       <a href="${request.application_url}/schedule" class="btn">More >></a>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
+
+<div class="row-even row-fluid">
+  <div class="span12 main-row">
+    <div class="circle">
+        Sponsors
+    </div>
+
+    <p>
+    Support the Canadian Python community and get recognition, promotion, and 
+    good karma for helping to increase the expertise and visibility of 
+    developers across Canada. Various sponsorship options are available.
+    </p>
+
+    <div class="pull-right">
+      <a href="${request.application_url}/sponsors" class="btn">More >></a>
     </div>
     <div class="clearfix"></div>
   </div>

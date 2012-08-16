@@ -6,6 +6,7 @@ def _setup_routes(config):
     config.add_route('about', '/about')
     config.add_route('conduct', '/conduct')
     config.add_route('contact', '/contact')
+    config.add_route('learn', '/learn')
     config.add_route('venue', '/venue')
     config.add_route('schedule', '/schedule')
     config.add_route('speakers', '/speakers')

@@ -37,19 +37,6 @@
                 width="200px;" height="100px;" alt="">
              </a>
             </div>
-
-            <div class="item">
-             <a href="http://vmfarms.com/">
-              <img src="${request.static_url("pyconca:static/vmfarms-logo.png")}"
-                width="200px;" height="100px;" alt="">
-             </a>
-             <br>
-
-             <a href="http://www.freshbooks.com/">
-              <img src="${request.static_url("pyconca:static/freshbooks.gif")}"
-                width="200px;" height="100px;" alt="">
-             </a>
-            </div>
           </div>
         </div>
       </div>
