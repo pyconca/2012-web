@@ -1,7 +1,7 @@
 from pyramid.i18n import get_localizer, TranslationStringFactory
 
 def add_renderer_globals(event):
-    request = event.request
+    request = event["request"]
     event['_'] = request.translate
     event['localizer'] = request.localizer
 
