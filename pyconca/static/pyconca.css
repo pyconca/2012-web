@@ -1,11 +1,14 @@
-a {
-  color: #c07900;
+.content-column a, .controls a {
+  color: #1060FF;
   text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px dashed #1060FF;
 }
 
-a:hover {
-  color: #c07900;
-  text-decoration: underline;
+.content-column a:hover, .controls a:hover {
+  color: #0F8AFF;
+  text-decoration: none;
+  border-bottom: 1px dashed #0F8AFF;
 }
 
 body {
@@ -240,6 +243,7 @@ body {
   border-top-style: solid; 
   border-top-width: 20px; 
   border-top-color: #333;
+  margin-top: -1px;
 }
 
 .sub-header-image .top-row {
@@ -248,7 +252,7 @@ body {
 }
 
 .content-holder {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 22px;
   color: #423f39;
   border-radius: 6px;
@@ -263,13 +267,13 @@ body {
 }
 
 .content-section p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 22px;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .content-section li {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 22px;
   margin: 10px;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -293,6 +297,7 @@ body {
 }
 
 .sidenav {
+  margin-left: 0;
 }
 
 .sidenav-item {
@@ -350,10 +355,12 @@ body {
 }
 
 #footer-links a:hover {
-  color: #E4B243;
+  color: #0F8AFF;
+  text-decoration: none;
 }
 
 /* schedule.mako specific styles */
 .schedule-page .header {
   border-bottom: none;
 }
+

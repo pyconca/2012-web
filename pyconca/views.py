@@ -7,6 +7,7 @@ from pyramid.view import forbidden_view_config
 
 from pyconca.dao.user_dao import UserDao
 from pyconca.security import check_password
+from pyconca.security import is_admin
 
 
 def is_not_api_request(info, request):
@@ -38,6 +39,11 @@ def speakers(request):
     return _build_response(request)
 
 
+@view_config(route_name='learn', renderer='learn.mako')
+def learn(request):
+    return _build_response(request)
+
+
 @view_config(route_name='sponsors', renderer='sponsors.mako')
 def sponsors(request):
     return _build_response(request)
@@ -48,8 +54,16 @@ def contact(request):
     return _build_response(request)
 
 
+@view_config(route_name='conduct', renderer='conduct.mako')
+def conduct(request):
+    return _build_response(request)
+
+
 def _build_response(request):
-    return {'logged_in': authenticated_userid(request)}
+    return {
+        'logged_in': authenticated_userid(request),
+        'is_admin': is_admin(request)
+    }
 
 
 @view_config(route_name='logout')
@@ -76,7 +90,7 @@ def login(request):
     if 'login.submit' in request.params:
         username = request.params['username']
         password = request.params['password']
-        user_dao = UserDao()
+        user_dao = UserDao(None)
         user = user_dao.get_by_username(username)
         if user and check_password(password, user.password):
             headers = remember(request, user.id)
@@ -98,7 +112,7 @@ def forgot(request):
 
     if 'forgot.submit' in request.params:
         username = request.params['username']
-        user_dao = UserDao()
+        user_dao = UserDao(None)
         user = user_dao.get_by_username(username)
         if user:
             login = request.route_url('login')

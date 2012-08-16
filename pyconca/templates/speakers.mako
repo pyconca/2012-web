@@ -40,9 +40,10 @@
         </p>
 
         <p>
-          ${_(u"Send talk and tutorial proposals to"
-          u"<a href='mailto:organizers@pycon.ca'>organizers@pycon.ca</a>. Include"
-          u"the following information in talk and tutorial proposals:")}
+          ${_(u"Submit your talk <a href='/new/talk'>here</a> if you are logged in."
+          u" Alternatively, you can send talk and tutorial proposals to"
+          u" <a href='mailto:organizers@pycon.ca'>organizers@pycon.ca</a>. Include"
+          u" the following information in talk and tutorial proposals:")}
         </p>
 
         <ul>
@@ -51,10 +52,10 @@
           <li>${_(u"Intended audience (assumed level of knowledge)")}</li>
           <li>${_(u"Abstract for the talk/tutorial - 200 chars max")}</li>
           <li>${_(u"Outline of the talk/tutorial")}</li>
-          <li>${_(u"Additional notes for the proposal reviewers. This can"
-            u"include additional background information such as links to other"
-            u"presentations you have done, or links to blog posts, articles, "
-            u"or code related to your presentation.")}</li>
+          <li>${_(u"Additional notes for the proposal reviewers. This can include")}
+              u" additional background information such as links to other"
+              u" presentations you have done, or links to blog posts, articles,"
+              u" or code related to your presentation.")}</li>
         </ul>
     </div>
 </%block>

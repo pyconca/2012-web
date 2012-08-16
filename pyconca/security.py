@@ -1,14 +1,16 @@
 import bcrypt
 
-from pyramid.security import authenticated_userid
 from pyramid.security import unauthenticated_userid
 from pyramid.security import Allow
+from pyramid.security import Authenticated
 from pyramid.security import Everyone
+from pyramid.security import ALL_PERMISSIONS
 
 from pyconca.dao.user_dao import UserDao
+from pyconca.dao.talk_dao import TalkDao
 
 
-PERMISSIONS = {'admin':['group:admin']}
+PERMISSIONS = {'admin': ['group:admin']}
 
 
 def generate_password(password):
@@ -24,10 +26,16 @@ def check_password(password, hashed):
     return _constant_time_is_equal(bcrypt.hashpw(password, hashed), hashed)
 
 
+def is_admin(request):
+    if getattr(request, 'user'):
+        return request.user.is_admin
+    return False
+
+
 def get_user(request):
     user_id = unauthenticated_userid(request)
     if user_id:
-        user_dao = UserDao()
+        user_dao = UserDao(None)
         return user_dao.get(user_id)
 
 
@@ -42,35 +50,40 @@ def permission_finder(username, request):
 
 class RootFactory(object):
     __acl__ = [
-        (Allow, 'group:admin', 'admin')
+        (Allow, 'group:admin', ALL_PERMISSIONS),
     ]
 
     def __init__(self, request):
-        pass
+        self.request = request
 
 
 class UserFactory(object):
     __acl__ = [
         (Allow, Everyone, 'user_create'),
-        (Allow, 'group:admin', 'user_index'),
-        (Allow, 'group:admin', 'user_get'),
-        (Allow, 'group:admin', 'user_update'),
-        (Allow, 'group:admin', 'user_delete'),
-
         (Allow, Everyone, 'api_user_create'),
+
+        (Allow, 'group:admin', 'user_index'),
         (Allow, 'group:admin', 'api_user_index'),
-        (Allow, 'group:admin', 'api_user_get'),
-        (Allow, 'group:admin', 'api_user_update'),
-        (Allow, 'group:admin', 'api_user_delete'),
     ]
 
     def __init__(self, request):
-        user_id = authenticated_userid(request)
-        user = request.user
-        if (user_id and user and 'id' in request.matchdict and
-            user.id == int(request.matchdict['id'])):
-                self.__acl__.append((Allow, user_id, 'user_get'))
-                self.__acl__.append((Allow, user_id, 'api_user_get'))
+        self.request = request
 
-                self.__acl__.append((Allow, user_id, 'user_update'))
-                self.__acl__.append((Allow, user_id, 'api_user_update'))
+    def __getitem__(self, id):
+        return UserDao(self.request.user).get(id)
+
+
+class TalkFactory(object):
+    __acl__ = [
+        (Allow, Authenticated, 'talk_create'),
+        (Allow, Authenticated, 'api_talk_create'),
+
+        (Allow, Authenticated, 'talk_index'),
+        (Allow, Authenticated, 'api_talk_index'),
+    ]
+
+    def __init__(self, request):
+        self.request = request
+
+    def __getitem__(self, id):
+        return TalkDao(self.request.user).get(id)

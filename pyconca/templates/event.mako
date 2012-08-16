@@ -26,26 +26,57 @@
         <div id="sponsors_carousel" class="carousel slide side-block">
           <div class="carousel-inner">
             <div class="active item">
-             <img src="${request.static_url("pyconca:static/vmfarms-logo.png")}"
-                  width="200px;" height="100px;" alt="">
+             <a href="http://vmfarms.com/">
+              <img src="${request.static_url("pyconca:static/vmfarms-logo.png")}"
+                width="200px;" height="100px;" alt="">
+             </a>
              <br>
-             <img src="${request.static_url("pyconca:static/freshbooks.gif")}"
-                  width="200px;" height="100px;" alt="">
-            </div>
-            <div class="item">
-             <img src="${request.static_url("pyconca:static/vmfarms-logo.png")}"
-                  width="200px;" height="100px;" alt="">
-             <br>
-             <img src="${request.static_url("pyconca:static/freshbooks.gif")}"
-                  width="200px;" height="100px;" alt="">
+
+             <a href="http://www.freshbooks.com/">
+              <img src="${request.static_url("pyconca:static/freshbooks.gif")}"
+                width="200px;" height="100px;" alt="">
+             </a>
             </div>
           </div>
         </div>
+
+        <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+        <script>
+        new TWTR.Widget({
+          version: 2,
+          type: 'search',
+          search: 'pycon.ca OR \"PyCon Canada\" OR pyconca',
+          interval: 30000,
+          title: 'Nov 9th-11th 2012, Toronto',
+          subject: 'PyCon Canada',
+          width: 'auto',
+          height: 400,
+          theme: {
+            shell: {
+              background: '#423f39',
+              color: '#ffffff'
+            },
+            tweets: {
+              background: '#ffffff',
+              color: '#444444',
+              links: '#1985b5'
+            }
+          },
+          features: {
+            scrollbar: true,
+            loop: false,
+            live: true,
+            behavior: 'all'
+          }
+        }).render().start();
+        </script>
+
       </div>
 
       <div class="span9 content-column">
         <%block name="info"/>
       </div>
+
     </div>
   </div>
 </div>

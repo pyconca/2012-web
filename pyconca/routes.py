@@ -4,11 +4,13 @@ def _setup_routes(config):
     config.add_route('logout', '/logout')
     config.add_route('forgot', '/forgot')
     config.add_route('about', '/about')
+    config.add_route('conduct', '/conduct')
+    config.add_route('contact', '/contact')
+    config.add_route('learn', '/learn')
     config.add_route('venue', '/venue')
     config.add_route('schedule', '/schedule')
     config.add_route('speakers', '/speakers')
     config.add_route('sponsors', '/sponsors')
-    config.add_route('contact', '/contact')
 
 
 def _add_api_resource(config, name):
@@ -30,7 +32,8 @@ def _add_api_resource(config, name):
     route_name = 'api_%(name)s_get' % (values)
     config.add_route(
         route_name, '/%(name)s/{id}.json' % (values),
-        factory=factory
+        factory=factory,
+        traverse='/{id}'
     )
     config.add_view(view, attr='get',
         route_name=route_name,
@@ -53,7 +56,8 @@ def _add_api_resource(config, name):
     route_name = 'api_%(name)s_update' % (values)
     config.add_route(
         route_name, '/edit/%(name)s/{id}.json' % (values),
-        factory=factory
+        factory=factory,
+        traverse='/{id}'
     )
     config.add_view(view, attr='update',
         route_name=route_name,
@@ -65,7 +69,8 @@ def _add_api_resource(config, name):
     route_name = 'api_%(name)s_delete' % (values)
     config.add_route(
         route_name, '/delete/%(name)s/{id}.json' % (values),
-        factory=factory
+        factory=factory,
+        traverse='/{id}'
     )
     config.add_view(view, attr='delete',
         route_name=route_name,
@@ -95,7 +100,8 @@ def _add_resource(config, name):
     route_name = name + '_get'
     config.add_route(
         route_name, '/%(name)s/{id}' % (values),
-        factory=factory
+        factory=factory,
+        traverse='/{id}'
     )
     config.add_view(view, attr='get',
         route_name=route_name,
@@ -117,7 +123,8 @@ def _add_resource(config, name):
     route_name = name + '_update'
     config.add_route(
         route_name, '/edit/%(name)s/{id}' % (values),
-        factory=factory
+        factory=factory,
+        traverse='/{id}'
     )
     config.add_view(view, attr='update',
         route_name=route_name,

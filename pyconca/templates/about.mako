@@ -18,30 +18,40 @@
         <ul>
           <li>
             ${_(u"Support the efforts of"
-            u"<a href='http://montrealpython.org/2011/03/pycon-2014-and-2015-in-montreal/'>"
-            u"Montreal Python</a> as they prepare to host"
-            u"<ua href='http://us.pycon.org/'>PyCon North America</a>"
-            u"in 2014 and 2015. This is the first time"
-            u"that the main PyCon conference is going to be outside of the US."
-            u"Let's take this opportunity to showcase the Canadian Python"
-            u"community, and step up to the challenge as speakers and volunteers.")}
+            u" <a href='http://montrealpython.org/2011/03/pycon-2014-and-2015-in-montreal/'>"
+            u" Montreal Python</a> as they prepare to host"
+            u" <ua href='http://us.pycon.org/'>PyCon North America</a>"
+            u" in 2014 and 2015. This is the first time"
+            u" that the main PyCon conference is going to be outside of the US."
+            u" Let's take this opportunity to showcase the Canadian Python"
+            u" community, and step up to the challenge as speakers and volunteers.")}
           </li>
           <li>
             ${_(u"Strengthen the Canadian Python community by providing more"
-            u"opportunities for us to share knowledge and ideas, encourage"
-            u"support and education for speaking at conferences, and increase"
-            u"the visibility of developers, organizations, and companies"
-            u"within the community.")}
+            u" opportunities for us to share knowledge and ideas, encourage"
+            u" support and education for speaking at conferences, and increase"
+            u" the visibility of developers, organizations, and companies"
+            u" within the community.")}
           </li>
           <li>
-            ${_(u"Host an annual Canadian PyCon conference, starting now - 2012!")}
+            ${_(u"Host an annual Canadian PyCon conference, starting now — 2012!")}
           </li>
         </ul>
 
         <p>
           ${_(u"PyCon Canada is entirely run by volunteers who are passionate about"
-          u"these goals. We hope to see you at the 2012 conference!")}
+          u" these goals. We hope to see you at the 2012 conference!")}
         </p>
+    </div>
+
+    <div class="row-fluid content-section">
+      <h1 class="header">${_(u"Code of Conduct")}</h1>
+      <p>
+        ${_(u"Please familiarize yourself with the"
+        " <a href='%s/conduct'>Code of Conduct</a>") % request.application_url}
+        " and do your part to make sure PyCon Canada doesn't end up on"
+        " Hacker News for all the wrong reasons."
+      </p>
     </div>
 
     <div class="row-fluid content-section">
@@ -84,7 +94,22 @@
 
         <tr>
           <td>David Warde-Farley</td>
-          <td>&nbsp;</td>
+          <td>Mathieu Leduc-Hamel</td>
+        </tr>
+
+        <tr>
+          <td>Camilla Bjerke</td>
+          <td>Mahdi Yusuf</td>
+        </tr>
+
+        <tr>
+          <td>Sheila Miguez</td>
+          <td>Carl Karsten</td>
+        </tr>
+
+        <tr>
+          <td>Teresa Hulinska</td>
+          <td></td>
         </tr>
       </table>
 

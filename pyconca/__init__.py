@@ -17,10 +17,12 @@ def main(global_config, **settings):
     engine = engine_from_config(settings, 'sqlalchemy.')
     DBSession.configure(bind=engine)
 
-    authn_policy = AuthTktAuthenticationPolicy('so_secret',
+    authn_policy = AuthTktAuthenticationPolicy(
+        settings['secret.authn_policy'],
         callback=permission_finder)
     authz_policy = ACLAuthorizationPolicy()
-    session_factory = UnencryptedCookieSessionFactoryConfig('itsaseekreet')
+    session_factory = UnencryptedCookieSessionFactoryConfig(
+        settings['secret.unencrypted_cookie'])
 
     config = Configurator(settings=settings,
         root_factory='pyconca.security.RootFactory',
@@ -33,6 +35,8 @@ def main(global_config, **settings):
     _setup_routes(config)
     _add_api_resource(config, 'user')
     _add_resource(config, 'user')
+    _add_api_resource(config, 'talk')
+    _add_resource(config, 'talk')
 
     config.scan()
 

@@ -13,7 +13,7 @@
 
     <script src="${request.static_url("pyconca:static/libs/jquery-1.7.2.min.js")}"></script>
     <script src="${request.static_url("pyconca:static/libs/bootstrap-2.0.3/js/bootstrap.min.js")}"></script>
-    <script src="${request.static_url("pyconca:static/libs/handlebars-0.9.0.pre.3.js")}"></script>
+    <script src="${request.static_url("pyconca:static/libs/handlebars-1.0.0.beta.6.js")}"></script>
     <link href='http://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
 
@@ -68,60 +68,97 @@
                 <li class="nav-item">
                   <a class="nav-link" href="${request.application_url}/speakers">
                       <i class="icon-bullhorn icon-white nav-icon"></i>
-                      ${_(u"Speakers")}
+                      ${_("Speak")}
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="${request.application_url}/learn">
+                      <i class="icon-pencil icon-white nav-icon"></i>
+                      ${_("Learn")}
                   </a>
                 </li>
 
                 <li class="nav-item">
                   <a class="nav-link" href="${request.application_url}/sponsors">
                       <i class="icon-heart icon-white nav-icon"></i>
-                      ${_(u"Sponsors")}
+                      ${_("Sponsor")}
                   </a>
                 </li>
 
                 <li class="nav-item">
                   <a class="nav-link" href="${request.application_url}/contact">
-                      <i class="icon-pencil icon-white nav-icon"></i>
-                      ${_(u"Contact")}
+                      <i class="icon-envelope icon-white nav-icon"></i>
+                      ${_("Contact")}
                   </a>
                 </li>
 
-                % if logged_in:
-                    <li class="nav-item">
-                      <a class="nav-link" href="${request.application_url}/logout">
-                          <i class="icon-remove icon-white nav-icon"></i>
-                          ${_(u"Logout")}
-                      </a>
-                    </li>
+                % if logged_in and request.user:
+                  <li class="dropdown" id="menu1">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">
+                      <i class="icon-user icon-white nav-icon"></i>
+                      ${request.user.username}
+                      <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                      % if is_admin:
+                      <li>
+                        <a class="nav-link"  href="${request.application_url}/talk">
+                          <i class="icon-file nav-icon"></i>
+                          ${_("Talks")}
+                        </a>
+                      </li>
+                      <li>
+                        <a class="nav-link"  href="${request.application_url}/user">
+                          <i class="icon-th nav-icon"></i>
+                          ${_("Users")}
+                        </a>
+                      </li>
+                      % else:
+                      <li>
+                        <a class="nav-link"  href="${request.application_url}/new/talk">
+                          <i class="icon-bullhorn nav-icon"></i>
+                          ${_("Submit a Talk")}
+                        </a>
+                      </li>
+                      <li>
+                        <a class="nav-link"  href="${request.application_url}/talk">
+                          <i class="icon-briefcase nav-icon"></i>
+                          ${_("Your Talks")}
+                        </a>
+                      </li>
+                      % endif:
+                      <li class="divider"></li>
+                      <li>
+                        <a href="${request.application_url}/user/${logged_in}">
+                          <i class="icon-cog nav-icon"></i>
+                          ${_("Your Profile")}
+                        </a>
+                      </li>
+                      <li>
+                        <a class="nav-link" href="${request.application_url}/logout">
+                          <i class="icon-remove nav-icon"></i>
+                          ${_("Logout")}
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
                 % else:
-                    ## Hide login-related links until we fix up the production database
-                    % if False:
-                      <li class="nav-item">
-                        <a class="nav-link" href="${request.application_url}/login">
-                            <i class="icon-user icon-white nav-icon"></i>
-                            ${_(u"Login")}
-                        </a>
-                      </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="${request.application_url}/login">
+                        <i class="icon-user icon-white nav-icon"></i>
+                        ${_("Login")}
+                    </a>
+                  </li>
 
-                      <li class="nav-item">
-                        <a class="nav-link" href="${request.application_url}/new/user">
-                            <i class="icon-star-empty icon-white nav-icon"></i>
-                            ${_(u"Sign Up")}
-                        </a>
-                      </li>
-                    % endif
+                  <li class="nav-item">
+                    <a class="nav-link" href="${request.application_url}/new/user">
+                        <i class="icon-star-empty icon-white nav-icon"></i>
+                        ${_("Sign Up")}
+                    </a>
+                  </li>
                 % endif
               </ul>
-
-              % if logged_in:
-                  <p class="navbar-text pull-right">
-                      ${_(u"Logged in as")}
-                      <a href="${request.application_url}/user/${logged_in}">
-                          ${request.user.username}
-                      </a>
-                      &nbsp;
-                  </p>
-              % endif
             </div><!--/.nav-collapse -->
           </div> <!-- main-row -->
         </div>
@@ -136,17 +173,8 @@
 
   <div id="footer-row" class="row-fluid hidden-phone">
     <div class="main-row">
-      <div class="span4">
-        <strong>${_(u"&copy; PyCon Canada 2012")}</strong>
-        &nbsp;&nbsp;
-        <a style="color: #aaa;"
-           href="http://www.flickr.com/photos/camstatic/5535319505">
-           ${_(u"photo by camstatic")}
-        </a>
-      </div>
-
-      <div class="span8" id="footer-links">
-        <div class="pull-right">
+      <div class="span12" style="text-align: center;" id="footer-links">
+        <div>
           <ul id="footer-nav">
             <li class="footer-nav-link">
               <a class="nav-link" href="${request.application_url}">${_(u"Home")}</a>
@@ -157,7 +185,11 @@
             </li>
 
             <li class="footer-nav-link">
-              <a class="nav-link" href="${request.application_url}/venue">${_(u"Venue")}</a>
+              <a class="nav-link" href="${request.application_url}/contact">${_("Contact")}</a>
+            </li>
+
+            <li class="footer-nav-link">
+              <a class="nav-link" href="${request.application_url}/venue">${("Venue")}</a>
             </li>
 
             <li class="footer-nav-link">
@@ -165,11 +197,15 @@
             </li>
 
             <li class="footer-nav-link">
-              <a class="nav-link" href="${request.application_url}/speakers">${_(u"Speakers")}</a>
+              <a class="nav-link" href="${request.application_url}/speakers">${_("Speak")}</a>
             </li>
 
             <li class="footer-nav-link">
-              <a class="nav-link" href="${request.application_url}/sponsors">${_(u"Sponsors")}</a>
+              <a class="nav-link" href="${request.application_url}/learn">${_("Learn")}</a>
+            </li>
+
+            <li class="footer-nav-link">
+              <a class="nav-link" href="${request.application_url}/sponsors">${_("Sponsor")}</a>
             </li>
 
             <li class="footer-nav-link">
@@ -178,7 +214,6 @@
           </ul>
         </div>
       </div>
-
     </div>
   </div>
 
@@ -186,30 +221,32 @@
       <div id="footer-row" class="row-fluid visible-phone">
          <div class="main-row">
           <div class="span12">
-            <a class="nav-link" href="${request.application_url}">${_(u"Home")}</a>
-            <a class="nav-link pull-right" href="${request.application_url}/schedule">${_(u"Schedule")}</a>
+            <a class="nav-link" href="${request.application_url}">${_("Home")}</a>
+            <a class="nav-link pull-right" href="${request.application_url}/speakers">${_("Speak")}</a>
             <br>
-            <a class="nav-link" href="${request.application_url}/venue">${_(u"Venue")}</a>
-            <a class="nav-link pull-right" href="${request.application_url}/speakers">${_(u"Speakers")}</a>
+            <a class="nav-link" href="${request.application_url}/venue">${_("Venue")}</a>
+            <a class="nav-link pull-right" href="${request.application_url}/learn">${_("Learn")}</a>
             <br>
-            <a class="nav-link" href="${request.application_url}/about">${_(u"About")}</a>
-            <a class="nav-link pull-right" href="${request.application_url}/sponsors">${_(u"Sponsors")}</a>
+            <a class="nav-link" href="${request.application_url}/about">${_("About")}</a>
+            <a class="nav-link pull-right" href="${request.application_url}/schedule">${_("Schedule")}</a>
+            <br>
+            <a class="nav-link" href="${request.application_url}/contact">${_("Contact")}</a>
+            <a class="nav-link pull-right" href="${request.application_url}/sponsors">${_("Sponsor")}</a>
           </div>
         </div>
       </div>
 
-      <div id="footer-row" class="row-fluid visible-phone">
+      <div id="footer-row" class="row-fluid">
          <div class="main-row">
           <div class="span12" style="text-align: center;">
             <strong>${_(u"&copy; PyCon Canada 2012")}</strong>
-              <br>
-              <a href="https://twitter.com/pyconca">@pyconca</a>
-              <br>
               <br>
               <a style="color: #aaa;"
                  href="http://www.flickr.com/photos/camstatic/5535319505">
                  ${_(u"photo by camstatic")}
               </a>
+              <br>
+              <br>
           </div>
         </div>
       </div>

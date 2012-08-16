@@ -4,6 +4,9 @@ import logging
 from formencode import Invalid
 
 from pyramid.response import Response
+from pyramid.view import forbidden_view_config
+
+from pyconca.context import Context
 
 
 log = logging.getLogger(__name__)
@@ -19,29 +22,34 @@ class FormencodeState(object):
     pass
 
 
-class BaseApi(object):
+def is_api_request(info, request):
+    return request['PATH_INFO'].endswith('.json') is True
+
+
+class BaseApi(Context):
 
     def __init__(self, request):
-        self.request = request
+        Context.__init__(self, request)
         self._configure()
         self.state = FormencodeState()
-        self.body = {'errors':[], 'data':{}}
-
-    @property
-    def id(self):
-        if 'id' in self.request.matchdict:
-            return self.request.matchdict['id']
+        self.body = {'errors': [], 'data': {}}
 
     #---------- views
 
     def index(self):
         models = self.dao.index()
-        self.body['data'][self.name + '_list'] = [m.to_dict() for m in models]
+        self.body['data'][self.name + '_list'] = [
+            self._post_process_for_output(m, m.to_dict(self.is_admin))
+            for m in models
+        ]
         return self._respond(HTTP_STATUS_200)
 
     def get(self):
         model = self.dao.get(self.id)
-        self.body['data'][self.name] = model.to_dict()
+        if model is None:
+            return self._respond(HTTP_STATUS_404)
+        self.body['data'][self.name] = \
+            self._post_process_for_output(model, model.to_dict(self.is_admin))
         return self._respond(HTTP_STATUS_200)
 
     def delete(self):
@@ -52,7 +60,7 @@ class BaseApi(object):
     def update(self):
         model = self.dao.get(self.id)
         try:
-            self._persist(model)
+            self._persist(model, is_create=False)
             self._update_flash(model)
             return self._respond(HTTP_STATUS_200)
         except Invalid as invalid_exception:
@@ -60,10 +68,10 @@ class BaseApi(object):
             return self._respond(HTTP_STATUS_400)
 
     def create(self):
-        model = self.dao.create()
+        self.model = self.dao.create()
         try:
-            self._persist(model)
-            self._create_flash(model)
+            self._persist(self.model, is_create=True)
+            self._create_flash(self.model)
             return self._respond(HTTP_STATUS_201)
         except Invalid as invalid_exception:
             self._add_validation_errors(invalid_exception)
@@ -74,13 +82,16 @@ class BaseApi(object):
     def _configure(self):
         pass
 
-    def _populate(self, model, form):
+    def _populate(self, model, form, is_create):
         pass
+
+    def _post_process_for_output(self, model, output):
+        return output
 
     def _create_flash(self, model):
         pass
 
-    def _update_flash(self, model, form):
+    def _update_flash(self, model):
         pass
 
     #---------- persist helpers
@@ -88,11 +99,11 @@ class BaseApi(object):
     def _state(self, model):
         self.state.id = self.id
 
-    def _persist(self, model):
+    def _persist(self, model, is_create):
         form = json.loads(self.request.body)[self.name]
         self._state(model)
         self._validate(model, form)
-        self._populate(model, form)
+        self._populate(model, form, is_create)
         self.dao.save(model)
 
     def _validate(self, model, form):
@@ -102,7 +113,7 @@ class BaseApi(object):
 
     def _add_validation_errors(self, invalid_exception):
         for field, message in invalid_exception.error_dict.items():
-            error = {'field':field, 'message':message.msg}
+            error = {'field': field, 'message': message.msg}
             self.body['errors'].append(error)
 
     def _respond(self, status):
@@ -110,3 +121,10 @@ class BaseApi(object):
             status=status,
             body=json.dumps(self.body),
             content_type='application/json')
+
+    #--------- permission unmet
+
+    @forbidden_view_config(renderer='json',
+                           custom_predicates=(is_api_request,))
+    def _forbidden(self):
+        return self._respond(HTTP_STATUS_403)

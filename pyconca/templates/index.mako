@@ -13,8 +13,14 @@
         <h1 class="header-main-text">${_(u"PyCon Canada")}</h1>
         <h2 class="header-sub-text">${_(u"Toronto, November 9th - 11th 2012")}</h2>
         <br />
-        <a href="http://guestlistapp.com/events/116013" class="btn btn-warning btn-large guestlist-event-116013">${_(u"Register")}</a>
-        <a href="${request.application_url}/sponsors" class="btn btn-large">${_(u"Sponsor")}</a>
+        <div class="visible-desktop">
+            <a href="http://guestlistapp.com/events/116013" class="btn btn-warning btn-large guestlist-event-116013">${_(u"Register")}</a>
+            <a href="${request.application_url}/sponsors" class="btn btn-large">${_(u"Sponsor")}</a>
+        </div>
+        <div class="hidden-desktop">
+            <a href="http://guestlistapp.com/events/116013" class="btn btn-warning btn-large">${_(u"Register")}</a>
+            <a href="${request.application_url}/sponsors" class="btn btn-large">${_(u"Sponsor")}</a>
+        </div>
       </div>
     </div>
 
@@ -37,12 +43,17 @@
           <h6>${_(u"Sponsors")}</h6>
           <div class="carousel-inner" style="opacity: 0.6;">
             <div class="active item">
-             <img src="${request.static_url("pyconca:static/vmfarms-logo.png")}"
+             <a href="http://vmfarms.com/">
+                <img src="${request.static_url("pyconca:static/vmfarms-logo.png")}"
                   width="200px;" height="100px;" class="black-and-white" alt="">
+             </a>
             </div>
+
             <div class="item">
-             <img src="${request.static_url("pyconca:static/freshbooks.gif")}"
+             <a href="http://www.freshbooks.com/">
+                <img src="${request.static_url("pyconca:static/freshbooks.gif")}"
                   width="200px;" height="100px;" class="black-and-white" alt="">
+             </a>
             </div>
           </div>
         </div>
@@ -65,11 +76,12 @@
     </div>
 
     <p>
-    ${_(u"You're invited to a kickoff conference, getting us warmed up for the first"
-    u"<ua href='http://us.pycon.org/'>PyCon North America</a> conference outside the US -"
-    u"<a href='http://www.villagegamer.net/2011/04/11/montreal-looking-forward-to-hosting-pycon/'>"
-    u"Montreal in 2014 and 2015!</a>"
-    u"And when that's done, let's keep the momentum going with an annual PyCon"
+    ${_(u"You're invited to a kickoff conference, Nov 9-11 2012, in Toronto,"
+    u" getting us warmed up for the first"
+    u" <a href='http://us.pycon.org/'>PyCon North America</a> conference outside the US -"
+    u"<a href='http://www.newswire.ca/en/story/731987/montreal-chosen-to-welcome-over-1-500-python-programmers-for-the-world-s-most-important-conference-on-the-subject/'>"
+    u" Montréal in 2014 and 2015!</a>"
+    u" And when that's done, let's keep the momentum going with an annual PyCon"
     u"in Canada.")}
     </p>
 
@@ -83,7 +95,7 @@
 <div class="row-even row-fluid">
   <div class="span12 main-row">
     <div class="circle">
-      ${_(u"Speakers")}
+      ${_(u"Speak")}
     </div>
 
     <p>
@@ -101,17 +113,18 @@
 <div class="row-odd row-fluid">
   <div class="span12 main-row">
     <div class="circle">
-        ${_(u"Sponsors")}
+      ${_("Learn")
     </div>
 
     <p>
-    ${_(u"Support the Canadian Python community and get recognition, promotion, and"
-    u"good karma for helping to increase the expertise and visibility of"
-    u"developers across Canada. Various sponsorship options are available.")}
+    ${_("One of PyCon Canada's goals is to bring experts from the greater Python"
+    " community to Canada; giving you the opportunity to be inspired and learn"
+    " from the best! To get you excited, we'll be announcing our featured"
+    " speakers, one by one, over the coming weeks. Check them out:")}
     </p>
 
     <div class="pull-right">
-      <a href="${request.application_url}/sponsors" class="btn">${_(u"More >>")}</a>
+      <a href="${request.application_url}/learn" class="btn">${_("More >>")}</a>
     </div>
     <div class="clearfix"></div>
   </div>
@@ -154,6 +167,25 @@
   </div>
 </div>
 
+<div class="row-even row-fluid">
+  <div class="span12 main-row">
+    <div class="circle">
+        ${_("Sponsors")}
+    </div>
+
+    <p>
+    ${_("Support the Canadian Python community and get recognition, promotion, and"
+    " good karma for helping to increase the expertise and visibility of"
+    " developers across Canada. Various sponsorship options are available.")}
+    </p>
+
+    <div class="pull-right">
+      <a href="${request.application_url}/sponsors" class="btn">More >></a>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
+
 </div>
 
 <script>
@@ -162,6 +194,8 @@
     });
 </script>
 
-<script type="text/javascript" src="http://guestlistapp.com/javascripts/guestlist-embed.js"></script>
+<script type="text/javascript"
+        src="http://guestlistapp.com/javascripts/guestlist-embed.js">
+</script>
 
 </%block>
