@@ -96,8 +96,8 @@
             Novice
           </label>
           <label>
-            <input type="radio" name="level" value="novice"
-              {{#if_eq talk.level compare="novice"}}checked="checked"{{/if_eq}}>
+            <input type="radio" name="level" value="experienced"
+              {{#if_eq talk.level compare="experienced"}}checked="checked"{{/if_eq}}>
             Experienced
           </label>
         </div>
