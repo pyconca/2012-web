@@ -17,6 +17,8 @@ requires = [
     'pyramid_debugtoolbar',
     'zope.sqlalchemy',
     'waitress',
+    'Babel',
+    'lingua'
     ]
 
 setup(name='pyconca',
@@ -38,6 +40,9 @@ setup(name='pyconca',
       zip_safe=False,
       test_suite='pyconca',
       install_requires=requires,
+      message_extractors = { '.': [
+            ('**.py', 'python', None),
+            ('pyconca/templates/**.mako', 'mako', None)]},
       entry_points="""\
       [paste.app_factory]
       main = pyconca:main
@@ -45,4 +50,3 @@ setup(name='pyconca',
       initialize_pyconca_db = pyconca.scripts.initializedb:main
       """,
       )
-

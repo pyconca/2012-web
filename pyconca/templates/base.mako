@@ -40,49 +40,49 @@
                 <li class="nav-item">
                   <a class="nav-link" href="${request.application_url}">
                       <i class="icon-home icon-white nav-icon"></i>
-                      Home
+                      ${_(u"Home")}
                   </a>
                 </li>
 
                 <li class="nav-item">
                   <a class="nav-link" href="${request.application_url}/about">
                       <i class="icon-info-sign icon-white nav-icon"></i>
-                      About
+                      ${_(u"About")}
                   </a>
                 </li>
 
                 <li class="nav-item">
                   <a class="nav-link" href="${request.application_url}/venue">
                       <i class="icon-map-marker icon-white nav-icon"></i>
-                      Venue
+                      ${_(u"Venue")}
                   </a>
                 </li>
 
                 <li class="nav-item">
                   <a class="nav-link" href="${request.application_url}/schedule">
                       <i class="icon-time icon-white nav-icon"></i>
-                      Schedule
+                      ${_(u"Schedule")}
                   </a>
                 </li>
 
                 <li class="nav-item">
                   <a class="nav-link" href="${request.application_url}/speakers">
                       <i class="icon-bullhorn icon-white nav-icon"></i>
-                      Speakers
+                      ${_(u"Speakers")}
                   </a>
                 </li>
 
                 <li class="nav-item">
                   <a class="nav-link" href="${request.application_url}/sponsors">
                       <i class="icon-heart icon-white nav-icon"></i>
-                      Sponsors
+                      ${_(u"Sponsors")}
                   </a>
                 </li>
 
                 <li class="nav-item">
                   <a class="nav-link" href="${request.application_url}/contact">
                       <i class="icon-pencil icon-white nav-icon"></i>
-                      Contact
+                      ${_(u"Contact")}
                   </a>
                 </li>
 
@@ -90,7 +90,7 @@
                     <li class="nav-item">
                       <a class="nav-link" href="${request.application_url}/logout">
                           <i class="icon-remove icon-white nav-icon"></i>
-                          Logout
+                          ${_(u"Logout")}
                       </a>
                     </li>
                 % else:
@@ -99,14 +99,14 @@
                       <li class="nav-item">
                         <a class="nav-link" href="${request.application_url}/login">
                             <i class="icon-user icon-white nav-icon"></i>
-                            Login
+                            ${_(u"Login")}
                         </a>
                       </li>
 
                       <li class="nav-item">
                         <a class="nav-link" href="${request.application_url}/new/user">
                             <i class="icon-star-empty icon-white nav-icon"></i>
-                            Sign Up
+                            ${_(u"Sign Up")}
                         </a>
                       </li>
                     % endif
@@ -115,7 +115,7 @@
 
               % if logged_in:
                   <p class="navbar-text pull-right">
-                      Logged in as 
+                      ${_(u"Logged in as")}
                       <a href="${request.application_url}/user/${logged_in}">
                           ${request.user.username}
                       </a>
@@ -137,11 +137,11 @@
   <div id="footer-row" class="row-fluid hidden-phone">
     <div class="main-row">
       <div class="span4">
-        <strong>&copy; PyCon Canada 2012</strong>
+        <strong>${_(u"&copy; PyCon Canada 2012")}</strong>
         &nbsp;&nbsp;
         <a style="color: #aaa;"
            href="http://www.flickr.com/photos/camstatic/5535319505">
-           photo by camstatic
+           ${_(u"photo by camstatic")}
         </a>
       </div>
 
@@ -149,27 +149,27 @@
         <div class="pull-right">
           <ul id="footer-nav">
             <li class="footer-nav-link">
-              <a class="nav-link" href="${request.application_url}">Home</a>
+              <a class="nav-link" href="${request.application_url}">${_(u"Home")}</a>
             </li>
 
             <li class="footer-nav-link">
-              <a class="nav-link" href="${request.application_url}/about">About</a>
+              <a class="nav-link" href="${request.application_url}/about">${_(u"About")}</a>
             </li>
 
             <li class="footer-nav-link">
-              <a class="nav-link" href="${request.application_url}/venue">Venue</a>
+              <a class="nav-link" href="${request.application_url}/venue">${_(u"Venue")}</a>
             </li>
 
             <li class="footer-nav-link">
-              <a class="nav-link" href="${request.application_url}/schedule">Schedule</a>
+              <a class="nav-link" href="${request.application_url}/schedule">${_(u"Schedule")}</a>
             </li>
 
             <li class="footer-nav-link">
-              <a class="nav-link" href="${request.application_url}/speakers">Speakers</a>
+              <a class="nav-link" href="${request.application_url}/speakers">${_(u"Speakers")}</a>
             </li>
 
             <li class="footer-nav-link">
-              <a class="nav-link" href="${request.application_url}/sponsors">Sponsors</a>
+              <a class="nav-link" href="${request.application_url}/sponsors">${_(u"Sponsors")}</a>
             </li>
 
             <li class="footer-nav-link">
@@ -186,14 +186,14 @@
       <div id="footer-row" class="row-fluid visible-phone">
          <div class="main-row">
           <div class="span12">
-            <a class="nav-link" href="${request.application_url}">Home</a>
-            <a class="nav-link pull-right" href="${request.application_url}/schedule">Schedule</a>
+            <a class="nav-link" href="${request.application_url}">${_(u"Home")}</a>
+            <a class="nav-link pull-right" href="${request.application_url}/schedule">${_(u"Schedule")}</a>
             <br>
-            <a class="nav-link" href="${request.application_url}/venue">Venue</a>
-            <a class="nav-link pull-right" href="${request.application_url}/speakers">Speakers</a>
+            <a class="nav-link" href="${request.application_url}/venue">${_(u"Venue")}</a>
+            <a class="nav-link pull-right" href="${request.application_url}/speakers">${_(u"Speakers")}</a>
             <br>
-            <a class="nav-link" href="${request.application_url}/about">About</a>
-            <a class="nav-link pull-right" href="${request.application_url}/sponsors">Sponsors</a>
+            <a class="nav-link" href="${request.application_url}/about">${_(u"About")}</a>
+            <a class="nav-link pull-right" href="${request.application_url}/sponsors">${_(u"Sponsors")}</a>
           </div>
         </div>
       </div>
@@ -201,14 +201,14 @@
       <div id="footer-row" class="row-fluid visible-phone">
          <div class="main-row">
           <div class="span12" style="text-align: center;">
-            <strong>&copy; PyCon Canada 2012</strong>
+            <strong>${_(u"&copy; PyCon Canada 2012")}</strong>
               <br>
               <a href="https://twitter.com/pyconca">@pyconca</a>
               <br>
               <br>
               <a style="color: #aaa;"
                  href="http://www.flickr.com/photos/camstatic/5535319505">
-                 photo by camstatic
+                 ${_(u"photo by camstatic")}
               </a>
           </div>
         </div>

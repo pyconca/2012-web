@@ -10,11 +10,11 @@
 
     <div class="row-fluid">
       <div class="span12 top-row main-row overlay">
-        <h1 class="header-main-text">PyCon Canada</h1>
-        <h2 class="header-sub-text">Toronto, November 9th - 11th 2012</h2>
+        <h1 class="header-main-text">${_(u"PyCon Canada")}</h1>
+        <h2 class="header-sub-text">${_(u"Toronto, November 9th - 11th 2012")}</h2>
         <br />
-        <a href="http://guestlistapp.com/events/116013" class="btn btn-warning btn-large guestlist-event-116013">Register</a>
-        <a href="${request.application_url}/sponsors" class="btn btn-large">Sponsor</a>
+        <a href="http://guestlistapp.com/events/116013" class="btn btn-warning btn-large guestlist-event-116013">${_(u"Register")}</a>
+        <a href="${request.application_url}/sponsors" class="btn btn-large">${_(u"Sponsor")}</a>
       </div>
     </div>
 
@@ -34,7 +34,7 @@
         <br>
         <br>
         <div id="sponsors_carousel" class="carousel slide hidden-phone">
-          <h6>Sponsors</h6>
+          <h6>${_(u"Sponsors")}</h6>
           <div class="carousel-inner" style="opacity: 0.6;">
             <div class="active item">
              <img src="${request.static_url("pyconca:static/vmfarms-logo.png")}"
@@ -65,16 +65,16 @@
     </div>
 
     <p>
-    You're invited to a kickoff conference, getting us warmed up for the first 
-    <a href="http://us.pycon.org/">PyCon North America</a> conference outside the US — 
-    <a href="http://www.villagegamer.net/2011/04/11/montreal-looking-forward-to-hosting-pycon/">
-    Montréal in 2014 and 2015!</a>
-    And when that's done, let's keep the momentum going with an annual PyCon 
-    in Canada.
+    ${_(u"""You're invited to a kickoff conference, getting us warmed up for the first
+    <a href='http://us.pycon.org/'>PyCon North America</a> conference outside the US -
+    <a href='http://www.villagegamer.net/2011/04/11/montreal-looking-forward-to-hosting-pycon/'>
+    Montreal in 2014 and 2015!</a>
+    And when that's done, let's keep the momentum going with an annual PyCon
+    in Canada.""")}
     </p>
 
     <div class="pull-right">
-      <a href="${request.application_url}/about" class="btn">More >></a>
+      <a href="${request.application_url}/about" class="btn">${_(u"More >")}></a>
     </div>
     <div class="clearfix"></div>
   </div>
@@ -83,17 +83,17 @@
 <div class="row-even row-fluid">
   <div class="span12 main-row">
     <div class="circle">
-      Speakers
+      ${_(u"Speakers")}
     </div>
 
     <p>
-    Share your knowledge and cool ideas. Submit your proposal for a talk or 
-    tutorial by October 1st to organizers@pycon.ca. We'll be sprinting at the 
-    conference too, so you can also send us sprint ideas.
+    ${_(u"""Share your knowledge and cool ideas. Submit your proposal for a talk or
+    tutorial by October 1st to organizers@pycon.ca. We'll be sprinting at the
+    conference too, so you can also send us sprint ideas.""")}
     </p>
 
     <div>
-      <a href="${request.application_url}/speakers" class="btn">More >></a>
+      <a href="${request.application_url}/speakers" class="btn">${_(u"More >>")}</a>
     </div>
   </div>
 </div>
@@ -101,17 +101,17 @@
 <div class="row-odd row-fluid">
   <div class="span12 main-row">
     <div class="circle">
-        Sponsors
+        ${_(u"Sponsors")}
     </div>
 
     <p>
-    Support the Canadian Python community and get recognition, promotion, and 
-    good karma for helping to increase the expertise and visibility of 
-    developers across Canada. Various sponsorship options are available.
+    ${_(u"""Support the Canadian Python community and get recognition, promotion, and
+    good karma for helping to increase the expertise and visibility of
+    developers across Canada. Various sponsorship options are available.""")}
     </p>
 
     <div class="pull-right">
-      <a href="${request.application_url}/sponsors" class="btn">More >></a>
+      <a href="${request.application_url}/sponsors" class="btn">${_(u"More >>")}</a>
     </div>
     <div class="clearfix"></div>
   </div>
@@ -120,17 +120,17 @@
 <div class="row-even row-fluid">
   <div class="span12 main-row">
     <div class="circle">
-      Venue
+      ${_(u"Venue")}
     </div>
 
     <p>
-    Be there November 9-11, 2012 at Beverley Halls in downtown Toronto. A short 
-    walk from the subway, so when you aren't busy coding or chatting with your 
-    colleagues you've got lots of stuff to explore nearby.
+    ${_(u"""Be there November 9-11, 2012 at Beverley Halls in downtown Toronto. A short
+    walk from the subway, so when you aren't busy coding or chatting with your
+    colleagues you've got lots of stuff to explore nearby.""")}
     </p>
 
     <div>
-      <a href="${request.application_url}/venue" class="btn">More >></a>
+      <a href="${request.application_url}/venue" class="btn">${_(u"More >>")}</a>
     </div>
   </div>
 </div>
@@ -138,17 +138,17 @@
 <div class="row-odd row-fluid">
   <div class="span12 main-row">
     <div class="circle">
-      Schedule
+      ${_(u"Schedule")}
     </div>
 
     <p>
-    Start the fun Friday evening with a mix and mingle. Feed your brain at 
-    talks on Saturday, and if your sprint team is eager, you can start that 
-    night. Sprint or attend talks and tutorials on Sunday.
+    ${_(u"""Start the fun Friday evening with a mix and mingle. Feed your brain at
+    talks on Saturday, and if your sprint team is eager, you can start that
+    night. Sprint or attend talks and tutorials on Sunday.""")}
     </p>
 
     <div class="pull-right">
-      <a href="${request.application_url}/schedule" class="btn">More >></a>
+      <a href="${request.application_url}/schedule" class="btn">${_(u"More >>")}</a>
     </div>
     <div class="clearfix"></div>
   </div>

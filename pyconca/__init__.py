@@ -28,6 +28,10 @@ def main(global_config, **settings):
     config.set_authentication_policy(authn_policy)
     config.set_authorization_policy(authz_policy)
     config.set_request_property(get_user, 'user', reify=True)
+    config.add_subscriber('pyconca.subscribers.add_renderer_globals',
+                          'pyramid.events.BeforeRender')
+    config.add_subscriber('pyconca.subscribers.add_localizer',
+                          'pyramid.events.NewRequest')
     config.add_static_view('static', 'static', cache_max_age=3600)
 
     _setup_routes(config)
