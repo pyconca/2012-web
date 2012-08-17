@@ -4,7 +4,7 @@ import transaction
 from pyramid import testing
 from sqlalchemy import create_engine
 
-from .models import DBSession
+from pyconca.models import DBSession
 
 # This duck will QUACK
 import pyconca
@@ -21,7 +21,7 @@ class TestIndexFunctional(unittest.TestCase):
         engine = create_engine('sqlite://')
         DBSession.configure(bind=engine)
 
-        from .models import (
+        from pyconca.models import (
             Base,
             User,
             UserGroup,
@@ -44,21 +44,23 @@ class TestIndexFunctional(unittest.TestCase):
         testing.tearDown()
 
     def _loggedInAdmin(self):
-        from .models import User
+        from pyconca.models import User
+        # This plus the fixtures gives us info['is_admin'] == True
         self.request.user = DBSession.query(User).get(self._admin_id)
+        # This gives us info['logged_in'] == 'pyramid_admin'
         self.config.testing_securitypolicy(
             userid='pyramid_admin',
             permissive=True)
 
     def _loggedInStaff(self):
-        from .models import User
+        from pyconca.models import User
         self.request.user = DBSession.query(User).get(self._speaker_id)
         self.config.testing_securitypolicy(
             userid='pyramid_speaker',
             permissive=True)
 
     def test_index_not_logged_in(self):
-        from .views import index
+        from pyconca.views import index
 
         info = index(self.request)
 
@@ -66,27 +68,21 @@ class TestIndexFunctional(unittest.TestCase):
         self.assertFalse(info['is_admin'])
 
     def test_index_logged_in_admin(self):
-        from .views import index
+        from pyconca.views import index
 
         with transaction.manager:
             self._loggedInAdmin()
             info = index(self.request)
 
-        # testing_securitypolicy gives us pyramid_admin
         self.assertEquals('pyramid_admin', info['logged_in'])
-
-        # Having the fixtures and remember()ing user_id=1 gives us is_admin
         self.assertTrue(info['is_admin'])
 
     def test_index_logged_in_speaker(self):
-        from .views import index
+        from pyconca.views import index
 
         with transaction.manager:
             self._loggedInStaff()
             info = index(self.request)
 
-        # testing_securitypolicy gives us pyramid_speaker
         self.assertEquals('pyramid_speaker', info['logged_in'])
-
-        # Having the fixtures and remember()ing user_id=1 gives us is_admin
         self.assertFalse(info['is_admin'])
