@@ -1,13 +1,15 @@
+import json
 import unittest
 import transaction
 
+from mock import patch
 from pyramid import testing
 from sqlalchemy import create_engine
 
 from pyconca.models import DBSession
 import pyconca.tests
 
-class TestIndexFunctional(unittest.TestCase):
+class TestTalkApi(unittest.TestCase):
     def setUp(self):
         self.request = testing.DummyRequest()
         self.request.user = None
@@ -22,6 +24,7 @@ class TestIndexFunctional(unittest.TestCase):
             User,
             UserGroup,
             Group,
+            Talk
             )
         Base.metadata.create_all(engine)
         with transaction.manager:
@@ -32,6 +35,8 @@ class TestIndexFunctional(unittest.TestCase):
                 User(id=self._speaker_id, username='speaker', password='', first_name='Spe', last_name='Aker', email='speaker@example.com'),
                 Group(id=1, name='admin'),
                 UserGroup(user_id=self._admin_id, group_id=1),
+                Talk(id=self._admin_id, owner_id=self._admin_id, title='Admin Title', type='talk', level='experienced', abstract='Abstract', outline='Outline', reviewer_notes='Reviewed?'),
+                Talk(id=self._speaker_id, owner_id=self._speaker_id, title='Speaker Title', type='tutorial', level='novice', abstract='Strabact', outline='Silhouette', reviewer_notes='Viewed again.'),
                 ):
                 DBSession.add(model)
 
@@ -56,29 +61,38 @@ class TestIndexFunctional(unittest.TestCase):
             permissive=True)
 
     def test_index_not_logged_in(self):
-        from pyconca.views import index
+        from pyconca.api.talk_api import TalkApi
 
-        info = index(self.request)
+        response = TalkApi(self.request).index()
 
-        self.assertEquals(None, info['logged_in'])
-        self.assertFalse(info['is_admin'])
+        self.assertEquals('200 OK', response.status)
+        responseData = json.loads(response.body)
+        self.assertEquals([], responseData['errors'])
+        self.assertEquals([], responseData['data']['talk_list'])
 
+    @patch('pyconca.api.talk_api.route_url', lambda *args, **kwargs: "Foo")
     def test_index_logged_in_admin(self):
-        from pyconca.views import index
+        from pyconca.api.talk_api import TalkApi
 
         with transaction.manager:
             self._loggedInAdmin()
-            info = index(self.request)
+            response = TalkApi(self.request).index()
 
-        self.assertEquals('pyramid_admin', info['logged_in'])
-        self.assertTrue(info['is_admin'])
+        self.assertEquals('200 OK', response.status, response)
+        responseData = json.loads(response.body)
+        self.assertEquals([], responseData['errors'])
+        self.assertEquals(2, len(responseData['data']['talk_list']))
 
+    @patch('pyconca.api.talk_api.route_url', lambda *args, **kwargs: "Foo")
     def test_index_logged_in_speaker(self):
-        from pyconca.views import index
+        from pyconca.api.talk_api import TalkApi
 
         with transaction.manager:
             self._loggedInStaff()
-            info = index(self.request)
+            response = TalkApi(self.request).index()
 
-        self.assertEquals('pyramid_speaker', info['logged_in'])
-        self.assertFalse(info['is_admin'])
+        self.assertEquals('200 OK', response.status)
+        responseData = json.loads(response.body)
+        self.assertEquals([], responseData['errors'])
+        self.assertEquals(1, len(responseData['data']['talk_list']))
+        self.assertEquals(self._speaker_id, responseData['data']['talk_list'][0]['owner_id'])

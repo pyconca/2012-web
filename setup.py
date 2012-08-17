@@ -9,6 +9,7 @@ CHANGES = open(os.path.join(here, 'CHANGES.txt')).read()
 requires = [
 #    'MySQL-python',
     'FormEncode',
+    'mock',
     'pyramid',
     'SQLAlchemy',
     'transaction',
