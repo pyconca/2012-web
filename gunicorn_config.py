@@ -1,2 +1,2 @@
 workers = 8
-worker_class ='sync'
+worker_class = 'sync'
