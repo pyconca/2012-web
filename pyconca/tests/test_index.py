@@ -5,7 +5,7 @@ from pyramid import testing
 from sqlalchemy import create_engine
 
 from pyconca.models import DBSession
-import pyconca.tests
+
 
 class TestIndexFunctional(unittest.TestCase):
     def setUp(self):
