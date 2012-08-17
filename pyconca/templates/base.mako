@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
     <title>PyCon Canada</title>
@@ -159,6 +159,23 @@
                   </li>
                 % endif
 
+                  <li id="lang-menu" class="dropdown">
+                    <a class="dropdown-toggle" href="#lang-menu" data-toggle="dropdown">
+                      <span lang="en_CA">Language</span>
+                      <span lang="fr_CA">Langue</span>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li class="nav-item">
+                        <a class="nav-link" onClick="I18N.translateTo('en_CA')">English</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" onClick="I18N.translateTo('fr_CA')">Fran&ccedil;ais</a>
+                      </li>
+                    </li>
+                  </li>
+
               </ul>
             </div><!--/.nav-collapse -->
           </div> <!-- main-row -->
@@ -254,6 +271,11 @@
   </div>
 
 </div>
-
+<script src="${request.static_url("pyconca:static/i18n.js")}"></script>
+<script>
+$(document).ready(function () {
+  I18N.translateTo(I18N.getPreference());
+});
+</script>
 </body>
 </html>
