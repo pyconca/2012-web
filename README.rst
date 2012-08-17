@@ -30,7 +30,7 @@ If you are more comfortable with Makefiles you can do the following
 Testing
 -------
 
-If you are so inlcined to help test here is a quick way to get started running the tests
+If you are so inclined to help test here is a quick way to get started running the tests
 
 .. parsed-literal::
 
