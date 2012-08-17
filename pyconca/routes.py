@@ -131,4 +131,3 @@ def _add_resource(config, name):
         renderer=template + 'edit.mako',
         permission=route_name,
     )
-

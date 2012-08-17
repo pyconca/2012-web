@@ -1,13 +1,12 @@
-language: python
+# Documentation for travis.yml can be found here
+# http://about.travis-ci.org/docs/user/languages/python/
 
+
+language: python
 python:
   - "2.7"
-
-# command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
-install: pip install . --use-mirrors
-
-# command to run tests, e.g. python setup.py test
-script:  python setup.py test
-
+install: 
+   - pip install . --use-mirrors
+script: make test
 notifications:
   irc: "irc.freenode.net#pyconca"
