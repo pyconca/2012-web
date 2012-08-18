@@ -46,6 +46,7 @@
         <ul>
             <li>He tweets: <a href="https://twitter.com/chrismcdonough">@chrismcdonough</a></li>
             <li>He codes: <a href="https://github.com/mcdonc">github.com/mcdonc</a></li>
+            <li>He blogs: <a href="http://plope.com/">chrism on plope.com</a></li>
         <ul>
       </p>
     </div>
