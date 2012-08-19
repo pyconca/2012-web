@@ -7,7 +7,6 @@
 <%block name="info">
     <div class="row-fluid content-section">
         <h1 class="header header-first">Sponsor PyCon Canada</h1>
-        <br>
         <p>
             If you are interested in sponsoring PyCon Canada, please contact <a
             href="mailto:sponsorship@pycon.ca">sponsorship@pycon.ca</a>.

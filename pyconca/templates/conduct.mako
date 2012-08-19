@@ -109,8 +109,8 @@
             <br>
 
             <ul>
+                <li><strong>Michael DiBernardo</strong>: +1 (647) 529-3325</li>
                 <li><strong>Diana Clarke</strong>: +1 (416) 453-3130</li>
-                <li><strong>Volunteer to add your name here</strong></li>
             </ul>
 
             Conference staff will be happy to help participants contact 
