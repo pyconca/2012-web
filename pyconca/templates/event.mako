@@ -22,23 +22,36 @@
         <h3>Quick Links</h3>
         <ul id="sidenav" class="sidenav side-block"></ul>
 
+        % if request['bfg.routes.route'].name != 'sponsors':
         <h3>Sponsors</h3>
         <div id="sponsors_carousel" class="carousel slide side-block">
           <div class="carousel-inner">
             <div class="active item">
-             <a href="http://vmfarms.com/">
-              <img src="${request.static_url("pyconca:static/vmfarms-logo.png")}"
-                width="200px;" height="100px;" alt="">
+             <a href="http://www.freshbooks.com/">
+               <img src="${request.static_url("pyconca:static/freshbooks.gif")}"
+                    width="200px;" height="100px;" alt="">
              </a>
+
+             <br>
              <br>
 
-             <a href="http://www.freshbooks.com/">
-              <img src="${request.static_url("pyconca:static/freshbooks.gif")}"
-                width="200px;" height="100px;" alt="">
+              <a href="http://www.python.org/psf/">
+                <img src="${request.static_url("pyconca:static/psf-logo-317x71-alpha.png")}"
+                     width="317px;" height="71px;" alt="">
+              </a>
+
+             <br>
+             <br>
+
+             <a href="http://vmfarms.com/">
+               <img src="${request.static_url("pyconca:static/vmfarms-logo.png")}"
+                    width="200px;" height="100px;" alt="">
              </a>
+
             </div>
           </div>
         </div>
+        % endif
 
         <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
         <script>

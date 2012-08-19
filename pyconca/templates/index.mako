@@ -41,20 +41,29 @@
         <br>
         <div id="sponsors_carousel" class="carousel slide hidden-phone">
           <h6>Sponsors</h6>
-          <div class="carousel-inner" style="opacity: 0.6;">
+          <div class="carousel-inner" style="opacity: 0.6; height: 100px;">
+
             <div class="active item">
+             <a href="http://www.freshbooks.com/">
+                <img src="${request.static_url("pyconca:static/freshbooks.gif")}"
+                  width="200px;" height="100px;" class="black-and-white" alt="">
+             </a>
+            </div>
+
+            <div class="item">
+              <a href="http://www.python.org/psf/">
+                <img src="${request.static_url("pyconca:static/psf-logo-317x71-alpha.png")}"
+                     width="317px;" height="71px;" class="black-and-white" alt="">
+              </a>
+            </div>
+
+            <div class="item">
              <a href="http://vmfarms.com/">
                 <img src="${request.static_url("pyconca:static/vmfarms-logo.png")}"
                   width="200px;" height="100px;" class="black-and-white" alt="">
              </a>
             </div>
 
-            <div class="item">
-             <a href="http://www.freshbooks.com/">
-                <img src="${request.static_url("pyconca:static/freshbooks.gif")}"
-                  width="200px;" height="100px;" class="black-and-white" alt="">
-             </a>
-            </div>
           </div>
         </div>
       </div>
