@@ -110,9 +110,11 @@
       var navItem = $("<a></a>");
 
       if (!$this.attr("id")) {
+        console.log($this.text());
         var anchor = $this.text()
           .toLowerCase()
-          .replace(/ /g, "-")
+          .replace(" ", "-")
+          .replace(/ /g, "")
           .replace(/[^a-z0-9-]/g, "");
         $this.attr("id", anchor);
       }
