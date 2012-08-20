@@ -31,6 +31,15 @@
                  width="200px;" height="100px;" alt="">
           </a>
         </p>
+
+        <br>
+
+        <p>
+          <a href="http://waveaccounting.com/" style="border-bottom: none;">
+            <img src="${request.static_url("pyconca:static/thumb-logo-wave-accounting.png")}"
+                 alt="">
+          </a>
+        </p>
     </div>
 
     <div class="row-fluid content-section">

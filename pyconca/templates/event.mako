@@ -33,7 +33,6 @@
               </a>
 
              <br>
-             <br>
 
              <a href="http://www.freshbooks.com/">
                <img src="${request.static_url("pyconca:static/freshbooks.gif")}"
@@ -44,9 +43,17 @@
              <br>
              <br>
 
+              <a href="http://waveaccounting.com/">
+                <img src="${request.static_url("pyconca:static/thumb-logo-wave-accounting.png")}"
+                     alt="">
+              </a>
+
+             <br>
+             <br>
+
               <a href="http://www.python.org/psf/">
                 <img src="${request.static_url("pyconca:static/psf-logo-317x71-alpha.png")}"
-                     width="317px;" height="71px;" alt="">
+                     alt="">
               </a>
 
             </div>

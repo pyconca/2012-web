@@ -58,6 +58,13 @@
             </div>
 
             <div class="item">
+              <a href="http://waveaccounting.com/">
+                <img src="${request.static_url("pyconca:static/thumb-logo-wave-accounting.png")}"
+                     class="black-and-white" alt="">
+              </a>
+            </div>
+
+            <div class="item">
               <a href="http://www.python.org/psf/">
                 <img src="${request.static_url("pyconca:static/psf-logo-317x71-alpha.png")}"
                      width="317px;" height="71px;" class="black-and-white" alt="">
