@@ -1,5 +1,7 @@
 <%inherit file="event.mako"/>
 
+<%! from pyramid.i18n import ugettext %>
+
 <%block name="title">
     ${_(u"About")}
 </%block>
@@ -17,14 +19,16 @@
 
         <ul>
           <li>
-            ${_(u"Support the efforts of"
-            u" <a href='http://montrealpython.org/2011/03/pycon-2014-and-2015-in-montreal/'>"
-            u" Montreal Python</a> as they prepare to host"
-            u" <ua href='http://us.pycon.org/'>PyCon North America</a>"
-            u" in 2014 and 2015. This is the first time"
-            u" that the main PyCon conference is going to be outside of the US."
-            u" Let's take this opportunity to showcase the Canadian Python"
-            u" community, and step up to the challenge as speakers and volunteers.")}
+            <%def name="about_goals_1()" filter="translate">
+              Support the efforts of
+              <a href='http://montrealpython.org/2011/03/pycon-2014-and-2015-in-montreal/'>
+                Montreal Python</a> as they prepare to host
+              <a href='http://us.pycon.org/'>PyCon North America</a>
+              in 2014 and 2015. This is the first time
+              that the main PyCon conference is going to be outside of the US.
+              Let's take this opportunity to showcase the Canadian Python
+              community, and step up to the challenge as speakers and volunteers.
+            </%def>
           </li>
           <li>
             ${_(u"Strengthen the Canadian Python community by providing more"
@@ -34,7 +38,7 @@
             u" within the community.")}
           </li>
           <li>
-            ${_(u"Host an annual Canadian PyCon conference, starting now — 2012!")}
+            ${_(u"Host an annual Canadian PyCon conference, starting now - 2012!")}
           </li>
         </ul>
 

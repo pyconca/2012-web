@@ -72,21 +72,21 @@
 <div class="row-odd row-fluid">
   <div class="span12 main-row">
     <div class="circle">
-       About
+       ${_("About")}
     </div>
 
     <p>
     ${_(u"You're invited to a kickoff conference, Nov 9-11 2012, in Toronto,"
     u" getting us warmed up for the first"
     u" <a href='http://us.pycon.org/'>PyCon North America</a> conference outside the US -"
-    u"<a href='http://www.newswire.ca/en/story/731987/montreal-chosen-to-welcome-over-1-500-python-programmers-for-the-world-s-most-important-conference-on-the-subject/'>"
-    u" Montréal in 2014 and 2015!</a>"
+    u" <a href='http://www.newswire.ca/en/story/731987/montreal-chosen-to-welcome-over-1-500-python-programmers-for-the-world-s-most-important-conference-on-the-subject/'>"
+    u" Montreal in 2014 and 2015!</a>"
     u" And when that's done, let's keep the momentum going with an annual PyCon"
-    u"in Canada.")}
+    u" in Canada.")}
     </p>
 
     <div class="pull-right">
-      <a href="${request.application_url}/about" class="btn">${_(u"More >")}></a>
+      <a href="${request.application_url}/about" class="btn">${_(u"More >>")}></a>
     </div>
     <div class="clearfix"></div>
   </div>
@@ -100,8 +100,8 @@
 
     <p>
     ${_(u"Share your knowledge and cool ideas. Submit your proposal for a talk or"
-    "tutorial by October 1st to organizers@pycon.ca. We'll be sprinting at the"
-    "conference too, so you can also send us sprint ideas.")}
+    " tutorial by October 1st to organizers@pycon.ca. We'll be sprinting at the"
+    " conference too, so you can also send us sprint ideas.")}
     </p>
 
     <div>
@@ -113,7 +113,7 @@
 <div class="row-odd row-fluid">
   <div class="span12 main-row">
     <div class="circle">
-      ${_("Learn")
+      ${_("Learn")}
     </div>
 
     <p>
@@ -138,8 +138,8 @@
 
     <p>
     ${_(u"Be there November 9-11, 2012 at Beverley Halls in downtown Toronto. A short"
-    u"walk from the subway, so when you aren't busy coding or chatting with your"
-    u"colleagues you've got lots of stuff to explore nearby.")}
+    u" walk from the subway, so when you aren't busy coding or chatting with your"
+    u" colleagues you've got lots of stuff to explore nearby.")}
     </p>
 
     <div>
@@ -156,8 +156,8 @@
 
     <p>
     ${_(u"Start the fun Friday evening with a mix and mingle. Feed your brain at"
-    u"talks on Saturday, and if your sprint team is eager, you can start that"
-    u"night. Sprint or attend talks and tutorials on Sunday.")}
+    u" talks on Saturday, and if your sprint team is eager, you can start that"
+    u" night. Sprint or attend talks and tutorials on Sunday.")}
     </p>
 
     <div class="pull-right">
@@ -180,7 +180,7 @@
     </p>
 
     <div class="pull-right">
-      <a href="${request.application_url}/sponsors" class="btn">More >></a>
+      <a href="${request.application_url}/sponsors" class="btn">${_("More >>")}</a>
     </div>
     <div class="clearfix"></div>
   </div>
