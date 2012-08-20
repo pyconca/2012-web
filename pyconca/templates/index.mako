@@ -44,6 +44,13 @@
           <div class="carousel-inner" style="opacity: 0.6; height: 100px;">
 
             <div class="active item">
+              <a href="http://500px.com/">
+                <img src="${request.static_url("pyconca:static/500px_logo_color.png")}"
+                     width="200px;" height="100px;" class="black-and-white" alt="">
+              </a>
+            </div>
+
+            <div class="item">
              <a href="http://www.freshbooks.com/">
                 <img src="${request.static_url("pyconca:static/freshbooks.gif")}"
                   width="200px;" height="100px;" class="black-and-white" alt="">
