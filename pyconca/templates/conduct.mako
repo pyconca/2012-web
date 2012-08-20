@@ -109,7 +109,7 @@
             <br>
 
             <ul>
-                <li><strong>Michael DiBernardo</strong>: +1 (647) 529-3325</li>
+                <li><strong>Michael DiBernardo</strong>: +1 (647) 519-3325</li>
                 <li><strong>Diana Clarke</strong>: +1 (416) 453-3130</li>
             </ul>
 
