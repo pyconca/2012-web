@@ -8,7 +8,7 @@ from pyconca import DBSession
 from pyconca import main
 from pyconca.security import generate_password
 
-class WebTest(unittest.TestCase):
+class TestWithWebtest(unittest.TestCase):
     def setUp(self):
         self.testapp = TestApp(main(
             {},
