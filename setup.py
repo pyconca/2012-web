@@ -38,6 +38,9 @@ setup(name='pyconca',
       include_package_data=True,
       zip_safe=False,
       test_suite='pyconca',
+      tests_require=[
+        'webtest'
+      ],
       install_requires=requires,
       entry_points="""\
       [paste.app_factory]
