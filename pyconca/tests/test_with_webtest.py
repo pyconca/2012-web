@@ -1,4 +1,3 @@
-from paste.util.multidict import MultiDict
 from webtest import TestApp
 import json
 import transaction
