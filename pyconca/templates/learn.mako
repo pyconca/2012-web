@@ -50,4 +50,18 @@
         <ul>
       </p>
     </div>
+
+    <div class="row-fluid content-section">
+      <h1 class="header">Sandy Walsh</h1>
+      <p>
+        Based in Halifax, Alex 'Sandy' Walsh is the owner of Dark Secret 
+        Software. He has been a senior professional developer for nearly 20 
+        years and a Pythonista for 10 years. He is a core developer on the 
+        <a href="http://www.openstack.org/">OpenStack</a> project with 
+        Rackspace. You can learn more about him at 
+        <a href="http://www.sandywalsh.com/">sandywalsh.com</a> or follow 
+        <a href="https://twitter.com/TheSandyWalsh">@TheSandyWalsh</a>.
+      </p>
+    </div>
+
 </%block>
