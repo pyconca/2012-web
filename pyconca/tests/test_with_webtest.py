@@ -46,11 +46,11 @@ class TestWithWebtest(unittest.TestCase):
     def tearDown(self):
         DBSession.remove()
 
-    def _loginAs(self, username, password):
+    def _loginAs(self, who):
         response = self.testapp.post('/login', {
             'login.submit':'Login',
-            'username':username,
-            'password':password,
+            'username':who,
+            'password':who,
         })
         for k, v in response.cookies_set.items():
             headers = {'Set-Cookie': "%s='%s'" % (k, v)}
@@ -63,7 +63,7 @@ class TestWithWebtest(unittest.TestCase):
         self.failUnless('<title>PyCon Canada</title>' in response.body, response.body)
 
     def test_login(self):
-        logged_in_headers = self._loginAs('admin', 'admin')
+        logged_in_headers = self._loginAs('admin')
         index_response = self.testapp.get('/', headers=logged_in_headers, status=200)
         self.failUnless('Logout' in index_response.body)
         self.failIf('Login' in index_response.body)
@@ -76,13 +76,13 @@ class TestWithWebtest(unittest.TestCase):
         self.assertEquals({}, data['data'])
 
     def test_user_api_index__as_admin(self):
-        logged_in_headers = self._loginAs('admin', 'admin')
+        logged_in_headers = self._loginAs('admin')
         response = self.testapp.get('/user.json', status=200)
         data = json.loads(response.body)
         self.assertEquals(2, len(data['data']['user_list']))
 
     def test_user_api_index__as_speaker(self):
-        logged_in_headers = self._loginAs('speaker', 'speaker')
+        logged_in_headers = self._loginAs('speaker')
         response = self.testapp.get('/user.json', status=403)
         data = json.loads(response.body)
         self.assertEquals({}, data['data'])
@@ -93,25 +93,25 @@ class TestWithWebtest(unittest.TestCase):
         self.assertEquals({}, data['data'])
 
     def test_user_api_get_admin__as_admin(self):
-        logged_in_headers = self._loginAs('admin', 'admin')
+        logged_in_headers = self._loginAs('admin')
         response = self.testapp.get('/user/1.json', status=200)
         data = json.loads(response.body)
         self.assertEquals(1, data['data']['user']['id'])
 
     def test_user_api_get_speaker__as_admin(self):
-        logged_in_headers = self._loginAs('admin', 'admin')
+        logged_in_headers = self._loginAs('admin')
         response = self.testapp.get('/user/2.json', status=200)
         data = json.loads(response.body)
         self.assertEquals(2, data['data']['user']['id'])
 
     def test_user_api_get_admin__as_speaker(self):
-        logged_in_headers = self._loginAs('speaker', 'speaker')
+        logged_in_headers = self._loginAs('speaker')
         response = self.testapp.get('/user/1.json', status=403)
         data = json.loads(response.body)
         self.assertEquals({}, data['data'])
 
     def test_user_api_get_speaker__as_speaker(self):
-        logged_in_headers = self._loginAs('speaker', 'speaker')
+        logged_in_headers = self._loginAs('speaker')
         response = self.testapp.get('/user/2.json', status=200)
         data = json.loads(response.body)
         self.assertEquals(2, data['data']['user']['id'])
@@ -124,13 +124,13 @@ class TestWithWebtest(unittest.TestCase):
         self.assertEquals({}, data['data'])
 
     def test_talk_api_index__as_admin(self):
-        logged_in_headers = self._loginAs('admin', 'admin')
+        logged_in_headers = self._loginAs('admin')
         response = self.testapp.get('/talk.json', status=200)
         data = json.loads(response.body)
         self.assertEquals(2, len(data['data']['talk_list']))
 
     def test_talk_api_index__as_speaker(self):
-        logged_in_headers = self._loginAs('speaker', 'speaker')
+        logged_in_headers = self._loginAs('speaker')
         response = self.testapp.get('/talk.json', status=200)
         data = json.loads(response.body)
         self.assertEquals(1, len(data['data']['talk_list']), data)
@@ -144,25 +144,25 @@ class TestWithWebtest(unittest.TestCase):
         self.assertEquals({}, data['data'])
 
     def test_talk_api_get_admin__as_admin(self):
-        logged_in_headers = self._loginAs('admin', 'admin')
+        logged_in_headers = self._loginAs('admin')
         response = self.testapp.get('/talk/11.json', status=200)
         data = json.loads(response.body)
         self.assertEquals(self._admin_talk_id, data['data']['talk']['id'])
 
     def test_talk_api_get_speaker__as_admin(self):
-        logged_in_headers = self._loginAs('admin', 'admin')
+        logged_in_headers = self._loginAs('admin')
         response = self.testapp.get('/talk/12.json', status=200)
         data = json.loads(response.body)
         self.assertEquals(self._speaker_talk_id, data['data']['talk']['id'])
 
     def test_talk_api_get_admin__as_speaker(self):
-        logged_in_headers = self._loginAs('speaker', 'speaker')
+        logged_in_headers = self._loginAs('speaker')
         response = self.testapp.get('/talk/11.json', status=403)
         data = json.loads(response.body)
         self.assertEquals({}, data['data'])
 
     def test_talk_api_get_speaker__as_speaker(self):
-        logged_in_headers = self._loginAs('speaker', 'speaker')
+        logged_in_headers = self._loginAs('speaker')
         response = self.testapp.get('/talk/12.json', status=200)
         data = json.loads(response.body)
         self.assertEquals(self._speaker_talk_id, data['data']['talk']['id'])
