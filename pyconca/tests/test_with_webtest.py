@@ -1,3 +1,4 @@
+from mock import patch
 from webtest import TestApp
 import json
 import transaction
@@ -7,6 +8,7 @@ from pyconca import DBSession
 from pyconca import main
 from pyconca.security import generate_password
 
+@patch('pyconca.views.check_password', lambda x, y: True)
 class TestWithWebtest(unittest.TestCase):
     def setUp(self):
         self.testapp = TestApp(main(
@@ -29,8 +31,8 @@ class TestWithWebtest(unittest.TestCase):
         with transaction.manager:
             self._admin_id = 1
             self._speaker_id = 2
-            admin = User(id=self._admin_id, username='admin', password=generate_password('admin'), first_name='Admin', last_name='Istrator', email='example@example.com')
-            speaker = User(id=self._speaker_id, username='speaker', password=generate_password('speaker'), first_name='Spe', last_name='Aker', email='speaker@example.com')
+            admin = User(id=self._admin_id, username='admin', password='admin', first_name='Admin', last_name='Istrator', email='example@example.com')
+            speaker = User(id=self._speaker_id, username='speaker', password='speaker', first_name='Spe', last_name='Aker', email='speaker@example.com')
             admin_group = Group(name='admin')
             admin.groups.append(admin_group)
             for model in (admin, speaker, admin_group):
