@@ -7,6 +7,11 @@ import unittest
 from pyconca import DBSession
 from pyconca import main
 from pyconca.security import generate_password
+from pyconca.models import Base
+from pyconca.models import User
+from pyconca.models import UserGroup
+from pyconca.models import Group
+from pyconca.models import Talk
 
 @patch('pyconca.views.check_password', lambda x, y: True)
 class TestWithWebtest(unittest.TestCase):
@@ -20,13 +25,6 @@ class TestWithWebtest(unittest.TestCase):
                 'mako.directories':'pyconca:templates',
             }
         ))
-        from pyconca.models import (
-            Base,
-            User,
-            UserGroup,
-            Group,
-            Talk,
-        )
         Base.metadata.drop_all(DBSession.bind)
         Base.metadata.create_all(DBSession.bind)
         with transaction.manager:
