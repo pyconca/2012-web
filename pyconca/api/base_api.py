@@ -23,7 +23,7 @@ class FormencodeState(object):
 
 
 def is_api_request(info, request):
-    return request['PATH_INFO'].endswith('.json') is True
+    return request.environ['PATH_INFO'].endswith('.json') is True
 
 
 class BaseApi(Context):
