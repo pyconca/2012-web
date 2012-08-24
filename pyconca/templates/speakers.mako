@@ -40,7 +40,7 @@
         </p>
 
         <p>
-          Submit your talk <a href="/new/talk">here</a> if you are logged in.
+          <a href="/new/talk">Submit your talk</a> if you are logged in.
           Alternatively, you can send talk and tutorial proposals to
           <a href="mailto:organizers@pycon.ca">organizers@pycon.ca</a>. Include
           the following information in talk and tutorial proposals:

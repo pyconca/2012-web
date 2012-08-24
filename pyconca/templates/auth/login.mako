@@ -12,14 +12,14 @@
       <div class="control-group">
           <label class="control-label form-label" for="username">Username</label>
           <div class="controls">
-            <input type="text" maxlength="100" name="username" value="${username}">
+            <input type="text" maxlength="100" name="username" id="username" value="${username}">
           </div>
       </div>
 
       <div class="control-group">
           <label class="control-label form-label" for="password">Password</label>
           <div class="controls">
-              <input type="password" maxlength="100" name="password">
+              <input type="password" maxlength="100" name="password" id="password">
               <br>
               <br>
               <a href="${request.application_url}/forgot">Forgot your password?</a>
@@ -28,5 +28,9 @@
 
       <input class="btn btn-inverse" type="submit" name="login.submit" value="Login"/>
   </form>
-
+<script>
+$(document).ready(function () {
+    $('#username').focus();
+});
+</script>
 </%block>
