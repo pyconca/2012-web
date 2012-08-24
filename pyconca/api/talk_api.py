@@ -77,16 +77,23 @@ class TalkApi(BaseApi):
             'conf_key': output['id'],
             'conf_url': route_url('talk_get', request, id=output['id']),
         })
+        schedule = {
+            'room': None,
+            'start': None,
+            'end': None,
+            'duration': None,
+        }
         if model.schedule_slot:
             assert model.schedule_slot.start < model.schedule_slot.end
             duration_delta = model.schedule_slot.end - model.schedule_slot.start
             assert duration_delta.days == 0
-            new_output.update({
+            schedule.update({
                 'room': model.schedule_slot.room,
                 'start': self._local_isoformat(model.schedule_slot.start),
                 'end': self._local_isoformat(model.schedule_slot.end),
                 'duration': (model.schedule_slot.end - model.schedule_slot.start).seconds / 60,
             })
+        new_output.update(schedule)
         return new_output
 
 

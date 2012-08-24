@@ -108,6 +108,12 @@ class TestWithWebtest(unittest.TestCase):
 
     ### TALK API
 
+    def _assertTalkNotScheduled(self, data):
+        self.assertTrue(data['data']['talk']['room'] is None)
+        self.assertTrue(data['data']['talk']['start'] is None)
+        self.assertTrue(data['data']['talk']['end'] is None)
+        self.assertTrue(data['data']['talk']['duration'] is None)
+
     def test_talk_api_index__not_logged_in(self):
         data = self._getJsonFrom('/talk.json', status=403)
         self.assertEquals({}, data['data'])
@@ -130,10 +136,12 @@ class TestWithWebtest(unittest.TestCase):
     def test_talk_api_get_admin__as_admin(self):
         data = self._getJsonFrom('/talk/11.json', who='admin', status=200)
         self.assertEquals(self._admin_talk_id, data['data']['talk']['id'])
+        self._assertTalkNotScheduled(data)
 
     def test_talk_api_get_speaker__as_admin(self):
         data = self._getJsonFrom('/talk/12.json', who='admin', status=200)
         self.assertEquals(self._speaker_talk_id, data['data']['talk']['id'])
+        self._assertTalkNotScheduled(data)
 
     def test_talk_api_get_admin__as_speaker(self):
         data = self._getJsonFrom('/talk/11.json', who='speaker', status=403)
@@ -142,6 +150,7 @@ class TestWithWebtest(unittest.TestCase):
     def test_talk_api_get_speaker__as_speaker(self):
         data = self._getJsonFrom('/talk/12.json', who='speaker', status=200)
         self.assertEquals(self._speaker_talk_id, data['data']['talk']['id'])
+        self._assertTalkNotScheduled(data)
 
     def test_talk_api_unscheduled(self):
         start = datetime(2012, 11, 10, 15, 00)
