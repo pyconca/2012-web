@@ -8,6 +8,32 @@ from pyramid.url import route_url
 from pyconca.api.base_api import BaseApi
 from pyconca.dao.talk_dao import TalkDao
 
+from datetime import tzinfo
+from datetime import timedelta
+
+class UTCZone(tzinfo):
+    # Modified from Python's own test_datetime.py:FixedOffset
+    def __init__(self):
+        offset = 0
+        name = 'UTC'
+        dstoffset = 0
+        if isinstance(offset, int):
+            offset = timedelta(minutes=offset)
+        if isinstance(dstoffset, int):
+            dstoffset = timedelta(minutes=dstoffset)
+        self.__offset = offset
+        self.__name = name
+        self.__dstoffset = dstoffset
+    def __repr__(self):
+        return self.__name.lower()
+    def utcoffset(self, dt):
+        return self.__offset
+    def tzname(self, dt):
+        return self.__name
+    def dst(self, dt):
+        return self.__dstoffset
+
+UTC = UTCZone()
 
 class TalkApi(BaseApi):
 
@@ -46,10 +72,10 @@ class TalkApi(BaseApi):
 
         fields that Carl wants:
         / name - title of talk
-        X room - "room1" if there is only one room.
-        X start - datetime in some parsable format
-        X duration -- int minutes or "hh:mm:ss"
-        X end - datetime in some parsable format
+        / room - "room1" if there is only one room.
+        / start - datetime in some parsable format
+        / duration -- int minutes or "hh:mm:ss"
+        / end - datetime in some parsable format
         - authors - list of people's names.
         - contact - list of email(s) of presenters.
         X released - permission to release.
@@ -70,6 +96,16 @@ class TalkApi(BaseApi):
             'conf_key': output['id'],
             'conf_url': route_url('talk_get', request, id=output['id']),
         })
+        if model.schedule_slot:
+            assert model.schedule_slot.start < model.schedule_slot.end
+            duration_delta = model.schedule_slot.end - model.schedule_slot.start
+            assert duration_delta.days == 0
+            new_output.update({
+                'room': model.schedule_slot.room,
+                'start': model.schedule_slot.start.replace(tzinfo=UTC).isoformat(),
+                'end': model.schedule_slot.end.replace(tzinfo=UTC).isoformat(),
+                'duration': (model.schedule_slot.end - model.schedule_slot.start).seconds / 60,
+            })
         return new_output
 
 

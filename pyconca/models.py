@@ -1,5 +1,7 @@
 from sqlalchemy import Column
+from sqlalchemy import DateTime
 from sqlalchemy import ForeignKey
+from sqlalchemy import Index
 from sqlalchemy import Integer
 from sqlalchemy import String
 from sqlalchemy import Text
@@ -92,6 +94,7 @@ class Talk(AttrMixIn, Base):
     abstract = Column(String(length=400), nullable=False)
     outline = Column(Text(), nullable=False)
     reviewer_notes = Column(Text(), default='')
+    schedule_slot = relationship('ScheduleSlot', secondary='talk_schedule_slot', single_parent=True, uselist=False)
 
     @property
     def __acl__(self):
@@ -121,3 +124,16 @@ class Talk(AttrMixIn, Base):
             data['reviewer_notes'] = self.reviewer_notes
 
         return data
+
+class ScheduleSlot(AttrMixIn, Base):
+    id = Column(Integer, primary_key=True)
+    room = Column(String(length=100), nullable=False)
+    start = Column(DateTime, nullable=False)
+    end = Column(DateTime, nullable=False)
+
+class TalkScheduleSlot(AttrMixIn, Base):
+    talk_id = Column(Integer, ForeignKey('talk.id'), primary_key=True)
+    schedule_slot_id = Column(Integer, ForeignKey('schedule_slot.id'), primary_key=True)
+
+Index("talk_schedule_slot_talk_id_unique", TalkScheduleSlot.talk_id, unique=True)
+Index("talk_schedule_slot_schedule_slot_id_unique", TalkScheduleSlot.schedule_slot_id, unique=True)
