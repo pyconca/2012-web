@@ -153,6 +153,6 @@ class TestWithWebtest(unittest.TestCase):
             DBSession.add(talk_slot)
         data = self._getJsonFrom('/talk/11.json', who='admin', status=200)
         self.assertEquals("room", data['data']['talk']['room'])
-        self.assertEquals(start.isoformat() + "+00:00", data['data']['talk']['start'])
-        self.assertEquals(end.isoformat() + "+00:00", data['data']['talk']['end'])
+        self.assertEquals("2012-11-10T10:00:00-05:00", data['data']['talk']['start'])
+        self.assertEquals("2012-11-10T10:30:00-05:00", data['data']['talk']['end'])
         self.assertEquals(30, data['data']['talk']['duration'])

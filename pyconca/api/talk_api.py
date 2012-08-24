@@ -5,35 +5,11 @@ from pyramid.security import authenticated_userid
 from pyramid.threadlocal import get_current_request
 from pyramid.url import route_url
 
+import pytz
+
+from pyconca import default_timezone
 from pyconca.api.base_api import BaseApi
 from pyconca.dao.talk_dao import TalkDao
-
-from datetime import tzinfo
-from datetime import timedelta
-
-class UTCZone(tzinfo):
-    # Modified from Python's own test_datetime.py:FixedOffset
-    def __init__(self):
-        offset = 0
-        name = 'UTC'
-        dstoffset = 0
-        if isinstance(offset, int):
-            offset = timedelta(minutes=offset)
-        if isinstance(dstoffset, int):
-            dstoffset = timedelta(minutes=dstoffset)
-        self.__offset = offset
-        self.__name = name
-        self.__dstoffset = dstoffset
-    def __repr__(self):
-        return self.__name.lower()
-    def utcoffset(self, dt):
-        return self.__offset
-    def tzname(self, dt):
-        return self.__name
-    def dst(self, dt):
-        return self.__dstoffset
-
-UTC = UTCZone()
 
 class TalkApi(BaseApi):
 
@@ -61,6 +37,11 @@ class TalkApi(BaseApi):
     def _update_flash(self, talk):
         msg = ('Updated %s: %s' % (talk.type, talk.title))
         self.request.session.flash(msg, 'success')
+
+    def _local_isoformat(self, dt):
+        dt_utc = dt.replace(tzinfo=pytz.UTC)
+        dt_local = dt_utc.astimezone(default_timezone)
+        return dt_local.isoformat()
 
     def _post_process_for_output(self, model, output):
         """
@@ -102,8 +83,8 @@ class TalkApi(BaseApi):
             assert duration_delta.days == 0
             new_output.update({
                 'room': model.schedule_slot.room,
-                'start': model.schedule_slot.start.replace(tzinfo=UTC).isoformat(),
-                'end': model.schedule_slot.end.replace(tzinfo=UTC).isoformat(),
+                'start': self._local_isoformat(model.schedule_slot.start),
+                'end': self._local_isoformat(model.schedule_slot.end),
                 'duration': (model.schedule_slot.end - model.schedule_slot.start).seconds / 60,
             })
         return new_output

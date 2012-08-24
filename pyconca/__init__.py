@@ -2,6 +2,7 @@ from pyramid.authentication import AuthTktAuthenticationPolicy
 from pyramid.authorization import ACLAuthorizationPolicy
 from pyramid.config import Configurator
 from pyramid.session import UnencryptedCookieSessionFactoryConfig
+import pytz
 
 from sqlalchemy import engine_from_config
 
@@ -12,10 +13,16 @@ from .routes import _setup_routes
 from .security import get_user
 from .security import permission_finder
 
+default_timezone = pytz.timezone('America/Toronto')
 
 def main(global_config, **settings):
+    global default_timezone
+
     engine = engine_from_config(settings, 'sqlalchemy.')
     DBSession.configure(bind=engine)
+
+    if 'timezone' in settings:
+        default_timezone = pytz.timezone(settings['timezone'])
 
     authn_policy = AuthTktAuthenticationPolicy(
         settings['secret.authn_policy'],
