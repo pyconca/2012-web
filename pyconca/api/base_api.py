@@ -119,7 +119,7 @@ class BaseApi(Context):
     def _respond(self, status):
         return Response(
             status=status,
-            body=json.dumps(self.body),
+            body=json.dumps(self.body, indent=2, sort_keys=True),
             content_type='application/json')
 
     #--------- permission unmet
