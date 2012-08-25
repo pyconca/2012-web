@@ -1,3 +1,4 @@
+from datetime import datetime
 from mock import patch
 from webtest import TestApp
 import json
@@ -12,6 +13,8 @@ from pyconca.models import User
 from pyconca.models import UserGroup
 from pyconca.models import Group
 from pyconca.models import Talk
+from pyconca.models import ScheduleSlot
+from pyconca.models import TalkScheduleSlot
 
 @patch('pyconca.views.check_password', lambda x, y: True)
 class TestWithWebtest(unittest.TestCase):
@@ -105,6 +108,12 @@ class TestWithWebtest(unittest.TestCase):
 
     ### TALK API
 
+    def _assertTalkNotScheduled(self, data):
+        self.assertTrue(data['data']['talk']['room'] is None)
+        self.assertTrue(data['data']['talk']['start'] is None)
+        self.assertTrue(data['data']['talk']['end'] is None)
+        self.assertTrue(data['data']['talk']['duration'] is None)
+
     def test_talk_api_index__not_logged_in(self):
         data = self._getJsonFrom('/talk.json', status=403)
         self.assertEquals({}, data['data'])
@@ -127,10 +136,12 @@ class TestWithWebtest(unittest.TestCase):
     def test_talk_api_get_admin__as_admin(self):
         data = self._getJsonFrom('/talk/11.json', who='admin', status=200)
         self.assertEquals(self._admin_talk_id, data['data']['talk']['id'])
+        self._assertTalkNotScheduled(data)
 
     def test_talk_api_get_speaker__as_admin(self):
         data = self._getJsonFrom('/talk/12.json', who='admin', status=200)
         self.assertEquals(self._speaker_talk_id, data['data']['talk']['id'])
+        self._assertTalkNotScheduled(data)
 
     def test_talk_api_get_admin__as_speaker(self):
         data = self._getJsonFrom('/talk/11.json', who='speaker', status=403)
@@ -139,3 +150,18 @@ class TestWithWebtest(unittest.TestCase):
     def test_talk_api_get_speaker__as_speaker(self):
         data = self._getJsonFrom('/talk/12.json', who='speaker', status=200)
         self.assertEquals(self._speaker_talk_id, data['data']['talk']['id'])
+        self._assertTalkNotScheduled(data)
+
+    def test_talk_api_unscheduled(self):
+        start = datetime(2012, 11, 10, 15, 00)
+        end = datetime(2012,11,10,15,30)
+        with transaction.manager:
+            slot = ScheduleSlot(id=101, room="room", start=start, end=end)
+            talk_slot = TalkScheduleSlot(talk_id=11, schedule_slot_id=101)
+            DBSession.add(slot)
+            DBSession.add(talk_slot)
+        data = self._getJsonFrom('/talk/11.json', who='admin', status=200)
+        self.assertEquals("room", data['data']['talk']['room'])
+        self.assertEquals("2012-11-10T10:00:00-05:00", data['data']['talk']['start'])
+        self.assertEquals("2012-11-10T10:30:00-05:00", data['data']['talk']['end'])
+        self.assertEquals(30, data['data']['talk']['duration'])

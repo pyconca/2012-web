@@ -5,9 +5,11 @@ from pyramid.security import authenticated_userid
 from pyramid.threadlocal import get_current_request
 from pyramid.url import route_url
 
+import pytz
+
+from pyconca import default_timezone
 from pyconca.api.base_api import BaseApi
 from pyconca.dao.talk_dao import TalkDao
-
 
 class TalkApi(BaseApi):
 
@@ -36,6 +38,11 @@ class TalkApi(BaseApi):
         msg = ('Updated %s: %s' % (talk.type, talk.title))
         self.request.session.flash(msg, 'success')
 
+    def _local_isoformat(self, dt):
+        dt_utc = dt.replace(tzinfo=pytz.UTC)
+        dt_local = dt_utc.astimezone(default_timezone)
+        return dt_local.isoformat()
+
     def _post_process_for_output(self, model, output):
         """
         Add some extra stuff for the videographer's use.
@@ -46,10 +53,10 @@ class TalkApi(BaseApi):
 
         fields that Carl wants:
         / name - title of talk
-        X room - "room1" if there is only one room.
-        X start - datetime in some parsable format
-        X duration -- int minutes or "hh:mm:ss"
-        X end - datetime in some parsable format
+        / room - "room1" if there is only one room.
+        / start - datetime in some parsable format
+        / duration -- int minutes or "hh:mm:ss"
+        / end - datetime in some parsable format
         - authors - list of people's names.
         - contact - list of email(s) of presenters.
         X released - permission to release.
@@ -70,6 +77,23 @@ class TalkApi(BaseApi):
             'conf_key': output['id'],
             'conf_url': route_url('talk_get', request, id=output['id']),
         })
+        schedule = {
+            'room': None,
+            'start': None,
+            'end': None,
+            'duration': None,
+        }
+        if model.schedule_slot:
+            assert model.schedule_slot.start < model.schedule_slot.end
+            duration_delta = model.schedule_slot.end - model.schedule_slot.start
+            assert duration_delta.days == 0
+            schedule.update({
+                'room': model.schedule_slot.room,
+                'start': self._local_isoformat(model.schedule_slot.start),
+                'end': self._local_isoformat(model.schedule_slot.end),
+                'duration': (model.schedule_slot.end - model.schedule_slot.start).seconds / 60,
+            })
+        new_output.update(schedule)
         return new_output
 
 
