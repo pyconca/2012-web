@@ -16,6 +16,7 @@ requires = [
     'py-bcrypt',
     'pyramid_tm',
     'pyramid_debugtoolbar',
+    'pytz',
     'zope.sqlalchemy',
     'waitress',
     ]
