@@ -157,10 +157,9 @@ class TestWithWebtest(unittest.TestCase):
         start = datetime(2012, 11, 10, 15, 00)
         end = datetime(2012,11,10,15,30)
         with transaction.manager:
-            slot = ScheduleSlot(id=101, room="room", start=start, end=end)
-            talk_slot = TalkScheduleSlot(talk_id=11, schedule_slot_id=101)
+            talk = DBSession.query(Talk).get(self._admin_talk_id)
+            slot = ScheduleSlot(id=101, room="room", start=start, end=end, talk=talk)
             DBSession.add(slot)
-            DBSession.add(talk_slot)
         data = self._getJsonFrom('/talk/11.json', who='admin', status=200)
         self.assertEquals("room", data['data']['talk']['room'])
         self.assertEquals("2012-11-10T10:00:00-05:00", data['data']['talk']['start'])

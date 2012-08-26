@@ -8,6 +8,7 @@ from sqlalchemy import Text
 from sqlalchemy import Enum
 from sqlalchemy.ext.declarative import declared_attr
 from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import backref
 from sqlalchemy.orm import relationship
 from sqlalchemy.orm import scoped_session
 from sqlalchemy.orm import sessionmaker
@@ -94,7 +95,11 @@ class Talk(AttrMixIn, Base):
     abstract = Column(String(length=400), nullable=False)
     outline = Column(Text(), nullable=False)
     reviewer_notes = Column(Text(), default='')
-    schedule_slot = relationship('ScheduleSlot', secondary='talk_schedule_slot', single_parent=True, uselist=False)
+    schedule_slot = relationship('ScheduleSlot',
+                                 backref=backref('talk', uselist=False),
+                                 secondary='talk_schedule_slot',
+                                 single_parent=True,
+                                 uselist=False)
 
     @property
     def __acl__(self):
