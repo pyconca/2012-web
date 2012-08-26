@@ -2,6 +2,7 @@ from datetime import datetime
 from mock import patch
 from webtest import TestApp
 import json
+import os
 import transaction
 import unittest
 
@@ -22,7 +23,7 @@ class TestWithWebtest(unittest.TestCase):
         self.testapp = TestApp(main(
             {},
             **{
-                'sqlalchemy.url':'sqlite:///',
+                'sqlalchemy.url': os.environ.get('DB', 'sqlite:///'),
                 'secret.authn_policy':'so_secret',
                 'secret.unencrypted_cookie':'itsaseekreet',
                 'mako.directories':'pyconca:templates',
