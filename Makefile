@@ -5,4 +5,4 @@ setup:
 	./reset
 
 test:
-	python setup.py test
+	python setup.py nosetests

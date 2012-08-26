@@ -38,9 +38,10 @@ setup(name='pyconca',
       packages=find_packages(),
       include_package_data=True,
       zip_safe=False,
-      test_suite='pyconca',
+      test_suite='nose.collector',
       tests_require=[
-        'webtest'
+        'webtest',
+        'nose',
       ],
       install_requires=requires,
       entry_points="""\
