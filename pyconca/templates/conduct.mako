@@ -1,13 +1,14 @@
 <%inherit file="event.mako"/>
 
-<%block name="title">
+<%block name="title" filter="gettext">
     Code of Conduct
 </%block>
 
 <%block name="info">
     <div class="row-fluid content-section">
-        <h1 class="header header-first">Code of Conduct</h1>
+        <h1 class="header header-first">${_("Code of Conduct")}</h1>
         <p>
+          <%block filter="gettext">
             PyCon Canada is a community conference intended for networking and
             collaboration in the developer community.
             <br>
@@ -27,10 +28,12 @@
             and volunteers at any PyCon Canada event are required to conform
             to the following Code of Conduct. Organizers will enforce this
             code throughout the event.
+          </%block>
         </p>
 
-        <h1 class="header">The Short Version</h1>
+        <h1 class="header">${_("The Short Version")}</h1>
         <p>
+          <%block filter="gettext">
             PyCon Canada is dedicated to providing a harassment-free conference
             experience for everyone, regardless of gender, sexual orientation,
             disability, physical appearance, body size, race, or religion. We do
@@ -57,10 +60,12 @@
             <br>
 
             Thank you for helping make this a welcoming, friendly event for all.
+          </%block>
         </p>
 
-        <h1 class="header">The Longer Version</h1>
+        <h1 class="header">${_("The Longer Version")}</h1>
         <p>
+          <%block filter="gettext">
             Harassment includes offensive verbal comments related to gender,
             sexual orientation, disability, physical appearance, body size, race,
             religion, sexual images in public spaces, deliberate intimidation,
@@ -94,10 +99,12 @@
             conduct, the conference organizers may take any action they deem
             appropriate, including warning the offender or expulsion from the
             conference with no refund.
+          </%block>
         </p>
 
-        <h1 class="header">Contact Information</h1>
+        <h1 class="header">${_("Contact Information")}</h1>
         <p>
+          <%block filter="gettext">
             If you are being harassed, notice that someone else is being
             harassed, or have any other concerns, please contact a member of
             conference board - Diana Clarke, Nicola Yap, or David Wolever.
@@ -106,25 +113,29 @@
 
             If the matter is especially urgent, please call/contact any of
             these individuals:
+          </%block>
             <br>
 
             <ul>
                 <li><strong>Diana Clarke</strong>: +1 (416) 453-3130</li>
-                <li><strong>Volunteer to add your name here</strong></li>
+                <li><strong>${_("Volunteer to add your name here")}</strong></li>
             </ul>
-
-            Conference staff will be happy to help participants contact
-            hotel/venue security or local law enforcement, provide escorts,
-            or otherwise assist those experiencing harassment to feel safe
-            for the duration of the conference. We value your attendance.
+            <%block filter="gettext">
+              Conference staff will be happy to help participants contact
+              hotel/venue security or local law enforcement, provide escorts,
+              or otherwise assist those experiencing harassment to feel safe
+              for the duration of the conference. We value your attendance.
+            </%block>
         </p>
 
-        <h1 class="header">License</h1>
+        <h1 class="header">{_("License")}</h1>
         <p>
+          <%block filter="gettext">
             This code of conduct is largely based on the PyCon USA
             <a href="https://us.pycon.org/2013/about/code-of-conduct/">
                 Conference Code of Conduct
             </a>.
+          </%block>
         </p>
     </div>
 </%block>

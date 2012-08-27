@@ -76,13 +76,14 @@
     </div>
 
     <p>
-    ${_(u"You're invited to a kickoff conference, Nov 9-11 2012, in Toronto,"
-    u" getting us warmed up for the first"
-    u" <a href='http://us.pycon.org/'>PyCon North America</a> conference outside the US -"
-    u" <a href='http://www.newswire.ca/en/story/731987/montreal-chosen-to-welcome-over-1-500-python-programmers-for-the-world-s-most-important-conference-on-the-subject/'>"
-    u" Montreal in 2014 and 2015!</a>"
-    u" And when that's done, let's keep the momentum going with an annual PyCon"
-    u" in Canada.")}
+     <%block filter="gettext">
+      You're invited to a kickoff conference, Nov 9-11 2012, in Toronto,
+      getting us warmed up for the first
+      <a href='http://us.pycon.org/'>PyCon North America</a> conference outside the US -
+      <a href='http://www.newswire.ca/en/story/731987/montreal-chosen-to-welcome-over-1-500-python-programmers-for-the-world-s-most-important-conference-on-the-subject/'>
+      Montreal in 2014 and 2015!</a>
+      And when that's done, let's keep the momentum going with an annual PyCon in Canada.
+     </%block>
     </p>
 
     <div class="pull-right">
@@ -99,9 +100,11 @@
     </div>
 
     <p>
-    ${_(u"Share your knowledge and cool ideas. Submit your proposal for a talk or"
-    " tutorial by October 1st to organizers@pycon.ca. We'll be sprinting at the"
-    " conference too, so you can also send us sprint ideas.")}
+      <%block filter="gettext">
+       Share your knowledge and cool ideas. Submit your proposal for a talk or
+       tutorial by October 1st to organizers@pycon.ca. We'll be sprinting at the
+       conference too, so you can also send us sprint ideas.
+      </%block>
     </p>
 
     <div>
@@ -117,10 +120,12 @@
     </div>
 
     <p>
-    ${_("One of PyCon Canada's goals is to bring experts from the greater Python"
-    " community to Canada; giving you the opportunity to be inspired and learn"
-    " from the best! To get you excited, we'll be announcing our featured"
-    " speakers, one by one, over the coming weeks. Check them out:")}
+      <%block filter="gettext">
+      One of PyCon Canada's goals is to bring experts from the greater Python
+      community to Canada; giving you the opportunity to be inspired and learn
+      from the best! To get you excited, we'll be announcing our featured
+      speakers, one by one, over the coming weeks. Check them out:
+      </%block>
     </p>
 
     <div class="pull-right">
@@ -137,9 +142,11 @@
     </div>
 
     <p>
-    ${_(u"Be there November 9-11, 2012 at Beverley Halls in downtown Toronto. A short"
-    u" walk from the subway, so when you aren't busy coding or chatting with your"
-    u" colleagues you've got lots of stuff to explore nearby.")}
+      <%block filter="gettext">
+      Be there November 9-11, 2012 at Beverley Halls in downtown Toronto. A short
+      walk from the subway, so when you aren't busy coding or chatting with your
+      olleagues you've got lots of stuff to explore nearby.
+      </%block>
     </p>
 
     <div>
@@ -155,9 +162,11 @@
     </div>
 
     <p>
-    ${_(u"Start the fun Friday evening with a mix and mingle. Feed your brain at"
-    u" talks on Saturday, and if your sprint team is eager, you can start that"
-    u" night. Sprint or attend talks and tutorials on Sunday.")}
+      <%block filter="gettext">
+      Start the fun Friday evening with a mix and mingle. Feed your brain at
+      talks on Saturday, and if your sprint team is eager, you can start that
+      night. Sprint or attend talks and tutorials on Sunday.
+      </%block>
     </p>
 
     <div class="pull-right">
@@ -174,9 +183,11 @@
     </div>
 
     <p>
-    ${_("Support the Canadian Python community and get recognition, promotion, and"
-    " good karma for helping to increase the expertise and visibility of"
-    " developers across Canada. Various sponsorship options are available.")}
+      <%block filter="gettext">
+      Support the Canadian Python community and get recognition, promotion, and
+      good karma for helping to increase the expertise and visibility of
+      developers across Canada. Various sponsorship options are available.
+      </%block>
     </p>
 
     <div class="pull-right">
