@@ -32,8 +32,7 @@ def extract(fileobj, keywords, comment_tags, options):
     """Extract messages from plain Mako defs and from Python
     expressions inside Mako templates.
     """
-    encoding = options.get('input_encoding', options.get('encoding', None))
-
+    encoding = "utf-8"
     template_node = lexer.Lexer(fileobj.read(),
                                 input_encoding=encoding).parse()
 

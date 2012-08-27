@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pyconca 0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-08-27 00:34-0400\n"
+"POT-Creation-Date: 2012-08-27 08:11-0400\n"
 "PO-Revision-Date: 2012-08-15 22:01-0400\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -85,7 +85,7 @@ msgid ""
 msgstr ""
 
 #: pyconca/templates/about.mako:6 pyconca/templates/base.mako:50
-#: pyconca/templates/base.mako:184 pyconca/templates/base.mako:230
+#: pyconca/templates/base.mako:184 pyconca/templates/base.mako:234
 #: pyconca/templates/index.mako:97
 msgid "About"
 msgstr ""
@@ -115,39 +115,39 @@ msgid "Made in Canada!"
 msgstr ""
 
 #: pyconca/templates/base.mako:43 pyconca/templates/base.mako:180
-#: pyconca/templates/base.mako:224
+#: pyconca/templates/base.mako:228
 msgid "Home"
 msgstr ""
 
-#: pyconca/templates/base.mako:57 pyconca/templates/base.mako:227
+#: pyconca/templates/base.mako:57 pyconca/templates/base.mako:231
 #: pyconca/templates/index.mako:163 pyconca/templates/venue.mako:4
 msgid "Venue"
 msgstr ""
 
 #: pyconca/templates/base.mako:64 pyconca/templates/base.mako:196
-#: pyconca/templates/base.mako:231 pyconca/templates/index.mako:183
+#: pyconca/templates/base.mako:235 pyconca/templates/index.mako:183
 #: pyconca/templates/schedule.mako:4
 msgid "Schedule"
 msgstr ""
 
 #: pyconca/templates/base.mako:71 pyconca/templates/base.mako:200
-#: pyconca/templates/base.mako:225 pyconca/templates/index.mako:121
+#: pyconca/templates/base.mako:229 pyconca/templates/index.mako:121
 msgid "Speak"
 msgstr ""
 
 #: pyconca/templates/base.mako:78 pyconca/templates/base.mako:204
-#: pyconca/templates/base.mako:228 pyconca/templates/index.mako:141
+#: pyconca/templates/base.mako:232 pyconca/templates/index.mako:141
 msgid "Learn"
 msgstr ""
 
 #: pyconca/templates/base.mako:85 pyconca/templates/base.mako:208
-#: pyconca/templates/base.mako:234 pyconca/templates/index.mako:18
+#: pyconca/templates/base.mako:238 pyconca/templates/index.mako:18
 #: pyconca/templates/index.mako:22
 msgid "Sponsor"
 msgstr ""
 
 #: pyconca/templates/base.mako:92 pyconca/templates/base.mako:188
-#: pyconca/templates/base.mako:233 pyconca/templates/contact.mako:4
+#: pyconca/templates/base.mako:237 pyconca/templates/contact.mako:4
 msgid "Contact"
 msgstr ""
 
@@ -183,11 +183,15 @@ msgstr ""
 msgid "Sign Up"
 msgstr ""
 
-#: pyconca/templates/base.mako:242
-msgid "&copy; PyCon Canada 2012"
+#: pyconca/templates/base.mako:212
+msgid "Français"
 msgstr ""
 
 #: pyconca/templates/base.mako:246
+msgid "&copy; PyCon Canada 2012"
+msgstr ""
+
+#: pyconca/templates/base.mako:250
 msgid "photo by camstatic"
 msgstr ""
 
@@ -914,307 +918,4 @@ msgstr ""
 #: pyconca/templates/venue.mako:108
 msgid "Hotel"
 msgstr ""
-
-#~ msgid ""
-#~ "Support the efforts of<a "
-#~ "href='http://montrealpython.org/2011/03/pycon-2014-and-2015-in-"
-#~ "montreal/'>Montreal Python</a> as they prepare"
-#~ " to host<ua href='http://us.pycon.org/'>PyCon "
-#~ "North America</a>in 2014 and 2015. This"
-#~ " is the first timethat the main "
-#~ "PyCon conference is going to be "
-#~ "outside of the US.Let's take this "
-#~ "opportunity to showcase the Canadian "
-#~ "Pythoncommunity, and step up to the "
-#~ "challenge as speakers and volunteers."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Strengthen the Canadian Python community "
-#~ "by providing moreopportunities for us to"
-#~ " share knowledge and ideas, "
-#~ "encouragesupport and education for speaking"
-#~ " at conferences, and increasethe visibility"
-#~ " of developers, organizations, and "
-#~ "companieswithin the community."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "PyCon Canada is entirely run by "
-#~ "volunteers who are passionate aboutthese "
-#~ "goals. We hope to see you at "
-#~ "the 2012 conference!"
-#~ msgstr ""
-
-#~ msgid "Made in Canada, with help from the greater Python community."
-#~ msgstr ""
-
-#~ msgid "Thank-you for your contribution!"
-#~ msgstr ""
-
-#~ msgid "Have we missed thanking someone? Don't be shy &mdash; let us know:"
-#~ msgstr ""
-
-#~ msgid "Logged in as"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "The majority of our discussion occurs"
-#~ " on the mailing list<a "
-#~ "href='mailto:pyconca@googlegroups.com'>pyconca@googlegroups.com</a>(<a"
-#~ " "
-#~ "href='https://groups.google.com/forum/?fromgroups#!forum/pyconca'>archives</a>).The"
-#~ " organizing committee can be contacted "
-#~ "privately at<a "
-#~ "href='mailto:organizers@pycon.ca'>organizers@pycon.ca</a>, and"
-#~ " theboard (Diana Clarke, Nicola Yap, "
-#~ "and David Wolever) can be "
-#~ "contactedprivately at <a "
-#~ "href='mailto:board@pycon.ca'>board@pycon.ca</a>."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "You're invited to a kickoff conference,"
-#~ " getting us warmed up for the "
-#~ "first<ua href='http://us.pycon.org/'>PyCon North "
-#~ "America</a> conference outside the US "
-#~ "-<a href='http://www.villagegamer.net/2011/04/11/montreal-"
-#~ "looking-forward-to-hosting-pycon/'>Montreal "
-#~ "in 2014 and 2015!</a>And when that's "
-#~ "done, let's keep the momentum going "
-#~ "with an annual PyConin Canada."
-#~ msgstr ""
-
-#~ msgid "More >"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Share your knowledge and cool ideas. "
-#~ "Submit your proposal for a talk "
-#~ "ortutorial by October 1st to "
-#~ "organizers@pycon.ca. We'll be sprinting at "
-#~ "theconference too, so you can also "
-#~ "send us sprint ideas."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Support the Canadian Python community "
-#~ "and get recognition, promotion, andgood "
-#~ "karma for helping to increase the "
-#~ "expertise and visibility ofdevelopers across"
-#~ " Canada. Various sponsorship options are"
-#~ " available."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Be there November 9-11, 2012 at "
-#~ "Beverley Halls in downtown Toronto. A"
-#~ " shortwalk from the subway, so when"
-#~ " you aren't busy coding or chatting"
-#~ " with yourcolleagues you've got lots "
-#~ "of stuff to explore nearby."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Start the fun Friday evening with "
-#~ "a mix and mingle. Feed your brain"
-#~ " attalks on Saturday, and if your "
-#~ "sprint team is eager, you can "
-#~ "start thatnight. Sprint or attend talks"
-#~ " and tutorials on Sunday."
-#~ msgstr ""
-
-#~ msgid "Registration, casual mixer and venue setup"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Come register, hang out, and chat. "
-#~ "Food and drinks will beprovided, and "
-#~ "the venue bar will be open."
-#~ msgstr ""
-
-#~ msgid "Talks finish, venue bar opens, appetizers served"
-#~ msgstr ""
-
-#~ msgid "Time to meet some new people in preparation for dinner."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "<strong>Dinner</strong>. Not provided. Grab "
-#~ "some friends and headout to one of"
-#~ " the local restaurants."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "<strong>Open space, BoF sessions</strong>. "
-#~ "Hang out and chat. Thevenue bar "
-#~ "will be open, and there will be"
-#~ " space for<a "
-#~ "href='http://en.wikipedia.org/wiki/Birds_of_a_feather_(computing)'>birds"
-#~ " of a feather</a> sessions."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "<strong>Talks finish, venue bar opens, "
-#~ "appetizers served</strong>.Time to meet some"
-#~ " new people in preparation for "
-#~ "dinner."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "The schedule for PyCon 2012 includes "
-#~ "talks, tutorials, and sprintsover Saturday "
-#~ "and Sunday."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "We welcome <em>everyone</em> in the "
-#~ "Canadian Python community tocome and "
-#~ "share your ideas, experiences, and "
-#~ "expertise. Whetheryou're new to Python "
-#~ "or a seasoned expert, if you've "
-#~ "got somethinginteresting to share, we "
-#~ "want to hear about it. A "
-#~ "conference with adiverse set of good "
-#~ "topics will give everyone the "
-#~ "opportunity tolearn something new and "
-#~ "cool."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Nervous about your lack of presenter "
-#~ "experience? We'll work toconnect you "
-#~ "with resources and people to help "
-#~ "you prepare. Youmight also consider "
-#~ "co-presenting with a more "
-#~ "experiencedpresenter. And once you've rocked"
-#~ " PyCon Canada 2012, you can takethat"
-#~ " experience to help you gear up "
-#~ "for the main PyCon conferencein "
-#~ "Montreal."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "We would prefer 20 minute talks, "
-#~ "although 45 minute talks will alsobe "
-#~ "considered. Tutorials are 3 hours. We"
-#~ " also welcome ideas forsprints."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Send talk and tutorial proposals to<a"
-#~ " href='mailto:organizers@pycon.ca'>organizers@pycon.ca</a>. "
-#~ "Includethe following information in talk "
-#~ "and tutorial proposals:"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Additional notes for the proposal "
-#~ "reviewers. This caninclude additional "
-#~ "background information such as links to"
-#~ " otherpresentations you have done, or "
-#~ "links to blog posts, articles, or "
-#~ "code related to your presentation."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "We are in the process of "
-#~ "developing a prospectus. In the mean "
-#~ "time,if you are interested in sponsoring"
-#~ " PyCon Canada, please contact "
-#~ "<ahref='mailto:sponsorship@pycon.ca'>sponsorship@pycon.ca</a>."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "The conference will be held at "
-#~ "Beverley Halls, 206 Beverley St., "
-#~ "justsouth of College and Beverley, "
-#~ "Toronto."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Toronto has 2 major airports.<a "
-#~ "href='http://www.gtaa.com'>Pearson</a> is the "
-#~ "international airportand is the location "
-#~ "for almost all the major domestic "
-#~ "and internationalairlines. It's about a "
-#~ "35 minute drive from the Airport "
-#~ "to BeverleyHalls, but be aware that "
-#~ "downtown Toronto traffic is busy all "
-#~ "day andis particularly busy during peak"
-#~ " rush hour. Allow at least an "
-#~ "hour fortravel time from the airport."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "<a href='http://www.flyporter.com'>Porter Airlines</a> "
-#~ "is located onToronto Island and is "
-#~ "just south of Union Station, the "
-#~ "main transit hubin downtown Toronto, "
-#~ "including Go Transit, TTC (the local "
-#~ "bus,streetcar and subway service) and "
-#~ "VIA Rail."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "VIA is a good alternative to the"
-#~ " airlines if you are coming "
-#~ "fromsomewhere like Montreal or Ottawa. "
-#~ "Advance pricing is often availableat a"
-#~ " discount."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Make sure that you've got a valid"
-#~ " passport and don't forget tobring it"
-#~ " with you."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "<a href='http://www.flyporter.com'>Porter Airlines</a> "
-#~ "hasfrequent, reasonably-priced flights for "
-#~ "trips from several UScities to Toronto,"
-#~ " including Boston, Burlington (VT), "
-#~ "Chicago,Myrtle Beach, New York, and "
-#~ "Washington"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Beverly Halls is a short walk from"
-#~ " a number of different publictransit "
-#~ "stops."
-#~ msgstr ""
-
-#~ msgid "Google Map's transit directions"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Paid street parking is available on "
-#~ "Beverley and surrounding side streets, "
-#~ "and some free parking is also "
-#~ "available on weekends. There is a "
-#~ "paid Green P parking lot nearby, "
-#~ "which can be seen on the"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "We'll be providing lunch on Saturday "
-#~ "and Sunday, so make sure that you"
-#~ " let us know about any dietary "
-#~ "restrictions. For your other meals, "
-#~ "there are lots of options on "
-#~ "College St. and Spadina Ave. Some "
-#~ "additional options are available on Elm"
-#~ " St. and Baldwin St. south of "
-#~ "the venue - some of restaurants "
-#~ "will be a little pricier."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "We are in the process of finding"
-#~ " a recommended hotel. Contact <a "
-#~ "href='mailto:hotels@pycon.ca'>hotels@pycon.ca</a> if you"
-#~ " would like to be notified when "
-#~ "a hotel is chosen."
-#~ msgstr ""
 
