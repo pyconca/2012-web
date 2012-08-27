@@ -1,7 +1,7 @@
 <%inherit file="event.mako"/>
 
 <%block name="title">
-    Confirmed Speakers
+    ${_("Confirmed Speakers")}
 </%block>
 
 <%block name="info">
@@ -36,7 +36,7 @@
           </a>
       </h1>
       <p>
-         ${_("Chris McDonough is the primary author of the")
+         ${_("Chris McDonough is the primary author of the")}
         <a href="http://docs.pylonsproject.org/en/latest/docs/pyramid.html">
           Pyramid web framework
         </a>${_(" and ")}

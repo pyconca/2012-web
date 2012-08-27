@@ -40,7 +40,7 @@
         <br>
         <br>
         <div id="sponsors_carousel" class="carousel slide hidden-phone">
-          <h6>${_("Sponsors"}</h6>
+          <h6>${_("Sponsors")}</h6>
           <div class="carousel-inner" style="opacity: 0.6; height: 100px;">
             <div class="active item">
               <a href="http://500px.com/">
