@@ -21,7 +21,7 @@ body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-@media (max-width: 767px) { 
+@media (max-width: 767px) {
   body {
     background-color: #4e4e4e;
   }
@@ -48,7 +48,7 @@ body {
 }
 
 .nav-item {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .main-body {
@@ -57,7 +57,7 @@ body {
   margin-top: 40px;
 }
 
-@media (max-width: 979px) { 
+@media (max-width: 979px) {
   .main-body {
     margin-top: 0;
   }
@@ -136,7 +136,7 @@ body {
   text-decoration: underline;
 }
 
-@media (max-width: 767px) { 
+@media (max-width: 767px) {
   .main-row p {
     font-size: 16px;
     line-height: 20px;
@@ -234,14 +234,14 @@ body {
 }
 
 .sub-header-container {
-  border-left-style: solid; 
-  border-left-width: 20px; 
+  border-left-style: solid;
+  border-left-width: 20px;
   border-left-color: #333;
-  border-right-style: solid; 
-  border-right-width: 20px; 
+  border-right-style: solid;
+  border-right-width: 20px;
   border-right-color: #333;
-  border-top-style: solid; 
-  border-top-width: 20px; 
+  border-top-style: solid;
+  border-top-width: 20px;
   border-top-color: #333;
   margin-top: -1px;
 }
@@ -368,4 +368,3 @@ body {
 .schedule-page .header {
   border-bottom: none;
 }
-
