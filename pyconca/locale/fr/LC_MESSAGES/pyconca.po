@@ -128,7 +128,7 @@ msgstr ""
 #: pyconca/templates/base.mako:231 pyconca/templates/index.mako:183
 #: pyconca/templates/schedule.mako:4
 msgid "Schedule"
-msgstr ""
+msgstr "Horaire"
 
 #: pyconca/templates/base.mako:71 pyconca/templates/base.mako:200
 #: pyconca/templates/base.mako:225 pyconca/templates/index.mako:121
@@ -138,13 +138,13 @@ msgstr ""
 #: pyconca/templates/base.mako:78 pyconca/templates/base.mako:204
 #: pyconca/templates/base.mako:228 pyconca/templates/index.mako:141
 msgid "Learn"
-msgstr ""
+msgstr "Apprendre"
 
 #: pyconca/templates/base.mako:85 pyconca/templates/base.mako:208
 #: pyconca/templates/base.mako:234 pyconca/templates/index.mako:18
 #: pyconca/templates/index.mako:22
 msgid "Sponsor"
-msgstr ""
+msgstr "Commanditaire"
 
 #: pyconca/templates/base.mako:92 pyconca/templates/base.mako:188
 #: pyconca/templates/base.mako:233 pyconca/templates/contact.mako:4
@@ -153,7 +153,7 @@ msgstr ""
 
 #: pyconca/templates/base.mako:108
 msgid "Talks"
-msgstr ""
+msgstr "Présentation"
 
 #: pyconca/templates/base.mako:114
 msgid "Users"
@@ -1217,4 +1217,3 @@ msgstr ""
 #~ " would like to be notified when "
 #~ "a hotel is chosen."
 #~ msgstr ""
-

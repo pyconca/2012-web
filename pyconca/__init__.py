@@ -47,9 +47,13 @@ def main(global_config, **settings):
 
     config.scan()
 
+    config.set_locale_negotiator("pyconca.locale.locale_negotiator")
+
     config.add_subscriber('pyconca.subscribers.add_localizer',
                           'pyramid.events.NewRequest')
     config.add_subscriber('pyconca.subscribers.add_renderer_globals',
+                          'pyramid.events.BeforeRender')
+    config.add_subscriber('pyconca.subscribers.add_template_globals',
                           'pyramid.events.BeforeRender')
 
     return config.make_wsgi_app()

@@ -209,6 +209,10 @@
             </li>
 
             <li class="footer-nav-link">
+              <a class="nav-link" href="${request.application_url}/locale">${_("Francais")}</a>
+            </li>
+
+            <li class="footer-nav-link">
               <a href="https://twitter.com/pyconca">@pyconca</a>
             </li>
           </ul>
