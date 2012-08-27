@@ -22,23 +22,44 @@
         <h3>${_(u"Quick Links")}</h3>
         <ul id="sidenav" class="sidenav side-block"></ul>
 
-        <h3>${_(u"Sponsors")}</h3>
+        % if request['bfg.routes.route'].name != 'sponsors':
+        <h3>${_("Sponsors")}</h3>
         <div id="sponsors_carousel" class="carousel slide side-block">
           <div class="carousel-inner">
             <div class="active item">
-             <a href="http://vmfarms.com/">
-              <img src="${request.static_url("pyconca:static/vmfarms-logo.png")}"
-                width="200px;" height="100px;" alt="">
-             </a>
+              <a href="http://500px.com/">
+                <img src="${request.static_url("pyconca:static/500px_logo_color.png")}"
+                     width="200px;" height="100px;" alt="">
+              </a>
+
              <br>
 
              <a href="http://www.freshbooks.com/">
-              <img src="${request.static_url("pyconca:static/freshbooks.gif")}"
-                width="200px;" height="100px;" alt="">
+               <img src="${request.static_url("pyconca:static/freshbooks.gif")}"
+                    width="200px;" height="100px;" alt="">
              </a>
+
+             <br>
+             <br>
+             <br>
+
+              <a href="http://waveaccounting.com/">
+                <img src="${request.static_url("pyconca:static/thumb-logo-wave-accounting.png")}"
+                     alt="">
+              </a>
+
+             <br>
+             <br>
+
+              <a href="http://www.python.org/psf/">
+                <img src="${request.static_url("pyconca:static/psf-logo-317x71-alpha.png")}"
+                     alt="">
+              </a>
+
             </div>
           </div>
         </div>
+        % endif
 
         <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
         <script>
@@ -89,9 +110,11 @@
       var navItem = $("<a></a>");
 
       if (!$this.attr("id")) {
+        console.log($this.text());
         var anchor = $this.text()
           .toLowerCase()
-          .replace(/ /g, "-")
+          .replace(" ", "-")
+          .replace(/ /g, "")
           .replace(/[^a-z0-9-]/g, "");
         $this.attr("id", anchor);
       }

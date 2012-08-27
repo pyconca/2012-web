@@ -40,13 +40,13 @@
         <br>
         <br>
         <div id="sponsors_carousel" class="carousel slide hidden-phone">
-          <h6>${_(u"Sponsors")}</h6>
-          <div class="carousel-inner" style="opacity: 0.6;">
+          <h6>${_("Sponsors"}</h6>
+          <div class="carousel-inner" style="opacity: 0.6; height: 100px;">
             <div class="active item">
-             <a href="http://vmfarms.com/">
-                <img src="${request.static_url("pyconca:static/vmfarms-logo.png")}"
-                  width="200px;" height="100px;" class="black-and-white" alt="">
-             </a>
+              <a href="http://500px.com/">
+                <img src="${request.static_url("pyconca:static/500px_logo_color.png")}"
+                     width="200px;" height="100px;" class="black-and-white" alt="">
+              </a>
             </div>
 
             <div class="item">
@@ -55,6 +55,28 @@
                   width="200px;" height="100px;" class="black-and-white" alt="">
              </a>
             </div>
+
+            <div class="item">
+              <a href="http://waveaccounting.com/">
+                <img src="${request.static_url("pyconca:static/thumb-logo-wave-accounting.png")}"
+                     class="black-and-white" alt="">
+              </a>
+            </div>
+
+            <div class="item">
+              <a href="http://www.python.org/psf/">
+                <img src="${request.static_url("pyconca:static/psf-logo-317x71-alpha.png")}"
+                     width="317px;" height="71px;" class="black-and-white" alt="">
+              </a>
+            </div>
+
+            <div class="item">
+             <a href="http://vmfarms.com/">
+                <img src="${request.static_url("pyconca:static/vmfarms-logo.png")}"
+                  width="200px;" height="100px;" class="black-and-white" alt="">
+             </a>
+            </div>
+
           </div>
         </div>
       </div>

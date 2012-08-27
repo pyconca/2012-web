@@ -324,9 +324,14 @@ body {
 }
 
 .black-and-white {
-  filter: url(filters.svg#grayscale);
+  filter: url('filters.svg#grayscale');
   filter: gray;
   -webkit-filter: grayscale(1);
+}
+
+.black-and-white:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
 }
 
 #sponsor-carousel-row {
