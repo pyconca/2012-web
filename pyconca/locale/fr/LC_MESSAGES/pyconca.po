@@ -457,7 +457,7 @@ msgstr "Liens rapides"
 #: pyconca/templates/event.mako:26 pyconca/templates/index.mako:43
 #: pyconca/templates/index.mako:204 pyconca/templates/sponsors.mako:4
 msgid "Sponsors"
-msgstr "Commandidaires"
+msgstr "Commanditaires"
 
 #: pyconca/templates/generic.mako:10 pyconca/templates/index.mako:13
 msgid "PyCon Canada"
@@ -783,6 +783,8 @@ msgid ""
 "href=\"mailto:sponsorship@pycon.ca\">sponsorship@pycon.ca</a>.\n"
 "          "
 msgstr ""
+"Si vous êtes intéressé à commanditer PyCon Canada, veuillez contacter: "
+"<a href=\"mailto:sponsorship@pycon.ca\">sponsorship@pycon.ca</a>."
 
 #: pyconca/templates/sponsors.mako:9
 msgid "Sponsor PyCon Canada"
