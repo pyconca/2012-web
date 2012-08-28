@@ -36,12 +36,12 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"       Supporter les efforts de <a href=''http://montrealpython.org/2011/03/pycon-2014-and-2015-in-montreal/'>"
-"       Montreal-Python</a> qui se prépare à accueillir <a href='http://us.pycon.org/'>PyCon Amérique du Nord</a>"
+"       Supportez les efforts de <a href=''http://montrealpython.org/2011/03/pycon-2014-and-2015-in-montreal/'>"
+"       Montréal-Python</a> qui se prépare à accueillir <a href='http://us.pycon.org/'>PyCon Amérique du Nord</a>"
 "       en 2014 et 2015. Ce sera la première fois"
 "       que la principale conférence PyCon se tiendra à l'extérieur des États-Unis."
-"       Prenons cette opportunité pour montrer la vitalité de la communauté Python Canadienne,"
-"       et acceptons le défis comme présentateur et volontaire."
+"       Prenons cette opportunité pour montrer la vitalité de la communauté Python canadienne,"
+"       et acceptons le défi comme présentateur et volontaire."
 
 #: pyconca/templates/about.mako:34
 msgid ""
@@ -56,8 +56,8 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"       Endurcir la communauté Python Canadienne en nous bâtissant de nouvelles"
-"       opportunitées de partager nos connaissances et nos idées, encourager le"
+"       Renforcer la communauté Python Canadienne en nous bâtissant de nouvelles"
+"       opportunités de partager nos connaissances et nos idées, encourager le"
 "       support et l'éducation en présentant à une conférence, et en augmentant la"
 "       visibilité des développeurs, des organisations et des compagnies dans notre"
 "       communauté."
@@ -71,8 +71,8 @@ msgid ""
 "          "
 msgstr ""
 "\n"
-"       PyCon Canada est entièrement organisé par des volontaires et leurs objectifs"
-"       sont leur passion. Nous esperons de vous voir à la conférence 2012!"
+"       PyCon Canada est entièrement organisé par des volontaires passionés par"
+"       ces objectifs. Nous espérons vous voir à la conférence 2012!"
 
 #: pyconca/templates/about.mako:59
 msgid ""
@@ -97,8 +97,8 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"       Du Canada, avec l'aide de ce qu'il y a de mieux dans la communauté Python"
-"       <strong>Merci pour votre contribution!</strong>"
+"       Fait au Canada, avec l'aide de la grande communauté Python.\n"
+"       <strong>Merci pour votre contribution!</strong>\n"
 "       "
 
 #: pyconca/templates/about.mako:130
@@ -109,7 +109,7 @@ msgid ""
 "      "
 msgstr ""
 "\n"
-"      Avons-nous oublié de remercier quelqu'un? Ne soyez pas gêné; laissez nous savoir:"
+"      Avons-nous oublié de remercier quelqu'un? Ne soyez pas gêné; laissez-le nous savoir:\n"
 "      <a href=\"mailto:organizers@pycon.ca\">organizers@pycon.ca</a>.\n"
 "      "
 
@@ -117,7 +117,7 @@ msgstr ""
 #: pyconca/templates/base.mako:184 pyconca/templates/base.mako:234
 #: pyconca/templates/index.mako:97
 msgid "About"
-msgstr "À Propos"
+msgstr "À propos"
 
 #: pyconca/templates/about.mako:11
 msgid "What is PyCon Canada?"
@@ -125,7 +125,7 @@ msgstr "Qu'est-ce que PyCon Canada?"
 
 #: pyconca/templates/about.mako:13
 msgid "PyCon Canada is an initiative to strengthen the Canadian Python community."
-msgstr "PyCon Canada est une initiative qui a pour but de renforcir la communauté Python Canadienne"
+msgstr "PyCon Canada est une initiative qui a pour but de renforcer la communauté Python Canadienne"
 
 #: pyconca/templates/about.mako:17
 msgid "Our main goals:"
@@ -133,7 +133,7 @@ msgstr "Nos objectifs principaux:"
 
 #: pyconca/templates/about.mako:44
 msgid "Host an annual Canadian PyCon conference, starting now - 2012!"
-msgstr "Accueuillir une conférence annuelle PyCon Canada, en commencant maintenant, en 2012!"
+msgstr "Accueillir une conférence annuelle PyCon Canada, en commencant maintenant, en 2012!"
 
 #: pyconca/templates/about.mako:57 pyconca/templates/conduct.mako:9
 msgid "Code of Conduct"
@@ -146,7 +146,7 @@ msgstr "Fait au Canada!"
 #: pyconca/templates/base.mako:43 pyconca/templates/base.mako:180
 #: pyconca/templates/base.mako:228
 msgid "Home"
-msgstr "Page Principale"
+msgstr "Accueil"
 
 #: pyconca/templates/base.mako:57 pyconca/templates/base.mako:231
 #: pyconca/templates/index.mako:163 pyconca/templates/venue.mako:4
@@ -182,7 +182,7 @@ msgstr "Contact"
 
 #: pyconca/templates/base.mako:108
 msgid "Talks"
-msgstr "Présentation"
+msgstr "Présentations"
 
 #: pyconca/templates/base.mako:114
 msgid "Users"
@@ -198,11 +198,11 @@ msgstr "Vos présentations"
 
 #: pyconca/templates/base.mako:135
 msgid "Your Profile"
-msgstr "Votre profile"
+msgstr "Votre profil"
 
 #: pyconca/templates/base.mako:141
 msgid "Logout"
-msgstr "Se Déconnecté"
+msgstr "Se déconnecter"
 
 #: pyconca/templates/base.mako:150
 msgid "Login"
@@ -228,7 +228,9 @@ msgstr "photo par camstatic"
 msgid ""
 "\n"
 "    Code of Conduct\n"
-msgstr "Code de Conduite"
+msgstr ""
+"\n"
+"    Code de conduite\n"
 
 #: pyconca/templates/conduct.mako:11
 msgid ""
@@ -904,6 +906,17 @@ msgid ""
 "           the venue - some of restaurants will be a little pricier.\n"
 "          "
 msgstr ""
+"\n"
+"           Un lunch sera fourni samedi et dimanche, donc"
+"laissez\n"
+"           nous savoir si vous avez des contraites diététiques. Pour vos "
+" autres repas,\n"
+"           il y a plusieurs possibilités sur la rue College et l'avenue Spadina."
+"\n"
+"           D'autres options existent sur les rues Elm et Baldwin, au sud du lieu "
+"de\n"
+"           conférence - certains restaurants sont plus dispendieux.\n"
+"          "
 
 #: pyconca/templates/venue.mako:110
 msgid ""
