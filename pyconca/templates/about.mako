@@ -1,7 +1,5 @@
 <%inherit file="event.mako"/>
 
-<%! from pyramid.i18n import ugettext %>
-
 <%block name="title">
     ${_(u"About")}
 </%block>
@@ -38,7 +36,6 @@
              the visibility of developers, organizations, and companies
              within the community.
             </%block>
-             ${about_goals_2()}
           </li>
           <li>
             ${_(u"Host an annual Canadian PyCon conference, starting now - 2012!")}
