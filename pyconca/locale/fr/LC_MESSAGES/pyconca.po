@@ -915,35 +915,42 @@ msgid ""
 "            to be notified when a hotel is chosen.\n"
 "          "
 msgstr ""
+"\n"
+"            Nous procédons à la recherche d'un hôtel à recommander. Contactez"
+" <a\n"
+"            href='mailto:hotels@pycon.ca'>hotels@pycon.ca</a> si vous "
+"souhaitez\n"
+"            être notifié lorsqu'un hôtel sera choisi.\n"
+"          "
 
 #: pyconca/templates/venue.mako:9
 msgid "Location"
-msgstr ""
+msgstr "Emplacement"
 
 #: pyconca/templates/venue.mako:18
 msgid "View the complete"
-msgstr ""
+msgstr "Voir complètement la"
 
 #: pyconca/templates/venue.mako:18
 msgid "PyCon Canada 2012 map"
-msgstr ""
+msgstr "carte de PyCon Canada 2012"
 
 #: pyconca/templates/venue.mako:22
 msgid "Getting to Toronto"
-msgstr ""
+msgstr "Se rendre à Toronto"
 
 #: pyconca/templates/venue.mako:53
 msgid "If you're coming from the US:"
-msgstr ""
+msgstr "Si vous arrivez des É.U.:"
 
 #: pyconca/templates/venue.mako:74
 msgid "Public Transit and Parking"
-msgstr ""
+msgstr "Transport public et stationnement"
 
 #: pyconca/templates/venue.mako:95
 msgid "Food"
-msgstr ""
+msgstr "Nourriture"
 
 #: pyconca/templates/venue.mako:108
 msgid "Hotel"
-msgstr ""
+msgstr "Hôtel"
