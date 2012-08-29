@@ -20,7 +20,7 @@ def extract_nodes(nodes, keywords, comment_tags, options):
                     child_nodes = None
                     yield (node.lineno, None,
                            node.nodes[0].content +
-                           ''.join(false_positives), [])
+                           u"".join(false_positives), [])
 
         if child_nodes:
             for extracted in extract_nodes(child_nodes, keywords, comment_tags,
