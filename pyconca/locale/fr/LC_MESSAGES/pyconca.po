@@ -552,6 +552,17 @@ msgid ""
 "PyCon in Canada.\n"
 "     "
 msgstr ""
+"\n"
+"       Vous êtes invités au lancement de la conférence, du 9 au 11 Novembre 2012, à Toronto,\n"
+"       pour se préparer à la première conférence <a href='http://us.pycon.org/'>PyCon Amérique du Nord</a>"
+"       à l'extérieur des États-Unis - \n"
+"       <a href='http://www.newswire.ca/en/story/731987/montreal-chosen-to-"
+"welcome-over-1-500-python-programmers-for-the-world-s-most-important-"
+"conference-on-the-subject/'>\n"
+"       Montréal en 2014 et en 2015!</a>\n"
+"       Et quand ce sera fait, gardons le momentum en organisant une conférence
+"       annuelle PyCon au Canada.\n"
+"       "
 
 #: pyconca/templates/index.mako:125
 msgid ""
@@ -563,6 +574,12 @@ msgid ""
 "       conference too, so you can also send us sprint ideas.\n"
 "      "
 msgstr ""
+"\n"
+"       Partager ses connaissances et ses idées. Soumettre une proposition pour "
+"une présentation ou\n"
+"       un tutoriel d'ici au 1er Octobre à organizers@pycon.ca. Nous allons sprinter"
+"       à la conférence aussi, alors envoyez nous vos idées de sprints.\n"
+"       "
 
 #: pyconca/templates/index.mako:145
 msgid ""
@@ -576,6 +593,11 @@ msgid ""
 "      speakers, one by one, over the coming weeks. Check them out:\n"
 "      "
 msgstr ""
+"\n"
+"      Un des buts de PyCon Canada est d'amener des experts de l'ensemble de la
+"communité Python, au Canada; vous donner l'opportunité d'être inspiré et d'apprendre
+"       des meilleurs! D'être excité, nous annoncerons nos présentateurs vedettes, un
+        par un, durant les prochaines semaines. Restez à l'affût:
 
 #: pyconca/templates/index.mako:167
 msgid ""
@@ -584,9 +606,15 @@ msgid ""
 " A short\n"
 "      walk from the subway, so when you aren't busy coding or chatting "
 "with your\n"
-"      olleagues you've got lots of stuff to explore nearby.\n"
+"      colleagues you've got lots of stuff to explore nearby.\n"
 "      "
 msgstr ""
+"\n"
+"      Soyez là du 9 au 11 Novembre 2012, au Beverley Halls dans le centre-ville "
+"de Toronto.\n"
+"      À une petite marche d'un métro, donc lorsque vous ne serez pas occupés à coder"
+"      ou à discuter avec vos collègues, vous aurez beaucoup de choses à explorer.\n"
+"      "
 
 #: pyconca/templates/index.mako:187
 msgid ""
@@ -598,6 +626,13 @@ msgid ""
 "      night. Sprint or attend talks and tutorials on Sunday.\n"
 "      "
 msgstr ""
+"\n"
+"      Le plaisirs commence le vendredi avec une soirée de réseautage."
+"      Nourrissez votre cerveau avec les présentations le Samedi, et si"
+"      votre équipe de sprint le désire, vous pourrez commencer."
+"      Le dimanche, vous pourrez sprinter ou assiter à des présentations"
+"      et des tutoriaux.\n"
+"      "
 
 #: pyconca/templates/index.mako:208
 msgid ""
@@ -609,6 +644,12 @@ msgid ""
 "available.\n"
 "      "
 msgstr ""
+"\n"
+"      Supportez la communauté Python canadienne et obtenez la reconnaissance, "
+"la promotion, et le bon karma pour vous aider à augmenter votre expertise et "
+"      votre visibilité de développeurs au Canada. De nombreuses options de "
+"de commandites sont disponibles.\n"
+"      "
 
 #: pyconca/templates/index.mako:17 pyconca/templates/index.mako:21
 msgid "Register"

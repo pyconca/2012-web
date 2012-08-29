@@ -167,7 +167,7 @@
       <%block filter="gettext">
       Be there November 9-11, 2012 at Beverley Halls in downtown Toronto. A short
       walk from the subway, so when you aren't busy coding or chatting with your
-      olleagues you've got lots of stuff to explore nearby.
+      colleagues you've got lots of stuff to explore nearby.
       </%block>
     </p>
 
