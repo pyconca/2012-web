@@ -68,28 +68,28 @@
                 <li class="nav-item">
                   <a class="nav-link" href="${request.application_url}/speakers">
                       <i class="icon-bullhorn icon-white nav-icon"></i>
-                      ${_("Speak")}
+                      ${_(u"Speak")}
                   </a>
                 </li>
 
                 <li class="nav-item">
                   <a class="nav-link" href="${request.application_url}/learn">
                       <i class="icon-pencil icon-white nav-icon"></i>
-                      ${_("Learn")}
+                      ${_(u"Learn")}
                   </a>
                 </li>
 
                 <li class="nav-item">
                   <a class="nav-link" href="${request.application_url}/sponsors">
                       <i class="icon-heart icon-white nav-icon"></i>
-                      ${_("Sponsor")}
+                      ${_(u"Sponsor")}
                   </a>
                 </li>
 
                 <li class="nav-item">
                   <a class="nav-link" href="${request.application_url}/contact">
                       <i class="icon-envelope icon-white nav-icon"></i>
-                      ${_("Contact")}
+                      ${_(u"Contact")}
                   </a>
                 </li>
 
@@ -105,26 +105,26 @@
                       <li>
                         <a class="nav-link"  href="${request.application_url}/talk">
                           <i class="icon-file nav-icon"></i>
-                          ${_("Talks")}
+                          ${_(u"Talks")}
                         </a>
                       </li>
                       <li>
                         <a class="nav-link"  href="${request.application_url}/user">
                           <i class="icon-th nav-icon"></i>
-                          ${_("Users")}
+                          ${_(u"Users")}
                         </a>
                       </li>
                       % else:
                       <li>
                         <a class="nav-link"  href="${request.application_url}/new/talk">
                           <i class="icon-bullhorn nav-icon"></i>
-                          ${_("Submit a Talk")}
+                          ${_(u"Submit a Talk")}
                         </a>
                       </li>
                       <li>
                         <a class="nav-link"  href="${request.application_url}/talk">
                           <i class="icon-briefcase nav-icon"></i>
-                          ${_("Your Talks")}
+                          ${_(u"Your Talks")}
                         </a>
                       </li>
                       % endif:
@@ -132,13 +132,13 @@
                       <li>
                         <a href="${request.application_url}/user/${logged_in}">
                           <i class="icon-cog nav-icon"></i>
-                          ${_("Your Profile")}
+                          ${_(u"Your Profile")}
                         </a>
                       </li>
                       <li>
                         <a class="nav-link" href="${request.application_url}/logout">
                           <i class="icon-remove nav-icon"></i>
-                          ${_("Logout")}
+                          ${_(u"Logout")}
                         </a>
                       </li>
                     </ul>
@@ -147,14 +147,14 @@
                   <li class="nav-item">
                     <a class="nav-link" href="${request.application_url}/login">
                         <i class="icon-user icon-white nav-icon"></i>
-                        ${_("Login")}
+                        ${_(u"Login")}
                     </a>
                   </li>
 
                   <li class="nav-item">
                     <a class="nav-link" href="${request.application_url}/new/user">
                         <i class="icon-star-empty icon-white nav-icon"></i>
-                        ${_("Sign Up")}
+                        ${_(u"Sign Up")}
                     </a>
                   </li>
                 % endif
@@ -185,11 +185,11 @@
             </li>
 
             <li class="footer-nav-link">
-              <a class="nav-link" href="${request.application_url}/contact">${_("Contact")}</a>
+              <a class="nav-link" href="${request.application_url}/contact">${_(u"Contact")}</a>
             </li>
 
             <li class="footer-nav-link">
-              <a class="nav-link" href="${request.application_url}/venue">${("Venue")}</a>
+              <a class="nav-link" href="${request.application_url}/venue">${(u"Venue")}</a>
             </li>
 
             <li class="footer-nav-link">
@@ -197,15 +197,15 @@
             </li>
 
             <li class="footer-nav-link">
-              <a class="nav-link" href="${request.application_url}/speakers">${_("Speak")}</a>
+              <a class="nav-link" href="${request.application_url}/speakers">${_(u"Speak")}</a>
             </li>
 
             <li class="footer-nav-link">
-              <a class="nav-link" href="${request.application_url}/learn">${_("Learn")}</a>
+              <a class="nav-link" href="${request.application_url}/learn">${_(u"Learn")}</a>
             </li>
 
             <li class="footer-nav-link">
-              <a class="nav-link" href="${request.application_url}/sponsors">${_("Sponsor")}</a>
+              <a class="nav-link" href="${request.application_url}/sponsors">${_(u"Sponsor")}</a>
             </li>
 
             <li class="footer-nav-link">
@@ -225,17 +225,17 @@
       <div id="footer-row" class="row-fluid visible-phone">
          <div class="main-row">
           <div class="span12">
-            <a class="nav-link" href="${request.application_url}">${_("Home")}</a>
-            <a class="nav-link pull-right" href="${request.application_url}/speakers">${_("Speak")}</a>
+            <a class="nav-link" href="${request.application_url}">${_(u"Home")}</a>
+            <a class="nav-link pull-right" href="${request.application_url}/speakers">${_(u"Speak")}</a>
             <br>
-            <a class="nav-link" href="${request.application_url}/venue">${_("Venue")}</a>
-            <a class="nav-link pull-right" href="${request.application_url}/learn">${_("Learn")}</a>
+            <a class="nav-link" href="${request.application_url}/venue">${_(u"Venue")}</a>
+            <a class="nav-link pull-right" href="${request.application_url}/learn">${_(u"Learn")}</a>
             <br>
             <a class="nav-link" href="${request.application_url}/about">${_("About")}</a>
-            <a class="nav-link pull-right" href="${request.application_url}/schedule">${_("Schedule")}</a>
+            <a class="nav-link pull-right" href="${request.application_url}/schedule">${_(u"Schedule")}</a>
             <br>
-            <a class="nav-link" href="${request.application_url}/contact">${_("Contact")}</a>
-            <a class="nav-link pull-right" href="${request.application_url}/sponsors">${_("Sponsor")}</a>
+            <a class="nav-link" href="${request.application_url}/contact">${_(u"Contact")}</a>
+            <a class="nav-link pull-right" href="${request.application_url}/sponsors">${_(u"Sponsor")}</a>
           </div>
         </div>
       </div>
