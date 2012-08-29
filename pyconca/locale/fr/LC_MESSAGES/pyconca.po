@@ -500,7 +500,7 @@ msgstr "Commanditaires"
 
 #: pyconca/templates/generic.mako:10 pyconca/templates/index.mako:13
 msgid "PyCon Canada"
-msgstr "PyCOn Canada"
+msgstr "PyCon Canada"
 
 #: pyconca/templates/generic.mako:11 pyconca/templates/index.mako:14
 msgid "Toronto, November 9th - 11th 2012"
