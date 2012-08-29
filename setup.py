@@ -19,6 +19,8 @@ requires = [
     'pytz',
     'zope.sqlalchemy',
     'waitress',
+    'webtest',
+    'nose',
     ]
 
 setup(name='pyconca',
@@ -40,8 +42,6 @@ setup(name='pyconca',
       zip_safe=False,
       test_suite='nose.collector',
       tests_require=[
-        'webtest',
-        'nose',
       ],
       install_requires=requires,
       entry_points="""\
