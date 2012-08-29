@@ -49,6 +49,7 @@ setup(name='pyconca',
       main = pyconca:main
       [console_scripts]
       initialize_pyconca_db = pyconca.scripts.initializedb:main
+      pyconca_create_tables = pyconca.scripts.create_tables:main
       """,
       )
 
