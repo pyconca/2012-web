@@ -55,6 +55,15 @@
                 <img src="${request.static_url("pyconca:static/psf-logo-317x71-alpha.png")}"
                      alt="">
               </a>
+              
+             <br>
+             <br>
+
+              <a href="http://www.heroku.com">
+                <img src="${request.static_url("pyconca:static/heroku-logo-light-234x60.png")}"
+                     alt="">
+              </a>
+
 
             </div>
           </div>
