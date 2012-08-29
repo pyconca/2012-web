@@ -121,10 +121,3 @@ class BaseApi(Context):
             status=status,
             body=json.dumps(self.body, indent=2, sort_keys=True),
             content_type='application/json')
-
-    #--------- permission unmet
-
-    @forbidden_view_config(renderer='json',
-                           custom_predicates=(is_api_request,))
-    def _forbidden(self):
-        return self._respond(HTTP_STATUS_403)

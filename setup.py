@@ -20,7 +20,9 @@ requires = [
     'zope.sqlalchemy',
     'waitress',
     'Babel',
-    'lingua'
+    'lingua',
+    'webtest',
+    'nose',
     ]
 
 setup(name='pyconca',
@@ -42,8 +44,6 @@ setup(name='pyconca',
       zip_safe=False,
       test_suite='nose.collector',
       tests_require=[
-        'webtest',
-        'nose',
       ],
       install_requires=requires,
       message_extractors = { '.': [
@@ -54,5 +54,6 @@ setup(name='pyconca',
       main = pyconca:main
       [console_scripts]
       initialize_pyconca_db = pyconca.scripts.initializedb:main
+      pyconca_create_tables = pyconca.scripts.create_tables:main
       """,
       )
