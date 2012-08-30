@@ -77,6 +77,13 @@
                   width="200px;" height="100px;" class="black-and-white" alt="">
              </a>
             </div>
+            
+            <div class="item">
+              <a href="http://heroku.com">
+                <img src="${request.static_url("pyconca:static/heroku-logo-light-234x60.png")}"
+                     class="black-and-white" alt="">
+              </a>
+            </div>
 
           </div>
         </div>
