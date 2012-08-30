@@ -18,7 +18,7 @@
         <p>
           <a href="http://500px.com/" style="border-bottom: none;">
             <img src="${request.static_url("pyconca:static/500px_logo_color.png")}"
-                 width="200px;" height="100px;" alt="500px Logo">
+                 width="200" height="100" alt="500px">
           </a>
         </p>
     </div>
@@ -28,7 +28,7 @@
         <p>
           <a href="http://www.freshbooks.com/" style="border-bottom: none;">
             <img src="${request.static_url("pyconca:static/freshbooks.png")}"
-                 width="200" height="104" alt="FreshBooks Cloud Accounting Logo">
+                 width="200" height="104" alt="FreshBooks">
           </a>
         </p>
 
@@ -37,7 +37,7 @@
         <p>
           <a href="http://waveaccounting.com/" style="border-bottom: none;">
             <img src="${request.static_url("pyconca:static/thumb-logo-wave-accounting.png")}"
-                 alt="Wave Accounting Logo">
+                 width="200" height="64" alt="Wave Accounting">
           </a>
         </p>
     </div>
@@ -48,7 +48,7 @@
         <p>
           <a href="http://www.python.org/psf/" style="border-bottom: none;">
             <img src="${request.static_url("pyconca:static/psf-logo-317x71-alpha.png")}"
-                 width="317px;" height="71px;" alt="Python Software Foundation Logo">
+                 width="317" height="71" alt="Python Software Foundation">
           </a>
         </p>
     </div>
@@ -59,7 +59,7 @@
         <p>
           <a href="http://vmfarms.com/" style="border-bottom: none;">
             <img src="${request.static_url("pyconca:static/vmfarms-logo.png")}"
-                 width="200px;" height="100px;" alt="VM Farms Logo">
+                 width="200" height="100" alt="VM Farms">
           </a>
         </p>
     </div>
