@@ -23,6 +23,7 @@ requires = [
     'lingua',
     'webtest',
     'nose',
+    'unidecode',
     ]
 
 setup(name='pyconca',
