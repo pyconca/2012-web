@@ -16,29 +16,20 @@
     <div class="row-fluid content-section">
         <h1 class="header">Gold Sponsor</h1>
         <p>
-          <a href="http://500px.com/" style="border-bottom: none;">
-            <img src="${request.static_url("pyconca:static/500px_logo_color.png")}"
-                 width="200" height="100" alt="500px">
-          </a>
+            <%include file="pyconca:templates/sponsors/500px.mako"/>
         </p>
     </div>
 
     <div class="row-fluid content-section">
         <h1 class="header">Silver Sponsors</h1>
         <p>
-          <a href="http://www.freshbooks.com/" style="border-bottom: none;">
-            <img src="${request.static_url("pyconca:static/freshbooks.png")}"
-                 width="200" height="104" alt="FreshBooks">
-          </a>
+            <%include file="pyconca:templates/sponsors/freshbooks.mako"/>
         </p>
 
         <br>
 
         <p>
-          <a href="http://waveaccounting.com/" style="border-bottom: none;">
-            <img src="${request.static_url("pyconca:static/thumb-logo-wave-accounting.png")}"
-                 width="200" height="64" alt="Wave Accounting">
-          </a>
+            <%include file="pyconca:templates/sponsors/wave.mako"/>
         </p>
     </div>
 
@@ -46,10 +37,7 @@
         <h1 class="header">Venue Sponsor</h1>
         <br>
         <p>
-          <a href="http://www.python.org/psf/" style="border-bottom: none;">
-            <img src="${request.static_url("pyconca:static/psf-logo-317x71-alpha.png")}"
-                 width="317" height="71" alt="Python Software Foundation">
-          </a>
+            <%include file="pyconca:templates/sponsors/psf.mako"/>
         </p>
     </div>
 
@@ -57,10 +45,7 @@
         <h1 class="header">Hosting Sponsor</h1>
         <br>
         <p>
-          <a href="http://vmfarms.com/" style="border-bottom: none;">
-            <img src="${request.static_url("pyconca:static/vmfarms-logo.png")}"
-                 width="200" height="100" alt="VM Farms">
-          </a>
+            <%include file="pyconca:templates/sponsors/vmfarms.mako"/>
         </p>
     </div>
 

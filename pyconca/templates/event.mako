@@ -27,34 +27,28 @@
         <div id="sponsors_carousel" class="carousel slide side-block">
           <div class="carousel-inner">
             <div class="active item">
-              <a href="http://500px.com/">
-                <img src="${request.static_url("pyconca:static/500px_logo_color.png")}"
-                     width="200px;" height="100px;" alt="">
-              </a>
+
+             <%include file="pyconca:templates/sponsors/500px.mako"/>
 
              <br>
 
-             <a href="http://www.freshbooks.com/">
-               <img src="${request.static_url("pyconca:static/freshbooks.gif")}"
-                    width="200px;" height="100px;" alt="">
-             </a>
+             <%include file="pyconca:templates/sponsors/freshbooks.mako"/>
 
              <br>
              <br>
              <br>
 
-              <a href="http://waveaccounting.com/">
-                <img src="${request.static_url("pyconca:static/thumb-logo-wave-accounting.png")}"
-                     alt="">
-              </a>
+             <%include file="pyconca:templates/sponsors/wave.mako"/>
 
              <br>
              <br>
 
-              <a href="http://www.python.org/psf/">
-                <img src="${request.static_url("pyconca:static/psf-logo-317x71-alpha.png")}"
-                     alt="">
-              </a>
+             <%include file="pyconca:templates/sponsors/psf.mako"/>
+
+             <br>
+             <br>
+
+             <%include file="pyconca:templates/sponsors/vmfarms.mako"/>
 
             </div>
           </div>

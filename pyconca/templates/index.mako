@@ -44,38 +44,23 @@
           <div class="carousel-inner" style="opacity: 0.6; height: 100px;">
 
             <div class="active item">
-              <a href="http://500px.com/">
-                <img src="${request.static_url("pyconca:static/500px_logo_color.png")}"
-                     width="200px;" height="100px;" class="black-and-white" alt="">
-              </a>
+              <%include file="pyconca:templates/sponsors/500px.mako" args="img_class='black-and-white'"/>
             </div>
 
             <div class="item">
-             <a href="http://www.freshbooks.com/">
-                <img src="${request.static_url("pyconca:static/freshbooks.gif")}"
-                  width="200px;" height="100px;" class="black-and-white" alt="">
-             </a>
+            <%include file="pyconca:templates/sponsors/freshbooks.mako" args="img_class='black-and-white'"/>
             </div>
 
             <div class="item">
-              <a href="http://waveaccounting.com/">
-                <img src="${request.static_url("pyconca:static/thumb-logo-wave-accounting.png")}"
-                     class="black-and-white" alt="">
-              </a>
+            <%include file="pyconca:templates/sponsors/wave.mako" args="img_class='black-and-white'"/>
             </div>
 
             <div class="item">
-              <a href="http://www.python.org/psf/">
-                <img src="${request.static_url("pyconca:static/psf-logo-317x71-alpha.png")}"
-                     width="317px;" height="71px;" class="black-and-white" alt="">
-              </a>
+            <%include file="pyconca:templates/sponsors/psf.mako" args="img_class='black-and-white'"/>
             </div>
 
             <div class="item">
-             <a href="http://vmfarms.com/">
-                <img src="${request.static_url("pyconca:static/vmfarms-logo.png")}"
-                  width="200px;" height="100px;" class="black-and-white" alt="">
-             </a>
+            <%include file="pyconca:templates/sponsors/vmfarms.mako" args="img_class='black-and-white'"/>
             </div>
 
           </div>
