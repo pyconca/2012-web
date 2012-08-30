@@ -173,7 +173,7 @@ msgstr "Apprendre"
 #: pyconca/templates/base.mako:238 pyconca/templates/index.mako:18
 #: pyconca/templates/index.mako:22
 msgid "Sponsor"
-msgstr "Commanditaire"
+msgstr "Commanditer"
 
 #: pyconca/templates/base.mako:92 pyconca/templates/base.mako:188
 #: pyconca/templates/base.mako:237 pyconca/templates/contact.mako:4
@@ -217,8 +217,8 @@ msgid "Français"
 msgstr "English"
 
 #: pyconca/templates/base.mako:246
-msgid "&copy; PyCon Canada 2012"
-msgstr "&copy; PyCon Canada 2012"
+msgid "© PyCon Canada 2012"
+msgstr "© PyCon Canada 2012"
 
 #: pyconca/templates/base.mako:250
 msgid "photo by camstatic"
@@ -527,7 +527,7 @@ msgstr "Liens rapides"
 #: pyconca/templates/event.mako:26 pyconca/templates/index.mako:43
 #: pyconca/templates/index.mako:204 pyconca/templates/sponsors.mako:4
 msgid "Sponsors"
-msgstr "Commanditaires"
+msgstr "Sponsors"
 
 #: pyconca/templates/generic.mako:10 pyconca/templates/index.mako:13
 msgid "PyCon Canada"

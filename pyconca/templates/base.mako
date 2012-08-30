@@ -243,7 +243,7 @@
       <div id="footer-row" class="row-fluid">
          <div class="main-row">
           <div class="span12" style="text-align: center;">
-            <strong>${_(u"&copy; PyCon Canada 2012")}</strong>
+            <strong>${_(u"© PyCon Canada 2012")}</strong>
               <br>
               <a style="color: #aaa;"
                  href="http://www.flickr.com/photos/camstatic/5535319505">

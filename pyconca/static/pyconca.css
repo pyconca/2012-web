@@ -48,7 +48,7 @@ body {
 }
 
 .nav-item {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .main-body {
@@ -174,14 +174,14 @@ body {
 }
 
 .circle {
-  width: 140px;
-  height: 140px;
-  line-height: 140px;
-  border-radius: 70px;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  border-radius: 75px;
   color: #eee;
-  -moz-border-radius: 70px;
-  -webkit-border-radius: 70px;
-  -khtml-border-radius: 70px;
+  -moz-border-radius: 75px;
+  -webkit-border-radius: 75px;
+  -khtml-border-radius: 75px;
   font-size: 25px;
   font-weight: bold;
   text-align: center;
