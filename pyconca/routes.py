@@ -4,6 +4,7 @@ def _setup_routes(config):
     config.add_route('logout', '/logout')
     config.add_route('forgot', '/forgot')
     config.add_route('about', '/about')
+    config.add_route('locale', '/locale')
     config.add_route('conduct', '/conduct')
     config.add_route('contact', '/contact')
     config.add_route('learn', '/learn')
