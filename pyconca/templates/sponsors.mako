@@ -27,8 +27,8 @@
         <h1 class="header">Silver Sponsors</h1>
         <p>
           <a href="http://www.freshbooks.com/" style="border-bottom: none;">
-            <img src="${request.static_url("pyconca:static/freshbooks.gif")}"
-                 width="200px;" height="100px;" alt="">
+            <img src="${request.static_url("pyconca:static/freshbooks.png")}"
+                 width="200" height="104" alt="FreshBooks Cloud Accounting Logo">
           </a>
         </p>
 
