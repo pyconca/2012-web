@@ -1,0 +1,921 @@
+# English translations for pyconca.
+# Copyright (C) 2012 ORGANIZATION
+# This file is distributed under the same license as the pyconca project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pyconca 0.0\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2012-08-27 08:11-0400\n"
+"PO-Revision-Date: 2012-08-15 22:01-0400\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+
+#: pyconca/templates/about.mako:22
+msgid ""
+"\n"
+"              Support the efforts of\n"
+"              <a "
+"href='http://montrealpython.org/2011/03/pycon-2014-and-2015-in-"
+"montreal/'>\n"
+"                Montreal Python</a> as they prepare to host\n"
+"              <a href='http://us.pycon.org/'>PyCon North America</a>\n"
+"              in 2014 and 2015. This is the first time\n"
+"              that the main PyCon conference is going to be outside of "
+"the US.\n"
+"              Let's take this opportunity to showcase the Canadian Python"
+"\n"
+"              community, and step up to the challenge as speakers and "
+"volunteers.\n"
+"            "
+msgstr ""
+
+#: pyconca/templates/about.mako:34
+msgid ""
+"\n"
+"             Strengthen the Canadian Python community by providing more\n"
+"             opportunities for us to share knowledge and ideas, encourage"
+"\n"
+"             support and education for speaking at conferences, and "
+"increase\n"
+"             the visibility of developers, organizations, and companies\n"
+"             within the community.\n"
+"            "
+msgstr ""
+
+#: pyconca/templates/about.mako:49
+msgid ""
+"\n"
+"          PyCon Canada is entirely run by volunteers who are passionate "
+"about\n"
+"          these goals. We hope to see you at the 2012 conference!\n"
+"          "
+msgstr ""
+
+#: pyconca/templates/about.mako:59
+msgid ""
+"\n"
+"        Please familiarize yourself with the\n"
+"        <a href=\"/conduct\">Code of Conduct</a>\n"
+"        and do your part to make sure PyCon Canada doesn't end up on\n"
+"        Hacker News for all the wrong reasons.\n"
+"        "
+msgstr ""
+
+#: pyconca/templates/about.mako:71
+msgid ""
+"\n"
+"        Made in Canada, with help from the greater Python community.\n"
+"        <strong>Thank-you for your contribution!</strong>\n"
+"        "
+msgstr ""
+
+#: pyconca/templates/about.mako:130
+msgid ""
+"\n"
+"      Have we missed thanking someone? Don't be shy &mdash; let us know:\n"
+"      <a href=\"mailto:organizers@pycon.ca\">organizers@pycon.ca</a>.\n"
+"      "
+msgstr ""
+
+#: pyconca/templates/about.mako:6 pyconca/templates/base.mako:50
+#: pyconca/templates/base.mako:184 pyconca/templates/base.mako:234
+#: pyconca/templates/index.mako:97
+msgid "About"
+msgstr ""
+
+#: pyconca/templates/about.mako:11
+msgid "What is PyCon Canada?"
+msgstr ""
+
+#: pyconca/templates/about.mako:13
+msgid "PyCon Canada is an initiative to strengthen the Canadian Python community."
+msgstr ""
+
+#: pyconca/templates/about.mako:17
+msgid "Our main goals:"
+msgstr ""
+
+#: pyconca/templates/about.mako:44
+msgid "Host an annual Canadian PyCon conference, starting now - 2012!"
+msgstr ""
+
+#: pyconca/templates/about.mako:57 pyconca/templates/conduct.mako:9
+msgid "Code of Conduct"
+msgstr ""
+
+#: pyconca/templates/about.mako:69
+msgid "Made in Canada!"
+msgstr ""
+
+#: pyconca/templates/base.mako:43 pyconca/templates/base.mako:180
+#: pyconca/templates/base.mako:228
+msgid "Home"
+msgstr ""
+
+#: pyconca/templates/base.mako:57 pyconca/templates/base.mako:231
+#: pyconca/templates/index.mako:163 pyconca/templates/venue.mako:4
+msgid "Venue"
+msgstr ""
+
+#: pyconca/templates/base.mako:64 pyconca/templates/base.mako:196
+#: pyconca/templates/base.mako:235 pyconca/templates/index.mako:183
+#: pyconca/templates/schedule.mako:4
+msgid "Schedule"
+msgstr ""
+
+#: pyconca/templates/base.mako:71 pyconca/templates/base.mako:200
+#: pyconca/templates/base.mako:229 pyconca/templates/index.mako:121
+msgid "Speak"
+msgstr ""
+
+#: pyconca/templates/base.mako:78 pyconca/templates/base.mako:204
+#: pyconca/templates/base.mako:232 pyconca/templates/index.mako:141
+msgid "Learn"
+msgstr ""
+
+#: pyconca/templates/base.mako:85 pyconca/templates/base.mako:208
+#: pyconca/templates/base.mako:238 pyconca/templates/index.mako:18
+#: pyconca/templates/index.mako:22
+msgid "Sponsor"
+msgstr ""
+
+#: pyconca/templates/base.mako:92 pyconca/templates/base.mako:188
+#: pyconca/templates/base.mako:237 pyconca/templates/contact.mako:4
+msgid "Contact"
+msgstr ""
+
+#: pyconca/templates/base.mako:108
+msgid "Talks"
+msgstr ""
+
+#: pyconca/templates/base.mako:114
+msgid "Users"
+msgstr ""
+
+#: pyconca/templates/base.mako:121
+msgid "Submit a Talk"
+msgstr ""
+
+#: pyconca/templates/base.mako:127
+msgid "Your Talks"
+msgstr ""
+
+#: pyconca/templates/base.mako:135
+msgid "Your Profile"
+msgstr ""
+
+#: pyconca/templates/base.mako:141
+msgid "Logout"
+msgstr ""
+
+#: pyconca/templates/base.mako:150
+msgid "Login"
+msgstr ""
+
+#: pyconca/templates/base.mako:157
+msgid "Sign Up"
+msgstr ""
+
+#: pyconca/templates/base.mako:212
+msgid "Français"
+msgstr ""
+
+#: pyconca/templates/base.mako:246
+msgid "&copy; PyCon Canada 2012"
+msgstr ""
+
+#: pyconca/templates/base.mako:250
+msgid "photo by camstatic"
+msgstr ""
+
+#: pyconca/templates/conduct.mako:3
+msgid ""
+"\n"
+"    Code of Conduct\n"
+msgstr ""
+
+#: pyconca/templates/conduct.mako:11
+msgid ""
+"\n"
+"            PyCon Canada is a community conference intended for "
+"networking and\n"
+"            collaboration in the developer community.\n"
+"            <br>\n"
+"            <br>\n"
+"\n"
+"            We value the participation of each member of the Python "
+"community\n"
+"            and want all attendees to have an enjoyable and fulfilling\n"
+"            experience. Accordingly, all attendees are expected to show\n"
+"            <strong>respect</strong> and <strong>courtesy</strong>\n"
+"            to other attendees throughout the conference and at\n"
+"            all conference events, whether officially sponsored by PyCon\n"
+"            Canada or not.\n"
+"            <br>\n"
+"            <br>\n"
+"\n"
+"            To make clear what is expected, all delegates, speakers, "
+"exhibitors\n"
+"            and volunteers at any PyCon Canada event are required to "
+"conform\n"
+"            to the following Code of Conduct. Organizers will enforce "
+"this\n"
+"            code throughout the event.\n"
+"          "
+msgstr ""
+
+#: pyconca/templates/conduct.mako:36
+msgid ""
+"\n"
+"            PyCon Canada is dedicated to providing a harassment-free "
+"conference\n"
+"            experience for everyone, regardless of gender, sexual "
+"orientation,\n"
+"            disability, physical appearance, body size, race, or "
+"religion. We do\n"
+"            not tolerate harassment of conference participants in any "
+"form.\n"
+"            <br>\n"
+"            <br>\n"
+"\n"
+"            All communication should be appropriate for a professional "
+"audience\n"
+"            including people of many different backgrounds. Sexual "
+"language and\n"
+"            imagery is not appropriate for any conference venue, "
+"including talks.\n"
+"            <br>\n"
+"            <br>\n"
+"\n"
+"            <strong>Be kind</strong> to others. Do not insult or put down"
+"\n"
+"            other attendees. Behave professionally. Remember that "
+"harassment\n"
+"            and sexist, racist, or exclusionary jokes are not appropriate"
+" for\n"
+"            PyCon Canada.\n"
+"            <br>\n"
+"            <br>\n"
+"\n"
+"            Attendees violating these rules may be asked to leave the "
+"conference\n"
+"            without a refund at the sole discretion of the conference "
+"organizers.\n"
+"            <br>\n"
+"            <br>\n"
+"\n"
+"            Thank you for helping make this a welcoming, friendly event "
+"for all.\n"
+"          "
+msgstr ""
+
+#: pyconca/templates/conduct.mako:68
+msgid ""
+"\n"
+"            Harassment includes offensive verbal comments related to "
+"gender,\n"
+"            sexual orientation, disability, physical appearance, body "
+"size, race,\n"
+"            religion, sexual images in public spaces, deliberate "
+"intimidation,\n"
+"            stalking, following, harassing photography or recording, "
+"sustained\n"
+"            disruption of talks or other events, inappropriate physical "
+"contact,\n"
+"            and unwelcome sexual attention.\n"
+"            <br>\n"
+"            <br>\n"
+"\n"
+"            Participants asked to stop any harassing behavior are "
+"expected to\n"
+"            comply immediately.\n"
+"            <br>\n"
+"            <br>\n"
+"\n"
+"            Exhibitors in the expo hall, sponsor or vendor booths, or "
+"similar\n"
+"            activities are also subject to the anti-harassment policy. In"
+"\n"
+"            particular, exhibitors should not use sexualized images, "
+"activities,\n"
+"            or other material. Booth staff (including volunteers) should "
+"not use\n"
+"            sexualized clothing/uniforms/costumes, or otherwise create a\n"
+"            sexualized environment.\n"
+"            <br>\n"
+"            <br>\n"
+"\n"
+"            Be careful in the words that you choose. Remember that "
+"sexist,\n"
+"            racist, and other exclusionary jokes can be offensive to "
+"those\n"
+"            around you.\n"
+"            <br>\n"
+"            <br>\n"
+"\n"
+"            If a participant engages in behavior that violates this code "
+"of\n"
+"            conduct, the conference organizers may take any action they "
+"deem\n"
+"            appropriate, including warning the offender or expulsion from"
+" the\n"
+"            conference with no refund.\n"
+"          "
+msgstr ""
+
+#: pyconca/templates/conduct.mako:107
+msgid ""
+"\n"
+"            If you are being harassed, notice that someone else is being\n"
+"            harassed, or have any other concerns, please contact a member"
+" of\n"
+"            conference board - Diana Clarke, Nicola Yap, or David "
+"Wolever.\n"
+"            <br>\n"
+"            <br>\n"
+"\n"
+"            If the matter is especially urgent, please call/contact any "
+"of\n"
+"            these individuals:\n"
+"          "
+msgstr ""
+
+#: pyconca/templates/conduct.mako:123
+msgid ""
+"\n"
+"              Conference staff will be happy to help participants contact"
+"\n"
+"              hotel/venue security or local law enforcement, provide "
+"escorts,\n"
+"              or otherwise assist those experiencing harassment to feel "
+"safe\n"
+"              for the duration of the conference. We value your "
+"attendance.\n"
+"            "
+msgstr ""
+
+#: pyconca/templates/conduct.mako:133
+msgid ""
+"\n"
+"            This code of conduct is largely based on the PyCon USA\n"
+"            <a href=\"https://us.pycon.org/2013/about/code-of-conduct/\">"
+"\n"
+"                Conference Code of Conduct\n"
+"            </a>.\n"
+"          "
+msgstr ""
+
+#: pyconca/templates/conduct.mako:34
+msgid "The Short Version"
+msgstr ""
+
+#: pyconca/templates/conduct.mako:66
+msgid "The Longer Version"
+msgstr ""
+
+#: pyconca/templates/conduct.mako:105
+msgid "Contact Information"
+msgstr ""
+
+#: pyconca/templates/contact.mako:11
+msgid ""
+"\n"
+"           The majority of our discussion occurs on the mailing list\n"
+"           <a "
+"href='mailto:pyconca@googlegroups.com'>pyconca@googlegroups.com</a>\n"
+"           (<a "
+"href='https://groups.google.com/forum/?fromgroups#!forum/pyconca'>archives</a>)."
+"\n"
+"           The organizing committee can be contacted privately at\n"
+"           <a href='mailto:organizers@pycon.ca'>organizers@pycon.ca</a>, "
+"and the\n"
+"           board (Diana Clarke, Nicola Yap, and David Wolever) can be "
+"contacted\n"
+"           privately at <a "
+"href='mailto:board@pycon.ca'>board@pycon.ca</a>.\n"
+"          "
+msgstr ""
+
+#: pyconca/templates/contact.mako:9
+msgid "Contact Us"
+msgstr ""
+
+#: pyconca/templates/contact.mako:22
+msgid "We are also online at:"
+msgstr ""
+
+#: pyconca/templates/event.mako:10
+msgid "PyCon Canada 2012"
+msgstr ""
+
+#: pyconca/templates/event.mako:11
+msgid "Toronto, November 9th - 11th"
+msgstr ""
+
+#: pyconca/templates/event.mako:22
+msgid "Quick Links"
+msgstr ""
+
+#: pyconca/templates/event.mako:26 pyconca/templates/index.mako:43
+#: pyconca/templates/index.mako:204 pyconca/templates/sponsors.mako:4
+msgid "Sponsors"
+msgstr ""
+
+#: pyconca/templates/generic.mako:10 pyconca/templates/index.mako:13
+msgid "PyCon Canada"
+msgstr ""
+
+#: pyconca/templates/generic.mako:11 pyconca/templates/index.mako:14
+msgid "Toronto, November 9th - 11th 2012"
+msgstr ""
+
+#: pyconca/templates/index.mako:101
+msgid ""
+"\n"
+"      You're invited to a kickoff conference, Nov 9-11 2012, in Toronto,\n"
+"      getting us warmed up for the first\n"
+"      <a href='http://us.pycon.org/'>PyCon North America</a> conference "
+"outside the US -\n"
+"      <a href='http://www.newswire.ca/en/story/731987/montreal-chosen-to-"
+"welcome-over-1-500-python-programmers-for-the-world-s-most-important-"
+"conference-on-the-subject/'>\n"
+"      Montreal in 2014 and 2015!</a>\n"
+"      And when that's done, let's keep the momentum going with an annual "
+"PyCon in Canada.\n"
+"     "
+msgstr ""
+
+#: pyconca/templates/index.mako:125
+msgid ""
+"\n"
+"       Share your knowledge and cool ideas. Submit your proposal for a "
+"talk or\n"
+"       tutorial by October 1st to organizers@pycon.ca. We'll be sprinting"
+" at the\n"
+"       conference too, so you can also send us sprint ideas.\n"
+"      "
+msgstr ""
+
+#: pyconca/templates/index.mako:145
+msgid ""
+"\n"
+"      One of PyCon Canada's goals is to bring experts from the greater "
+"Python\n"
+"      community to Canada; giving you the opportunity to be inspired and "
+"learn\n"
+"      from the best! To get you excited, we'll be announcing our featured"
+"\n"
+"      speakers, one by one, over the coming weeks. Check them out:\n"
+"      "
+msgstr ""
+
+#: pyconca/templates/index.mako:167
+msgid ""
+"\n"
+"      Be there November 9-11, 2012 at Beverley Halls in downtown Toronto."
+" A short\n"
+"      walk from the subway, so when you aren't busy coding or chatting "
+"with your\n"
+"      olleagues you've got lots of stuff to explore nearby.\n"
+"      "
+msgstr ""
+
+#: pyconca/templates/index.mako:187
+msgid ""
+"\n"
+"      Start the fun Friday evening with a mix and mingle. Feed your brain"
+" at\n"
+"      talks on Saturday, and if your sprint team is eager, you can start "
+"that\n"
+"      night. Sprint or attend talks and tutorials on Sunday.\n"
+"      "
+msgstr ""
+
+#: pyconca/templates/index.mako:208
+msgid ""
+"\n"
+"      Support the Canadian Python community and get recognition, "
+"promotion, and\n"
+"      good karma for helping to increase the expertise and visibility of\n"
+"      developers across Canada. Various sponsorship options are "
+"available.\n"
+"      "
+msgstr ""
+
+#: pyconca/templates/index.mako:17 pyconca/templates/index.mako:21
+msgid "Register"
+msgstr ""
+
+#: pyconca/templates/index.mako:112 pyconca/templates/index.mako:133
+#: pyconca/templates/index.mako:154 pyconca/templates/index.mako:175
+#: pyconca/templates/index.mako:195 pyconca/templates/index.mako:216
+msgid "More >>"
+msgstr ""
+
+#: pyconca/templates/learn.mako:56
+msgid ""
+"\n"
+"         Based in Halifax, Alex 'Sandy' Walsh is the owner of Dark Secret"
+"\n"
+"         Software. He has been a senior professional developer for nearly"
+" 20\n"
+"         years and a Pythonista for 10 years. He is a core developer on "
+"the\n"
+"         <a href=\"http://www.openstack.org/\">OpenStack</a> project with"
+"\n"
+"         Rackspace. You can learn more about him at\n"
+"         <a href=\"http://www.sandywalsh.com/\">sandywalsh.com</a> or "
+"follow\n"
+"         <a "
+"href=\"https://twitter.com/TheSandyWalsh\">@TheSandyWalsh</a>.\n"
+"        "
+msgstr ""
+
+#: pyconca/templates/learn.mako:4
+msgid "Confirmed Speakers"
+msgstr ""
+
+#: pyconca/templates/learn.mako:18
+msgid "Mike Bayer is the creator of"
+msgstr ""
+
+#: pyconca/templates/learn.mako:19 pyconca/templates/learn.mako:42
+msgid " and "
+msgstr ""
+
+#: pyconca/templates/learn.mako:22
+msgid "He tweets: "
+msgstr ""
+
+#: pyconca/templates/learn.mako:23
+msgid "He codes: "
+msgstr ""
+
+#: pyconca/templates/learn.mako:24
+msgid "He blogs: "
+msgstr ""
+
+#: pyconca/templates/learn.mako:39
+msgid "Chris McDonough is the primary author of the"
+msgstr ""
+
+#: pyconca/templates/schedule.mako:15
+msgid ""
+"\n"
+"            <strong>Registration, casual mixer and venue setup</strong>.\n"
+"            Come register, hang out, and chat. Food and drinks will be\n"
+"            provided, and the venue bar will be open.\n"
+"            "
+msgstr ""
+
+#: pyconca/templates/schedule.mako:111 pyconca/templates/schedule.mako:222
+msgid ""
+"\n"
+"            <strong>Talks finish, venue bar opens, appetizers "
+"served</strong>.\n"
+"            Time to meet some new people in preparation for dinner.\n"
+"            "
+msgstr ""
+
+#: pyconca/templates/schedule.mako:121 pyconca/templates/schedule.mako:232
+msgid ""
+"\n"
+"            <strong>Dinner</strong>. Not provided. Grab some friends and "
+"head\n"
+"            out to one of the local restaurants.\n"
+"            "
+msgstr ""
+
+#: pyconca/templates/schedule.mako:131 pyconca/templates/schedule.mako:242
+msgid ""
+"\n"
+"            <strong>Open space, BoF sessions</strong>. Hang out and chat."
+" The\n"
+"            venue bar will be open, and there will be space for\n"
+"            <a "
+"href='http://en.wikipedia.org/wiki/Birds_of_a_feather_(computing)'>\n"
+"            birds of a feather</a> sessions.\n"
+"            "
+msgstr ""
+
+#: pyconca/templates/schedule.mako:10
+msgid "Friday, November 9"
+msgstr ""
+
+#: pyconca/templates/schedule.mako:25 pyconca/templates/schedule.mako:143
+#: pyconca/templates/schedule.mako:254
+msgid "Venue closes"
+msgstr ""
+
+#: pyconca/templates/schedule.mako:32
+msgid "Saturday, November 10"
+msgstr ""
+
+#: pyconca/templates/schedule.mako:37
+msgid "Registration"
+msgstr ""
+
+#: pyconca/templates/schedule.mako:44 pyconca/templates/schedule.mako:155
+msgid "Keynote"
+msgstr ""
+
+#: pyconca/templates/schedule.mako:75 pyconca/templates/schedule.mako:186
+msgid "<strong>Lunch</strong> (provided)"
+msgstr ""
+
+#: pyconca/templates/schedule.mako:81 pyconca/templates/schedule.mako:192
+msgid "Lightning talks"
+msgstr ""
+
+#: pyconca/templates/schedule.mako:150
+msgid "Sunday, November 11"
+msgstr ""
+
+#: pyconca/templates/speakers.mako:11
+msgid ""
+"\n"
+"            The schedule for PyCon 2012 includes talks, tutorials, and "
+"sprints\n"
+"            over Saturday and Sunday.\n"
+"          "
+msgstr ""
+
+#: pyconca/templates/speakers.mako:18
+msgid ""
+"\n"
+"            We welcome <em>everyone</em> in the Canadian Python community"
+" to\n"
+"            come and share your ideas, experiences, and expertise. "
+"Whether\n"
+"            you're new to Python or a seasoned expert, if you've got "
+"something\n"
+"            interesting to share, we want to hear about it. A conference "
+"with a\n"
+"            diverse set of good topics will give everyone the opportunity"
+" to\n"
+"            learn something new and cool.\n"
+"          "
+msgstr ""
+
+#: pyconca/templates/speakers.mako:29
+msgid ""
+"\n"
+"            Nervous about your lack of presenter experience? We'll work "
+"to\n"
+"            connect you with resources and people to help you prepare. "
+"You\n"
+"            might also consider co-presenting with a more experienced\n"
+"            presenter. And once you've rocked PyCon Canada 2012, you can "
+"take\n"
+"            that experience to help you gear up for the main PyCon "
+"conference\n"
+"            in Montreal.\n"
+"          "
+msgstr ""
+
+#: pyconca/templates/speakers.mako:43
+msgid ""
+"\n"
+"            We would prefer 20 minute talks, although 45 minute talks "
+"will also\n"
+"            be considered. Tutorials are 3 hours. We also welcome ideas "
+"for\n"
+"            sprints.\n"
+"          "
+msgstr ""
+
+#: pyconca/templates/speakers.mako:51
+msgid ""
+"\n"
+"           <a href=\"/new/talk\">Submit your talk</a> if you are logged "
+"in.\n"
+"           Alternatively, you can send talk and tutorial proposals to\n"
+"           <a "
+"href=\"mailto:organizers@pycon.ca\">organizers@pycon.ca</a>. Include\n"
+"           the following information in talk and tutorial proposals:\n"
+"          "
+msgstr ""
+
+#: pyconca/templates/speakers.mako:66
+msgid ""
+"\n"
+"              Additional notes for the proposal reviewers. This can "
+"include\n"
+"              additional background information such as links to other\n"
+"              presentations you have done, or links to blog posts, "
+"articles\n"
+"              or code related to your presentation.\n"
+"            "
+msgstr ""
+
+#: pyconca/templates/speakers.mako:4 pyconca/templates/speakers.mako:9
+msgid "Speakers"
+msgstr ""
+
+#: pyconca/templates/speakers.mako:41
+msgid "Submitting a Talk or Tutorial"
+msgstr ""
+
+#: pyconca/templates/speakers.mako:60
+msgid "Name of the talk or tutorial"
+msgstr ""
+
+#: pyconca/templates/speakers.mako:61
+msgid "Length of the talk/tutorial"
+msgstr ""
+
+#: pyconca/templates/speakers.mako:62
+msgid "Intended audience (assumed level of knowledge)"
+msgstr ""
+
+#: pyconca/templates/speakers.mako:63
+msgid "Abstract for the talk/tutorial - 200 chars max"
+msgstr ""
+
+#: pyconca/templates/speakers.mako:64
+msgid "Outline of the talk/tutorial"
+msgstr ""
+
+#: pyconca/templates/sponsors.mako:11
+msgid ""
+"\n"
+"            If you are interested in sponsoring PyCon Canada, please "
+"contact <a\n"
+"            "
+"href=\"mailto:sponsorship@pycon.ca\">sponsorship@pycon.ca</a>.\n"
+"          "
+msgstr ""
+
+#: pyconca/templates/sponsors.mako:9
+msgid "Sponsor PyCon Canada"
+msgstr ""
+
+#: pyconca/templates/venue.mako:11
+msgid ""
+"\n"
+"           The conference will be held at Beverley Halls, 206 Beverley "
+"St., just\n"
+"           south of College and Beverley, Toronto.\n"
+"          "
+msgstr ""
+
+#: pyconca/templates/venue.mako:24
+msgid ""
+"\n"
+"         Toronto has 2 major airports.\n"
+"         <a href='http://www.gtaa.com'>Pearson</a> is the international "
+"airport\n"
+"         and is the location for almost all the major domestic and "
+"international\n"
+"         airlines. It's about a 35 minute drive from the Airport to "
+"Beverley\n"
+"         Halls, but be aware that downtown Toronto traffic is busy all "
+"day and\n"
+"         is particularly busy during peak rush hour. Allow at least an "
+"hour for\n"
+"         travel time from the airport.\n"
+"        "
+msgstr ""
+
+#: pyconca/templates/venue.mako:36
+msgid ""
+"\n"
+"         <a href='http://www.flyporter.com'>Porter Airlines</a> is "
+"located on\n"
+"         Toronto Island and is just south of Union Station, the main "
+"transit hub\n"
+"         in downtown Toronto, including Go Transit, TTC (the local bus,\n"
+"         streetcar and subway service) and VIA Rail.\n"
+"        "
+msgstr ""
+
+#: pyconca/templates/venue.mako:45
+msgid ""
+"\n"
+"         VIA is a good alternative to the airlines if you are coming from"
+"\n"
+"         somewhere like Montreal or Ottawa. Advance pricing is often "
+"available\n"
+"         at a discount.\n"
+"        "
+msgstr ""
+
+#: pyconca/templates/venue.mako:56
+msgid ""
+"\n"
+"             Make sure that you've got a valid passport and don't forget "
+"to\n"
+"             bring it with you.\n"
+"            "
+msgstr ""
+
+#: pyconca/templates/venue.mako:62
+msgid ""
+"\n"
+"             <a href='http://www.flyporter.com'>Porter Airlines</a> has\n"
+"             frequent, reasonably-priced flights for trips from several "
+"US\n"
+"             cities to Toronto, including Boston, Burlington (VT), "
+"Chicago,\n"
+"             Myrtle Beach, New York, and Washington\n"
+"            "
+msgstr ""
+
+#: pyconca/templates/venue.mako:76
+msgid ""
+"\n"
+"            Beverly Halls is a short walk from a number of different "
+"public\n"
+"            transit stops.\n"
+"            <a "
+"href=\"http://maps.google.ca/maps?daddr=206+Beverley+St,+Toronto,+ON+M5T+1Z3&hl=en&sll=43.657192,-79.395382&sspn=0.019933,0.077162&geocode"
+"=FWYnmgId0oVE-"
+"ynn5LTlxjQriDEq_o2na7PIDw&dirflg=r&ttype=now&noexp=0&noal=0&sort=def&mra=ltm&t=m&z=14&start=0\">"
+"\n"
+"                Google Map's transit directions</a> can be used to find "
+"the best route, and\n"
+"                <a href='http://www.ttc.ca/'>the TTC's website</a> for "
+"rates.\n"
+"            "
+msgstr ""
+
+#: pyconca/templates/venue.mako:85
+msgid ""
+"\n"
+"            Paid street parking is available on Beverley and surrounding "
+"side\n"
+"            streets, and some free parking is also available on weekends."
+" There\n"
+"            is a paid Green P parking lot nearby, which can be seen on "
+"the\n"
+"            <a "
+"href=\"https://maps.google.com/maps/ms?msid=209898849797428860102.0004c67cb66abadbf199e&amp;msa=0&amp;ie=UTF8&amp;ll=43.654196,-79.395704&amp;spn=0.01228,0.019205&amp;t=m&amp;iwloc=0004c67cb66b9121bbdbe&amp;source=embed\">PyCon"
+" Canada 2012 map</a>.\n"
+"           "
+msgstr ""
+
+#: pyconca/templates/venue.mako:97
+msgid ""
+"\n"
+"           We'll be providing lunch on Saturday and Sunday, so make sure "
+"that\n"
+"           you let us know about any dietary restrictions. For your other"
+" meals,\n"
+"           there are lots of options on College St. and Spadina Ave. Some"
+"\n"
+"           additional options are available on Elm St. and Baldwin St. "
+"south of\n"
+"           the venue - some of restaurants will be a little pricier.\n"
+"          "
+msgstr ""
+
+#: pyconca/templates/venue.mako:110
+msgid ""
+"\n"
+"            We are in the process of finding a recommended hotel. Contact"
+" <a\n"
+"            href='mailto:hotels@pycon.ca'>hotels@pycon.ca</a> if you "
+"would like\n"
+"            to be notified when a hotel is chosen.\n"
+"          "
+msgstr ""
+
+#: pyconca/templates/venue.mako:9
+msgid "Location"
+msgstr ""
+
+#: pyconca/templates/venue.mako:18
+msgid "View the complete"
+msgstr ""
+
+#: pyconca/templates/venue.mako:18
+msgid "PyCon Canada 2012 map"
+msgstr ""
+
+#: pyconca/templates/venue.mako:22
+msgid "Getting to Toronto"
+msgstr ""
+
+#: pyconca/templates/venue.mako:53
+msgid "If you're coming from the US:"
+msgstr ""
+
+#: pyconca/templates/venue.mako:74
+msgid "Public Transit and Parking"
+msgstr ""
+
+#: pyconca/templates/venue.mako:95
+msgid "Food"
+msgstr ""
+
+#: pyconca/templates/venue.mako:108
+msgid "Hotel"
+msgstr ""
+

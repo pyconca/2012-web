@@ -19,6 +19,8 @@ requires = [
     'pytz',
     'zope.sqlalchemy',
     'waitress',
+    'Babel',
+    'lingua',
     'webtest',
     'nose',
     ]
@@ -44,6 +46,9 @@ setup(name='pyconca',
       tests_require=[
       ],
       install_requires=requires,
+      message_extractors = { '.': [
+            ('**.py', 'python', None),
+            ('pyconca/templates/**.mako', "pyconca.babelplugin:extract", None)]},
       entry_points="""\
       [paste.app_factory]
       main = pyconca:main
@@ -52,4 +57,3 @@ setup(name='pyconca',
       pyconca_create_tables = pyconca.scripts.create_tables:main
       """,
       )
-

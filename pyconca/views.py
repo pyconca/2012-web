@@ -8,7 +8,8 @@ from pyramid.view import forbidden_view_config
 from pyconca.dao.user_dao import UserDao
 from pyconca.security import check_password
 from pyconca.security import is_admin
-
+from pyconca.locale import locale_cookie_headers
+from pyramid.i18n import get_locale_name
 
 def is_not_api_request(info, request):
     return request['PATH_INFO'].endswith('.json') == False
@@ -131,3 +132,11 @@ def forgot(request):
 
     return response_
 
+
+@view_config(route_name='locale')
+def language(request):
+    locale_code = 'en'
+    if get_locale_name(request) == 'en':
+        locale_code = 'fr'
+    return HTTPFound(location=request.referrer or '/',
+        headers=locale_cookie_headers(locale_code))

@@ -34,6 +34,7 @@ def main(global_config, **settings):
     config = Configurator(settings=settings,
         root_factory='pyconca.security.RootFactory',
         session_factory=session_factory)
+    config.add_translation_dirs('pyconca:locale/')
     config.set_authentication_policy(authn_policy)
     config.set_authorization_policy(authz_policy)
     config.set_request_property(get_user, 'user', reify=True)
@@ -46,4 +47,14 @@ def main(global_config, **settings):
     _add_resource(config, 'talk')
 
     config.scan()
+
+    config.set_locale_negotiator("pyconca.locale.locale_negotiator")
+
+    config.add_subscriber('pyconca.subscribers.add_localizer',
+                          'pyramid.events.NewRequest')
+    config.add_subscriber('pyconca.subscribers.add_renderer_globals',
+                          'pyramid.events.BeforeRender')
+    config.add_subscriber('pyconca.subscribers.add_template_globals',
+                          'pyramid.events.BeforeRender')
+
     return config.make_wsgi_app()
