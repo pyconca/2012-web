@@ -12,6 +12,10 @@
             If you are interested in sponsoring PyCon Canada, please contact <a
             href="mailto:sponsorship@pycon.ca">sponsorship@pycon.ca</a>.
           </%block>
+            <br>
+            <br>
+            Sponsorship opportunities start at $350, and we still have a few
+            Bronze sponsor spots available.
         </p>
     </div>
 

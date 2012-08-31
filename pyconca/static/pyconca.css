@@ -1,14 +1,11 @@
-.content-column a, .controls a {
-  color: #1060FF;
+a {
+  color: #FF7000;
   text-decoration: none;
-  padding-bottom: 2px;
-  border-bottom: 1px dashed #1060FF;
 }
 
-.content-column a:hover, .controls a:hover {
-  color: #0F8AFF;
+a:hover {
+  color: #FF7000;
   text-decoration: none;
-  border-bottom: 1px dashed #0F8AFF;
 }
 
 body {
@@ -360,7 +357,7 @@ body {
 }
 
 #footer-links a:hover {
-  color: #0F8AFF;
+  color: #FF7000;
   text-decoration: none;
 }
 
