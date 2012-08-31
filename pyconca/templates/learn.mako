@@ -43,10 +43,41 @@
         <a href="http://supervisord.org/">Supervisor</a>.
 
         <ul>
-            <li>He tweets: <a href="https://twitter.com/chrismcdonough">@chrismcdonough</a></li>
-            <li>He codes: <a href="https://github.com/mcdonc">github.com/mcdonc</a></li>
-            <li>He blogs: <a href="http://plope.com/">chrism on plope.com</a></li>
+            <li>${_("He tweets: ")}<a href="https://twitter.com/chrismcdonough">@chrismcdonough</a></li>
+            <li>${_("He codes: ")}<a href="https://github.com/mcdonc">github.com/mcdonc</a></li>
+            <li>${_("He blogs: ")}<a href="http://plope.com/">chrism on plope.com</a></li>
         <ul>
+      </p>
+    </div>
+
+    <div class="row-fluid content-section">
+      <h1 class="header">Jessica McKellar
+          <a href='https://www.ohloh.net/accounts/69607?ref=Rank'
+             style="border-bottom: none;" target='_top'>
+            <img alt='Ohloh profile for jesstess' border='0' height='24'
+                 src='https://www.ohloh.net/accounts/69607/widgets/account_rank.gif'
+                 width='32' />
+          </a>
+      </h1>
+      <p>
+        <a href="http://jesstess.com">Jessica McKellar</a>
+        is a software engineer from Cambridge, MA.
+        She is a Python Software Foundation board member and an
+        organizer for the <a href="http://meetup.bostonpython.com/">
+        largest Python user group in the world</a>.
+        With that group she runs the 
+        <a href="http://bostonpythonworkshop.com/">
+        Boston Python Workshops</a> for
+        women and their friends -- an introductory programming
+        pipeline that has brought hundreds of women into the local
+        Python community and is being replicated in cities across
+        the US. Jessica is a veteran open source contributor and
+        a maintainer for several open source projects, including
+        OpenHatch and the Twisted event-driven networking engine; she
+        wrote a chapter on Twisted for
+        <a href="http://www.aosabook.org/en/index.html">The Architecture
+        of Open Source Applications Volume II</a> and is working with
+        O'Reilly on a new edition of Twisted Networking Essentials.
       </p>
     </div>
 
