@@ -63,6 +63,10 @@
             </div>
 
             <div class="item">
+            <%include file="pyconca:templates/sponsors/heroku.mako" args="img_class='black-and-white'"/>
+            </div>
+
+            <div class="item">
             <%include file="pyconca:templates/sponsors/vmfarms.mako" args="img_class='black-and-white'"/>
             </div>
 
@@ -212,7 +216,7 @@
 
 <script>
     $(function() {
-      $('.carousel').carousel();
+      $('.carousel').carousel({interval: 2500});
     });
 </script>
 

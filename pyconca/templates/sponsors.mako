@@ -28,13 +28,10 @@
             <%include file="pyconca:templates/sponsors/freshbooks.mako"/>
         </p>
 
-        <br>
-
         <p>
+            <br>
             <%include file="pyconca:templates/sponsors/wave.mako"/>
         </p>
-
-        <br>
 
         <p>
             <%include file="pyconca:templates/sponsors/chango.mako"/>
@@ -42,9 +39,17 @@
     </div>
 
     <div class="row-fluid content-section">
+        <h1 class="header">Bronze Sponsors</h1>
+        <br>
+        <p style="margin-left: -20px;">
+            <%include file="pyconca:templates/sponsors/heroku.mako"/>
+        </p>
+    </div>
+
+    <div class="row-fluid content-section">
         <h1 class="header">Venue Sponsor</h1>
         <br>
-        <p>
+        <p style="width: 200px;">
             <%include file="pyconca:templates/sponsors/psf.mako"/>
         </p>
     </div>
