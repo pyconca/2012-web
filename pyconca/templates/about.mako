@@ -119,7 +119,7 @@
 
         <tr>
           <td>Teresa Hulinska</td>
-          <td></td>
+          <td>Davin Baragiotta</td>
         </tr>
       </table>
 
