@@ -128,7 +128,7 @@
             </%block>
         </p>
 
-        <h1 class="header">{_("License")}</h1>
+        <h1 class="header">${_("License")}</h1>
         <p>
           <%block filter="gettext">
             This code of conduct is largely based on the PyCon USA
