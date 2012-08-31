@@ -183,7 +183,7 @@
         <tr>
           <th>12:05</th>
           <td colspan="2">
-            ${_(u"<strong>Lunch</strong> (provided)")}
+            <strong>${_(u"Lunch (provided)")}</strong>
           </td>
         </tr>
 

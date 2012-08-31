@@ -793,8 +793,8 @@ msgid "Keynote"
 msgstr "Introduction"
 
 #: pyconca/templates/schedule.mako:75 pyconca/templates/schedule.mako:186
-msgid "<strong>Lunch</strong> (provided)"
-msgstr "<strong>Lunch</strong> (fourni)"
+msgid "Lunch (provided)"
+msgstr "Lunch (fourni)"
 
 #: pyconca/templates/schedule.mako:81 pyconca/templates/schedule.mako:192
 msgid "Lightning talks"
