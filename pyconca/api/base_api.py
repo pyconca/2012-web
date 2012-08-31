@@ -2,9 +2,7 @@ import json
 import logging
 
 from formencode import Invalid
-
 from pyramid.response import Response
-from pyramid.view import forbidden_view_config
 
 from pyconca.context import Context
 

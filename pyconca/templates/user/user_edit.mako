@@ -142,32 +142,37 @@
             var url = "${request.route_url('api_user_update', id=id)}";
         % endif
 
-        $.post(url, request)
-            .success(function() {
-                % if is_create:
-                    var goto_url = "/new/talk";
-                % else:
-                    var goto_url = "${request.route_url('user_get', id=id)}";
-                % endif
-                window.location.href = goto_url;
-             })
-            .error(function(xhr) {
-                $('.warning').each(function() {
-                    $(this).removeClass('warning');
-                });
-                $('.help-block').each(function() {
-                    $(this).hide();
-                });
-                response = $.parseJSON(xhr.responseText);
-                var layout = $("#validation-errors-template").html();
-                var template = Handlebars.compile(layout);
-                $.each(response.errors, function() {
-                   var error_slot_id = '#' + this.field + '_error';
-                   $(error_slot_id).html(this.message).fadeIn();
-                   $(error_slot_id).parents('.control-group').addClass('warning');
-                });
-             })
-        ;
+        $.ajax({
+          url:url,
+          type:"POST",
+          data:request,
+          contentType:"application/json; charset=utf-8",
+          dataType:"json",
+          success: function(){
+              % if is_create:
+                  var goto_url = "/new/talk";
+              % else:
+                  var goto_url = "${request.route_url('user_get', id=id)}";
+              % endif
+              window.location.href = goto_url;
+          },
+          error: function(xhr){
+              $('.warning').each(function() {
+                  $(this).removeClass('warning');
+              });
+              $('.help-block').each(function() {
+                  $(this).hide();
+              });
+              response = $.parseJSON(xhr.responseText);
+              var layout = $("#validation-errors-template").html();
+              var template = Handlebars.compile(layout);
+              $.each(response.errors, function() {
+                 var error_slot_id = '#' + this.field + '_error';
+                 $(error_slot_id).html(this.message).fadeIn();
+                 $(error_slot_id).parents('.control-group').addClass('warning');
+              });
+          }
+        });
     });
 </script>
 
