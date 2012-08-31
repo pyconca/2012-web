@@ -93,6 +93,13 @@
                   </a>
                 </li>
 
+                <li class="nav-item">
+                  <a class="nav-link" href="${request.application_url}/locale">
+                      <i class="icon-random icon-white nav-icon"></i>
+                      ${_(u"Français")}
+                  </a>
+                </li>
+
                 % if logged_in and request.user:
                   <li class="dropdown" id="menu1">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">

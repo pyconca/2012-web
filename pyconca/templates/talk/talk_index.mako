@@ -22,11 +22,6 @@
             <th>User</th>
             <th>Type</th>
             <th>Level</th>
-            <th>Abstract</th>
-            <th>Outline</th>
-          % if is_admin:
-            <th>Reviewer Notes</th>
-          % endif
         </tr>
         {{#talk_list}}
         <tr>
@@ -38,11 +33,6 @@
           <td>{{user.username}}</td>
           <td>{{type}}</td>
           <td>{{level}}</td>
-          <td>{{abstract}}</td>
-          <td>{{outline}}</td>
-        % if is_admin:
-          <td>{{reviewer_notes}}</td>
-        % endif
         </tr>
         {{/talk_list}}
     </table>
