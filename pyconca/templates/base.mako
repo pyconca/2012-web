@@ -189,7 +189,7 @@
             </li>
 
             <li class="footer-nav-link">
-              <a class="nav-link" href="${request.application_url}/venue">${(u"Venue")}</a>
+              <a class="nav-link" href="${request.application_url}/venue">${_(u"Venue")}</a>
             </li>
 
             <li class="footer-nav-link">
