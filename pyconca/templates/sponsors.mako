@@ -1,7 +1,7 @@
 <%inherit file="event.mako"/>
 
 <%block name="title">
-    ${_(u"Sponsors")}
+    ${_(u"Sponsor")}
 </%block>
 
 <%block name="info">
@@ -32,6 +32,12 @@
 
         <p>
             <%include file="pyconca:templates/sponsors/wave.mako"/>
+        </p>
+
+        <br>
+
+        <p>
+            <%include file="pyconca:templates/sponsors/chango.mako"/>
         </p>
     </div>
 

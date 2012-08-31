@@ -23,36 +23,30 @@
         <ul id="sidenav" class="sidenav side-block"></ul>
 
         % if request['bfg.routes.route'].name != 'sponsors':
-        <h3>${_("Sponsors")}</h3>
-        <div id="sponsors_carousel" class="carousel slide side-block">
-          <div class="carousel-inner">
-            <div class="active item">
-
+        <h3>Gold Sponsor</h3>
              <%include file="pyconca:templates/sponsors/500px.mako"/>
-
+             <br>
              <br>
 
+        <h3>Silver Sponsors</h3>
              <%include file="pyconca:templates/sponsors/freshbooks.mako"/>
-
-             <br>
              <br>
              <br>
 
              <%include file="pyconca:templates/sponsors/wave.mako"/>
-
              <br>
+
+             <%include file="pyconca:templates/sponsors/chango.mako"/>
+             <br>
+
+        <h3>Our Mothership</h3>
+
              <br>
 
              <%include file="pyconca:templates/sponsors/psf.mako"/>
-
-             <br>
              <br>
 
-             <%include file="pyconca:templates/sponsors/vmfarms.mako"/>
-
-            </div>
-          </div>
-        </div>
+             <br>
         % endif
 
         <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
