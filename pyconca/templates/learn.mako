@@ -36,17 +36,14 @@
           </a>
       </h1>
       <p>
-         ${_("Chris McDonough is the primary author of the")}
+        <a href="https://twitter.com/chrismcdonough">Chris McDonough</a>
+        is the primary author of the
         <a href="http://docs.pylonsproject.org/en/latest/docs/pyramid.html">
-          Pyramid web framework
-        </a>${_(" and ")}
-        <a href="http://supervisord.org/">Supervisor</a>.
-
-        <ul>
-            <li>${_("He tweets: ")}<a href="https://twitter.com/chrismcdonough">@chrismcdonough</a></li>
-            <li>${_("He codes: ")}<a href="https://github.com/mcdonc">github.com/mcdonc</a></li>
-            <li>${_("He blogs: ")}<a href="http://plope.com/">chrism on plope.com</a></li>
-        <ul>
+        Pyramid web application</a> framework. He is a developer and
+        consultant for Agendaless Consulting, a company based in
+        Fredericksburg, VA, USA. His other major projects include
+         <a href="http://supervisord.org/">Supervisor</a>, a
+         Python process management system.
       </p>
     </div>
 
