@@ -63,6 +63,10 @@
             </div>
 
             <div class="item">
+            <%include file="pyconca:templates/sponsors/upverter.mako" args="img_class='black-and-white'"/>
+            </div>
+
+            <div class="item">
             <%include file="pyconca:templates/sponsors/heroku.mako" args="img_class='black-and-white'"/>
             </div>
 

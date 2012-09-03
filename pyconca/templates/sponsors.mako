@@ -59,6 +59,13 @@
     </div>
 
     <div class="row-fluid content-section">
+        <h1 class="header">Party Sponsor</h1>
+        <p style="width: 200px;">
+            <%include file="pyconca:templates/sponsors/upverter.mako"/>
+        </p>
+    </div>
+
+    <div class="row-fluid content-section">
         <h1 class="header">Hosting Sponsor</h1>
         <br>
         <p>
