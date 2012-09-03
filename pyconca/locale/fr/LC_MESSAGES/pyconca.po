@@ -125,7 +125,7 @@ msgstr "Qu'est-ce que PyCon Canada?"
 
 #: pyconca/templates/about.mako:13
 msgid "PyCon Canada is an initiative to strengthen the Canadian Python community."
-msgstr "PyCon Canada est une initiative qui a pour but de renforcer la communauté Python Canadienne."
+msgstr "PyCon Canada est une initiative qui a pour but de renforcer la communauté Python canadienne."
 
 #: pyconca/templates/about.mako:17
 msgid "Our main goals:"
@@ -133,7 +133,7 @@ msgstr "Nos objectifs principaux:"
 
 #: pyconca/templates/about.mako:44
 msgid "Host an annual Canadian PyCon conference, starting now - 2012!"
-msgstr "Accueillir une conférence annuelle PyCon Canada, en commencant maintenant, en 2012!"
+msgstr "Accueillir une conférence annuelle PyCon Canada, en commençant maintenant, en 2012!"
 
 #: pyconca/templates/about.mako:57 pyconca/templates/conduct.mako:9
 msgid "Code of Conduct"
@@ -833,7 +833,7 @@ msgid ""
 "          "
 msgstr ""
 "\n"
-"           Nous invitons <em>tout le monde</em> de la communauté canadienne Python à\n"
+"           Nous invitons <em>tout le monde</em> de la communauté Python canadienne à\n"
 "           venir et à échanger des idées, des expériences et une expertise. "
 "           Que vous soyez nouveau à Python ou un expert chevronné, si vous avez "
 "quelque chose d'intéressant à partager, nous voulons en savoir plus. Une conférence avec"
