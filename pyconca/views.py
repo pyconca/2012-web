@@ -12,7 +12,7 @@ from pyconca.locale import locale_cookie_headers
 from pyramid.i18n import get_locale_name
 
 def is_not_api_request(info, request):
-    return request['PATH_INFO'].endswith('.json') == False
+    return request.environ['PATH_INFO'].endswith('.json') == False
 
 
 @view_config(route_name='index', renderer='index.mako')
