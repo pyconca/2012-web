@@ -646,7 +646,7 @@ msgstr ""
 "      Supportez la communauté Python canadienne et obtenez la reconnaissance, "
 "la promotion, et le bon karma pour avoir aidé à augmenter l'expertise et "
 "      la visibilité de développeurs au Canada. De nombreuses options de "
-"de commandites sont disponibles.\n"
+"commandites sont disponibles.\n"
 "      "
 
 #: pyconca/templates/index.mako:17 pyconca/templates/index.mako:21
