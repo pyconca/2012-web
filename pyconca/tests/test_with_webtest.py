@@ -18,6 +18,7 @@ from pyconca.models import ScheduleSlot
 from pyconca.models import TalkScheduleSlot
 
 @patch('pyconca.views.check_password', lambda x, y: True)
+@patch('pyconca.locale.locale_from_browser', lambda x: 'en')
 class TestWithWebtest(unittest.TestCase):
     def setUp(self):
         self.testapp = TestApp(main(
@@ -70,8 +71,8 @@ class TestWithWebtest(unittest.TestCase):
     def test_login(self):
         self._loginAs('admin')
         index_response = self.testapp.get('/', status=200)
-        self.failUnless('Logout' in index_response.body)
-        self.failIf('Login' in index_response.body)
+        self.failUnless('Logout' in index_response.body, index_response.body)
+        self.failIf('Login' in index_response.body, index_response.body)
 
     ### USER API
 
