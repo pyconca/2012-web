@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pyconca 0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-09-05 23:29-0400\n"
+"POT-Creation-Date: 2012-09-06 00:03-0400\n"
 "PO-Revision-Date: 2012-08-15 22:01-0400\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -18,71 +18,49 @@ msgstr ""
 "Generated-By: Babel 0.9.6\n"
 
 #: pyconca/templates/about.mako:20
-msgid ""
-"\n"
-"              Support the efforts of\n"
-"              <a "
+msgid "ABOUT_GOAL_SUPPORT"
+msgstr ""
+"Support the efforts of <a "
 "href='http://montrealpython.org/2011/03/pycon-2014-and-2015-in-"
-"montreal/'>\n"
-"                Montreal Python</a> as they prepare to host\n"
-"              <a href='http://us.pycon.org/'>PyCon North America</a>\n"
-"              in 2014 and 2015. This is the first time\n"
-"              that the main PyCon conference is going to be outside of "
-"the US.\n"
-"              Let's take this opportunity to showcase the Canadian Python"
-"\n"
-"              community, and step up to the challenge as speakers and "
-"volunteers.\n"
-"            "
-msgstr ""
+"montreal/'>Montreal Python</a> as they prepare to host <a "
+"href='http://us.pycon.org/'>PyCon North America</a> in 2014 and 2015. "
+"This is the first time that the main PyCon conference is going to be "
+"outside of the US. Let's take this opportunity to showcase the Canadian "
+"Python community, and step up to the challenge as speakers and "
+"volunteers. "
 
-#: pyconca/templates/about.mako:32
-msgid ""
-"\n"
-"             Strengthen the Canadian Python community by providing more\n"
-"             opportunities for us to share knowledge and ideas, encourage"
-"\n"
-"             support and education for speaking at conferences, and "
-"increase\n"
-"             the visibility of developers, organizations, and companies\n"
-"             within the community.\n"
-"            "
+#: pyconca/templates/about.mako:23
+msgid "ABOUT_GOAL_STRENGTHEN"
 msgstr ""
+"Strengthen the Canadian Python community by providing more opportunities "
+"for us to share knowledge and ideas, encourage support and education for "
+"speaking at conferences, and increase the visibility of developers, "
+"organizations, and companies within the community. "
 
-#: pyconca/templates/about.mako:46
-msgid ""
-"\n"
-"          PyCon Canada is entirely run by volunteers who are passionate "
-"about\n"
-"          these goals. We hope to see you at the 2012 conference!\n"
-"          "
+#: pyconca/templates/about.mako:30
+msgid "ABOUT_VOLUNTEERS"
 msgstr ""
+"PyCon Canada is entirely run by volunteers who are passionate about these "
+"goals. We hope to see you at the 2012 conference! "
 
-#: pyconca/templates/about.mako:56
-msgid ""
-"\n"
-"        Please familiarize yourself with the\n"
-"        <a href=\"/conduct\">Code of Conduct</a>\n"
-"        and do your part to make sure PyCon Canada doesn't end up on\n"
-"        Hacker News for all the wrong reasons.\n"
-"        "
+#: pyconca/templates/about.mako:35
+msgid "ABOUT_CONDUCT"
 msgstr ""
+"Please familiarize yourself with the <a href='/conduct'>Code of Conduct</a> "
+"and do your part to make sure PyCon Canada doesn't end up on Hacker News "
+"for all the wrong reasons. "
 
-#: pyconca/templates/about.mako:68
-msgid ""
-"\n"
-"        Made in Canada, with help from the greater Python community.\n"
-"        <strong>Thank-you for your contribution!</strong>\n"
-"        "
+#: pyconca/templates/about.mako:40
+msgid "ABOUT_CONTRIBUTIONS"
 msgstr ""
+"Made in Canada, with help from the greater Python community. "
+"<strong>Thank-you for your contribution!</strong> "
 
-#: pyconca/templates/about.mako:127
-msgid ""
-"\n"
-"      Have we missed thanking someone? Don't be shy &mdash; let us know:\n"
-"      <a href=\"mailto:organizers@pycon.ca\">organizers@pycon.ca</a>.\n"
-"      "
+#: pyconca/templates/about.mako:94
+msgid "ABOUT_SHY"
 msgstr ""
+"Have we missed thanking someone? Don't be shy &mdash; let us know: "
+"<a href='mailto:organizers@pycon.ca'>organizers@pycon.ca</a>. "
 
 #: pyconca/templates/about.mako:4 pyconca/templates/base.mako:50
 #: pyconca/templates/base.mako:191 pyconca/templates/base.mako:241
@@ -102,15 +80,15 @@ msgstr ""
 msgid "Our main goals:"
 msgstr ""
 
-#: pyconca/templates/about.mako:41
+#: pyconca/templates/about.mako:26
 msgid "Host an annual Canadian PyCon conference, starting now - 2012!"
 msgstr ""
 
-#: pyconca/templates/about.mako:54 pyconca/templates/conduct.mako:9
+#: pyconca/templates/about.mako:34 pyconca/templates/conduct.mako:9
 msgid "Code of Conduct"
 msgstr ""
 
-#: pyconca/templates/about.mako:66
+#: pyconca/templates/about.mako:39
 msgid "Made in Canada!"
 msgstr ""
 
@@ -479,8 +457,8 @@ msgstr ""
 #: pyconca/templates/index.mako:174
 msgid "INDEX_SPONSORS_BLURB"
 msgstr ""
-"Support the Canadian Python community and get recognition, promotion, "
-"and good karma for helping to increase the expertise and visibility of "
+"Support the Canadian Python community and get recognition, promotion, and"
+" good karma for helping to increase the expertise and visibility of "
 "developers across Canada. Various sponsorship options are available. "
 
 #: pyconca/templates/index.mako:17 pyconca/templates/index.mako:21
@@ -903,14 +881,35 @@ msgstr ""
 
 #~ msgid ""
 #~ "\n"
-#~ "      Support the Canadian Python "
-#~ "community and get recognition, promotion, "
-#~ "and\n"
-#~ "      good karma for helping to "
-#~ "increase the expertise and visibility of"
+#~ "          PyCon Canada is entirely run"
+#~ " by volunteers who are passionate "
+#~ "about\n"
+#~ "          these goals. We hope to see you at the 2012 conference!\n"
+#~ "          "
+#~ msgstr ""
+
+#~ msgid ""
 #~ "\n"
-#~ "      developers across Canada. Various "
-#~ "sponsorship options are available.\n"
+#~ "        Please familiarize yourself with the\n"
+#~ "        <a href=\"/conduct\">Code of Conduct</a>\n"
+#~ "        and do your part to make sure PyCon Canada doesn't end up on\n"
+#~ "        Hacker News for all the wrong reasons.\n"
+#~ "        "
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ "        Made in Canada, with help from the greater Python community.\n"
+#~ "        <strong>Thank-you for your contribution!</strong>\n"
+#~ "        "
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ "      Have we missed thanking someone?"
+#~ " Don't be shy &mdash; let us "
+#~ "know:\n"
+#~ "      <a href=\"mailto:organizers@pycon.ca\">organizers@pycon.ca</a>.\n"
 #~ "      "
 #~ msgstr ""
 
