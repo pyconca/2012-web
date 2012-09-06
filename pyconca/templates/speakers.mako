@@ -45,6 +45,11 @@
             be considered. Tutorials are 3 hours. We also welcome ideas for
             sprints.
           </%block>
+          <b>
+            <%block filter="gettext">
+              The deadline to submit talks and tutorials is October 1st, 2012.
+            </%block>
+          </b>
         </p>
 
         <p>
