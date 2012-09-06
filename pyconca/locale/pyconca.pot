@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pyconca 0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-09-06 00:03-0400\n"
+"POT-Creation-Date: 2012-09-06 00:28-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -328,29 +328,15 @@ msgstr ""
 msgid "License"
 msgstr ""
 
-#: pyconca/templates/contact.mako:11
-msgid ""
-"\n"
-"           The majority of our discussion occurs on the mailing list\n"
-"           <a "
-"href='mailto:pyconca@googlegroups.com'>pyconca@googlegroups.com</a>\n"
-"           (<a "
-"href='https://groups.google.com/forum/?fromgroups#!forum/pyconca'>archives</a>)."
-"\n"
-"           The organizing committee can be contacted privately at\n"
-"           <a href='mailto:organizers@pycon.ca'>organizers@pycon.ca</a>, and "
-"the\n"
-"           board (Diana Clarke, Nicola Yap, and David Wolever) can be "
-"contacted\n"
-"           privately at <a href='mailto:board@pycon.ca'>board@pycon.ca</a>.\n"
-"          "
+#: pyconca/templates/contact.mako:10
+msgid "CONTACT_US_MAILING_LISTS"
 msgstr ""
 
 #: pyconca/templates/contact.mako:9
 msgid "Contact Us"
 msgstr ""
 
-#: pyconca/templates/contact.mako:22
+#: pyconca/templates/contact.mako:12
 msgid "We are also online at:"
 msgstr ""
 
