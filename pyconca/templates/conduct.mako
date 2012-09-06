@@ -36,8 +36,9 @@
           <%block filter="gettext">
             PyCon Canada is dedicated to providing a harassment-free conference
             experience for everyone, regardless of gender, sexual orientation,
-            disability, physical appearance, body size, race, or religion. We do
-            not tolerate harassment of conference participants in any form.
+            disability, physical appearance, body size, race, religion, or
+            choice of text editor. We do not tolerate harassment of conference
+            participants in any form.
             <br>
             <br>
 
