@@ -27,6 +27,18 @@
     </div>
 
     <div class="row-fluid content-section">
+      <h1 class="header">Elizabeth Leddy
+          <a href='https://www.ohloh.net/accounts/124089?ref=Rank'
+             style="border-bottom: none;" target='_top'>
+            <img alt='Ohloh profile for eleddy' border='0' height='24'
+                 src='https://www.ohloh.net/accounts/124089/widgets/account_rank.gif'
+                 width='32' />
+          </a>
+      </h1>
+      <p><%block filter="gettext">LEARN_ELIZABETH_LEDDY</%block></p>
+    </div>
+
+    <div class="row-fluid content-section">
       <h1 class="header">Chris McDonough
           <a href='https://www.ohloh.net/accounts/12691?ref=Rank'
              style="border-bottom: none;" target='_top'>
@@ -44,6 +56,10 @@
         Fredericksburg, VA, USA. His other major projects include
          <a href="http://supervisord.org/">Supervisor</a>, a
          Python process management system.
+         <b>
+           Cancelled: It looks like Chris McDonough won't be able to join us
+           this year after all.
+         </b>
       </p>
     </div>
 
