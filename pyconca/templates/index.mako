@@ -98,16 +98,7 @@
        ${_("About")}
     </div>
 
-    <p>
-     <%block filter="gettext">
-      You're invited to a kickoff conference, Nov 9-11 2012, in Toronto,
-      getting us warmed up for the first
-      <a href='http://us.pycon.org/'>PyCon North America</a> conference outside the US -
-      <a href='http://www.newswire.ca/en/story/731987/montreal-chosen-to-welcome-over-1-500-python-programmers-for-the-world-s-most-important-conference-on-the-subject/'>
-      Montreal in 2014 and 2015!</a>
-      And when that's done, let's keep the momentum going with an annual PyCon in Canada.
-     </%block>
-    </p>
+    <p><%block filter="gettext">INDEX_ABOUT_BLURB</%block></p>
 
     <div class="pull-right">
       <a href="${request.application_url}/about" class="btn">${_(u"More >>")}></a>
@@ -122,13 +113,7 @@
       ${_(u"Speak")}
     </div>
 
-    <p>
-      <%block filter="gettext">
-       Share your knowledge and cool ideas. Submit your proposal for a talk or
-       tutorial by October 1st to organizers@pycon.ca. We'll be sprinting at the
-       conference too, so you can also send us sprint ideas.
-      </%block>
-    </p>
+    <p><%block filter="gettext">INDEX_SPEAK_BLURB</%block></p>
 
     <div>
       <a href="${request.application_url}/speakers" class="btn">${_(u"More >>")}</a>
@@ -142,14 +127,7 @@
       ${_("Learn")}
     </div>
 
-    <p>
-      <%block filter="gettext">
-      One of PyCon Canada's goals is to bring experts from the greater Python
-      community to Canada; giving you the opportunity to be inspired and learn
-      from the best! To get you excited, we'll be announcing our featured
-      speakers, one by one, over the coming weeks. Check them out:
-      </%block>
-    </p>
+    <p><%block filter="gettext">INDEX_LEARN_BLURB</%block></p>
 
     <div class="pull-right">
       <a href="${request.application_url}/learn" class="btn">${_("More >>")}</a>
@@ -164,13 +142,7 @@
       ${_(u"Venue")}
     </div>
 
-    <p>
-      <%block filter="gettext">
-      Be there November 9-11, 2012 at Beverley Halls in downtown Toronto. A short
-      walk from the subway, so when you aren't busy coding or chatting with your
-      colleagues you've got lots of stuff to explore nearby.
-      </%block>
-    </p>
+    <p><%block filter="gettext">INDEX_VENUE_BLURB</%block></p>
 
     <div>
       <a href="${request.application_url}/venue" class="btn">${_(u"More >>")}</a>
@@ -184,13 +156,7 @@
       ${_(u"Schedule")}
     </div>
 
-    <p>
-      <%block filter="gettext">
-      Start the fun Friday evening with a mix and mingle. Feed your brain at
-      talks on Saturday, and if your sprint team is eager, you can start that
-      night. Sprint or attend talks and tutorials on Sunday.
-      </%block>
-    </p>
+    <p><%block filter="gettext">INDEX_SCHEDULE_BLURB</%block></p>
 
     <div class="pull-right">
       <a href="${request.application_url}/schedule" class="btn">${_(u"More >>")}</a>
@@ -205,13 +171,7 @@
         ${_("Sponsors")}
     </div>
 
-    <p>
-      <%block filter="gettext">
-      Support the Canadian Python community and get recognition, promotion, and
-      good karma for helping to increase the expertise and visibility of
-      developers across Canada. Various sponsorship options are available.
-      </%block>
-    </p>
+    <p><%block filter="gettext">INDEX_SPONSORS_BLURB</%block></p>
 
     <div class="pull-right">
       <a href="${request.application_url}/sponsors" class="btn">${_("More >>")}</a>
