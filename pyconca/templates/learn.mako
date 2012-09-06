@@ -30,7 +30,7 @@
       <h1 class="header">Chris McDonough
           <a href='https://www.ohloh.net/accounts/12691?ref=Rank'
              style="border-bottom: none;" target='_top'>
-            <img alt='%{_("Ohloh profile for Chris McDonough")}' border='0' height='24'
+            <img alt='Ohloh profile for Chris McDonough' border='0' height='24'
                  src='https://www.ohloh.net/accounts/12691/widgets/account_rank.gif'
                  width='32' />
           </a>

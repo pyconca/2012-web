@@ -7,16 +7,7 @@
 <%block name="info">
     <div class="row-fluid content-section">
         <h1 class="header header-first">${_(u"Sponsor PyCon Canada")}</h1>
-        <p>
-          <%block filter="gettext">
-            If you are interested in sponsoring PyCon Canada, please contact <a
-            href="mailto:sponsorship@pycon.ca">sponsorship@pycon.ca</a>.
-          </%block>
-            <br>
-            <br>
-            Sponsorship opportunities start at $350, and we still have a few
-            Bronze sponsor spots available.
-        </p>
+        <p><%block filter="gettext">SPONSOSORS_EMAIL</%block></p>
     </div>
 
     <div class="row-fluid content-section">
