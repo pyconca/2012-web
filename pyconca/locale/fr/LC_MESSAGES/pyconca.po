@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pyconca 0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-09-06 09:31-0400\n"
+"POT-Creation-Date: 2012-09-06 10:54-0400\n"
 "PO-Revision-Date: 2012-08-15 22:00-0400\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -545,7 +545,22 @@ msgstr "Sponsors"
 msgid "More >>"
 msgstr "Plus >>"
 
-#: pyconca/templates/learn.mako:38
+#: pyconca/templates/learn.mako:17
+msgid "LEARN_MICHAEL_BAYER"
+msgstr ""
+"<a href='http://techspot.zzzeek.org'>Michael Bayer</a> is a software "
+"developer in New York City, best known as the creator of the <a "
+"href='http://www.sqlalchemy.org/'>SQLAlchemy Database Toolkit for "
+"Python</a> as well as <a href='http://www.makotemplates.org/'>Mako "
+"Templates for Python</a>. He has worked in the New York interactive "
+"industry since 1994 with a wide array of databases and web technologies, "
+"settling upon Python as the home for an 'ideal' software development "
+"platform in the mid-2000s. His initial open source offering, the Myghty "
+"template engine, provided the early underpinnings of the Pylons web "
+"framework, which along with its current successor Pyramid remains the "
+"'spiritual' home of the SQLAlchemy and Mako products. "
+
+#: pyconca/templates/learn.mako:29
 msgid "LEARN_ELIZABETH_LEDDY"
 msgstr ""
 "Elizabeth is an independent Plone consultant working out of Berkley, CA. "
@@ -558,7 +573,7 @@ msgstr ""
 "Noisebridge hacker space in San Francisco.  She is best reached on "
 "twitter as <a href='https://twitter.com/eleddy'>@eleddy</a>. "
 
-#: pyconca/templates/learn.mako:106
+#: pyconca/templates/learn.mako:97
 msgid "LEARN_BRANDON_RHODES"
 msgstr ""
 "<a href='http://twitter.com/brandon_rhodes'>Brandon Rhodes</a> started "
@@ -570,7 +585,7 @@ msgstr ""
 "the <a href='http://rhodesmill.org/pyephem/'>PyEphem</a> module for "
 "amateur astronomers since 1998. "
 
-#: pyconca/templates/learn.mako:112
+#: pyconca/templates/learn.mako:103
 msgid ""
 "\n"
 "         Based in Halifax, Alex 'Sandy' Walsh is the owner of Dark Secret"
@@ -599,26 +614,6 @@ msgstr ""
 #: pyconca/templates/learn.mako:4
 msgid "Confirmed Speakers"
 msgstr "Présentateurs confirmés"
-
-#: pyconca/templates/learn.mako:18
-msgid "Mike Bayer is the creator of"
-msgstr "Mike Bayer est le créateur de"
-
-#: pyconca/templates/learn.mako:19
-msgid " and "
-msgstr " et "
-
-#: pyconca/templates/learn.mako:22
-msgid "He tweets: "
-msgstr "Il tweete: "
-
-#: pyconca/templates/learn.mako:23
-msgid "He codes: "
-msgstr "Il code: "
-
-#: pyconca/templates/learn.mako:24
-msgid "He blogs: "
-msgstr "Il blogue: "
 
 #: pyconca/templates/schedule.mako:15
 msgid "SCHEDULE_PARTY"

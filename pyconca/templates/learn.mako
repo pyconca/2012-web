@@ -6,7 +6,7 @@
 
 <%block name="info">
     <div class="row-fluid content-section">
-      <h1 class="header header-first">Mike Bayer
+      <h1 class="header header-first">Michael Bayer
           <a href='https://www.ohloh.net/accounts/5559?ref=Rank'
              style="border-bottom: none;" target='_top'>
             <img alt='Ohloh profile for zzzeek' border='0' height='24'
@@ -14,16 +14,7 @@
                  width='32' />
           </a>
       </h1>
-      <p>
-        ${_("Mike Bayer is the creator of")}
-        <a href="http://www.sqlalchemy.org/">SQLAlchemy</a>${_(" and ")}
-        <a href="http://www.makotemplates.org/">Mako Templates</a>.
-        <ul>
-          <li>${_("He tweets: ")}<a href="https://twitter.com/zzzeek">@zzzeek</a></li>
-          <li>${_("He codes: ")}<a href="https://bitbucket.org/zzzeek">bitbucket.org/zzzeek</a></li>
-          <li>${_("He blogs: ")}<a href="http://techspot.zzzeek.org">techspot.zzzeek.org</a></li>
-        </ul>
-      </p>
+      <p><%block filter="gettext">LEARN_MICHAEL_BAYER</%block></p>
     </div>
 
     <div class="row-fluid content-section">
