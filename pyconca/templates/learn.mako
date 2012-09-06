@@ -95,6 +95,18 @@
     </div>
 
     <div class="row-fluid content-section">
+      <h1 class="header">Brandon Rhodes
+          <a href='https://www.ohloh.net/accounts/32600?ref=Rank'
+             style="border-bottom: none;" target='_top'>
+            <img alt='Ohloh profile for brandon_craig_rhodes' border='0' height='24'
+                 src='https://www.ohloh.net/accounts/32600/widgets/account_rank.gif'
+                 width='32' />
+          </a>
+      </h1>
+      <p><%block filter="gettext">LEARN_BRANDON_RHODES</%block></p>
+    </div>
+
+    <div class="row-fluid content-section">
       <h1 class="header">Sandy Walsh</h1>
       <p>
         <%block filter="gettext">
