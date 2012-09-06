@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pyconca 0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-09-06 01:06-0400\n"
+"POT-Creation-Date: 2012-09-06 01:37-0400\n"
 "PO-Revision-Date: 2012-08-15 22:01-0400\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -511,74 +511,62 @@ msgid "He blogs: "
 msgstr ""
 
 #: pyconca/templates/schedule.mako:15
-msgid ""
-"\n"
-"            <strong>Registration, casual mixer and venue setup</strong>.\n"
-"            Come register, hang out, and chat. Food and drinks will be\n"
-"            provided, and the venue bar will be open.\n"
-"            "
+msgid "SCHEDULE_PARTY"
 msgstr ""
+"<strong>Registration, casual mixer and venue setup</strong>. Come "
+"register, hang out, and chat. Food and drinks will be provided, and the "
+"venue bar will be open. "
 
-#: pyconca/templates/schedule.mako:111 pyconca/templates/schedule.mako:222
-msgid ""
-"\n"
-"            <strong>Talks finish, venue bar opens, appetizers "
-"served</strong>.\n"
-"            Time to meet some new people in preparation for dinner.\n"
-"            "
+#: pyconca/templates/schedule.mako:107 pyconca/templates/schedule.mako:207
+msgid "SCHEDULE_TALKS_DONE"
 msgstr ""
+"<strong>Talks finish, venue bar opens, appetizers served</strong>. Time "
+"to meet some new people in preparation for dinner. "
 
-#: pyconca/templates/schedule.mako:121 pyconca/templates/schedule.mako:232
-msgid ""
-"\n"
-"            <strong>Dinner</strong>. Not provided. Grab some friends and "
-"head\n"
-"            out to one of the local restaurants.\n"
-"            "
+#: pyconca/templates/schedule.mako:114 pyconca/templates/schedule.mako:214
+msgid "SCHEDULE_DINNER"
 msgstr ""
+"<strong>Dinner</strong>. Not provided. Grab some friends and head out to "
+"one of the local restaurants. "
 
-#: pyconca/templates/schedule.mako:131 pyconca/templates/schedule.mako:242
-msgid ""
-"\n"
-"            <strong>Open space, BoF sessions</strong>. Hang out and chat."
-" The\n"
-"            venue bar will be open, and there will be space for\n"
-"            <a "
-"href='http://en.wikipedia.org/wiki/Birds_of_a_feather_(computing)'>\n"
-"            birds of a feather</a> sessions.\n"
-"            "
+#: pyconca/templates/schedule.mako:121 pyconca/templates/schedule.mako:221
+msgid "SCHEDULE_SPRINTS"
 msgstr ""
+"<strong>Open space, BoF sessions</strong>. Hang out and chat. The venue "
+"bar will be open, and there will be space for <a "
+"href='http://en.wikipedia.org/wiki/Birds_of_a_feather_(computing)'> birds"
+" of a feather</a> sessions. "
 
 #: pyconca/templates/schedule.mako:10
 msgid "Friday, November 9"
 msgstr ""
 
-#: pyconca/templates/schedule.mako:25 pyconca/templates/schedule.mako:143
-#: pyconca/templates/schedule.mako:254
+#: pyconca/templates/schedule.mako:21 pyconca/templates/schedule.mako:128
+#: pyconca/templates/schedule.mako:228
 msgid "Venue closes"
 msgstr ""
 
-#: pyconca/templates/schedule.mako:32
+#: pyconca/templates/schedule.mako:28
 msgid "Saturday, November 10"
 msgstr ""
 
-#: pyconca/templates/schedule.mako:37
+#: pyconca/templates/schedule.mako:33
 msgid "Registration"
 msgstr ""
 
-#: pyconca/templates/schedule.mako:44 pyconca/templates/schedule.mako:155
+#: pyconca/templates/schedule.mako:40 pyconca/templates/schedule.mako:140
 msgid "Keynote"
 msgstr ""
 
-#: pyconca/templates/schedule.mako:75 pyconca/templates/schedule.mako:186
+#: pyconca/templates/schedule.mako:71 pyconca/templates/schedule.mako:171
 msgid "Lunch (provided)"
 msgstr ""
 
-#: pyconca/templates/schedule.mako:81 pyconca/templates/schedule.mako:192
+#: pyconca/templates/schedule.mako:77 pyconca/templates/schedule.mako:177
 msgid "Lightning talks"
 msgstr ""
 
-#: pyconca/templates/schedule.mako:150
+#: pyconca/templates/schedule.mako:135
 msgid "Sunday, November 11"
 msgstr ""
 
@@ -591,29 +579,27 @@ msgstr ""
 #: pyconca/templates/speakers.mako:13
 msgid "SPEAKERS_WELCOME"
 msgstr ""
-"We welcome <em>everyone</em> in the Canadian Python community to "
-"come and share your ideas, experiences, and expertise. Whether "
-"you're new to Python or a seasoned expert, if you've got something "
-"interesting to share, we want to hear about it. A conference with a "
-"diverse set of good topics will give everyone the opportunity to "
-"learn something new and cool. "
+"We welcome <em>everyone</em> in the Canadian Python community to come and"
+" share your ideas, experiences, and expertise. Whether you're new to "
+"Python or a seasoned expert, if you've got something interesting to "
+"share, we want to hear about it. A conference with a diverse set of good "
+"topics will give everyone the opportunity to learn something new and "
+"cool. "
 
 #: pyconca/templates/speakers.mako:15
 msgid "SEPAKERS_NERVOUS"
 msgstr ""
-"Nervous about your lack of presenter experience? We'll work to "
-"connect you with resources and people to help you prepare. You "
-"might also consider co-presenting with a more experienced "
-"presenter. And once you've rocked PyCon Canada 2012, you can take "
-"that experience to help you gear up for the main PyCon conference "
-"in Montreal. "
+"Nervous about your lack of presenter experience? We'll work to connect "
+"you with resources and people to help you prepare. You might also "
+"consider co-presenting with a more experienced presenter. And once you've"
+" rocked PyCon Canada 2012, you can take that experience to help you gear "
+"up for the main PyCon conference in Montreal. "
 
 #: pyconca/templates/speakers.mako:21
 msgid "SEPAKERS_LENGTH"
 msgstr ""
-"We would prefer 20 minute talks, although 45 minute talks will also "
-"be considered. Tutorials are 3 hours. We also welcome ideas for "
-"sprints. "
+"We would prefer 20 minute talks, although 45 minute talks will also be "
+"considered. Tutorials are 3 hours. We also welcome ideas for sprints. "
 
 #: pyconca/templates/speakers.mako:22
 msgid "SEPAKERS_DEADLINE"
@@ -623,17 +609,17 @@ msgstr "The deadline to submit talks and tutorials is October 1st, 2012."
 msgid "SEPAKERS_SUBMIT"
 msgstr ""
 "<a href='/new/talk'>Submit your talk</a> if you are logged in. "
-"Alternatively, you can send talk and tutorial proposals to "
-"<a href='mailto:organizers@pycon.ca'>organizers@pycon.ca</a>. Include "
-"the following information in talk and tutorial proposals: "
+"Alternatively, you can send talk and tutorial proposals to <a "
+"href='mailto:organizers@pycon.ca'>organizers@pycon.ca</a>. Include the "
+"following information in talk and tutorial proposals: "
 
 #: pyconca/templates/speakers.mako:33
 msgid "SEPAKERS_NOTES"
 msgstr ""
-"Additional notes for the proposal reviewers. This can include "
-"additional background information such as links to other "
-"presentations you have done, or links to blog posts, articles "
-"or code related to your presentation. "
+"Additional notes for the proposal reviewers. This can include additional "
+"background information such as links to other presentations you have "
+"done, or links to blog posts, articles or code related to your "
+"presentation. "
 
 #: pyconca/templates/speakers.mako:4 pyconca/templates/speakers.mako:9
 msgid "Speakers"
@@ -836,95 +822,4 @@ msgstr ""
 #: pyconca/templates/venue.mako:108
 msgid "Hotel"
 msgstr ""
-
-#~ msgid ""
-#~ "\n"
-#~ "            The schedule for PyCon 2012"
-#~ " includes talks, tutorials, and sprints"
-#~ "\n"
-#~ "            over Saturday and Sunday.\n"
-#~ "          "
-#~ msgstr ""
-
-#~ msgid ""
-#~ "\n"
-#~ "            We welcome <em>everyone</em> in"
-#~ " the Canadian Python community to\n"
-#~ "            come and share your ideas,"
-#~ " experiences, and expertise. Whether\n"
-#~ "            you're new to Python or "
-#~ "a seasoned expert, if you've got "
-#~ "something\n"
-#~ "            interesting to share, we "
-#~ "want to hear about it. A "
-#~ "conference with a\n"
-#~ "            diverse set of good topics"
-#~ " will give everyone the opportunity "
-#~ "to\n"
-#~ "            learn something new and cool.\n"
-#~ "          "
-#~ msgstr ""
-
-#~ msgid ""
-#~ "\n"
-#~ "            Nervous about your lack of"
-#~ " presenter experience? We'll work to\n"
-#~ ""
-#~ "            connect you with resources "
-#~ "and people to help you prepare. "
-#~ "You\n"
-#~ "            might also consider co-presenting with a more experienced\n"
-#~ "            presenter. And once you've "
-#~ "rocked PyCon Canada 2012, you can "
-#~ "take\n"
-#~ "            that experience to help you"
-#~ " gear up for the main PyCon "
-#~ "conference\n"
-#~ "            in Montreal.\n"
-#~ "          "
-#~ msgstr ""
-
-#~ msgid ""
-#~ "\n"
-#~ "            We would prefer 20 minute"
-#~ " talks, although 45 minute talks will"
-#~ " also\n"
-#~ "            be considered. Tutorials are "
-#~ "3 hours. We also welcome ideas for"
-#~ "\n"
-#~ "            sprints.\n"
-#~ "          "
-#~ msgstr ""
-
-#~ msgid ""
-#~ "\n"
-#~ "              The deadline to submit "
-#~ "talks and tutorials is October 1st, "
-#~ "2012.\n"
-#~ "            "
-#~ msgstr ""
-
-#~ msgid ""
-#~ "\n"
-#~ "           <a href=\"/new/talk\">Submit your "
-#~ "talk</a> if you are logged in.\n"
-#~ "           Alternatively, you can send talk and tutorial proposals to\n"
-#~ "           <a "
-#~ "href=\"mailto:organizers@pycon.ca\">organizers@pycon.ca</a>. "
-#~ "Include\n"
-#~ "           the following information in talk and tutorial proposals:\n"
-#~ "          "
-#~ msgstr ""
-
-#~ msgid ""
-#~ "\n"
-#~ "              Additional notes for the "
-#~ "proposal reviewers. This can include\n"
-#~ "              additional background information "
-#~ "such as links to other\n"
-#~ "              presentations you have done, "
-#~ "or links to blog posts, articles\n"
-#~ "              or code related to your presentation.\n"
-#~ "            "
-#~ msgstr ""
 
