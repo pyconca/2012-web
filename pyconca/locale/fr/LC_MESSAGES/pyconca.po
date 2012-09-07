@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pyconca 0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-09-06 10:54-0400\n"
+"POT-Creation-Date: 2012-09-06 20:50-0400\n"
 "PO-Revision-Date: 2012-08-15 22:00-0400\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -771,33 +771,14 @@ msgstr ""
 msgid "Sponsor PyCon Canada"
 msgstr "Commanditer PyCon Canada"
 
-#: pyconca/templates/venue.mako:11
-msgid ""
-"\n"
-"           The conference will be held at Beverley Halls, 206 Beverley "
-"St., just\n"
-"           south of College and Beverley, Toronto.\n"
-"          "
+#: pyconca/templates/venue.mako:10
+msgid "VENUE_LOCATION"
 msgstr ""
 "La conférence se tiendra au Beverley Halls, 206 rue Beverley, Toronto, "
-"juste au sud de l'intersection College/Beverley."
+"juste au sud de l'intersection College/Beverley. "
 
-#: pyconca/templates/venue.mako:24
-msgid ""
-"\n"
-"         Toronto has 2 major airports.\n"
-"         <a href='http://www.gtaa.com'>Pearson</a> is the international "
-"airport\n"
-"         and is the location for almost all the major domestic and "
-"international\n"
-"         airlines. It's about a 35 minute drive from the Airport to "
-"Beverley\n"
-"         Halls, but be aware that downtown Toronto traffic is busy all "
-"day and\n"
-"         is particularly busy during peak rush hour. Allow at least an "
-"hour for\n"
-"         travel time from the airport.\n"
-"        "
+#: pyconca/templates/venue.mako:18
+msgid "VENUE_AIRPORTS"
 msgstr ""
 "Toronto a 2 principaux aéroports. <a "
 "href='http://www.gtaa.com'>Pearson</a> est l'aéroport international et "
@@ -806,174 +787,105 @@ msgstr ""
 "route de Beverley Halls, mais sachez qu'il y a du trafic dans le centre-"
 "ville de Toronto toute la journée, particulièrement lors des heures de "
 "pointe. Prévoyez donc au moins une heure de trajet à partir de "
-"l'aéroport."
+"l'aéroport. "
 
-#: pyconca/templates/venue.mako:36
-msgid ""
-"\n"
-"         <a href='http://www.flyporter.com'>Porter Airlines</a> is "
-"located on\n"
-"         Toronto Island and is just south of Union Station, the main "
-"transit hub\n"
-"         in downtown Toronto, including Go Transit, TTC (the local bus,\n"
-"         streetcar and subway service) and VIA Rail.\n"
-"        "
+#: pyconca/templates/venue.mako:19
+msgid "VENUE_PORTER"
 msgstr ""
 "<a href='http://www.flyporter.com'>Porter Airlines</a> est situé sur "
 "l'Île de Toronto juste au sud de Union Station, le principal point de "
 "transit du centre-ville de Toronto, donnant accès notamment à Go Transit,"
-" TTC (le service local d'autobus, de tram et de métro) et VIA Rail."
+" TTC (le service local d'autobus, de tram et de métro) et VIA Rail. "
 
-#: pyconca/templates/venue.mako:45
-msgid ""
-"\n"
-"         VIA is a good alternative to the airlines if you are coming from"
-"\n"
-"         somewhere like Montreal or Ottawa. Advance pricing is often "
-"available\n"
-"         at a discount.\n"
-"        "
+#: pyconca/templates/venue.mako:20
+msgid "VENUE_VIA"
 msgstr ""
 "VIA est une bonne alternative aux compagnies aériennes si vous venez de "
 "Montréal ou d'Ottawa, par exemple. Il y a souvent des rabais sur les "
-"réservations à l'avance."
+"réservations à l'avance. "
 
-#: pyconca/templates/venue.mako:56
-msgid ""
-"\n"
-"             Make sure that you've got a valid passport and don't forget "
-"to\n"
-"             bring it with you.\n"
-"            "
+#: pyconca/templates/venue.mako:25
+msgid "VENUE_PASSPORT_USA"
 msgstr ""
 "Assurez-vous d'avoir un passeport valide et n'oubliez pas de l'amener "
-"avec vous."
+"avec vous. "
 
-#: pyconca/templates/venue.mako:62
-msgid ""
-"\n"
-"             <a href='http://www.flyporter.com'>Porter Airlines</a> has\n"
-"             frequent, reasonably-priced flights for trips from several "
-"US\n"
-"             cities to Toronto, including Boston, Burlington (VT), "
-"Chicago,\n"
-"             Myrtle Beach, New York, and Washington\n"
-"            "
+#: pyconca/templates/venue.mako:26
+msgid "VENUE_PORTER_USA"
 msgstr ""
 "<a href='http://www.flyporter.com'>Porter Airlines</a> a des vols "
 "fréquents à des prix raisonnables à destination de Toronto à partir de "
 "plusieurs villes des É.U., notamment Boston, Burlington (VT), Chicago, "
-"Myrtle Beach, New-York et Washington."
+"Myrtle Beach, New-York et Washington. "
 
-#: pyconca/templates/venue.mako:76
-msgid ""
-"\n"
-"            Beverly Halls is a short walk from a number of different "
-"public\n"
-"            transit stops.\n"
-"            <a "
-"href=\"http://maps.google.ca/maps?daddr=206+Beverley+St,+Toronto,+ON+M5T+1Z3&hl=en&sll=43.657192,-79.395382&sspn=0.019933,0.077162&geocode"
-"=FWYnmgId0oVE-"
-"ynn5LTlxjQriDEq_o2na7PIDw&dirflg=r&ttype=now&noexp=0&noal=0&sort=def&mra=ltm&t=m&z=14&start=0\">"
-"\n"
-"                Google Map's transit directions</a> can be used to find "
-"the best route, and\n"
-"                <a href='http://www.ttc.ca/'>the TTC's website</a> for "
-"rates.\n"
-"            "
+#: pyconca/templates/venue.mako:33
+msgid "VENUE_PUBLIC_TRANSIT"
 msgstr ""
 "Beverly Halls est à courte distance à pied à partir de plusieurs arrêts "
-"du transport public. <a "
-"href=\"http://maps.google.ca/maps?daddr=206+Beverley+St,+Toronto,+ON+M5T+1Z3&hl=en&sll=43.657192,-79.395382&sspn=0.019933,0.077162&geocode"
-"=FWYnmgId0oVE-"
-"ynn5LTlxjQriDEq_o2na7PIDw&dirflg=r&ttype=now&noexp=0&noal=0&sort=def&mra=ltm&t=m&z=14&start=0\">Google"
-" Map</a> peut être utilisée pour trouver le meilleur itinéraire et le <a "
-"href='http://www.ttc.ca/'>site de TTC</a> pour les tarifs."
+"du transport public. <a href=\"http://maps.google.ca/maps?daddr=206+Beverley"
+"+St,+Toronto,+ON+M5T+1Z3&hl=en&sll=43.657192,-79.395382&sspn=0.019933,"
+"0.077162&geocode=FWYnmgId0oVE-ynn5LTlxjQriDEq_o2na7PIDw&dirflg=r&ttype=now&"
+"noexp=0&noal=0&sort=def&mra=ltm&t=m&z=14&start=0\">Google Map</a> peut être "
+"utilisée pour trouver le meilleur itinéraire et le <a "
+"href='http://www.ttc.ca/'>site de TTC</a> pour les tarifs. "
 
-#: pyconca/templates/venue.mako:85
-msgid ""
-"\n"
-"            Paid street parking is available on Beverley and surrounding "
-"side\n"
-"            streets, and some free parking is also available on weekends."
-" There\n"
-"            is a paid Green P parking lot nearby, which can be seen on "
-"the\n"
-"            <a "
-"href=\"https://maps.google.com/maps/ms?msid=209898849797428860102.0004c67cb66abadbf199e&amp;msa=0&amp;ie=UTF8&amp;ll=43.654196,-79.395704&amp;spn=0.01228,0.019205&amp;t=m&amp;iwloc=0004c67cb66b9121bbdbe&amp;source=embed\">PyCon"
-" Canada 2012 map</a>.\n"
-"           "
+#: pyconca/templates/venue.mako:34
+msgid "VENUE_PARKING"
 msgstr ""
 "Il y a du stationnement payant sur la rue Beverly et sur les rues "
 "secondaires autour et du stationnement gratuit est même disponible les "
 "fins de semaine.Il y a un espace de stationnement payant Green P proche, "
 "que vous pouvez repérersur la <a "
-"href=\"https://maps.google.com/maps/ms?msid=209898849797428860102.0004c67cb66abadbf199e&amp;msa=0&amp;ie=UTF8&amp;ll=43.654196,-79.395704&amp;spn=0.01228,0.019205&amp;t=m&amp;iwloc=0004c67cb66b9121bbdbe&amp;source=embed\">carte"
-" de PyCon Canada 2012</a>."
+"href='https://maps.google.com/maps/ms?msid=209898849797428860102."
+"0004c67cb66abadbf199e&amp;msa=0&amp;ie=UTF8&amp;ll=43.654196,-79.395704"
+"&amp;spn=0.01228,0.019205&amp;t=m&amp;iwloc=0004c67cb66b9121bbdbe&amp;"
+"source=embed'>carte de PyCon Canada 2012</a>. "
 
-#: pyconca/templates/venue.mako:97
-msgid ""
-"\n"
-"           We'll be providing lunch on Saturday and Sunday, so make sure "
-"that\n"
-"           you let us know about any dietary restrictions. For your other"
-" meals,\n"
-"           there are lots of options on College St. and Spadina Ave. Some"
-"\n"
-"           additional options are available on Elm St. and Baldwin St. "
-"south of\n"
-"           the venue - some of restaurants will be a little pricier.\n"
-"          "
+#: pyconca/templates/venue.mako:39
+msgid "VENUE_FOOD"
 msgstr ""
-"Un lunch sera fourni samedi et dimanche, donc laissez nous savoir si vous"
-" avez des contraintes diététiques. Pour vos autres repas, il y a "
+"Un lunch sera fourni samedi et dimanche, donc laissez nous savoir si vous "
+"avez des contraintes diététiques. Pour vos autres repas, il y a "
 "plusieurs possibilités sur la rue College et l'avenue Spadina. D'autres "
 "options existent sur les rues Elm et Baldwin, au sud de la conférence - "
-"certains restaurants sont plus dispendieux."
+"certains restaurants sont plus dispendieux. "
 
-#: pyconca/templates/venue.mako:110
-msgid ""
-"\n"
-"            We are in the process of finding a recommended hotel. Contact"
-" <a\n"
-"            href='mailto:hotels@pycon.ca'>hotels@pycon.ca</a> if you "
-"would like\n"
-"            to be notified when a hotel is chosen.\n"
-"          "
+#: pyconca/templates/venue.mako:44
+msgid "VENUE_HOTEL"
 msgstr ""
 "Nous procédons à la recherche d'un hôtel à recommander. Contactez <a "
 "href='mailto:hotels@pycon.ca'>hotels@pycon.ca</a> si vous souhaitez être "
-"notifié lorsqu'un hôtel sera choisi."
+"notifié lorsqu'un hôtel sera choisi. "
 
 #: pyconca/templates/venue.mako:9
 msgid "Location"
 msgstr "Emplacement"
 
-#: pyconca/templates/venue.mako:18
+#: pyconca/templates/venue.mako:13
 msgid "View the complete"
 msgstr "Voir complètement la"
 
-#: pyconca/templates/venue.mako:18
+#: pyconca/templates/venue.mako:13
 msgid "PyCon Canada 2012 map"
 msgstr "carte de PyCon Canada 2012"
 
-#: pyconca/templates/venue.mako:22
+#: pyconca/templates/venue.mako:17
 msgid "Getting to Toronto"
 msgstr "Se rendre à Toronto"
 
-#: pyconca/templates/venue.mako:53
+#: pyconca/templates/venue.mako:23
 msgid "If you're coming from the US:"
 msgstr "Si vous arrivez des É.U.:"
 
-#: pyconca/templates/venue.mako:74
+#: pyconca/templates/venue.mako:32
 msgid "Public Transit and Parking"
 msgstr "Transport public et stationnement"
 
-#: pyconca/templates/venue.mako:95
+#: pyconca/templates/venue.mako:38
 msgid "Food"
 msgstr "Nourriture"
 
-#: pyconca/templates/venue.mako:108
+#: pyconca/templates/venue.mako:43
 msgid "Hotel"
 msgstr "Hôtel"
 
