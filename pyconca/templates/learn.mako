@@ -6,7 +6,7 @@
 
 <%block name="info">
     <div class="row-fluid content-section">
-      <h1 class="header header-first">Mike Bayer
+      <h1 class="header header-first">Michael Bayer
           <a href='https://www.ohloh.net/accounts/5559?ref=Rank'
              style="border-bottom: none;" target='_top'>
             <img alt='Ohloh profile for zzzeek' border='0' height='24'
@@ -14,23 +14,26 @@
                  width='32' />
           </a>
       </h1>
-      <p>
-        ${_("Mike Bayer is the creator of")}
-        <a href="http://www.sqlalchemy.org/">SQLAlchemy</a>${_(" and ")}
-        <a href="http://www.makotemplates.org/">Mako Templates</a>.
-        <ul>
-          <li>${_("He tweets: ")}<a href="https://twitter.com/zzzeek">@zzzeek</a></li>
-          <li>${_("He codes: ")}<a href="https://bitbucket.org/zzzeek">bitbucket.org/zzzeek</a></li>
-          <li>${_("He blogs: ")}<a href="http://techspot.zzzeek.org">techspot.zzzeek.org</a></li>
-        </ul>
-      </p>
+      <p><%block filter="gettext">LEARN_MICHAEL_BAYER</%block></p>
+    </div>
+
+    <div class="row-fluid content-section">
+      <h1 class="header">Elizabeth Leddy
+          <a href='https://www.ohloh.net/accounts/124089?ref=Rank'
+             style="border-bottom: none;" target='_top'>
+            <img alt='Ohloh profile for eleddy' border='0' height='24'
+                 src='https://www.ohloh.net/accounts/124089/widgets/account_rank.gif'
+                 width='32' />
+          </a>
+      </h1>
+      <p><%block filter="gettext">LEARN_ELIZABETH_LEDDY</%block></p>
     </div>
 
     <div class="row-fluid content-section">
       <h1 class="header">Chris McDonough
           <a href='https://www.ohloh.net/accounts/12691?ref=Rank'
              style="border-bottom: none;" target='_top'>
-            <img alt='%{_("Ohloh profile for Chris McDonough")}' border='0' height='24'
+            <img alt='Ohloh profile for Chris McDonough' border='0' height='24'
                  src='https://www.ohloh.net/accounts/12691/widgets/account_rank.gif'
                  width='32' />
           </a>
@@ -44,6 +47,10 @@
         Fredericksburg, VA, USA. His other major projects include
          <a href="http://supervisord.org/">Supervisor</a>, a
          Python process management system.
+         <b>
+           Cancelled: It looks like Chris McDonough won't be able to join us
+           this year after all.
+         </b>
       </p>
     </div>
 
@@ -76,6 +83,18 @@
         of Open Source Applications Volume II</a> and is working with
         O'Reilly on a new edition of Twisted Networking Essentials.
       </p>
+    </div>
+
+    <div class="row-fluid content-section">
+      <h1 class="header">Brandon Rhodes
+          <a href='https://www.ohloh.net/accounts/32600?ref=Rank'
+             style="border-bottom: none;" target='_top'>
+            <img alt='Ohloh profile for brandon_craig_rhodes' border='0' height='24'
+                 src='https://www.ohloh.net/accounts/32600/widgets/account_rank.gif'
+                 width='32' />
+          </a>
+      </h1>
+      <p><%block filter="gettext">LEARN_BRANDON_RHODES</%block></p>
     </div>
 
     <div class="row-fluid content-section">

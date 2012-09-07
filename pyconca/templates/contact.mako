@@ -7,17 +7,7 @@
 <%block name="info">
     <div class="row-fluid content-section">
         <h1 class="header header-first">${_(u"Contact Us")}</h1>
-        <p>
-          <%block filter="gettext">
-           The majority of our discussion occurs on the mailing list
-           <a href='mailto:pyconca@googlegroups.com'>pyconca@googlegroups.com</a>
-           (<a href='https://groups.google.com/forum/?fromgroups#!forum/pyconca'>archives</a>).
-           The organizing committee can be contacted privately at
-           <a href='mailto:organizers@pycon.ca'>organizers@pycon.ca</a>, and the
-           board (Diana Clarke, Nicola Yap, and David Wolever) can be contacted
-           privately at <a href='mailto:board@pycon.ca'>board@pycon.ca</a>.
-          </%block>
-        </p>
+        <p><%block filter="gettext">CONTACT_US_MAILING_LISTS</%block></p>
 
         <p>${_(u"We are also online at:")}</p>
         <ul>

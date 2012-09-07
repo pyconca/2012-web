@@ -12,11 +12,7 @@
         <tr>
           <th>18:00</th>
           <td>
-            <%block filter="gettext">
-            <strong>Registration, casual mixer and venue setup</strong>.
-            Come register, hang out, and chat. Food and drinks will be
-            provided, and the venue bar will be open.
-            </%block>
+            <%block filter="gettext">SCHEDULE_PARTY</%block>
           </td>
         </tr>
         <tr>
@@ -108,32 +104,21 @@
         <tr>
           <th>16:00</th>
           <td colspan="2">
-            <%block filter="gettext">
-            <strong>Talks finish, venue bar opens, appetizers served</strong>.
-            Time to meet some new people in preparation for dinner.
-            </%block>
+            <%block filter="gettext">SCHEDULE_TALKS_DONE</%block>
           </td>
         </tr>
 
         <tr>
           <th>17:00</th>
           <td colspan="2">
-            <%block filter="gettext">
-            <strong>Dinner</strong>. Not provided. Grab some friends and head
-            out to one of the local restaurants.
-            </%block>
+            <%block filter="gettext">SCHEDULE_DINNER</%block>
           </td>
         </tr>
 
         <tr>
           <th>18:00</th>
           <td colspan="2">
-            <%block filter="gettext">
-            <strong>Open space, BoF sessions</strong>. Hang out and chat. The
-            venue bar will be open, and there will be space for
-            <a href='http://en.wikipedia.org/wiki/Birds_of_a_feather_(computing)'>
-            birds of a feather</a> sessions.
-            </%block>
+            <%block filter="gettext">SCHEDULE_SPRINTS</%block>
           </td>
         </tr>
 
@@ -219,32 +204,21 @@
         <tr>
           <th>16:00</th>
           <td colspan="2">
-            <%block filter="gettext">
-            <strong>Talks finish, venue bar opens, appetizers served</strong>.
-            Time to meet some new people in preparation for dinner.
-            </%block>
+            <%block filter="gettext">SCHEDULE_TALKS_DONE</%block>
           </td>
         </tr>
 
         <tr>
           <th>17:00</th>
           <td colspan="2">
-            <%block filter="gettext">
-            <strong>Dinner</strong>. Not provided. Grab some friends and head
-            out to one of the local restaurants.
-            </%block>
+            <%block filter="gettext">SCHEDULE_DINNER</%block>
           </td>
         </tr>
 
         <tr>
           <th>18:00</th>
           <td colspan="2">
-            <%block filter="gettext">
-            <strong>Open space, BoF sessions</strong>. Hang out and chat. The
-            venue bar will be open, and there will be space for
-            <a href='http://en.wikipedia.org/wiki/Birds_of_a_feather_(computing)'>
-            birds of a feather</a> sessions.
-            </%block>
+            <%block filter="gettext">SCHEDULE_SPRINTS</%block>
           </td>
         </tr>
 
