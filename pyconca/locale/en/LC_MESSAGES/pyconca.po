@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pyconca 0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-09-06 22:33-0400\n"
+"POT-Creation-Date: 2012-09-06 23:17-0400\n"
 "PO-Revision-Date: 2012-08-15 22:01-0400\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -238,7 +238,7 @@ msgstr ""
 "Diana Clarke, Nicola Yap, or David Wolever. <br> <br>  If the matter is "
 "especially urgent, please call/contact any of these individuals: "
 
-#: pyconca/templates/conduct.mako:25
+#: pyconca/templates/conduct.mako:23
 msgid "CONDUCT_POLICE"
 msgstr ""
 "Conference staff will be happy to help participants contact hotel/venue "
@@ -246,7 +246,7 @@ msgstr ""
 "those experiencing harassment to feel safe for the duration of the "
 "conference. We value your attendance. "
 
-#: pyconca/templates/conduct.mako:29
+#: pyconca/templates/conduct.mako:27
 msgid "CONDUCT_CREDIT"
 msgstr ""
 "This code of conduct is largely based on the PyCon USA <a "
@@ -265,7 +265,7 @@ msgstr ""
 msgid "Contact Information"
 msgstr ""
 
-#: pyconca/templates/conduct.mako:28
+#: pyconca/templates/conduct.mako:26
 msgid "License"
 msgstr ""
 
@@ -397,7 +397,38 @@ msgstr ""
 "Noisebridge hacker space in San Francisco.  She is best reached on "
 "twitter as <a href='https://twitter.com/eleddy'>@eleddy</a>. "
 
-#: pyconca/templates/learn.mako:97
+#: pyconca/templates/learn.mako:41
+msgid "LEARN_CHRIS_MCDONOUGH"
+msgstr ""
+"<a href='https://twitter.com/chrismcdonough'>Chris McDonough</a> is the "
+"primary author of the <a "
+"href='http://docs.pylonsproject.org/en/latest/docs/pyramid.html'> Pyramid"
+" web application</a> framework. He is a developer and consultant for "
+"Agendaless Consulting, a company based in Fredericksburg, VA, USA. His "
+"other major projects include <a "
+"href='http://supervisord.org/'>Supervisor</a>, a Python process "
+"management system. <b>Cancelled:</b> It looks like Chris McDonough won't "
+"be able to join us this year after all. He sends his apologies. "
+
+#: pyconca/templates/learn.mako:53
+msgid "LEARN_JESSICA_MCKELLAR"
+msgstr ""
+"<a href='http://jesstess.com'>Jessica McKellar</a> is a software engineer"
+" from Cambridge, MA. She is a Python Software Foundation board member and"
+" an organizer for the <a href='http://meetup.bostonpython.com/'> largest "
+"Python user group in the world</a>. With that group she runs the <a "
+"href='http://bostonpythonworkshop.com/'> Boston Python Workshops</a> "
+"forwomen and their friends -- an introductory programming pipeline that "
+"has brought hundreds of women into the local Python community and is "
+"being replicated in cities across the US. Jessica is a veteran open "
+"source contributor and a maintainer for several open source projects, "
+"including OpenHatch and the Twisted event-driven networking engine; she "
+"wrote a chapter on Twisted for <a "
+"href='http://www.aosabook.org/en/index.html'>The Architecture of Open "
+"Source Applications Volume II</a> and is working with O'Reilly on a new "
+"edition of Twisted Networking Essentials. "
+
+#: pyconca/templates/learn.mako:65
 msgid "LEARN_BRANDON_RHODES"
 msgstr ""
 "<a href='http://twitter.com/brandon_rhodes'>Brandon Rhodes</a> started "
@@ -409,24 +440,16 @@ msgstr ""
 "the <a href='http://rhodesmill.org/pyephem/'>PyEphem</a> module for "
 "amateur astronomers since 1998. "
 
-#: pyconca/templates/learn.mako:103
-msgid ""
-"\n"
-"         Based in Halifax, Alex 'Sandy' Walsh is the owner of Dark Secret"
-"\n"
-"         Software. He has been a senior professional developer for nearly"
-" 20\n"
-"         years and a Pythonista for 10 years. He is a core developer on "
-"the\n"
-"         <a href=\"http://www.openstack.org/\">OpenStack</a> project with"
-"\n"
-"         Rackspace. You can learn more about him at\n"
-"         <a href=\"http://www.sandywalsh.com/\">sandywalsh.com</a> or "
-"follow\n"
-"         <a "
-"href=\"https://twitter.com/TheSandyWalsh\">@TheSandyWalsh</a>.\n"
-"        "
+#: pyconca/templates/learn.mako:70
+msgid "LEARN_SANDY_WALSH"
 msgstr ""
+"Based in Halifax, Alex 'Sandy' Walsh is the owner of Dark Secret "
+"Software. He has been a senior professional developer for nearly 20 years"
+" and a Pythonista for 10 years. He is a core developer on the <a "
+"href='http://www.openstack.org/'>OpenStack</a> project with Rackspace. "
+"You can learn more about him at <a "
+"href='http://www.sandywalsh.com/'>sandywalsh.com</a> or follow <a "
+"href='https://twitter.com/TheSandyWalsh'>@TheSandyWalsh</a>. "
 
 #: pyconca/templates/learn.mako:4
 msgid "Confirmed Speakers"

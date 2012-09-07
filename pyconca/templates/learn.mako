@@ -38,20 +38,7 @@
                  width='32' />
           </a>
       </h1>
-      <p>
-        <a href="https://twitter.com/chrismcdonough">Chris McDonough</a>
-        is the primary author of the
-        <a href="http://docs.pylonsproject.org/en/latest/docs/pyramid.html">
-        Pyramid web application</a> framework. He is a developer and
-        consultant for Agendaless Consulting, a company based in
-        Fredericksburg, VA, USA. His other major projects include
-         <a href="http://supervisord.org/">Supervisor</a>, a
-         Python process management system.
-         <b>
-           Cancelled: It looks like Chris McDonough won't be able to join us
-           this year after all.
-         </b>
-      </p>
+      <p><%block filter="gettext">LEARN_CHRIS_MCDONOUGH</%block></p>
     </div>
 
     <div class="row-fluid content-section">
@@ -63,26 +50,7 @@
                  width='32' />
           </a>
       </h1>
-      <p>
-        <a href="http://jesstess.com">Jessica McKellar</a>
-        is a software engineer from Cambridge, MA.
-        She is a Python Software Foundation board member and an
-        organizer for the <a href="http://meetup.bostonpython.com/">
-        largest Python user group in the world</a>.
-        With that group she runs the 
-        <a href="http://bostonpythonworkshop.com/">
-        Boston Python Workshops</a> for
-        women and their friends -- an introductory programming
-        pipeline that has brought hundreds of women into the local
-        Python community and is being replicated in cities across
-        the US. Jessica is a veteran open source contributor and
-        a maintainer for several open source projects, including
-        OpenHatch and the Twisted event-driven networking engine; she
-        wrote a chapter on Twisted for
-        <a href="http://www.aosabook.org/en/index.html">The Architecture
-        of Open Source Applications Volume II</a> and is working with
-        O'Reilly on a new edition of Twisted Networking Essentials.
-      </p>
+      <p><%block filter="gettext">LEARN_JESSICA_MCKELLAR</%block></p>
     </div>
 
     <div class="row-fluid content-section">
@@ -99,17 +67,7 @@
 
     <div class="row-fluid content-section">
       <h1 class="header">Sandy Walsh</h1>
-      <p>
-        <%block filter="gettext">
-         Based in Halifax, Alex 'Sandy' Walsh is the owner of Dark Secret
-         Software. He has been a senior professional developer for nearly 20
-         years and a Pythonista for 10 years. He is a core developer on the
-         <a href="http://www.openstack.org/">OpenStack</a> project with
-         Rackspace. You can learn more about him at
-         <a href="http://www.sandywalsh.com/">sandywalsh.com</a> or follow
-         <a href="https://twitter.com/TheSandyWalsh">@TheSandyWalsh</a>.
-        </%block>
-      </p>
+      <p><%block filter="gettext">LEARN_SANDY_WALSH</%block></p>
     </div>
 
 </%block>

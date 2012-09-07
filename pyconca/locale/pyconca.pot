@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pyconca 0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-09-06 22:35-0400\n"
+"POT-Creation-Date: 2012-09-06 23:17-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -272,21 +272,20 @@ msgstr ""
 msgid "LEARN_ELIZABETH_LEDDY"
 msgstr ""
 
-#: pyconca/templates/learn.mako:97
+#: pyconca/templates/learn.mako:41
+msgid "LEARN_CHRIS_MCDONOUGH"
+msgstr ""
+
+#: pyconca/templates/learn.mako:53
+msgid "LEARN_JESSICA_MCKELLAR"
+msgstr ""
+
+#: pyconca/templates/learn.mako:65
 msgid "LEARN_BRANDON_RHODES"
 msgstr ""
 
-#: pyconca/templates/learn.mako:103
-msgid ""
-"\n"
-"         Based in Halifax, Alex 'Sandy' Walsh is the owner of Dark Secret\n"
-"         Software. He has been a senior professional developer for nearly 20\n"
-"         years and a Pythonista for 10 years. He is a core developer on the\n"
-"         <a href=\"http://www.openstack.org/\">OpenStack</a> project with\n"
-"         Rackspace. You can learn more about him at\n"
-"         <a href=\"http://www.sandywalsh.com/\">sandywalsh.com</a> or follow\n"
-"         <a href=\"https://twitter.com/TheSandyWalsh\">@TheSandyWalsh</a>.\n"
-"        "
+#: pyconca/templates/learn.mako:70
+msgid "LEARN_SANDY_WALSH"
 msgstr ""
 
 #: pyconca/templates/learn.mako:4
