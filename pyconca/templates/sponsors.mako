@@ -8,6 +8,9 @@
     <div class="row-fluid content-section">
         <h1 class="header header-first">${_(u"Sponsor PyCon Canada")}</h1>
         <p><%block filter="gettext">SPONSOSORS_EMAIL</%block></p>
+        For more information, please see: 
+        <a target="_blank" href="${request.static_url("pyconca:static/PyCon_Canada_2012_Sponsorship_Prospectus.pdf")}">
+        Sponsorship Levels</a>.
     </div>
 
     <div class="row-fluid content-section">
