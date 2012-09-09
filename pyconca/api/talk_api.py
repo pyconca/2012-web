@@ -19,8 +19,11 @@ class TalkApi(BaseApi):
         self.schema = TalkSchema
 
     def _populate(self, talk, form, is_create):
-        if is_create:
-            talk.owner_id = authenticated_userid(self.request)
+        if self.is_admin:
+            talk.owner_id = form['owner_id']
+        else:
+            if is_create:
+                talk.owner_id = authenticated_userid(self.request)
         if self.is_admin:
             talk.reviewer_notes = form['reviewer_notes']
         talk.title = form['title']
@@ -105,3 +108,4 @@ class TalkSchema(Schema):
     outline = validators.String(not_empty=True, strip=True)
     reviewer_notes = validators.String(
         not_empty=False, strip=True, if_missing='')
+    owner_id = validators.Int(not_empty=True)
