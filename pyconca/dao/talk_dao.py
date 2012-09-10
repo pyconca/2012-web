@@ -7,6 +7,9 @@ class TalkDao(BaseDao):
     def __init__(self, authenticated_user):
         BaseDao.__init__(self, authenticated_user, Talk)
 
+    def _default_order_by(self):
+        return [self.model.title]
+
     def _query(self):
         query = BaseDao._query(self)
         if self.is_admin:

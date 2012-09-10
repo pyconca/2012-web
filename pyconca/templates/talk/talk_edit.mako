@@ -39,17 +39,22 @@
 
 <script id="talk-edit-template" type="text/x-handlebars-template">
     <div class="control-group">
-        <label class="control-label" for="user">User</label>
+        <label class="control-label" for="owner_id">User</label>
         <div class="controls">
-        % if is_create:
-            <input type="text"
-                   name="title" 
-                   value="${request.user.first_name} ${request.user.last_name}"
-                   disabled>
+        % if is_admin:
+            <select name="owner_id">
+              <option value=""></option>
+              {{#user_list}}
+                <option value="{{id}}"{{selected ../talk.user.id id}}>
+                  {{first_name}} {{last_name}}
+                </option>
+              {{/user_list}}
+            </select>
         % else:
+            <input type="hidden" name="owner_id" value="${request.user.id}">
             <input type="text"
-                   name="title" 
-                   value="{{talk.user.first_name}} {{talk.user.last_name}}"
+                   name="user_full_name"
+                   value="${request.user.first_name} ${request.user.last_name}"
                    disabled>
         % endif
         </div>
@@ -58,8 +63,7 @@
     <div class="control-group">
         <label class="control-label" for="title">Title</label>
         <div class="controls">
-            <input type="text" maxlength="100"
-                   name="title" value="{{talk.title}}">
+            <input type="text" maxlength="100" name="title" value="{{talk.title}}">
             <div class="help-block" style="display: inline;" id="title_error">&nbsp;</div>
         </div>
     </div>
@@ -106,7 +110,7 @@
     <div class="control-group">
         <label class="control-label" for="abstract">Abstract</label>
         <div class="controls">
-            <textarea rows="5" name="abstract">{{talk.abstract}}</textarea>
+            <textarea rows="5" class="field span10" name="abstract" maxlength="400">{{talk.abstract}}</textarea>
             <div class="help-block" style="display: inline;" id="abstract_error">&nbsp;</div>
         </div>
     </div>
@@ -114,7 +118,7 @@
     <div class="control-group">
         <label class="control-label" for="outline">Outline</label>
         <div class="controls">
-            <textarea rows="10" name="outline">{{talk.outline}}</textarea>
+            <textarea rows="10" class="field span10" name="outline">{{talk.outline}}</textarea>
             <div class="help-block" style="display: inline;" id="outline_error">&nbsp;</div>
         </div>
     </div>
@@ -123,7 +127,7 @@
         <div class="control-group">
             <label class="control-label" for="reviewer_notes">Reviewer Notes</label>
             <div class="controls">
-                <textarea rows="10" name="reviewer_notes">{{talk.reviewer_notes}}</textarea>
+                <textarea rows="10" class="field span10" name="reviewer_notes">{{talk.reviewer_notes}}</textarea>
                 <div class="help-block" style="display: inline;" id="reviewer_notes_error">&nbsp;</div>
             </div>
         </div>
@@ -132,14 +136,35 @@
 
 <script type="text/javascript">
 
-    function render_templates(response) {
+    function render_templates(response, user_list) {
+        var context = response["data"];
+        context["user_list"] = user_list;
+
         var layout = $("#talk-edit-template").html();
         var template = Handlebars.compile(layout);
-        $("#talk-edit-result").html(template(response["data"]));
+        $("#talk-edit-result").html(template(context));
 
         var layout = $("#breadcrumbs-template").html();
         var template = Handlebars.compile(layout);
-        $("#breadcrumbs-result").html(template(response["data"]));
+        $("#breadcrumbs-result").html(template(context));
+    }
+
+    function get_user_list() {
+        var user_list = []
+
+        % if is_admin:
+            var url = "${request.route_url('api_user_index')}";
+            $.ajax({  
+                url: url,
+                dataType: 'json',
+                async: false,
+                success: function(response) {
+                        user_list = response["data"]["user_list"];
+                }
+            });
+        % endif:
+
+        return user_list;
     }
 
     $(document).ready(function() {
@@ -147,6 +172,16 @@
             if (context == options.hash.compare) return options.fn(this);
           return options.inverse(this);
         });
+
+        Handlebars.registerHelper('selected', function(option, value) {
+            if (option == value) {
+                return new Handlebars.SafeString(' selected');
+            } else {
+                return '';
+            }
+         });
+
+        user_list = get_user_list();
 
         % if is_create:
             var empty_talk = {
@@ -158,11 +193,11 @@
                 reviewer_notes: "",
             };
             var response = {data: {talk: empty_talk}};
-            render_templates(response);
+            render_templates(response, user_list);
         % else:
             var url = "${request.route_url('api_talk_get', id=id)}";
             $.getJSON(url, function(response) {
-                render_templates(response);
+                render_templates(response, user_list);
             });
         % endif:
     });

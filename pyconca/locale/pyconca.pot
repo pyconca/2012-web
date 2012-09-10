@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pyconca 0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-09-06 21:30-0400\n"
+"POT-Creation-Date: 2012-09-06 23:17-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,7 +63,8 @@ msgstr ""
 msgid "Host an annual Canadian PyCon conference, starting now - 2012!"
 msgstr ""
 
-#: pyconca/templates/about.mako:34 pyconca/templates/conduct.mako:9
+#: pyconca/templates/about.mako:34 pyconca/templates/conduct.mako:3
+#: pyconca/templates/conduct.mako:7
 msgid "Code of Conduct"
 msgstr ""
 
@@ -153,178 +154,43 @@ msgstr ""
 msgid "photo by camstatic"
 msgstr ""
 
-#: pyconca/templates/conduct.mako:3
-msgid ""
-"\n"
-"    Code of Conduct\n"
+#: pyconca/templates/conduct.mako:8
+msgid "CONDUCT_OVERVIEW"
 msgstr ""
 
 #: pyconca/templates/conduct.mako:11
-msgid ""
-"\n"
-"            PyCon Canada is a community conference intended for networking "
-"and\n"
-"            collaboration in the developer community.\n"
-"            <br>\n"
-"            <br>\n"
-"\n"
-"            We value the participation of each member of the Python community"
-"\n"
-"            and want all attendees to have an enjoyable and fulfilling\n"
-"            experience. Accordingly, all attendees are expected to show\n"
-"            <strong>respect</strong> and <strong>courtesy</strong>\n"
-"            to other attendees throughout the conference and at\n"
-"            all conference events, whether officially sponsored by PyCon\n"
-"            Canada or not.\n"
-"            <br>\n"
-"            <br>\n"
-"\n"
-"            To make clear what is expected, all delegates, speakers, "
-"exhibitors\n"
-"            and volunteers at any PyCon Canada event are required to conform\n"
-"            to the following Code of Conduct. Organizers will enforce this\n"
-"            code throughout the event.\n"
-"          "
+msgid "CONDUCT_SHORT"
 msgstr ""
 
-#: pyconca/templates/conduct.mako:36
-msgid ""
-"\n"
-"            PyCon Canada is dedicated to providing a harassment-free "
-"conference\n"
-"            experience for everyone, regardless of gender, sexual "
-"orientation,\n"
-"            disability, physical appearance, body size, race, or religion. We"
-" do\n"
-"            not tolerate harassment of conference participants in any form.\n"
-"            <br>\n"
-"            <br>\n"
-"\n"
-"            All communication should be appropriate for a professional "
-"audience\n"
-"            including people of many different backgrounds. Sexual language "
-"and\n"
-"            imagery is not appropriate for any conference venue, including "
-"talks.\n"
-"            <br>\n"
-"            <br>\n"
-"\n"
-"            <strong>Be kind</strong> to others. Do not insult or put down\n"
-"            other attendees. Behave professionally. Remember that harassment\n"
-"            and sexist, racist, or exclusionary jokes are not appropriate for"
-"\n"
-"            PyCon Canada.\n"
-"            <br>\n"
-"            <br>\n"
-"\n"
-"            Attendees violating these rules may be asked to leave the "
-"conference\n"
-"            without a refund at the sole discretion of the conference "
-"organizers.\n"
-"            <br>\n"
-"            <br>\n"
-"\n"
-"            Thank you for helping make this a welcoming, friendly event for "
-"all.\n"
-"          "
+#: pyconca/templates/conduct.mako:14
+msgid "CONDUCT_LONG"
 msgstr ""
 
-#: pyconca/templates/conduct.mako:68
-msgid ""
-"\n"
-"            Harassment includes offensive verbal comments related to gender,\n"
-"            sexual orientation, disability, physical appearance, body size, "
-"race,\n"
-"            religion, sexual images in public spaces, deliberate "
-"intimidation,\n"
-"            stalking, following, harassing photography or recording, "
-"sustained\n"
-"            disruption of talks or other events, inappropriate physical "
-"contact,\n"
-"            and unwelcome sexual attention.\n"
-"            <br>\n"
-"            <br>\n"
-"\n"
-"            Participants asked to stop any harassing behavior are expected to"
-"\n"
-"            comply immediately.\n"
-"            <br>\n"
-"            <br>\n"
-"\n"
-"            Exhibitors in the expo hall, sponsor or vendor booths, or similar"
-"\n"
-"            activities are also subject to the anti-harassment policy. In\n"
-"            particular, exhibitors should not use sexualized images, "
-"activities,\n"
-"            or other material. Booth staff (including volunteers) should not "
-"use\n"
-"            sexualized clothing/uniforms/costumes, or otherwise create a\n"
-"            sexualized environment.\n"
-"            <br>\n"
-"            <br>\n"
-"\n"
-"            Be careful in the words that you choose. Remember that sexist,\n"
-"            racist, and other exclusionary jokes can be offensive to those\n"
-"            around you.\n"
-"            <br>\n"
-"            <br>\n"
-"\n"
-"            If a participant engages in behavior that violates this code of\n"
-"            conduct, the conference organizers may take any action they deem\n"
-"            appropriate, including warning the offender or expulsion from the"
-"\n"
-"            conference with no refund.\n"
-"          "
+#: pyconca/templates/conduct.mako:18
+msgid "CONDUCT_CONTACTS"
 msgstr ""
 
-#: pyconca/templates/conduct.mako:107
-msgid ""
-"\n"
-"            If you are being harassed, notice that someone else is being\n"
-"            harassed, or have any other concerns, please contact a member of\n"
-"            conference board - Diana Clarke, Nicola Yap, or David Wolever.\n"
-"            <br>\n"
-"            <br>\n"
-"\n"
-"            If the matter is especially urgent, please call/contact any of\n"
-"            these individuals:\n"
-"          "
+#: pyconca/templates/conduct.mako:23
+msgid "CONDUCT_POLICE"
 msgstr ""
 
-#: pyconca/templates/conduct.mako:123
-msgid ""
-"\n"
-"              Conference staff will be happy to help participants contact\n"
-"              hotel/venue security or local law enforcement, provide escorts,"
-"\n"
-"              or otherwise assist those experiencing harassment to feel safe\n"
-"              for the duration of the conference. We value your attendance.\n"
-"            "
+#: pyconca/templates/conduct.mako:27
+msgid "CONDUCT_CREDIT"
 msgstr ""
 
-#: pyconca/templates/conduct.mako:133
-msgid ""
-"\n"
-"            This code of conduct is largely based on the PyCon USA\n"
-"            <a href=\"https://us.pycon.org/2013/about/code-of-conduct/\">\n"
-"                Conference Code of Conduct\n"
-"            </a>.\n"
-"          "
-msgstr ""
-
-#: pyconca/templates/conduct.mako:34
+#: pyconca/templates/conduct.mako:10
 msgid "The Short Version"
 msgstr ""
 
-#: pyconca/templates/conduct.mako:66
+#: pyconca/templates/conduct.mako:13
 msgid "The Longer Version"
 msgstr ""
 
-#: pyconca/templates/conduct.mako:105
+#: pyconca/templates/conduct.mako:16
 msgid "Contact Information"
 msgstr ""
 
-#: pyconca/templates/conduct.mako:131
+#: pyconca/templates/conduct.mako:26
 msgid "License"
 msgstr ""
 
@@ -406,21 +272,20 @@ msgstr ""
 msgid "LEARN_ELIZABETH_LEDDY"
 msgstr ""
 
-#: pyconca/templates/learn.mako:97
+#: pyconca/templates/learn.mako:41
+msgid "LEARN_CHRIS_MCDONOUGH"
+msgstr ""
+
+#: pyconca/templates/learn.mako:53
+msgid "LEARN_JESSICA_MCKELLAR"
+msgstr ""
+
+#: pyconca/templates/learn.mako:65
 msgid "LEARN_BRANDON_RHODES"
 msgstr ""
 
-#: pyconca/templates/learn.mako:103
-msgid ""
-"\n"
-"         Based in Halifax, Alex 'Sandy' Walsh is the owner of Dark Secret\n"
-"         Software. He has been a senior professional developer for nearly 20\n"
-"         years and a Pythonista for 10 years. He is a core developer on the\n"
-"         <a href=\"http://www.openstack.org/\">OpenStack</a> project with\n"
-"         Rackspace. You can learn more about him at\n"
-"         <a href=\"http://www.sandywalsh.com/\">sandywalsh.com</a> or follow\n"
-"         <a href=\"https://twitter.com/TheSandyWalsh\">@TheSandyWalsh</a>.\n"
-"        "
+#: pyconca/templates/learn.mako:70
+msgid "LEARN_SANDY_WALSH"
 msgstr ""
 
 #: pyconca/templates/learn.mako:4

@@ -7,6 +7,9 @@ class UserDao(BaseDao):
     def __init__(self, authenticated_user):
         BaseDao.__init__(self, authenticated_user, User)
 
+    def _default_order_by(self):
+        return [self.model.last_name, self.model.first_name, self.model.id]
+
     def get_by_username(self, username):
         return self._query().filter_by(username=username).first()
 

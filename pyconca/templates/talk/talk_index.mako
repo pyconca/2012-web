@@ -30,7 +30,7 @@
                 {{title}}
             </a>
           </td>
-          <td>{{user.username}}</td>
+          <td>{{user.first_name}} {{user.last_name}}</td>
           <td>{{type}}</td>
           <td>{{level}}</td>
         </tr>

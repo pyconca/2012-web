@@ -34,5 +34,12 @@ class BaseDao(object):
         DBSession.add(instance)
         DBSession.flush()
 
+    def _default_order_by(self):
+        return None
+
     def _query(self):
-        return DBSession.query(self.model)
+        query = DBSession.query(self.model)
+        default_order_by = self._default_order_by()
+        if default_order_by:
+            query = query.order_by(*default_order_by)
+        return query
