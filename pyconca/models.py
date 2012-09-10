@@ -130,15 +130,20 @@ class Talk(AttrMixIn, Base):
 
         return data
 
+
 class ScheduleSlot(AttrMixIn, Base):
     id = Column(Integer, primary_key=True)
     room = Column(String(length=100), nullable=False)
     start = Column(DateTime, nullable=False)
     end = Column(DateTime, nullable=False)
 
+
 class TalkScheduleSlot(AttrMixIn, Base):
     talk_id = Column(Integer, ForeignKey('talk.id'), primary_key=True)
     schedule_slot_id = Column(Integer, ForeignKey('schedule_slot.id'), primary_key=True)
 
-Index("talk_schedule_slot_talk_id_unique", TalkScheduleSlot.talk_id, unique=True)
-Index("talk_schedule_slot_schedule_slot_id_unique", TalkScheduleSlot.schedule_slot_id, unique=True)
+
+Index("talk_schedule_slot_talk_id_unique", 
+    TalkScheduleSlot.talk_id, unique=True)
+Index("talk_schedule_slot_schedule_slot_id_unique", 
+    TalkScheduleSlot.schedule_slot_id, unique=True)
