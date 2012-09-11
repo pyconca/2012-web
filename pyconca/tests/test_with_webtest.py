@@ -24,7 +24,7 @@ class TestWithWebtest(unittest.TestCase):
         self.testapp = TestApp(main(
             {},
             **{
-                'sqlalchemy.url': os.environ.get('DB', 'sqlite:///'),
+                'sqlalchemy.url': os.environ.get('DB', 'sqlite://'),
                 'secret.authn_policy':'so_secret',
                 'secret.unencrypted_cookie':'itsaseekreet',
                 'mako.directories':'pyconca:templates',
