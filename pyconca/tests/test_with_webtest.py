@@ -94,11 +94,11 @@ class TestWithWebtest(unittest.TestCase):
 
     def test_user_api_get_admin__as_admin(self):
         data = self._getJsonFrom('/user/1.json', who='admin', status=200)
-        self.assertEquals(1, data['data']['user']['id'])
+        self.assertEquals(self._admin_id, data['data']['user']['id'])
 
     def test_user_api_get_speaker__as_admin(self):
         data = self._getJsonFrom('/user/2.json', who='admin', status=200)
-        self.assertEquals(2, data['data']['user']['id'])
+        self.assertEquals(self._speaker_id, data['data']['user']['id'])
 
     def test_user_api_get_admin__as_speaker(self):
         data = self._getJsonFrom('/user/1.json', who='speaker', status=403)
@@ -106,7 +106,7 @@ class TestWithWebtest(unittest.TestCase):
 
     def test_user_api_get_speaker__as_speaker(self):
         data = self._getJsonFrom('/user/2.json', who='speaker', status=200)
-        self.assertEquals(2, data['data']['user']['id'])
+        self.assertEquals(self._speaker_id, data['data']['user']['id'])
 
     ### TALK API
 
