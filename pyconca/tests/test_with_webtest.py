@@ -154,7 +154,7 @@ class TestWithWebtest(unittest.TestCase):
         self.assertEquals(self._speaker_talk_id, data['data']['talk']['id'])
         self._assertTalkNotScheduled(data)
 
-    def test_talk_api_unscheduled(self):
+    def test_talk_api_talk_is_scheduled(self):
         start = datetime(2012, 11, 10, 15, 00)
         end = datetime(2012,11,10,15,30)
         with transaction.manager:
