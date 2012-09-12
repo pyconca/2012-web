@@ -6,25 +6,6 @@ here = os.path.abspath(os.path.dirname(__file__))
 README = open(os.path.join(here, 'README.rst')).read()
 CHANGES = open(os.path.join(here, 'CHANGES.txt')).read()
 
-requires = [
-#    'MySQL-python',
-    'FormEncode',
-    'mock',
-    'pyramid',
-    'SQLAlchemy',
-    'transaction',
-    'py-bcrypt',
-    'pyramid_tm',
-    'pyramid_debugtoolbar',
-    'pytz',
-    'zope.sqlalchemy',
-    'waitress',
-    'Babel',
-    'lingua',
-    'webtest',
-    'nose',
-    ]
-
 setup(name='pyconca',
       version='0.0',
       description='pyconca',
@@ -43,9 +24,6 @@ setup(name='pyconca',
       include_package_data=True,
       zip_safe=False,
       test_suite='nose.collector',
-      tests_require=[
-      ],
-      install_requires=requires,
       message_extractors = { '.': [
             ('**.py', 'python', None),
             ('pyconca/templates/**.mako', "pyconca.babelplugin:extract", None)]},
