@@ -2,6 +2,11 @@
 ``pyconca`` Website
 ===================
 
+.. image:: https://secure.travis-ci.org/pyconca/pyconca.png?branch=master
+   :target: https://secure.travis-ci.org/pyconca/pyconca
+   :alt: Build status
+
+
 Getting Started
 ---------------
 
