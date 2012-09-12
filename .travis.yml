@@ -13,7 +13,7 @@ before_script:
   - pip install --use-mirrors MySQL-python
   - mysql -e 'create database pyconca_test;'
 install: 
-   - pip install . --use-mirrors
+   - pip install -r requirements.txt --use-mirrors
 script: make test
 notifications:
   irc: "irc.freenode.net#pyconca"
