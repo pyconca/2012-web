@@ -2,6 +2,11 @@
 ``pyconca`` Website
 ===================
 
+.. image:: https://secure.travis-ci.org/pyconca/pyconca.png?branch=master
+   :target: https://secure.travis-ci.org/pyconca/pyconca
+   :alt: Build status
+
+
 Getting Started
 ---------------
 
@@ -10,6 +15,8 @@ Getting Started
     ~$ **virtualenv -p python2.7 env-pyconca**
     ~$ **source env-pyconca/bin/activate**
     (env-pyconca)~$ **cd workspace/pyconca/**
+    (env-pyconca)~/workspace/pyconca$ **pip install -r requirements.txt**
+    Cleaning up...
     (env-pyconca)~/workspace/pyconca$ **python setup.py develop**
     Finished processing dependencies for pyconca==0.0
     (env-pyconca)~/workspace/pyconca$ **./reset**

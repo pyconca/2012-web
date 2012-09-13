@@ -18,12 +18,13 @@ from pyconca.models import ScheduleSlot
 from pyconca.models import TalkScheduleSlot
 
 @patch('pyconca.views.check_password', lambda x, y: True)
+@patch('pyconca.locale.locale_from_browser', lambda x: 'en')
 class TestWithWebtest(unittest.TestCase):
     def setUp(self):
         self.testapp = TestApp(main(
             {},
             **{
-                'sqlalchemy.url': os.environ.get('DB', 'sqlite:///'),
+                'sqlalchemy.url': os.environ.get('DB', 'sqlite://'),
                 'secret.authn_policy':'so_secret',
                 'secret.unencrypted_cookie':'itsaseekreet',
                 'mako.directories':'pyconca:templates',
@@ -70,8 +71,8 @@ class TestWithWebtest(unittest.TestCase):
     def test_login(self):
         self._loginAs('admin')
         index_response = self.testapp.get('/', status=200)
-        self.failUnless('Logout' in index_response.body)
-        self.failIf('Login' in index_response.body)
+        self.failUnless('Logout' in index_response.body, index_response.body)
+        self.failIf('Login' in index_response.body, index_response.body)
 
     ### USER API
 
@@ -93,11 +94,11 @@ class TestWithWebtest(unittest.TestCase):
 
     def test_user_api_get_admin__as_admin(self):
         data = self._getJsonFrom('/user/1.json', who='admin', status=200)
-        self.assertEquals(1, data['data']['user']['id'])
+        self.assertEquals(self._admin_id, data['data']['user']['id'])
 
     def test_user_api_get_speaker__as_admin(self):
         data = self._getJsonFrom('/user/2.json', who='admin', status=200)
-        self.assertEquals(2, data['data']['user']['id'])
+        self.assertEquals(self._speaker_id, data['data']['user']['id'])
 
     def test_user_api_get_admin__as_speaker(self):
         data = self._getJsonFrom('/user/1.json', who='speaker', status=403)
@@ -105,7 +106,7 @@ class TestWithWebtest(unittest.TestCase):
 
     def test_user_api_get_speaker__as_speaker(self):
         data = self._getJsonFrom('/user/2.json', who='speaker', status=200)
-        self.assertEquals(2, data['data']['user']['id'])
+        self.assertEquals(self._speaker_id, data['data']['user']['id'])
 
     ### TALK API
 
@@ -153,7 +154,7 @@ class TestWithWebtest(unittest.TestCase):
         self.assertEquals(self._speaker_talk_id, data['data']['talk']['id'])
         self._assertTalkNotScheduled(data)
 
-    def test_talk_api_unscheduled(self):
+    def test_talk_api_talk_is_scheduled(self):
         start = datetime(2012, 11, 10, 15, 00)
         end = datetime(2012,11,10,15,30)
         with transaction.manager:
