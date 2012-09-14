@@ -89,6 +89,11 @@
           <td>Teresa Hulinska</td>
           <td>Davin Baragiotta</td>
         </tr>
+
+        <tr>
+          <td>Christopher Lambacher</td>
+          <td>David Warde-Farley</td>
+        </tr>
       </table>
 
     <p><%block filter="gettext">ABOUT_SHY</%block></p>
