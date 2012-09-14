@@ -230,5 +230,34 @@
         </tr>
       </table>
     </div>
+
+    <div class="row-fluid content-section">
+      <h1 class="header" id="monday">${_(u"Monday, November 12")}</h1>
+      <table class="table table-bordered">
+        <tr>
+          <th>All Day</th>
+          <td colspan="2">
+            <strong>${_(u"Sprints")}</strong>
+            <br>
+            Location: TBD
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="row-fluid content-section">
+      <h1 class="header" id="tuesday">${_(u"Tuesday, November 13")}</h1>
+      <table class="table table-bordered">
+        <tr>
+          <th>All Day</th>
+          <td colspan="2">
+            <strong>${_(u"Sprints")}</strong>
+            <br>
+            Location: TBD
+          </td>
+        </tr>
+      </table>
+    </div>
+
   </div>
 </%block>
