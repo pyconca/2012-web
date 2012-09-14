@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pyconca 0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-09-13 22:24-0400\n"
+"POT-Creation-Date: 2012-09-13 23:41-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,7 +42,7 @@ msgid "ABOUT_SHY"
 msgstr ""
 
 #: pyconca/templates/about.mako:4 pyconca/templates/base.mako:50
-#: pyconca/templates/base.mako:191 pyconca/templates/base.mako:241
+#: pyconca/templates/base.mako:204 pyconca/templates/base.mako:254
 #: pyconca/templates/index.mako:98
 msgid "About"
 msgstr ""
@@ -72,85 +72,94 @@ msgstr ""
 msgid "Made in Canada!"
 msgstr ""
 
-#: pyconca/templates/base.mako:43 pyconca/templates/base.mako:187
-#: pyconca/templates/base.mako:235
+#: pyconca/templates/base.mako:43 pyconca/templates/base.mako:200
+#: pyconca/templates/base.mako:248
 msgid "Home"
 msgstr ""
 
-#: pyconca/templates/base.mako:57 pyconca/templates/base.mako:199
-#: pyconca/templates/base.mako:238 pyconca/templates/index.mako:142
+#: pyconca/templates/base.mako:57 pyconca/templates/base.mako:212
+#: pyconca/templates/base.mako:251 pyconca/templates/index.mako:142
 #: pyconca/templates/venue.mako:4
 msgid "Venue"
 msgstr ""
 
-#: pyconca/templates/base.mako:64 pyconca/templates/base.mako:203
-#: pyconca/templates/base.mako:242 pyconca/templates/index.mako:156
+#: pyconca/templates/base.mako:64 pyconca/templates/base.mako:216
+#: pyconca/templates/base.mako:255 pyconca/templates/index.mako:156
 #: pyconca/templates/schedule.mako:4
 msgid "Schedule"
 msgstr ""
 
-#: pyconca/templates/base.mako:71 pyconca/templates/base.mako:207
-#: pyconca/templates/base.mako:236 pyconca/templates/index.mako:113
+#: pyconca/templates/base.mako:70
+msgid "Conference Schedule"
+msgstr ""
+
+#: pyconca/templates/base.mako:75 pyconca/templates/schedule.mako:240
+#: pyconca/templates/schedule.mako:254 pyconca/templates/sprints.mako:4
+msgid "Sprints"
+msgstr ""
+
+#: pyconca/templates/base.mako:84 pyconca/templates/base.mako:220
+#: pyconca/templates/base.mako:249 pyconca/templates/index.mako:113
 msgid "Speak"
 msgstr ""
 
-#: pyconca/templates/base.mako:78 pyconca/templates/base.mako:211
-#: pyconca/templates/base.mako:239 pyconca/templates/index.mako:127
+#: pyconca/templates/base.mako:91 pyconca/templates/base.mako:224
+#: pyconca/templates/base.mako:252 pyconca/templates/index.mako:127
 msgid "Learn"
 msgstr ""
 
-#: pyconca/templates/base.mako:85 pyconca/templates/base.mako:215
-#: pyconca/templates/base.mako:245 pyconca/templates/index.mako:18
+#: pyconca/templates/base.mako:98 pyconca/templates/base.mako:228
+#: pyconca/templates/base.mako:258 pyconca/templates/index.mako:18
 #: pyconca/templates/index.mako:22 pyconca/templates/sponsors.mako:4
 msgid "Sponsor"
 msgstr ""
 
-#: pyconca/templates/base.mako:92 pyconca/templates/base.mako:195
-#: pyconca/templates/base.mako:244 pyconca/templates/contact.mako:4
+#: pyconca/templates/base.mako:105 pyconca/templates/base.mako:208
+#: pyconca/templates/base.mako:257 pyconca/templates/contact.mako:4
 msgid "Contact"
 msgstr ""
 
-#: pyconca/templates/base.mako:99 pyconca/templates/base.mako:219
+#: pyconca/templates/base.mako:112 pyconca/templates/base.mako:232
 msgid "Français"
 msgstr ""
 
-#: pyconca/templates/base.mako:115
+#: pyconca/templates/base.mako:128
 msgid "Talks"
 msgstr ""
 
-#: pyconca/templates/base.mako:121
+#: pyconca/templates/base.mako:134
 msgid "Users"
 msgstr ""
 
-#: pyconca/templates/base.mako:128
+#: pyconca/templates/base.mako:141
 msgid "Submit a Talk"
 msgstr ""
 
-#: pyconca/templates/base.mako:134
+#: pyconca/templates/base.mako:147
 msgid "Your Talks"
 msgstr ""
 
-#: pyconca/templates/base.mako:142
+#: pyconca/templates/base.mako:155
 msgid "Your Profile"
 msgstr ""
 
-#: pyconca/templates/base.mako:148
+#: pyconca/templates/base.mako:161
 msgid "Logout"
 msgstr ""
 
-#: pyconca/templates/base.mako:157
+#: pyconca/templates/base.mako:170
 msgid "Login"
 msgstr ""
 
-#: pyconca/templates/base.mako:164
+#: pyconca/templates/base.mako:177
 msgid "Sign Up"
 msgstr ""
 
-#: pyconca/templates/base.mako:253
+#: pyconca/templates/base.mako:266
 msgid "© PyCon Canada 2012"
 msgstr ""
 
-#: pyconca/templates/base.mako:257
+#: pyconca/templates/base.mako:270
 msgid "photo by camstatic"
 msgstr ""
 
@@ -345,10 +354,6 @@ msgstr ""
 msgid "Monday, November 12"
 msgstr ""
 
-#: pyconca/templates/schedule.mako:240 pyconca/templates/schedule.mako:254
-msgid "Sprints"
-msgstr ""
-
 #: pyconca/templates/schedule.mako:249
 msgid "Tuesday, November 13"
 msgstr ""
@@ -415,6 +420,38 @@ msgstr ""
 
 #: pyconca/templates/sponsors.mako:9
 msgid "Sponsor PyCon Canada"
+msgstr ""
+
+#: pyconca/templates/sprints.mako:10
+msgid "SPRINT_INTRO"
+msgstr ""
+
+#: pyconca/templates/sprints.mako:15
+msgid "SPRINT_WHAT"
+msgstr ""
+
+#: pyconca/templates/sprints.mako:20
+msgid "SPRINT_WHO"
+msgstr ""
+
+#: pyconca/templates/sprints.mako:25
+msgid "SPRINT_SCHEDULE"
+msgstr ""
+
+#: pyconca/templates/sprints.mako:9
+msgid "Development Sprints"
+msgstr ""
+
+#: pyconca/templates/sprints.mako:14
+msgid "What's a Sprint"
+msgstr ""
+
+#: pyconca/templates/sprints.mako:19
+msgid "Who can participate?"
+msgstr ""
+
+#: pyconca/templates/sprints.mako:24
+msgid "What's the schedule?"
 msgstr ""
 
 #: pyconca/templates/venue.mako:10
