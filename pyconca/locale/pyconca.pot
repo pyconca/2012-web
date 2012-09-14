@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pyconca 0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-09-13 21:55-0400\n"
+"POT-Creation-Date: 2012-09-13 22:24-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgstr ""
 msgid "ABOUT_CONTRIBUTIONS"
 msgstr ""
 
-#: pyconca/templates/about.mako:94
+#: pyconca/templates/about.mako:104
 msgid "ABOUT_SHY"
 msgstr ""
 
@@ -339,6 +339,18 @@ msgstr ""
 
 #: pyconca/templates/schedule.mako:135
 msgid "Sunday, November 11"
+msgstr ""
+
+#: pyconca/templates/schedule.mako:235
+msgid "Monday, November 12"
+msgstr ""
+
+#: pyconca/templates/schedule.mako:240 pyconca/templates/schedule.mako:254
+msgid "Sprints"
+msgstr ""
+
+#: pyconca/templates/schedule.mako:249
+msgid "Tuesday, November 13"
 msgstr ""
 
 #: pyconca/templates/speakers.mako:11
