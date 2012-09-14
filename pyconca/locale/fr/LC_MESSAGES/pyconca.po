@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pyconca 0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-09-13 23:41-0400\n"
+"POT-Creation-Date: 2012-09-14 17:25-0400\n"
 "PO-Revision-Date: 2012-08-15 22:00-0400\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -118,12 +118,12 @@ msgstr "Horaire"
 
 #: pyconca/templates/base.mako:70
 msgid "Conference Schedule"
-msgstr ""
+msgstr "Horaire de la conférence"
 
 #: pyconca/templates/base.mako:75 pyconca/templates/schedule.mako:240
 #: pyconca/templates/schedule.mako:254 pyconca/templates/sprints.mako:4
 msgid "Sprints"
-msgstr ""
+msgstr "Sprints"
 
 #: pyconca/templates/base.mako:84 pyconca/templates/base.mako:220
 #: pyconca/templates/base.mako:249 pyconca/templates/index.mako:113
@@ -176,7 +176,7 @@ msgstr "Se déconnecter"
 
 #: pyconca/templates/base.mako:170
 msgid "Login"
-msgstr "Connection"
+msgstr "Connexion"
 
 #: pyconca/templates/base.mako:177
 msgid "Sign Up"
@@ -651,35 +651,67 @@ msgstr "Commanditer PyCon Canada"
 #: pyconca/templates/sprints.mako:10
 msgid "SPRINT_INTRO"
 msgstr ""
+"<b>Le lundi 12 novembre et mardi 13 novembre 2012.</b><br><br>"
+"Les Sprints de développement sont un des éléments clé de PyCon, une chance "
+"pour les contributeurs de projets open-source de se rencontrer face à face "
+"pour deux jours d'apprentissage intensif, de développement et de camaraderie. "
+"Les débutants aux côtés des experts, dîners et soupers ensemble, et passer "
+"bon moment tout en faisant progresser leurs projets."
 
 #: pyconca/templates/sprints.mako:15
 msgid "SPRINT_WHAT"
 msgstr ""
+"Les Sprints de développement à PyCon sont deux jours intensifs "
+"d'apprentissage et de développement sur des projets open-source de votre "
+"choix, dans un environnement où l'on fait équipe. C'est un temps pour se "
+"réunir entre collègues, anciens et nouveaux, afin de partager ce que vous"
+" avez appris et l'appliquer à un projet open-source.<br><br>Au beau "
+"milieu d'une salle de sprint, faisant équipe avec autant de concentration"
+" que d'humour, c'est le temps de tester, corriger les bugs, ajouter de "
+"nouvelles fonctionnalités et améliorer la documentation. C'est aussi le "
+"temps d'agrandir votre réseau de contacts, se faire des amis, et étabir "
+"des relations qui vont au-dalà de la conférence.<br><br>PyCon fournit "
+"l'espace et l'infrastructure (réseau, alimentation, tables et chaises); "
+"vous apportez vos compétences, l'humanité, et l'intelligence (oh, "
+"n'oubliez pas votre ordinateur)."
 
 #: pyconca/templates/sprints.mako:20
 msgid "SPRINT_WHO"
 msgstr ""
+"<b>Vous!</b> <br><br>Tous les niveaux d'expérience sont les bienvenus; "
+"les sprints sont une excellente occasion de vous impliquer et commencer à"
+" contribuer à votre projet Python préféré.<br>La participation aux "
+"sprints est gratuite!"
 
 #: pyconca/templates/sprints.mako:25
-#, fuzzy
 msgid "SPRINT_SCHEDULE"
-msgstr "Horaire"
+msgstr ""
+"Il y aura deux sessions de pré-sprint le dimanche 12 novembre 2012 après "
+"la fin des discours de la conférence:<br><br><b>Intro (16h30-17h)</b> Une "
+"session plénière qui débutera avec un exposé expliquant les bases du "
+"sprint et comment ils fonctionnent à PyCon. Elle sera suivie par une brève "
+"présentation de chaque projet par le leader du "
+"sprint.<br><br><b>Tutoriels (17h - )</b> Les leaders de sprint réuniront "
+"les sprinteurs et se dirigeront vers leurs salles de sprint pour des "
+"séances d'initiation. Les leaders expliqueront leur projet, traverseront le "
+"code, aideront à l'accès aux dépôts, etc. De cette façon, lundi matin vous "
+"serez en mesure de commencer à coder immédiatement."
 
 #: pyconca/templates/sprints.mako:9
 msgid "Development Sprints"
-msgstr ""
+msgstr "Sprints de développement"
 
 #: pyconca/templates/sprints.mako:14
-msgid "What's a Sprint"
-msgstr ""
+msgid "What's a Sprint?"
+msgstr "Qu'est-ce qu'un Sprint?"
 
 #: pyconca/templates/sprints.mako:19
 msgid "Who can participate?"
-msgstr ""
+msgstr "Qui peut participer?"
 
 #: pyconca/templates/sprints.mako:24
 msgid "What's the schedule?"
-msgstr ""
+msgstr "Quel est l'horaire?"
 
 #: pyconca/templates/venue.mako:10
 msgid "VENUE_LOCATION"

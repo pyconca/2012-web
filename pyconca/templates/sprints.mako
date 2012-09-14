@@ -11,7 +11,7 @@
     </div>
 
     <div class="row-fluid content-section">
-        <h1 class="header">${_(u"What's a Sprint")}</h1>
+        <h1 class="header">${_(u"What's a Sprint?")}</h1>
         <p><%block filter="gettext">SPRINT_WHAT</%block></p>
     </div>
 
