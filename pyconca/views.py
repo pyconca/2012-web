@@ -57,6 +57,11 @@ def conduct(request):
     return _build_response(request)
 
 
+@view_config(route_name='sprints', renderer='sprints.mako')
+def sprints(request):
+    return _build_response(request)
+
+
 def _build_response(request):
     return {
         'logged_in': authenticated_userid(request),

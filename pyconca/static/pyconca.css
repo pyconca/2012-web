@@ -45,7 +45,7 @@ body {
 }
 
 .nav-item {
-  margin-right: 3px;
+  margin-right: 2px;
 }
 
 .main-body {
@@ -365,3 +365,11 @@ body {
 .schedule-page .header {
   border-bottom: none;
 }
+
+/* bootstrap dropdown menu overrides */
+.dropdown-menu li > a:hover,
+.dropdown-menu .active > a,
+.dropdown-menu .active > a:hover {
+  background-color: #FF7000;
+}
+
