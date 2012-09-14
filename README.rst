@@ -34,6 +34,17 @@ If you are more comfortable with Makefiles you can do the following
     (env-pyconca)~/workspace/pyconca$ **./run**
     serving on http://0.0.0.0:6543
 
+Updating the French/English Text
+--------------------------------
+
+.. parsed-literal::
+
+    (env-pyconca)~/workspace/pyconca$ **python setup.py extract_messages**
+    (env-pyconca)~/workspace/pyconca$ **python setup.py update_catalog**
+    edit pyconca/locale/fr/LC_MESSAGES/pyconca.po
+    edit pyconca/locale/en/LC_MESSAGES/pyconca.po
+    (env-pyconca)~/workspace/pyconca$ **python setup.py compile_catalog**
+
 Testing
 -------
 
