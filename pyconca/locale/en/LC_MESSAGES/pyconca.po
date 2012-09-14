@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pyconca 0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-09-14 17:25-0400\n"
+"POT-Creation-Date: 2012-09-14 18:34-0400\n"
 "PO-Revision-Date: 2012-08-15 22:01-0400\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -393,7 +393,19 @@ msgstr ""
 "framework, which along with its current successor Pyramid remains the "
 "'spiritual' home of the SQLAlchemy and Mako products. "
 
-#: pyconca/templates/learn.mako:29
+#: pyconca/templates/learn.mako:22
+msgid "LEARN_MICHAEL_FEATHERS"
+msgstr ""
+"<a href='https://twitter.com/mfeathers'>Michael Feathers</a> is a Member "
+"of the Technical Staff at Groupon. Prior to joining Groupon, Michael was "
+"the Chief Scientist at Obtiva, and a Senior Consultant with Object Mentor"
+" International. Over the years, Michael has spent a great deal of time "
+"helping teams alter design over time in code bases. Michael is also the "
+"author of the book <a "
+"href='http://books.google.ca/books/about/Working_Effectively_with_Legacy_Code.html?id=fB6s_Z6g0gIC'>"
+" Working Effectively with Legacy Code</a> (Prentice Hall, 2004). "
+
+#: pyconca/templates/learn.mako:34
 msgid "LEARN_ELIZABETH_LEDDY"
 msgstr ""
 "Elizabeth is an independent Plone consultant working out of Berkley, CA. "
@@ -406,7 +418,7 @@ msgstr ""
 "Noisebridge hacker space in San Francisco.  She is best reached on "
 "twitter as <a href='https://twitter.com/eleddy'>@eleddy</a>. "
 
-#: pyconca/templates/learn.mako:41
+#: pyconca/templates/learn.mako:46
 msgid "LEARN_CHRIS_MCDONOUGH"
 msgstr ""
 "<a href='https://twitter.com/chrismcdonough'>Chris McDonough</a> is the "
@@ -419,7 +431,7 @@ msgstr ""
 "management system. <b>Cancelled:</b> It looks like Chris McDonough won't "
 "be able to join us this year after all. He sends his apologies. "
 
-#: pyconca/templates/learn.mako:53
+#: pyconca/templates/learn.mako:58
 msgid "LEARN_JESSICA_MCKELLAR"
 msgstr ""
 "<a href='http://jesstess.com'>Jessica McKellar</a> is a software engineer"
@@ -437,7 +449,7 @@ msgstr ""
 "Source Applications Volume II</a> and is working with O'Reilly on a new "
 "edition of Twisted Networking Essentials. "
 
-#: pyconca/templates/learn.mako:65
+#: pyconca/templates/learn.mako:70
 msgid "LEARN_BRANDON_RHODES"
 msgstr ""
 "<a href='http://twitter.com/brandon_rhodes'>Brandon Rhodes</a> started "
@@ -449,7 +461,7 @@ msgstr ""
 "the <a href='http://rhodesmill.org/pyephem/'>PyEphem</a> module for "
 "amateur astronomers since 1998. "
 
-#: pyconca/templates/learn.mako:70
+#: pyconca/templates/learn.mako:75
 msgid "LEARN_SANDY_WALSH"
 msgstr ""
 "Based in Halifax, Alex 'Sandy' Walsh is the owner of Dark Secret "
@@ -796,5 +808,4 @@ msgstr ""
 #: pyconca/templates/venue.mako:43
 msgid "Hotel"
 msgstr ""
-
 

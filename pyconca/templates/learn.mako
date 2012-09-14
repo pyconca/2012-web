@@ -18,6 +18,11 @@
     </div>
 
     <div class="row-fluid content-section">
+      <h1 class="header">Michael Feathers</h1>
+      <p><%block filter="gettext">LEARN_MICHAEL_FEATHERS</%block></p>
+    </div>
+
+    <div class="row-fluid content-section">
       <h1 class="header">Elizabeth Leddy
           <a href='https://www.ohloh.net/accounts/124089?ref=Rank'
              style="border-bottom: none;" target='_top'>
