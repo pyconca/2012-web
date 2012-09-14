@@ -92,12 +92,12 @@
 
         <tr>
           <td>Christopher Lambacher</td>
-          <td>David Warde-Farley</td>
+          <td>Dieter Limeback</td>
         </tr>
 
         <tr>
-          <td>Dieter Limeback</td>
           <td>Blaise Laflamme</td>
+          <td></td>
         </tr>
       </table>
 
