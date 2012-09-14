@@ -94,6 +94,11 @@
           <td>Christopher Lambacher</td>
           <td>David Warde-Farley</td>
         </tr>
+
+        <tr>
+          <td>Dieter Limeback</td>
+          <td></td>
+        </tr>
       </table>
 
     <p><%block filter="gettext">ABOUT_SHY</%block></p>
