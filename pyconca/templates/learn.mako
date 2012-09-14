@@ -59,6 +59,18 @@
     </div>
 
     <div class="row-fluid content-section">
+      <h1 class="header">Fernando Pérez
+          <a href='https://www.ohloh.net/accounts/37028?ref=Rank'
+             style="border-bottom: none;" target='_top'>
+            <img alt='Ohloh profile for Fernando Perez' border='0' height='24'
+                 src='https://www.ohloh.net/accounts/37028/widgets/account_rank.gif'
+                 width='32' />
+          </a>
+      </h1>
+      <p><%block filter="gettext">LEARN_FERNANDO_PÉREZ</%block></p>
+    </div>
+
+    <div class="row-fluid content-section">
       <h1 class="header">Brandon Rhodes
           <a href='https://www.ohloh.net/accounts/32600?ref=Rank'
              style="border-bottom: none;" target='_top'>
