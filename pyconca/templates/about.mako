@@ -41,62 +41,62 @@
 
       <table class="table table-bordered">
         <tr>
-          <td>David Wolever</td>
-          <td>Diana Clarke</td>
+          <td><a href="https://twitter.com/diana_clarke">Diana Clarke</a></td>
+          <td><a href="https://twitter.com/wolever">David Wolever</a></td>
         </tr>
 
         <tr>
-          <td>Nicola Yap</td>
-          <td>Taavi Burns</td>
+          <td><a href="https://twitter.com/ncurious">Nicola Yap</a></td>
+          <td><a href="https://twitter.com/jaaaarel">Taavi Burns</a></td>
         </tr>
 
         <tr>
-          <td>Kay Zhu</td>
-          <td>Yi Qing Sim</td>
+          <td><a href="https://twitter.com/kayzh">Kay Zhu</a></td>
+          <td><a href="https://twitter.com/yiqingsim">Yi Qing Sim</a></td>
         </tr>
 
         <tr>
-          <td>Greg Wilson</td>
-          <td>Zach Aysan</td>
+          <td><a href="https://twitter.com/gvwilson">Greg Wilson</a></td>
+          <td><a href="https://twitter.com/zachaysan">Zach Aysan</a></td>
         </tr>
 
         <tr>
-          <td>Jess Sanson</td>
-          <td>Kirsten Marincic</td>
+          <td><a href="https://twitter.com/jess_sanson">Jess Sanson</a></td>
+          <td><a href="https://twitter.com/kmarincic">Kirsten Marincic</a></td>
         </tr>
 
         <tr>
-          <td>Michael DiBernardo</td>
-          <td>Daniel Langer</td>
+          <td><a href="https://twitter.com/mdibernardo">Michael DiBernardo</a></td>
+          <td><a href="https://twitter.com/dlanger">Daniel Langer</a></td>
         </tr>
 
         <tr>
-          <td>David Warde-Farley</td>
-          <td>Mathieu Leduc-Hamel</td>
+          <td><a href="https://twitter.com/dwf">David Warde-Farley</a></td>
+          <td><a href="https://twitter.com/mlhamel">Mathieu Leduc-Hamel</a></td>
         </tr>
 
         <tr>
-          <td>Camilla Bjerke</td>
-          <td>Mahdi Yusuf</td>
+          <td><a href="href="http://www.flickr.com/photos/camstatic">Camilla Bjerke</a></td>
+          <td><a href="https://twitter.com/myusuf3">Mahdi Yusuf</a></td>
         </tr>
 
         <tr>
-          <td>Sheila Miguez</td>
-          <td>Carl Karsten</td>
+          <td><a href="https://twitter.com/codersquid">Sheila Miguez</a></td>
+          <td><a href="https://twitter.com/cfkarsten">Carl Karsten</a></td>
         </tr>
 
         <tr>
           <td>Teresa Hulinska</td>
-          <td>Davin Baragiotta</td>
+          <td><a href="https://twitter.com/baragiotta">Davin Baragiotta</a></td>
         </tr>
 
         <tr>
-          <td>Christopher Lambacher</td>
-          <td>Dieter Limeback</td>
+          <td><a href="https://twitter.com/lambacck">Christopher Lambacher</a></td>
+          <td><a href="https://twitter.com/dlimeb">Dieter Limeback</a></td>
         </tr>
 
         <tr>
-          <td>Blaise Laflamme</td>
+          <td><a href="https://twitter.com/blaiselaflamme">Blaise Laflamme</a></td>
           <td></td>
         </tr>
       </table>
