@@ -59,7 +59,7 @@
     </div>
 
     <div class="row-fluid content-section">
-      <h1 class="header">Fernando Pérez
+      <h1 class="header" id="fernando_pérez">Fernando Pérez
           <a href='https://www.ohloh.net/accounts/37028?ref=Rank'
              style="border-bottom: none;" target='_top'>
             <img alt='Ohloh profile for Fernando Perez' border='0' height='24'
