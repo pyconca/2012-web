@@ -33,12 +33,11 @@ class TalkApi(BaseApi):
         talk.outline = form['outline']
 
     def _create_flash(self, talk):
-        msg = ('You have submitted a %s for PyCon Canada. Thank-you!'
-            % (talk.type))
+        msg = ('You have submitted a talk for PyCon Canada. Thank-you!')
         self.request.session.flash(msg, 'success')
 
     def _update_flash(self, talk):
-        msg = ('Updated %s: %s' % (talk.type, talk.title))
+        msg = ('Updated talk')
         self.request.session.flash(msg, 'success')
 
     def _local_isoformat(self, dt):

@@ -168,19 +168,6 @@
     }
 
     $(document).ready(function() {
-        Handlebars.registerHelper('if_eq', function(context, options) {
-            if (context == options.hash.compare) return options.fn(this);
-          return options.inverse(this);
-        });
-
-        Handlebars.registerHelper('selected', function(option, value) {
-            if (option == value) {
-                return new Handlebars.SafeString(' selected');
-            } else {
-                return '';
-            }
-         });
-
         user_list = get_user_list();
 
         % if is_create:

@@ -33,7 +33,7 @@ class UserApi(BaseApi):
         self.request.session.flash(alert, 'alert')
 
     def _update_flash(self, user):
-        msg = ('Updated user: %s' % (user.username))
+        msg = ('Updated user')
         self.request.session.flash(msg, 'success')
 
     def create(self):
