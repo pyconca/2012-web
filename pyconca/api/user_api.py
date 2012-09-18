@@ -8,6 +8,7 @@ from pyramid.security import remember
 
 from pyconca.api.base_api import BaseApi
 from pyconca.dao.user_dao import UserDao
+from pyconca.markup import ContainsIntentionalMarkup
 from pyconca.security import generate_password
 
 
@@ -27,8 +28,9 @@ class UserApi(BaseApi):
 
     def _create_flash(self, user):
         msg = ('You have signed up for PyCon Canada!')
-        alert = ('To register for PyCon Canada 2012 in Toronto, go to \
-                 <a href="http://guestlistapp.com/events/116013">here</a>.')
+        alert = ContainsIntentionalMarkup(
+            'To register for PyCon Canada 2012 in Toronto, go to '
+            '<a href="http://guestlistapp.com/events/116013">here</a>.')
         self.request.session.flash(msg, 'success')
         self.request.session.flash(alert, 'alert')
 
