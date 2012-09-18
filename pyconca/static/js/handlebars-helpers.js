@@ -12,8 +12,10 @@ Handlebars.registerHelper('nl2br', function(text) {
 
 
 Handlebars.registerHelper('if_eq', function(context, options) {
-    if (context == options.hash.compare) return options.fn(this);
-  return options.inverse(this);
+    if (context == options.hash.compare) {
+        return options.fn(this);
+    }
+    return options.inverse(this);
 });
 
 
@@ -23,4 +25,13 @@ Handlebars.registerHelper('selected', function(option, value) {
     } else {
         return '';
     }
- });
+});
+
+Handlebars.registerHelper('pycon_time', function(text) {
+    var days = {
+        '09': 'Friday',
+        '10': 'Saturday',
+        '11': 'Sunday'
+    };
+    return days[text.substr(5,2)] + " at " + text.substr(11, 5);
+});

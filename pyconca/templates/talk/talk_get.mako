@@ -42,6 +42,12 @@
         <br>
         <strong>Level:</strong>
         <span>{{talk.level}}</span>
+        <br>
+        <strong>When:</strong>
+        <span>{{pycon_time talk.start}}</span>
+        <br>
+        <strong>Where:</strong>
+        <span>{{talk.room}}</span>
     </fieldset>
 
     <br>
