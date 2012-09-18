@@ -93,7 +93,7 @@ class TalkApi(BaseApi):
                 'room': model.schedule_slot.room,
                 'start': self._local_isoformat(model.schedule_slot.start),
                 'end': self._local_isoformat(model.schedule_slot.end),
-                'duration': (model.schedule_slot.end - model.schedule_slot.start).seconds / 60,
+                'duration': duration_delta.seconds / 60,
             })
         new_output.update(schedule)
         return new_output

@@ -27,11 +27,12 @@ Handlebars.registerHelper('selected', function(option, value) {
     }
 });
 
-Handlebars.registerHelper('pycon_time', function(text) {
+Handlebars.registerHelper('pycon_time', function(start, duration) {
     var days = {
         '09': 'Friday',
         '10': 'Saturday',
         '11': 'Sunday'
     };
-    return days[text.substr(5,2)] + " at " + text.substr(11, 5);
+    return days[start.substr(5,2)] + " at " + start.substr(11, 5) +
+        " for " + duration + "m";
 });
