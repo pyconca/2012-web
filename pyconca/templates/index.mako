@@ -1,4 +1,8 @@
 <%inherit file="base.mako"/>
+
+<%def name="page_title()">| Nov 9 - 11, 2012</%def>
+<%def name="body_class()">home-page</%def>
+
 <%block name="content">
 
 <div class="row-fluid main-header-image">
@@ -193,3 +197,4 @@
 </script>
 
 </%block>
+

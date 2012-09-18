@@ -1,0 +1,160 @@
+body {
+  background-color: #e7e3e0;
+  color: #444;
+  font-family: 'Neuton', Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+a {
+  color: #0f7774;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #229794;
+  text-decoration: none;
+}
+
+/* HEADER & NAV */
+header {
+  background-color: #5c240f; /* old browsers */
+  background-image: linear-gradient(top, #612c17, #5c240f);
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #612c17),color-stop(1, #5c240f));
+  background-image: -webkit-linear-gradient(#612c17, #5c240f);
+  background-image: -moz-linear-gradient(top, #612c17, #5c240f);
+  background-image: -ms-linear-gradient(top, #612c17 0%, #5c240f 100%);
+  box-shadow: inset 0px -4px 7px -4px rgba(0,0,0,0.5);
+}
+
+#o-hai-can-haz-snake {
+  background-image: url(snake-sm.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 253px;
+  height: 178px;
+}
+.home-page #o-hai-can-haz-snake {
+  background-image: url(snake-lg.png);
+  width: 434px;
+  height: 346px;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar .nav {
+  margin: 5px 0 60px 150px;
+}
+
+.nav-spacer {
+  margin-left: 50px;
+}
+
+.navbar .nav > li > a {
+  color: #a88a7f;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  padding: 3px 12px 4px;
+}
+.navbar .nav li.dropdown.open > .dropdown-toggle,
+.navbar .nav li.dropdown.active > .dropdown-toggle,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle,
+.navbar .nav > li > a:hover {
+  color: #fff;
+  background-color: #713b27;
+  border-radius: 20px;
+}
+.navbar .nav > li.nav-auth > a,
+.navbar .nav > li > a.locale-toggle {
+  text-transform: none;
+  font-size: 12px;
+}
+.dropdown-menu a {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+.dropdown-menu li > a:hover,
+.dropdown-menu .active > a,
+.dropdown-menu .active > a:hover {
+  background-color: #0f7774;
+}
+
+.home-page .navbar .nav > li.nav-home {
+  display: none;
+}
+
+.icon-home {
+  margin-top: 2px;
+  opacity: 0.6;
+}
+a:hover .icon-home {
+  opacity: 1;
+}
+
+.icon-canada {
+  background: url(icons/icon-canada.png) no-repeat center center;
+  margin-top: 1px;
+  width: 18px;
+}
+footer .icon-canada {
+  margin-top: 2px;
+}
+
+footer {
+  background-color: #2b1006;
+  padding: 30px;
+}
+footer nav li {
+  display: inline;
+  margin-right: 10px;
+}
+footer nav a {
+  color: #ada19a;
+  font-size: 14px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+footer nav a:hover,
+footer p a:hover,
+footer h3 {
+  color: #fff;
+  text-decoration: none;
+}
+footer p,
+footer p a,
+footer .contact-list span {
+  color: #452d24;
+}
+footer h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-left: 50px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+footer .contact-list a {
+  font-size: 22px;
+  font-weight: normal;
+}
+footer .contact-list span {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  margin-right: 5px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/*----------[ BOOTSTRAP OVERRIDES ]----------*/
