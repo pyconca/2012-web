@@ -33,6 +33,9 @@ Handlebars.registerHelper('pycon_time', function(start, duration) {
         '10': 'Saturday',
         '11': 'Sunday'
     };
+    if (start == null) {
+        return "unknown";
+    }
     return days[start.substr(5,2)] + " at " + start.substr(11, 5) +
         " for " + duration + "m";
 });
