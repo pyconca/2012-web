@@ -7,9 +7,9 @@ from pyramid.url import route_url
 
 import pytz
 
-from pyconca import default_timezone
 from pyconca.api.base_api import BaseApi
 from pyconca.dao.talk_dao import TalkDao
+from pyconca.temporal import local_isoformat
 
 class TalkApi(BaseApi):
 
@@ -39,11 +39,6 @@ class TalkApi(BaseApi):
     def _update_flash(self, talk):
         msg = ('Updated talk')
         self.request.session.flash(msg, 'success')
-
-    def _local_isoformat(self, dt):
-        dt_utc = dt.replace(tzinfo=pytz.UTC)
-        dt_local = dt_utc.astimezone(default_timezone)
-        return dt_local.isoformat()
 
     def _post_process_for_output(self, model, output):
         """
@@ -91,8 +86,8 @@ class TalkApi(BaseApi):
             assert duration_delta.days == 0
             schedule.update({
                 'room': model.schedule_slot.room,
-                'start': self._local_isoformat(model.schedule_slot.start),
-                'end': self._local_isoformat(model.schedule_slot.end),
+                'start': local_isoformat(model.schedule_slot.start),
+                'end': local_isoformat(model.schedule_slot.end),
                 'duration': duration_delta.seconds / 60,
             })
         new_output.update(schedule)
