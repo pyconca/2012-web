@@ -8,6 +8,7 @@ from pyramid.url import route_url
 import pytz
 
 from pyconca.api.base_api import BaseApi
+from pyconca.dao.schedule_slot_dao import Schedule_slotDao
 from pyconca.dao.talk_dao import TalkDao
 from pyconca.temporal import local_isoformat
 
@@ -16,6 +17,7 @@ class TalkApi(BaseApi):
     def _configure(self):
         self.name = 'talk'
         self.dao = TalkDao(self.request.user)
+        self.schedule_slot_dao = Schedule_slotDao(self.request.user)
         self.schema = TalkSchema
 
     def _populate(self, talk, form, is_create):
@@ -26,6 +28,13 @@ class TalkApi(BaseApi):
                 talk.owner_id = authenticated_userid(self.request)
         if self.is_admin:
             talk.reviewer_notes = form['reviewer_notes']
+        if self.is_admin:
+            if form['schedule_slot_id']:
+                schedule_slot = self.schedule_slot_dao.get(
+                    form['schedule_slot_id'])
+            else:
+                schedule_slot = None
+            talk.schedule_slot = schedule_slot
         talk.title = form['title']
         talk.type = form['type']
         talk.level = form['level']
