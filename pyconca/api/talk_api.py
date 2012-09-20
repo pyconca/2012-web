@@ -75,6 +75,7 @@ class TalkApi(BaseApi):
             'conf_url': route_url('talk_get', request, id=output['id']),
         })
         schedule = {
+            'schedule_slot_id': None,
             'room': None,
             'start': None,
             'end': None,
@@ -85,6 +86,7 @@ class TalkApi(BaseApi):
             duration_delta = model.schedule_slot.end - model.schedule_slot.start
             assert duration_delta.days == 0
             schedule.update({
+                'schedule_slot_id': model.schedule_slot.id,
                 'room': model.schedule_slot.room,
                 'start': local_isoformat(model.schedule_slot.start),
                 'end': local_isoformat(model.schedule_slot.end),
@@ -102,4 +104,5 @@ class TalkSchema(Schema):
     outline = validators.String(not_empty=True, strip=True)
     reviewer_notes = validators.String(
         not_empty=False, strip=True, if_missing='')
+    schedule_slot_id = validators.Int(not_empty=False)
     owner_id = validators.Int(not_empty=True)

@@ -169,3 +169,20 @@ class TestWithWebtest(unittest.TestCase):
         self.assertEquals("2012-11-10T10:00:00-05:00", data['data']['talk']['start'])
         self.assertEquals("2012-11-10T10:30:00-05:00", data['data']['talk']['end'])
         self.assertEquals(30, data['data']['talk']['duration'])
+
+    def test_schedule_slot_api_get__not_logged_in(self):
+        data = self._getJsonFrom('/schedule_slot/21.json', status=403)
+        self.assertEquals({}, data['data'])
+
+    def test_schedule_slot_api_index__as_admin(self):
+        data = self._getJsonFrom('/schedule_slot.json', who='admin', status=200)
+        self.assertEquals(1, len(data['data']['schedule_slot_list']))
+        self.assertEquals(
+            {
+                'duration': 30,
+                'start': '2012-11-10T10:00:00-05:00',
+                'end': '2012-11-10T10:30:00-05:00',
+                'id': self._schedule_slot_id,
+                'room': 'room',
+            },
+            data['data']['schedule_slot_list'][0])
