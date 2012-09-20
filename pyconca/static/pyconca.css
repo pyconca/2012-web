@@ -373,3 +373,6 @@ body {
   background-color: #FF7000;
 }
 
+#schedule_slot_id_select {
+    width: 300px;
+}
