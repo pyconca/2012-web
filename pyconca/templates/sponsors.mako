@@ -94,4 +94,25 @@
         </p>
     </div>
 
+    <div class="row-fluid content-section">
+      <h1 class="header">Independent Sponsors</h1>
+    </div>
+
+    <div class="row-fluid">
+      <div class="span6">
+        <br>
+        <p>
+          <%include file="pyconca:templates/sponsors/element34.mako"/>
+        </p>
+      </div>
+
+      <div class="span6">
+        <br>
+        <p>
+          <%include file="pyconca:templates/sponsors/danols.mako"/>
+        </p>
+      </div>
+    </div>
+
+
 </%block>
