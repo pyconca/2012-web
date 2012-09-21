@@ -87,6 +87,25 @@
     </div>
 
     <div class="row-fluid content-section">
+      <h1 class="header">Sprint Sponsors</h1>
+    </div>
+
+    <div class="row-fluid">
+      <div class="span6">
+        <br>
+        <p>
+          <%include file="pyconca:templates/sponsors/agendaless.mako"/>
+        </p>
+      </div>
+
+      <div class="span6">
+        <p>
+          <%include file="pyconca:templates/sponsors/llc.mako"/>
+        </p>
+      </div>
+    </div>
+
+    <div class="row-fluid content-section">
         <h1 class="header">Bronze Sponsors</h1>
         <br>
         <p style="margin-left: -20px;">
