@@ -106,11 +106,23 @@
     </div>
 
     <div class="row-fluid content-section">
-        <h1 class="header">Bronze Sponsors</h1>
+      <h1 class="header">Bronze Sponsors</h1>
+    </div>
+
+    <div class="row-fluid">
+      <div class="span6">
         <br>
-        <p style="margin-left: -20px;">
-            <%include file="pyconca:templates/sponsors/heroku.mako"/>
+        <p>
+          <%include file="pyconca:templates/sponsors/heroku.mako"/>
         </p>
+      </div>
+
+      <div class="span6">
+        <br>
+        <p>
+          <%include file="pyconca:templates/sponsors/trapeze.mako"/>
+        </p>
+      </div>
     </div>
 
     <div class="row-fluid content-section">
@@ -132,6 +144,5 @@
         </p>
       </div>
     </div>
-
 
 </%block>

@@ -80,6 +80,10 @@
             </div>
 
             <div class="item">
+            <%include file="pyconca:templates/sponsors/trapeze.mako" args="img_class='black-and-white'"/>
+            </div>
+
+            <div class="item">
             <%include file="pyconca:templates/sponsors/vmfarms.mako" args="img_class='black-and-white'"/>
             </div>
 
