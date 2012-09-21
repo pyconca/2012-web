@@ -41,7 +41,8 @@
         <br>
         <div id="sponsors_carousel" class="carousel slide hidden-phone">
           <h6>${_("Sponsors")}</h6>
-          <div class="carousel-inner" style="opacity: 0.6; height: 100px;">
+          <br>
+          <div class="carousel-inner" style="opacity: 0.6; height: 150px; width: 200px;">
             <div class="active item">
               <%include file="pyconca:templates/sponsors/500px.mako" args="img_class='black-and-white'"/>
             </div>
@@ -71,11 +72,19 @@
             </div>
 
             <div class="item">
+            <%include file="pyconca:templates/sponsors/agendaless.mako" args="img_class='black-and-white'"/>
+            </div>
+
+            <div class="item">
             <%include file="pyconca:templates/sponsors/heroku.mako" args="img_class='black-and-white'"/>
             </div>
 
             <div class="item">
             <%include file="pyconca:templates/sponsors/vmfarms.mako" args="img_class='black-and-white'"/>
+            </div>
+
+            <div class="item">
+            <%include file="pyconca:templates/sponsors/llc.mako" args="img_class='black-and-white'"/>
             </div>
 
             <div class="item">
