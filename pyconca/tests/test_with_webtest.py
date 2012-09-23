@@ -184,5 +184,6 @@ class TestWithWebtest(unittest.TestCase):
                 'end': '2012-11-10T10:30:00-05:00',
                 'id': self._schedule_slot_id,
                 'room': 'room',
+                'talk_id': None,
             },
             data['data']['schedule_slot_list'][0])
