@@ -1,3 +1,4 @@
+from formencode import Invalid
 from formencode import Schema
 from formencode import validators
 
@@ -40,6 +41,19 @@ class TalkApi(BaseApi):
         talk.level = form['level']
         talk.abstract = form['abstract']
         talk.outline = form['outline']
+
+    def _validate(self, model, form):
+        super(TalkApi, self)._validate(model, form)
+        if form['schedule_slot_id']:
+            schedule_slot = self.schedule_slot_dao.get(
+                form['schedule_slot_id'])
+            if schedule_slot.talk and schedule_slot.talk is not model:
+                exc = Invalid(
+                    "Schedule slot is already in use", 'schedule_slot_id',
+                    None)
+                exc.error_dict = {'schedule_slot_id': exc}
+                raise exc
+
 
     def _create_flash(self, talk):
         msg = ('You have submitted a talk for PyCon Canada. Thank-you!')
