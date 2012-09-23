@@ -203,6 +203,9 @@
                         var slots = schedule_slot_response.data.schedule_slot_list;
                         var select = $('select[name=schedule_slot_id]');
                         for (var i in slots) {
+                            if (slots[i].talk_id && slots[i].talk_id != ${id}) {
+                                continue;
+                            }
                             var option = $('<option>').attr(
                                 'value', slots[i].id
                             ).text(
