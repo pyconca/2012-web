@@ -9,12 +9,14 @@ from sqlalchemy import engine_from_config
 from ..models import Base
 from ..models import DBSession
 
+
 def usage(argv):
     cmd = os.path.basename(argv[0])
-    print "usage: %s <config_uri>" %(cmd, )
-    print "example: '%s development.ini'" %(cmd, )
+    print "usage: %s <config_uri>" % (cmd, )
+    print "example: '%s development.ini'" % (cmd, )
     print "NOTE: This is safe to run in production!"
     print "It will only create tables which don't exist."
+
 
 def main(argv=sys.argv):
     if len(argv) != 2:

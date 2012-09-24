@@ -1,5 +1,6 @@
 from pyconca.models import DBSession
 
+
 class BaseDao(object):
 
     def __init__(self, authenticated_user, model):

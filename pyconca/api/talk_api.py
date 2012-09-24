@@ -6,12 +6,11 @@ from pyramid.security import authenticated_userid
 from pyramid.threadlocal import get_current_request
 from pyramid.url import route_url
 
-import pytz
-
 from pyconca.api.base_api import BaseApi
 from pyconca.dao.schedule_slot_dao import Schedule_slotDao
 from pyconca.dao.talk_dao import TalkDao
 from pyconca.temporal import local_isoformat
+
 
 class TalkApi(BaseApi):
 
@@ -58,7 +57,6 @@ class TalkApi(BaseApi):
                     None)
                 exc.error_dict = {'schedule_slot_id': exc}
                 raise exc
-
 
     def _create_flash(self, talk):
         msg = ('You have submitted a talk for PyCon Canada. Thank-you!')
@@ -111,7 +109,9 @@ class TalkApi(BaseApi):
         }
         if model.schedule_slot:
             assert model.schedule_slot.start < model.schedule_slot.end
-            duration_delta = model.schedule_slot.end - model.schedule_slot.start
+            end = model.schedule_slot.end
+            start = model.schedule_slot.start
+            duration_delta = end - start
             assert duration_delta.days == 0
             schedule.update({
                 'schedule_slot_id': model.schedule_slot.id,

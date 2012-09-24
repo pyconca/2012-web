@@ -150,13 +150,13 @@ class ScheduleSlot(AttrMixIn, Base):
         return data
 
 
-
 class TalkScheduleSlot(AttrMixIn, Base):
     talk_id = Column(Integer, ForeignKey('talk.id'), primary_key=True)
-    schedule_slot_id = Column(Integer, ForeignKey('schedule_slot.id'), primary_key=True)
+    schedule_slot_id = Column(Integer, ForeignKey('schedule_slot.id'),
+                              primary_key=True)
 
 
-Index("talk_schedule_slot_talk_id_unique", 
+Index('talk_schedule_slot_talk_id_unique',
     TalkScheduleSlot.talk_id, unique=True)
-Index("talk_schedule_slot_schedule_slot_id_unique", 
+Index('talk_schedule_slot_schedule_slot_id_unique',
     TalkScheduleSlot.schedule_slot_id, unique=True)
