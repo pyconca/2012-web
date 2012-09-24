@@ -168,66 +168,70 @@
 
     <%block name="content"/>
 
-    <footer class="row-fluid">
-      <div class="span6">
-        <nav>
-          <ul class="unstyled">
-            <li>
-              <a href="${request.application_url}">${_(u"Home")}</a>
-            </li>
+    <footer>
+    <div class="container">
+      <div class="row-fluid">
+          <div class="span6">
+            <nav>
+              <ul class="unstyled">
+                <li>
+                  <a href="${request.application_url}">${_(u"Home")}</a>
+                </li>
 
-            <li>
-              <a href="${request.application_url}/about">${_(u"About")}</a>
-            </li>
+                <li>
+                  <a href="${request.application_url}/about">${_(u"About")}</a>
+                </li>
 
-            <li>
-              <a href="${request.application_url}/contact">${_(u"Contact")}</a>
-            </li>
+                <li>
+                  <a href="${request.application_url}/contact">${_(u"Contact")}</a>
+                </li>
 
-            <li>
-              <a href="${request.application_url}/venue">${_(u"Venue")}</a>
-            </li>
+                <li>
+                  <a href="${request.application_url}/venue">${_(u"Venue")}</a>
+                </li>
 
-            <li>
-              <a href="${request.application_url}/schedule">${_(u"Schedule")}</a>
-            </li>
+                <li>
+                  <a href="${request.application_url}/schedule">${_(u"Schedule")}</a>
+                </li>
 
-            <li>
-              <a href="${request.application_url}/speakers">${_(u"Speak")}</a>
-            </li>
+                <li>
+                  <a href="${request.application_url}/speakers">${_(u"Speak")}</a>
+                </li>
 
-            <li>
-              <a href="${request.application_url}/learn">${_(u"Learn")}</a>
-            </li>
+                <li>
+                  <a href="${request.application_url}/learn">${_(u"Learn")}</a>
+                </li>
 
-            <li>
-              <a href="${request.application_url}/sponsors">${_(u"Sponsor")}</a>
-            </li>
+                <li>
+                  <a href="${request.application_url}/sponsors">${_(u"Sponsor")}</a>
+                </li>
 
-            <li>
-              <a href="${request.application_url}/locale" class="locale-toggle">
-                <i class="icon-canada nav-icon"></i>
-                ${_(u"Français")}
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <p>
-          ${_(u"© PyCon Canada 2012")}
-          <br>
-          <a href="http://www.flickr.com/photos/camstatic/5535319505">${_(u"Photo by camstatic")}</a>
-        </p>
-      </div>
+                <li>
+                  <a href="${request.application_url}/locale" class="locale-toggle">
+                    <i class="icon-canada nav-icon"></i>
+                    ${_(u"Français")}
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <p>
+              ${_(u"© PyCon Canada 2012")}
+              <br>
+              <a href="http://www.flickr.com/photos/camstatic/5535319505">${_(u"Photo by camstatic")}</a>
+            </p>
+          </div>
 
-      <div class="span6">
-        <h3>${_(u"Get in touch")}</h3>
-        <ul class="unstyled contact-list">
-          <li><span>Twitter</span> <a href="http://twitter.com/pyconca">@pyconca</a></li>
-          <li><span>IRC</span> <a href="irc://irc.freenode.net/#pyconca">#pyconca</a></li>
-          <li><span>${_(u"Board")}</span> <a href="mailto:organizers@pycon.ca">organizers@pycon.ca</a></li>
-          <li><span>${_(u"List")}</span> <a href="mailto:pyconca@googlegroups.com">pyconca@googlegroups.com</a></li>
-          <li><span>GitHub</span> <a href="http://github.com/pyconca">github.com/pyconca</a></li>
-        </ul>
+          <div class="span6">
+            <h3>${_(u"Get in touch")}</h3>
+            <ul class="unstyled contact-list">
+              <li><span>Twitter</span> <a href="http://twitter.com/pyconca">@pyconca</a></li>
+              <li><span>IRC</span> <a href="irc://irc.freenode.net/#pyconca">#pyconca</a></li>
+              <li><span>${_(u"Board")}</span> <a href="mailto:organizers@pycon.ca">organizers@pycon.ca</a></li>
+              <li><span>${_(u"List")}</span> <a href="mailto:pyconca@googlegroups.com">pyconca@googlegroups.com</a></li>
+              <li><span>GitHub</span> <a href="http://github.com/pyconca">github.com/pyconca</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
 </body>
