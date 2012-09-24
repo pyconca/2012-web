@@ -115,6 +115,10 @@
         <p>
           <%include file="pyconca:templates/sponsors/heroku.mako"/>
         </p>
+        <p>
+          <br>
+          <%include file="pyconca:templates/sponsors/guru_link.mako"/>
+        </p>
       </div>
 
       <div class="span6">
