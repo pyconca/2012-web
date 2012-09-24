@@ -29,13 +29,18 @@ class TalkApi(BaseApi):
                 talk.owner_id = authenticated_userid(self.request)
         if self.is_admin:
             talk.reviewer_notes = form['reviewer_notes']
-        if self.is_admin:
-            if form['schedule_slot_id']:
-                schedule_slot = self.schedule_slot_dao.get(
+        if self.is_admin and 'schedule_slot_id' in form:
+            if form['schedule_slot_id'] == -1:
+                # -1 in the form means "not scheduled"
+                talk.schedule_slot = None
+            elif form['schedule_slot_id'] > 0:
+                talk.schedule_slot = self.schedule_slot_dao.get(
                     form['schedule_slot_id'])
             else:
-                schedule_slot = None
-            talk.schedule_slot = schedule_slot
+                # It's equal to zero,
+                # therefore "not specified",
+                # so don't do anything.
+                pass
         talk.title = form['title']
         talk.type = form['type']
         talk.level = form['level']
@@ -44,7 +49,7 @@ class TalkApi(BaseApi):
 
     def _validate(self, model, form):
         super(TalkApi, self)._validate(model, form)
-        if form['schedule_slot_id']:
+        if int(form.get('schedule_slot_id')) > 0:
             schedule_slot = self.schedule_slot_dao.get(
                 form['schedule_slot_id'])
             if schedule_slot.talk and schedule_slot.talk is not model:
@@ -127,5 +132,5 @@ class TalkSchema(Schema):
     outline = validators.String(not_empty=True, strip=True)
     reviewer_notes = validators.String(
         not_empty=False, strip=True, if_missing='')
-    schedule_slot_id = validators.Int(not_empty=False)
+    schedule_slot_id = validators.Int(not_empty=False, if_missing=0)
     owner_id = validators.Int(not_empty=True)

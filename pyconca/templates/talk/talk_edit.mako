@@ -96,7 +96,7 @@
         <div class="controls">
           <div class="help-block" style="display: inline;" id="schedule_slot_id_error">&nbsp;</div>
           <select name="schedule_slot_id" id="schedule_slot_id_select">
-            <option value="">---</option>
+            <option value="-1">(not scheduled)</option>
           </select>
         </div>
     </div>
