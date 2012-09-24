@@ -1,9 +1,13 @@
 body {
   background-color: #e7e3e0;
   color: #444;
-  font-family: 'Neuton', Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: 'Droid Serif', Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 16px;
   line-height: 24px;
+}
+
+p {
+  font-family: 'Droid Serif', Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 a {
@@ -43,17 +47,30 @@ header {
   width: 434px;
   height: 346px;
 }
+@media (max-width: 979px) {
+  #o-hai-can-haz-snake { display: none; }
+}
 
 .navbar {
   margin-bottom: 0;
 }
 
 .navbar .nav {
-  margin: 5px 0 60px 150px;
+  margin: 8px 10px 60px 150px;
+}
+@media (max-width: 979px) {
+  .navbar .nav {
+    margin-left: 10px;
+  }
 }
 
 .nav-spacer {
   margin-left: 50px;
+}
+@media (max-width: 979px) {
+  .nav-spacer {
+    margin-left: 0;
+  }
 }
 
 .navbar .nav > li > a {
@@ -71,6 +88,14 @@ header {
   color: #fff;
   background-color: #713b27;
   border-radius: 20px;
+}
+@media (max-width: 979px) {
+  .nav-collapse .nav > li > a:hover,
+  .nav-collapse .dropdown-menu a:hover {
+    color: #fff;
+    background-color: #713b27;
+    border-radius: 20px;
+  }
 }
 .navbar .nav > li.nav-auth > a,
 .navbar .nav > li > a.locale-toggle {
@@ -111,7 +136,7 @@ footer .icon-canada {
 }
 
 footer {
-  background-color: #2b1006;
+  background-color: #210D05;
   padding: 30px;
 }
 footer nav li {
@@ -157,4 +182,114 @@ footer .contact-list span {
   text-transform: uppercase;
 }
 
-/*----------[ BOOTSTRAP OVERRIDES ]----------*/
+/* HOME PAGE HEADER */
+#Intro {
+  background: url(bg-grunge.png) no-repeat center top;
+}
+#Banner {
+  background: url(banner-home.png) no-repeat left top;
+  width: 567px;
+  height: 177px;
+  margin-top: -54px;
+  text-align: center;
+}
+#Banner h1 {
+  text-indent: -9999px;
+  overflow: hidden;
+  height: 0;
+}
+#Banner h2 {
+  background-color: #150803;
+  color: #6b5851;
+  text-shadow: 1px 1px 1px #000;
+  text-transform: uppercase;
+  width: 410px;
+  text-align: center;
+  padding: 3px 0;
+  font-size: 21px;
+  line-height: 26px;
+  border: 1px solid #2b1006;
+  display: inline-block;
+  margin-top: 120px;
+}
+
+#Teaser {
+  font-size: 24px;
+  line-height: 30px;
+  padding: 30px;
+  font-family: 'Droid Serif', Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+#RegisterContainer {
+  background: url(bg-sunburst.png) no-repeat left top;
+}
+
+
+#Sponsors {
+  background-color: #cbc2bc;
+  box-shadow: inset 0px 4px 7px -4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 30px 0;
+}
+
+#Sponsors h2 {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0px -1px 0px #9a8b82;
+  padding: 0 0 20px;
+}
+#Sponsors p {
+  font-size: 24px;
+  background-color: #bdb2aa;
+  padding: 10px 30px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+#Blurbs {
+  background: #ff8a00 url(bg-grid.png) repeat 0 0;
+  padding-top: 60px;
+}
+
+.blurb {
+  float: left;
+  /*width: 400px;*/
+  padding: 25px 40px 60px 110px;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+.blurb.speak { background-image: url(icon-speak.png); }
+.blurb.learn { background-image: url(icon-learn.png); }
+.blurb.venue { background-image: url(icon-venue.png); }
+.blurb.schedule { background-image: url(icon-schedule.png); }
+
+.blurb h2 {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 44px;
+  color: #fff;
+  text-shadow: 0px -1px 0px #a6600e;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.blurb p {
+  font-size: 18px;
+  color: #481603;
+  margin: 0;
+  font-size: 18px;
+  line-height: 22px;
+}
+.blurb a.more-info {
+  text-transform: uppercase;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+}
+.blurb a.more-info:hover {
+  color: #fff;
+  background: #BE6300;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
