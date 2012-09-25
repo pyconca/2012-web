@@ -2,7 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>PyCon Canada ${self.page_title()}</title>
+    <title>PyCon Canada <%block name="page_title"/></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
     <meta name="author" content="" />
@@ -25,7 +25,7 @@
     <!--<script src="http://widgets.twimg.com/j/2/widget.js"></script>-->
   </head>
 
-  <body class="${self.body_class()}">
+  <body class="<%block name='body_class'/>">
     <header>
       <div id="o-hai-can-haz-snake"></div>
       <nav class="navbar clearfix">
@@ -236,6 +236,3 @@
     </footer>
 </body>
 </html>
-
-<%def name="page_title()"></%def>
-<%def name="body_class()"></%def>

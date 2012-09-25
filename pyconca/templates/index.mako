@@ -1,7 +1,7 @@
 <%inherit file="base.mako"/>
 
-<%def name="page_title()">| Nov 9 - 11, 2012</%def>
-<%def name="body_class()">home-page</%def>
+<%block name="page_title">| ${_(u"November 9 – 11, 2012 • Toronto")}</%block>
+<%block name="body_class">home-page</%block>
 
 <%block name="content">
 
