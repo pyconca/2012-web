@@ -48,7 +48,7 @@ class TalkApi(BaseApi):
 
     def _validate(self, model, form):
         super(TalkApi, self)._validate(model, form)
-        if int(form.get('schedule_slot_id')) > 0:
+        if int(form.get('schedule_slot_id', 0)) > 0:
             schedule_slot = self.schedule_slot_dao.get(
                 form['schedule_slot_id'])
             if schedule_slot.talk and schedule_slot.talk is not model:
