@@ -126,4 +126,7 @@ class BaseApi(Context):
     @forbidden_view_config(renderer='json',
                            custom_predicates=(is_api_request,))
     def _forbidden(self):
+        self.body['errors'].append({
+            'message': 'Unauthorized'
+        })
         return self._respond(HTTP_STATUS_403)
