@@ -106,11 +106,24 @@
                   </a>
                 </li>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="${request.application_url}/sponsors">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">
                       <i class="icon-heart icon-white nav-icon"></i>
                       ${_(u"Sponsor")}
+                      <b class="caret"></b>
                   </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="${request.route_url('sponsors')}">
+                        ${_(u"Sponsor")}
+                      </a>
+                    </li>
+                    <li>
+                      <a href="${request.route_url('sponsors_500px')}">
+                        ${_(u"500px")}
+                      </a>
+                    </li>
+                  </ul>
                 </li>
 
                 <li class="nav-item">
