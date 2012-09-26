@@ -1,12 +1,12 @@
 from pyconca.api.base_api import BaseApi
-from pyconca.dao.schedule_slot_dao import Schedule_slotDao
+from pyconca.dao.schedule_slot_dao import ScheduleSlotDao
 
 
-class Schedule_slotApi(BaseApi):
+class ScheduleSlotApi(BaseApi):
 
     def _configure(self):
         self.name = 'schedule_slot'
-        self.dao = Schedule_slotDao(self.request.user)
+        self.dao = ScheduleSlotDao(self.request.user)
         self.schema = None
 
     def _post_process_for_output(self, model, output):
