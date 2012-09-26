@@ -14,7 +14,7 @@ body {
   padding-left: 0;
   padding-right: 0;
   color: #faf7f0;
-  max-width: 1000px;
+  max-width: 1100px;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -32,7 +32,7 @@ body {
 .main-nav {
   margin: auto;
   box-shadow: none;
-  max-width: 1000px;
+  max-width: 1100px;
 }
 
 .navbar-inner {
