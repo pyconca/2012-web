@@ -7,7 +7,7 @@ from pyramid.threadlocal import get_current_request
 from pyramid.url import route_url
 
 from pyconca.api.base_api import BaseApi
-from pyconca.dao.schedule_slot_dao import Schedule_slotDao
+from pyconca.dao.schedule_slot_dao import ScheduleSlotDao
 from pyconca.dao.talk_dao import TalkDao
 from pyconca.temporal import local_isoformat
 
@@ -17,7 +17,7 @@ class TalkApi(BaseApi):
     def _configure(self):
         self.name = 'talk'
         self.dao = TalkDao(self.request.user)
-        self.schedule_slot_dao = Schedule_slotDao(self.request.user)
+        self.schedule_slot_dao = ScheduleSlotDao(self.request.user)
         self.schema = TalkSchema
 
     def _populate(self, talk, form, is_create):

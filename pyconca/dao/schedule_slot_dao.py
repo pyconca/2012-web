@@ -2,7 +2,7 @@ from pyconca.dao.base_dao import BaseDao
 from pyconca.models import ScheduleSlot
 
 
-class Schedule_slotDao(BaseDao):
+class ScheduleSlotDao(BaseDao):
 
     def __init__(self, authenticated_user):
         BaseDao.__init__(self, authenticated_user, ScheduleSlot)
