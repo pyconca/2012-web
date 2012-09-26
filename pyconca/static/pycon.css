@@ -107,6 +107,10 @@ a:hover {
   }
 }
 
+.dropdown-menu li  {
+  margin-bottom: 0;
+}
+
 .navbar .nav > li > a {
   color: #a88a7f;
   text-transform: uppercase;
