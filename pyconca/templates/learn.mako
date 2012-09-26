@@ -71,6 +71,11 @@
     </div>
 
     <div class="row-fluid content-section">
+      <h1 class="header">Kenneth Reitz</h1>
+      <p><%block filter="gettext">LEARN_KENNETH_REITZ</%block></p>
+    </div>
+
+    <div class="row-fluid content-section">
       <h1 class="header">Brandon Rhodes
           <a href='https://www.ohloh.net/accounts/32600?ref=Rank'
              style="border-bottom: none;" target='_top'>
