@@ -71,7 +71,14 @@
     </div>
 
     <div class="row-fluid content-section">
-      <h1 class="header">Kenneth Reitz</h1>
+      <h1 class="header">Kenneth Reitz
+          <a href='https://www.ohloh.net/accounts/224806?ref=Rank'
+             style="border-bottom: none;" target='_top'>
+            <img alt='Ohloh profile for kennethreitz' border='0' height='24'
+                 src='https://www.ohloh.net/accounts/224806/widgets/account_rank.gif'
+                 width='32' />
+          </a>
+      </h1>
       <p><%block filter="gettext">LEARN_KENNETH_REITZ</%block></p>
     </div>
 
