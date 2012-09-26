@@ -14,11 +14,11 @@
   </div>
 </div>
 
-<div class="row-fluid">
-  <div class="content-holder">
+<div class="row-fluid content-section">
       <div class="span12">
-        <%block name="info"/>
-      </div>
+        <div class="content-holder">
+            <%block name="info"/>
+        </div>
   </div>
 </div>
 
