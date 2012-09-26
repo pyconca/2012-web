@@ -115,12 +115,12 @@
                   <ul class="dropdown-menu">
                     <li>
                       <a href="${request.route_url('sponsors')}">
-                        ${_(u"Sponsor")}
+                        ${_(u"All Sponsors")}
                       </a>
                     </li>
                     <li>
                       <a href="${request.route_url('sponsors_500px')}">
-                        ${_(u"500px")}
+                        ${_(u"Gold Sponsor - 500px")}
                       </a>
                     </li>
                   </ul>
