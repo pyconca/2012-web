@@ -69,6 +69,7 @@
       <div class="span6">
         <div class="content-section">
             <h1 class="header">Party Sponsor</h1>
+            <br>
             <p style="width: 200px;">
                 <%include file="pyconca:templates/sponsors/upverter.mako"/>
             </p>
