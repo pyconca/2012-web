@@ -67,7 +67,6 @@
       var navItem = $("<a></a>");
 
       if (!$this.attr("id")) {
-        console.log($this.text());
         var anchor = $this.text()
           .toLowerCase()
           .replace(" ", "-")
