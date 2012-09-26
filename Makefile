@@ -10,3 +10,10 @@ test:
 
 clean:
 	find . -name \*.pyc -delete
+
+localization_catalog:
+	python setup.py extract_messages
+	python setup.py update_catalog
+
+compile_catalog:
+	python setup.py compile_catalog
