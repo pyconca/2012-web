@@ -189,6 +189,10 @@ footer h3 {
   color: #fff;
   text-decoration: none;
 }
+footer p {
+  font-size: 12px;
+  line-height: 14px;
+}
 footer p,
 footer p a,
 footer .contact-list span {
@@ -201,6 +205,9 @@ footer .fake-head {
   margin-left: 50px;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
+}
+footer .contact-list li {
+  margin-bottom: 0;
 }
 footer .contact-list a {
   font-size: 22px;
