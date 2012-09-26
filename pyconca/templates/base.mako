@@ -81,7 +81,7 @@
                   <ul class="dropdown-menu">
                     <li>
                       <a href="${request.route_url('schedule')}">
-                        ${_(u"Conference Schedule")}
+                        ${_(u"Conference")}
                       </a>
                     </li>
                     <li>

@@ -21,6 +21,11 @@
     </div>
 
     <div class="row-fluid content-section">
+        <h1 class="header">${_(u"What's there to sprint on?")}</h1>
+        <p><%block filter="gettext">SPRINT_PROJECTS</%block></p>
+    </div>
+
+    <div class="row-fluid content-section">
         <h1 class="header">${_(u"What's the schedule?")}</h1>
         <p><%block filter="gettext">SPRINT_SCHEDULE</%block></p>
     </div>
