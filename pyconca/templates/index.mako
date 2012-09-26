@@ -5,11 +5,11 @@
 
 <%block name="content">
 
-<div id="Intro">
+<section id="Intro">
   <div class="container">
     <div id="Banner">
         <h1>PyCon.ca</h1>
-        <h2>${_(u"November 9 – 11, 2012 • Toronto")}</h2>
+        <div id="DateAndPlace">${_(u"November 9 – 11, 2012 • Toronto")}</div>
     </div>
     <div>
       <div id="Callout">
@@ -20,9 +20,9 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<div id="Sponsors">
+<section id="Sponsors">
   <div class="container">
     <div id="sponsors_carousel" class="carousel slide hidden-phone">
       <h2>${_("Our Sponsors")}</h2>
@@ -56,45 +56,38 @@
         </div>
       </div>
     </div>
-    <p>${_(u"Interested in a sponsorship opportunity?")} <a href="${request.application_url}/sponsors">${_(u"Learn more")}</a>.</p>
+    <p class="bubble">${_(u"Interested in a sponsorship opportunity?")} <a href="${request.application_url}/sponsors">${_(u"Learn more")}</a>.</p>
   </div>
-</div>
+</section>
 
-<div id="Blurbs">
+<section id="Blurbs">
   <div class="container">
-    
-  <div class="row-fluid">
-    <div class="span6 blurb speak">
-      <h2>${_(u"Speak")}</h2>
-      <p><%block filter="gettext">INDEX_SPEAK_BLURB</%block></p>
-      <a href="${request.application_url}/speakers" class="more-info">${_(u"More info")}</a>
-    </div>
-  
-    <div class="span6 blurb learn">
-      <h2>${_(u"Learn")}</h2>
-      <p><%block filter="gettext">INDEX_LEARN_BLURB</%block></p>
-      <a href="${request.application_url}/learn" class="more-info">${_("More info")}</a>
-    </div>
+    <div class="row-fluid">
+      <div class="span6 blurb speak">
+        <h2>${_(u"Speak")}</h2>
+        <p><%block filter="gettext">INDEX_SPEAK_BLURB</%block></p>
+        <a href="${request.application_url}/speakers" class="more-info">${_(u"More info")}</a>
+      </div>
+      <div class="span6 blurb learn">
+        <h2>${_(u"Learn")}</h2>
+        <p><%block filter="gettext">INDEX_LEARN_BLURB</%block></p>
+        <a href="${request.application_url}/learn" class="more-info">${_("More info")}</a>
+      </div>
     </div>
     <div class="row-fluid">
-      
-
-
-    <div class="span6 blurb venue">
-      <h2>${_(u"Venue")}</h2>
-      <p><%block filter="gettext">INDEX_VENUE_BLURB</%block></p>
-      <a href="${request.application_url}/venue" class="more-info">${_(u"More info")}</a>
-    </div>
-
-    <div class="span6 blurb schedule">
-      <h2>${_(u"Schedule")}</h2>
-      <p><%block filter="gettext">INDEX_SCHEDULE_BLURB</%block></p>
-      <a href="${request.application_url}/schedule" class="more-info">${_(u"More info")}</a>
-    </div>
+      <div class="span6 blurb venue">
+        <h2>${_(u"Venue")}</h2>
+        <p><%block filter="gettext">INDEX_VENUE_BLURB</%block></p>
+        <a href="${request.application_url}/venue" class="more-info">${_(u"More info")}</a>
+      </div>
+      <div class="span6 blurb schedule">
+        <h2>${_(u"Schedule")}</h2>
+        <p><%block filter="gettext">INDEX_SCHEDULE_BLURB</%block></p>
+        <a href="${request.application_url}/schedule" class="more-info">${_(u"More info")}</a>
+      </div>
     </div>
   </div>
-</div>
-  </div>
+</section>
 
 <script>
   $(function() {

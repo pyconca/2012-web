@@ -1,9 +1,9 @@
 body {
-  background-color: #e7e3e0;
+  background: #cbc2bc url(bg-grid.png) repeat left top;
   color: #444;
   font-family: 'Droid Serif', Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 22px;
 }
 @media (max-width: 979px) {
   body {
@@ -17,8 +17,12 @@ body {
   }
 }
 
+li,
 p {
   font-family: 'Droid Serif', Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 9px;
 }
 
 a {
@@ -32,8 +36,27 @@ a:hover {
   text-decoration: none;
 }
 
+.bubble {
+  background-color: #bdb2aa;
+  padding: 10px 30px;
+  border-radius: 80px;
+  display: inline-block;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.bubble:hover {
+  background-color: #b2a69d;
+  color: #333;
+}
+.bubble-small {
+  padding: 5px 15px;
+}
+
+.gutter-top {
+  margin-top: 20px;
+}
+
 /* HEADER & NAV */
-header {
+#MainHeader {
   background-color: #5c240f; /* old browsers */
   background-image: linear-gradient(top, #612c17, #5c240f);
   background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #612c17),color-stop(1, #5c240f));
@@ -171,7 +194,8 @@ footer p a,
 footer .contact-list span {
   color: #452d24;
 }
-footer h3 {
+footer .fake-head {
+  color: #fff;
   font-size: 18px;
   text-transform: uppercase;
   margin-left: 50px;
@@ -193,9 +217,9 @@ footer .contact-list span {
   text-transform: uppercase;
 }
 
-/* HOME PAGE HEADER */
+/* HOME PAGE */
 #Intro {
-  background: url(bg-grunge.png) no-repeat center top;
+  background: #eae6e3 url(bg-grunge.png) no-repeat center top;
   padding-bottom: 30px;
 }
 #Banner {
@@ -215,7 +239,7 @@ footer .contact-list span {
   overflow: hidden;
   height: 0;
 }
-#Banner h2 {
+.home-page #DateAndPlace {
   background-color: #150803;
   color: #6b5851;
   text-shadow: 1px 1px 1px #000;
@@ -228,6 +252,8 @@ footer .contact-list span {
   border: 1px solid #2b1006;
   display: inline-block;
   margin-top: 120px;
+  font-weight: bold;
+  float: none;
 }
 
 #Callout {
@@ -287,7 +313,11 @@ footer .contact-list span {
   text-align: center;
   padding: 30px 0;
 }
+#Sponsors p {
+  font-size: 24px;
+}
 
+aside h1,
 #Sponsors h2 {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 28px;
@@ -296,15 +326,6 @@ footer .contact-list span {
   text-shadow: 0px -1px 0px #9a8b82;
   padding: 0 0 20px;
 }
-#Sponsors p {
-  font-size: 24px;
-  line-height: 24px;
-  background-color: #bdb2aa;
-  padding: 10px 30px;
-  border-radius: 80px;
-  display: inline-block;
-}
-
 #Blurbs {
   background: #ff8a00 url(bg-grid.png) repeat 0 0;
   padding-top: 60px;
@@ -312,7 +333,6 @@ footer .contact-list span {
 
 .blurb {
   float: left;
-  /*width: 400px;*/
   padding: 25px 40px 60px 110px;
   background-repeat: no-repeat;
   background-position: left top;
@@ -350,3 +370,84 @@ footer .contact-list span {
   padding: 3px 10px;
   border-radius: 20px;
 }
+
+
+/* INNER PAGE */
+#QuickLinks {
+  clear: both;
+  margin-top: 30px;
+}
+#QuickLinks em {
+  float: left;
+  margin: 6px 10px 0 0;
+  color: #8e6859;
+}
+#QuickLinks li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 10px;
+}
+#MainContent {
+  box-sizing: border-box;
+  padding: 30px;
+  background-color: #eae6e3;
+  box-shadow: 0px 0px 6px 0px #222;
+  margin-top: -10px;
+}
+#MainContent header h1 {
+  background: #2B1006 url(bg-stripes.png) repeat left top;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 0px -1px 0px #000;
+  float: left;
+  margin: -59px 0 0 -31px;
+  padding: 14px 60px 16px 90px;
+  border: 1px solid #111;
+  font-size: 40px;
+  line-height: 40px;
+}
+#DateAndPlace {
+  float: right;
+  text-align: right;
+  color: #8e6859;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: normal;
+  margin: -20px;
+}
+#DateAndPlace b {
+  color: #2b1006;
+}
+
+aside {
+  text-align: center;
+  padding: 30px 0;
+}
+aside h1 {
+  font-size: 24px;
+  padding-bottom: 0;
+}
+aside h2 {
+  color: #9d9691;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-top: 20px;
+}
+aside h2 b {
+  color: #3d1a0d;
+}
+article {
+  clear: both;
+  margin-top: 27px;
+}
+article h2 {
+  color: #2B1006;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  margin-bottom: 9px;
+}
+
+

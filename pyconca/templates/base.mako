@@ -26,7 +26,7 @@
   </head>
 
   <body class="<%block name='body_class'/>">
-    <header>
+    <header id="MainHeader">
       <div id="o-hai-can-haz-snake"></div>
       <nav class="navbar clearfix">
               <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -222,7 +222,7 @@
           </div>
 
           <div class="span6">
-            <h3>${_(u"Get in touch")}</h3>
+            <div class="fake-head">${_(u"Get in touch")}</div>
             <ul class="unstyled contact-list">
               <li><span>Twitter</span> <a href="http://twitter.com/pyconca">@pyconca</a></li>
               <li><span>IRC</span> <a href="irc://irc.freenode.net/#pyconca">#pyconca</a></li>
