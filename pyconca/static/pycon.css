@@ -72,8 +72,8 @@ a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  width: 253px;
-  height: 178px;
+  width: 204px;
+  height: 156px;
 }
 .home-page #o-hai-can-haz-snake {
   background-image: url(snake-lg.png);
@@ -451,13 +451,39 @@ aside h2 b {
 }
 article {
   clear: both;
-  margin-top: 27px;
 }
 article h2 {
   color: #2B1006;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
   margin-bottom: 9px;
+  margin-top: 27px;
 }
 
 
+/* AUTH */
+form {
+  margin: 50px 0;
+}
+label {
+  font-weight: bold;
+}
+.small-text {
+  font-size: 14px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+.breadcrumb li {
+  margin-bottom: 0;
+}
+
+hr {
+  border-top: 1px solid #BDB2AA;
+}
+
+.btn {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}

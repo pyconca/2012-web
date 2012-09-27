@@ -5,7 +5,7 @@
 </%block>
 
 <%block name="header_right">
-    <a class="btn btn-inverse pull-right"
+    <a class="btn btn-info"
        href="${request.route_url('talk_create')}">
        New Talk
     </a>
