@@ -14,6 +14,7 @@
     <script src="${request.static_url("pyconca:static/libs/jquery-1.7.2.min.js")}"></script>
     <script src="${request.static_url("pyconca:static/libs/bootstrap-2.0.3/js/bootstrap.min.js")}"></script>
     <script src="${request.static_url("pyconca:static/libs/handlebars-1.0.0.beta.6.js")}"></script>
+    <script src="${request.static_url("pyconca:static/libs/jquery.tinycarousel.min.js")}"></script>
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>

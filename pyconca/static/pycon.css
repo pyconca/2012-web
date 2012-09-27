@@ -321,11 +321,44 @@ footer .contact-list span {
   background-color: #cbc2bc;
   box-shadow: inset 0px 4px 7px -4px rgba(0, 0, 0, 0.5);
   text-align: center;
-  padding: 30px 0;
+  padding: 30px 60px;
 }
 #Sponsors p {
   font-size: 24px;
 }
+/* tinycarousel */
+#slider {
+  height: 1%;
+  overflow:hidden;
+  position: relative;
+  padding: 0 0 10px;
+  margin: 0 auto;
+}
+#slider .viewport {
+  float: left;
+  width: 100%;
+  height: 110px;
+  overflow: hidden;
+  position: relative;
+}
+@media (max-width: 480px) {
+  #slider  { width: 240px; }
+}
+@media (max-width: 767px) {
+  #slider  { width: 500px; }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  #slider  { width: 740px; }
+}
+@media (min-width: 980px) {
+  #slider  { width: 950px; }
+}
+@media (min-width: 1200px) {
+  #slider  { width: 1200px; }
+}
+#slider .disable { visibility: hidden; }
+#slider .overview { list-style: none; position: absolute; width: 240px; left: 0 top: 0; }
+#slider .overview li { float: left; margin: 0 40px 0 0; height: 120px; width: 200px;}
 
 aside h1,
 #Sponsors h2 {
@@ -389,12 +422,12 @@ aside h1,
 }
 #QuickLinks em {
   float: left;
-  margin: 6px 10px 0 0;
+  margin: 6px 10px 80px 0;
   color: #8e6859;
 }
 #QuickLinks li {
   list-style-type: none;
-  display: inline;
+  float: left;
   margin-right: 10px;
 }
 #MainContent {

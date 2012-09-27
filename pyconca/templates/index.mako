@@ -23,41 +23,23 @@
 </section>
 
 <section id="Sponsors">
-  <div class="container">
-    <div id="sponsors_carousel" class="carousel slide hidden-phone">
-      <h2>${_("Our Sponsors")}</h2>
-      <div class="carousel-inner" style="opacity: 0.6; height: 100px;">
-        <div class="active item">
-          <%include file="pyconca:templates/sponsors/500px.mako" args="img_class='black-and-white'"/>
-        </div>
-        <div class="item">
-          <%include file="pyconca:templates/sponsors/freshbooks.mako" args="img_class='black-and-white'"/>
-        </div>
-        <div class="item">
-          <%include file="pyconca:templates/sponsors/wave.mako" args="img_class='black-and-white'"/>
-        </div>
-        <div class="item">
-          <%include file="pyconca:templates/sponsors/chango.mako" args="img_class='black-and-white'"/>
-        </div>
-        <div class="item">
-          <%include file="pyconca:templates/sponsors/psf.mako" args="img_class='black-and-white'"/>
-        </div>
-        <div class="item">
-          <%include file="pyconca:templates/sponsors/upverter.mako" args="img_class='black-and-white'"/>
-        </div>
-        <div class="item">
-          <%include file="pyconca:templates/sponsors/bnotions.mako" args="img_class='black-and-white'"/>
-        </div>
-        <div class="item">
-          <%include file="pyconca:templates/sponsors/heroku.mako" args="img_class='black-and-white'"/>
-        </div>
-        <div class="item">
-          <%include file="pyconca:templates/sponsors/vmfarms.mako" args="img_class='black-and-white'"/>
-        </div>
+  <h2>${_("Our Sponsors")}</h2>
+  <div id="slider">
+      <div class="viewport">
+          <ul class="overview" style="width: 1560px; left: 0px; ">
+            <li><%include file="pyconca:templates/sponsors/500px.mako" args="img_class='black-and-white'"/></li>
+            <li><%include file="pyconca:templates/sponsors/freshbooks.mako" args="img_class='black-and-white'"/></li>
+            <li><%include file="pyconca:templates/sponsors/wave.mako" args="img_class='black-and-white'"/></li>
+            <li><%include file="pyconca:templates/sponsors/chango.mako" args="img_class='black-and-white'"/></li>
+            <li><%include file="pyconca:templates/sponsors/psf.mako" args="img_class='black-and-white'"/></li>
+            <li><%include file="pyconca:templates/sponsors/upverter.mako" args="img_class='black-and-white'"/></li>
+            <li><%include file="pyconca:templates/sponsors/bnotions.mako" args="img_class='black-and-white'"/></li>
+            <li><%include file="pyconca:templates/sponsors/heroku.mako" args="img_class='black-and-white'"/></li>
+            <li><%include file="pyconca:templates/sponsors/vmfarms.mako" args="img_class='black-and-white'"/></li>
+          </ul>
       </div>
-    </div>
-    <p class="bubble">${_(u"Interested in a sponsorship opportunity?")} <a href="${request.application_url}/sponsors">${_(u"Learn more")}</a>.</p>
   </div>
+  <p class="bubble">${_(u"Interested in a sponsorship opportunity?")} <a href="${request.application_url}/sponsors">${_(u"Learn more")}</a>.</p>
 </section>
 
 <section id="Blurbs">
@@ -91,7 +73,11 @@
 
 <script>
   $(function() {
-    $('.carousel').carousel({interval: 2500});
+    $('#slider').tinycarousel({
+      interval: true,
+      intervaltime: 3500,
+      duration: 1000
+    });
   });
 </script>
 
