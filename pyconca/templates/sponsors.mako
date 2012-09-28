@@ -46,6 +46,24 @@
     <div class="row-fluid">
       <div class="span6">
         <div class="content-section">
+            <h1 class="header">Internet Sponsor</h1>
+            <p style="width: 200px;">
+                <%include file="pyconca:templates/sponsors/crs.mako"/>
+            </p>
+        </div>
+      </div>
+
+      <div class="span6">
+        <div class="content-section">
+            <h1 class="header">Diversity Sponsor</h1>
+            <br>
+        </div>
+      </div>
+    </div>
+
+    <div class="row-fluid">
+      <div class="span6">
+        <div class="content-section">
             <h1 class="header">Venue Sponsor</h1>
             <br>
             <p style="width: 200px;">

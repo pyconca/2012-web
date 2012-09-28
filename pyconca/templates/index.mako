@@ -60,6 +60,10 @@
             </div>
 
             <div class="item">
+            <%include file="pyconca:templates/sponsors/crs.mako" args="img_class='black-and-white'"/>
+            </div>
+
+            <div class="item">
             <%include file="pyconca:templates/sponsors/psf.mako" args="img_class='black-and-white'"/>
             </div>
 
