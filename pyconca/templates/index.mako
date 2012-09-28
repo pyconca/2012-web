@@ -76,6 +76,10 @@
             </div>
 
             <div class="item">
+            <%include file="pyconca:templates/sponsors/mozilla.mako" args="img_class='black-and-white'"/>
+            </div>
+
+            <div class="item">
             <%include file="pyconca:templates/sponsors/agendaless.mako" args="img_class='black-and-white'"/>
             </div>
 

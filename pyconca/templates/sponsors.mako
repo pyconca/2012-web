@@ -30,8 +30,8 @@
           <%include file="pyconca:templates/sponsors/freshbooks.mako"/>
         </p>
 
+        <br>
         <p>
-          <br>
           <%include file="pyconca:templates/sponsors/wave.mako"/>
         </p>
       </div>
@@ -112,6 +112,7 @@
     <div class="row-fluid">
       <div class="span6">
         <br>
+
         <p>
           <%include file="pyconca:templates/sponsors/agendaless.mako"/>
         </p>
@@ -130,21 +131,31 @@
 
     <div class="row-fluid">
       <div class="span6">
-        <br>
         <p>
-          <%include file="pyconca:templates/sponsors/heroku.mako"/>
+          <%include file="pyconca:templates/sponsors/mozilla.mako"/>
         </p>
+
+        <br>
+
         <p>
-          <br>
           <%include file="pyconca:templates/sponsors/guru_link.mako"/>
         </p>
       </div>
 
       <div class="span6">
         <br>
+
         <p>
           <%include file="pyconca:templates/sponsors/trapeze.mako"/>
         </p>
+
+        <br>
+        <br>
+
+        <p style="margin-left: -25px;">
+          <%include file="pyconca:templates/sponsors/heroku.mako"/>
+        </p>
+        <br>
       </div>
     </div>
 
@@ -155,12 +166,15 @@
     <div class="row-fluid">
       <div class="span6">
         <br>
+
         <p>
           <%include file="pyconca:templates/sponsors/element34.mako"/>
         </p>
 
+        <br>
+        <br>
+
         <p>
-          <br>
           <%include file="pyconca:templates/sponsors/albert_oconnor.mako"/>
         </p>
 
@@ -168,9 +182,11 @@
 
       <div class="span6">
         <br>
+
         <p>
           <%include file="pyconca:templates/sponsors/danols.mako"/>
         </p>
+
       </div>
     </div>
 
