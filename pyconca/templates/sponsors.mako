@@ -140,6 +140,12 @@
         <p>
           <%include file="pyconca:templates/sponsors/element34.mako"/>
         </p>
+
+        <p>
+          <br>
+          <%include file="pyconca:templates/sponsors/albert_oconnor.mako"/>
+        </p>
+
       </div>
 
       <div class="span6">

@@ -103,6 +103,10 @@
             <%include file="pyconca:templates/sponsors/danols.mako" args="img_class='black-and-white'"/>
             </div>
 
+            <div class="item">
+            <%include file="pyconca:templates/sponsors/albert_oconnor.mako" args="img_class='black-and-white'"/>
+            </div>
+
           </div>
         </div>
       </div>
