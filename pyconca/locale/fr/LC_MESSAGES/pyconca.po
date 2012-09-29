@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pyconca 0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-09-26 19:14-0400\n"
+"POT-Creation-Date: 2012-09-29 18:09-0400\n"
 "PO-Revision-Date: 2012-08-15 22:00-0400\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -65,8 +65,8 @@ msgstr ""
 "href='mailto:organizers@pycon.ca'>organizers@pycon.ca</a>. "
 
 #: pyconca/templates/about.mako:4 pyconca/templates/base.mako:51
-#: pyconca/templates/base.mako:57 pyconca/templates/base.mako:231
-#: pyconca/templates/base.mako:281 pyconca/templates/index.mako:123
+#: pyconca/templates/base.mako:57 pyconca/templates/base.mako:218
+#: pyconca/templates/base.mako:268 pyconca/templates/index.mako:135
 msgid "About"
 msgstr "À propos"
 
@@ -99,19 +99,19 @@ msgstr "Code de conduite"
 msgid "Made in Canada!"
 msgstr "Fait au Canada!"
 
-#: pyconca/templates/base.mako:44 pyconca/templates/base.mako:227
-#: pyconca/templates/base.mako:275
+#: pyconca/templates/base.mako:44 pyconca/templates/base.mako:214
+#: pyconca/templates/base.mako:262
 msgid "Home"
 msgstr "Accueil"
 
-#: pyconca/templates/base.mako:71 pyconca/templates/base.mako:239
-#: pyconca/templates/base.mako:278 pyconca/templates/index.mako:167
+#: pyconca/templates/base.mako:71 pyconca/templates/base.mako:226
+#: pyconca/templates/base.mako:265 pyconca/templates/index.mako:179
 #: pyconca/templates/venue.mako:4
 msgid "Venue"
 msgstr "Lieu"
 
-#: pyconca/templates/base.mako:78 pyconca/templates/base.mako:243
-#: pyconca/templates/base.mako:282 pyconca/templates/index.mako:181
+#: pyconca/templates/base.mako:78 pyconca/templates/base.mako:230
+#: pyconca/templates/base.mako:269 pyconca/templates/index.mako:193
 #: pyconca/templates/schedule.mako:4
 msgid "Schedule"
 msgstr "Horaire"
@@ -125,78 +125,69 @@ msgstr "Conférence"
 msgid "Sprints"
 msgstr "Sprints"
 
-#: pyconca/templates/base.mako:98 pyconca/templates/base.mako:247
-#: pyconca/templates/base.mako:276 pyconca/templates/index.mako:138
+#: pyconca/templates/base.mako:98 pyconca/templates/base.mako:234
+#: pyconca/templates/base.mako:263 pyconca/templates/index.mako:150
 msgid "Speak"
 msgstr "Présenter"
 
-#: pyconca/templates/base.mako:105 pyconca/templates/base.mako:251
-#: pyconca/templates/base.mako:279 pyconca/templates/index.mako:152
+#: pyconca/templates/base.mako:105 pyconca/templates/base.mako:238
+#: pyconca/templates/base.mako:266 pyconca/templates/index.mako:164
 msgid "Learn"
 msgstr "Apprendre"
 
-#: pyconca/templates/base.mako:112 pyconca/templates/base.mako:255
-#: pyconca/templates/base.mako:285 pyconca/templates/index.mako:18
+#: pyconca/templates/base.mako:112 pyconca/templates/base.mako:242
+#: pyconca/templates/base.mako:272 pyconca/templates/index.mako:18
 #: pyconca/templates/index.mako:22 pyconca/templates/sponsors.mako:4
 msgid "Sponsor"
 msgstr "Commanditer"
 
-#: pyconca/templates/base.mako:118
-#, fuzzy
-msgid "All Sponsors"
-msgstr "Sponsors"
-
-#: pyconca/templates/base.mako:123
-msgid "Gold Sponsor - 500px"
-msgstr ""
-
-#: pyconca/templates/base.mako:132 pyconca/templates/base.mako:235
-#: pyconca/templates/base.mako:284 pyconca/templates/contact.mako:4
+#: pyconca/templates/base.mako:119 pyconca/templates/base.mako:222
+#: pyconca/templates/base.mako:271 pyconca/templates/contact.mako:4
 msgid "Contact"
 msgstr "Contact"
 
-#: pyconca/templates/base.mako:139 pyconca/templates/base.mako:259
+#: pyconca/templates/base.mako:126 pyconca/templates/base.mako:246
 msgid "Français"
 msgstr "English"
 
-#: pyconca/templates/base.mako:155
+#: pyconca/templates/base.mako:142
 msgid "Talks"
 msgstr "Présentations"
 
-#: pyconca/templates/base.mako:161
+#: pyconca/templates/base.mako:148
 msgid "Users"
 msgstr "Utilisateurs"
 
-#: pyconca/templates/base.mako:168
+#: pyconca/templates/base.mako:155
 msgid "Submit a Talk"
 msgstr "Soumettre une présentation"
 
-#: pyconca/templates/base.mako:174
+#: pyconca/templates/base.mako:161
 msgid "Your Talks"
 msgstr "Vos présentations"
 
-#: pyconca/templates/base.mako:182
+#: pyconca/templates/base.mako:169
 msgid "Your Profile"
 msgstr "Votre profil"
 
-#: pyconca/templates/base.mako:188
+#: pyconca/templates/base.mako:175
 msgid "Logout"
 msgstr "Se déconnecter"
 
-#: pyconca/templates/base.mako:197
+#: pyconca/templates/base.mako:184
 msgid "Login"
 msgstr "Connexion"
 
-#: pyconca/templates/base.mako:204
+#: pyconca/templates/base.mako:191
 msgid "Sign Up"
 msgstr "S'inscrire"
 
-#: pyconca/templates/base.mako:293
+#: pyconca/templates/base.mako:280
 #, fuzzy
 msgid "© PyCon Canada 2012"
 msgstr "PyCon Canada 2012"
 
-#: pyconca/templates/base.mako:297
+#: pyconca/templates/base.mako:284
 msgid "photo by camstatic"
 msgstr "photo par camstatic"
 
@@ -340,7 +331,7 @@ msgstr "PyCon Canada"
 msgid "Toronto, November 9th - 11th 2012"
 msgstr "Toronto, du 9 au 11 novembre 2012"
 
-#: pyconca/templates/index.mako:126
+#: pyconca/templates/index.mako:138
 msgid "INDEX_ABOUT_BLURB"
 msgstr ""
 "Vous êtes invités au lancement de la conférence, du 9 au 11 novembre "
@@ -352,7 +343,7 @@ msgstr ""
 " quand ce sera fait, gardons le momentum en organisant une conférence "
 "annuelle PyCon au Canada. "
 
-#: pyconca/templates/index.mako:141
+#: pyconca/templates/index.mako:153
 msgid "INDEX_SPEAK_BLURB"
 msgstr ""
 "Partager ses connaissances et ses idées. Soumettre une proposition pour "
@@ -360,7 +351,7 @@ msgstr ""
 "organizers@pycon.ca. Nous allons sprinter à la conférence aussi, alors "
 "envoyez nous vos idées de sprints. "
 
-#: pyconca/templates/index.mako:155
+#: pyconca/templates/index.mako:167
 msgid "INDEX_LEARN_BLURB"
 msgstr ""
 "Un des buts de PyCon Canada est d'amener au Canada des experts de "
@@ -369,7 +360,7 @@ msgstr ""
 " présentateurs vedettes, un par un, durant les prochaines semaines. "
 "Restez à l'affût: "
 
-#: pyconca/templates/index.mako:170
+#: pyconca/templates/index.mako:182
 msgid "INDEX_VENUE_BLURB"
 msgstr ""
 "Soyez là du 9 au 11 novembre 2012, au Beverley Halls dans le centre-ville"
@@ -377,7 +368,7 @@ msgstr ""
 "pas occupés à coder ou à discuter avec vos collègues, vous aurez beaucoup"
 " de choses à explorer. "
 
-#: pyconca/templates/index.mako:184
+#: pyconca/templates/index.mako:196
 msgid "INDEX_SCHEDULE_BLURB"
 msgstr ""
 "Le plaisir commence le vendredi avec une soirée de réseautage. Nourrissez"
@@ -385,7 +376,7 @@ msgstr ""
 "sprint le désire, vous pourrez commencer ce soir là. Le dimanche, vous "
 "pourrez sprinter ou assiter à des présentations et des tutoriaux. "
 
-#: pyconca/templates/index.mako:199
+#: pyconca/templates/index.mako:211
 msgid "INDEX_SPONSORS_BLURB"
 msgstr ""
 "Supportez la communauté Python canadienne et obtenez la reconnaissance, "
@@ -397,13 +388,13 @@ msgstr ""
 msgid "Register"
 msgstr "S'inscrire"
 
-#: pyconca/templates/index.mako:43 pyconca/templates/index.mako:196
+#: pyconca/templates/index.mako:43 pyconca/templates/index.mako:208
 msgid "Sponsors"
 msgstr "Sponsors"
 
-#: pyconca/templates/index.mako:129 pyconca/templates/index.mako:144
-#: pyconca/templates/index.mako:158 pyconca/templates/index.mako:173
-#: pyconca/templates/index.mako:187 pyconca/templates/index.mako:202
+#: pyconca/templates/index.mako:141 pyconca/templates/index.mako:156
+#: pyconca/templates/index.mako:170 pyconca/templates/index.mako:185
+#: pyconca/templates/index.mako:199 pyconca/templates/index.mako:214
 msgid "More >>"
 msgstr "Plus >>"
 
@@ -858,13 +849,6 @@ msgstr ""
 "options existent sur les rues Elm et Baldwin, au sud de la conférence - "
 "certains restaurants sont plus dispendieux. "
 
-#: pyconca/templates/venue.mako:44
-msgid "VENUE_HOTEL"
-msgstr ""
-"Nous procédons à la recherche d'un hôtel à recommander. Contactez <a "
-"href='mailto:hotels@pycon.ca'>hotels@pycon.ca</a> si vous souhaitez être "
-"notifié lorsqu'un hôtel sera choisi. "
-
 #: pyconca/templates/venue.mako:9
 msgid "Location"
 msgstr "Emplacement"
@@ -896,4 +880,18 @@ msgstr "Nourriture"
 #: pyconca/templates/venue.mako:43
 msgid "Hotel"
 msgstr "Hôtel"
+
+#~ msgid "All Sponsors"
+#~ msgstr "Sponsors"
+
+#~ msgid "Gold Sponsor - 500px"
+#~ msgstr ""
+
+#~ msgid "VENUE_HOTEL"
+#~ msgstr ""
+#~ "Nous procédons à la recherche d'un "
+#~ "hôtel à recommander. Contactez <a "
+#~ "href='mailto:hotels@pycon.ca'>hotels@pycon.ca</a> si vous"
+#~ " souhaitez être notifié lorsqu'un hôtel "
+#~ "sera choisi. "
 
