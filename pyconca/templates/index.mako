@@ -210,7 +210,7 @@
 
     <p><%block filter="gettext">INDEX_SPONSORS_BLURB</%block></p>
 
-    <div class="pull-right">
+    <div>
       <a href="${request.application_url}/sponsors" class="btn">${_("More >>")}</a>
     </div>
     <div class="clearfix"></div>
