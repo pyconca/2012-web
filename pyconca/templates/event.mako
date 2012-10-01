@@ -10,7 +10,7 @@
           <div id="DateAndPlace"><b>${_(u"PyCon Canada 2012")}</b><br>
           ${_(u"November 9 – 11, 2012 • Toronto")}</div>
         </hgroup>
-        <div id="QuickLinks" class=""><!-- TODO .hidden-desktop -->
+        <div id="QuickLinks" class="hidden-desktop">
           <em>${_(u"Quick links")}:</em> <ul class="unstyled"></ul>
         </div>
       </header>
