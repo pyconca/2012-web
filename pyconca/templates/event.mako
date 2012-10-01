@@ -9,6 +9,7 @@
         <h1 class="header-main-text"><%block name="title"/></h1>
         <h2 class="header-sub-text">${_(u"PyCon Canada 2012")}</h2>
         <h2 class="header-sub-text">${_(u"Toronto, November 9th - 11th")}</h2>
+        <h3 class="header-sub-text">${_(u"Bringing the Python Canada community together")}</h3>
       </div>
     </div>
   </div>

@@ -1,6 +1,6 @@
 <%inherit file="pyconca:templates/sponsor_profile.mako"/>
 
-<%block name="title">
+<%block name="head_title">
     Gold Sponsor - <a href="http://500px.com/">500px</a>
 </%block>
 
