@@ -76,7 +76,7 @@
     $('#slider').tinycarousel({
       interval: true,
       intervaltime: 3500,
-      duration: 1000
+      duration: 500
     });
   });
 </script>

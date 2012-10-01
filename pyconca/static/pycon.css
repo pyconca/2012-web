@@ -395,7 +395,7 @@ footer .contact-list span {
 @media (max-width: 480px) {
   #slider  { width: 240px; }
 }
-@media (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 767px) {
   #slider  { width: 500px; }
 }
 @media (min-width: 768px) and (max-width: 979px) {
