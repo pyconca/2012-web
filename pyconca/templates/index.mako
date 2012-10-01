@@ -1,4 +1,7 @@
 <%inherit file="base.mako"/>
+<%block name="head_title">PyCon.ca - building your Python Canada Community</%block>
+<%block name="head_description">${parent.head_description()}</%block>
+
 <%block name="content">
 
 <div class="row-fluid main-header-image">
@@ -12,6 +15,7 @@
       <div class="span12 top-row main-row overlay">
         <h1 class="header-main-text">${_(u"PyCon Canada")}</h1>
         <h2 class="header-sub-text">${_(u"Toronto, November 9th - 11th 2012")}</h2>
+        <h3 class="header-sub-text">${_(u"Bringing the Canadian Python community together")}</h3>
         <br />
         <div class="visible-desktop">
             <a href="http://guestlistapp.com/events/116013" class="btn btn-warning btn-large guestlist-event-116013">${_(u"Register")}</a>
