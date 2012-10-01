@@ -12,8 +12,8 @@ body {
 }
 @media (max-width: 767px) {
   .container {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
@@ -43,12 +43,14 @@ a:hover {
   display: inline-block;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.bubble:hover {
+a.bubble:hover {
   background-color: #b2a69d;
   color: #333;
 }
 .bubble-small {
-  padding: 5px 15px;
+  padding: 2px 12px;
+  font-size: 12px;
+  background-color: #CBC2BC;
 }
 
 .gutter-top    { margin-top: 20px; }
@@ -75,10 +77,12 @@ a:hover {
   width: 204px;
   height: 156px;
 }
-.home-page #o-hai-can-haz-snake {
-  background-image: url(snake-lg.png);
-  width: 434px;
-  height: 346px;
+@media (min-width: 1200px) {
+  .home-page #o-hai-can-haz-snake {
+    background-image: url(snake-lg.png);
+    width: 434px;
+    height: 346px;
+  }
 }
 @media (max-width: 979px) {
   #o-hai-can-haz-snake { display: none; }
@@ -98,7 +102,12 @@ a:hover {
 }
 
 .nav-spacer {
-  margin-left: 50px;
+  margin-left: 14px;
+}
+@media (min-width: 1100px) {
+  .nav-spacer {
+    margin-left: 50px;
+  }
 }
 @media (max-width: 979px) {
   .nav-spacer {
@@ -153,6 +162,14 @@ a:hover {
 
 .home-page .navbar .nav > li.nav-home {
   display: none;
+}
+.navbar .nav > li.nav-home {
+  margin-left: -30px;
+}
+@media (max-width: 979px) {
+  .navbar .nav > li.nav-home {
+    margin-left: 0;
+  }
 }
 
 .icon-home {
@@ -231,23 +248,50 @@ footer .contact-list span {
 #Intro {
   background: #eae6e3 url(bg-grunge.png) no-repeat center top;
   padding-bottom: 30px;
-}
-#Banner {
-  background: url(banner-home.png) no-repeat left top;
-  width: 570px;
-  height: 177px;
-  margin: -54px 285px 0;
   text-align: center;
 }
-@media (max-width: 979px) {
+#Banner {
+  background: #2B1006 url(bg-stripes.png) repeat left top;
+}
+@media (min-width: 979px) {
   #Banner {
-    margin: -30px auto 0;
+    background: url(banner-home.png) no-repeat left top;
+    width: 570px;
+    height: 177px;
+    margin: -54px auto 0;
+    text-align: center;
+  }
+}
+@media (min-width: 1200px) {
+  #Banner {
+    margin: -54px 285px 0;
   }
 }
 #Banner h1 {
-  text-indent: -9999px;
-  overflow: hidden;
-  height: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+    height: 0;
+  /*font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  /*font-weight: 400;*/
+  /*color: #fff;*/
+  /*text-shadow: 0px -1px 0px #000;*/
+}
+@media (min-width: 570px) {
+  #Banner h1 {
+    background: none;      
+  }
+}
+@media (max-width: 979px) {
+  #Banner {
+    margin: 0 auto;
+    padding: 20px 20px 5px;
+    text-align: center;
+    display: inline-block;
+  }
+  #Banner h1 {
+    background: url(pycon-sm.png) no-repeat center top;
+    height: 60px;
+  }
 }
 .home-page #DateAndPlace {
   background-color: #150803;
@@ -256,7 +300,7 @@ footer .contact-list span {
   text-transform: uppercase;
   width: 410px;
   text-align: center;
-  padding: 3px 0;
+  padding: 3px 7px;
   font-size: 21px;
   line-height: 26px;
   border: 1px solid #2b1006;
@@ -265,11 +309,18 @@ footer .contact-list span {
   font-weight: bold;
   float: none;
 }
+@media (max-width: 979px) {
+  .home-page #DateAndPlace {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: auto;
+  }
+}
 
 #Callout {
   margin-left: 285px;
 }
-@media (max-width: 979px) {
+@media (max-width: 1200px) {
   #Callout {
     margin-left: 0;
     text-align: center;
@@ -284,12 +335,12 @@ footer .contact-list span {
   width: 510px;
   margin: 30px 0 0;
   float: left;
+  text-align: left;
 }
 @media (max-width: 979px) {
   #Teaser {
     width: auto;
     padding: 0;
-    text-align: left;
   }
 }
 
@@ -421,21 +472,27 @@ aside h1,
   margin-top: 30px;
 }
 #QuickLinks em {
-  float: left;
-  margin: 6px 10px 80px 0;
+  margin: 6px 10px 0 0;
   color: #8e6859;
+  font-size: 14px;
 }
 #QuickLinks li {
   list-style-type: none;
-  float: left;
   margin-right: 10px;
+  margin-bottom: 5px;
 }
+
 #MainContent {
   box-sizing: border-box;
   padding: 30px;
   background-color: #eae6e3;
   box-shadow: 0px 0px 6px 0px #222;
   margin-top: -10px;
+}
+@media (max-width: 979px) {
+  #MainContent {
+    margin-top: 0;
+  }
 }
 #MainContent header h1 {
   background: #2B1006 url(bg-stripes.png) repeat left top;
@@ -445,10 +502,17 @@ aside h1,
   text-shadow: 0px -1px 0px #000;
   float: left;
   margin: -59px 0 0 -31px;
-  padding: 14px 60px 16px 90px;
+  padding: 14px 140px 16px 160px;
   border: 1px solid #111;
   font-size: 40px;
   line-height: 40px;
+}
+@media (max-width: 979px) {
+  #MainContent header h1 {
+    margin: -30px -30px 0 -30px;
+    padding: 14px 30px 16px 30px;
+    width: 100%;
+  }
 }
 #DateAndPlace {
   float: right;
@@ -458,7 +522,11 @@ aside h1,
   font-size: 18px;
   line-height: 18px;
   font-weight: normal;
-  margin: -20px;
+    margin-top: 10px;
+}
+@media (max-width: 1199px) {
+  #DateAndPlace {
+  }
 }
 #DateAndPlace b {
   color: #2b1006;
