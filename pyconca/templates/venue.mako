@@ -44,15 +44,13 @@
     The recommended hotel for PyCon Canada is the Metropolitan.
     </p> 
 
-    <blockquote>
-        <address>
-        Metropolitan Hotel Toronto<br>
-        108 Chestnut Street<br>
-        Toronto, Ontario</br> 
-        M5G 1R3, Canada<br>
-        (416) 977-5000<br>
-        </address>
-    </blockquote>
+    <address>
+      Metropolitan Hotel Toronto<br>
+      108 Chestnut Street<br>
+      Toronto, Ontario</br>
+      M5G 1R3, Canada<br>
+      (416) 977-5000<br>
+    </address>
 
     <p>
     <strong>Use this link to reserve rooms: </strong>
@@ -63,13 +61,13 @@
     The hotel rate is $120 per night 
     (plus 13% Harmonized Sales Tax, and $8.00 per day room facilities fee).
     This includes:
+    </p>
       <ul>
         <li>Two double beds</li>
         <li>Free wireless</li>
         <li>Local phone calls</li>
         <li>Access to the health club</li>
       </ul>
-    </p>
 
     <p>
     If you would like to share a hotel room with someone else attending the

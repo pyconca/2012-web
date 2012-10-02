@@ -478,6 +478,7 @@ aside h1,
   font-size: 14px;
 }
 #QuickLinks li {
+  display: inline-block;
   list-style-type: none;
   margin-right: 10px;
   margin-bottom: 5px;
@@ -533,6 +534,9 @@ aside h1,
   color: #2b1006;
 }
 
+address {
+  margin-left: 20px;
+}
 aside {
   text-align: center;
   padding: 30px 0;
@@ -557,7 +561,7 @@ article {
 article h2 {
   color: #2B1006;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 9px;
   margin-top: 27px;
 }
