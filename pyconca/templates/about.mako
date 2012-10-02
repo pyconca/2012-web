@@ -76,7 +76,7 @@
         </tr>
 
         <tr>
-          <td><a href="href="http://www.flickr.com/photos/camstatic">Camilla Bjerke</a></td>
+          <td><a href="http://www.flickr.com/photos/camstatic">Camilla Bjerke</a></td>
           <td><a href="https://twitter.com/myusuf3">Mahdi Yusuf</a></td>
         </tr>
 
