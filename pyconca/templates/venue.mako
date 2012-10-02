@@ -40,6 +40,51 @@
 
   <article>
     <h2>${_(u"Hotel")}</h2>
-    <p><%block filter="gettext">VENUE_HOTEL</%block></p>
+    <p>
+    The recommended hotel for PyCon Canada is the Metropolitan.
+    </p> 
+
+    <blockquote>
+        <address>
+        Metropolitan Hotel Toronto<br>
+        108 Chestnut Street<br>
+        Toronto, Ontario</br> 
+        M5G 1R3, Canada<br>
+        (416) 977-5000<br>
+        </address>
+    </blockquote>
+
+    <p>
+    <strong>Use this link to reserve rooms: </strong>
+    <a href='https://gc.synxis.com/rez.aspx?Hotel=27076&Chain=10237&template=YYZME&shell=YYZME&group=236098'>Metropolitan Hotel</a>
+    </p>
+
+    <p>
+    The hotel rate is $120 per night 
+    (plus 13% Harmonized Sales Tax, and $8.00 per day room facilities fee).
+    This includes:
+      <ul>
+        <li>Two double beds</li>
+        <li>Free wireless</li>
+        <li>Local phone calls</li>
+        <li>Access to the health club</li>
+      </ul>
+    </p>
+
+    <p>
+    If you would like to share a hotel room with someone else attending the
+    conference, please see the PyCon Canada
+    <a href='https://github.com/pyconca/pyconca2012/wiki/Room-Sharing'>
+    room sharing wiki</a> page.
+
+    <p>
+    The PyCon Canada block of hotel rooms is reserved under the name 'PYCONCA ASSOCIATION'.
+    </p>
+
+    <p>
+    Email <a href='mailto:organizers@pycon.ca'>organizers@pycon.ca</a> if you 
+    run into any trouble reserving your room, or finding someone to share a 
+    room with.
+    </p>
   </article>
 </%block>

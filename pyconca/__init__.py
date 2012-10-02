@@ -12,17 +12,15 @@ from .routes import _add_resource
 from .routes import _setup_routes
 from .security import get_user
 from .security import permission_finder
+from pyconca import temporal
 
-default_timezone = pytz.timezone('America/Toronto')
 
 def main(global_config, **settings):
-    global default_timezone
-
     engine = engine_from_config(settings, 'sqlalchemy.')
     DBSession.configure(bind=engine)
 
     if 'timezone' in settings:
-        default_timezone = pytz.timezone(settings['timezone'])
+        temporal.default_timezone = pytz.timezone(settings['timezone'])
 
     authn_policy = AuthTktAuthenticationPolicy(
         settings['secret.authn_policy'],
@@ -45,6 +43,7 @@ def main(global_config, **settings):
     _add_resource(config, 'user')
     _add_api_resource(config, 'talk')
     _add_resource(config, 'talk')
+    _add_api_resource(config, 'schedule_slot')
 
     config.scan()
 

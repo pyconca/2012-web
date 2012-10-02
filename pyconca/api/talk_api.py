@@ -1,3 +1,4 @@
+from formencode import Invalid
 from formencode import Schema
 from formencode import validators
 
@@ -5,17 +6,18 @@ from pyramid.security import authenticated_userid
 from pyramid.threadlocal import get_current_request
 from pyramid.url import route_url
 
-import pytz
-
-from pyconca import default_timezone
 from pyconca.api.base_api import BaseApi
+from pyconca.dao.schedule_slot_dao import ScheduleSlotDao
 from pyconca.dao.talk_dao import TalkDao
+from pyconca.temporal import local_isoformat
+
 
 class TalkApi(BaseApi):
 
     def _configure(self):
         self.name = 'talk'
         self.dao = TalkDao(self.request.user)
+        self.schedule_slot_dao = ScheduleSlotDao(self.request.user)
         self.schema = TalkSchema
 
     def _populate(self, talk, form, is_create):
@@ -26,25 +28,43 @@ class TalkApi(BaseApi):
                 talk.owner_id = authenticated_userid(self.request)
         if self.is_admin:
             talk.reviewer_notes = form['reviewer_notes']
+        if self.is_admin and 'schedule_slot_id' in form:
+            if form['schedule_slot_id'] == -1:
+                # -1 in the form means "not scheduled"
+                talk.schedule_slot = None
+            elif form['schedule_slot_id'] > 0:
+                talk.schedule_slot = self.schedule_slot_dao.get(
+                    form['schedule_slot_id'])
+            else:
+                # It's equal to zero,
+                # therefore "not specified",
+                # so don't do anything.
+                pass
         talk.title = form['title']
         talk.type = form['type']
         talk.level = form['level']
         talk.abstract = form['abstract']
         talk.outline = form['outline']
 
+    def _validate(self, model, form):
+        super(TalkApi, self)._validate(model, form)
+        if int(form.get('schedule_slot_id', 0)) > 0:
+            schedule_slot = self.schedule_slot_dao.get(
+                form['schedule_slot_id'])
+            if schedule_slot.talk and schedule_slot.talk is not model:
+                exc = Invalid(
+                    "Schedule slot is already in use", 'schedule_slot_id',
+                    None)
+                exc.error_dict = {'schedule_slot_id': exc}
+                raise exc
+
     def _create_flash(self, talk):
-        msg = ('You have submitted a %s for PyCon Canada. Thank-you!'
-            % (talk.type))
+        msg = ('You have submitted a talk for PyCon Canada. Thank-you!')
         self.request.session.flash(msg, 'success')
 
     def _update_flash(self, talk):
-        msg = ('Updated %s: %s' % (talk.type, talk.title))
+        msg = ('Updated talk')
         self.request.session.flash(msg, 'success')
-
-    def _local_isoformat(self, dt):
-        dt_utc = dt.replace(tzinfo=pytz.UTC)
-        dt_local = dt_utc.astimezone(default_timezone)
-        return dt_local.isoformat()
 
     def _post_process_for_output(self, model, output):
         """
@@ -81,6 +101,7 @@ class TalkApi(BaseApi):
             'conf_url': route_url('talk_get', request, id=output['id']),
         })
         schedule = {
+            'schedule_slot_id': None,
             'room': None,
             'start': None,
             'end': None,
@@ -88,13 +109,16 @@ class TalkApi(BaseApi):
         }
         if model.schedule_slot:
             assert model.schedule_slot.start < model.schedule_slot.end
-            duration_delta = model.schedule_slot.end - model.schedule_slot.start
+            end = model.schedule_slot.end
+            start = model.schedule_slot.start
+            duration_delta = end - start
             assert duration_delta.days == 0
             schedule.update({
+                'schedule_slot_id': model.schedule_slot.id,
                 'room': model.schedule_slot.room,
-                'start': self._local_isoformat(model.schedule_slot.start),
-                'end': self._local_isoformat(model.schedule_slot.end),
-                'duration': (model.schedule_slot.end - model.schedule_slot.start).seconds / 60,
+                'start': local_isoformat(model.schedule_slot.start),
+                'end': local_isoformat(model.schedule_slot.end),
+                'duration': duration_delta.seconds / 60,
             })
         new_output.update(schedule)
         return new_output
@@ -108,4 +132,5 @@ class TalkSchema(Schema):
     outline = validators.String(not_empty=True, strip=True)
     reviewer_notes = validators.String(
         not_empty=False, strip=True, if_missing='')
+    schedule_slot_id = validators.Int(not_empty=False, if_missing=0)
     owner_id = validators.Int(not_empty=True)

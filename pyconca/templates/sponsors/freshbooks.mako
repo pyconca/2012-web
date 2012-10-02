@@ -2,6 +2,6 @@
 <a href="http://www.freshbooks.com/">
     <img src="${request.static_url("pyconca:static/sponsors/freshbooks.png")}"
         class="${img_class}"
-        width="200" height="104"
+        height="100"
         alt="FreshBooks">
 </a>

@@ -17,4 +17,4 @@ class TalkDao(BaseDao):
         elif self.authenticated_user:
             return query.filter_by(owner_id=self.authenticated_user.id)
         else:
-            raise Exception # TODO
+            raise Exception  # TODO

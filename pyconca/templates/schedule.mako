@@ -235,7 +235,7 @@
       <tr>
         <th>All Day</th>
         <td colspan="2">
-          <strong>${_(u"Sprints")}</strong>
+          <strong><a href="${request.route_url('sprints')}">${_(u"Sprints")}</a></strong>
           <br>
           Location: TBD
         </td>
@@ -249,12 +249,11 @@
       <tr>
         <th>All Day</th>
         <td colspan="2">
-          <strong>${_(u"Sprints")}</strong>
+          <strong><a href="${request.route_url('sprints')}">${_(u"Sprints")}</a></strong>
           <br>
           Location: TBD
         </td>
       </tr>
     </table>
   </article>
-
 </%block>

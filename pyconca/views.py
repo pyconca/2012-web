@@ -47,6 +47,11 @@ def sponsors(request):
     return _build_response(request)
 
 
+#@view_config(route_name='sponsors_500px', renderer='sponsors_500px.mako')
+#def sponsors_500px(request):
+#    return _build_response(request)
+
+
 @view_config(route_name='contact', renderer='contact.mako')
 def contact(request):
     return _build_response(request)
@@ -83,7 +88,7 @@ def login(request):
     login_url = request.route_url('login')
     referrer = request.url
     if referrer == login_url:
-        referrer = '/' # never use the login form itself as came_from
+        referrer = '/'  # never use the login form itself as came_from
     came_from = request.params.get('came_from', referrer)
 
     username = ''
@@ -108,7 +113,9 @@ def login(request):
 
     return response_
 
-@view_config(route_name='forgot', renderer='pyconca:templates/auth/forgot.mako')
+
+@view_config(route_name='forgot',
+             renderer='pyconca:templates/auth/forgot.mako')
 def forgot(request):
     username = ''
 

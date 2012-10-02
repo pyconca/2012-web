@@ -17,6 +17,7 @@ from zope.sqlalchemy import ZopeTransactionExtension
 from pyramid.security import Allow
 from pyramid.security import ALL_PERMISSIONS
 
+from pyconca.temporal import local_isoformat
 from pyconca.util import camel_to_under
 
 
@@ -137,13 +138,25 @@ class ScheduleSlot(AttrMixIn, Base):
     start = Column(DateTime, nullable=False)
     end = Column(DateTime, nullable=False)
 
+    def to_dict(self, is_admin):
+        duration_delta = self.end - self.start
+        data = {
+            'id': self.id,
+            'room': self.room,
+            'start': local_isoformat(self.start),
+            'end': local_isoformat(self.end),
+            'duration': duration_delta.seconds / 60,
+        }
+        return data
+
 
 class TalkScheduleSlot(AttrMixIn, Base):
     talk_id = Column(Integer, ForeignKey('talk.id'), primary_key=True)
-    schedule_slot_id = Column(Integer, ForeignKey('schedule_slot.id'), primary_key=True)
+    schedule_slot_id = Column(Integer, ForeignKey('schedule_slot.id'),
+                              primary_key=True)
 
 
-Index("talk_schedule_slot_talk_id_unique", 
+Index('talk_schedule_slot_talk_id_unique',
     TalkScheduleSlot.talk_id, unique=True)
-Index("talk_schedule_slot_schedule_slot_id_unique", 
+Index('talk_schedule_slot_schedule_slot_id_unique',
     TalkScheduleSlot.schedule_slot_id, unique=True)
