@@ -49,10 +49,23 @@
                     </a>
                   </li>
 
-                  <li>
-                    <a href="${request.application_url}/about">
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         ${_(u"About")}
+                        <b class="caret"></b>
                     </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a href="${request.route_url('about')}">
+                          ${_(u"About")}
+                        </a>
+                      </li>
+                      <li>
+                        <a href="${request.route_url('conduct')}">
+                          ${_(u"Code of Conduct")}
+                        </a>
+                      </li>
+                    </ul>
                   </li>
 
                   <li>
