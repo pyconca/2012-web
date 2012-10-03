@@ -565,6 +565,9 @@ article h2 {
   margin-bottom: 9px;
   margin-top: 27px;
 }
+.sponsors-page article h2 {
+  margin-top: 60px;
+}
 
 
 /* AUTH */
