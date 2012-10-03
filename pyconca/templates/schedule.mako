@@ -371,7 +371,7 @@
         <tr>
           <th>3:45 - 4:30</th>
           <td colspan="2">
-            <strong>${_(u"45 Closing Keynote - K3")}</strong>
+            <strong>${_(u"Closing Keynote - K3")}</strong>
           </td>
         </tr>
 
