@@ -13,6 +13,21 @@ class UserDao(BaseDao):
     def get_by_username(self, username):
         return self._query().filter_by(username=username).first()
 
+    def get_by_id(self, id):
+        return self._query().filter_by(id=id).first()
+
+    def get_by_email(self, email):
+        return self._query().filter_by(email=email).first()
+
+    def set_new_pwd(self, id, new_pwd):
+        user = self._query().filter_by(id=id).first()
+
+        if user is not None:
+            user.password = new_pwd
+            return True
+        else:
+            return False
+
     def username_already_exists(self, username, id=None):
         query = self._query().filter_by(username=username)
         if id is not None:

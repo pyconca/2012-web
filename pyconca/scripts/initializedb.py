@@ -42,16 +42,24 @@ def main(argv=sys.argv):
             password=generate_password('taavi'),
             first_name='Taavi',
             last_name='Burns',
-            email='foo')
+            email='foo@example.com')
         diana = User(
             username='diana',
             password=generate_password('diana'),
             first_name='Diana',
             last_name='Clarke',
-            email='foo')
+            email='bar@example.com')
+        #kay = User(
+            #username='kay',
+            #password=generate_password('kay'),
+            #first_name='kay',
+            #last_name='zhu',
+            #email='no.deep.sea@gmail.com')
         DBSession.add(taavi)
         diana.groups.append(admin_group)
         DBSession.add(diana)
+        #kay.groups.append(admin_group)
+        #DBSession.add(kay)
     with transaction.manager:
         taavi = DBSession.query(User).filter(User.username == 'taavi').one()
         schedule_slot = ScheduleSlot(

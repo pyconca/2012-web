@@ -4,8 +4,11 @@ from pyconca.util import under_to_camel
 def _setup_routes(config):
     config.add_route('index', '/')
     config.add_route('login', '/login')
-    config.add_route('logout', '/logout')
     config.add_route('forgot', '/forgot')
+    config.add_route('pwd_reset_form', '/reset/{username}/{reset_key}')
+    config.add_route('pwd_reset', '/reset', request_method="POST")
+    config.add_route('pwd_change', "/change")
+    config.add_route('logout', '/logout')
     config.add_route('about', '/about')
     config.add_route('locale', '/locale')
     config.add_route('conduct', '/conduct')
