@@ -96,9 +96,23 @@ class Message(object):
                 else:
                     port = int(self.settings.get('email.port', 25))
                     mail_server = smtplib.SMTP(smtp_server, port)
+                    if self.settings.get('email.ssl', 'false') == 'true':
+                        LOG.info("smtp ehlo to %r", smtp_server)
+                        mail_server.ehlo()
+                        mail_server.starttls()
+                        mail_server.ehlo()
+
+                    if self.settings.get('email.username'):
+                        LOG.info("smtp login as %r...",
+                                 self.settings['email.username'])
+                        mail_server.login(self.settings['email.username'],
+                                          self.settings['email.password'])
+
+                    LOG.info("smtp sendmail...")
                     mail_server.sendmail(msg['From'],
                                     all_emails,
                                     msg.as_string())
+                    LOG.info("smtp done!")
                     mail_server.quit()
                 return MSG_STATUS['sent']
 
