@@ -1,6 +1,6 @@
 <%inherit file="event.mako"/>
 
-<%block name="title" filter="gettext">Code of Conduct</%block>
+<%block name="head_title" filter="gettext">Code of Conduct</%block>
 
 <%block name="info">
     <div class="row-fluid content-section">
