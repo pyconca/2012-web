@@ -1,8 +1,9 @@
 """Create and send messages to users
 """
-import logging
 import os
+import logging
 import smtplib
+import textwrap
 
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -114,13 +115,14 @@ class ReactivateMsg(Message):
         """Return the completed message template body
 
         """
-        return """
-            Reactivate your PyConCA account with the following url:
+        return textwrap.dedent("""
+            Reset your PyConCA password with the following url:
 
             {0}
 
             ---
-            PyCon.ca""".format(message_data)
+            PyCon.ca
+        """.strip("\n")).format(message_data)
         # lookup = config['pylons.app_globals'].mako_lookup
         # template = lookup.get_template(template_file)
 
