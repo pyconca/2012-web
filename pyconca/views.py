@@ -144,7 +144,7 @@ def forgot(request):
             Please check your email for the password reset link. Make sure to
             check your spam folder"""
             request.session.flash(msg, 'error')
-            return _build_response(request).update(email=email)
+            return _build_response_with(request, email=email)
 
         user.mark_pwd_reset("FORGOTTEN")
         settings = request.registry.settings
@@ -213,19 +213,6 @@ def pwd_reset(request):
         request.session.flash(msg, 'error')
         return _build_response(request)
 
-    #if username is None and activation is None and password is None:
-        ## then try to get the same fields out of a json body
-        #json_body = request.json_body
-        #username = json_body.get('username', None)
-        #activation = json_body.get('code', None)
-        #password = json_body.get('password', None)
-        #new_username = json_body.get('new_username', None)
-
-    #if not UserMgr.acceptable_password(password):
-        #request.response.status_int = 406
-        #return {
-            #'error': "Come on, pick a real password please",
-        #}
     activation_dao = ActivationDao(None)
     res = activation_dao.set_new_pwd(username, activation_code,
                                      generate_password(password1))
