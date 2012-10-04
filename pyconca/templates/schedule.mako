@@ -29,34 +29,34 @@
       <table class="table table-bordered">
         <tr>
           <th>8:30</th>
-          <td colspan="2">
+          <td colspan="3">
             <strong>${_(u"Registration")}</strong>
           </td>
         </tr>
 
         <tr>
-          <th>9:00 - 9:25</th>
-          <td colspan="2">
+          <th>9:00</th>
+          <td colspan="3">
             <strong>Welcome to PyCon Canada</strong>
           </td>
         </tr>
 
         <tr>
-          <th>9:30 - 10:15</th>
-          <td colspan="2">
+          <th>9:30</th>
+          <td colspan="3">
             <strong>Keynote - K1</strong>
           </td>
         </tr>
 
         <tr>
-          <th>10:15 - 10:25</th>
-          <td colspan="2">
+          <th>10:15</th>
+          <td colspan="3">
             <strong>${_(u"Break")}</strong>
           </td>
         </tr>
 
         <tr>
-          <th>10:25 - 11:10</th>
+          <th>10:25</th>
           <td>
             <strong>${_(u"45 Minute Talk - B1")}</strong>
           </td>
@@ -65,17 +65,20 @@
             ${_(u" --- 5 minutes --- ")}<br>
             <strong>${_(u"20 Minute Talk - A2")}</strong>
           </td>
+          <td rowspan="3">
+            <strong>${_(u"90 Minute Tutorial - T1")}</strong>
+          </td>
         </tr>
 
         <tr>
-          <th>11:10 - 11:20</th>
+          <th>11:10</th>
           <td colspan="2">
             <strong>${_(u"Break")}</strong>
           </td>
         </tr>
 
         <tr>
-          <th>11:20 - 12:05</th>
+          <th>11:20</th>
           <td>
             <strong>${_(u"45 Minute Talk - B2")}</strong>
           </td>
@@ -87,14 +90,14 @@
         </tr>
 
         <tr>
-          <th>12:05 - 1:05</th>
-          <td colspan="2">
+          <th>12:05</th>
+          <td colspan="3">
             <strong>${_(u"Lunch (provided)")}</strong>
           </td>
         </tr>
 
         <tr>
-          <th>1:05 - 1:50</th>
+          <th>1:05</th>
           <td>
             <strong>${_(u"45 Minute Talk - B3")}</strong>
           </td>
@@ -103,17 +106,20 @@
             ${_(u" --- 5 minutes --- ")}<br>
             <strong>${_(u"20 Minute Talk - A6")}</strong>
           </td>
+          <td rowspan="7">
+            <strong>${_(u"3 Hour Tutorial - T2")}</strong>
+          </td>
         </tr>
 
          <tr>
-          <th>1:50 - 2:00</th>
+          <th>1:50</th>
           <td colspan="2">
             <strong>${_(u"Break")}</strong>
           </td>
         </tr>
  
         <tr>
-          <th>2:00 - 2:45</th>
+          <th>2:00</th>
           <td>
             <strong>${_(u"45 Minute Talk - B4")}</strong>
           </td>
@@ -125,14 +131,14 @@
         </tr>
 
          <tr>
-          <th>2:45 - 3:00</th>
+          <th>2:45</th>
           <td colspan="2">
             <strong>${_(u"Coffee Break")}</strong>
           </td>
         </tr>
 
         <tr>
-          <th>3:00 - 3:45</th>
+          <th>3:00</th>
           <td>
             <strong>${_(u"45 Minute Talk - B5")}</strong>
           </td>
@@ -144,14 +150,14 @@
         </tr>
 
         <tr>
-          <th>3:45 - 3:55</th>
+          <th>3:45</th>
           <td colspan="2">
             <strong>${_(u"Break")}</strong>
           </td>
         </tr>
 
         <tr>
-          <th>3:55 - 4:40</th>
+          <th>3:55</th>
           <td>
             <strong>${_(u"45 Minute Talk - B6")}</strong>
           </td>
@@ -163,14 +169,14 @@
         </tr>
 
         <tr>
-          <th>4:40 - 4:50</th>
-          <td colspan="2">
+          <th>4:40</th>
+          <td colspan="3">
             <strong>${_(u"Break")}</strong>
           </td>
         </tr>
 
         <tr>
-          <th>4:50 - 5:35</th>
+          <th>4:50</th>
           <td>
             <strong>${_(u"Lightning Talk - L1")}</strong><br>
             <strong>${_(u"Lightning Talk - L2")}</strong><br>
@@ -184,46 +190,48 @@
             ${_(u" --- 5 minutes --- ")}<br>
             <strong>${_(u"20 Minute Talk - A14")}</strong>
           </td>
+          <td>
+          </td>
         </tr>
 
         <tr>
-          <th>5:35 - 5:40</th>
-          <td colspan="2">
+          <th>5:35</th>
+          <td colspan="3">
             <strong>${_(u"Break")}</strong>
           </td>
         </tr>
 
         <tr>
-          <th>5:40 - 5:45</th>
-          <td colspan="2">
+          <th>5:40</th>
+          <td colspan="3">
             <strong>${_(u"Closing Messages")}</strong>
           </td>
         </tr>
 
         <tr>
           <th>5:45</th>
-          <td colspan="2">
+          <td colspan="3">
             <%block filter="gettext">SCHEDULE_TALKS_DONE</%block>
           </td>
         </tr>
 
         <tr>
           <th>6:30</th>
-          <td colspan="2">
+          <td colspan="3">
             <%block filter="gettext">SCHEDULE_DINNER</%block>
           </td>
         </tr>
 
         <tr>
           <th>7:30</th>
-          <td colspan="2">
+          <td colspan="3">
             <%block filter="gettext">SCHEDULE_SPRINTS</%block>
           </td>
         </tr>
 
         <tr>
           <th>Midnight</th>
-          <td colspan="2">
+          <td colspan="3">
             <strong>${_(u"Venue closes")}</strong>
           </td>
         </tr>
@@ -235,65 +243,67 @@
       <table class="table table-bordered">
         <tr>
           <th>8:30</th>
-          <td colspan="2">
+          <td colspan="3">
             <strong>${_(u"Registration")}</strong>
           </td>
         </tr>
 
         <tr>
-          <th>9:00 - 9:25</th>
-          <td colspan="2">
+          <th>9:00</th>
+          <td colspan="3">
             <strong>Morning Messages</strong>
           </td>
         </tr>
 
         <tr>
-          <th>9:30 - 10:15</th>
-          <td colspan="2">
+          <th>9:30</th>
+          <td colspan="3">
             <strong>Keynote - K2</strong>
           </td>
         </tr>
 
         <tr>
-          <th>10:15 - 10:25</th>
-          <td colspan="2">
+          <th>10:15</th>
+          <td colspan="3">
             <strong>${_(u"Break")}</strong>
           </td>
         </tr>
 
         <tr>
-          <th>10:25 - 10:45</th>
+          <th>10:25</th>
           <td>
             <strong>${_(u"20 Minute Talk - A15")}</strong>
           </td>
           <td>
             <strong>${_(u"20 Minute Talk - A16")}</strong>
           </td>
+          <td>
+          </td>
         </tr>
 
         <tr>
-          <th>10:45 - 10:55</th>
-          <td colspan="2">
+          <th>10:45</th>
+          <td colspan="3">
             <strong>${_(u"Break")}</strong>
           </td>
         </tr>
 
         <tr>
-          <th>10:55 - 11:05</th>
-          <td colspan="2">
+          <th>10:55</th>
+          <td colspan="3">
             <strong>Remembrance Day</strong>
           </td>
         </tr>
 
         <tr>
-          <th>11:05 - 11:10</th>
-          <td colspan="2">
+          <th>11:05</th>
+          <td colspan="3">
             <strong>${_(u"Break")}</strong>
           </td>
         </tr>
 
         <tr>
-          <th>11:10 - 11:55</th>
+          <th>11:10</th>
           <td>
             <strong>${_(u"45 Minute Talk - B7")}</strong>
           </td>
@@ -302,17 +312,20 @@
             ${_(u" --- 5 minutes --- ")}<br>
             <strong>${_(u"20 Minute Talk - A18")}</strong>
           </td>
+          <td>
+            <strong>${_(u"45 Minute Talk - T3")}</strong>
+          </td>
         </tr>
 
         <tr>
-          <th>11:55 - 12:55</th>
-          <td colspan="2">
+          <th>11:55</th>
+          <td colspan="3">
             <strong>${_(u"Lunch (provided)")}</strong>
           </td>
         </tr>
 
         <tr>
-          <th>12:55 - 1:40</th>
+          <th>12:55</th>
           <td>
             <strong>${_(u"45 Minute Talk - B8")}</strong>
           </td>
@@ -321,17 +334,20 @@
             ${_(u" --- 5 minutes --- ")}<br>
             <strong>${_(u"20 Minute Talk - A20")}</strong>
           </td>
+          <td rowspan="5">
+            <strong>${_(u"2 Hour Tutorial - T4")}</strong>
+          </td>
         </tr>
 
          <tr>
-          <th>1:40 - 1:50</th>
+          <th>1:40</th>
           <td colspan="2">
             <strong>${_(u"Break")}</strong>
           </td>
         </tr>
  
         <tr>
-          <th>1:50 - 2:35</th>
+          <th>1:50</th>
           <td>
             <strong>${_(u"45 Minute Talk - B9")}</strong>
           </td>
@@ -343,14 +359,14 @@
         </tr>
 
          <tr>
-          <th>2:35 - 2:50</th>
+          <th>2:35</th>
           <td colspan="2">
             <strong>${_(u"Coffee Break")}</strong>
           </td>
         </tr>
 
         <tr>
-          <th>2:50 - 3:35</th>
+          <th>2:50</th>
           <td>
             <strong>${_(u"45 Minute Talk - B10")}</strong>
           </td>
@@ -362,28 +378,14 @@
         </tr>
 
         <tr>
-          <th>3:35 - 3:45</th>
-          <td colspan="2">
+          <th>3:35</th>
+          <td colspan="3">
             <strong>${_(u"Break")}</strong>
           </td>
         </tr>
 
         <tr>
-          <th>3:45 - 4:30</th>
-          <td colspan="2">
-            <strong>${_(u"Closing Keynote - K3")}</strong>
-          </td>
-        </tr>
-
-        <tr>
-          <th>4:30 - 4:40</th>
-          <td colspan="2">
-            <strong>${_(u"Break")}</strong>
-          </td>
-        </tr>
-
-        <tr>
-          <th>4:40 - 5:25</th>
+          <th>3:45</th>
           <td>
             <strong>${_(u"Lightning Talk - L7")}</strong><br>
             <strong>${_(u"Lightning Talk - L8")}</strong><br>
@@ -397,46 +399,55 @@
             ${_(u" --- 5 minutes --- ")}<br>
             <strong>${_(u"20 Minute Talk - A26")}</strong>
           </td>
+          <td>
+          </td>
         </tr>
 
         <tr>
-          <th>5:25 - 5:30</th>
-          <td colspan="2">
+          <th>4:30</th>
+          <td colspan="3">
             <strong>${_(u"Break")}</strong>
           </td>
         </tr>
 
         <tr>
-          <th>5:30 - 5:45</th>
-          <td colspan="2">
+          <th>4:40</th>
+          <td colspan="3">
+            <strong>${_(u"Closing Keynote - K3")}</strong>
+          </td>
+        </tr>
+
+        <tr>
+          <th>5:25</th>
+          <td colspan="3">
             <strong>${_(u"Closing Messages")}</strong>
           </td>
         </tr>
 
         <tr>
-          <th>5:45</th>
-          <td colspan="2">
+          <th>5:30</th>
+          <td colspan="3">
             <%block filter="gettext">SCHEDULE_TALKS_DONE</%block>
           </td>
         </tr>
 
         <tr>
           <th>6:30</th>
-          <td colspan="2">
+          <td colspan="3">
             <%block filter="gettext">SCHEDULE_DINNER</%block>
           </td>
         </tr>
 
         <tr>
           <th>7:30</th>
-          <td colspan="2">
+          <td colspan="3">
             <%block filter="gettext">SCHEDULE_SPRINTS</%block>
           </td>
         </tr>
 
         <tr>
           <th>Midnight</th>
-          <td colspan="2">
+          <td colspan="3">
             <strong>${_(u"Venue closes")}</strong>
           </td>
         </tr>
@@ -448,7 +459,7 @@
       <table class="table table-bordered">
         <tr>
           <th>All Day</th>
-          <td colspan="2">
+          <td colspan="3">
             <strong><a href="${request.route_url('sprints')}">${_(u"Sprints")}</a></strong>
             <br>
             Location: TBD
@@ -462,7 +473,7 @@
       <table class="table table-bordered">
         <tr>
           <th>All Day</th>
-          <td colspan="2">
+          <td colspan="3">
             <strong><a href="${request.route_url('sprints')}">${_(u"Sprints")}</a></strong>
             <br>
             Location: TBD
