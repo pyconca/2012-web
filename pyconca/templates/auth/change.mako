@@ -14,12 +14,12 @@
         </div>
         <br>
 
-        <label class="control-group form-label" for="password1">New Password</label>
+        <label class="control-label form-label" for="password1">New Password</label>
         <div class="controls">
           <input type="password" maxlength="100" name="password1" id="password1" value="">
         </div>
 
-        <label class="control-group form-label" for="password2">Re-type Password</label>
+        <label class="control-label form-label" for="password2">Re-type Password</label>
         <div class="controls">
           <input type="password" maxlength="100" name="password2" id="password2" value="">
         </div>
