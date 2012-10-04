@@ -139,13 +139,6 @@ def forgot(request):
             request.session.flash(msg, 'error')
             return _build_response_with(request, email=email)
 
-        if user.activation is not None:
-            msg = """You've already marked your account for password reset.
-            Please check your email for the password reset link. Make sure to
-            check your spam folder"""
-            request.session.flash(msg, 'error')
-            return _build_response_with(request, email=email)
-
         user.mark_pwd_reset("FORGOTTEN")
         settings = request.registry.settings
         msg = ReactivateMsg(user.email,

@@ -107,6 +107,8 @@ class User(AttrMixIn, Base):
         """Put the account through the reactivation process
         """
         # if we reactivate then reinit this
+        if self.activation is not None:
+            DBSession.delete(self.activation)
         self.activation = Activation(creator)
         self.activated = False
 

@@ -93,14 +93,15 @@ class Message(object):
                 if smtp_server == 'sendmail':
                     sendmail(msg['To'], msg['From'], msg['Subject'], self.body)
                 else:
-                    mail_server = smtplib.SMTP(smtp_server)
+                    port = int(self.settings.get('email.port', 25))
+                    mail_server = smtplib.SMTP(smtp_server, port)
                     mail_server.sendmail(msg['From'],
                                     all_emails,
                                     msg.as_string())
                     mail_server.quit()
                 return MSG_STATUS['sent']
 
-            except smtplib.SMTPException, exc:
+            except smtplib.SMTPException:
                 LOG.error("SMTP Error sending notice for: {0} ".format(
                             str(msg)))
                 return MSG_STATUS['error']
