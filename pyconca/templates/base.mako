@@ -6,9 +6,11 @@
 <!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
     <meta charset="utf-8" />
-    <title>PyCon Canada <%block name="page_title"/></title>
+    <title><%block name="head_title"></%block> | PyCon Canada</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
+    <meta name="description"
+    	content='<%block name="head_description">Your connection to the Python Canada community. We are the momentum 
+    	behind the Canadian PyCon conference, and the source for local Python programmers, events, and jobs.</%block>' />
     <meta name="author" content="" />
 
     <link href="${request.static_url("pyconca:static/libs/bootstrap-2.0.3/css/bootstrap.css")}" rel="stylesheet" />

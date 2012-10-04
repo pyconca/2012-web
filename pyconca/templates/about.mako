@@ -1,6 +1,6 @@
 <%inherit file="event.mako"/>
 
-<%block name="page_title">| ${_(u"About")}</%block>
+<%block name="head_title">${_(u"About")}</%block>
 <%block name="title">${_(u"About")}</%block>
 
 <%block name="info">

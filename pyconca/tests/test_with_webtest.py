@@ -69,7 +69,8 @@ class TestWithWebtest(unittest.TestCase):
     def test_root(self):
         response = self.testapp.get('/', status=200)
         self.assertEquals('200 OK', response.status)
-        self.failUnless('<title>PyCon Canada</title>' in response.body, response.body)
+        title = "PyCon.ca - building your Python Canada Community | PyCon Canada"
+        self.failUnless(title in response.body, response.body)
 
     def test_login(self):
         self._loginAs('admin')

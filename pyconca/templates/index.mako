@@ -1,6 +1,6 @@
 <%inherit file="base.mako"/>
-
-<%block name="page_title">| ${_(u"November 9 – 11, 2012 • Toronto")}</%block>
+<%block name="head_title">PyCon.ca - building your Python Canada Community</%block>
+<%block name="head_description">${parent.head_description()}</%block>
 <%block name="body_class">home-page</%block>
 
 <%block name="content">
@@ -10,6 +10,7 @@
     <div id="Banner">
         <h1>PyCon.ca</h1>
         <div id="DateAndPlace">${_(u"November 9 – 11, 2012 • Toronto")}</div>
+        <!--<h3 class="header-sub-text">${_(u"Bringing the Canadian Python community together")}</h3>-->
     </div>
 
     <div>

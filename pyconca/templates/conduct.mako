@@ -1,6 +1,6 @@
 <%inherit file="event.mako"/>
 
-<%block name="page_title" filter="gettext">Code of Conduct</%block>
+<%block name="head_title" filter="gettext">Code of Conduct</%block>
 <%block name="title" filter="gettext">Code of Conduct</%block>
 
 <%block name="info">
