@@ -370,6 +370,10 @@ footer .contact-list span {
   overflow: hidden;
   background: url(btn-register.png) no-repeat left top;
 }
+/* TODO need to set this class name via locale switching */
+#Register a.register-button-fr {
+  background: url(btn-register-fr.png) no-repeat left top;
+}
 @media (max-width: 979px) {
   #Register a {
     margin-top: 48px;

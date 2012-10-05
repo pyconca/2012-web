@@ -17,7 +17,7 @@
       <div id="Callout">
         <p id="Teaser"><%block filter="gettext">INDEX_ABOUT_BLURB</%block></p>
         <div id="Register">
-          <a href="http://guestlistapp.com/events/116013" class="guestlist-event-116013">${_(u"Register")}</a>
+          <a href="http://guestlistapp.com/events/116013" class="guestlist-event-116013 register-button-en">${_(u"Register")}</a>
         </div>
       </div>
     </div>
