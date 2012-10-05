@@ -1,6 +1,7 @@
 <%inherit file="event.mako"/>
 
 <%block name="head_title">${_(u"Venue")}</%block>
+<%block name="body_class">venue-section</%block>
 <%block name="title">${_(u"Venue")}</%block>
 
 <%block name="info">

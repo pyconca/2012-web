@@ -1,6 +1,7 @@
 <%inherit file="event.mako"/>
 
 <%block name="head_title">${_(u"Sprints")}</%block>
+<%block name="body_class">schedule-section</%block>
 <%block name="title">${_(u"Sprints")}</%block>
 
 <%block name="info">

@@ -52,7 +52,7 @@
                   </li>
 
                   <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <a class="dropdown-toggle nav-about" data-toggle="dropdown" href="#">
                         ${_(u"About")}
                         <b class="caret"></b>
                     </a>
@@ -71,13 +71,13 @@
                   </li>
 
                   <li>
-                    <a href="${request.application_url}/venue">
+                    <a href="${request.application_url}/venue" class="nav-venue">
                         ${_(u"Venue")}
                     </a>
                   </li>
 
                   <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <a class="dropdown-toggle nav-schedule" data-toggle="dropdown" href="#">
                         ${_(u"Schedule")}
                         <b class="caret"></b>
                     </a>
@@ -96,25 +96,25 @@
                   </li>
 
                   <li>
-                    <a href="${request.application_url}/speakers">
+                    <a href="${request.application_url}/speakers" class="nav-speak">
                         ${_(u"Speak")}
                     </a>
                   </li>
 
                   <li>
-                    <a href="${request.application_url}/learn">
+                    <a href="${request.application_url}/learn" class="nav-learn">
                         ${_(u"Learn")}
                     </a>
                   </li>
 
                   <li>
-                    <a href="${request.application_url}/sponsors">
+                    <a href="${request.application_url}/sponsors" class="nav-sponsor">
                         ${_(u"Sponsor")}
                     </a>
                   </li>
 
                   <li>
-                    <a href="${request.application_url}/contact">
+                    <a href="${request.application_url}/contact" class="nav-contact">
                         ${_(u"Contact")}
                     </a>
                   </li>

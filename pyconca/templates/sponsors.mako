@@ -1,7 +1,7 @@
 <%inherit file="event.mako"/>
 
 <%block name="head_title">${_(u"Sponsor")}</%block>
-<%block name="body_class">sponsors-page</%block>
+<%block name="body_class">sponsors-section</%block>
 <%block name="title">${_(u"Sponsor")}</%block>
 
 <%block name="info">

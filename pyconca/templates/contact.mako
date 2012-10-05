@@ -1,6 +1,7 @@
 <%inherit file="event.mako"/>
 
 <%block name="head_title">${_(u"Contact")}</%block>
+<%block name="body_class">contact-section</%block>
 <%block name="title">${_(u"Contact")}</%block>
 
 <%block name="info">

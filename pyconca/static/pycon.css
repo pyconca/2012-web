@@ -127,6 +127,13 @@ a.bubble:hover {
   font-weight: 600;
   padding: 3px 12px 4px;
 }
+.about-section .navbar .nav li > .nav-about,
+.venue-section .navbar .nav li > .nav-venue,
+.schedule-section .navbar .nav li > .nav-schedule,
+.speak-section .navbar .nav li > .nav-speak,
+.learn-section .navbar .nav li > .nav-learn,
+.sponsors-section .navbar .nav li > .nav-sponsor,
+.contact-section .navbar .nav li > .nav-contact,
 .navbar .nav li.dropdown.open > .dropdown-toggle,
 .navbar .nav li.dropdown.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle,
@@ -565,7 +572,7 @@ article h2 {
   margin-bottom: 9px;
   margin-top: 27px;
 }
-.sponsors-page article h2 {
+.sponsors-section article h2 {
   margin-top: 60px;
 }
 
