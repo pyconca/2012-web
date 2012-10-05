@@ -1,4 +1,12 @@
+import os
+import hashlib
+
+from datetime import datetime
+from datetime import timedelta
+
 from sqlalchemy import Column
+from sqlalchemy import Boolean
+from sqlalchemy import Unicode
 from sqlalchemy import DateTime
 from sqlalchemy import ForeignKey
 from sqlalchemy import Index
@@ -20,6 +28,7 @@ from pyramid.security import ALL_PERMISSIONS
 from pyconca.temporal import local_isoformat
 from pyconca.util import camel_to_under
 
+ACTIVATION_AGE = timedelta(days=7)
 
 DBSession = scoped_session(sessionmaker(extension=ZopeTransactionExtension()))
 Base = declarative_base()
@@ -39,15 +48,69 @@ class AttrMixIn(object):
         }
 
 
+class Activation(AttrMixIn, Base):
+    """ Handles activation and password reset items for users.
+
+    Activation serves mainly two purposes:
+    1. when user signup, keep track if their provided email is legit by sending
+    them an activation link. Only users who have click through the provided
+    activation link will have a 'legit' email addresses that we can safely send
+    emails to.
+    2. when user tries to reset password, keep track of time-limited resetting
+    links sent to user
+
+    The id is the user's id. Each user can have at most one valid activation in
+    process at a time.
+
+    The code should be a random unique hash that is only valid for a certain
+    period of time. After it will be invalid.
+
+    The create_by can be used to identify: new user registeration,
+    password reset
+    """
+
+    id = Column(Integer, ForeignKey('user.id'), primary_key=True)
+    code = Column(Unicode(60))
+    valid_until = Column(DateTime,
+                         default=lambda: datetime.now + ACTIVATION_AGE)
+    created_by = Column(Unicode(100))
+
+    def __init__(self, created_by):
+        self.code = Activation._gen_activation_hash()
+        self.created_by = created_by
+        self.valid_until = datetime.now() + ACTIVATION_AGE
+
+    @staticmethod
+    def _gen_activation_hash():
+        return hashlib.sha256(os.urandom(256)).hexdigest()[::2]
+
+
 class User(AttrMixIn, Base):
     id = Column(Integer, primary_key=True)
     username = Column(String(length=100), unique=True, nullable=False)
     password = Column(String(length=100), nullable=False)
     first_name = Column(String(length=100), nullable=False)
     last_name = Column(String(length=100), nullable=False)
-    email = Column(String(length=100), nullable=False)
+    email = Column(String(length=100), nullable=False, unique=True)
     groups = relationship('Group', secondary='user_group')
     talks = relationship('Talk', backref='user')
+    activated = Column(Boolean, default=False)
+    activation = relationship('Activation', uselist=False, backref='user')
+
+    #def __init__(self):
+        #"""By default a user starts out deactivated"""
+        ## TODO think of this through
+        #self.activation = Activation('signup')
+        #self.activated = False
+
+    def mark_pwd_reset(self, creator):
+        """Put the account through the reactivation process
+        """
+        # if we reactivate then reinit this
+        if self.activation is not None:
+            DBSession.delete(self.activation)
+        self.activation = Activation(creator)
+        self.activated = False
 
     @property
     def __acl__(self):

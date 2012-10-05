@@ -17,6 +17,10 @@
        href="${request.route_url('user_update', id=id)}">
        Edit
     </a>
+    <a class="btn btn-inverse" 
+       href="${request.route_url('pwd_change')}">
+       Change your password
+    </a>
     % if is_admin:
       <input class="btn" type="submit" value="Delete"/>
     % endif
