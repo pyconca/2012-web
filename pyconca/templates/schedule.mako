@@ -258,25 +258,27 @@
         </tr>
 
         <tr>
-          <th>9:30</th>
+          <th>9:15</th>
           <td colspan="3">
             <strong>Keynote - K2</strong>
           </td>
         </tr>
 
         <tr>
-          <th>10:15</th>
+          <th>10:00</th>
           <td colspan="3">
             <strong>${_(u"Break")}</strong>
           </td>
         </tr>
 
         <tr>
-          <th>10:25</th>
+          <th>10:10</th>
           <td>
-            <strong>${_(u"20 Minute Talk - A17")}</strong>
+            <strong>${_(u"45 Minute Talk - B6")}</strong>
           </td>
           <td>
+            <strong>${_(u"20 Minute Talk - A17")}</strong><br>
+            ${_(u" --- 5 minutes --- ")}<br>
             <strong>${_(u"20 Minute Talk - A18")}</strong>
           </td>
           <td>
@@ -284,21 +286,19 @@
         </tr>
 
         <tr>
-          <th>10:45</th>
-          <td colspan="3">
-            <strong>${_(u"Break")}</strong>
-          </td>
-        </tr>
-
-        <tr>
           <th>10:55</th>
-          <td colspan="3">
-            <strong>Remembrance Day</strong>
+          <td>
+            <strong>${_(u"Remembrance Day")}</strong>
+          </td>
+          <td>
+            <strong>${_(u"Remembrance Day")}</strong>
+          </td>
+          <td>
           </td>
         </tr>
 
         <tr>
-          <th>11:05</th>
+          <th>11:03</th>
           <td colspan="3">
             <strong>${_(u"Break")}</strong>
           </td>
@@ -307,7 +307,7 @@
         <tr>
           <th>11:10</th>
           <td>
-            <strong>${_(u"45 Minute Talk - B6")}</strong>
+            <strong>${_(u"45 Minute Talk - B7")}</strong>
           </td>
           <td>
             <strong>${_(u"20 Minute Talk - A19")}</strong><br>
@@ -329,7 +329,7 @@
         <tr>
           <th>12:55</th>
           <td>
-            <strong>${_(u"45 Minute Talk - B7")}</strong>
+            <strong>${_(u"45 Minute Talk - B8")}</strong>
           </td>
           <td>
             <strong>${_(u"20 Minute Talk - A21")}</strong><br>
@@ -351,7 +351,7 @@
         <tr>
           <th>1:50</th>
           <td>
-            <strong>${_(u"45 Minute Talk - B8")}</strong>
+            <strong>${_(u"45 Minute Talk - B9")}</strong>
           </td>
           <td>
             <strong>${_(u"20 Minute Talk - A23")}</strong><br>
