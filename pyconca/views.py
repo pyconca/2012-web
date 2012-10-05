@@ -160,11 +160,12 @@ def forgot(request):
 @view_config(route_name='pwd_reset_form',
              renderer="pyconca:templates/auth/reset.mako")
 def pwd_reset_form(request):
-    """Once deactivated, allow for changing the password via activation key"""
+    """Allows for changing the password via valid activation key
+    """
     rdict = request.matchdict
 
     username = rdict.get('username', None)
-    activation_key = rdict.get('reset_key', None)
+    activation_code = rdict.get('reset_key', None)
 
     #LOG.error("CHECKING")
     #LOG.error(username)
@@ -172,7 +173,11 @@ def pwd_reset_form(request):
     # this can only be visited if user is visiting the reset with the right key
     # for the username in the url
     activation_dao = ActivationDao(None)
-    user = activation_dao.get_user_by_code(username, activation_key)
+    if not activation_dao.check_valid(activation_code):
+        # 404 if activation code has expired
+        raise HTTPNotFound()
+
+    user = activation_dao.get_user_by_code(username, activation_code)
 
     if user is None:
         # just 404 if we don't have an activation code for this user
