@@ -159,12 +159,14 @@
         <tr>
           <th>3:55</th>
           <td>
-            <strong>${_(u"45 Minute Talk - B6")}</strong>
-          </td>
-          <td>
             <strong>${_(u"20 Minute Talk - A11")}</strong><br>
             ${_(u" --- 5 minutes --- ")}<br>
             <strong>${_(u"20 Minute Talk - A12")}</strong>
+          </td>
+          <td>
+            <strong>${_(u"20 Minute Talk - A13")}</strong><br>
+            ${_(u" --- 5 minutes --- ")}<br>
+            <strong>${_(u"20 Minute Talk - A14")}</strong>
           </td>
         </tr>
 
@@ -186,9 +188,9 @@
             <strong>${_(u"Lightning Talk - L6")}</strong><br>
           </td>
           <td>
-            <strong>${_(u"20 Minute Talk - A13")}</strong><br>
+            <strong>${_(u"20 Minute Talk - A15")}</strong><br>
             ${_(u" --- 5 minutes --- ")}<br>
-            <strong>${_(u"20 Minute Talk - A14")}</strong>
+            <strong>${_(u"20 Minute Talk - A16")}</strong>
           </td>
           <td>
           </td>
@@ -272,10 +274,10 @@
         <tr>
           <th>10:25</th>
           <td>
-            <strong>${_(u"20 Minute Talk - A15")}</strong>
+            <strong>${_(u"20 Minute Talk - A17")}</strong>
           </td>
           <td>
-            <strong>${_(u"20 Minute Talk - A16")}</strong>
+            <strong>${_(u"20 Minute Talk - A18")}</strong>
           </td>
           <td>
           </td>
@@ -305,12 +307,12 @@
         <tr>
           <th>11:10</th>
           <td>
-            <strong>${_(u"45 Minute Talk - B7")}</strong>
+            <strong>${_(u"45 Minute Talk - B6")}</strong>
           </td>
           <td>
-            <strong>${_(u"20 Minute Talk - A17")}</strong><br>
+            <strong>${_(u"20 Minute Talk - A19")}</strong><br>
             ${_(u" --- 5 minutes --- ")}<br>
-            <strong>${_(u"20 Minute Talk - A18")}</strong>
+            <strong>${_(u"20 Minute Talk - A20")}</strong>
           </td>
           <td>
             <strong>${_(u"45 Minute Talk - T3")}</strong>
@@ -327,12 +329,12 @@
         <tr>
           <th>12:55</th>
           <td>
-            <strong>${_(u"45 Minute Talk - B8")}</strong>
+            <strong>${_(u"45 Minute Talk - B7")}</strong>
           </td>
           <td>
-            <strong>${_(u"20 Minute Talk - A19")}</strong><br>
+            <strong>${_(u"20 Minute Talk - A21")}</strong><br>
             ${_(u" --- 5 minutes --- ")}<br>
-            <strong>${_(u"20 Minute Talk - A20")}</strong>
+            <strong>${_(u"20 Minute Talk - A22")}</strong>
           </td>
           <td rowspan="5">
             <strong>${_(u"2 Hour Tutorial - T4")}</strong>
@@ -349,12 +351,12 @@
         <tr>
           <th>1:50</th>
           <td>
-            <strong>${_(u"45 Minute Talk - B9")}</strong>
+            <strong>${_(u"45 Minute Talk - B8")}</strong>
           </td>
           <td>
-            <strong>${_(u"20 Minute Talk - A21")}</strong><br>
+            <strong>${_(u"20 Minute Talk - A23")}</strong><br>
             ${_(u" --- 5 minutes --- ")}<br>
-            <strong>${_(u"20 Minute Talk - A22")}</strong>
+            <strong>${_(u"20 Minute Talk - A24")}</strong>
           </td>
         </tr>
 
@@ -368,12 +370,14 @@
         <tr>
           <th>2:50</th>
           <td>
-            <strong>${_(u"45 Minute Talk - B10")}</strong>
+            <strong>${_(u"20 Minute Talk - A25")}</strong><br>
+            ${_(u" --- 5 minutes --- ")}<br>
+            <strong>${_(u"20 Minute Talk - A26")}</strong>
           </td>
           <td>
-            <strong>${_(u"20 Minute Talk - A23")}</strong><br>
+            <strong>${_(u"20 Minute Talk - A27")}</strong><br>
             ${_(u" --- 5 minutes --- ")}<br>
-            <strong>${_(u"20 Minute Talk - A24")}</strong>
+            <strong>${_(u"20 Minute Talk - A28")}</strong>
           </td>
         </tr>
 
@@ -395,9 +399,9 @@
             <strong>${_(u"Lightning Talk - L12")}</strong><br>
           </td>
           <td>
-            <strong>${_(u"20 Minute Talk - A25")}</strong><br>
+            <strong>${_(u"20 Minute Talk - A29")}</strong><br>
             ${_(u" --- 5 minutes --- ")}<br>
-            <strong>${_(u"20 Minute Talk - A26")}</strong>
+            <strong>${_(u"20 Minute Talk - A30")}</strong>
           </td>
           <td>
           </td>
@@ -460,7 +464,7 @@
         <tr>
           <th>All Day</th>
           <td colspan="3">
-            <strong><a href="${request.route_url('sprints')}">${_(u"Sprints")}</a></strong>
+            <a href="${request.route_url('sprints')}">${_(u"Sprints")}</a>
             <br>
             Location: TBD
           </td>
@@ -474,7 +478,7 @@
         <tr>
           <th>All Day</th>
           <td colspan="3">
-            <strong><a href="${request.route_url('sprints')}">${_(u"Sprints")}</a></strong>
+            <a href="${request.route_url('sprints')}">${_(u"Sprints")}</a>
             <br>
             Location: TBD
           </td>
