@@ -3,5 +3,6 @@
     <img src="${request.static_url("pyconca:static/sponsors/albertoconnor_logo.jpeg")}"
          class="${img_class}"
          width="250"
+        style="margin-top: 30px;"
          alt="Albert O'Connor Web Developer">
 </a>

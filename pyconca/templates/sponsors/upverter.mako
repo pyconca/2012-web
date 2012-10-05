@@ -3,5 +3,6 @@
     <img src="${request.static_url("pyconca:static/sponsors/upverter_logo.png")}"
         class="${img_class}"
         width="200px"
+        style="margin-top: 30px;"
         alt="Upverter">
 </a>

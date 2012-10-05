@@ -3,5 +3,6 @@
     <img src="${request.static_url("pyconca:static/sponsors/mozilla_wordmark.png")}"
          class="${img_class}"
          width="200"
+        style="margin-top: 15px;"
          alt="Mozilla">
 </a>
