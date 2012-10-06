@@ -8,7 +8,7 @@
     <div class="row-fluid content-section">
         <h1 class="header header-first">${_(u"Sponsor PyCon Canada")}</h1>
         <p><%block filter="gettext">SPONSOSORS_EMAIL</%block></p>
-        For more information, please see: 
+        For more information, please see:
         <a target="_blank" href="${request.static_url("pyconca:static/PyCon_Canada_2012_Sponsorship_Prospectus.pdf")}">
         Sponsorship Levels</a>.
     </div>
@@ -155,6 +155,14 @@
         <p style="margin-left: -25px;">
           <%include file="pyconca:templates/sponsors/heroku.mako"/>
         </p>
+        <br>
+      </div>
+
+      <div class="span6">
+        <p>
+          <%include file="pyconca:templates/sponsors/cloudant.mako"/>
+        </p>
+
         <br>
       </div>
     </div>
