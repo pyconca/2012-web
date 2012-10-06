@@ -71,7 +71,7 @@
 
     <h2>Sprint Sponsors</h2>
     <div class="row-fluid">
-      <div class="span6">
+      <div class="span6" style="margin-left: -15px;">
         <%include file="pyconca:templates/sponsors/agendaless.mako"/>
       </div>
       <div class="span6">
@@ -82,18 +82,25 @@
     <h2 class="gutter-top">Bronze Sponsors</h2>
     <div class="row-fluid">
       <div class="span6">
+        <%include file="pyconca:templates/sponsors/heroku.mako"/>
+      </div>
+      <div class="span6" style="margin-left: -5px;">
         <%include file="pyconca:templates/sponsors/mozilla.mako"/>
+      </div>
+    </div>
+    <div class="row-fluid gutter-top">
+      <div class="span6">
+        <%include file="pyconca:templates/sponsors/guru_link.mako"/>
+        <br>
+        <br>
       </div>
       <div class="span6">
         <%include file="pyconca:templates/sponsors/trapeze.mako"/>
       </div>
     </div>
-    <div class="row-fluid">
+    <div class="row-fluid gutter-top">
       <div class="span6">
-        <%include file="pyconca:templates/sponsors/guru_link.mako"/>
-      </div>
-      <div class="span6 gutter-top">
-          <%include file="pyconca:templates/sponsors/heroku.mako"/>
+        <%include file="pyconca:templates/sponsors/cloudant.mako"/>
       </div>
     </div>
 

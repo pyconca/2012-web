@@ -33,8 +33,8 @@
             <li><%include file="pyconca:templates/sponsors/freshbooks.mako" args="img_class='black-and-white'"/></li>
             <li><%include file="pyconca:templates/sponsors/wave.mako" args="img_class='black-and-white'"/></li>
             <li><%include file="pyconca:templates/sponsors/chango.mako" args="img_class='black-and-white'"/></li>
-            <li><%include file="pyconca:templates/sponsors/crs.mako" args="img_class='black-and-white'"/></li>
             <li><%include file="pyconca:templates/sponsors/psf.mako" args="img_class='black-and-white'"/></li>
+            <li><%include file="pyconca:templates/sponsors/crs.mako" args="img_class='black-and-white'"/></li>
             <li><%include file="pyconca:templates/sponsors/upverter.mako" args="img_class='black-and-white'"/></li>
             <li><%include file="pyconca:templates/sponsors/bnotions.mako" args="img_class='black-and-white'"/></li>
             <li><%include file="pyconca:templates/sponsors/mozilla.mako" args="img_class='black-and-white'"/></li>
@@ -42,6 +42,7 @@
             <li><%include file="pyconca:templates/sponsors/heroku.mako" args="img_class='black-and-white'"/></li>
             <li><%include file="pyconca:templates/sponsors/trapeze.mako" args="img_class='black-and-white'"/></li>
             <li><%include file="pyconca:templates/sponsors/guru_link.mako" args="img_class='black-and-white'"/></li>
+            <li><%include file="pyconca:templates/sponsors/cloudant.mako" args="img_class='black-and-white'"/></li>
             <li><%include file="pyconca:templates/sponsors/vmfarms.mako" args="img_class='black-and-white'"/></li>
             <li><%include file="pyconca:templates/sponsors/llc.mako" args="img_class='black-and-white'"/></li>
             <li><%include file="pyconca:templates/sponsors/element34.mako" args="img_class='black-and-white'"/></li>
