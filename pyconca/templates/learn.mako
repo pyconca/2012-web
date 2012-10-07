@@ -10,7 +10,7 @@
         <a href='https://www.ohloh.net/accounts/5559?ref=Rank'
            style="border-bottom: none;" target='_top'>
           <img alt='Ohloh profile for zzzeek' border='0' height='24'
-               src='https://www.ohloh.net/accounts/5559/widgets/account_rank.gif'
+               src='${request.static_url("pyconca:static/icons/9.gif")}'
                width='32' />
         </a>
     </h2>
@@ -27,7 +27,7 @@
         <a href='https://www.ohloh.net/accounts/124089?ref=Rank'
            style="border-bottom: none;" target='_top'>
           <img alt='Ohloh profile for eleddy' border='0' height='24'
-               src='https://www.ohloh.net/accounts/124089/widgets/account_rank.gif'
+               src='${request.static_url("pyconca:static/icons/8.gif")}'
                width='32' />
         </a>
     </h2>
@@ -39,8 +39,7 @@
         <a href='https://www.ohloh.net/accounts/12691?ref=Rank'
            style="border-bottom: none;" target='_top'>
           <img alt='Ohloh profile for Chris McDonough' border='0' height='24'
-               src='https://www.ohloh.net/accounts/12691/widgets/account_rank.gif'
-               width='32' />
+               src='${request.static_url("pyconca:static/icons/9.gif")}' />
         </a>
     </h2>
     <p><%block filter="gettext">LEARN_CHRIS_MCDONOUGH</%block></p>
@@ -51,7 +50,7 @@
         <a href='https://www.ohloh.net/accounts/69607?ref=Rank'
            style="border-bottom: none;" target='_top'>
           <img alt='Ohloh profile for jesstess' border='0' height='24'
-               src='https://www.ohloh.net/accounts/69607/widgets/account_rank.gif'
+               src='${request.static_url("pyconca:static/icons/9.gif")}'
                width='32' />
         </a>
     </h2>
@@ -63,8 +62,7 @@
           <a href='https://www.ohloh.net/accounts/37028?ref=Rank'
              style="border-bottom: none;" target='_top'>
             <img alt='Ohloh profile for Fernando Perez' border='0' height='24'
-                 src='https://www.ohloh.net/accounts/37028/widgets/account_rank.gif'
-                 width='32' />
+                 src='${request.static_url("pyconca:static/icons/9.gif")}' />
           </a>
       </h2>
       <p><%block filter="gettext">LEARN_FERNANDO_PÉREZ</%block></p>
@@ -75,7 +73,7 @@
           <a href='https://www.ohloh.net/accounts/224806?ref=Rank'
              style="border-bottom: none;" target='_top'>
             <img alt='Ohloh profile for kennethreitz' border='0' height='24'
-                 src='https://www.ohloh.net/accounts/224806/widgets/account_rank.gif'
+                 src='${request.static_url("pyconca:static/icons/8.gif")}'
                  width='32' />
           </a>
       </h2>
@@ -87,7 +85,7 @@
           <a href='https://www.ohloh.net/accounts/32600?ref=Rank'
              style="border-bottom: none;" target='_top'>
             <img alt='Ohloh profile for brandon_craig_rhodes' border='0' height='24'
-                 src='https://www.ohloh.net/accounts/32600/widgets/account_rank.gif'
+                 src='${request.static_url("pyconca:static/icons/9.gif")}'
                  width='32' />
           </a>
       </h2>
