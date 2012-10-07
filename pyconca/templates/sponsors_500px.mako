@@ -1,12 +1,18 @@
-<%inherit file="pyconca:templates/sponsor_profile.mako"/>
+<%inherit file="event.mako"/>
 
-<%block name="head_title">
-    Gold Sponsor - <a href="http://500px.com/">500px</a>
-</%block>
+<%block name="head_title" filter="gettext">Gold Sponsor • 500px</%block>
+<%block name="body_class">about-section</%block>
+<%block name="title" filter="gettext">Gold Sponsor • 500px</%block>
 
 <%block name="info">
+  <article>
+    <h2>${_("Oleg Gutsol, CEO 500px")}</h2>
 
-<h2>Oleg Gutsol, CEO 500px<h2>
+<img src="${request.static_url("pyconca:static/sponsors/oleg.jpg")}"
+     alt="Oleg Gutsol, CEO 500px", 
+     height="300" 
+     align="left" 
+     style="margin-right: 20px;">
 
 <h3>
 Tell me about you and your cofounders. 
@@ -65,12 +71,18 @@ Although in the early days we considered moving to some place warm and
 cheap (Thailand was the one we discussed), but decided against it.
 </p>
 
+<a href="http://500px.com/" style="border-bottom: none;">
+    <img src="${request.static_url("pyconca:static/sponsors/500px_logo_color.png")}"
+         height="175" align="right" alt="500px">
+</a>
+
 <h3>In your own words, what is 500px's mission?</h3>
 
 <p>
 500px mission is to the create the highest quality online photography 
 platform in the world.
 </p>
+
 
 <h3>
 What do you see as your biggest technological challenges in the next 1-2 years?
@@ -115,4 +127,5 @@ Personally, I am passionate about psychology and excellent user experience.
 I also like things like motorcycles and snowboarding :)
 </p>
 
+</article>
 </%block>

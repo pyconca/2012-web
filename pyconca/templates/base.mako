@@ -107,12 +107,24 @@
                     </a>
                   </li>
 
-                  <li>
-                    <a href="${request.application_url}/sponsors" class="nav-sponsor">
-                        ${_(u"Sponsor")}
-                    </a>
-                  </li>
-
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle nav-sponsor" data-toggle="dropdown" href="#">
+                      ${_(u"Sponsors")}
+                      <b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="${request.route_url('sponsors')}">
+                        ${_(u"All Sponsors")}
+                      </a>
+                    </li>
+                    <li>
+                      <a href="${request.route_url('sponsors_500px')}">
+                        ${_(u"Gold Sponsor • 500px")}
+                      </a>
+                    </li>
+                  </ul>
+                </li>
                   <li>
                     <a href="${request.application_url}/contact" class="nav-contact">
                         ${_(u"Contact")}

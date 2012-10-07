@@ -19,7 +19,7 @@
     </section>
 
     <aside class="span3">
-      % if request['bfg.routes.route'].name != 'sponsors':
+      % if request['bfg.routes.route'].name not in ['sponsors', 'sponsors_500px']:
         <h1>${_(u"Our Sponsors")}</h1>
         <h2>— <b>${_(u"Gold")}</b> —</h2>
         <%include file="pyconca:templates/sponsors/500px.mako"/>

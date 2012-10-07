@@ -576,6 +576,15 @@ article h2 {
   margin-bottom: 9px;
   margin-top: 27px;
 }
+
+article h3 {
+  color: #2B1006;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  margin-bottom: 9px;
+  margin-top: 27px;
+}
+
 .sponsors-section article h2 {
   margin-top: 60px;
 }
