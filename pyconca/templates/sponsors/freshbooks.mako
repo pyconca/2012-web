@@ -1,6 +1,6 @@
 <%page args="img_class=''"/>
 <a href="http://www.freshbooks.com/">
-    <img src="${request.static_url("pyconca:static/sponsors/freshbooks.png")}"
+    <img src="${request.static_url("pyconca:static/sponsors/freshbooks_sm.png")}"
         class="${img_class}"
         height="100"
         alt="FreshBooks">
