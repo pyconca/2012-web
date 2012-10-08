@@ -40,13 +40,6 @@
         <%include file="pyconca:templates/sponsors/google.mako"/>
       </div>
       <div class="span6">
-        <h2>Travel Sponsor</h2>
-        <%include file="pyconca:templates/sponsors/points.mako"/>
-      </div>
-    </div>
-
-    <div class="row-fluid">
-      <div class="span6">
         <h2>Venue Sponsor</h2>
         <%include file="pyconca:templates/sponsors/psf.mako"/>
       </div>
