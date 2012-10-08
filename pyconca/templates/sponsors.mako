@@ -14,22 +14,24 @@
   </article>
 
   <article>
-    <h2>Gold Sponsor</h2>
     <div class="row-fluid">
-      <div class="span12">
+      <div class="span6">
+        <h2>Gold Sponsor</h2>
         <%include file="pyconca:templates/sponsors/500px.mako"/>
+      </div>
+      <div class="span6">
+        <h2>Silver Sponsor</h2>
+        <%include file="pyconca:templates/sponsors/freshbooks.mako"/>
       </div>
     </div>
 
-    <h2>Silver Sponsors</h2>
     <div class="row-fluid">
-      <div class="span4">
-        <%include file="pyconca:templates/sponsors/freshbooks.mako"/>
-      </div>
-      <div class="span4">
+      <div class="span6">
+        <h2>Silver Sponsor</h2>
         <%include file="pyconca:templates/sponsors/wave.mako"/>
       </div>
-      <div class="span4">
+      <div class="span6">
+        <h2>Silver Sponsor</h2>
         <%include file="pyconca:templates/sponsors/chango.mako"/>
       </div>
     </div>
