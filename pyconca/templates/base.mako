@@ -124,6 +124,11 @@
                       </a>
                     </li>
                     <li>
+                      <a href="${request.route_url('sponsors_freshbooks')}">
+                        ${_(u"Silver Sponsor • FreshBooks")}
+                      </a>
+                    </li>
+                    <li>
                       <a href="${request.route_url('sponsors_chango')}">
                         ${_(u"Silver Sponsor • Chango")}
                       </a>

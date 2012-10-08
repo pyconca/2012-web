@@ -19,6 +19,7 @@ def _setup_routes(config):
     config.add_route('speakers', '/speakers')
     config.add_route('sponsors', '/sponsors')
     config.add_route('sponsors_500px', '/sponsors/500px')
+    config.add_route('sponsors_freshbooks', '/sponsors/freshbooks')
     config.add_route('sponsors_chango', '/sponsors/chango')
     config.add_route('sprints', '/sprints')
 
