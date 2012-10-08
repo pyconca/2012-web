@@ -34,24 +34,29 @@
       </div>
     </div>
 
-    <div class="row-fluid gutter-top">
+    <div class="row-fluid">
       <div class="span6">
         <h2>Diversity Sponsor</h2>
         <%include file="pyconca:templates/sponsors/google.mako"/>
       </div>
-
       <div class="span6">
-        <h2>Internet Sponsor</h2>
-        <%include file="pyconca:templates/sponsors/crs.mako"/>
+        <h2>Travel Sponsor</h2>
+        <%include file="pyconca:templates/sponsors/points.mako"/>
       </div>
     </div>
 
-    <div class="row-fluid gutter-top">
+    <div class="row-fluid">
       <div class="span6">
         <h2>Venue Sponsor</h2>
         <%include file="pyconca:templates/sponsors/psf.mako"/>
       </div>
+    </div>
 
+    <div class="row-fluid">
+      <div class="span6">
+        <h2>Internet Sponsor</h2>
+        <%include file="pyconca:templates/sponsors/crs.mako"/>
+      </div>
       <div class="span6">
         <h2>Hosting Sponsor</h2>
         <%include file="pyconca:templates/sponsors/vmfarms.mako"/>
