@@ -57,7 +57,7 @@ and lots of smart people.
 </p>
 
 <a href="http://FreshBooks.com/" style="border-bottom: none;">
-    <img src="${request.static_url("pyconca:static/sponsors/Freshbooks.png")}"
+    <img src="${request.static_url("pyconca:static/sponsors/freshbooks.png")}"
          height="125" align="right" alt="FreshBooks">
 </a>
 
