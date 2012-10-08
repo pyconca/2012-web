@@ -34,6 +34,7 @@
             <li><%include file="pyconca:templates/sponsors/wave.mako" args="img_class='black-and-white'"/></li>
             <li><%include file="pyconca:templates/sponsors/chango.mako" args="img_class='black-and-white'"/></li>
             <li><%include file="pyconca:templates/sponsors/psf.mako" args="img_class='black-and-white'"/></li>
+            <li><%include file="pyconca:templates/sponsors/google.mako" args="img_class='black-and-white'"/></li>
             <li><%include file="pyconca:templates/sponsors/crs.mako" args="img_class='black-and-white'"/></li>
             <li><%include file="pyconca:templates/sponsors/upverter.mako" args="img_class='black-and-white'"/></li>
             <li><%include file="pyconca:templates/sponsors/bnotions.mako" args="img_class='black-and-white'"/></li>

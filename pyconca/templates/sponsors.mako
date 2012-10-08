@@ -36,12 +36,13 @@
 
     <div class="row-fluid gutter-top">
       <div class="span6">
-        <h2>Internet Sponsor</h2>
-        <%include file="pyconca:templates/sponsors/crs.mako"/>
+        <h2>Diversity Sponsor</h2>
+        <%include file="pyconca:templates/sponsors/google.mako"/>
       </div>
 
       <div class="span6">
-        <h2>Diversity Sponsor</h2>
+        <h2>Internet Sponsor</h2>
+        <%include file="pyconca:templates/sponsors/crs.mako"/>
       </div>
     </div>
 
