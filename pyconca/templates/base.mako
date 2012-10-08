@@ -123,6 +123,11 @@
                         ${_(u"Gold Sponsor • 500px")}
                       </a>
                     </li>
+                    <li>
+                      <a href="${request.route_url('sponsors_chango')}">
+                        ${_(u"Silver Sponsor • Chango")}
+                      </a>
+                    </li>
                   </ul>
                 </li>
                   <li>

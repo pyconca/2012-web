@@ -10,7 +10,7 @@
 
 <img src="${request.static_url("pyconca:static/sponsors/chris.jpeg")}"
      alt="Chris Sukornyk, CEO Chango", 
-     height="300" 
+     height="350" 
      align="left" 
      style="margin-right: 20px;">
 
