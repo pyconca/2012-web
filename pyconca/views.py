@@ -56,6 +56,11 @@ def sponsors_500px(request):
     return _build_response(request)
 
 
+@view_config(route_name='sponsors_chango', renderer='sponsors_chango.mako')
+def sponsors_chango(request):
+    return _build_response(request)
+
+
 @view_config(route_name='contact', renderer='contact.mako')
 def contact(request):
     return _build_response(request)
