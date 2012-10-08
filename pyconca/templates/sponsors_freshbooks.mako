@@ -121,8 +121,8 @@ We’ve made various contributions to Python and this is our fourth year
 at PyCon. We find that attending PyCon and meeting people to be extremely 
 rewarding. We at FreshBooks are grateful to be able to help sponsor PyCon 
 Canada because we believe in supporting, developing and contributing to 
-open source projects. Python is a big part of our future and we’re c
-omitted to our continuing support of Python and its communities.
+open source projects. Python is a big part of our future and we’re comitted
+to our continuing support of Python and its communities.
 </p>
 
 <h3>
