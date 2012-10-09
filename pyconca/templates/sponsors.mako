@@ -1,193 +1,123 @@
 <%inherit file="event.mako"/>
 
-<%block name="head_title">
-    ${_(u"Sponsor")}
-</%block>
+<%block name="head_title">${_(u"Sponsors")}</%block>
+<%block name="body_class">sponsors-section</%block>
+<%block name="title">${_(u"Sponsors")}</%block>
 
 <%block name="info">
-    <div class="row-fluid content-section">
-        <h1 class="header header-first">${_(u"Sponsor PyCon Canada")}</h1>
-        <p><%block filter="gettext">SPONSOSORS_EMAIL</%block></p>
-        For more information, please see: 
-        <a target="_blank" href="${request.static_url("pyconca:static/PyCon_Canada_2012_Sponsorship_Prospectus.pdf")}">
-        Sponsorship Levels</a>.
-    </div>
+  <article>
+    <h2>${_(u"Sponsor PyCon Canada")}</h2>
+    <p><%block filter="gettext">SPONSOSORS_EMAIL</%block></p>
+    <p>${_(u"For more information, please see:")}
+    <a target="_blank" href="${request.static_url("pyconca:static/PyCon_Canada_2012_Sponsorship_Prospectus.pdf")}">
+      ${_(u"Sponsorship Levels")}</a>.
+  </article>
 
-    <div class="row-fluid content-section">
-        <h1 class="header">Gold Sponsor</h1>
-        <p>
-            <%include file="pyconca:templates/sponsors/500px.mako"/>
-        </p>
-    </div>
-
-    <div class="row-fluid content-section">
-      <h1 class="header">Silver Sponsors</h1>
-    </div>
-
+  <article>
     <div class="row-fluid">
       <div class="span6">
-        <p>
-          <%include file="pyconca:templates/sponsors/freshbooks.mako"/>
-        </p>
-
-        <br>
-        <p>
-          <%include file="pyconca:templates/sponsors/wave.mako"/>
-        </p>
+        <h2>Gold Sponsor</h2>
+        <%include file="pyconca:templates/sponsors/500px.mako"/>
       </div>
-
       <div class="span6">
-        <p>
-          <%include file="pyconca:templates/sponsors/chango.mako"/>
-        </p>
+        <h2>Silver Sponsor</h2>
+        <%include file="pyconca:templates/sponsors/freshbooks.mako"/>
       </div>
     </div>
 
     <div class="row-fluid">
       <div class="span6">
-        <div class="content-section">
-            <h1 class="header">Internet Sponsor</h1>
-            <p style="width: 200px;">
-                <%include file="pyconca:templates/sponsors/crs.mako"/>
-            </p>
-        </div>
+        <h2>Silver Sponsor</h2>
+        <%include file="pyconca:templates/sponsors/wave.mako"/>
       </div>
-
       <div class="span6">
-        <div class="content-section">
-            <h1 class="header">Diversity Sponsor</h1>
-            <br>
-        </div>
+        <h2>Silver Sponsor</h2>
+        <%include file="pyconca:templates/sponsors/chango.mako"/>
       </div>
     </div>
 
     <div class="row-fluid">
       <div class="span6">
-        <div class="content-section">
-            <h1 class="header">Venue Sponsor</h1>
-            <br>
-            <p style="width: 200px;">
-                <%include file="pyconca:templates/sponsors/psf.mako"/>
-            </p>
-        </div>
+        <h2>Diversity Sponsor</h2>
+        <%include file="pyconca:templates/sponsors/google.mako"/>
       </div>
-
       <div class="span6">
-        <div class="content-section">
-            <h1 class="header">Hosting Sponsor</h1>
-            <br>
-            <p>
-                <%include file="pyconca:templates/sponsors/vmfarms.mako"/>
-            </p>
-        </div>
+        <h2>Venue Sponsor</h2>
+        <%include file="pyconca:templates/sponsors/psf.mako"/>
       </div>
     </div>
 
     <div class="row-fluid">
       <div class="span6">
-        <div class="content-section">
-            <h1 class="header">Party Sponsor</h1>
-            <br>
-            <p style="width: 200px;">
-                <%include file="pyconca:templates/sponsors/upverter.mako"/>
-            </p>
-        </div>
+        <h2>Internet Sponsor</h2>
+        <%include file="pyconca:templates/sponsors/crs.mako"/>
       </div>
-
       <div class="span6">
-        <div class="content-section">
-            <h1 class="header">Media Sponsor</h1>
-            <br>
-            <p style="width: 200px;">
-                <%include file="pyconca:templates/sponsors/bnotions.mako"/>
-            </p>
-        </div>
+        <h2>Hosting Sponsor</h2>
+        <%include file="pyconca:templates/sponsors/vmfarms.mako"/>
       </div>
-    </div>
-
-    <div class="row-fluid content-section">
-      <h1 class="header">Sprint Sponsors</h1>
     </div>
 
     <div class="row-fluid">
       <div class="span6">
-        <br>
-
-        <p>
-          <%include file="pyconca:templates/sponsors/agendaless.mako"/>
-        </p>
+        <h2>Party Sponsor</h2>
+        <%include file="pyconca:templates/sponsors/upverter.mako"/>
       </div>
 
       <div class="span6">
-        <p>
-          <%include file="pyconca:templates/sponsors/llc.mako"/>
-        </p>
+        <h2>Media Sponsor</h2>
+        <%include file="pyconca:templates/sponsors/bnotions.mako"/>
       </div>
     </div>
 
-    <div class="row-fluid content-section">
-      <h1 class="header">Bronze Sponsors</h1>
+    <h2>Sprint Sponsors</h2>
+    <div class="row-fluid">
+      <div class="span6" style="margin-left: -15px;">
+        <%include file="pyconca:templates/sponsors/agendaless.mako"/>
+      </div>
+      <div class="span6">
+        <%include file="pyconca:templates/sponsors/llc.mako"/>
+      </div>
     </div>
 
+    <h2 class="gutter-top">Bronze Sponsors</h2>
     <div class="row-fluid">
       <div class="span6">
-        <p>
-          <%include file="pyconca:templates/sponsors/mozilla.mako"/>
-        </p>
-
-        <br>
-
-        <p>
-          <%include file="pyconca:templates/sponsors/guru_link.mako"/>
-        </p>
+        <%include file="pyconca:templates/sponsors/heroku.mako"/>
       </div>
-
+      <div class="span6" style="margin-left: -5px;">
+        <%include file="pyconca:templates/sponsors/mozilla.mako"/>
+      </div>
+    </div>
+    <div class="row-fluid gutter-top">
       <div class="span6">
-        <br>
-
-        <p>
-          <%include file="pyconca:templates/sponsors/trapeze.mako"/>
-        </p>
-
+        <%include file="pyconca:templates/sponsors/guru_link.mako"/>
         <br>
         <br>
-
-        <p style="margin-left: -25px;">
-          <%include file="pyconca:templates/sponsors/heroku.mako"/>
-        </p>
-        <br>
+      </div>
+      <div class="span6">
+        <%include file="pyconca:templates/sponsors/trapeze.mako"/>
+      </div>
+    </div>
+    <div class="row-fluid gutter-top">
+      <div class="span6">
+        <%include file="pyconca:templates/sponsors/cloudant.mako"/>
       </div>
     </div>
 
-    <div class="row-fluid content-section">
-      <h1 class="header">Independent Sponsors</h1>
-    </div>
-
+    <h2>Independent Sponsors</h2>
     <div class="row-fluid">
       <div class="span6">
-        <br>
-
-        <p>
-          <%include file="pyconca:templates/sponsors/element34.mako"/>
-        </p>
-
-        <br>
-        <br>
-
-        <p>
-          <%include file="pyconca:templates/sponsors/albert_oconnor.mako"/>
-        </p>
-
+        <%include file="pyconca:templates/sponsors/element34.mako"/>
       </div>
-
       <div class="span6">
-        <br>
-
-        <p>
-          <%include file="pyconca:templates/sponsors/danols.mako"/>
-        </p>
-
+        <%include file="pyconca:templates/sponsors/danols.mako"/>
       </div>
     </div>
-
+    <div class="row-fluid gutter-top">
+      <div class="span6">
+        <%include file="pyconca:templates/sponsors/albert_oconnor.mako"/>
+      </div>
+    </div>
+  </article>
 </%block>

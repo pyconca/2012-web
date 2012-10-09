@@ -1,8 +1,6 @@
 <%inherit file="pyconca:templates/generic.mako"/>
 
-<%block name="header">
-    Password Reset
-</%block>
+<%block name="header">Password Reset</%block>
 
 <%block name="form">
 
@@ -19,6 +17,8 @@
             </div>
         </div>
 
-        <input class="btn btn-inverse" type="submit" name="forgot.submit" value="Reset"/>
+      <div class="controls">
+        <input class="btn btn-success" type="submit" name="forgot.submit" value="Reset"/>
+      </div>
     </form>
 </%block>

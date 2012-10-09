@@ -13,7 +13,7 @@
 <br>
 
 <form id="delete-form" method="POST">
-    <a class="btn btn-inverse" 
+    <a class="btn btn-info"
        href="${request.route_url('user_update', id=id)}">
        Edit
     </a>

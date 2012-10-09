@@ -59,7 +59,7 @@
         <tr>
           <th>9:30</th>
           <td colspan="3">
-            <strong>Keynote - ${slot("K1")}</strong>
+            <strong>${slot("K1")}</strong>
           </td>
         </tr>
 
@@ -273,7 +273,7 @@
         <tr>
           <th>9:30</th>
           <td colspan="3">
-            <strong>Keynote - K2</strong>
+            <strong>${slot("K2")}</strong>
           </td>
         </tr>
 
@@ -428,7 +428,7 @@
         <tr>
           <th>4:40</th>
           <td colspan="3">
-            <strong>${_(u"Closing Keynote - K3")}</strong>
+            <strong>${slot("K3")}</strong>
           </td>
         </tr>
 

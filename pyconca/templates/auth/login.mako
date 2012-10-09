@@ -1,8 +1,6 @@
 <%inherit file="pyconca:templates/generic.mako"/>
 
-<%block name="header">
-    Login
-</%block>
+<%block name="header">Login</%block>
 
 <%block name="form">
 
@@ -21,12 +19,13 @@
           <div class="controls">
               <input type="password" maxlength="100" name="password" id="password">
               <br>
-              <br>
-              <a href="${request.application_url}/forgot">Forgot your password?</a>
+              <a href="${request.application_url}/forgot" class="small-text">Forgot your password?</a>
           </div>
       </div>
 
-      <input class="btn btn-inverse" type="submit" name="login.submit" value="Login"/>
+      <div class="controls">
+        <input class="btn btn-success" type="submit" name="login.submit" value="Login"/>
+      </div>
   </form>
 <script>
 $(document).ready(function () {

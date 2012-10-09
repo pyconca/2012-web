@@ -28,7 +28,7 @@ from pyramid.security import ALL_PERMISSIONS
 from pyconca.temporal import local_isoformat
 from pyconca.util import camel_to_under
 
-ACTIVATION_AGE = timedelta(days=7)
+ACTIVATION_AGE = timedelta(days=3)
 
 DBSession = scoped_session(sessionmaker(extension=ZopeTransactionExtension()))
 Base = declarative_base()

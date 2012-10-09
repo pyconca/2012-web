@@ -1,45 +1,45 @@
 <%inherit file="event.mako"/>
 
-<%block name="head_title">
-    ${_(u"About")}
-</%block>
+<%block name="head_title">${_(u"About")}</%block>
+<%block name="body_class">about-section</%block>
+<%block name="title">${_(u"About")}</%block>
 
 <%block name="info">
-    <div class="row-fluid content-section">
-        <h1 class="header header-first">${_(u"What is PyCon Canada?")}</h1>
-        <p>
-          ${_(u"PyCon Canada is an initiative to strengthen the Canadian Python community.")}
-        </p>
+  <article>
+    <h2>${_(u"What is PyCon Canada?")}</h2>
+    <p>
+      ${_(u"PyCon Canada is an initiative to strengthen the Canadian Python community.")}
+    </p>
 
-        <p>
-          ${_(u"Our main goals:")}
-        </p>
+    <p>
+      ${_(u"Our main goals:")}
+    </p>
 
-        <ul>
-          <li>
-            <%block filter="gettext">ABOUT_GOAL_SUPPORT</%block>
-          </li>
-          <li>
-            <%block filter="gettext">ABOUT_GOAL_STRENGTHEN</%block>
-          </li>
-          <li>
-            ${_(u"Host an annual Canadian PyCon conference, starting now - 2012!")}
-          </li>
-        </ul>
+    <ul>
+      <li>
+        <%block filter="gettext">ABOUT_GOAL_SUPPORT</%block>
+      </li>
+      <li>
+        <%block filter="gettext">ABOUT_GOAL_STRENGTHEN</%block>
+      </li>
+      <li>
+        ${_(u"Host an annual Canadian PyCon conference, starting now - 2012!")}
+      </li>
+    </ul>
 
-        <p><%block filter="gettext">ABOUT_VOLUNTEERS</%block></p>
-    </div>
+    <p><%block filter="gettext">ABOUT_VOLUNTEERS</%block></p>
+  </article>
 
-    <div class="row-fluid content-section">
-      <h1 class="header">${_(u"Code of Conduct")}</h1>
-      <p><%block filter="gettext">ABOUT_CONDUCT</%block></p>
-    </div>
+  <article>
+    <h2>${_(u"Code of Conduct")}</h2>
+    <p><%block filter="gettext">ABOUT_CONDUCT</%block></p>
+  </article>
 
-    <div class="row-fluid content-section">
-      <h1 class="header">${_(u"Made in Canada!")}</h1>
-      <p><%block filter="gettext">ABOUT_CONTRIBUTIONS</%block></p>
+  <article>
+    <h2>${_(u"Made in Canada!")}</h2>
+    <p><%block filter="gettext">ABOUT_CONTRIBUTIONS</%block></p>
 
-      <table class="table table-bordered">
+    <table class="table table-bordered">
         <tr>
           <td><a href="https://twitter.com/diana_clarke">Diana Clarke</a></td>
           <td><a href="https://twitter.com/wolever">David Wolever</a></td>
@@ -99,9 +99,8 @@
           <td><a href="https://twitter.com/blaiselaflamme">Blaise Laflamme</a></td>
           <td><a href="http://twitter.com/djoume">Djoume Salvetti</a></td>
         </tr>
-      </table>
+    </table>
 
     <p><%block filter="gettext">ABOUT_SHY</%block></p>
-
-    </div>
+  </article>
 </%block>
