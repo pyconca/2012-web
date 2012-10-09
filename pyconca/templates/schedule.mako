@@ -6,8 +6,7 @@
 
 <%def name="slot(code)">
   <%
-    from pyconca.models import DBSession, ScheduleSlot
-    slot = DBSession.query(ScheduleSlot).filter_by(code=code).first()
+    slot = slots.get(code)
     talk = slot and slot.talk
     owner = talk and talk.owner
   %>
