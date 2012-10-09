@@ -10,11 +10,11 @@ class TalkDao(BaseDao):
     def _default_order_by(self):
         return [self.model.title]
 
-    def _query(self):
-        query = BaseDao._query(self)
-        if self.is_admin:
-            return query
-        elif self.authenticated_user:
-            return query.filter_by(owner_id=self.authenticated_user.id)
-        else:
-            raise Exception  # TODO
+    #def _query(self):
+        #query = BaseDao._query(self)
+        #if self.is_admin:
+            #return query
+        #elif self.authenticated_user:
+            #return query.filter_by(=self.authenticated_user.id)
+        #else:
+            #raise Exception  # TODO
