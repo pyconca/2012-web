@@ -46,7 +46,7 @@ class TestWithWebtest(unittest.TestCase):
             speaker_talk = Talk(id=self._speaker_talk_id, owner_id=self._speaker_id, title="stitle", type="tutorial", level="experienced", abstract="sabstract", outline="soutline", reviewer_notes="sreviewer_notes")
             start = datetime(2012, 11, 10, 15, 00)
             end = datetime(2012,11,10,15,30)
-            schedule_slot = ScheduleSlot(id=self._schedule_slot_id, room="room", start=start, end=end)
+            schedule_slot = ScheduleSlot(id=self._schedule_slot_id, room="room", start=start, end=end, code="X%s" %(self._schedule_slot_id, ))
             DBSession.add_all([admin, speaker, admin_group, admin_talk, speaker_talk, schedule_slot])
 
     def tearDown(self):

@@ -151,6 +151,7 @@ class UserGroup(AttrMixIn, Base):
 class Talk(AttrMixIn, Base):
     id = Column(Integer, primary_key=True)
     owner_id = Column(Integer, ForeignKey('user.id'))
+    owner = relationship('User')
     title = Column(String(length=100), nullable=False)
     type = Column(Enum('talk', 'tutorial', 'other', name='talk_type'),
                   nullable=False)
@@ -200,6 +201,7 @@ class ScheduleSlot(AttrMixIn, Base):
     room = Column(String(length=100), nullable=False)
     start = Column(DateTime, nullable=False)
     end = Column(DateTime, nullable=False)
+    code = Column(String(length=8), nullable=False, unique=True)
 
     def to_dict(self, is_admin):
         duration_delta = self.end - self.start
@@ -217,6 +219,7 @@ class TalkScheduleSlot(AttrMixIn, Base):
     talk_id = Column(Integer, ForeignKey('talk.id'), primary_key=True)
     schedule_slot_id = Column(Integer, ForeignKey('schedule_slot.id'),
                               primary_key=True)
+    schedule_slot = relationship('ScheduleSlot')
 
 
 Index('talk_schedule_slot_talk_id_unique',

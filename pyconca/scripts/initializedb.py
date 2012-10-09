@@ -65,7 +65,9 @@ def main(argv=sys.argv):
         schedule_slot = ScheduleSlot(
             room='Upstairs',
             start=datetime(2012, 11, 10, 15, 0),
-            end=datetime(2012, 11, 10, 15, 30))
+            end=datetime(2012, 11, 10, 15, 30),
+            code="X1",
+        )
         DBSession.add(schedule_slot)
         talk = Talk(
             owner_id=taavi.id,
