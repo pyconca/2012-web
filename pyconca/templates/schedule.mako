@@ -180,8 +180,7 @@
             ##${slot("A11")}<br>
             <strong>A11: Meredith L. Patterson</strong><br>
             ${_(u" --- 5 minutes --- ")}<br>
-            ##${slot("A12")}
-            <strong>A12: Google</strong>
+            ${slot("A12")}
           </td>
           <td>
             ${slot("A13")}<br>

@@ -20,14 +20,14 @@ Day 1	Main hall					Lower hall					Tutorial
 11:45						A4	#45	Mark Côté	Network programming for automation developers					
 13:05	B3		Brandon Rhodes			A5	#47	Vlad Filippov	Supercharge web application prototypes with the App Engine Python SDK		T2	#61	David Warde-Farley	Introduction to Numerical and Scientific Computing with Python
 13:30						A6	#41	Joan Touzet	Hit the Flask and Get Some REST: Rewriting the Cloudant API in a Single Python Back End					
-14:00	B4	#12	Matthew Hooker	Configuration management with ZooKeeper		A7	#32	Martin Alderete	NINJA-IDE, an IDE specially designed for Python					
-14:25						A8	#28	Lynn Root	3 Projects to Make Python Stick for New Coders					
+14:00	B4	#12	Matthew Hooker	Configuration management with ZooKeeper		A7	#28	Lynn Root	3 Projects to Make Python Stick for New Coders					
+14:25						A8	#43	Christopher Lambacher	Everything you wanted to know about deploying web apps on Windows but were too horrified to ask					
 15:00	B5		Django ???			A9	#21	Tres Seaver	Lightweight Web Services with Pyramid					
 15:25						A10	#7	Blaise Laflamme	Pyramid Layout: Composable UI/UX for Pyramid					
 15:55	A11		Meredith L. Patterson	Don't be afraid to fail in public		A13	#23	James King	Distributed Programming in Python: A Model for Strong, Eventual Consistency					
-16:20	A12		Google ???			A14	#53	Yannick Hold	Once you Scoop, no need to fork					
+16:20	A12	#3	Adam McKerlie	Testing Django with Travis CI		A14	#53	Yannick Hold	Once you Scoop, no need to fork					
 16:50	L		Lightning talks L1:L6			A15	#44	Mahdi Yusuf	Twisted History of Python Packaging					
-17:15						A16	#43	Christopher Lambacher	Everything you wanted to know about deploying web apps on Windows but were too horrified to ask					
+17:15						A16	#32	Martin Alderete	NINJA-IDE, an IDE specially designed for Python					
 														
 Day 2	Main hall					Lower hall					Tutorial			
 9:15	K2		Michael Feathers											
@@ -42,7 +42,7 @@ Day 2	Main hall					Lower hall					Tutorial
 15:50	A25		Elizabeth Leddy	Community and Plone		A27	#37	Maxime Noël	DynamoDB and DynamoDB-Mapper -- Building scalable Python applications with Amazon's NoSQL database					
 15:15	A26	#51	Éric Araujo	How you can contribute to Python		A28	#26	Anna Filina	Speed Up Your Database					
 15:45	L					A29	#18	Chayim Kirshen	Programmatically Managing Python Workloads Across Multiple Clouds					
-16:10						A30	#3	Adam McKerlie	Testing Django with Travis CI					
+16:10						A30		TBD (Google)						
 16:40	K3			K3: Fernando Pérez										
 """
 
