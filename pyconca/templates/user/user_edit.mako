@@ -14,11 +14,13 @@
 
 <form id="edit-form" method="POST" class="form-horizontal">
     <div id="user-edit-result"></div>
-    <input class="btn btn-inverse" type="submit" value="Save"/>
-    <a class="btn" type="submit" 
-       href="${request.route_url('user_index')}">
-       Cancel
-    </a>
+    <div class="controls">
+      <input class="btn btn-success" type="submit" value="Save"/>
+      <a class="btn" type="submit"
+         href="${request.route_url('user_index')}">
+         Cancel
+      </a>
+    </div>
 </form>
 
 <script id="breadcrumbs-template" type="text/x-handlebars-template">

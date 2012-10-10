@@ -13,7 +13,7 @@
 <br>
 
 <form id="delete-form" method="POST">
-    <a class="btn btn-inverse" 
+    <a class="btn btn-info"
        href="${request.route_url('talk_update', id=id)}">
        Edit
     </a>
@@ -42,6 +42,12 @@
         <br>
         <strong>Level:</strong>
         <span>{{talk.level}}</span>
+        <br>
+        <strong>When:</strong>
+        <span>{{pycon_time talk.start talk.duration}}</span>
+        <br>
+        <strong>Where:</strong>
+        <span>{{talk.room}}</span>
     </fieldset>
 
     <br>
@@ -66,11 +72,6 @@
 </script>
 
 <script type="text/javascript">
-    Handlebars.registerHelper('nl2br', function(text) {
-        var nl2br = (text + '').replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1' + '<br>' + '$2');
-        return new Handlebars.SafeString(nl2br);
-    });
-
     function render_templates(response) {
         var layout = $("#talk-get-template").html();
         var template = Handlebars.compile(layout);

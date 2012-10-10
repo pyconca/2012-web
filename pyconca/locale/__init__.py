@@ -9,7 +9,7 @@ def locale_cookie_headers(locale_code):
 
 
 def locale_from_browser(request):
-    return request.accept_language.best_match(("fr","en"))
+    return request.accept_language.best_match(('fr', 'en'))
 
 
 def locale_negotiator(request):

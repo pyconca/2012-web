@@ -15,11 +15,13 @@
 
 <form id="edit-form" method="POST" class="form-horizontal">
     <div id="talk-edit-result"></div>
-    <input class="btn btn-inverse" type="submit" value="Save"/>
-    <a class="btn" type="submit"
-       href="${request.route_url('talk_index')}">
-       Cancel
-    </a>
+    <div class="controls">
+      <input class="btn btn-success" type="submit" value="Save"/>
+      <a class="btn" type="submit"
+         href="${request.route_url('talk_index')}">
+         Cancel
+      </a>
+    </div>
 </form>
 
 <script id="breadcrumbs-template" type="text/x-handlebars-template">
@@ -89,6 +91,18 @@
           </label>
         </div>
     </div>
+
+    % if is_admin:
+    <div class="control-group">
+        <label class="control-label" for="schedule_slot_id">Schedule slot</label>
+        <div class="controls">
+          <div class="help-block" style="display: inline;" id="schedule_slot_id_error">&nbsp;</div>
+          <select name="schedule_slot_id" id="schedule_slot_id_select">
+            <option value="-1">(not scheduled)</option>
+          </select>
+        </div>
+    </div>
+   % endif
 
     <div class="control-group">
         <label class="control-label" for="level">Difficulty Level</label>
@@ -168,19 +182,6 @@
     }
 
     $(document).ready(function() {
-        Handlebars.registerHelper('if_eq', function(context, options) {
-            if (context == options.hash.compare) return options.fn(this);
-          return options.inverse(this);
-        });
-
-        Handlebars.registerHelper('selected', function(option, value) {
-            if (option == value) {
-                return new Handlebars.SafeString(' selected');
-            } else {
-                return '';
-            }
-         });
-
         user_list = get_user_list();
 
         % if is_create:
@@ -198,6 +199,30 @@
             var url = "${request.route_url('api_talk_get', id=id)}";
             $.getJSON(url, function(response) {
                 render_templates(response, user_list);
+                % if is_admin:
+                    var url = "${request.route_url('api_schedule_slot_index')}";
+                    $.getJSON(url, function(schedule_slot_response) {
+                        var slots = schedule_slot_response.data.schedule_slot_list;
+                        var select = $('select[name=schedule_slot_id]');
+                        for (var i in slots) {
+                            if (slots[i].talk_id && slots[i].talk_id != ${id}) {
+                                continue;
+                            }
+                            var option = $('<option>').attr(
+                                'value', slots[i].id
+                            ).text(
+                                Handlebars.helpers['pycon_time'](
+                                    slots[i].start,
+                                    slots[i].duration
+                                ) + " in " + slots[i].room
+                            );
+                            if (slots[i].id == response.data.talk.schedule_slot_id) {
+                                option.attr('selected', 'selected');
+                            }
+                            select.append(option);
+                        }
+                    });
+                % endif
             });
         % endif:
     });

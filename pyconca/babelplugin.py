@@ -40,7 +40,6 @@ def extract(fileobj, keywords, comment_tags, options):
                                    keywords, comment_tags, options):
         yield extracted
 
-
     # proceed with the standard Mako extractor
     for extracted in extract_mako_nodes(template_node.get_children(),
                                         keywords, comment_tags, options):

@@ -5,7 +5,7 @@
 </%block>
 
 <%block name="header_right">
-    <a class="btn btn-inverse pull-right"
+    <a class="btn btn-info"
        href="${request.route_url('talk_create')}">
        New Talk
     </a>
@@ -22,6 +22,8 @@
             <th>User</th>
             <th>Type</th>
             <th>Level</th>
+            <th>When</th>
+            <th>Where</th>
         </tr>
         {{#talk_list}}
         <tr>
@@ -33,6 +35,8 @@
           <td>{{user.first_name}} {{user.last_name}}</td>
           <td>{{type}}</td>
           <td>{{level}}</td>
+          <td>{{pycon_time start duration}}</td>
+          <td>{{room}}</td>
         </tr>
         {{/talk_list}}
     </table>

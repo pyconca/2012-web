@@ -1,4 +1,10 @@
+import logging
+
 from pyconca.models import DBSession
+
+
+log = logging.getLogger(__name__)
+
 
 class BaseDao(object):
 
@@ -13,14 +19,16 @@ class BaseDao(object):
     def get(self, id):
         try:
             return self._query().filter_by(id=id).first()
-        except:
+        except Exception as e:
+            log.exception("Failed to get first()")
             # TODO
             return None
 
     def index(self):
         try:
             return self._query().all()
-        except:
+        except Exception as e:
+            log.exception("Failed to get all()")
             # TODO
             return []
 

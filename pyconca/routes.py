@@ -1,8 +1,14 @@
+from pyconca.util import under_to_camel
+
+
 def _setup_routes(config):
     config.add_route('index', '/')
     config.add_route('login', '/login')
-    config.add_route('logout', '/logout')
     config.add_route('forgot', '/forgot')
+    config.add_route('pwd_reset_form', '/reset/{username}/{reset_key}')
+    config.add_route('pwd_reset', '/reset', request_method="POST")
+    config.add_route('pwd_change', "/change")
+    config.add_route('logout', '/logout')
     config.add_route('about', '/about')
     config.add_route('locale', '/locale')
     config.add_route('conduct', '/conduct')
@@ -12,12 +18,16 @@ def _setup_routes(config):
     config.add_route('schedule', '/schedule')
     config.add_route('speakers', '/speakers')
     config.add_route('sponsors', '/sponsors')
+    config.add_route('sponsors_500px', '/sponsors/500px')
+    config.add_route('sponsors_freshbooks', '/sponsors/freshbooks')
+    config.add_route('sponsors_chango', '/sponsors/chango')
+    config.add_route('sprints', '/sprints')
 
 
 def _add_api_resource(config, name):
     values = {'name': name}
-    view = 'pyconca.api.%s_api.%sApi' % (name, name.capitalize())
-    factory = 'pyconca.security.%sFactory' % (name.capitalize())
+    view = 'pyconca.api.%s_api.%sApi' % (name, under_to_camel(name))
+    factory = 'pyconca.security.%sFactory' % (under_to_camel(name))
 
     route_name = 'api_%(name)s_index' % (values)
     config.add_route(
@@ -83,9 +93,9 @@ def _add_api_resource(config, name):
 
 def _add_resource(config, name):
     values = {'name': name}
-    view = 'pyconca.view.%s_view.%sView' % (name, name.capitalize())
+    view = 'pyconca.view.%s_view.%sView' % (name, under_to_camel(name))
     template = 'pyconca:templates/%(name)s/%(name)s_' % (values)
-    factory = 'pyconca.security.%sFactory' % (name.capitalize())
+    factory = 'pyconca.security.%sFactory' % (under_to_camel(name))
 
     route_name = name + '_index'
     config.add_route(

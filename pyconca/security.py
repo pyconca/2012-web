@@ -8,6 +8,7 @@ from pyramid.security import ALL_PERMISSIONS
 
 from pyconca.dao.user_dao import UserDao
 from pyconca.dao.talk_dao import TalkDao
+from pyconca.dao.schedule_slot_dao import ScheduleSlotDao
 
 
 PERMISSIONS = {'admin': ['group:admin']}
@@ -87,3 +88,16 @@ class TalkFactory(object):
 
     def __getitem__(self, id):
         return TalkDao(self.request.user).get(id)
+
+
+class ScheduleSlotFactory(object):
+    __acl__ = [
+        (Allow, Authenticated, 'api_schedule_slot_create'),
+        (Allow, Authenticated, 'api_schedule_slot_index'),
+    ]
+
+    def __init__(self, request):
+        self.request = request
+
+    def __getitem__(self, id):
+        return ScheduleSlotDao(self.request.user).get(id)

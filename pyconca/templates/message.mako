@@ -3,7 +3,7 @@
         <div id="flash" class="alert alert-${queue}">
             % for flash in request.session.pop_flash(queue):
                 % if flash:
-                    ${flash|n}
+                    ${flash}
                     <br>
                 % endif
             % endfor

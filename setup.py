@@ -9,7 +9,7 @@ CHANGES = open(os.path.join(here, 'CHANGES.txt')).read()
 setup(name='pyconca',
       version='0.0',
       description='pyconca',
-      long_description=README + '\n\n' +  CHANGES,
+      long_description=README + '\n\n' + CHANGES,
       classifiers=[
         "Programming Language :: Python",
         "Framework :: Pylons",
@@ -24,14 +24,16 @@ setup(name='pyconca',
       include_package_data=True,
       zip_safe=False,
       test_suite='nose.collector',
-      message_extractors = { '.': [
+      message_extractors={'.': [
             ('**.py', 'python', None),
-            ('pyconca/templates/**.mako', "pyconca.babelplugin:extract", None)]},
+            ('pyconca/templates/**.mako', 'pyconca.babelplugin:extract', None)]
+      },
       entry_points="""\
       [paste.app_factory]
       main = pyconca:main
       [console_scripts]
       initialize_pyconca_db = pyconca.scripts.initializedb:main
       pyconca_create_tables = pyconca.scripts.create_tables:main
+      pyconca_create_talk_slots = pyconca.scripts.create_talk_slots:main
       """,
       )

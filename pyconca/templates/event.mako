@@ -1,73 +1,52 @@
 <%inherit file="pyconca:templates/base.mako"/>
 
 <%block name="content">
+<div class="container">
+  <div class="row-fluid">
+    <section id="MainContent" class="span9">
+      <header>
+        <hgroup class="clearfix">
+          <h1><%block name="title"/></h1>
+          <div id="DateAndPlace"><b>${_(u"PyCon Canada 2012")}</b><br>
+          ${_(u"November 9 – 11, 2012 • Toronto")}</div>
+          <!--<h3 class="header-sub-text">${_(u"Bringing the Python Canada community together")}</h3>-->
+        </hgroup>
+        <div id="QuickLinks" class="hidden-desktop">
+          <em>${_(u"Quick links")}:</em> <ul class="unstyled"></ul>
+        </div>
+      </header>
+      <%block name="info"/>
+    </section>
 
-<div class="row-fluid">
-  <div class="span12 sub-header-container">
-    <div class="row-fluid sub-header-image">
-      <div class="span12 top-row">
-        <h1 class="header-main-text"><%block name="title"/></h1>
-        <h2 class="header-sub-text">${_(u"PyCon Canada 2012")}</h2>
-        <h2 class="header-sub-text">${_(u"Toronto, November 9th - 11th")}</h2>
-      </div>
-    </div>
-  </div>
-</div>
+    <aside class="span3">
+      % if request['bfg.routes.route'].name not in ['sponsors', 'sponsors_500px', 'sponsors_freshbooks', 'sponsors_chango']:
+        <h1>${_(u"Our Sponsors")}</h1>
+        <h2>— <b>${_(u"Gold")}</b> —</h2>
+        <%include file="pyconca:templates/sponsors/500px.mako"/>
 
-<div class="row-fluid">
-  <div class="content-holder">
-    <div class="row-fluid">
+        <h2>— <b>${_(u"Silver")}</b> —</h2>
+        <%include file="pyconca:templates/sponsors/freshbooks.mako"/>
+        <%include file="pyconca:templates/sponsors/wave.mako"/>
+        <%include file="pyconca:templates/sponsors/chango.mako"/>
 
-      <div class="span3">
-        <h3>${_(u"Quick Links")}</h3>
-        <ul id="sidenav" class="sidenav side-block"></ul>
+        <h2>— <b>${_(u"Our Mothership")}</b> —</h2>
+        <%include file="pyconca:templates/sponsors/psf.mako"/>
 
-        % if request['bfg.routes.route'].name != 'sponsors':
-        <h3>Gold Sponsor</h3>
-             <%include file="pyconca:templates/sponsors/500px.mako"/>
-             <br>
-             <br>
-
-        <h3>Silver Sponsors</h3>
-             <%include file="pyconca:templates/sponsors/freshbooks.mako"/>
-             <br>
-             <br>
-
-             <%include file="pyconca:templates/sponsors/wave.mako"/>
-             <br>
-
-             <%include file="pyconca:templates/sponsors/chango.mako"/>
-             <br>
-
-        <h3>Our Mothership</h3>
-
-             <br>
-
-             <%include file="pyconca:templates/sponsors/psf.mako"/>
-             <br>
-
-             <br>
-        % endif
-
-      </div>
-
-      <div class="span9 content-column">
-        <%block name="info"/>
-      </div>
-
-    </div>
+        <p class="gutter-top"><a href="${request.application_url}/sponsors" class="bubble">${_(u"View full list of sponsors")}</a></p>
+        <p class="gutter-top"><a href="mailto:sponsorship@pycon.ca" class="bubble">${_(u"Sponsorship details")}</a></p>
+      % endif
+    </aside>
   </div>
 </div>
 
 <script>
-  function createSidenav() {
-    $(".header").each(function() {
-      var $this = $(this);
-      var navItemHolder = $("<li></li>");
-      var navItem = $("<a></a>");
+  function createQuickLinks() {
+    $("#MainContent h2").not(".sub-head").each(function() {
+      var $this = $(this),
+        navItemHolder = $("<li></li>"),
+        navItem = $("<a></a>");
 
       if (!$this.attr("id")) {
-        console.log($this.text());
         var anchor = $this.text()
           .toLowerCase()
           .replace(" ", "-")
@@ -78,22 +57,18 @@
 
       navItem
         .text($this.text())
-        .addClass("sidenav-link btn")
+        .addClass("bubble bubble-small")
         .attr("href", "#" + $this.attr("id"));
 
       navItemHolder
         .append(navItem)
-        .addClass("sidenav-item");
 
-      $("#sidenav").append(navItemHolder);
+      $("#QuickLinks ul").append(navItemHolder);
     });
   };
 
   $(function() {
-    createSidenav();
-    $('.carousel').carousel({
-      interval: 3000
-    });
+    createQuickLinks();
   });
 </script>
 

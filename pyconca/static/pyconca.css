@@ -14,7 +14,7 @@ body {
   padding-left: 0;
   padding-right: 0;
   color: #faf7f0;
-  max-width: 1000px;
+  max-width: 1100px;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -32,7 +32,7 @@ body {
 .main-nav {
   margin: auto;
   box-shadow: none;
-  max-width: 1000px;
+  max-width: 1100px;
 }
 
 .navbar-inner {
@@ -45,7 +45,7 @@ body {
 }
 
 .nav-item {
-  margin-right: 3px;
+  margin-right: 2px;
 }
 
 .main-body {
@@ -364,4 +364,15 @@ body {
 /* schedule.mako specific styles */
 .schedule-page .header {
   border-bottom: none;
+}
+
+/* bootstrap dropdown menu overrides */
+.dropdown-menu li > a:hover,
+.dropdown-menu .active > a,
+.dropdown-menu .active > a:hover {
+  background-color: #FF7000;
+}
+
+#schedule_slot_id_select {
+    width: 300px;
 }
