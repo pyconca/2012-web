@@ -35,7 +35,7 @@ Day 2	Main hall					Lower hall					Tutorial
 10:35						A18	#33	Javier de la Rosa	Graph Databases in Python					
 11:10	B7	#34	Dan Callahan	Beyond Passwords: Secure Authentication with Mozilla Persona		A19	#31	Taavi Burns	Server Log Analysis with Pandas		T3	#54	Alexandre Bourget	Gevent-socketio, cross-framework real-time web live demo
 11:35						A20	#2	Mazdak Rezvani	Dancing with Big Data: Disco + Inferno					
-12:55	B8		Sandy Walsh	OpenStack 101		A21	#55	Ash Christopher	Horizontally Scaling Your Database with Django		T4	#14Greg Ward	Greg Ward	Fast, Faster, Fastest: Getting the Best Performance From Python
+12:55	B8		Sandy Walsh	OpenStack 101		A21	#55	Ash Christopher	Horizontally Scaling Your Database with Django		T4	#14	Greg Ward	Fast, Faster, Fastest: Getting the Best Performance From Python
 13:20						A22	#42	Diego Muñoz Escalante	An Ember.js adapter for Django					
 13:50	B9	#60	Andrew Francis	How to Solve a Problem Like Santa Claus		A23	#58	Gabriel Grant	Distributed, Real-time Web Apps with Stack.io					
 14:15						A24	#15	Ian Ward	Cool Stuff You Can Do With Urwid					
