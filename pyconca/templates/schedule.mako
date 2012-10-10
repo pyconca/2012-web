@@ -177,14 +177,16 @@
         <tr>
           <th>3:55</th>
           <td>
-            ${slot("B6")}
-          </td>
-          <td>
             ##${slot("A11")}<br>
             <strong>A11: Meredith L. Patterson</strong><br>
             ${_(u" --- 5 minutes --- ")}<br>
             ##${slot("A12")}
             <strong>A12: Google</strong>
+          </td>
+          <td>
+            ${slot("A13")}<br>
+            ${_(u" --- 5 minutes --- ")}<br>
+            ${slot("A14")}
           </td>
         </tr>
 
@@ -206,9 +208,9 @@
             ${slot("L6")}<br>
           </td>
           <td>
-            ${slot("A13")}<br>
+            ${slot("A15")}
             ${_(u" --- 5 minutes --- ")}<br>
-            ${slot("A14")}
+            ${slot("A16")}
           </td>
           <td>
           </td>
@@ -276,7 +278,7 @@
         </tr>
 
         <tr>
-          <th>9:30</th>
+          <th>9:15</th>
           <td colspan="3">
             ##${slot("K2")}
             <strong>Michael Feathers</strong> (K2)
@@ -284,21 +286,22 @@
         </tr>
 
         <tr>
-          <th>10:15</th>
+          <th>10:00</th>
           <td colspan="3">
             <strong>${_(u"Break")}</strong>
           </td>
         </tr>
 
         <tr>
-          <th>10:25</th>
+          <th>10:10</th>
           <td>
-            ${slot("A15")}
+            ## ${slot("B6")}
+            <strong>Kenneth Reitz</strong> (B6)
           </td>
           <td>
-            ${slot("A16")}
-          </td>
-          <td>
+            ${slot("A17")}
+            ${_(u" --- 5 minutes --- ")}<br>
+            ${slot("A18")}
           </td>
         </tr>
 
@@ -329,9 +332,9 @@
             ${slot("B7")}
           </td>
           <td>
-            ${slot("A17")}<br>
+            ${slot("A19")}<br>
             ${_(u" --- 5 minutes --- ")}<br>
-            ${slot("A18")}
+            ${slot("A20")}
           </td>
           <td>
             ${slot("T3")}
@@ -352,9 +355,9 @@
             <strong><em>OpenStack 101</em> by Sandy Walsh</strong> (B8)
           </td>
           <td>
-            ${slot("A19")}<br>
+            ${slot("A21")}<br>
             ${_(u" --- 5 minutes --- ")}<br>
-            ${slot("A20")}
+            ${slot("A22")}
           </td>
           <td rowspan="5">
             ${slot("T4")}
@@ -374,9 +377,9 @@
             ${slot("B9")}
           </td>
           <td>
-            ${slot("A21")}<br>
+            ${slot("A23")}<br>
             ${_(u" --- 5 minutes --- ")}<br>
-            ${slot("A22")}
+            ${slot("A24")}
           </td>
         </tr>
 
@@ -420,11 +423,11 @@
             ${slot("L12")}<br>
           </td>
           <td>
-          </td>
-          <td>
             ${slot("A29")}<br>
             ${_(u" --- 5 minutes --- ")}<br>
             ${slot("A30")}
+          </td>
+          <td>
           </td>
         </tr>
 
