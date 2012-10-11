@@ -179,7 +179,7 @@
           <th>3:55</th>
           <td>
             ##${slot("A11")}<br>
-            <strong>A11: Meredith L. Patterson</strong><br>
+            <strong>Meredith L. Patterson (A11)</strong><br>
             ${_(u" --- 5 minutes --- ")}<br>
             ${slot("A12")}
           </td>
@@ -306,21 +306,19 @@
         </tr>
 
         <tr>
-          <th>10:45</th>
-          <td colspan="3">
-            <strong>${_(u"Break")}</strong>
-          </td>
-        </tr>
-
-        <tr>
           <th>10:55</th>
-          <td colspan="3">
+          <td>
             <strong>Remembrance Day</strong>
           </td>
+          <td>
+            <strong>Remembrance Day</strong>
+          </td>
+          <td>
+          </td>
         </tr>
 
         <tr>
-          <th>11:05</th>
+          <th>11:03</th>
           <td colspan="3">
             <strong>${_(u"Break")}</strong>
           </td>
@@ -394,7 +392,7 @@
           <th>2:50</th>
           <td>
             ##${slot("A25")}<br>
-            <strong>A25: Elizabeth Leddy</strong><br>
+            <strong>Elizabeth Leddy (A25)</strong><br>
             ${_(u" --- 5 minutes --- ")}<br>
             ${slot("A26")}
           </td>
@@ -489,7 +487,7 @@
         <tr>
           <th>All Day</th>
           <td colspan="3">
-            <strong><a href="${request.route_url('sprints')}">${_(u"Sprints")}</a></strong>
+            <a href="${request.route_url('sprints')}">${_(u"Sprints")}</a>
             <br>
             Location: TBD
           </td>
@@ -503,7 +501,7 @@
         <tr>
           <th>All Day</th>
           <td colspan="3">
-            <strong><a href="${request.route_url('sprints')}">${_(u"Sprints")}</a></strong>
+            <a href="${request.route_url('sprints')}">${_(u"Sprints")}</a>
             <br>
             Location: TBD
           </td>
