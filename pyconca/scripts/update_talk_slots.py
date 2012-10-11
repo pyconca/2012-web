@@ -8,7 +8,6 @@ from datetime import datetime, timedelta
 import transaction
 from pyramid.paster import get_appsettings
 from pyramid.paster import setup_logging
-
 from sqlalchemy import engine_from_config
 
 # !!!!!! WARNING !!!!!!
@@ -172,6 +171,13 @@ def main(argv=sys.argv):
     settings = get_appsettings(config_uri)
     engine = engine_from_config(settings, 'sqlalchemy.')
     DBSession.configure(bind=engine)
+
+    dumpdb = os.path.join(os.path.dirname(__file__), "../../prod_mysqldump")
+    if os.path.exists(dumpdb):
+        print "Running %r..." %(dumpdb, )
+        res = os.system(dumpdb)
+        if res:
+            return res
 
     with transaction.manager:
         for slot in parse_schedule(schedule):
