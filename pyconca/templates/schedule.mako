@@ -16,7 +16,7 @@
     <% return %>
   % endif
 
-  <strong><em>${talk.title}</em> by ${owner.first_name} ${owner.last_name}</strong> (${code})
+  <strong><em>${talk.title}</em></strong> by <strong>${owner.first_name} ${owner.last_name}</strong> (${code})
 </%def>
 
 <%block name="info">
