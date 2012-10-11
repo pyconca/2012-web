@@ -180,7 +180,7 @@
           <td>
             ##${slot("A11")}<br>
             <strong>Meredith L. Patterson</strong> (A11)<br>
-            <br>${_(u" --- 5 minutes --- ")}<br><br>
+            ${_(u" --- 5 minutes --- ")}<br>
             ${slot("A12")}
           </td>
           <td>
@@ -395,7 +395,7 @@
           <td>
             ##${slot("A25")}<br>
             <strong>Elizabeth Leddy</strong> (A25)<br>
-            <br>${_(u" --- 5 minutes --- ")}<br><br>
+            ${_(u" --- 5 minutes --- ")}<br>
             ${slot("A26")}
           </td>
           <td>
