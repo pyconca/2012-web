@@ -34,7 +34,7 @@
       </div>
 
     <div class="controls">
-      <input class="btn btn-success" type="submit" name="change.submit" value="Change"/>
+      <input class="btn btn-info" type="submit" name="change.submit" value="Change"/>
     </div>
 
     </form>
