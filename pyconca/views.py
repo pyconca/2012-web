@@ -33,7 +33,19 @@ def venue(request):
 
 @view_config(route_name='schedule', renderer='schedule.mako')
 def schedule(request):
-    return _build_response(request)
+    from sqlalchemy.orm import joinedload
+    from pyconca.models import DBSession, ScheduleSlot
+    response = _build_response(request)
+    response.update({
+        'slots': dict(
+            (slot.code, slot)
+            for slot in DBSession.query(ScheduleSlot).options(
+                joinedload('talk'),
+                joinedload('talk.owner'),
+            )
+        ),
+    })
+    return response
 
 
 @view_config(route_name='speakers', renderer='speakers.mako')

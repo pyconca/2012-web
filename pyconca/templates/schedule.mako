@@ -1,13 +1,28 @@
 <%inherit file="event.mako"/>
 
-<%block name="head_title">${_(u"Schedule")}</%block>
-<%block name="body_class">schedule-section</%block>
-<%block name="title">${_(u"Schedule")}</%block>
+<%block name="head_title">
+    ${_(u"Schedule")}
+</%block>
+
+<%def name="slot(code)">
+  <%
+    slot = slots.get(code)
+    talk = slot and slot.talk
+    owner = talk and talk.owner
+  %>
+  % if not talk:
+    <strong>TBA</strong> (${code})
+    <% return %>
+  % endif
+
+  <strong><em>${talk.title}</em> by ${owner.first_name} ${owner.last_name}</strong> (${code})
+</%def>
 
 <%block name="info">
-  <article>
-    <h2>${_(u"Friday, November 9")}</h2>
-    <table class="table table-bordered">
+  <div class="schedule-page">
+    <div class="row-fluid content-section">
+      <h1 class="header header-first" id="friday">${_(u"Friday, November 9")}</h1>
+      <table class="table table-bordered">
         <tr>
           <th>18:00</th>
           <td>
@@ -20,12 +35,12 @@
             <strong>${_(u"Venue closes")}</strong>
           </td>
         </tr>
-    </table>
-  </article>
+      </table>
+    </div>
 
-  <article>
-    <h2>${_(u"Saturday, November 10")}</h2>
-    <table class="table table-bordered">
+    <div class="row-fluid content-section">
+      <h1 class="header" id="saturday">${_(u"Saturday, November 10")}</h1>
+      <table class="table table-bordered">
         <tr>
           <th>8:30</th>
           <td colspan="3">
@@ -43,7 +58,8 @@
         <tr>
           <th>9:30</th>
           <td colspan="3">
-            <strong>Keynote - K1</strong>
+            ##${slot("K1")}
+            <strong>Jessica McKellar</strong> (K1)
           </td>
         </tr>
 
@@ -57,15 +73,16 @@
         <tr>
           <th>10:25</th>
           <td>
-            <strong>${_(u"45 Minute Talk - B1")}</strong>
+            ##${slot("B1")}
+            <strong>Michael Bayer</strong> (B1)
           </td>
           <td>
-            <strong>${_(u"20 Minute Talk - A1")}</strong><br>
+            ${slot("A1")}<br>
             ${_(u" --- 5 minutes --- ")}<br>
-            <strong>${_(u"20 Minute Talk - A2")}</strong>
+            ${slot("A2")}
           </td>
           <td rowspan="3">
-            <strong>${_(u"90 Minute Tutorial - T1")}</strong>
+            ${slot("T1")}
           </td>
         </tr>
 
@@ -79,12 +96,12 @@
         <tr>
           <th>11:20</th>
           <td>
-            <strong>${_(u"45 Minute Talk - B2")}</strong>
+            ${slot("B2")}
           </td>
           <td>
-            <strong>${_(u"20 Minute Talk - A3")}</strong><br>
+            ${slot("A3")}<br>
             ${_(u" --- 5 minutes --- ")}<br>
-            <strong>${_(u"20 Minute Talk - A4")}</strong>
+            ${slot("A4")}
           </td>
         </tr>
 
@@ -98,15 +115,16 @@
         <tr>
           <th>1:05</th>
           <td>
-            <strong>${_(u"45 Minute Talk - B3")}</strong>
+            ##${slot("B3")}
+            <strong>Brandon Rhodes</strong> (B3)
           </td>
           <td>
-            <strong>${_(u"20 Minute Talk - A5")}</strong><br>
+            ${slot("A5")}<br>
             ${_(u" --- 5 minutes --- ")}<br>
-            <strong>${_(u"20 Minute Talk - A6")}</strong>
+            ${slot("A6")}
           </td>
           <td rowspan="7">
-            <strong>${_(u"3 Hour Tutorial - T2")}</strong>
+            ${slot("T2")}
           </td>
         </tr>
 
@@ -120,12 +138,12 @@
         <tr>
           <th>2:00</th>
           <td>
-            <strong>${_(u"45 Minute Talk - B4")}</strong>
+            ${slot("B4")}
           </td>
           <td>
-            <strong>${_(u"20 Minute Talk - A7")}</strong><br>
+            ${slot("A7")}<br>
             ${_(u" --- 5 minutes --- ")}<br>
-            <strong>${_(u"20 Minute Talk - A8")}</strong>
+            ${slot("A8")}
           </td>
         </tr>
 
@@ -139,12 +157,13 @@
         <tr>
           <th>3:00</th>
           <td>
-            <strong>${_(u"45 Minute Talk - B5")}</strong>
+            ##${slot("B5")}
+            <strong>Daniel Lindsley</strong> (B5)
           </td>
           <td>
-            <strong>${_(u"20 Minute Talk - A9")}</strong><br>
+            ${slot("A9")}<br>
             ${_(u" --- 5 minutes --- ")}<br>
-            <strong>${_(u"20 Minute Talk - A10")}</strong>
+            ${slot("A10")}
           </td>
         </tr>
 
@@ -158,14 +177,15 @@
         <tr>
           <th>3:55</th>
           <td>
-            <strong>${_(u"20 Minute Talk - A11")}</strong><br>
+            ##${slot("A11")}<br>
+            <strong>A11: Meredith L. Patterson</strong><br>
             ${_(u" --- 5 minutes --- ")}<br>
-            <strong>${_(u"20 Minute Talk - A12")}</strong>
+            ${slot("A12")}
           </td>
           <td>
-            <strong>${_(u"20 Minute Talk - A13")}</strong><br>
+            ${slot("A13")}<br>
             ${_(u" --- 5 minutes --- ")}<br>
-            <strong>${_(u"20 Minute Talk - A14")}</strong>
+            ${slot("A14")}
           </td>
         </tr>
 
@@ -179,17 +199,17 @@
         <tr>
           <th>4:50</th>
           <td>
-            <strong>${_(u"Lightning Talk - L1")}</strong><br>
-            <strong>${_(u"Lightning Talk - L2")}</strong><br>
-            <strong>${_(u"Lightning Talk - L3")}</strong><br>
-            <strong>${_(u"Lightning Talk - L4")}</strong><br>
-            <strong>${_(u"Lightning Talk - L5")}</strong><br>
-            <strong>${_(u"Lightning Talk - L6")}</strong><br>
+            ${slot("L1")}<br>
+            ${slot("L2")}<br>
+            ${slot("L3")}<br>
+            ${slot("L4")}<br>
+            ${slot("L5")}<br>
+            ${slot("L6")}<br>
           </td>
           <td>
-            <strong>${_(u"20 Minute Talk - A15")}</strong><br>
+            ${slot("A15")}
             ${_(u" --- 5 minutes --- ")}<br>
-            <strong>${_(u"20 Minute Talk - A16")}</strong>
+            ${slot("A16")}
           </td>
           <td>
           </td>
@@ -236,12 +256,12 @@
             <strong>${_(u"Venue closes")}</strong>
           </td>
         </tr>
-    </table>
-  </article>
+      </table>
+    </div>
 
-  <article>
-    <h2>${_(u"Sunday, November 11")}</h2>
-    <table class="table table-bordered">
+    <div class="row-fluid content-section">
+      <h1 class="header" id="sunday">${_(u"Sunday, November 11")}</h1>
+      <table class="table table-bordered">
         <tr>
           <th>8:30</th>
           <td colspan="3">
@@ -259,7 +279,8 @@
         <tr>
           <th>9:15</th>
           <td colspan="3">
-            <strong>Keynote - K2</strong>
+            ##${slot("K2")}
+            <strong>Michael Feathers</strong> (K2)
           </td>
         </tr>
 
@@ -273,31 +294,32 @@
         <tr>
           <th>10:10</th>
           <td>
-            <strong>${_(u"45 Minute Talk - B6")}</strong>
+            ## ${slot("B6")}
+            <strong>Kenneth Reitz</strong> (B6)
           </td>
           <td>
-            <strong>${_(u"20 Minute Talk - A17")}</strong><br>
+            ${slot("A17")}
             ${_(u" --- 5 minutes --- ")}<br>
-            <strong>${_(u"20 Minute Talk - A18")}</strong>
+            ${slot("A18")}
           </td>
-          <td>
+        </tr>
+
+        <tr>
+          <th>10:45</th>
+          <td colspan="3">
+            <strong>${_(u"Break")}</strong>
           </td>
         </tr>
 
         <tr>
           <th>10:55</th>
-          <td>
-            <strong>${_(u"Remembrance Day")}</strong>
-          </td>
-          <td>
-            <strong>${_(u"Remembrance Day")}</strong>
-          </td>
-          <td>
+          <td colspan="3">
+            <strong>Remembrance Day</strong>
           </td>
         </tr>
 
         <tr>
-          <th>11:03</th>
+          <th>11:05</th>
           <td colspan="3">
             <strong>${_(u"Break")}</strong>
           </td>
@@ -306,15 +328,15 @@
         <tr>
           <th>11:10</th>
           <td>
-            <strong>${_(u"45 Minute Talk - B7")}</strong>
+            ${slot("B7")}
           </td>
           <td>
-            <strong>${_(u"20 Minute Talk - A19")}</strong><br>
+            ${slot("A19")}<br>
             ${_(u" --- 5 minutes --- ")}<br>
-            <strong>${_(u"20 Minute Talk - A20")}</strong>
+            ${slot("A20")}
           </td>
           <td>
-            <strong>${_(u"45 Minute Talk - T3")}</strong>
+            ${slot("T3")}
           </td>
         </tr>
 
@@ -328,15 +350,16 @@
         <tr>
           <th>12:55</th>
           <td>
-            <strong>${_(u"45 Minute Talk - B8")}</strong>
+            ##${slot("B8")}
+            <strong><em>OpenStack 101</em> by Sandy Walsh</strong> (B8)
           </td>
           <td>
-            <strong>${_(u"20 Minute Talk - A21")}</strong><br>
+            ${slot("A21")}<br>
             ${_(u" --- 5 minutes --- ")}<br>
-            <strong>${_(u"20 Minute Talk - A22")}</strong>
+            ${slot("A22")}
           </td>
           <td rowspan="5">
-            <strong>${_(u"2 Hour Tutorial - T4")}</strong>
+            ${slot("T4")}
           </td>
         </tr>
 
@@ -350,12 +373,12 @@
         <tr>
           <th>1:50</th>
           <td>
-            <strong>${_(u"45 Minute Talk - B9")}</strong>
+            ${slot("B9")}
           </td>
           <td>
-            <strong>${_(u"20 Minute Talk - A23")}</strong><br>
+            ${slot("A23")}<br>
             ${_(u" --- 5 minutes --- ")}<br>
-            <strong>${_(u"20 Minute Talk - A24")}</strong>
+            ${slot("A24")}
           </td>
         </tr>
 
@@ -369,14 +392,15 @@
         <tr>
           <th>2:50</th>
           <td>
-            <strong>${_(u"20 Minute Talk - A25")}</strong><br>
+            ##${slot("A25")}<br>
+            <strong>A25: Elizabeth Leddy</strong><br>
             ${_(u" --- 5 minutes --- ")}<br>
-            <strong>${_(u"20 Minute Talk - A26")}</strong>
+            ${slot("A26")}
           </td>
           <td>
-            <strong>${_(u"20 Minute Talk - A27")}</strong><br>
+            ${slot("A27")}<br>
             ${_(u" --- 5 minutes --- ")}<br>
-            <strong>${_(u"20 Minute Talk - A28")}</strong>
+            ${slot("A28")}
           </td>
         </tr>
 
@@ -390,17 +414,17 @@
         <tr>
           <th>3:45</th>
           <td>
-            <strong>${_(u"Lightning Talk - L7")}</strong><br>
-            <strong>${_(u"Lightning Talk - L8")}</strong><br>
-            <strong>${_(u"Lightning Talk - L9")}</strong><br>
-            <strong>${_(u"Lightning Talk - L10")}</strong><br>
-            <strong>${_(u"Lightning Talk - L11")}</strong><br>
-            <strong>${_(u"Lightning Talk - L12")}</strong><br>
+            ${slot("L7")}<br>
+            ${slot("L8")}<br>
+            ${slot("L9")}<br>
+            ${slot("L10")}<br>
+            ${slot("L11")}<br>
+            ${slot("L12")}<br>
           </td>
           <td>
-            <strong>${_(u"20 Minute Talk - A29")}</strong><br>
+            ${slot("A29")}<br>
             ${_(u" --- 5 minutes --- ")}<br>
-            <strong>${_(u"20 Minute Talk - A30")}</strong>
+            ${slot("A30")}
           </td>
           <td>
           </td>
@@ -416,7 +440,8 @@
         <tr>
           <th>4:40</th>
           <td colspan="3">
-            <strong>${_(u"Closing Keynote - K3")}</strong>
+            ##${slot("K3")}
+            <strong>Fernando Pérez</strong> (K3)
           </td>
         </tr>
 
@@ -454,34 +479,36 @@
             <strong>${_(u"Venue closes")}</strong>
           </td>
         </tr>
-    </table>
-  </article>
+      </table>
+    </div>
 
-  <article>
-    <h2>${_(u"Monday, November 12")}</h2>
-    <table class="table table-bordered">
+    <div class="row-fluid content-section">
+      <h1 class="header" id="monday">${_(u"Monday, November 12")}</h1>
+      <table class="table table-bordered">
         <tr>
           <th>All Day</th>
           <td colspan="3">
-            <a href="${request.route_url('sprints')}">${_(u"Sprints")}</a>
+            <strong><a href="${request.route_url('sprints')}">${_(u"Sprints")}</a></strong>
             <br>
             Location: TBD
           </td>
         </tr>
-    </table>
-  </article>
+      </table>
+    </div>
 
-  <article>
-    <h2>${_(u"Tuesday, November 13")}</h2>
-    <table class="table table-bordered">
+    <div class="row-fluid content-section">
+      <h1 class="header" id="tuesday">${_(u"Tuesday, November 13")}</h1>
+      <table class="table table-bordered">
         <tr>
           <th>All Day</th>
           <td colspan="3">
-            <a href="${request.route_url('sprints')}">${_(u"Sprints")}</a>
+            <strong><a href="${request.route_url('sprints')}">${_(u"Sprints")}</a></strong>
             <br>
             Location: TBD
           </td>
         </tr>
-    </table>
-  </article>
+      </table>
+    </div>
+
+  </div>
 </%block>
