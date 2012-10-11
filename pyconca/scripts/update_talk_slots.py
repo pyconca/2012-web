@@ -27,7 +27,7 @@ Day 1	Main hall					Lower hall					Tutorial
 10:50						A2	#29	Vid Ayer	MongoDB and Gene databases					
 11:20	B2	#40	Mike Fletcher	Profiling for Performance		A3	#36	Adam Goucher	A really, really, really, fast tour of WebDriver					
 11:45						A4	#45	Mark Côté	Network programming for automation developers					
-13:05	B3	#71	Brandon Rhodes	Rapid development of website search in Python		A5	#47	Vlad Filippov	Supercharge web application prototypes with the App Engine Python SDK		T2	#61	David Warde-Farley
+13:05	B3	#73	Brandon Rhodes	The Python Æsthetic: Beauty and Warts in Languages and in Code		A5	#47	Vlad Filippov	Supercharge web application prototypes with the App Engine Python SDK		T2	#61	David Warde-Farley
 13:30						A6	#41	Joan Touzet	Hit the Flask and Get Some REST: Rewriting the Cloudant API in a Single Python Back End					
 14:00	B4	#12	Matthew Hooker	Configuration management with ZooKeeper		A7	#28	Lynn Root	3 Projects to Make Python Stick for New Coders					
 14:25						A8	#43	Christopher Lambacher	Everything you wanted to know about deploying web apps on Windows but were too horrified to ask					
