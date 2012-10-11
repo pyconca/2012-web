@@ -3,6 +3,7 @@
 <%block name="head_title">
     ${_(u"Schedule")}
 </%block>
+<%block name="title">${_(u"Schedule")}</%block>
 
 <%def name="slot(code)">
   <%
@@ -15,7 +16,7 @@
     <% return %>
   % endif
 
-  <strong><em>${talk.title}</em> by ${owner.first_name} ${owner.last_name}</strong> (${code})
+  <strong><em>${talk.title}</em></strong> by <strong>${owner.first_name} ${owner.last_name}</strong> (${code})
 </%def>
 
 <%block name="info">
@@ -78,7 +79,7 @@
           </td>
           <td>
             ${slot("A1")}<br>
-            ${_(u" --- 5 minutes --- ")}<br>
+            <br>${_(u" --- 5 minutes --- ")}<br><br>
             ${slot("A2")}
           </td>
           <td rowspan="3">
@@ -100,7 +101,7 @@
           </td>
           <td>
             ${slot("A3")}<br>
-            ${_(u" --- 5 minutes --- ")}<br>
+            <br>${_(u" --- 5 minutes --- ")}<br><br>
             ${slot("A4")}
           </td>
         </tr>
@@ -120,7 +121,7 @@
           </td>
           <td>
             ${slot("A5")}<br>
-            ${_(u" --- 5 minutes --- ")}<br>
+            <br>${_(u" --- 5 minutes --- ")}<br><br>
             ${slot("A6")}
           </td>
           <td rowspan="7">
@@ -142,7 +143,7 @@
           </td>
           <td>
             ${slot("A7")}<br>
-            ${_(u" --- 5 minutes --- ")}<br>
+            <br>${_(u" --- 5 minutes --- ")}<br><br>
             ${slot("A8")}
           </td>
         </tr>
@@ -162,7 +163,7 @@
           </td>
           <td>
             ${slot("A9")}<br>
-            ${_(u" --- 5 minutes --- ")}<br>
+            <br>${_(u" --- 5 minutes --- ")}<br><br>
             ${slot("A10")}
           </td>
         </tr>
@@ -178,13 +179,13 @@
           <th>3:55</th>
           <td>
             ##${slot("A11")}<br>
-            <strong>A11: Meredith L. Patterson</strong><br>
-            ${_(u" --- 5 minutes --- ")}<br>
+            <strong>Meredith L. Patterson</strong> (A11)<br>
+            <br>${_(u" --- 5 minutes --- ")}<br><br>
             ${slot("A12")}
           </td>
           <td>
             ${slot("A13")}<br>
-            ${_(u" --- 5 minutes --- ")}<br>
+            <br>${_(u" --- 5 minutes --- ")}<br><br>
             ${slot("A14")}
           </td>
         </tr>
@@ -207,8 +208,8 @@
             ${slot("L6")}<br>
           </td>
           <td>
-            ${slot("A15")}
-            ${_(u" --- 5 minutes --- ")}<br>
+            ${slot("A15")}<br>
+            <br>${_(u" --- 5 minutes --- ")}<br><br>
             ${slot("A16")}
           </td>
           <td>
@@ -298,28 +299,26 @@
             <strong>Kenneth Reitz</strong> (B6)
           </td>
           <td>
-            ${slot("A17")}
-            ${_(u" --- 5 minutes --- ")}<br>
+            ${slot("A17")}<br>
+            <br>${_(u" --- 5 minutes --- ")}<br><br>
             ${slot("A18")}
           </td>
         </tr>
 
         <tr>
-          <th>10:45</th>
-          <td colspan="3">
-            <strong>${_(u"Break")}</strong>
-          </td>
-        </tr>
-
-        <tr>
           <th>10:55</th>
-          <td colspan="3">
+          <td>
             <strong>Remembrance Day</strong>
           </td>
+          <td>
+            <strong>Remembrance Day</strong>
+          </td>
+          <td>
+          </td>
         </tr>
 
         <tr>
-          <th>11:05</th>
+          <th>11:03</th>
           <td colspan="3">
             <strong>${_(u"Break")}</strong>
           </td>
@@ -332,7 +331,7 @@
           </td>
           <td>
             ${slot("A19")}<br>
-            ${_(u" --- 5 minutes --- ")}<br>
+            <br>${_(u" --- 5 minutes --- ")}<br><br>
             ${slot("A20")}
           </td>
           <td>
@@ -355,7 +354,7 @@
           </td>
           <td>
             ${slot("A21")}<br>
-            ${_(u" --- 5 minutes --- ")}<br>
+            <br>${_(u" --- 5 minutes --- ")}<br><br>
             ${slot("A22")}
           </td>
           <td rowspan="5">
@@ -377,7 +376,7 @@
           </td>
           <td>
             ${slot("A23")}<br>
-            ${_(u" --- 5 minutes --- ")}<br>
+            <br>${_(u" --- 5 minutes --- ")}<br><br>
             ${slot("A24")}
           </td>
         </tr>
@@ -393,13 +392,13 @@
           <th>2:50</th>
           <td>
             ##${slot("A25")}<br>
-            <strong>A25: Elizabeth Leddy</strong><br>
-            ${_(u" --- 5 minutes --- ")}<br>
+            <strong>Elizabeth Leddy</strong> (A25)<br>
+            <br>${_(u" --- 5 minutes --- ")}<br><br>
             ${slot("A26")}
           </td>
           <td>
             ${slot("A27")}<br>
-            ${_(u" --- 5 minutes --- ")}<br>
+            <br>${_(u" --- 5 minutes --- ")}<br><br>
             ${slot("A28")}
           </td>
         </tr>
@@ -423,7 +422,7 @@
           </td>
           <td>
             ${slot("A29")}<br>
-            ${_(u" --- 5 minutes --- ")}<br>
+            <br>${_(u" --- 5 minutes --- ")}<br><br>
             ${slot("A30")}
           </td>
           <td>
@@ -488,7 +487,7 @@
         <tr>
           <th>All Day</th>
           <td colspan="3">
-            <strong><a href="${request.route_url('sprints')}">${_(u"Sprints")}</a></strong>
+            <a href="${request.route_url('sprints')}">${_(u"Sprints")}</a>
             <br>
             Location: TBD
           </td>
@@ -502,7 +501,7 @@
         <tr>
           <th>All Day</th>
           <td colspan="3">
-            <strong><a href="${request.route_url('sprints')}">${_(u"Sprints")}</a></strong>
+            <a href="${request.route_url('sprints')}">${_(u"Sprints")}</a>
             <br>
             Location: TBD
           </td>
