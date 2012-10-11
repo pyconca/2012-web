@@ -14,32 +14,6 @@ from pyconca.temporal import local_isoformat
 
 class TalkApi(BaseApi):
 
-    def index(self):
-        models = self.dao.index()
-        # only return to the scheduled one if request's user is not admin
-        if not self.is_admin:
-            models = [model for model in models if model.schedule_slot]
-
-        self.body['data'][self.name + '_list'] = [
-            self._post_process_for_output(m, m.to_dict(self.is_admin))
-            for m in models
-        ]
-        return self._respond('200 OK')
-
-    # overwrite base get() in order to make only scheduled talk available
-    def get(self):
-        model = self.dao.get(self.id)
-        if model is None:
-            return self._respond('404 Not Found')
-        if model.schedule_slot is None and not self.is_admin \
-           and self.request.user.id != model.owner_id:
-            return self._respond('403 Forbidden')
-
-        self.body['data'][self.name] = \
-                self._post_process_for_output(model,
-                                              model.to_dict(self.is_admin))
-        return self._respond('200 OK')
-
     def _configure(self):
         self.name = 'talk'
         self.dao = TalkDao(self.request.user)
