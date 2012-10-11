@@ -3,6 +3,7 @@
 <%block name="head_title">
     ${_(u"Schedule")}
 </%block>
+<%block name="title">${_(u"Schedule")}</%block>
 
 <%def name="slot(code)">
   <%
