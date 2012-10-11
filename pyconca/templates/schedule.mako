@@ -117,8 +117,7 @@
         <tr>
           <th>1:05</th>
           <td>
-            ##${slot("B3")}
-            <strong>Brandon Rhodes</strong> (B3)
+            ${slot("B3")}
           </td>
           <td>
             ${slot("A5")}<br>
@@ -181,7 +180,7 @@
           <td>
             ##${slot("A11")}<br>
             <strong>Meredith L. Patterson</strong> (A11)<br>
-            <br>${_(u" --- 5 minutes --- ")}<br><br>
+            ${_(u" --- 5 minutes --- ")}<br>
             ${slot("A12")}
           </td>
           <td>
@@ -304,6 +303,8 @@
             <br>${_(u" --- 5 minutes --- ")}<br><br>
             ${slot("A18")}
           </td>
+          <td>
+          </td>
         </tr>
 
         <tr>
@@ -394,7 +395,7 @@
           <td>
             ##${slot("A25")}<br>
             <strong>Elizabeth Leddy</strong> (A25)<br>
-            <br>${_(u" --- 5 minutes --- ")}<br><br>
+            ${_(u" --- 5 minutes --- ")}<br>
             ${slot("A26")}
           </td>
           <td>

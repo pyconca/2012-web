@@ -8,9 +8,18 @@ from datetime import datetime, timedelta
 import transaction
 from pyramid.paster import get_appsettings
 from pyramid.paster import setup_logging
-
 from sqlalchemy import engine_from_config
 
+# !!!!!! WARNING !!!!!!
+# DO NOT HAND EDIT THIS
+# !!!!!! WARNING !!!!!!
+# Update the "Talk Schedule" spreadsheet:
+#    https://docs.google.com/a/pycon.ca/spreadsheet/ccc?key=0Akocld_Y2HsLdEcyVTdZTmJxSWpYRWdoVU5aZXo0UWc#gid=1
+# Then copy+paste the entire spreadsheet in here
+# Run this file directly (or pass the --dry-run argument) to preview changes
+# !!!!!! WARNING !!!!!!
+# DO NOT HAND EDIT THIS
+# !!!!!! WARNING !!!!!!
 schedule = u"""
 Day 1	Main hall					Lower hall					Tutorial			
 9:30	K1		Jessica McKellar											
@@ -18,14 +27,14 @@ Day 1	Main hall					Lower hall					Tutorial
 10:50						A2	#29	Vid Ayer	MongoDB and Gene databases					
 11:20	B2	#40	Mike Fletcher	Profiling for Performance		A3	#36	Adam Goucher	A really, really, really, fast tour of WebDriver					
 11:45						A4	#45	Mark Côté	Network programming for automation developers					
-13:05	B3		Brandon Rhodes			A5	#47	Vlad Filippov	Supercharge web application prototypes with the App Engine Python SDK		T2	#61	David Warde-Farley	Introduction to Numerical and Scientific Computing with Python
+13:05	B3	#73	Brandon Rhodes	The Python Æsthetic: Beauty and Warts in Languages and in Code		A5	#47	Vlad Filippov	Supercharge web application prototypes with the App Engine Python SDK		T2	#61	David Warde-Farley
 13:30						A6	#41	Joan Touzet	Hit the Flask and Get Some REST: Rewriting the Cloudant API in a Single Python Back End					
 14:00	B4	#12	Matthew Hooker	Configuration management with ZooKeeper		A7	#28	Lynn Root	3 Projects to Make Python Stick for New Coders					
 14:25						A8	#43	Christopher Lambacher	Everything you wanted to know about deploying web apps on Windows but were too horrified to ask					
 15:00	B5		Django ???			A9	#21	Tres Seaver	Lightweight Web Services with Pyramid					
 15:25						A10	#7	Blaise Laflamme	Pyramid Layout: Composable UI/UX for Pyramid					
 15:55	A11		Meredith L. Patterson	Don't be afraid to fail in public		A13	#23	James King	Distributed Programming in Python: A Model for Strong, Eventual Consistency					
-16:20	A12	#3	Adam McKerlie	Testing Django with Travis CI		A14	#53	Yannick Hold	Once you Scoop, no need to fork					
+16:20	A12	#51	Éric Araujo	How you can contribute to Python		A14	#53	Yannick Hold	Once you Scoop, no need to fork					
 16:50	L		Lightning talks L1:L6			A15	#44	Mahdi Yusuf	Twisted History of Python Packaging					
 17:15						A16	#32	Martin Alderete	NINJA-IDE, an IDE specially designed for Python					
 														
@@ -39,12 +48,15 @@ Day 2	Main hall					Lower hall					Tutorial
 13:20						A22	#42	Diego Muñoz Escalante	An Ember.js adapter for Django					
 13:50	B9	#60	Andrew Francis	How to Solve a Problem Like Santa Claus		A23	#58	Gabriel Grant	Distributed, Real-time Web Apps with Stack.io					
 14:15						A24	#15	Ian Ward	Cool Stuff You Can Do With Urwid					
-15:50	A25		Elizabeth Leddy	Community and Plone		A27	#37	Maxime Noël	DynamoDB and DynamoDB-Mapper -- Building scalable Python applications with Amazon's NoSQL database					
-15:15	A26	#51	Éric Araujo	How you can contribute to Python		A28	#26	Anna Filina	Speed Up Your Database					
+14:50	A25		Elizabeth Leddy	Community and Plone		A27	#37	Maxime Noël	DynamoDB and DynamoDB-Mapper -- Building scalable Python applications with Amazon's NoSQL database					
+15:15	A26	#3	Adam McKerlie	Testing Django with Travis CI		A28	#26	Anna Filina	Speed Up Your Database					
 15:45	L					A29	#18	Chayim Kirshen	Programmatically Managing Python Workloads Across Multiple Clouds					
 16:10						A30		TBD (Google)						
-16:40	K3			K3: Fernando Pérez										
+16:40	K3		Fernando Pérez										
 """
+# !!!!!! WARNING !!!!!!
+# DO NOT HAND EDIT THIS
+# !!!!!! WARNING !!!!!!
 
 Slot = namedtuple("Slot", "start end room code talk")
 Talk = namedtuple("Talk", "id owner_name")
@@ -135,9 +147,12 @@ def parse_schedule(schedule):
 
 def usage(argv):
     cmd = os.path.basename(argv[0])
-    print "usage: %s <config_uri>" % (cmd, )
+    print "usage: %s [--dry-run] <config_uri>" % (cmd, )
     print "example: '%s development.ini'" % (cmd, )
-    print "NOTE: This is safe to run in production!"
+    print "NOTE: This will update the database to correspond to the table in"
+    print "          ", __file__
+    print "      This will overwrite (but also back up) any changes made "
+    print "      manually to the database."
 
 
 def main(argv=sys.argv):
@@ -145,12 +160,24 @@ def main(argv=sys.argv):
 
     if len(argv) != 2:
         usage(argv)
-        sys.exit(1)
+        return 1
+
+    if "--dry-run" in sys.argv:
+        print "\n".join(map(str, parse_schedule(schedule)))
+        return 0
+        
     config_uri = argv[1]
     setup_logging(config_uri)
     settings = get_appsettings(config_uri)
     engine = engine_from_config(settings, 'sqlalchemy.')
     DBSession.configure(bind=engine)
+
+    dumpdb = os.path.join(os.path.dirname(__file__), "../../prod_mysqldump")
+    if os.path.exists(dumpdb):
+        print "Running %r..." %(dumpdb, )
+        res = os.system(dumpdb)
+        if res:
+            return res
 
     with transaction.manager:
         for slot in parse_schedule(schedule):
@@ -175,7 +202,6 @@ def main(argv=sys.argv):
                     ts.talk_id = t.id
                 ts.schedule_slot = s
                 DBSession.add(ts)
-
         DBSession.flush()
 
 if __name__ == "__main__":
