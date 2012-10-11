@@ -303,6 +303,8 @@
             <br>${_(u" --- 5 minutes --- ")}<br><br>
             ${slot("A18")}
           </td>
+          <td>
+          </td>
         </tr>
 
         <tr>
