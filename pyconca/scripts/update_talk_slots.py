@@ -11,6 +11,16 @@ from pyramid.paster import setup_logging
 
 from sqlalchemy import engine_from_config
 
+# !!!!!! WARNING !!!!!!
+# DO NOT HAND EDIT THIS
+# !!!!!! WARNING !!!!!!
+# Update the "Talk Schedule" spreadsheet:
+#    https://docs.google.com/a/pycon.ca/spreadsheet/ccc?key=0Akocld_Y2HsLdEcyVTdZTmJxSWpYRWdoVU5aZXo0UWc#gid=1
+# Then copy+paste the entire spreadsheet in here
+# Run this file directly (or pass the --dry-run argument) to preview changes
+# !!!!!! WARNING !!!!!!
+# DO NOT HAND EDIT THIS
+# !!!!!! WARNING !!!!!!
 schedule = u"""
 Day 1	Main hall					Lower hall					Tutorial			
 9:30	K1		Jessica McKellar											
@@ -45,6 +55,9 @@ Day 2	Main hall					Lower hall					Tutorial
 16:10						A30		TBD (Google)						
 16:40	K3		Fernando Pérez										
 """
+# !!!!!! WARNING !!!!!!
+# DO NOT HAND EDIT THIS
+# !!!!!! WARNING !!!!!!
 
 Slot = namedtuple("Slot", "start end room code talk")
 Talk = namedtuple("Talk", "id owner_name")
@@ -135,9 +148,12 @@ def parse_schedule(schedule):
 
 def usage(argv):
     cmd = os.path.basename(argv[0])
-    print "usage: %s <config_uri>" % (cmd, )
+    print "usage: %s [--dry-run] <config_uri>" % (cmd, )
     print "example: '%s development.ini'" % (cmd, )
-    print "NOTE: This is safe to run in production!"
+    print "NOTE: This will update the database to correspond to the table in"
+    print "          ", __file__
+    print "      This will overwrite (but also back up) any changes made "
+    print "      manually to the database."
 
 
 def main(argv=sys.argv):
@@ -145,7 +161,12 @@ def main(argv=sys.argv):
 
     if len(argv) != 2:
         usage(argv)
-        sys.exit(1)
+        return 1
+
+    if "--dry-run" in sys.argv:
+        print "\n".join(map(str, parse_schedule(schedule)))
+        return 0
+        
     config_uri = argv[1]
     setup_logging(config_uri)
     settings = get_appsettings(config_uri)
@@ -175,7 +196,6 @@ def main(argv=sys.argv):
                     ts.talk_id = t.id
                 ts.schedule_slot = s
                 DBSession.add(ts)
-
         DBSession.flush()
 
 if __name__ == "__main__":
