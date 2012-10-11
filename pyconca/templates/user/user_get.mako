@@ -1,8 +1,9 @@
 <%inherit file="pyconca:templates/generic.mako"/>
 
-<%block name="header">
-    User Profile
+<%block name="head_title">
+    ${_(u"User Profile")}
 </%block>
+
 
 <%block name="form">
 

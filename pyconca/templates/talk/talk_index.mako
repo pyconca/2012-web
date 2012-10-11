@@ -1,7 +1,11 @@
 <%inherit file="pyconca:templates/generic.mako"/>
 
-<%block name="header">
-    Talks
+<%block name="head_title">
+    ${_(u"Talks")}
+</%block>
+
+<%block name="title">
+    ${_(u"Talks")}
 </%block>
 
 <%block name="header_right">
