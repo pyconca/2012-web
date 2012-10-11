@@ -116,8 +116,7 @@
         <tr>
           <th>1:05</th>
           <td>
-            ##${slot("B3")}
-            <strong>Brandon Rhodes</strong> (B3)
+            ${slot("B3")}
           </td>
           <td>
             ${slot("A5")}<br>
