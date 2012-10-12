@@ -84,6 +84,7 @@
             ${slot("A2")}
           </td>
           <td rowspan="3">
+            90 minute tutorial:<br>
             ${slot("T1")}
           </td>
         </tr>
@@ -125,6 +126,7 @@
             ${slot("A6")}
           </td>
           <td rowspan="7">
+            3 hour tutorial:<br>
             ${slot("T2")}
           </td>
         </tr>
@@ -360,6 +362,7 @@
             ${slot("A22")}
           </td>
           <td rowspan="5">
+            2 hour tutorial:<br>
             ${slot("T4")}
           </td>
         </tr>
