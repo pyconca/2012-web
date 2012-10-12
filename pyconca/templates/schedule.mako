@@ -74,8 +74,7 @@
         <tr>
           <th>10:25</th>
           <td>
-            ##${slot("B1")}
-            <strong>Michael Bayer</strong> (B1)
+            ${slot("B1")}
           </td>
           <td>
             ${slot("A1")}<br>
@@ -181,7 +180,7 @@
           <td>
             ##${slot("A11")}<br>
             <strong>Meredith L. Patterson</strong> (A11)<br>
-            ${_(u" --- 5 minutes --- ")}<br>
+            <br>${_(u" --- 5 minutes --- ")}<br><br>
             ${slot("A12")}
           </td>
           <td>
@@ -397,7 +396,7 @@
           <td>
             ##${slot("A25")}<br>
             <strong>Elizabeth Leddy</strong> (A25)<br>
-            ${_(u" --- 5 minutes --- ")}<br>
+            <br>${_(u" --- 5 minutes --- ")}<br><br>
             ${slot("A26")}
           </td>
           <td>
