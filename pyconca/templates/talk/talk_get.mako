@@ -17,11 +17,18 @@
 <br>
 
 <form id="delete-form" method="POST">
-    <a class="btn btn-info"
-       href="${request.route_url('talk_update', id=id)}">
-       Edit
-    </a>
+    % if is_talk_owner:
+      <a class="btn btn-info"
+         href="${request.route_url('talk_update', id=id)}">
+         Edit
+      </a>
+    % endif
+
     % if is_admin:
+      <a class="btn btn-info"
+         href="${request.route_url('talk_update', id=id)}">
+         Edit
+      </a>
       <input class="btn" type="submit" value="Delete"/>
     % endif
 </form>
