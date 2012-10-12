@@ -42,8 +42,8 @@
         <%include file="pyconca:templates/sponsors/google.mako"/>
       </div>
       <div class="span6">
-        <h2>Venue Sponsor</h2>
-        <%include file="pyconca:templates/sponsors/psf.mako"/>
+        <h2>Travel Sponsor</h2>
+        <%include file="pyconca:templates/sponsors/points.mako"/>
       </div>
     </div>
 
@@ -53,8 +53,8 @@
         <%include file="pyconca:templates/sponsors/crs.mako"/>
       </div>
       <div class="span6">
-        <h2>Hosting Sponsor</h2>
-        <%include file="pyconca:templates/sponsors/vmfarms.mako"/>
+        <h2>Venue Sponsor</h2>
+        <%include file="pyconca:templates/sponsors/psf.mako"/>
       </div>
     </div>
 
@@ -67,6 +67,17 @@
       <div class="span6">
         <h2>Media Sponsor</h2>
         <%include file="pyconca:templates/sponsors/bnotions.mako"/>
+      </div>
+    </div>
+
+    <div class="row-fluid">
+      <div class="span6">
+        <h2>Transportation Sponsor</h2>
+        <%include file="pyconca:templates/sponsors/uber.mako"/>
+      </div>
+      <div class="span6">
+        <h2>Hosting Sponsor</h2>
+        <%include file="pyconca:templates/sponsors/vmfarms.mako"/>
       </div>
     </div>
 

@@ -34,6 +34,6 @@ setup(name='pyconca',
       [console_scripts]
       initialize_pyconca_db = pyconca.scripts.initializedb:main
       pyconca_create_tables = pyconca.scripts.create_tables:main
-      pyconca_create_talk_slots = pyconca.scripts.create_talk_slots:main
+      pyconca_update_talk_slots = pyconca.scripts.update_talk_slots:main
       """,
       )

@@ -3,6 +3,7 @@
 <%block name="head_title">
     ${_(u"Schedule")}
 </%block>
+<%block name="title">${_(u"Schedule")}</%block>
 
 <%def name="slot(code)">
   <%
@@ -11,11 +12,11 @@
     owner = talk and talk.owner
   %>
   % if not talk:
-    ${code} - TBA
+    <strong>TBA</strong> (${code})
     <% return %>
   % endif
 
-  ${code}: ${owner.first_name} ${owner.last_name}: ${talk.title}
+  <strong><em>${talk.title}</em></strong> by <strong>${owner.first_name} ${owner.last_name}</strong> (${code})
 </%def>
 
 <%block name="info">
@@ -58,7 +59,8 @@
         <tr>
           <th>9:30</th>
           <td colspan="3">
-            <strong>${slot("K1")}</strong>
+            ##${slot("K1")}
+            <strong>Jessica McKellar</strong> (K1)
           </td>
         </tr>
 
@@ -72,15 +74,17 @@
         <tr>
           <th>10:25</th>
           <td>
-            <strong>${slot("B1")}</strong>
+            ##${slot("B1")}
+            <strong>Michael Bayer</strong> (B1)
           </td>
           <td>
-            <strong>${slot("A1")}</strong><br>
-            ${_(u" --- 5 minutes --- ")}<br>
-            <strong>${slot("A2")}</strong>
+            ${slot("A1")}<br>
+            <br>${_(u" --- 5 minutes --- ")}<br><br>
+            ${slot("A2")}
           </td>
           <td rowspan="3">
-            <strong>${slot("T1")}</strong>
+            90 minute tutorial:<br>
+            ${slot("T1")}
           </td>
         </tr>
 
@@ -94,12 +98,12 @@
         <tr>
           <th>11:20</th>
           <td>
-            <strong>${slot("B2")}</strong>
+            ${slot("B2")}
           </td>
           <td>
-            <strong>${slot("A3")}</strong><br>
-            ${_(u" --- 5 minutes --- ")}<br>
-            <strong>${slot("A4")}</strong>
+            ${slot("A3")}<br>
+            <br>${_(u" --- 5 minutes --- ")}<br><br>
+            ${slot("A4")}
           </td>
         </tr>
 
@@ -113,15 +117,16 @@
         <tr>
           <th>1:05</th>
           <td>
-            <strong>${slot("B3")}</strong>
+            ${slot("B3")}
           </td>
           <td>
-            <strong>${slot("A5")}</strong><br>
-            ${_(u" --- 5 minutes --- ")}<br>
-            <strong>${slot("A6")}</strong>
+            ${slot("A5")}<br>
+            <br>${_(u" --- 5 minutes --- ")}<br><br>
+            ${slot("A6")}
           </td>
           <td rowspan="7">
-            <strong>${slot("T2")}</strong>
+            3 hour tutorial:<br>
+            ${slot("T2")}
           </td>
         </tr>
 
@@ -135,12 +140,12 @@
         <tr>
           <th>2:00</th>
           <td>
-            <strong>${slot("B4")}</strong>
+            ${slot("B4")}
           </td>
           <td>
-            <strong>${slot("A7")}</strong><br>
-            ${_(u" --- 5 minutes --- ")}<br>
-            <strong>${slot("A8")}</strong>
+            ${slot("A7")}<br>
+            <br>${_(u" --- 5 minutes --- ")}<br><br>
+            ${slot("A8")}
           </td>
         </tr>
 
@@ -154,12 +159,13 @@
         <tr>
           <th>3:00</th>
           <td>
-            <strong>${slot("B5")}</strong>
+            ##${slot("B5")}
+            <strong>Daniel Lindsley</strong> (B5)
           </td>
           <td>
-            <strong>${slot("A9")}</strong><br>
-            ${_(u" --- 5 minutes --- ")}<br>
-            <strong>${slot("A10")}</strong>
+            ${slot("A9")}<br>
+            <br>${_(u" --- 5 minutes --- ")}<br><br>
+            ${slot("A10")}
           </td>
         </tr>
 
@@ -173,12 +179,15 @@
         <tr>
           <th>3:55</th>
           <td>
-            <strong>${slot("B6")}</strong>
+            ##${slot("A11")}<br>
+            <strong>Meredith L. Patterson</strong> (A11)<br>
+            ${_(u" --- 5 minutes --- ")}<br>
+            ${slot("A12")}
           </td>
           <td>
-            <strong>${slot("A11")}</strong><br>
-            ${_(u" --- 5 minutes --- ")}<br>
-            <strong>${slot("A12")}</strong>
+            ${slot("A13")}<br>
+            <br>${_(u" --- 5 minutes --- ")}<br><br>
+            ${slot("A14")}
           </td>
         </tr>
 
@@ -192,17 +201,17 @@
         <tr>
           <th>4:50</th>
           <td>
-            <strong>${slot("L1")}</strong><br>
-            <strong>${slot("L2")}</strong><br>
-            <strong>${slot("L3")}</strong><br>
-            <strong>${slot("L4")}</strong><br>
-            <strong>${slot("L5")}</strong><br>
-            <strong>${slot("L6")}</strong><br>
+            ${slot("L1")}<br>
+            ${slot("L2")}<br>
+            ${slot("L3")}<br>
+            ${slot("L4")}<br>
+            ${slot("L5")}<br>
+            ${slot("L6")}<br>
           </td>
           <td>
-            <strong>${slot("A13")}</strong><br>
-            ${_(u" --- 5 minutes --- ")}<br>
-            <strong>${slot("A14")}</strong>
+            ${slot("A15")}<br>
+            <br>${_(u" --- 5 minutes --- ")}<br><br>
+            ${slot("A16")}
           </td>
           <td>
           </td>
@@ -270,47 +279,49 @@
         </tr>
 
         <tr>
-          <th>9:30</th>
+          <th>9:15</th>
           <td colspan="3">
-            <strong>${slot("K2")}</strong>
+            ##${slot("K2")}
+            <strong>Michael Feathers</strong> (K2)
           </td>
         </tr>
 
         <tr>
-          <th>10:15</th>
-          <td colspan="3">
-            <strong>${_(u"Break")}</strong>
-          </td>
-        </tr>
-
-        <tr>
-          <th>10:25</th>
-          <td>
-            <strong>${slot("A15")}</strong>
-          </td>
-          <td>
-            <strong>${slot("A16")}</strong>
-          </td>
-          <td>
-          </td>
-        </tr>
-
-        <tr>
-          <th>10:45</th>
+          <th>10:00</th>
           <td colspan="3">
             <strong>${_(u"Break")}</strong>
+          </td>
+        </tr>
+
+        <tr>
+          <th>10:10</th>
+          <td>
+            ## ${slot("B6")}
+            <strong>Kenneth Reitz</strong> (B6)
+          </td>
+          <td>
+            ${slot("A17")}<br>
+            <br>${_(u" --- 5 minutes --- ")}<br><br>
+            ${slot("A18")}
+          </td>
+          <td>
           </td>
         </tr>
 
         <tr>
           <th>10:55</th>
-          <td colspan="3">
+          <td>
             <strong>Remembrance Day</strong>
+          </td>
+          <td>
+            <strong>Remembrance Day</strong>
+          </td>
+          <td>
           </td>
         </tr>
 
         <tr>
-          <th>11:05</th>
+          <th>11:03</th>
           <td colspan="3">
             <strong>${_(u"Break")}</strong>
           </td>
@@ -319,15 +330,15 @@
         <tr>
           <th>11:10</th>
           <td>
-            <strong>${slot("B7")}</strong>
+            ${slot("B7")}
           </td>
           <td>
-            <strong>${slot("A17")}</strong><br>
-            ${_(u" --- 5 minutes --- ")}<br>
-            <strong>${slot("A18")}</strong>
+            ${slot("A19")}<br>
+            <br>${_(u" --- 5 minutes --- ")}<br><br>
+            ${slot("A20")}
           </td>
           <td>
-            <strong>${slot("T3")}</strong>
+            ${slot("T3")}
           </td>
         </tr>
 
@@ -341,15 +352,17 @@
         <tr>
           <th>12:55</th>
           <td>
-            <strong>${slot("B8")}</strong>
+            ##${slot("B8")}
+            <strong><em>OpenStack 101</em> by Sandy Walsh</strong> (B8)
           </td>
           <td>
-            <strong>${slot("A19")}</strong><br>
-            ${_(u" --- 5 minutes --- ")}<br>
-            <strong>${slot("A20")}</strong>
+            ${slot("A21")}<br>
+            <br>${_(u" --- 5 minutes --- ")}<br><br>
+            ${slot("A22")}
           </td>
           <td rowspan="5">
-            <strong>${slot("T4")}</strong>
+            2 hour tutorial:<br>
+            ${slot("T4")}
           </td>
         </tr>
 
@@ -363,12 +376,12 @@
         <tr>
           <th>1:50</th>
           <td>
-            <strong>${slot("B9")}</strong>
+            ${slot("B9")}
           </td>
           <td>
-            <strong>${slot("A21")}</strong><br>
-            ${_(u" --- 5 minutes --- ")}<br>
-            <strong>${slot("A22")}</strong>
+            ${slot("A23")}<br>
+            <br>${_(u" --- 5 minutes --- ")}<br><br>
+            ${slot("A24")}
           </td>
         </tr>
 
@@ -382,12 +395,15 @@
         <tr>
           <th>2:50</th>
           <td>
-            <strong>${slot("B10")}</strong>
+            ##${slot("A25")}<br>
+            <strong>Elizabeth Leddy</strong> (A25)<br>
+            ${_(u" --- 5 minutes --- ")}<br>
+            ${slot("A26")}
           </td>
           <td>
-            <strong>${slot("A23")}</strong><br>
-            ${_(u" --- 5 minutes --- ")}<br>
-            <strong>${slot("A24")}</strong>
+            ${slot("A27")}<br>
+            <br>${_(u" --- 5 minutes --- ")}<br><br>
+            ${slot("A28")}
           </td>
         </tr>
 
@@ -401,17 +417,17 @@
         <tr>
           <th>3:45</th>
           <td>
-            <strong>${slot("L7")}</strong><br>
-            <strong>${slot("L8")}</strong><br>
-            <strong>${slot("L9")}</strong><br>
-            <strong>${slot("L10")}</strong><br>
-            <strong>${slot("L11")}</strong><br>
-            <strong>${slot("L12")}</strong><br>
+            ${slot("L7")}<br>
+            ${slot("L8")}<br>
+            ${slot("L9")}<br>
+            ${slot("L10")}<br>
+            ${slot("L11")}<br>
+            ${slot("L12")}<br>
           </td>
           <td>
-            <strong>${slot("A25")}</strong><br>
-            ${_(u" --- 5 minutes --- ")}<br>
-            <strong>${slot("A26")}</strong>
+            ${slot("A29")}<br>
+            <br>${_(u" --- 5 minutes --- ")}<br><br>
+            ${slot("A30")}
           </td>
           <td>
           </td>
@@ -427,7 +443,8 @@
         <tr>
           <th>4:40</th>
           <td colspan="3">
-            <strong>${slot("K3")}</strong>
+            ##${slot("K3")}
+            <strong>Fernando Pérez</strong> (K3)
           </td>
         </tr>
 
@@ -474,7 +491,7 @@
         <tr>
           <th>All Day</th>
           <td colspan="3">
-            <strong><a href="${request.route_url('sprints')}">${_(u"Sprints")}</a></strong>
+            <a href="${request.route_url('sprints')}">${_(u"Sprints")}</a>
             <br>
             Location: TBD
           </td>
@@ -488,7 +505,7 @@
         <tr>
           <th>All Day</th>
           <td colspan="3">
-            <strong><a href="${request.route_url('sprints')}">${_(u"Sprints")}</a></strong>
+            <a href="${request.route_url('sprints')}">${_(u"Sprints")}</a>
             <br>
             Location: TBD
           </td>
