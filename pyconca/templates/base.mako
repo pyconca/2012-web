@@ -133,6 +133,11 @@
                         ${_(u"Silver Sponsor • Chango")}
                       </a>
                     </li>
+                    <li>
+                      <a href="${request.route_url('directory')}">
+                        ${_(u"Independent Sponsors")}
+                      </a>
+                    </li>
                   </ul>
                 </li>
                   <li>
