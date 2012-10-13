@@ -74,8 +74,7 @@
         <tr>
           <th>10:25</th>
           <td>
-            ##${slot("B1")}
-            <strong>Michael Bayer</strong> (B1)
+            ${slot("B1")}
           </td>
           <td>
             ${slot("A1")}<br>
@@ -178,8 +177,8 @@
           <th>3:55</th>
           <td>
             ##${slot("A11")}<br>
-            <strong>Meredith L. Patterson</strong> (A11)<br>
-            ${_(u" --- 5 minutes --- ")}<br>
+            <strong>Meredith L. Patterson</strong> (A11)<br /><br />
+            ${_(u" --- 5 minutes --- ")}<br /><br />
             ${slot("A12")}
           </td>
           <td>
@@ -199,16 +198,26 @@
         <tr>
           <th>4:50</th>
           <td>
-            ${slot("L1")}<br>
-            ${slot("L2")}<br>
-            ${slot("L3")}<br>
-            ${slot("L4")}<br>
-            ${slot("L5")}<br>
-            ${slot("L6")}<br>
+            ${slot("L1")}<br /><br />
+            ## ${slot("L2")}<br /><br />
+            <strong>Douglas Cerna</strong> (L2)<br /><br />
+            ${slot("L3")}
           </td>
           <td>
-            ${slot("A15")}<br>
-            <br>${_(u" --- 5 minutes --- ")}<br><br>
+            ${slot("A15")}
+          </td>
+          <td>
+          </td>
+        </tr>
+
+        <tr>
+          <th>5:15</th>
+          <td>
+            ${slot("L4")}<br /><br />
+            ${slot("L5")}<br /><br />
+            ${slot("L6")}
+          </td>
+          <td>
             ${slot("A16")}
           </td>
           <td>
@@ -393,14 +402,22 @@
           <th>2:50</th>
           <td>
             ##${slot("A25")}<br>
-            <strong>Elizabeth Leddy</strong> (A25)<br>
-            ${_(u" --- 5 minutes --- ")}<br>
-            ${slot("A26")}
+            <strong>Elizabeth Leddy</strong> (A25)
           </td>
           <td>
             ${slot("A27")}<br>
-            <br>${_(u" --- 5 minutes --- ")}<br><br>
+          </td>
+        </tr>
+
+        <tr>
+          <th>3:15</th>
+          <td>
+            ${slot("A26")}
+          </td>
+          <td>
             ${slot("A28")}
+          </td>
+          <td>
           </td>
         </tr>
 
@@ -414,16 +431,25 @@
         <tr>
           <th>3:45</th>
           <td>
-            ${slot("L7")}<br>
-            ${slot("L8")}<br>
-            ${slot("L9")}<br>
-            ${slot("L10")}<br>
-            ${slot("L11")}<br>
-            ${slot("L12")}<br>
+            ${slot("L7")}<br /><br />
+            ${slot("L8")}<br /><br />
+            ${slot("L9")}
           </td>
           <td>
-            ${slot("A29")}<br>
-            <br>${_(u" --- 5 minutes --- ")}<br><br>
+            ${slot("A29")}
+          </td>
+          <td>
+          </td>
+        </tr>
+
+        <tr>
+          <th>4:10</th>
+          <td>
+            ${slot("L10")}<br /><br />
+            ${slot("L11")}<br /><br />
+            ${slot("L12")}
+          </td>
+          <td>
             ${slot("A30")}
           </td>
           <td>
