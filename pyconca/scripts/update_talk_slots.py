@@ -23,7 +23,7 @@ from sqlalchemy import engine_from_config
 schedule = u"""
 Day 1	Main hall					Lower hall					Tutorial			
 9:30	K1		Jessica McKellar											
-10:25	B1	#74	Michael Bayer	The SQLAlchemy Session		A1	#19	Trevor Bekolay	Writing self-documenting scientific code using physical quantities		T1	#6	Anthony Scopatz	HDF5 is for Lovers
+10:25	B1	#74	Michael Bayer	The SQLAlchemy Session - In Depth		A1	#19	Trevor Bekolay	Writing self-documenting scientific code using physical quantities		T1	#6	Anthony Scopatz	HDF5 is for Lovers
 10:50						A2	#29	Vid Ayer	MongoDB and Gene databases					
 11:20	B2	#40	Mike Fletcher	Profiling for Performance		A3	#36	Adam Goucher	A really, really, really, fast tour of WebDriver					
 11:45						A4	#45	Mark Côté	Network programming for automation developers					

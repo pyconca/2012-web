@@ -78,10 +78,11 @@
           </td>
           <td>
             ${slot("A1")}<br>
-            <br>${_(u" --- 5 minutes --- ")}<br><br>
+            <br>${_(u" • 5 minutes • ")}<br><br>
             ${slot("A2")}
           </td>
           <td rowspan="3">
+            90 minute tutorial:<br>
             ${slot("T1")}
           </td>
         </tr>
@@ -100,7 +101,7 @@
           </td>
           <td>
             ${slot("A3")}<br>
-            <br>${_(u" --- 5 minutes --- ")}<br><br>
+            <br>${_(u" • 5 minutes • ")}<br><br>
             ${slot("A4")}
           </td>
         </tr>
@@ -119,10 +120,11 @@
           </td>
           <td>
             ${slot("A5")}<br>
-            <br>${_(u" --- 5 minutes --- ")}<br><br>
+            <br>${_(u" • 5 minutes • ")}<br><br>
             ${slot("A6")}
           </td>
           <td rowspan="7">
+            3 hour tutorial:<br>
             ${slot("T2")}
           </td>
         </tr>
@@ -141,7 +143,7 @@
           </td>
           <td>
             ${slot("A7")}<br>
-            <br>${_(u" --- 5 minutes --- ")}<br><br>
+            <br>${_(u" • 5 minutes • ")}<br><br>
             ${slot("A8")}
           </td>
         </tr>
@@ -161,7 +163,7 @@
           </td>
           <td>
             ${slot("A9")}<br>
-            <br>${_(u" --- 5 minutes --- ")}<br><br>
+            <br>${_(u" • 5 minutes • ")}<br><br>
             ${slot("A10")}
           </td>
         </tr>
@@ -178,12 +180,12 @@
           <td>
             ##${slot("A11")}<br>
             <strong>Meredith L. Patterson</strong> (A11)<br /><br />
-            ${_(u" --- 5 minutes --- ")}<br /><br />
+            ${_(u" • 5 minutes • ")}<br /><br />
             ${slot("A12")}
           </td>
           <td>
             ${slot("A13")}<br>
-            <br>${_(u" --- 5 minutes --- ")}<br><br>
+            <br>${_(u" • 5 minutes • ")}<br><br>
             ${slot("A14")}
           </td>
         </tr>
@@ -308,7 +310,7 @@
           </td>
           <td>
             ${slot("A17")}<br>
-            <br>${_(u" --- 5 minutes --- ")}<br><br>
+            <br>${_(u" • 5 minutes • ")}<br><br>
             ${slot("A18")}
           </td>
           <td>
@@ -341,7 +343,7 @@
           </td>
           <td>
             ${slot("A19")}<br>
-            <br>${_(u" --- 5 minutes --- ")}<br><br>
+            <br>${_(u" • 5 minutes • ")}<br><br>
             ${slot("A20")}
           </td>
           <td>
@@ -364,10 +366,11 @@
           </td>
           <td>
             ${slot("A21")}<br>
-            <br>${_(u" --- 5 minutes --- ")}<br><br>
+            <br>${_(u" • 5 minutes • ")}<br><br>
             ${slot("A22")}
           </td>
           <td rowspan="5">
+            2 hour tutorial:<br>
             ${slot("T4")}
           </td>
         </tr>
@@ -386,7 +389,7 @@
           </td>
           <td>
             ${slot("A23")}<br>
-            <br>${_(u" --- 5 minutes --- ")}<br><br>
+            <br>${_(u" • 5 minutes • ")}<br><br>
             ${slot("A24")}
           </td>
         </tr>

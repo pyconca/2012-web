@@ -35,6 +35,7 @@
             <li><%include file="pyconca:templates/sponsors/chango.mako" args="img_class='black-and-white'"/></li>
             <li><%include file="pyconca:templates/sponsors/psf.mako" args="img_class='black-and-white'"/></li>
             <li><%include file="pyconca:templates/sponsors/google.mako" args="img_class='black-and-white'"/></li>
+            <li><%include file="pyconca:templates/sponsors/points.mako" args="img_class='black-and-white'"/></li>
             <li><%include file="pyconca:templates/sponsors/crs.mako" args="img_class='black-and-white'"/></li>
             <li><%include file="pyconca:templates/sponsors/upverter.mako" args="img_class='black-and-white'"/></li>
             <li><%include file="pyconca:templates/sponsors/bnotions.mako" args="img_class='black-and-white'"/></li>
@@ -44,6 +45,7 @@
             <li><%include file="pyconca:templates/sponsors/trapeze.mako" args="img_class='black-and-white'"/></li>
             <li><%include file="pyconca:templates/sponsors/guru_link.mako" args="img_class='black-and-white'"/></li>
             <li><%include file="pyconca:templates/sponsors/cloudant.mako" args="img_class='black-and-white'"/></li>
+            <li><%include file="pyconca:templates/sponsors/uber.mako" args="img_class='black-and-white'"/></li>
             <li><%include file="pyconca:templates/sponsors/vmfarms.mako" args="img_class='black-and-white'"/></li>
             <li><%include file="pyconca:templates/sponsors/llc.mako" args="img_class='black-and-white'"/></li>
             <li><%include file="pyconca:templates/sponsors/element34.mako" args="img_class='black-and-white'"/></li>
@@ -90,7 +92,7 @@
   $(function() {
     $('#slider').tinycarousel({
       interval: true,
-      intervaltime: 3500,
+      intervaltime: 2000,
       duration: 500
     });
   });

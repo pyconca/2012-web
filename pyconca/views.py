@@ -63,6 +63,11 @@ def sponsors(request):
     return _build_response(request)
 
 
+@view_config(route_name='directory', renderer='directory.mako')
+def directory(request):
+    return _build_response(request)
+
+
 @view_config(route_name='sponsors_500px', renderer='sponsors_500px.mako')
 def sponsors_500px(request):
     return _build_response(request)
