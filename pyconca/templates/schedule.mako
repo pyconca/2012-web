@@ -201,9 +201,8 @@
           <th>4:50</th>
           <td>
             ${slot("L1")}<br /><br />
-            ## ${slot("L2")}<br /><br />
-            <strong>Douglas Cerna</strong> (L2)<br /><br />
-            ${slot("L3")}
+            ${slot("L2")}<br /><br />
+            <strong>Douglas Cerna</strong> (L3)
           </td>
           <td>
             ${slot("A15")}
