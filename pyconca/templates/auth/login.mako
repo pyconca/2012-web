@@ -1,6 +1,12 @@
 <%inherit file="pyconca:templates/generic.mako"/>
 
-<%block name="header">Login</%block>
+<%block name="head_title">
+    ${_(u"Login")}
+</%block>
+
+<%block name="title">
+    ${_(u"Login")}
+</%block>
 
 <%block name="form">
 
