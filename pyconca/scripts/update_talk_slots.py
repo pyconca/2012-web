@@ -23,20 +23,24 @@ from sqlalchemy import engine_from_config
 schedule = u"""
 Day 1	Main hall					Lower hall					Tutorial			
 9:30	K1		Jessica McKellar											
-10:25	B1		Michael Bayer	The SQLAlchemy Session		A1	#19	Trevor Bekolay	Writing self-documenting scientific code using physical quantities		T1	#6	Anthony Scopatz	HDF5 is for Lovers
+10:25	B1	#74	Mike Bayer	The SQLAlchemy Session - In Depth		A1	#19	Trevor Bekolay	Writing self-documenting scientific code using physical quantities		T1	#6	Anthony Scopatz	HDF5 is for Lovers
 10:50						A2	#29	Vid Ayer	MongoDB and Gene databases					
 11:20	B2	#40	Mike Fletcher	Profiling for Performance		A3	#36	Adam Goucher	A really, really, really, fast tour of WebDriver					
 11:45						A4	#45	Mark Côté	Network programming for automation developers					
-13:05	B3	#73	Brandon Rhodes	The Python Æsthetic: Beauty and Warts in Languages and in Code		A5	#47	Vlad Filippov	Supercharge web application prototypes with the App Engine Python SDK		T2	#61	David Warde-Farley
+13:05	B3	#73	Brandon Rhodes	The Python Æsthetic: Beauty and Warts in Languages and in Code		A5	#47	Vlad Filippov	Supercharge web application prototypes with the App Engine Python SDK		T2	#61	David Warde-Farley	Introduction to Numerical and Scientific Computing with Python
 13:30						A6	#41	Joan Touzet	Hit the Flask and Get Some REST: Rewriting the Cloudant API in a Single Python Back End					
 14:00	B4	#12	Matthew Hooker	Configuration management with ZooKeeper		A7	#28	Lynn Root	3 Projects to Make Python Stick for New Coders					
 14:25						A8	#43	Christopher Lambacher	Everything you wanted to know about deploying web apps on Windows but were too horrified to ask					
-15:00	B5		Django ???			A9	#21	Tres Seaver	Lightweight Web Services with Pyramid					
+15:00	B5		Daniel Lindsley			A9	#21	Tres Seaver	Lightweight Web Services with Pyramid					
 15:25						A10	#7	Blaise Laflamme	Pyramid Layout: Composable UI/UX for Pyramid					
 15:55	A11		Meredith L. Patterson	Don't be afraid to fail in public		A13	#23	James King	Distributed Programming in Python: A Model for Strong, Eventual Consistency					
 16:20	A12	#51	Éric Araujo	How you can contribute to Python		A14	#53	Yannick Hold	Once you Scoop, no need to fork					
-16:50	L		Lightning talks L1:L6			A15	#44	Mahdi Yusuf	Twisted History of Python Packaging					
-17:15						A16	#32	Martin Alderete	NINJA-IDE, an IDE specially designed for Python					
+16:50	L1	#1	Sam Bull	Django Developer		A15	#44	Mahdi Yusuf	Twisted History of Python Packaging					
+16:57	L2	#38	Todd Whiteman	Python development with Komodo IDE										
+17:04	L3		Douglas Cerna	SchoolTool										
+17:15	L4	#10	Robert Park	Manipulating Photo Metadata in Python		A16	#32	Martin Alderete	NINJA-IDE, an IDE specially designed for Python					
+17:22	L5	#56	Ian Douglas	Using SendGrid Email APIs to Bring Your Eh? Game										
+17:29	L6	#59	Evan Hicks	Python and Kyotocabinet: Memory Mapped Storage										
 														
 Day 2	Main hall					Lower hall					Tutorial			
 9:15	K2		Michael Feathers											
@@ -50,9 +54,13 @@ Day 2	Main hall					Lower hall					Tutorial
 14:15						A24	#15	Ian Ward	Cool Stuff You Can Do With Urwid					
 14:50	A25		Elizabeth Leddy	Community and Plone		A27	#37	Maxime Noël	DynamoDB and DynamoDB-Mapper -- Building scalable Python applications with Amazon's NoSQL database					
 15:15	A26	#3	Adam McKerlie	Testing Django with Travis CI		A28	#26	Anna Filina	Speed Up Your Database					
-15:45	L					A29	#18	Chayim Kirshen	Programmatically Managing Python Workloads Across Multiple Clouds					
-16:10						A30		TBD (Google)						
-16:40	K3		Fernando Pérez										
+15:45	L7	#64	Karen Bennet	Integrating Geocode Data with Python		A29	#18	Chayim Kirshen	Programmatically Managing Python Workloads Across Multiple Clouds					
+15:52	L8	#30	Dimitri Gnidash	Success Rate of Technology Projects										
+15:59	L9	#68	Bonnie King	GPIO on the Raspberry Pi										
+16:10	L10	#22	Albert O'Connor	Wilderness Labs		A30		TBD (Google)						
+16:17	L11	#46	Ram Venkat	Statistical Data Exchange and Publishing - an introduction to SDMX and DSPL										
+16:24	L12	#50	Ashwin Panchapakesan	A Pure Python Genetic Algorithms Framework										
+16:40	K3		Fernando Pérez											
 """
 # !!!!!! WARNING !!!!!!
 # DO NOT HAND EDIT THIS
@@ -99,19 +107,10 @@ def _parse_schedule(schedule):
                     have_talk_id = int(talk_m.group(1))
                     continue
 
-                code_m = re.search("^([ABKT]\d+|L)$", val)
+                code_m = re.search("^([ABKTL]\d+)$", val)
                 if code_m:
                     if s.code is not None:
-                        if s.code == "L":
-                            for x in range(6):
-                                talk_num = x + 1 + ((day - 1) * 6)
-                                yield s._replace(
-                                    start=s.start + timedelta(minutes=x*5),
-                                    code="L%s" %(talk_num, ),
-                                    talk=None,
-                                )
-                        else:
-                            yield s
+                        yield s
                     s = s._replace(
                         room=["Main hall", "Lower hall", "Tutorial room"][col // 5],
                         code=code_m.group(0),
@@ -147,7 +146,7 @@ def parse_schedule(schedule):
 
 def usage(argv):
     cmd = os.path.basename(argv[0])
-    print "usage: %s [--dry-run] <config_uri>" % (cmd, )
+    print "usage: %s [--dry-run] [--ignore-errors] <config_uri>" % (cmd, )
     print "example: '%s development.ini'" % (cmd, )
     print "NOTE: This will update the database to correspond to the table in"
     print "          ", __file__
@@ -158,14 +157,19 @@ def usage(argv):
 def main(argv=sys.argv):
     from pyconca.models import DBSession, ScheduleSlot, Talk, TalkScheduleSlot
 
+    ignore_errors = False
+    if "--ignore-errors" in argv:
+        argv.remove("--ignore-errors")
+        ignore_errors = True
+
     if len(argv) != 2:
         usage(argv)
         return 1
 
-    if "--dry-run" in sys.argv:
+    if "--dry-run" in argv:
         print "\n".join(map(str, parse_schedule(schedule)))
         return 0
-        
+
     config_uri = argv[1]
     setup_logging(config_uri)
     settings = get_appsettings(config_uri)
@@ -191,6 +195,8 @@ def main(argv=sys.argv):
             if talk:
                 t = DBSession.query(Talk).filter_by(id=talk.id).first()
                 if not t:
+                    if ignore_errors:
+                        continue
                     raise Exception("invalid talk: %r" %(talk, ))
                 actual_talk_owner = "%s %s" %(t.owner.first_name, t.owner.last_name)
                 assert actual_talk_owner.lower() == talk.owner_name.lower(), \
