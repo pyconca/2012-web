@@ -12,11 +12,11 @@ class BaseView(Context):
 
     def __init__(self, request):
         Context.__init__(self, request)
-        self._configure()
         self.body = {
             'logged_in': authenticated_userid(self.request),
             'is_admin': self.is_admin
         }
+        self._configure()
 
     #---------- views
 

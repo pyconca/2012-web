@@ -1,10 +1,19 @@
 <%inherit file="pyconca:templates/generic.mako"/>
 
-<%block name="header">
+<%block name="head_title">
     % if is_create:
-      Submit Talk
+      ${_(u"Submit Talk")}
     % else:
-      Edit Talk
+      ${_(u"Edit Talk")}
+    % endif
+</%block>
+
+
+<%block name="title">
+    % if is_create:
+      ${_(u"Submit Talk")}
+    % else:
+      ${_(u"Edit Talk")}
     % endif
 </%block>
 
@@ -102,7 +111,7 @@
           </select>
         </div>
     </div>
-   % endif
+    % endif
 
     <div class="control-group">
         <label class="control-label" for="level">Difficulty Level</label>
