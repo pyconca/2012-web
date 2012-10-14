@@ -1,12 +1,18 @@
 <%inherit file="pyconca:templates/generic.mako"/>
 
-<%block name="header">Password Reset</%block>
+<%block name="head_title">
+  ${_(u"Password Reset")}
+</%block>
+
+<%block name="title">
+  ${_(u"Password Reset")}
+</%block>
 
 <%block name="form">
 
     <div class="note">
         <p>To reset your password, please submit your email address you used to
-            when registering in the form below and a reset link will be emailed to you.</p>
+            register in the form below and a reset link will be emailed to you.</p>
     </div>
 
     <form class="form-horizontal" action="${request.application_url}/forgot" method="POST">

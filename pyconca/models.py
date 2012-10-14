@@ -23,6 +23,7 @@ from sqlalchemy.orm import sessionmaker
 from zope.sqlalchemy import ZopeTransactionExtension
 
 from pyramid.security import Allow
+from pyramid.security import Everyone
 from pyramid.security import ALL_PERMISSIONS
 
 from pyconca.temporal import local_isoformat
@@ -171,8 +172,8 @@ class Talk(AttrMixIn, Base):
         return [
             (Allow, 'group:admin', ALL_PERMISSIONS),
 
-            (Allow, self.owner_id, 'talk_get'),
-            (Allow, self.owner_id, 'api_talk_get'),
+            (Allow, Everyone, 'talk_get'),
+            (Allow, Everyone, 'api_talk_get'),
 
             (Allow, self.owner_id, 'talk_update'),
             (Allow, self.owner_id, 'api_talk_update'),

@@ -107,8 +107,7 @@ def _build_response(request):
 
 def _build_response_with(request, **kwargs):
     response = _build_response(request)
-    for k, v in kwargs.iteritems():
-        response[k] = v
+    response.update(kwargs)
     return response
 
 
