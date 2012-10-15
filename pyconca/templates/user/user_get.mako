@@ -4,6 +4,9 @@
     ${_(u"User Profile")}
 </%block>
 
+<%block name="title">
+    ${_(u"User Profile")}
+</%block>
 
 <%block name="form">
 

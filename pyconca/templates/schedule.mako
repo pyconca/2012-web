@@ -305,8 +305,7 @@
         <tr>
           <th>10:10</th>
           <td>
-            ## ${slot("B6")}
-            <strong>Kenneth Reitz</strong> (B6)
+            ${slot("B6")}
           </td>
           <td>
             ${slot("A17")}<br>
@@ -361,8 +360,7 @@
         <tr>
           <th>12:55</th>
           <td>
-            ##${slot("B8")}
-            <strong><em>OpenStack 101</em> by Sandy Walsh</strong> (B8)
+            ${slot("B8")}
           </td>
           <td>
             ${slot("A21")}<br>
@@ -404,8 +402,7 @@
         <tr>
           <th>2:50</th>
           <td>
-            ##${slot("A25")}<br>
-            <strong>Elizabeth Leddy</strong> (A25)
+            ${slot("A25")}<br>
           </td>
           <td>
             ${slot("A27")}<br>
