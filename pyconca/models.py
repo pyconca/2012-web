@@ -130,13 +130,15 @@ class User(AttrMixIn, Base):
         return 'admin' in [group.name for group in self.groups]
 
     def to_dict(self, is_admin):
-        return {
+        data = {
             'id': self.id,
-            'username': self.username,
             'first_name': self.first_name,
             'last_name': self.last_name,
-            'email': self.email,
         }
+        if is_admin:
+            data['email'] = self.email
+            data['username'] = self.username,
+        return data
 
 
 class Group(AttrMixIn, Base):
@@ -187,12 +189,12 @@ class Talk(AttrMixIn, Base):
             'type': self.type,
             'level': self.level,
             'abstract': self.abstract,
-            'outline': self.outline,
             'user': self.user.to_dict(is_admin)
         }
 
         if is_admin:
             data['reviewer_notes'] = self.reviewer_notes
+            data['outline'] = self.outline
 
         return data
 

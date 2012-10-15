@@ -67,13 +67,14 @@
         <p>{{nl2br talk.abstract}}</p>
     </fieldset>
 
-    <br>
-    <fieldset>
-        <legend><strong>Outline</strong></legend>
-        <p>{{nl2br talk.outline}}</p>
-    </fieldset>
 
     % if is_admin:
+        <br>
+        <fieldset>
+            <legend><strong>Outline</strong></legend>
+            <p>{{nl2br talk.outline}}</p>
+        </fieldset>
+
         <br>
         <fieldset>
             <legend><strong>Reviewer Notes</strong></legend>
