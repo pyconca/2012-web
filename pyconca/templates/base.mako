@@ -277,6 +277,7 @@
               <li><span>${_(u"Board")}</span> <a href="mailto:organizers@pycon.ca">organizers@pycon.ca</a></li>
               <li><span>${_(u"List")}</span> <a href="mailto:pyconca@googlegroups.com">pyconca@googlegroups.com</a></li>
               <li><span>GitHub</span> <a href="http://github.com/pyconca">github.com/pyconca</a></li>
+              <li><span>${_(u"Volunteer")}</span> <a href="${request.application_url}/volunteer">pycon.ca/volunteer</a></li>
             </ul>
           </div>
         </div>
