@@ -10,4 +10,7 @@ Type, designed by James Arboghast
 
 NOTE:
 - The "-500x500.svg" and "-500x500.png" version has, as the name suggests, been
-  optimized for 500x500px resolution (see: http://dcurt.is/pixel-fitting)
+  optimized for 500x500px resolution (see: http://dcurt.is/pixel-fitting).
+- The -2v2 version has a vectorized maple leaf.
+- The "2 inch logo" version has an oversized border to ensure that the sticker
+  border will be 100% red.
