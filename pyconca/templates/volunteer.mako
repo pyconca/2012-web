@@ -7,12 +7,9 @@
 <%block name="info">
   <article>
     <h2>${_(u"Contact us")}</h2>
-    <p>FIXME: volunteer@pycon.ca</p>
-  </article>
-
-  <article>
-    <h2>${_(u"Who can participate?")}</h2>
-    <p>FIXME</p>
+    <p> Interested in becoming a volunteer for PyConCA? Tell us a little bit 
+      about yourself: <a href='mailto:volunteer@pycon.ca'>volunteer@pycon.ca</a>.
+    </p>
   </article>
 
 </%block>
