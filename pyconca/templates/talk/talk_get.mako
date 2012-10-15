@@ -45,8 +45,8 @@
 <script id="talk-get-template" type="text/x-handlebars-template">
     <fieldset>
         <legend><strong>{{talk.title}}</strong></legend>
-        <strong>User:</strong>
-        <span>{{talk.user.first_name}} {{talk.user.last_name}}</span>
+        <strong>Speaker: </strong>
+        <span>{{talk.speaker_first_name}} {{talk.speaker_last_name}}</span>
         <br>
         <strong>Type:</strong>
         <span>{{talk.type}}</span>
