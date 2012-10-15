@@ -131,13 +131,13 @@ class User(AttrMixIn, Base):
 
     def to_dict(self, is_admin):
         data = {
-            'id': self.id,
             'first_name': self.first_name,
             'last_name': self.last_name,
         }
         if is_admin:
             data['email'] = self.email
-            data['username'] = self.username,
+            data['username'] = self.username
+            data['id'] = self.id
         return data
 
 
@@ -184,7 +184,6 @@ class Talk(AttrMixIn, Base):
     def to_dict(self, is_admin):
         data = {
             'id': self.id,
-            'owner_id': self.owner_id,
             'title': self.title,
             'type': self.type,
             'level': self.level,
@@ -195,6 +194,7 @@ class Talk(AttrMixIn, Base):
         if is_admin:
             data['reviewer_notes'] = self.reviewer_notes
             data['outline'] = self.outline
+            data['owner_id'] = self.owner_id
 
         return data
 
