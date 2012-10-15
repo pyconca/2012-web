@@ -23,6 +23,7 @@ def _setup_routes(config):
     config.add_route('sponsors_freshbooks', '/sponsors/freshbooks')
     config.add_route('sponsors_chango', '/sponsors/chango')
     config.add_route('sprints', '/sprints')
+    config.add_route('volunteer', '/volunteer')
 
 
 def _add_api_resource(config, name):
