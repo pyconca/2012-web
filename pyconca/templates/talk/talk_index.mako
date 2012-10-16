@@ -23,7 +23,7 @@
     <table class="table table-striped table-bordered">
         <tr>
             <th>Title</th>
-            <th>User</th>
+            <th>Speaker</th>
             <th>Type</th>
             <th>Level</th>
             <th>When</th>
@@ -36,7 +36,7 @@
                 {{title}}
             </a>
           </td>
-          <td>{{user.first_name}} {{user.last_name}}</td>
+          <td>{{speaker_first_name}} {{speaker_last_name}}</td>
           <td>{{type}}</td>
           <td>{{level}}</td>
           <td>{{pycon_time start duration}}</td>

@@ -68,13 +68,15 @@
     </fieldset>
 
 
-    % if is_admin:
+    % if is_admin or is_talk_owner:
         <br>
         <fieldset>
             <legend><strong>Outline</strong></legend>
             <p>{{nl2br talk.outline}}</p>
         </fieldset>
+    % endif
 
+    % if is_admin:
         <br>
         <fieldset>
             <legend><strong>Reviewer Notes</strong></legend>
