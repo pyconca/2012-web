@@ -70,17 +70,6 @@
       </div>
     </div>
 
-    <div class="row-fluid">
-      <div class="span6">
-        <h2>Transportation Sponsor</h2>
-        <%include file="pyconca:templates/sponsors/uber.mako"/>
-      </div>
-      <div class="span6">
-        <h2>Hosting Sponsor</h2>
-        <%include file="pyconca:templates/sponsors/vmfarms.mako"/>
-      </div>
-    </div>
-
     <h2>Sprint Sponsors</h2>
     <div class="row-fluid">
       <div class="span6" style="margin-left: -15px;">
@@ -113,6 +102,20 @@
     <div class="row-fluid gutter-top">
       <div class="span6">
         <%include file="pyconca:templates/sponsors/cloudant.mako"/>
+      </div>
+      <div class="span6">
+        <%include file="pyconca:templates/sponsors/gadventures.mako"/>
+      </div>
+    </div>
+
+    <div class="row-fluid">
+      <div class="span6">
+        <h2>Transportation Sponsor</h2>
+        <%include file="pyconca:templates/sponsors/uber.mako"/>
+      </div>
+      <div class="span6">
+        <h2>Hosting Sponsor</h2>
+        <%include file="pyconca:templates/sponsors/vmfarms.mako"/>
       </div>
     </div>
 
