@@ -179,6 +179,7 @@ class Talk(AttrMixIn, Base):
             (Allow, self.owner_id, 'api_talk_update'),
         ]
 
+
     def to_dict(self, is_admin):
         data = {
             'id': self.id,
@@ -188,12 +189,12 @@ class Talk(AttrMixIn, Base):
             'speaker_last_name': self.user.last_name,
             'type': self.type,
             'level': self.level,
-            'abstract': self.abstract
+            'abstract': self.abstract,
+            'outline': self.outline
         }
 
         if is_admin:
             data['reviewer_notes'] = self.reviewer_notes
-            data['outline'] = self.outline
             data['user'] = self.user.to_dict(is_admin)
 
         return data
