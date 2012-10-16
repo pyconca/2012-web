@@ -132,10 +132,10 @@ class User(AttrMixIn, Base):
     def to_dict(self, is_admin):
         return {
             'id': self.id,
-            'username': self.username,
+            'username':  self.username,
             'first_name': self.first_name,
             'last_name': self.last_name,
-            'email': self.email,
+            'email': self.email
         }
 
 
@@ -179,20 +179,23 @@ class Talk(AttrMixIn, Base):
             (Allow, self.owner_id, 'api_talk_update'),
         ]
 
+
     def to_dict(self, is_admin):
         data = {
             'id': self.id,
-            'owner_id': self.owner_id,
             'title': self.title,
+            'owner_id': self.owner_id,
+            'speaker_first_name': self.user.first_name,
+            'speaker_last_name': self.user.last_name,
             'type': self.type,
             'level': self.level,
             'abstract': self.abstract,
-            'outline': self.outline,
-            'user': self.user.to_dict(is_admin)
+            'outline': self.outline
         }
 
         if is_admin:
             data['reviewer_notes'] = self.reviewer_notes
+            data['user'] = self.user.to_dict(is_admin)
 
         return data
 

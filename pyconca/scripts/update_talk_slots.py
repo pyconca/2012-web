@@ -35,7 +35,7 @@ Day 1	Main hall					Lower hall					Tutorial
 15:25						A10	#7	Blaise Laflamme	Pyramid Layout: Composable UI/UX for Pyramid					
 15:55	A11		Meredith L. Patterson	Don't be afraid to fail in public		A13	#23	James King	Distributed Programming in Python: A Model for Strong, Eventual Consistency					
 16:20	A12	#51	Éric Araujo	How you can contribute to Python		A14	#53	Yannick Hold	Once you Scoop, no need to fork					
-16:50	L1	#1	Sam Bull	Django Developer		A15	#44	Mahdi Yusuf	Twisted History of Python Packaging					
+16:50	L1	#66	Bogdan Chmielewski	from business import logic		A15	#44	Mahdi Yusuf	Twisted History of Python Packaging					
 16:57	L2	#38	Todd Whiteman	Python development with Komodo IDE										
 17:04	L3		Douglas Cerna	SchoolTool										
 17:15	L4	#10	Robert Park	Manipulating Photo Metadata in Python		A16	#32	Martin Alderete	NINJA-IDE, an IDE specially designed for Python					
@@ -48,11 +48,11 @@ Day 2	Main hall					Lower hall					Tutorial
 10:35						A18	#33	Javier de la Rosa	Graph Databases in Python					
 11:10	B7	#34	Dan Callahan	Beyond Passwords: Secure Authentication with Mozilla Persona		A19	#31	Taavi Burns	Server Log Analysis with Pandas		T3	#54	Alexandre Bourget	Gevent-socketio, cross-framework real-time web live demo
 11:35						A20	#2	Mazdak Rezvani	Dancing with Big Data: Disco + Inferno					
-12:55	B8		Sandy Walsh	OpenStack 101		A21	#55	Ash Christopher	Horizontally Scaling Your Database with Django		T4	#14	Greg Ward	Fast, Faster, Fastest: Getting the Best Performance From Python
+12:55	B8	#75	Sandy Walsh	Introduction to OpenStack		A21	#55	Ash Christopher	Horizontally Scaling Your Database with Django		T4	#14	Greg Ward	Fast, Faster, Fastest: Getting the Best Performance From Python
 13:20						A22	#42	Diego Muñoz Escalante	An Ember.js adapter for Django					
 13:50	B9	#60	Andrew Francis	How to Solve a Problem Like Santa Claus		A23	#58	Gabriel Grant	Distributed, Real-time Web Apps with Stack.io					
 14:15						A24	#15	Ian Ward	Cool Stuff You Can Do With Urwid					
-14:50	A25		Elizabeth Leddy	Community and Plone		A27	#37	Maxime Noël	DynamoDB and DynamoDB-Mapper -- Building scalable Python applications with Amazon's NoSQL database					
+14:50	A25	#76	Elizabeth Leddy	I Wish I Knew How to Quit You: Secrets to sustainable Python communities		A27	#37	Maxime Noël	DynamoDB and DynamoDB-Mapper -- Building scalable Python applications with Amazon's NoSQL database					
 15:15	A26	#3	Adam McKerlie	Testing Django with Travis CI		A28	#26	Anna Filina	Speed Up Your Database					
 15:45	L7	#64	Karen Bennet	Integrating Geocode Data with Python		A29	#18	Chayim Kirshen	Programmatically Managing Python Workloads Across Multiple Clouds					
 15:52	L8	#30	Dimitri Gnidash	Success Rate of Technology Projects										

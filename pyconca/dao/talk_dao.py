@@ -23,5 +23,5 @@ class TalkDao(BaseDao):
         return query.filter(Talk.schedule_slot != None)
 
     def get_owner(self, talk_id):
-        talk = self._query().filter_by(id=talk_id).first()
+        talk = self.get(talk_id)
         return talk.owner

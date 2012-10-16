@@ -45,8 +45,8 @@
 <script id="talk-get-template" type="text/x-handlebars-template">
     <fieldset>
         <legend><strong>{{talk.title}}</strong></legend>
-        <strong>User:</strong>
-        <span>{{talk.user.first_name}} {{talk.user.last_name}}</span>
+        <strong>Speaker: </strong>
+        <span>{{talk.speaker_first_name}} {{talk.speaker_last_name}}</span>
         <br>
         <strong>Type:</strong>
         <span>{{talk.type}}</span>
@@ -67,11 +67,14 @@
         <p>{{nl2br talk.abstract}}</p>
     </fieldset>
 
-    <br>
-    <fieldset>
-        <legend><strong>Outline</strong></legend>
-        <p>{{nl2br talk.outline}}</p>
-    </fieldset>
+
+    % if is_admin or is_talk_owner:
+        <br>
+        <fieldset>
+            <legend><strong>Outline</strong></legend>
+            <p>{{nl2br talk.outline}}</p>
+        </fieldset>
+    % endif
 
     % if is_admin:
         <br>
