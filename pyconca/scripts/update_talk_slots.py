@@ -35,7 +35,7 @@ Day 1	Main hall					Lower hall					Tutorial
 15:25						A10	#7	Blaise Laflamme	Pyramid Layout: Composable UI/UX for Pyramid					
 15:55	A11		Meredith L. Patterson	Don't be afraid to fail in public		A13	#23	James King	Distributed Programming in Python: A Model for Strong, Eventual Consistency					
 16:20	A12	#51	Éric Araujo	How you can contribute to Python		A14	#53	Yannick Hold	Once you Scoop, no need to fork					
-16:50	L1	#1	Sam Bull	Django Developer		A15	#44	Mahdi Yusuf	Twisted History of Python Packaging					
+16:50	L1	#66	Bogdan Chmielewski	from business import logic		A15	#44	Mahdi Yusuf	Twisted History of Python Packaging					
 16:57	L2	#38	Todd Whiteman	Python development with Komodo IDE										
 17:04	L3		Douglas Cerna	SchoolTool										
 17:15	L4	#10	Robert Park	Manipulating Photo Metadata in Python		A16	#32	Martin Alderete	NINJA-IDE, an IDE specially designed for Python					
