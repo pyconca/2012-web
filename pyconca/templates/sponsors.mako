@@ -132,6 +132,9 @@
       <div class="span6">
         <%include file="pyconca:templates/sponsors/albert_oconnor.mako"/>
       </div>
+      <div class="span6">
+        <%include file="pyconca:templates/sponsors/amelanche.mako"/>
+      </div>
     </div>
   </article>
 </%block>

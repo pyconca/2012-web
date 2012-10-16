@@ -64,4 +64,22 @@
      founder of <a href="http://wildernesslabs.ca/">Wilderness Labs</a>: 
      Bringing together awesome people for a weekend of collaborative creation.
   </article>
+
+  <article>
+    <h2>Amelanche</h2>
+    <a href="http://amelanche.com/" style="border-bottom: none;">
+        <img src="${request.static_url("pyconca:static/sponsors/amelanche-logo.png")}"
+             width="250"
+             align="left"
+             style="margin: 20px;"
+             alt="Amelanche">
+    </a>
+    <p>
+      <a href="http://amelanche.com/">Amelanche</A> is a provider of modeling 
+      and computing solutions to the financial sector. Amelanche offers 
+      consulting and custom software development for modeling, analytics, 
+      pricing and market and credit risk management, combining the expertise 
+      in stochastic modeling, numerical methods, high-performance computing 
+      and quality software engineering.
+   </article>
 </%block>

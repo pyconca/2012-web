@@ -52,6 +52,7 @@
             <li><%include file="pyconca:templates/sponsors/element34.mako" args="img_class='black-and-white'"/></li>
             <li><%include file="pyconca:templates/sponsors/danols.mako" args="img_class='black-and-white'"/></li>
             <li><%include file="pyconca:templates/sponsors/albert_oconnor.mako" args="img_class='black-and-white'"/></li>
+            <li><%include file="pyconca:templates/sponsors/amelanche.mako" args="img_class='black-and-white'"/></li>
             </div>
           </ul>
       </div>
@@ -93,7 +94,7 @@
   $(function() {
     $('#slider').tinycarousel({
       interval: true,
-      intervaltime: 2000,
+      intervaltime: 1500,
       duration: 500
     });
   });
