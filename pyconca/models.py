@@ -179,8 +179,7 @@ class Talk(AttrMixIn, Base):
             (Allow, self.owner_id, 'api_talk_update'),
         ]
 
-
-    def to_dict(self, is_admin):
+    def to_dict(self, is_admin, is_talk_owner):
         data = {
             'id': self.id,
             'title': self.title,
@@ -190,8 +189,10 @@ class Talk(AttrMixIn, Base):
             'type': self.type,
             'level': self.level,
             'abstract': self.abstract,
-            'outline': self.outline
         }
+
+        if is_admin or is_talk_owner:
+            data['outline'] = self.outline
 
         if is_admin:
             data['reviewer_notes'] = self.reviewer_notes
