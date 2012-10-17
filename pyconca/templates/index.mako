@@ -9,10 +9,9 @@
   <div class="container">
     <div id="Banner">
         <h1>PyCon.ca</h1>
+        <h2>${_(u"Bringing the Canadian Python community together")}</h2>
         <div id="DateAndPlace">${_(u"November 9 – 11, 2012 • Toronto")}</div>
-        <!--<h3 class="header-sub-text">${_(u"Bringing the Canadian Python community together")}</h3>-->
     </div>
-
     <div>
       <div id="Callout">
         <p id="Teaser"><%block filter="gettext">INDEX_ABOUT_BLURB</%block></p>
