@@ -14,6 +14,26 @@ from pyconca.temporal import local_isoformat
 
 class TalkApi(BaseApi):
 
+    # overwrite base index so that is_owner can be used
+    def index(self):
+        models = self.dao.index()
+        self.body['data'][self.name + '_list'] = [
+            self._post_process_for_output(m, m.to_dict(self.is_admin,
+                                                       self.is_talk_owner))
+            for m in models
+        ]
+        return self._respond('200 OK')
+
+    def get(self):
+        model = self.dao.get(self.id)
+        if model is None:
+            return self._respond('404 Not Found')
+        self.body['data'][self.name] = \
+            self._post_process_for_output(model,
+                                          model.to_dict(self.is_admin,
+                                                        self.is_talk_owner))
+        return self._respond('200 OK')
+
     def _configure(self):
         self.name = 'talk'
         self.dao = TalkDao(self.request.user)
