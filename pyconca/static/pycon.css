@@ -259,6 +259,17 @@ footer .contact-list span {
 }
 #Banner {
   background: #2B1006 url(bg-stripes.png) repeat left top;
+  display: inline-block; /* this fixes IE/Opera block rendering quirks and brings inline with FireFox/Safari/Chrome */
+}
+#Banner h1 {
+  text-indent: -9999px;
+  overflow: hidden;
+  height: 118px;
+}
+#Banner h2 {
+  font-size: 18px;
+  color: white;
+  font-weight: 300;
 }
 @media (min-width: 979px) {
   #Banner {
@@ -271,14 +282,9 @@ footer .contact-list span {
 }
 @media (min-width: 1200px) {
   #Banner {
-    margin: -54px 285px 0;
   }
 }
-#Banner h1 {
-    text-indent: -9999px;
-    overflow: hidden;
-    height: 0;
-}
+
 @media (min-width: 570px) {
   #Banner h1 {
     background: none;      
@@ -308,13 +314,11 @@ footer .contact-list span {
   line-height: 26px;
   border: 1px solid #2b1006;
   display: inline-block;
-  margin-top: 120px;
   font-weight: bold;
   float: none;
 }
 @media (min-width: 980px) {
   .ie9 .home-page #DateAndPlace {
-    margin-top: 65px;
   }
 }
 @media (max-width: 979px) {
@@ -338,10 +342,10 @@ footer .contact-list span {
 #Teaser {
   font-size: 24px;
   line-height: 30px;
-  padding: 0 30px;
+  padding: 14px 30px;
   font-family: 'Droid Serif', Georgia, Cambria, "Times New Roman", Times, serif;
   width: 510px;
-  margin: 30px 0 0;
+  margin: 36px 0px 0px;
   float: left;
   text-align: left;
 }
@@ -535,7 +539,7 @@ aside h1,
   font-size: 18px;
   line-height: 18px;
   font-weight: normal;
-    margin-top: 10px;
+  margin-top: 31px;
 }
 @media (max-width: 1199px) {
   #DateAndPlace {
