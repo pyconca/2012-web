@@ -99,6 +99,6 @@
   });
 </script>
 
-<script type="text/javascript" src="http://guestlistapp.com/javascripts/guestlist-embed.js"></script>
+<script type="text/javascript" src="//guestlistapp.com/javascripts/guestlist-embed.js"></script>
 
 </%block>

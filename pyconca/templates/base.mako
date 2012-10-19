@@ -23,14 +23,14 @@
     <script src="${request.static_url("pyconca:static/js/handlebars-helpers.js")}"></script>
     <script src="${request.static_url("pyconca:static/libs/jquery.tinycarousel.min.js")}"></script>
 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
 
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <!--<script src="http://widgets.twimg.com/j/2/widget.js"></script>-->
+    <!--<script src="//widgets.twimg.com/j/2/widget.js"></script>-->
   </head>
 
   <body class="<%block name='body_class'/>">
