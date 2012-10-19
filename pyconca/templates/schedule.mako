@@ -512,11 +512,11 @@
       <h1 class="header" id="monday">${_(u"Monday, November 12")}</h1>
       <table class="table table-bordered">
         <tr>
-          <th>All Day</th>
+          <th>10:00am - 11:00pm</th>
           <td colspan="3">
             <a href="${request.route_url('sprints')}">${_(u"Sprints")}</a>
             <br>
-            Location: TBD
+            Location: <a href="http://ladieslearningcode.com/">Ladies Learning Code's</a> workshop space, <a href="http://goo.gl/maps/yA9E0">720 Bathurst Street, suite 500</a>.
           </td>
         </tr>
       </table>
@@ -526,11 +526,11 @@
       <h1 class="header" id="tuesday">${_(u"Tuesday, November 13")}</h1>
       <table class="table table-bordered">
         <tr>
-          <th>All Day</th>
+          <th>10:00am - 11:00pm</th>
           <td colspan="3">
             <a href="${request.route_url('sprints')}">${_(u"Sprints")}</a>
             <br>
-            Location: TBD
+            Location: <a href="http://ladieslearningcode.com/">Ladies Learning Code's</a> workshop space, <a href="http://goo.gl/maps/yA9E0">720 Bathurst Street, suite 500</a>.
           </td>
         </tr>
       </table>

@@ -712,15 +712,9 @@ msgstr ""
 #: pyconca/templates/sprints.mako:30
 msgid "SPRINT_SCHEDULE"
 msgstr ""
-"There will be two pre-sprint sessions on Sunday, November 11, 2012 after "
-"the end of the conference talks:<br><br><b>Intro (4:30pm - 5pm)</b> A "
-"plenary session which will begin with a talk explaining the basics of "
-"sprints and how they work at PyCon. That will be followed by a brief "
-"introduction to each project by the sprint leader.<br><br><b>Tutorials "
-"(5pm - )</b> Sprint leaders will gather sprinters and head to their "
-"sprint rooms for introductory sessions. Sprint leaders will explain their"
-" project, walk through code, help with repository access, etc. This way, "
-"come Monday morning you'll be able to get started coding right away."
+"<p>There will be two pre-sprint sessions on Sunday, November 11, 2012 after the end of the conference talks:</p>"
+"<p><strong>Intro, Tutorials (Sunday, Nov. 11th, 4:45pm - 7:00pm)</strong> After the closing keynote, there will be a short talk explaining the basics of sprints and how they work at PyCon, followed by a brief introduction to each project by the sprint leader. Sprint leaders will have the oppertunity to gather sprinters and give a short introduction to their project, walk through code, help with repository access, etc. This way, come Monday morning you'll be able to get started coding right away.</p>"
+"<p><strong>Sprints (Monday and Tuesday, Nov. 12th and 13th, 10:00am - 11:00pm)</strong> The sprints will be held at <a href=\"http://ladieslearningcode.com/\">Ladies Learning Code's</a> workshop space, which is located at <a href=\"http://goo.gl/maps/yA9E0\">720 Bathurst Street, suite 500</a>. Show up any time, leave any time. A small honnorarium will be provided to all sprinters to offset the cost of lunch.</p>"
 
 #: pyconca/templates/sprints.mako:9
 msgid "Development Sprints"
