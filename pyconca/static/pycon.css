@@ -302,33 +302,6 @@ footer .contact-list span {
     height: 60px;
   }
 }
-.home-page #DateAndPlace {
-  background-color: #150803;
-  color: #6b5851;
-  text-shadow: 1px 1px 1px #000;
-  text-transform: uppercase;
-  width: 410px;
-  text-align: center;
-  padding: 3px 7px;
-  font-size: 21px;
-  line-height: 26px;
-  border: 1px solid #2b1006;
-  display: inline-block;
-  font-weight: bold;
-  float: none;
-}
-@media (min-width: 980px) {
-  .ie9 .home-page #DateAndPlace {
-  }
-}
-@media (max-width: 979px) {
-  .home-page #DateAndPlace {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: auto;
-  }
-}
-
 #Callout {
   margin-left: 285px;
 }
@@ -532,19 +505,18 @@ aside h1,
   }
 }
 #DateAndPlace {
-  float: right;
-  text-align: right;
-  color: #8e6859;
-  text-transform: uppercase;
-  font-size: 18px;
-  line-height: 18px;
   font-weight: normal;
   margin-top: 31px;
+  text-transform: uppercase;
+  width: 410px;
+  text-align: center;
+  padding: 11px 7px;
+  font-size: 21px;
+  display: inline-block;
+  font-weight: bold;
+  float: none;
 }
-@media (max-width: 1199px) {
-  #DateAndPlace {
-  }
-}
+
 #DateAndPlace b {
   color: #2b1006;
 }
