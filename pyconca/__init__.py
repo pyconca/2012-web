@@ -2,6 +2,7 @@ from pyramid.authentication import AuthTktAuthenticationPolicy
 from pyramid.authorization import ACLAuthorizationPolicy
 from pyramid.config import Configurator
 from pyramid.session import UnencryptedCookieSessionFactoryConfig
+from pyramid.request import Request
 import pytz
 
 from sqlalchemy import engine_from_config
@@ -13,6 +14,11 @@ from .routes import _setup_routes
 from .security import get_user
 from .security import permission_finder
 from pyconca import temporal
+
+class PyConCARequest(Request):
+    def __init__(self, *args, **kwargs):
+        super(PyConCARequest, self).__init__(*args, **kwargs)
+        self.scheme = self.headers.get("X-Forwarded-Protocol", "http")
 
 
 def main(global_config, **settings):
@@ -29,9 +35,12 @@ def main(global_config, **settings):
     session_factory = UnencryptedCookieSessionFactoryConfig(
         settings['secret.unencrypted_cookie'])
 
-    config = Configurator(settings=settings,
+    config = Configurator(
+        settings=settings,
         root_factory='pyconca.security.RootFactory',
-        session_factory=session_factory)
+        session_factory=session_factory,
+        request_factory=PyConCARequest,
+    )
     config.add_translation_dirs('pyconca:locale/')
     config.set_authentication_policy(authn_policy)
     config.set_authorization_policy(authz_policy)
