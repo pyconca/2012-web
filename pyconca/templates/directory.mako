@@ -82,4 +82,27 @@
       in stochastic modeling, numerical methods, high-performance computing 
       and quality software engineering.
    </article>
+
+  <article>
+    <h2>Montréal-Python</h2>
+    <a href="http://montrealpython.org/" style="border-bottom: none;">
+        <img src="${request.static_url("pyconca:static/sponsors/MontrealPythonLogo.png")}"
+             width="200"
+             align="left"
+             style="margin: 20px;"
+             alt="Montréal-Python">
+    </a>
+    <p>
+     <a href="http://montrealpython.org/">Montréal-Python</a>, 
+     a vibrant Python community started in 2008, is 
+     proudly representing over 250 members from all around Québec. 
+     Montréal-Python's monthly meetings steadily attract upwards of 60 
+     passionate hackers. In addition to presentation-oriented meetings, 
+     Montréal-Python propagates Python skills with coding sprints and an 
+     ongoing series of tutorials and workshops geared toward university 
+     students, and supports other groups and initiatives like PyCon Canada 
+     with announcements, translations and participation. But this is all a 
+     pale shadow compared to its proudest achievement: bringing PyCon North 
+     of the border in 2014 and 2015!
+   </article>
 </%block>

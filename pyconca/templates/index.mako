@@ -52,6 +52,7 @@
             <li><%include file="pyconca:templates/sponsors/danols.mako" args="img_class='black-and-white'"/></li>
             <li><%include file="pyconca:templates/sponsors/albert_oconnor.mako" args="img_class='black-and-white'"/></li>
             <li><%include file="pyconca:templates/sponsors/amelanche.mako" args="img_class='black-and-white'"/></li>
+            <li><%include file="pyconca:templates/sponsors/montreal-python.mako" args="img_class='black-and-white'"/></li>
             </div>
           </ul>
       </div>
