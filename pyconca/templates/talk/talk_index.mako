@@ -26,8 +26,6 @@
             <th>Speaker</th>
             <th>Type</th>
             <th>Level</th>
-            <th>When</th>
-            <th>Where</th>
         </tr>
         {{#talk_list}}
         <tr>
@@ -39,8 +37,6 @@
           <td>{{speaker_first_name}} {{speaker_last_name}}</td>
           <td>{{type}}</td>
           <td>{{level}}</td>
-          <td>{{pycon_time start duration}}</td>
-          <td>{{room}}</td>
         </tr>
         {{/talk_list}}
     </table>

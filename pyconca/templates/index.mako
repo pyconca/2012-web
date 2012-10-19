@@ -10,7 +10,7 @@
     <div id="Banner">
         <h1>PyCon.ca</h1>
         <h2>${_(u"Bringing the Canadian Python community together")}</h2>
-        <div id="DateAndPlace">${_(u"November 9 – 11, 2012 • Toronto")}</div>
+        <div id="DateAndPlace">${_(u"November 9 – 13, 2012 • Toronto")}</div>
     </div>
     <div>
       <div id="Callout">
