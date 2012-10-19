@@ -271,6 +271,23 @@ footer .contact-list span {
   color: white;
   font-weight: 300;
 }
+
+#Banner #DateAndPlace {
+	display: inline-block;
+	float: none;
+	font-size: 21px;
+	font-weight: 700;
+	margin-top: 31px;
+	padding: 11px 7px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 410px;
+}
+
+#Banner #DateAndPlace b {
+  color: #2b1006;
+}
+
 @media (min-width: 979px) {
   #Banner {
     background: url(banner-home.png) no-repeat left top;
@@ -301,31 +318,18 @@ footer .contact-list span {
     background: url(pycon-sm.png) no-repeat center top;
     height: 60px;
   }
-}
-.home-page #DateAndPlace {
-  background-color: #150803;
-  color: #6b5851;
-  text-shadow: 1px 1px 1px #000;
-  text-transform: uppercase;
-  width: 410px;
-  text-align: center;
-  padding: 3px 7px;
-  font-size: 21px;
-  line-height: 26px;
-  border: 1px solid #2b1006;
-  display: inline-block;
-  font-weight: bold;
-  float: none;
-}
-@media (min-width: 980px) {
-  .ie9 .home-page #DateAndPlace {
+  #Banner h2 {
+  	line-height: 20px;
+  	padding-top: 6px;
   }
-}
-@media (max-width: 979px) {
-  .home-page #DateAndPlace {
+  
+  #Banner #DateAndPlace {
     margin-top: 10px;
     margin-bottom: 10px;
     width: auto;
+    background-color: #150803;
+  	color: #D8D8D8;
+  	border: 1px solid #2b1006;
   }
 }
 
@@ -530,23 +534,6 @@ aside h1,
     padding: 14px 30px 16px 30px;
     width: 100%;
   }
-}
-#DateAndPlace {
-  float: right;
-  text-align: right;
-  color: #8e6859;
-  text-transform: uppercase;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: normal;
-  margin-top: 31px;
-}
-@media (max-width: 1199px) {
-  #DateAndPlace {
-  }
-}
-#DateAndPlace b {
-  color: #2b1006;
 }
 
 address {
