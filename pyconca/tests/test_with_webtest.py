@@ -170,6 +170,7 @@ class TestWithWebtest(unittest.TestCase):
         self.assertEquals("2012-11-10T10:00:00-05:00", data['data']['talk']['start'])
         self.assertEquals("2012-11-10T10:30:00-05:00", data['data']['talk']['end'])
         self.assertEquals(30, data['data']['talk']['duration'])
+        self.assertEquals("X21", data['data']['talk']['schedule_code'])
 
     def test_schedule_slot_api_get__not_logged_in(self):
         data = self._getJsonFrom('/schedule_slot/21.json', status=403)
@@ -186,5 +187,6 @@ class TestWithWebtest(unittest.TestCase):
                 'id': self._schedule_slot_id,
                 'room': 'room',
                 'talk_id': None,
+                'code': 'X21',
             },
             data['data']['schedule_slot_list'][0])
