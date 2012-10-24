@@ -93,7 +93,7 @@ def _parse_schedule(schedule):
                 start=default_timezone.localize(
                     start_date +
                     timedelta(days=day, hours=hour, minutes=minute)
-                ).astimezone(pytz.utc),
+                ).astimezone(pytz.utc).replace(tzinfo=None),
                 end=None,
                 code=None,
                 room=None,
@@ -195,7 +195,8 @@ def main(argv=sys.argv):
                 s = ScheduleSlot()
             vals = slot._asdict()
             talk = vals.pop("talk")
-            s.__dict__.update(vals)
+            for (k, v) in vals.items():
+                setattr(s, k, v)
             DBSession.add(s)
             if talk:
                 t = DBSession.query(Talk).filter_by(id=talk.id).first()
