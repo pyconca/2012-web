@@ -7,8 +7,10 @@
       <header>
         <hgroup class="clearfix">
           <h1><%block name="title"/></h1>
+          <br>
+          <br>
           <div id="DateAndPlace"><b>${_(u"PyCon Canada 2012")}</b><br>
-          ${_(u"November 9 – 11, 2012 • Toronto")}</div>
+          ${_(u"November 9 – 13, 2012 • Toronto")}</div>
           <!--<h3 class="header-sub-text">${_(u"Bringing the Python Canada community together")}</h3>-->
         </hgroup>
       </header>

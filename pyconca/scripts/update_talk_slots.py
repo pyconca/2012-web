@@ -5,7 +5,9 @@ import sys
 from collections import namedtuple
 from datetime import datetime, timedelta
 
+import pytz
 import transaction
+from pyconca.temporal import default_timezone
 from pyramid.paster import get_appsettings
 from pyramid.paster import setup_logging
 from sqlalchemy import engine_from_config
@@ -88,7 +90,10 @@ def _parse_schedule(schedule):
             hour, minute = map(int, time_m.groups())
 
             s = Slot(
-                start=start_date + timedelta(days=day, hours=hour, minutes=minute),
+                start=default_timezone.localize(
+                    start_date +
+                    timedelta(days=day, hours=hour, minutes=minute)
+                ).astimezone(pytz.utc).replace(tzinfo=None),
                 end=None,
                 code=None,
                 room=None,
@@ -190,7 +195,8 @@ def main(argv=sys.argv):
                 s = ScheduleSlot()
             vals = slot._asdict()
             talk = vals.pop("talk")
-            s.__dict__.update(vals)
+            for (k, v) in vals.items():
+                setattr(s, k, v)
             DBSession.add(s)
             if talk:
                 t = DBSession.query(Talk).filter_by(id=talk.id).first()

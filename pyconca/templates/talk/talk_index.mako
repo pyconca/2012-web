@@ -27,6 +27,7 @@
             <th>Type</th>
             <th>Level</th>
             <th>When</th>
+            <th>Code</th>
             <th>Where</th>
         </tr>
         {{#talk_list}}
@@ -40,6 +41,7 @@
           <td>{{type}}</td>
           <td>{{level}}</td>
           <td>{{pycon_time start duration}}</td>
+          <td>{{schedule_code}}</td>
           <td>{{room}}</td>
         </tr>
         {{/talk_list}}

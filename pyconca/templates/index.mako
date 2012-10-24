@@ -9,10 +9,9 @@
   <div class="container">
     <div id="Banner">
         <h1>PyCon.ca</h1>
-        <div id="DateAndPlace">${_(u"November 9 – 11, 2012 • Toronto")}</div>
-        <!--<h3 class="header-sub-text">${_(u"Bringing the Canadian Python community together")}</h3>-->
+        <h2>${_(u"Bringing the Canadian Python community together")}</h2>
+        <div id="DateAndPlace">${_(u"November 9 – 13, 2012 • Toronto")}</div>
     </div>
-
     <div>
       <div id="Callout">
         <p id="Teaser"><%block filter="gettext">INDEX_ABOUT_BLURB</%block></p>
@@ -53,6 +52,7 @@
             <li><%include file="pyconca:templates/sponsors/danols.mako" args="img_class='black-and-white'"/></li>
             <li><%include file="pyconca:templates/sponsors/albert_oconnor.mako" args="img_class='black-and-white'"/></li>
             <li><%include file="pyconca:templates/sponsors/amelanche.mako" args="img_class='black-and-white'"/></li>
+            <li><%include file="pyconca:templates/sponsors/montreal-python.mako" args="img_class='black-and-white'"/></li>
             </div>
           </ul>
       </div>
@@ -100,6 +100,6 @@
   });
 </script>
 
-<script type="text/javascript" src="http://guestlistapp.com/javascripts/guestlist-embed.js"></script>
+<script type="text/javascript" src="//guestlistapp.com/javascripts/guestlist-embed.js"></script>
 
 </%block>

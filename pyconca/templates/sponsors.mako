@@ -136,5 +136,12 @@
         <%include file="pyconca:templates/sponsors/amelanche.mako"/>
       </div>
     </div>
+    <div class="row-fluid gutter-top">
+      <div class="span6">
+      </div>
+      <div class="span6">
+        <%include file="pyconca:templates/sponsors/montreal-python.mako"/>
+      </div>
+    </div>
   </article>
 </%block>

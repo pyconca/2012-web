@@ -216,6 +216,7 @@ class ScheduleSlot(AttrMixIn, Base):
             'start': local_isoformat(self.start),
             'end': local_isoformat(self.end),
             'duration': duration_delta.seconds / 60,
+            'code': self.code,
         }
         return data
 

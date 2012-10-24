@@ -16,7 +16,7 @@
       <li><a href="https://github.com/pyconca">github.com/pyconca</a></li>
     </ul>
 
-    <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+    <script charset="utf-8" src="//widgets.twimg.com/j/2/widget.js"></script>
     <script>
     new TWTR.Widget({
       version: 2,

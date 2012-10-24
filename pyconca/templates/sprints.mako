@@ -11,6 +11,11 @@
   </article>
 
   <article>
+    <h2>${_(u"What's the schedule?")}</h2>
+    <p><%block filter="gettext">SPRINT_SCHEDULE</%block></p>
+  </article>
+
+  <article>
     <h2>${_(u"What's a Sprint?")}</h2>
     <p><%block filter="gettext">SPRINT_WHAT</%block></p>
   </article>
@@ -23,10 +28,5 @@
   <article>
       <h2>${_(u"What's there to sprint on?")}</h2>
       <p><%block filter="gettext">SPRINT_PROJECTS</%block></p>
-  </article>
-
-  <article>
-    <h2>${_(u"What's the schedule?")}</h2>
-    <p><%block filter="gettext">SPRINT_SCHEDULE</%block></p>
   </article>
 </%block>

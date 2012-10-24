@@ -126,6 +126,7 @@ class TalkApi(BaseApi):
             'start': None,
             'end': None,
             'duration': None,
+            'schedule_code': None,
         }
         if model.schedule_slot:
             assert model.schedule_slot.start < model.schedule_slot.end
@@ -139,6 +140,7 @@ class TalkApi(BaseApi):
                 'start': local_isoformat(model.schedule_slot.start),
                 'end': local_isoformat(model.schedule_slot.end),
                 'duration': duration_delta.seconds / 60,
+                'schedule_code': model.schedule_slot.code,
             })
         new_output.update(schedule)
         return new_output
