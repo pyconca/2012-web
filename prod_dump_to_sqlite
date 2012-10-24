@@ -1,0 +1,8 @@
+#!/bin/bash
+# Dumps the production database to sqlite
+
+IFS="`printf "\n\t"`"
+set -eu
+cd "`dirname "$0"`"
+
+ssh pycon.ca "/data/web/pycon.ca/pyconca/prod_mysqldump2sqlite"
