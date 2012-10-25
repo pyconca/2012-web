@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pyconca 0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-10-25 12:22-0400\n"
+"POT-Creation-Date: 2012-10-25 12:43-0400\n"
 "PO-Revision-Date: 2012-08-15 22:00-0400\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -514,17 +514,17 @@ msgstr ""
 "Noisebridge hacker space in San Francisco.  She is best reached on "
 "twitter as <a href='https://twitter.com/eleddy'>@eleddy</a>. "
 
-#: pyconca/templates/learn.mako:39
+#: pyconca/templates/learn.mako:46
 msgid "LEARN_DANIEL_LINDSLEY"
 msgstr ""
-"Pythonista since 2003, Djangonaut since 2006. " 
-"<a href='https://twitter.com/daniellindsley'>Daniel Lindsley</a> "
-"wrote & maintains several OSS projects like "
-"<a href='http://django-haystack.readthedocs.org/'>Haystack</a>, Tastypie, "
-"pysolr, itty, littleworkers. Loves search, APIs & hard problems. "
-"Curator of fine animated gifs. "
+"Pythonista since 2003, Djangonaut since 2006. <a "
+"href='https://twitter.com/daniellindsley'>Daniel Lindsley</a> wrote & "
+"maintains several OSS projects like <a href='http://django-"
+"haystack.readthedocs.org/'>Haystack</a>, Tastypie, pysolr, itty, "
+"littleworkers. Loves search, APIs & hard problems. Curator of fine "
+"animated gifs. "
 
-#: pyconca/templates/learn.mako:50
+#: pyconca/templates/learn.mako:57
 msgid "LEARN_CHRIS_MCDONOUGH"
 msgstr ""
 "<a href='https://twitter.com/chrismcdonough'>Chris McDonough</a> is the "
@@ -537,7 +537,7 @@ msgstr ""
 "management system. <b>Cancelled:</b> It looks like Chris McDonough won't "
 "be able to join us this year after all. He sends his apologies. "
 
-#: pyconca/templates/learn.mako:62
+#: pyconca/templates/learn.mako:69
 msgid "LEARN_JESSICA_MCKELLAR"
 msgstr ""
 "<a href='http://jesstess.com'>Jessica McKellar</a> is a software engineer"
@@ -548,14 +548,14 @@ msgstr ""
 "forwomen and their friends -- an introductory programming pipeline that "
 "has brought hundreds of women into the local Python community and is "
 "being replicated in cities across the US. <br><br>  Jessica is a veteran "
-"open source contributor and a maintainer for several open source projects, "
-"including OpenHatch and the Twisted event-driven networking engine; she "
-"wrote a chapter on Twisted for <a "
+"open source contributor and a maintainer for several open source "
+"projects, including OpenHatch and the Twisted event-driven networking "
+"engine; she wrote a chapter on Twisted for <a "
 "href='http://www.aosabook.org/en/index.html'>The Architecture of Open "
 "Source Applications Volume II</a> and is working with O'Reilly on a new "
 "edition of Twisted Networking Essentials. "
 
-#: pyconca/templates/learn.mako:73
+#: pyconca/templates/learn.mako:80
 msgid "LEARN_FERNANDO_PÉREZ"
 msgstr ""
 "<a href='http://fperez.org/'>Fernando Pérez</a> received his PhD in "
@@ -574,7 +574,7 @@ msgstr ""
 "development team, and has contributed to numpy, scipy, sympy, mayavi and "
 "other Python projects. "
 
-#: pyconca/templates/learn.mako:85
+#: pyconca/templates/learn.mako:92
 msgid "LEARN_KENNETH_REITZ"
 msgstr ""
 "<a href='http://twitter.com/kennethreitz'>Kenneth Reitz</a> is the "
@@ -585,7 +585,7 @@ msgstr ""
 "projects</a>, specifically <a href='http://python-"
 "requests.org/'>Requests</a>. "
 
-#: pyconca/templates/learn.mako:97
+#: pyconca/templates/learn.mako:104
 msgid "LEARN_BRANDON_RHODES"
 msgstr ""
 "<a href='http://twitter.com/brandon_rhodes'>Brandon Rhodes</a> started "
@@ -597,7 +597,7 @@ msgstr ""
 "the <a href='http://rhodesmill.org/pyephem/'>PyEphem</a> module for "
 "amateur astronomers since 1998. "
 
-#: pyconca/templates/learn.mako:102
+#: pyconca/templates/learn.mako:109
 msgid "LEARN_SANDY_WALSH"
 msgstr ""
 "Basé à Halifax, Alex 'Sandy' Walsh est le propriétaire de Darl Secret "
