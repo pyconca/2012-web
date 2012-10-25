@@ -119,11 +119,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.80285953"
+     inkscape:zoom="1.8315233"
      inkscape:cx="396.94263"
      inkscape:cy="291.61988"
      inkscape:document-units="px"
-     inkscape:current-layer="layer4"
+     inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1280"
      inkscape:window-height="752"
@@ -180,7 +180,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -17299,12 +17299,13 @@
          id="flowPara7779">spacer)</flowPara><flowPara
          style="font-size:30px;font-style:normal;font-weight:normal;fill:#d73626;fill-opacity:1;-inkscape-font-specification:Museo Slab"
          id="presenternames">Diego Muñoz Escalante</flowPara></flowRoot>    <image
+       sodipodi:absref="/Users/wolever/code/pyconca/pyconca/assets/video-splash-screen/500px_logo_color.png"
        xlink:href="500px_logo_color.png"
-       width="361.08078"
-       height="196.95316"
-       id="image7800"
+       y="781.62482"
        x="-0.34313059"
-       y="781.62482" />
+       id="image7800"
+       height="196.95316"
+       width="361.08078" />
     <g
        transform="matrix(0.52568153,0,0,-0.52568153,530.00744,1035.3407)"
        inkscape:label="ink_ext_XXXXXX"
@@ -17483,11 +17484,12 @@
       </g>
     </g>
     <image
+       sodipodi:absref="/Users/wolever/code/pyconca/pyconca/assets/video-splash-screen/wave-logo.png"
        xlink:href="wave-logo.png"
-       width="197.91824"
-       height="54.625435"
-       id="image7865"
+       y="977.24597"
        x="33"
-       y="977.24597" />
+       id="image7865"
+       height="54.625435"
+       width="197.91824" />
   </g>
 </svg>
