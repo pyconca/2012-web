@@ -12,8 +12,8 @@ body {
 }
 @media (max-width: 767px) {
   .container {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 
@@ -237,7 +237,7 @@ footer .contact-list li {
   margin-bottom: 0;
 }
 footer .contact-list a {
-  font-size: 22px;
+  font-size: 16px;
   font-weight: normal;
 }
 footer .contact-list span {

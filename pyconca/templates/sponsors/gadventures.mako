@@ -3,5 +3,6 @@
     <img src="${request.static_url("pyconca:static/sponsors/gap-adventures-logo-350x70.png")}"
         class="${img_class}"
         width="200"
+        style="margin-top: 30px;"
         alt="G Adventures">
 </a>

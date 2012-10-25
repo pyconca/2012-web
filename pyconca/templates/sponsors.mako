@@ -70,40 +70,46 @@
       </div>
     </div>
 
-    <h2 class="level">Sprint Sponsors</h2>
     <div class="row-fluid">
-      <div class="span6" style="margin-left: -15px;">
+      <div class="span6">
+        <h2 class="level">Sprint Sponsor</h2>
         <%include file="pyconca:templates/sponsors/agendaless.mako"/>
       </div>
       <div class="span6">
+        <h2 class="level">Sprint Sponsor</h2>
         <%include file="pyconca:templates/sponsors/llc.mako"/>
       </div>
     </div>
 
-    <h2 class="gutter-top level">Bronze Sponsors</h2>
     <div class="row-fluid">
       <div class="span6">
+        <h2 class="level">Bronze Sponsor</h2>
         <%include file="pyconca:templates/sponsors/heroku.mako"/>
       </div>
-      <div class="span6" style="margin-left: -5px;">
+      <div class="span6">
+        <h2 class="level">Bronze Sponsor</h2>
         <%include file="pyconca:templates/sponsors/mozilla.mako"/>
       </div>
     </div>
-    <div class="row-fluid gutter-top">
+
+    <div class="row-fluid">
       <div class="span6">
+        <h2 class="level">Bronze Sponsor</h2>
         <%include file="pyconca:templates/sponsors/guru_link.mako"/>
-        <br>
-        <br>
       </div>
       <div class="span6">
+        <h2 class="level">Bronze Sponsor</h2>
         <%include file="pyconca:templates/sponsors/trapeze.mako"/>
       </div>
     </div>
-    <div class="row-fluid gutter-top">
+
+    <div class="row-fluid">
       <div class="span6">
+        <h2 class="level">Bronze Sponsor</h2>
         <%include file="pyconca:templates/sponsors/cloudant.mako"/>
       </div>
       <div class="span6">
+        <h2 class="level">Bronze Sponsor</h2>
         <%include file="pyconca:templates/sponsors/gadventures.mako"/>
       </div>
     </div>
@@ -119,27 +125,31 @@
       </div>
     </div>
 
-    <h2 class="level">Independent Sponsors</h2>
     <div class="row-fluid">
       <div class="span6">
+        <h2 class="level">Independent Sponsor</h2>
         <%include file="pyconca:templates/sponsors/element34.mako"/>
       </div>
       <div class="span6">
+        <h2 class="level">Independent Sponsor</h2>
         <%include file="pyconca:templates/sponsors/danols.mako"/>
       </div>
     </div>
-    <div class="row-fluid gutter-top">
+
+    <div class="row-fluid">
       <div class="span6">
+        <h2 class="level">Independent Sponsor</h2>
         <%include file="pyconca:templates/sponsors/albert_oconnor.mako"/>
       </div>
       <div class="span6">
+        <h2 class="level">Independent Sponsor</h2>
         <%include file="pyconca:templates/sponsors/amelanche.mako"/>
       </div>
     </div>
-    <div class="row-fluid gutter-top">
+
+    <div class="row-fluid">
       <div class="span6">
-      </div>
-      <div class="span6">
+        <h2 class="level">Independent Sponsor</h2>
         <%include file="pyconca:templates/sponsors/montreal-python.mako"/>
       </div>
     </div>

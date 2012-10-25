@@ -23,9 +23,15 @@
         <%include file="pyconca:templates/sponsors/500px.mako"/>
 
         <h2>— <b>${_(u"Silver")}</b> —</h2>
-        <%include file="pyconca:templates/sponsors/freshbooks.mako"/>
-        <%include file="pyconca:templates/sponsors/wave.mako"/>
-        <%include file="pyconca:templates/sponsors/chango.mako"/>
+        <div style="margin-left: 5px">
+          <%include file="pyconca:templates/sponsors/freshbooks.mako"/>
+        </div>
+        <div style="margin-left: 5px">
+          <%include file="pyconca:templates/sponsors/wave.mako"/>
+        </div>
+        <div style="margin-left: 5px">
+          <%include file="pyconca:templates/sponsors/chango.mako"/>
+        </div>
 
         <h2>— <b>${_(u"Our Mothership")}</b> —</h2>
         <%include file="pyconca:templates/sponsors/psf.mako"/>
