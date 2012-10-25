@@ -35,6 +35,11 @@
   </article>
 
   <article>
+    <h2>Daniel Lindsley</h2>
+    <p><%block filter="gettext">LEARN_DANIEL_LINDSLEY</%block></p>
+  </article>
+
+  <article>
     <h2>Chris McDonough
         <a href='https://www.ohloh.net/accounts/12691?ref=Rank'
            style="border-bottom: none;" target='_top'>
