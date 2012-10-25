@@ -17,7 +17,7 @@
    inkscape:version="0.48.0 r9654"
    sodipodi:docname="video-splash-good.svg"
    style="display:inline"
-   inkscape:export-filename="/Users/wolever/Dropbox/Public/pycon-video-splash-0.5.png"
+   inkscape:export-filename="/Users/wolever/Dropbox/Public/pycon-video-splash-0.7.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
@@ -82,14 +82,16 @@
        clipPathUnits="userSpaceOnUse">
       <path
          id="path7905"
-         d="M 0,1936.4 0,0 l 3992.32,0 0,1936.4 -3992.32,0 z" />
+         d="M 0,1936.4 0,0 l 3992.32,0 0,1936.4 -3992.32,0 z"
+         inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        id="clipPath16"
        clipPathUnits="userSpaceOnUse">
       <path
          id="path18"
-         d="m 0,850.32 2808,0 L 2808,0 0,0 0,850.32 z" />
+         d="m 0,850.32 2808,0 L 2808,0 0,0 0,850.32 z"
+         inkscape:connector-curvature="0" />
     </clipPath>
     <linearGradient
        inkscape:collect="always"
@@ -117,16 +119,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.91406253"
-     inkscape:cx="370.65122"
-     inkscape:cy="278.73174"
+     inkscape:zoom="2.8155074"
+     inkscape:cx="235.82436"
+     inkscape:cy="330.27263"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="2048"
-     inkscape:window-height="1104"
-     inkscape:window-x="1280"
-     inkscape:window-y="22"
+     inkscape:window-width="1280"
+     inkscape:window-height="778"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      gridtolerance="1"
      showguides="false"
@@ -186,19 +188,19 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="background"
-     style="display:inline"
-     sodipodi:insensitive="true">
+     style="display:inline">
     <path
        inkscape:connector-curvature="0"
        d="M 0,600 799.99995,600 799.99995,-4e-6 0,-4e-6 0,600 z"
-       style="fill:#c3bcba;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       style="fill:#cbc2bc;fill-opacity:1;fill-rule:nonzero;stroke:none"
        id="path36" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="snakeskin"
-     style="display:inline;opacity:0.76">
+     style="opacity:0.76000001;display:inline"
+     sodipodi:insensitive="true">
     <g
        inkscape:tile-y0="18.40625"
        inkscape:tile-x0="68.375"
@@ -17061,7 +17063,7 @@
     </g>
   </g>
   <g
-     inkscape:label="Layer 1"
+     inkscape:label="main"
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-452.36217)"
@@ -17271,7 +17273,7 @@
        xml:space="preserve"
        id="titlebox"
        style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Museo Slab;-inkscape-font-specification:Museo Slab"
-       transform="translate(-6.71875,416.67109)"><flowRegion
+       transform="translate(-6.71875,414.67109)"><flowRegion
          id="flowRegion11472"><rect
            id="rect11474"
            width="521.47589"
@@ -17280,14 +17282,15 @@
            y="126.85329" /></flowRegion><flowPara
          style="font-size:30px;font-style:italic;fill:#d73626;fill-opacity:1"
          id="title">DynamoDB and DynamoDB-Mapper -- Building scalable Python applications with Amazon's NoSQL database</flowPara><flowPara
-         style="font-size:11px;font-style:normal;font-weight:normal;fill:none;-inkscape-font-specification:Museo Slab"
-         id="flowPara7779">(spacer)</flowPara><flowPara
+         style="font-size:14px;font-style:normal;font-weight:normal;fill:none;-inkscape-font-specification:Museo Slab"
+         id="flowPara7779">spacer)</flowPara><flowPara
          style="font-size:30px;font-style:normal;font-weight:normal;fill:#d73626;fill-opacity:1;-inkscape-font-specification:Museo Slab"
          id="presenternames">Diego Muñoz Escalante</flowPara></flowRoot>    <image
+       sodipodi:absref="/Users/wolever/code/pyconca/pyconca/assets/video-splash-screen/500px_logo_color.png"
+       xlink:href="500px_logo_color.png"
        y="781.62482"
        x="-0.34313059"
        id="image7800"
-       xlink:href="500px_logo_color.png"
        height="196.95316"
        width="361.08078" />
     <g
@@ -17468,10 +17471,11 @@
       </g>
     </g>
     <image
+       sodipodi:absref="/Users/wolever/code/pyconca/pyconca/assets/video-splash-screen/wave-logo.png"
+       xlink:href="wave-logo.png"
        y="977.24597"
        x="33"
        id="image7865"
-       xlink:href="wave-logo.png"
        height="54.625435"
        width="197.91824" />
   </g>
