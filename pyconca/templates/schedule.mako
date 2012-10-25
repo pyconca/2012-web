@@ -22,8 +22,9 @@
 
 <%block name="info">
   <div class="schedule-page">
+    <article>
     <div class="row-fluid content-section">
-      <h1 class="header header-first" id="friday">${_(u"Friday, November 9")}</h1>
+      <h2 class="header header-first" id="friday">${_(u"Friday, November 9")}</h2>
       <table class="table table-bordered">
         <tr>
           <th>18:00</th>
@@ -41,7 +42,7 @@
     </div>
 
     <div class="row-fluid content-section">
-      <h1 class="header" id="saturday">${_(u"Saturday, November 10")}</h1>
+      <h2 class="header" id="saturday">${_(u"Saturday, November 10")}</h2>
       <table class="table table-bordered">
         <tr>
           <th>8:30</th>
@@ -271,7 +272,7 @@
     </div>
 
     <div class="row-fluid content-section">
-      <h1 class="header" id="sunday">${_(u"Sunday, November 11")}</h1>
+      <h2 class="header" id="sunday">${_(u"Sunday, November 11")}</h2>
       <table class="table table-bordered">
         <tr>
           <th>8:30</th>
@@ -509,7 +510,7 @@
     </div>
 
     <div class="row-fluid content-section">
-      <h1 class="header" id="monday">${_(u"Monday, November 12")}</h1>
+      <h2 class="header" id="monday">${_(u"Monday, November 12")}</h2>
       <table class="table table-bordered">
         <tr>
           <th>10:00am - 11:00pm</th>
@@ -523,7 +524,7 @@
     </div>
 
     <div class="row-fluid content-section">
-      <h1 class="header" id="tuesday">${_(u"Tuesday, November 13")}</h1>
+      <h2 class="header" id="tuesday">${_(u"Tuesday, November 13")}</h2>
       <table class="table table-bordered">
         <tr>
           <th>10:00am - 11:00pm</th>
@@ -536,5 +537,6 @@
       </table>
     </div>
 
+  </article>
   </div>
 </%block>
