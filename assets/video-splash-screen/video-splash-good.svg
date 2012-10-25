@@ -17,7 +17,7 @@
    inkscape:version="0.48.0 r9654"
    sodipodi:docname="video-splash-good.svg"
    style="display:inline"
-   inkscape:export-filename="/Users/wolever/Dropbox/Public/pycon-video-splash-0.7.png"
+   inkscape:export-filename="/Users/wolever/Dropbox/Public/pycon-video-splash-0.10.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
@@ -119,14 +119,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8155074"
-     inkscape:cx="235.82436"
-     inkscape:cy="330.27263"
+     inkscape:zoom="0.80285953"
+     inkscape:cx="396.94263"
+     inkscape:cy="291.61988"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer4"
      showgrid="false"
      inkscape:window-width="1280"
-     inkscape:window-height="778"
+     inkscape:window-height="752"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -188,7 +188,8 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="background"
-     style="display:inline">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <path
        inkscape:connector-curvature="0"
        d="M 0,600 799.99995,600 799.99995,-4e-6 0,-4e-6 0,600 z"
@@ -17063,6 +17064,18 @@
     </g>
   </g>
   <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="white-bg">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       id="rect9669"
+       width="800"
+       height="600"
+       x="0"
+       y="2.4868996e-14" />
+  </g>
+  <g
      inkscape:label="main"
      inkscape:groupmode="layer"
      id="layer1"
@@ -17287,11 +17300,11 @@
          style="font-size:30px;font-style:normal;font-weight:normal;fill:#d73626;fill-opacity:1;-inkscape-font-specification:Museo Slab"
          id="presenternames">Diego Muñoz Escalante</flowPara></flowRoot>    <image
        xlink:href="500px_logo_color.png"
-       y="781.62482"
-       x="-0.34313059"
-       id="image7800"
+       width="361.08078"
        height="196.95316"
-       width="361.08078" />
+       id="image7800"
+       x="-0.34313059"
+       y="781.62482" />
     <g
        transform="matrix(0.52568153,0,0,-0.52568153,530.00744,1035.3407)"
        inkscape:label="ink_ext_XXXXXX"
@@ -17471,10 +17484,10 @@
     </g>
     <image
        xlink:href="wave-logo.png"
-       y="977.24597"
-       x="33"
-       id="image7865"
+       width="197.91824"
        height="54.625435"
-       width="197.91824" />
+       id="image7865"
+       x="33"
+       y="977.24597" />
   </g>
 </svg>
