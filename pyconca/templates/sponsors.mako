@@ -19,54 +19,59 @@
         <h2 class="level">Gold Sponsor</h2>
         <%include file="pyconca:templates/sponsors/500px.mako"/>
       </div>
+    </div>
+
+    <div class="row-fluid">
       <div class="span6">
         <h2 class="level">Silver Sponsor</h2>
         <%include file="pyconca:templates/sponsors/freshbooks.mako"/>
       </div>
-    </div>
-
-    <div class="row-fluid">
       <div class="span6">
         <h2 class="level">Silver Sponsor</h2>
         <%include file="pyconca:templates/sponsors/wave.mako"/>
       </div>
+    </div>
+    <div class="row-fluid">
       <div class="span6">
         <h2 class="level">Silver Sponsor</h2>
         <%include file="pyconca:templates/sponsors/chango.mako"/>
       </div>
-    </div>
-
-    <div class="row-fluid">
       <div class="span6">
         <h2 class="level">Diversity Sponsor</h2>
         <%include file="pyconca:templates/sponsors/google.mako"/>
       </div>
+    </div>
+
+    <div class="row-fluid">
       <div class="span6">
         <h2 class="level">Travel Sponsor</h2>
         <%include file="pyconca:templates/sponsors/points.mako"/>
       </div>
-    </div>
-
-    <div class="row-fluid">
       <div class="span6">
         <h2 class="level">Internet Sponsor</h2>
         <%include file="pyconca:templates/sponsors/crs.mako"/>
       </div>
+    </div>
+
+    <div class="row-fluid">
       <div class="span6">
         <h2 class="level">Venue Sponsor</h2>
         <%include file="pyconca:templates/sponsors/psf.mako"/>
+      </div>
+      <div class="span6">
+        <h2 class="level">Party Sponsor</h2>
+        <%include file="pyconca:templates/sponsors/upverter.mako"/>
       </div>
     </div>
 
     <div class="row-fluid">
       <div class="span6">
-        <h2 class="level">Party Sponsor</h2>
-        <%include file="pyconca:templates/sponsors/upverter.mako"/>
-      </div>
-
-      <div class="span6">
         <h2 class="level">Media Sponsor</h2>
         <%include file="pyconca:templates/sponsors/bnotions.mako"/>
+      </div>
+      <div class="span6">
+        <h2 class="level">Hosting Sponsor</h2>
+        <%include file="pyconca:templates/sponsors/vmfarms.mako"/>
       </div>
     </div>
 
@@ -120,8 +125,8 @@
         <%include file="pyconca:templates/sponsors/uber.mako"/>
       </div>
       <div class="span6">
-        <h2 class="level">Hosting Sponsor</h2>
-        <%include file="pyconca:templates/sponsors/vmfarms.mako"/>
+        <h2 class="level">Independent Sponsor</h2>
+        <%include file="pyconca:templates/sponsors/montreal-python.mako"/>
       </div>
     </div>
 
@@ -147,11 +152,5 @@
       </div>
     </div>
 
-    <div class="row-fluid">
-      <div class="span6">
-        <h2 class="level">Independent Sponsor</h2>
-        <%include file="pyconca:templates/sponsors/montreal-python.mako"/>
-      </div>
-    </div>
   </article>
 </%block>

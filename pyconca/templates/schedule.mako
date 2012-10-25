@@ -33,7 +33,7 @@
           </td>
         </tr>
         <tr>
-          <th>00:00</th>
+          <th>23:30</th>
           <td>
             <strong>${_(u"Venue closes")}</strong>
           </td>
@@ -263,7 +263,7 @@
         </tr>
 
         <tr>
-          <th>Midnight</th>
+          <th>11:30</th>
           <td colspan="3">
             <strong>${_(u"Venue closes")}</strong>
           </td>
@@ -501,7 +501,7 @@
         </tr>
 
         <tr>
-          <th>Midnight</th>
+          <th>11:30</th>
           <td colspan="3">
             <strong>${_(u"Venue closes")}</strong>
           </td>

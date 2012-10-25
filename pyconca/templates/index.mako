@@ -94,7 +94,7 @@
   $(function() {
     $('#slider').tinycarousel({
       interval: true,
-      intervaltime: 1500,
+      intervaltime: 3500,
       duration: 500
     });
   });
