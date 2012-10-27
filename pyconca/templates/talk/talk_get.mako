@@ -63,6 +63,11 @@
         <p>{{nl2br talk.abstract}}</p>
     </fieldset>
 
+    <br>
+    <fieldset>
+        <legend><strong>Speaker Bio</strong></legend>
+        <p>{{nl2br talk.bio}}</p>
+    </fieldset>
 
     % if is_admin or is_talk_owner:
         <br>

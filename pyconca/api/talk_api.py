@@ -63,6 +63,7 @@ class TalkApi(BaseApi):
         talk.title = form['title']
         talk.type = form['type']
         talk.level = form['level']
+        talk.bio = form['bio']
         talk.abstract = form['abstract']
         talk.outline = form['outline']
 
@@ -150,6 +151,7 @@ class TalkSchema(Schema):
     title = validators.String(not_empty=True, strip=True)
     type = validators.String(not_empty=True, strip=True)
     level = validators.String(not_empty=True, strip=True)
+    bio = validators.String(not_empty=True, strip=True)
     abstract = validators.String(not_empty=True, strip=True)
     outline = validators.String(not_empty=True, strip=True)
     reviewer_notes = validators.String(

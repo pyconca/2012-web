@@ -158,6 +158,7 @@ class Talk(AttrMixIn, Base):
                   nullable=False)
     level = Column(Enum('novice', 'experienced', name='talk_level'),
                    nullable=False)
+    bio = Column(String(length=500), nullable=False)
     abstract = Column(String(length=400), nullable=False)
     outline = Column(Text(), nullable=False)
     reviewer_notes = Column(Text(), default='')
@@ -186,6 +187,7 @@ class Talk(AttrMixIn, Base):
             'owner_id': self.owner_id,
             'speaker_first_name': self.user.first_name,
             'speaker_last_name': self.user.last_name,
+            'bio': self.bio,
             'type': self.type,
             'level': self.level,
             'abstract': self.abstract,
