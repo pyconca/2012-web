@@ -31,12 +31,42 @@ class TestTalkApi(unittest.TestCase):
             self._admin_id = 1
             self._speaker_id = 2
             for model in (
-                User(id=self._admin_id, username='admin', password='', first_name='Admin', last_name='Istrator', email='example@example.com'),
-                User(id=self._speaker_id, username='speaker', password='', first_name='Spe', last_name='Aker', email='speaker@example.com'),
+                User(
+                    id=self._admin_id,
+                    username='admin',
+                    password='',
+                    first_name='Admin',
+                    last_name='Istrator',
+                    email='example@example.com'),
+                User(
+                    id=self._speaker_id,
+                    username='speaker',
+                    password='',
+                    first_name='Spe',
+                    last_name='Aker',
+                    email='speaker@example.com'),
                 Group(id=1, name='admin'),
                 UserGroup(user_id=self._admin_id, group_id=1),
-                Talk(id=self._admin_id, owner_id=self._admin_id, title='Admin Title', type='talk', level='experienced', abstract='Abstract', outline='Outline', reviewer_notes='Reviewed?'),
-                Talk(id=self._speaker_id, owner_id=self._speaker_id, title='Speaker Title', type='tutorial', level='novice', abstract='Strabact', outline='Silhouette', reviewer_notes='Viewed again.'),
+                Talk(
+                    id=self._admin_id,
+                    owner_id=self._admin_id,
+                    title='Admin Title',
+                    type='talk',
+                    level='experienced',
+                    bio='Bio',
+                    abstract='Abstract',
+                    outline='Outline',
+                    reviewer_notes='Reviewed?'),
+                Talk(
+                    id=self._speaker_id,
+                    owner_id=self._speaker_id,
+                    title='Speaker Title',
+                    type='tutorial',
+                    level='novice',
+                    bio='Some bio',
+                    abstract='Strabact',
+                    outline='Silhouette',
+                    reviewer_notes='Viewed again.'),
                 ):
                 DBSession.add(model)
 

@@ -8,14 +8,11 @@ import unittest
 
 from pyconca import DBSession
 from pyconca import main
-from pyconca.security import generate_password
 from pyconca.models import Base
 from pyconca.models import User
-from pyconca.models import UserGroup
 from pyconca.models import Group
 from pyconca.models import Talk
 from pyconca.models import ScheduleSlot
-from pyconca.models import TalkScheduleSlot
 
 @patch('pyconca.views.check_password', lambda x, y: True)
 @patch('pyconca.locale.locale_from_browser', lambda x: 'en')
@@ -38,16 +35,55 @@ class TestWithWebtest(unittest.TestCase):
             self._admin_talk_id = 11
             self._speaker_talk_id = 12
             self._schedule_slot_id = 21
-            admin = User(id=self._admin_id, username='admin', password='admin', first_name='Admin', last_name='Istrator', email='example@example.com')
-            speaker = User(id=self._speaker_id, username='speaker', password='speaker', first_name='Spe', last_name='Aker', email='speaker@example.com')
+            admin = User(
+                id=self._admin_id,
+                username='admin',
+                password='admin',
+                first_name='Admin',
+                last_name='Istrator',
+                email='example@example.com')
+            speaker = User(
+                id=self._speaker_id,
+                username='speaker',
+                password='speaker',
+                first_name='Spe',
+                last_name='Aker',
+                email='speaker@example.com')
             admin_group = Group(name='admin')
             admin.groups.append(admin_group)
-            admin_talk = Talk(id=self._admin_talk_id, owner_id=self._admin_id, title="atitle", type="talk", level="novice", abstract="aabstract", outline="aoutline", reviewer_notes="areviewer_notes")
-            speaker_talk = Talk(id=self._speaker_talk_id, owner_id=self._speaker_id, title="stitle", type="tutorial", level="experienced", abstract="sabstract", outline="soutline", reviewer_notes="sreviewer_notes")
+            admin_talk = Talk(
+                id=self._admin_talk_id,
+                owner_id=self._admin_id,
+                title="atitle",
+                type="talk",
+                level="novice",
+                bio="abio",
+                abstract="aabstract",
+                outline="aoutline",
+                reviewer_notes="areviewer_notes")
+            speaker_talk = Talk(
+                id=self._speaker_talk_id,
+                owner_id=self._speaker_id,
+                title="stitle",
+                type="tutorial",
+                level="experienced",
+                bio="sbio",
+                abstract="sabstract",
+                outline="soutline",
+                reviewer_notes="sreviewer_notes")
             start = datetime(2012, 11, 10, 15, 00)
-            end = datetime(2012,11,10,15,30)
-            schedule_slot = ScheduleSlot(id=self._schedule_slot_id, room="room", start=start, end=end, code="X%s" %(self._schedule_slot_id, ))
-            DBSession.add_all([admin, speaker, admin_group, admin_talk, speaker_talk, schedule_slot])
+            end = datetime(2012, 11, 10, 15, 30)
+            schedule_slot = ScheduleSlot(
+                id=self._schedule_slot_id,
+                room="room",
+                start=start,
+                end=end,
+                code="X%s" % (self._schedule_slot_id,))
+            DBSession.add_all([
+                admin, speaker,
+                admin_group, admin_talk,
+                speaker_talk, schedule_slot
+            ])
 
     def tearDown(self):
         DBSession.remove()
@@ -159,8 +195,6 @@ class TestWithWebtest(unittest.TestCase):
         self._assertTalkNotScheduled(data)
 
     def test_talk_api_talk_is_scheduled(self):
-        start = datetime(2012, 11, 10, 15, 00)
-        end = datetime(2012,11,10,15,30)
         with transaction.manager:
             talk = DBSession.query(Talk).get(self._admin_talk_id)
             schedule_slot = DBSession.query(ScheduleSlot).get(self._schedule_slot_id)
