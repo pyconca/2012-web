@@ -134,6 +134,11 @@
                       </a>
                     </li>
                     <li>
+                      <a href="${request.route_url('sponsors_wave')}">
+                        ${_(u"Silver Sponsor • Wave")}
+                      </a>
+                    </li>
+                    <li>
                       <a href="${request.route_url('directory')}">
                         ${_(u"Independent Sponsors")}
                       </a>
