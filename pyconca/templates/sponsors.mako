@@ -152,5 +152,14 @@
       </div>
     </div>
 
+    <div class="row-fluid">
+      <div class="span6">
+        <h2 class="level">Independent Sponsor</h2>
+        <%include file="pyconca:templates/sponsors/verso.mako"/>
+      </div>
+      <div class="span6">
+      </div>
+    </div>
+
   </article>
 </%block>
