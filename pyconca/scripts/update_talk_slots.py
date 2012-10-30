@@ -35,11 +35,11 @@ Day 1	Main hall					Lower hall					Tutorial
 14:25						A8	#43	Christopher Lambacher	Everything you wanted to know about deploying web apps on Windows but were too horrified to ask					
 15:00	B5	#79	Daniel Lindsley	Avoiding The Search Hall Of Shame		A9	#21	Tres Seaver	Lightweight Web Services with Pyramid					
 15:25						A10	#7	Blaise Laflamme	Pyramid Layout: Composable UI/UX for Pyramid					
-15:55	A11		Meredith L. Patterson	Don't be afraid to fail in public		A13	#23	James King	Distributed Programming in Python: A Model for Strong, Eventual Consistency					
+15:55	A11	#80	Meredith L. Patterson	Fail Faster, Fail Better		A13	#23	James King	Distributed Programming in Python: A Model for Strong, Eventual Consistency					
 16:20	A12	#51	Éric Araujo	How you can contribute to Python		A14	#53	Yannick Hold	Once you Scoop, no need to fork					
 16:50	L1	#66	Bogdan Chmielewski	from business import logic		A15	#44	Mahdi Yusuf	Twisted History of Python Packaging					
 16:57	L2	#38	Todd Whiteman	Python development with Komodo IDE										
-17:04	L3		Douglas Cerna	SchoolTool										
+17:04	L3	#69	Douglas Cerna	SchoolTool										
 17:15	L4	#10	Robert Park	Manipulating Photo Metadata in Python		A16	#32	Martin Alderete	NINJA-IDE, an IDE specially designed for Python					
 17:22	L5	#56	Ian Douglas	Using SendGrid Email APIs to Bring Your Eh? Game										
 17:29	L6	#59	Evan Hicks	Python and Kyotocabinet: Memory Mapped Storage										
