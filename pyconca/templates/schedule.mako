@@ -97,6 +97,11 @@
           <td rowspan="3">
             90 minute tutorial:<br>
             ${slot("T1")}
+            <br>
+            <br>
+            Space is limited! Reserve a spot on the <a href='https://github.com/pyconca/pyconca2012/wiki/Tutorials'>tutorial wiki</a> page.
+            <br>
+            <br>
           </td>
         </tr>
 
@@ -139,6 +144,11 @@
           <td rowspan="7">
             3 hour tutorial:<br>
             ${slot("T2")}
+            <br>
+            <br>
+            Space is limited! Reserve a spot on the <a href='https://github.com/pyconca/pyconca2012/wiki/Tutorials'>tutorial wiki</a> page.
+            <br>
+            <br>
           </td>
         </tr>
 
@@ -393,6 +403,11 @@
           <td rowspan="5">
             2 hour tutorial:<br>
             ${slot("T4")}
+            <br>
+            <br>
+            Space is limited! Reserve a spot on the <a href='https://github.com/pyconca/pyconca2012/wiki/Tutorials'>tutorial wiki</a> page.
+            <br>
+            <br>
           </td>
         </tr>
 
