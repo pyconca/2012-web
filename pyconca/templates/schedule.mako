@@ -52,18 +52,29 @@
         </tr>
 
         <tr>
+          <th></th>
+          <th><br>Main Hall<br><br></td>
+          <th><br>Lower Hall<br><br></td>
+          <th><br>Tutorial Room<br><br></td>
+        </tr>
+
+        <tr>
           <th>9:00</th>
-          <td colspan="3">
+          <td>
             <strong>Welcome to PyCon Canada</strong>
           </td>
+          <td></td>
+          <td></td>
         </tr>
 
         <tr>
           <th>9:30</th>
-          <td colspan="3">
+          <td>
             ##${slot("K1")}
-            <strong>Jessica McKellar</strong> (K1)
+            <strong><em>Morning Keynote</em></strong> by <strong>Jessica McKellar</strong> (K1)
           </td>
+          <td></td>
+          <td></td>
         </tr>
 
         <tr>
@@ -80,7 +91,7 @@
           </td>
           <td>
             ${slot("A1")}<br>
-            <br>${_(u" • 5 minutes • ")}<br><br>
+            <br>${_(u" • 5 min break • ")}<br><br>
             ${slot("A2")}
           </td>
           <td rowspan="3">
@@ -103,7 +114,7 @@
           </td>
           <td>
             ${slot("A3")}<br>
-            <br>${_(u" • 5 minutes • ")}<br><br>
+            <br>${_(u" • 5 min break • ")}<br><br>
             ${slot("A4")}
           </td>
         </tr>
@@ -122,7 +133,7 @@
           </td>
           <td>
             ${slot("A5")}<br>
-            <br>${_(u" • 5 minutes • ")}<br><br>
+            <br>${_(u" • 5 min break • ")}<br><br>
             ${slot("A6")}
           </td>
           <td rowspan="7">
@@ -145,7 +156,7 @@
           </td>
           <td>
             ${slot("A7")}<br>
-            <br>${_(u" • 5 minutes • ")}<br><br>
+            <br>${_(u" • 5 min break • ")}<br><br>
             ${slot("A8")}
           </td>
         </tr>
@@ -164,7 +175,7 @@
           </td>
           <td>
             ${slot("A9")}<br>
-            <br>${_(u" • 5 minutes • ")}<br><br>
+            <br>${_(u" • 5 min break • ")}<br><br>
             ${slot("A10")}
           </td>
         </tr>
@@ -181,12 +192,12 @@
           <td>
             ##${slot("A11")}<br>
             <strong>Meredith L. Patterson</strong> (A11)<br /><br />
-            ${_(u" • 5 minutes • ")}<br /><br />
+            ${_(u" • 5 min break • ")}<br /><br />
             ${slot("A12")}
           </td>
           <td>
             ${slot("A13")}<br>
-            <br>${_(u" • 5 minutes • ")}<br><br>
+            <br>${_(u" • 5 min break • ")}<br><br>
             ${slot("A14")}
           </td>
         </tr>
@@ -235,9 +246,11 @@
 
         <tr>
           <th>5:40</th>
-          <td colspan="3">
+          <td>
             <strong>${_(u"Closing Messages")}</strong>
           </td>
+          <td></td>
+          <td></td>
         </tr>
 
         <tr>
@@ -281,18 +294,29 @@
         </tr>
 
         <tr>
+          <th></th>
+          <th><br>Main Hall<br><br></td>
+          <th><br>Lower Hall<br><br></td>
+          <th><br>Tutorial Room<br><br></td>
+        </tr>
+
+        <tr>
           <th>9:00</th>
-          <td colspan="3">
+          <td>
             <strong>Morning Messages</strong>
           </td>
+          <td></td>
+          <td></td>
         </tr>
 
         <tr>
           <th>9:15</th>
-          <td colspan="3">
+          <td>
             ##${slot("K2")}
-            <strong>Michael Feathers</strong> (K2)
+            <strong><em>Morning Keynote</em></strong> by <strong>Michael Feathers</strong> (K2)
           </td>
+          <td></td>
+          <td></td>
         </tr>
 
         <tr>
@@ -309,7 +333,7 @@
           </td>
           <td>
             ${slot("A17")}<br>
-            <br>${_(u" • 5 minutes • ")}<br><br>
+            <br>${_(u" • 5 min break • ")}<br><br>
             ${slot("A18")}
           </td>
           <td>
@@ -342,7 +366,7 @@
           </td>
           <td>
             ${slot("A19")}<br>
-            <br>${_(u" • 5 minutes • ")}<br><br>
+            <br>${_(u" • 5 min break • ")}<br><br>
             ${slot("A20")}
           </td>
           <td>
@@ -364,7 +388,7 @@
           </td>
           <td>
             ${slot("A21")}<br>
-            <br>${_(u" • 5 minutes • ")}<br><br>
+            <br>${_(u" • 5 min break • ")}<br><br>
             ${slot("A22")}
           </td>
           <td rowspan="5">
@@ -387,7 +411,7 @@
           </td>
           <td>
             ${slot("A23")}<br>
-            <br>${_(u" • 5 minutes • ")}<br><br>
+            <br>${_(u" • 5 min break • ")}<br><br>
             ${slot("A24")}
           </td>
         </tr>
@@ -465,17 +489,21 @@
 
         <tr>
           <th>4:40</th>
-          <td colspan="3">
+          <td>
             ##${slot("K3")}
-            <strong>Fernando Pérez</strong> (K3)
+            <strong><em>Closing Keynote</em></strong> by <strong>Fernando Pérez</strong> (K3)
           </td>
+          <td></td>
+          <td></td>
         </tr>
 
         <tr>
           <th>5:25</th>
-          <td colspan="3">
+          <td>
             <strong>${_(u"Closing Messages")}</strong>
           </td>
+          <td></td>
+          <td></td>
         </tr>
 
         <tr>
