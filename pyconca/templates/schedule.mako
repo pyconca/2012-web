@@ -190,8 +190,7 @@
         <tr>
           <th>3:55</th>
           <td>
-            ##${slot("A11")}<br>
-            <strong>Meredith L. Patterson</strong> (A11)<br /><br />
+            ${slot("A11")}<br /><br />
             ${_(u" • 5 min break • ")}<br /><br />
             ${slot("A12")}
           </td>
