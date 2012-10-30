@@ -33,7 +33,7 @@ Day 1	Main hall					Lower hall					Tutorial
 13:30						A6	#41	Joan Touzet	Hit the Flask and Get Some REST: Rewriting the Cloudant API in a Single Python Back End					
 14:00	B4	#12	Matthew Hooker	Configuration management with ZooKeeper		A7	#28	Lynn Root	3 Projects to Make Python Stick for New Coders					
 14:25						A8	#43	Christopher Lambacher	Everything you wanted to know about deploying web apps on Windows but were too horrified to ask					
-15:00	B5		Daniel Lindsley			A9	#21	Tres Seaver	Lightweight Web Services with Pyramid					
+15:00	B5	#79	Daniel Lindsley	Avoiding The Search Hall Of Shame		A9	#21	Tres Seaver	Lightweight Web Services with Pyramid					
 15:25						A10	#7	Blaise Laflamme	Pyramid Layout: Composable UI/UX for Pyramid					
 15:55	A11		Meredith L. Patterson	Don't be afraid to fail in public		A13	#23	James King	Distributed Programming in Python: A Model for Strong, Eventual Consistency					
 16:20	A12	#51	Éric Araujo	How you can contribute to Python		A14	#53	Yannick Hold	Once you Scoop, no need to fork					

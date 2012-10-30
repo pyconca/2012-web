@@ -160,8 +160,7 @@
         <tr>
           <th>3:00</th>
           <td>
-            ##${slot("B5")}
-            <strong>Daniel Lindsley</strong> (B5)
+            ${slot("B5")}
           </td>
           <td>
             ${slot("A9")}<br>
