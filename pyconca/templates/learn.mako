@@ -70,6 +70,11 @@
   </article>
 
   <article>
+      <h2>Meredith L. Patterson</h2>
+      <p><%block filter="gettext">LEARN_MEREDITH_L_PATTERSON</%block></p>
+  </article>
+
+  <article>
       <h2>Fernando Pérez
           <a href='https://www.ohloh.net/accounts/37028?ref=Rank'
              style="border-bottom: none;" target='_top'>

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pyconca 0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-10-31 21:57-0400\n"
+"POT-Creation-Date: 2012-11-01 15:46-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -378,19 +378,23 @@ msgstr ""
 msgid "LEARN_JESSICA_MCKELLAR"
 msgstr ""
 
-#: pyconca/templates/learn.mako:80
+#: pyconca/templates/learn.mako:74
+msgid "LEARN_MEREDITH_L_PATTERSON"
+msgstr ""
+
+#: pyconca/templates/learn.mako:85
 msgid "LEARN_FERNANDO_PÉREZ"
 msgstr ""
 
-#: pyconca/templates/learn.mako:92
+#: pyconca/templates/learn.mako:97
 msgid "LEARN_KENNETH_REITZ"
 msgstr ""
 
-#: pyconca/templates/learn.mako:104
+#: pyconca/templates/learn.mako:109
 msgid "LEARN_BRANDON_RHODES"
 msgstr ""
 
-#: pyconca/templates/learn.mako:109
+#: pyconca/templates/learn.mako:114
 msgid "LEARN_SANDY_WALSH"
 msgstr ""
 

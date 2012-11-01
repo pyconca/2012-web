@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pyconca 0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-10-31 21:57-0400\n"
+"POT-Creation-Date: 2012-11-01 15:46-0400\n"
 "PO-Revision-Date: 2012-08-15 22:00-0400\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -555,7 +555,17 @@ msgstr ""
 "Source Applications Volume II</a> and is working with O'Reilly on a new "
 "edition of Twisted Networking Essentials. "
 
-#: pyconca/templates/learn.mako:80
+#: pyconca/templates/learn.mako:74
+msgid "LEARN_MEREDITH_L_PATTERSON"
+msgstr ""
+"<a href='https://twitter.com/maradydd'>Meredith</a> is an independent "
+"researcher with expertise in areas including database design, data-mining"
+" algorithms, complexity theory, computational linguistics, information "
+"security, and privacy-enhancing technology systems. She's also a "
+"prominent biohacker, active blogger, and published author of multiple "
+"short stories, mostly science fiction. "
+
+#: pyconca/templates/learn.mako:85
 msgid "LEARN_FERNANDO_PÉREZ"
 msgstr ""
 "<a href='http://fperez.org/'>Fernando Pérez</a> received his PhD in "
@@ -574,7 +584,7 @@ msgstr ""
 "development team, and has contributed to numpy, scipy, sympy, mayavi and "
 "other Python projects. "
 
-#: pyconca/templates/learn.mako:92
+#: pyconca/templates/learn.mako:97
 msgid "LEARN_KENNETH_REITZ"
 msgstr ""
 "<a href='http://twitter.com/kennethreitz'>Kenneth Reitz</a> is the "
@@ -585,7 +595,7 @@ msgstr ""
 "projects</a>, specifically <a href='http://python-"
 "requests.org/'>Requests</a>. "
 
-#: pyconca/templates/learn.mako:104
+#: pyconca/templates/learn.mako:109
 msgid "LEARN_BRANDON_RHODES"
 msgstr ""
 "<a href='http://twitter.com/brandon_rhodes'>Brandon Rhodes</a> started "
@@ -597,7 +607,7 @@ msgstr ""
 "the <a href='http://rhodesmill.org/pyephem/'>PyEphem</a> module for "
 "amateur astronomers since 1998. "
 
-#: pyconca/templates/learn.mako:109
+#: pyconca/templates/learn.mako:114
 msgid "LEARN_SANDY_WALSH"
 msgstr ""
 "Basé à Halifax, Alex 'Sandy' Walsh est le propriétaire de Darl Secret "
@@ -1049,3 +1059,4 @@ msgstr "Éditer un profil"
 #: pyconca/templates/user/user_get.mako:8
 msgid "User Profile"
 msgstr "Votre profil"
+
