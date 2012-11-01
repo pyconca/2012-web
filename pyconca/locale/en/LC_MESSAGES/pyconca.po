@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pyconca 0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-10-29 23:07-0400\n"
+"POT-Creation-Date: 2012-10-31 21:57-0400\n"
 "PO-Revision-Date: 2012-08-15 22:01-0400\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -110,8 +110,8 @@ msgstr ""
 msgid "Conference"
 msgstr ""
 
-#: pyconca/templates/base.mako:92 pyconca/templates/schedule.mako:544
-#: pyconca/templates/schedule.mako:558 pyconca/templates/sprints.mako:3
+#: pyconca/templates/base.mako:92 pyconca/templates/schedule.mako:559
+#: pyconca/templates/schedule.mako:573 pyconca/templates/sprints.mako:3
 #: pyconca/templates/sprints.mako:5
 msgid "Sprints"
 msgstr ""
@@ -601,19 +601,19 @@ msgstr ""
 "register, hang out, and chat. Food and drinks will be provided, and the "
 "venue bar will be open. "
 
-#: pyconca/templates/schedule.mako:258 pyconca/templates/schedule.mako:511
+#: pyconca/templates/schedule.mako:268 pyconca/templates/schedule.mako:526
 msgid "SCHEDULE_TALKS_DONE"
 msgstr ""
 "<strong>Talks finish, venue bar opens, appetizers served</strong>. Time "
 "to meet some new people in preparation for dinner. "
 
-#: pyconca/templates/schedule.mako:265 pyconca/templates/schedule.mako:518
+#: pyconca/templates/schedule.mako:275 pyconca/templates/schedule.mako:533
 msgid "SCHEDULE_DINNER"
 msgstr ""
 "<strong>Dinner</strong>. Not provided. Grab some friends and head out to "
 "one of the local restaurants. "
 
-#: pyconca/templates/schedule.mako:272 pyconca/templates/schedule.mako:525
+#: pyconca/templates/schedule.mako:282 pyconca/templates/schedule.mako:540
 msgid "SCHEDULE_SPRINTS"
 msgstr ""
 "<strong>Open space, BoF sessions</strong>. Hang out and chat. The venue "
@@ -625,8 +625,8 @@ msgstr ""
 msgid "Friday, November 9"
 msgstr ""
 
-#: pyconca/templates/schedule.mako:38 pyconca/templates/schedule.mako:279
-#: pyconca/templates/schedule.mako:532
+#: pyconca/templates/schedule.mako:38 pyconca/templates/schedule.mako:289
+#: pyconca/templates/schedule.mako:547
 msgid "Venue closes"
 msgstr ""
 
@@ -634,49 +634,49 @@ msgstr ""
 msgid "Saturday, November 10"
 msgstr ""
 
-#: pyconca/templates/schedule.mako:50 pyconca/templates/schedule.mako:291
+#: pyconca/templates/schedule.mako:50 pyconca/templates/schedule.mako:301
 msgid "Registration"
 msgstr ""
 
-#: pyconca/templates/schedule.mako:83 pyconca/templates/schedule.mako:106
-#: pyconca/templates/schedule.mako:148 pyconca/templates/schedule.mako:186
-#: pyconca/templates/schedule.mako:207 pyconca/templates/schedule.mako:242
-#: pyconca/templates/schedule.mako:324 pyconca/templates/schedule.mako:357
-#: pyconca/templates/schedule.mako:402 pyconca/templates/schedule.mako:450
-#: pyconca/templates/schedule.mako:485
+#: pyconca/templates/schedule.mako:83 pyconca/templates/schedule.mako:111
+#: pyconca/templates/schedule.mako:158 pyconca/templates/schedule.mako:196
+#: pyconca/templates/schedule.mako:217 pyconca/templates/schedule.mako:252
+#: pyconca/templates/schedule.mako:334 pyconca/templates/schedule.mako:367
+#: pyconca/templates/schedule.mako:417 pyconca/templates/schedule.mako:465
+#: pyconca/templates/schedule.mako:500
 msgid "Break"
 msgstr ""
 
-#: pyconca/templates/schedule.mako:94 pyconca/templates/schedule.mako:117
-#: pyconca/templates/schedule.mako:136 pyconca/templates/schedule.mako:159
-#: pyconca/templates/schedule.mako:178 pyconca/templates/schedule.mako:194
-#: pyconca/templates/schedule.mako:199 pyconca/templates/schedule.mako:335
-#: pyconca/templates/schedule.mako:368 pyconca/templates/schedule.mako:390
-#: pyconca/templates/schedule.mako:413
+#: pyconca/templates/schedule.mako:94 pyconca/templates/schedule.mako:122
+#: pyconca/templates/schedule.mako:141 pyconca/templates/schedule.mako:169
+#: pyconca/templates/schedule.mako:188 pyconca/templates/schedule.mako:204
+#: pyconca/templates/schedule.mako:209 pyconca/templates/schedule.mako:345
+#: pyconca/templates/schedule.mako:378 pyconca/templates/schedule.mako:400
+#: pyconca/templates/schedule.mako:428
 msgid " • 5 min break • "
 msgstr ""
 
-#: pyconca/templates/schedule.mako:125 pyconca/templates/schedule.mako:379
+#: pyconca/templates/schedule.mako:130 pyconca/templates/schedule.mako:389
 msgid "Lunch (provided)"
 msgstr ""
 
-#: pyconca/templates/schedule.mako:167 pyconca/templates/schedule.mako:421
+#: pyconca/templates/schedule.mako:177 pyconca/templates/schedule.mako:436
 msgid "Coffee Break"
 msgstr ""
 
-#: pyconca/templates/schedule.mako:249 pyconca/templates/schedule.mako:502
+#: pyconca/templates/schedule.mako:259 pyconca/templates/schedule.mako:517
 msgid "Closing Messages"
 msgstr ""
 
-#: pyconca/templates/schedule.mako:286
+#: pyconca/templates/schedule.mako:296
 msgid "Sunday, November 11"
 msgstr ""
 
-#: pyconca/templates/schedule.mako:539
+#: pyconca/templates/schedule.mako:554
 msgid "Monday, November 12"
 msgstr ""
 
-#: pyconca/templates/schedule.mako:553
+#: pyconca/templates/schedule.mako:568
 msgid "Tuesday, November 13"
 msgstr ""
 
@@ -1025,7 +1025,4 @@ msgstr ""
 #: pyconca/templates/user/user_get.mako:8
 msgid "User Profile"
 msgstr ""
-
-#~ msgid " • 5 minutes • "
-#~ msgstr ""
 
