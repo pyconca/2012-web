@@ -28,31 +28,32 @@
   <div id="slider">
       <div class="viewport">
           <ul class="overview" style="width: 1560px; left: 0px; ">
-            <li><%include file="pyconca:templates/sponsors/500px.mako" args="img_class='black-and-white'"/></li>
-            <li><%include file="pyconca:templates/sponsors/freshbooks.mako" args="img_class='black-and-white'"/></li>
-            <li><%include file="pyconca:templates/sponsors/wave.mako" args="img_class='black-and-white'"/></li>
-            <li><%include file="pyconca:templates/sponsors/chango.mako" args="img_class='black-and-white'"/></li>
-            <li><%include file="pyconca:templates/sponsors/psf.mako" args="img_class='black-and-white'"/></li>
-            <li><%include file="pyconca:templates/sponsors/google.mako" args="img_class='black-and-white'"/></li>
-            <li><%include file="pyconca:templates/sponsors/points.mako" args="img_class='black-and-white'"/></li>
-            <li><%include file="pyconca:templates/sponsors/crs.mako" args="img_class='black-and-white'"/></li>
-            <li><%include file="pyconca:templates/sponsors/upverter.mako" args="img_class='black-and-white'"/></li>
-            <li><%include file="pyconca:templates/sponsors/bnotions.mako" args="img_class='black-and-white'"/></li>
-            <li><%include file="pyconca:templates/sponsors/mozilla.mako" args="img_class='black-and-white'"/></li>
-            <li><%include file="pyconca:templates/sponsors/agendaless.mako" args="img_class='black-and-white'"/></li>
-            <li><%include file="pyconca:templates/sponsors/heroku.mako" args="img_class='black-and-white'"/></li>
-            <li><%include file="pyconca:templates/sponsors/trapeze.mako" args="img_class='black-and-white'"/></li>
-            <li><%include file="pyconca:templates/sponsors/guru_link.mako" args="img_class='black-and-white'"/></li>
-            <li><%include file="pyconca:templates/sponsors/cloudant.mako" args="img_class='black-and-white'"/></li>
-            <li><%include file="pyconca:templates/sponsors/gadventures.mako" args="img_class='black-and-white'"/></li>
-            <li><%include file="pyconca:templates/sponsors/vmfarms.mako" args="img_class='black-and-white'"/></li>
-            <li><%include file="pyconca:templates/sponsors/uber.mako" args="img_class='black-and-white'"/></li>
-            <li><%include file="pyconca:templates/sponsors/llc.mako" args="img_class='black-and-white'"/></li>
-            <li><%include file="pyconca:templates/sponsors/element34.mako" args="img_class='black-and-white'"/></li>
-            <li><%include file="pyconca:templates/sponsors/danols.mako" args="img_class='black-and-white'"/></li>
-            <li><%include file="pyconca:templates/sponsors/albert_oconnor.mako" args="img_class='black-and-white'"/></li>
-            <li><%include file="pyconca:templates/sponsors/amelanche.mako" args="img_class='black-and-white'"/></li>
-            <li><%include file="pyconca:templates/sponsors/montreal-python.mako" args="img_class='black-and-white'"/></li>
+            <li><%include file="pyconca:templates/sponsors/500px.mako"/></li>
+            <li><%include file="pyconca:templates/sponsors/freshbooks.mako"/></li>
+            <li><%include file="pyconca:templates/sponsors/wave.mako"/></li>
+            <li><%include file="pyconca:templates/sponsors/chango.mako"/></li>
+            <li><%include file="pyconca:templates/sponsors/psf.mako"/></li>
+            <li><%include file="pyconca:templates/sponsors/google.mako"/></li>
+            <li><%include file="pyconca:templates/sponsors/points.mako"/></li>
+            <li><%include file="pyconca:templates/sponsors/crs.mako"/></li>
+            <li><%include file="pyconca:templates/sponsors/upverter.mako"/></li>
+            <li><%include file="pyconca:templates/sponsors/bnotions.mako"/></li>
+            <li><%include file="pyconca:templates/sponsors/mozilla.mako"/></li>
+            <li><%include file="pyconca:templates/sponsors/agendaless.mako"/></li>
+            <li><%include file="pyconca:templates/sponsors/heroku.mako"/></li>
+            <li><%include file="pyconca:templates/sponsors/trapeze.mako"/></li>
+            <li><%include file="pyconca:templates/sponsors/guru_link.mako"/></li>
+            <li><%include file="pyconca:templates/sponsors/cloudant.mako"/></li>
+            <li><%include file="pyconca:templates/sponsors/gadventures.mako"/></li>
+            <li><%include file="pyconca:templates/sponsors/vmfarms.mako"/></li>
+            <li><%include file="pyconca:templates/sponsors/uber.mako"/></li>
+            <li><%include file="pyconca:templates/sponsors/llc.mako"/></li>
+            <li><%include file="pyconca:templates/sponsors/element34.mako"/></li>
+            <li><%include file="pyconca:templates/sponsors/danols.mako"/></li>
+            <li><%include file="pyconca:templates/sponsors/albert_oconnor.mako"/></li>
+            <li><%include file="pyconca:templates/sponsors/amelanche.mako"/></li>
+            <li><%include file="pyconca:templates/sponsors/montreal-python.mako"/></li>
+            <li><%include file="pyconca:templates/sponsors/verso.mako"/></li>
             </div>
           </ul>
       </div>
@@ -94,7 +95,7 @@
   $(function() {
     $('#slider').tinycarousel({
       interval: true,
-      intervaltime: 1500,
+      intervaltime: 3500,
       duration: 500
     });
   });

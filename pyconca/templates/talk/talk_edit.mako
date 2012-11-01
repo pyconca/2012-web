@@ -131,6 +131,14 @@
     </div>
 
     <div class="control-group">
+        <label class="control-label" for="bio">Speaker Bio</label>
+        <div class="controls">
+            <textarea rows="5" class="field span10" name="bio" maxlength="500">{{talk.bio}}</textarea>
+            <div class="help-block" style="display: inline;" id="bio_error">&nbsp;</div>
+        </div>
+    </div>
+
+    <div class="control-group">
         <label class="control-label" for="abstract">Abstract</label>
         <div class="controls">
             <textarea rows="5" class="field span10" name="abstract" maxlength="400">{{talk.abstract}}</textarea>
@@ -198,6 +206,7 @@
                 title: "",
                 type: "",
                 level: "",
+                bio: "",
                 abstract: "",
                 outline: "",
                 reviewer_notes: "",

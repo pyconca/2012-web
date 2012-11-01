@@ -17,10 +17,12 @@
 
 <%block name="form">
 
+<p><em>Note: Click on a table header to sort by that column!</em></p>
+
 <div id="talk-index-result"></div>
 
 <script id="talk-index-template" type="text/x-handlebars-template">
-    <table class="table table-striped table-bordered">
+    <table id="talk-index-table" class="table table-striped table-bordered">
         <tr>
             <th>Title</th>
             <th>Speaker</th>
@@ -53,6 +55,7 @@
         var layout = $("#talk-index-template").html();
         var template = Handlebars.compile(layout);
         $("#talk-index-result").html(template(response["data"]));
+        sorttable.makeSortable($("#talk-index-table")[0]);
     }
 
     $(document).ready(function() {
@@ -62,6 +65,8 @@
         });
     });
 </script>
+
+<script src="${request.static_url("pyconca:static/libs/sorttable.js")}"></script>
 
 </%block>
 

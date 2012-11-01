@@ -83,6 +83,11 @@ def sponsors_chango(request):
     return _build_response(request)
 
 
+@view_config(route_name='sponsors_wave', renderer='sponsors_wave.mako')
+def sponsors_wave(request):
+    return _build_response(request)
+
+
 @view_config(route_name='contact', renderer='contact.mako')
 def contact(request):
     return _build_response(request)

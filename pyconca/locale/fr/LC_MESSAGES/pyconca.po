@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pyconca 0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-10-16 13:52-0400\n"
+"POT-Creation-Date: 2012-10-29 23:07-0400\n"
 "PO-Revision-Date: 2012-08-15 22:00-0400\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -66,7 +66,7 @@ msgstr ""
 
 #: pyconca/templates/about.mako:3 pyconca/templates/about.mako:5
 #: pyconca/templates/base.mako:56 pyconca/templates/base.mako:62
-#: pyconca/templates/base.mako:230
+#: pyconca/templates/base.mako:235
 msgid "About"
 msgstr "À propos"
 
@@ -100,14 +100,14 @@ msgstr "Code de conduite"
 msgid "Made in Canada!"
 msgstr "Fait au Canada!"
 
-#: pyconca/templates/base.mako:75 pyconca/templates/base.mako:238
-#: pyconca/templates/index.mako:78 pyconca/templates/venue.mako:3
+#: pyconca/templates/base.mako:75 pyconca/templates/base.mako:243
+#: pyconca/templates/index.mako:81 pyconca/templates/venue.mako:3
 #: pyconca/templates/venue.mako:5
 msgid "Venue"
 msgstr "Lieu"
 
-#: pyconca/templates/base.mako:81 pyconca/templates/base.mako:242
-#: pyconca/templates/index.mako:83 pyconca/templates/schedule.mako:4
+#: pyconca/templates/base.mako:81 pyconca/templates/base.mako:247
+#: pyconca/templates/index.mako:86 pyconca/templates/schedule.mako:4
 #: pyconca/templates/schedule.mako:7
 msgid "Schedule"
 msgstr "Horaire"
@@ -116,19 +116,19 @@ msgstr "Horaire"
 msgid "Conference"
 msgstr "Conférence"
 
-#: pyconca/templates/base.mako:92 pyconca/templates/schedule.mako:517
-#: pyconca/templates/schedule.mako:531 pyconca/templates/sprints.mako:3
+#: pyconca/templates/base.mako:92 pyconca/templates/schedule.mako:544
+#: pyconca/templates/schedule.mako:558 pyconca/templates/sprints.mako:3
 #: pyconca/templates/sprints.mako:5
 msgid "Sprints"
 msgstr "Sprints"
 
-#: pyconca/templates/base.mako:100 pyconca/templates/base.mako:246
-#: pyconca/templates/index.mako:65
+#: pyconca/templates/base.mako:100 pyconca/templates/base.mako:251
+#: pyconca/templates/index.mako:68
 msgid "Speak"
 msgstr "Présenter"
 
-#: pyconca/templates/base.mako:106 pyconca/templates/base.mako:250
-#: pyconca/templates/index.mako:70
+#: pyconca/templates/base.mako:106 pyconca/templates/base.mako:255
+#: pyconca/templates/index.mako:73
 msgid "Learn"
 msgstr "Apprendre"
 
@@ -157,87 +157,92 @@ msgstr ""
 msgid "Silver Sponsor • Chango"
 msgstr ""
 
-#: pyconca/templates/base.mako:138 pyconca/templates/directory.mako:3
+#: pyconca/templates/base.mako:138 pyconca/templates/sponsors_wave.mako:3
+#: pyconca/templates/sponsors_wave.mako:5
+msgid "Silver Sponsor • Wave"
+msgstr ""
+
+#: pyconca/templates/base.mako:143 pyconca/templates/directory.mako:3
 #: pyconca/templates/directory.mako:5
 msgid "Independent Sponsors"
 msgstr ""
 
-#: pyconca/templates/base.mako:145 pyconca/templates/base.mako:234
+#: pyconca/templates/base.mako:150 pyconca/templates/base.mako:239
 #: pyconca/templates/contact.mako:3 pyconca/templates/contact.mako:5
 msgid "Contact"
 msgstr "Contact"
 
-#: pyconca/templates/base.mako:159 pyconca/templates/talk/talk_index.mako:4
+#: pyconca/templates/base.mako:164 pyconca/templates/talk/talk_index.mako:4
 #: pyconca/templates/talk/talk_index.mako:8
 msgid "Talks"
 msgstr "Présentations"
 
-#: pyconca/templates/base.mako:164 pyconca/templates/user/user_index.mako:4
+#: pyconca/templates/base.mako:169 pyconca/templates/user/user_index.mako:4
 #: pyconca/templates/user/user_index.mako:8
 msgid "Users"
 msgstr "Utilisateurs"
 
-#: pyconca/templates/base.mako:170
+#: pyconca/templates/base.mako:175
 msgid "Submit a Talk"
 msgstr "Soumettre une présentation"
 
-#: pyconca/templates/base.mako:175
+#: pyconca/templates/base.mako:180
 msgid "Your Talks"
 msgstr "Vos présentations"
 
-#: pyconca/templates/base.mako:182
+#: pyconca/templates/base.mako:187
 msgid "Your Profile"
 msgstr "Votre profil"
 
-#: pyconca/templates/base.mako:187
+#: pyconca/templates/base.mako:192
 msgid "Logout"
 msgstr "Se déconnecter"
 
-#: pyconca/templates/base.mako:195 pyconca/templates/auth/login.mako:4
+#: pyconca/templates/base.mako:200 pyconca/templates/auth/login.mako:4
 #: pyconca/templates/auth/login.mako:8
 msgid "Login"
 msgstr "Connexion"
 
-#: pyconca/templates/base.mako:201 pyconca/templates/user/user_edit.mako:5
+#: pyconca/templates/base.mako:206 pyconca/templates/user/user_edit.mako:5
 #: pyconca/templates/user/user_edit.mako:13
 msgid "Sign Up"
 msgstr "S'inscrire"
 
-#: pyconca/templates/base.mako:209 pyconca/templates/base.mako:260
+#: pyconca/templates/base.mako:214 pyconca/templates/base.mako:265
 msgid "Français"
 msgstr "English"
 
-#: pyconca/templates/base.mako:226
+#: pyconca/templates/base.mako:231
 msgid "Home"
 msgstr "Accueil"
 
-#: pyconca/templates/base.mako:254
+#: pyconca/templates/base.mako:259
 msgid "Sponsor"
 msgstr "Commanditer"
 
-#: pyconca/templates/base.mako:266
+#: pyconca/templates/base.mako:271
 #, fuzzy
 msgid "© PyCon Canada 2012"
 msgstr "PyCon Canada 2012"
 
-#: pyconca/templates/base.mako:268
+#: pyconca/templates/base.mako:273
 #, fuzzy
 msgid "Photo by camstatic"
 msgstr "photo par camstatic"
 
-#: pyconca/templates/base.mako:273
+#: pyconca/templates/base.mako:278
 msgid "Get in touch"
 msgstr ""
 
-#: pyconca/templates/base.mako:277
+#: pyconca/templates/base.mako:282
 msgid "Board"
 msgstr ""
 
-#: pyconca/templates/base.mako:278
+#: pyconca/templates/base.mako:283
 msgid "List"
 msgstr ""
 
-#: pyconca/templates/base.mako:280 pyconca/templates/volunteer.mako:3
+#: pyconca/templates/base.mako:285 pyconca/templates/volunteer.mako:3
 #: pyconca/templates/volunteer.mako:5
 msgid "Volunteer"
 msgstr ""
@@ -362,53 +367,52 @@ msgstr "Contactez-nous"
 msgid "We are also online at:"
 msgstr "Nous sommes aussi en ligne sur:"
 
-#: pyconca/templates/event.mako:10 pyconca/templates/generic.mako:10
-#: pyconca/templates/sponsor_profile.mako:10
-msgid "PyCon Canada 2012"
-msgstr "PyCon Canada 2012"
-
-#: pyconca/templates/event.mako:11 pyconca/templates/generic.mako:11
-msgid "November 9 – 11, 2012 • Toronto"
-msgstr ""
-
-#: pyconca/templates/event.mako:12 pyconca/templates/generic.mako:12
+#: pyconca/templates/event.mako:10 pyconca/templates/generic.mako:14
 msgid "Bringing the Python Canada community together"
 msgstr ""
 
-#: pyconca/templates/event.mako:15
+#: pyconca/templates/event.mako:13
 #, fuzzy
 msgid "Quick links"
 msgstr "Liens rapides"
 
-#: pyconca/templates/event.mako:23 pyconca/templates/index.mako:28
+#: pyconca/templates/event.mako:21 pyconca/templates/index.mako:27
 #, fuzzy
 msgid "Our Sponsors"
 msgstr "Sponsors"
 
-#: pyconca/templates/event.mako:24
+#: pyconca/templates/event.mako:22
 msgid "Gold"
 msgstr ""
 
-#: pyconca/templates/event.mako:27
+#: pyconca/templates/event.mako:25
 msgid "Silver"
 msgstr ""
 
-#: pyconca/templates/event.mako:32
+#: pyconca/templates/event.mako:36
 msgid "Our Mothership"
 msgstr ""
 
-#: pyconca/templates/event.mako:35
+#: pyconca/templates/event.mako:39
 msgid "View full list of sponsors"
 msgstr ""
 
-#: pyconca/templates/event.mako:36
+#: pyconca/templates/event.mako:40
 msgid "Sponsorship details"
 msgstr ""
 
-#: pyconca/templates/index.mako:18
+#: pyconca/templates/generic.mako:12 pyconca/templates/sponsor_profile.mako:10
+msgid "PyCon Canada 2012"
+msgstr "PyCon Canada 2012"
+
+#: pyconca/templates/generic.mako:13
+msgid "November 9 – 13, 2012 • Toronto"
+msgstr ""
+
+#: pyconca/templates/index.mako:17
 msgid "INDEX_ABOUT_BLURB"
 msgstr ""
-"Vous êtes invités au lancement de la conférence, du 9 au 11 novembre "
+"Vous êtes invités au lancement de la conférence, du 9 au 13 novembre "
 "2012, à Toronto, pour se préparer à la première conférence <a "
 "href='http://us.pycon.org/'>PyCon Amérique du Nord</a> à l'extérieur des "
 "États-Unis - <a href='http://www.newswire.ca/en/story/731987/montreal-"
@@ -417,7 +421,7 @@ msgstr ""
 " quand ce sera fait, gardons le momentum en organisant une conférence "
 "annuelle PyCon au Canada. "
 
-#: pyconca/templates/index.mako:66
+#: pyconca/templates/index.mako:69
 msgid "INDEX_SPEAK_BLURB"
 msgstr ""
 "Partager ses connaissances et ses idées. Soumettre une proposition pour "
@@ -425,7 +429,7 @@ msgstr ""
 "organizers@pycon.ca. Nous allons sprinter à la conférence aussi, alors "
 "envoyez nous vos idées de sprints. "
 
-#: pyconca/templates/index.mako:71
+#: pyconca/templates/index.mako:74
 msgid "INDEX_LEARN_BLURB"
 msgstr ""
 "Un des buts de PyCon Canada est d'amener au Canada des experts de "
@@ -434,15 +438,15 @@ msgstr ""
 " présentateurs vedettes, un par un, durant les prochaines semaines. "
 "Restez à l'affût: "
 
-#: pyconca/templates/index.mako:79
+#: pyconca/templates/index.mako:82
 msgid "INDEX_VENUE_BLURB"
 msgstr ""
-"Soyez là du 9 au 11 novembre 2012, au Beverley Halls dans le centre-ville"
+"Soyez là du 9 au 13 novembre 2012, au Beverley Halls dans le centre-ville"
 " de Toronto. À une petite marche d'un métro, donc lorsque vous ne serez "
 "pas occupés à coder ou à discuter avec vos collègues, vous aurez beaucoup"
 " de choses à explorer. "
 
-#: pyconca/templates/index.mako:84
+#: pyconca/templates/index.mako:87
 msgid "INDEX_SCHEDULE_BLURB"
 msgstr ""
 "Le plaisir commence le vendredi avec une soirée de réseautage. Nourrissez"
@@ -451,27 +455,27 @@ msgstr ""
 "pourrez sprinter ou assiter à des présentations et des tutoriaux. "
 
 #: pyconca/templates/index.mako:12
-msgid "November 9 – 11, 2012 • Toronto"
-msgstr ""
-
-#: pyconca/templates/index.mako:13
 msgid "Bringing the Canadian Python community together"
 msgstr ""
 
-#: pyconca/templates/index.mako:20
+#: pyconca/templates/index.mako:13
+msgid "November 9 – 13, 2012 • Toronto"
+msgstr ""
+
+#: pyconca/templates/index.mako:19
 msgid "Register"
 msgstr "S'inscrire"
 
-#: pyconca/templates/index.mako:58
+#: pyconca/templates/index.mako:61
 msgid "Interested in a sponsorship opportunity?"
 msgstr ""
 
-#: pyconca/templates/index.mako:58
+#: pyconca/templates/index.mako:61
 msgid "Learn more"
 msgstr ""
 
-#: pyconca/templates/index.mako:67 pyconca/templates/index.mako:72
-#: pyconca/templates/index.mako:80 pyconca/templates/index.mako:85
+#: pyconca/templates/index.mako:70 pyconca/templates/index.mako:75
+#: pyconca/templates/index.mako:83 pyconca/templates/index.mako:88
 msgid "More info"
 msgstr ""
 
@@ -515,7 +519,17 @@ msgstr ""
 "Noisebridge hacker space in San Francisco.  She is best reached on "
 "twitter as <a href='https://twitter.com/eleddy'>@eleddy</a>. "
 
-#: pyconca/templates/learn.mako:45
+#: pyconca/templates/learn.mako:46
+msgid "LEARN_DANIEL_LINDSLEY"
+msgstr ""
+"Pythonista since 2003, Djangonaut since 2006. <a "
+"href='https://twitter.com/daniellindsley'>Daniel Lindsley</a> wrote & "
+"maintains several OSS projects like <a href='http://django-"
+"haystack.readthedocs.org/'>Haystack</a>, Tastypie, pysolr, itty, "
+"littleworkers. Loves search, APIs & hard problems. Curator of fine "
+"animated gifs. "
+
+#: pyconca/templates/learn.mako:57
 msgid "LEARN_CHRIS_MCDONOUGH"
 msgstr ""
 "<a href='https://twitter.com/chrismcdonough'>Chris McDonough</a> is the "
@@ -528,7 +542,7 @@ msgstr ""
 "management system. <b>Cancelled:</b> It looks like Chris McDonough won't "
 "be able to join us this year after all. He sends his apologies. "
 
-#: pyconca/templates/learn.mako:57
+#: pyconca/templates/learn.mako:69
 msgid "LEARN_JESSICA_MCKELLAR"
 msgstr ""
 "<a href='http://jesstess.com'>Jessica McKellar</a> is a software engineer"
@@ -538,15 +552,15 @@ msgstr ""
 "href='http://bostonpythonworkshop.com/'> Boston Python Workshops</a> "
 "forwomen and their friends -- an introductory programming pipeline that "
 "has brought hundreds of women into the local Python community and is "
-"being replicated in cities across the US. Jessica is a veteran open "
-"source contributor and a maintainer for several open source projects, "
-"including OpenHatch and the Twisted event-driven networking engine; she "
-"wrote a chapter on Twisted for <a "
+"being replicated in cities across the US. <br><br>  Jessica is a veteran "
+"open source contributor and a maintainer for several open source "
+"projects, including OpenHatch and the Twisted event-driven networking "
+"engine; she wrote a chapter on Twisted for <a "
 "href='http://www.aosabook.org/en/index.html'>The Architecture of Open "
 "Source Applications Volume II</a> and is working with O'Reilly on a new "
 "edition of Twisted Networking Essentials. "
 
-#: pyconca/templates/learn.mako:68
+#: pyconca/templates/learn.mako:80
 msgid "LEARN_FERNANDO_PÉREZ"
 msgstr ""
 "<a href='http://fperez.org/'>Fernando Pérez</a> received his PhD in "
@@ -563,13 +577,9 @@ msgstr ""
 "continues to lead the IPython project along with a growing team of "
 "talented developers. He also is a member of the core matplotlib "
 "development team, and has contributed to numpy, scipy, sympy, mayavi and "
-"other Python projects. <br><br> He is a regular speaker on topics related"
-" to scientific computing in Python, having taught workshops at multiple "
-"institutions in North and South America, Africa, Asia and Europe. He is a"
-" member of the <a href='http://www.python.org/psf/'>Python Software "
-"Foundation</a>."
+"other Python projects. "
 
-#: pyconca/templates/learn.mako:80
+#: pyconca/templates/learn.mako:92
 msgid "LEARN_KENNETH_REITZ"
 msgstr ""
 "<a href='http://twitter.com/kennethreitz'>Kenneth Reitz</a> is the "
@@ -580,7 +590,7 @@ msgstr ""
 "projects</a>, specifically <a href='http://python-"
 "requests.org/'>Requests</a>. "
 
-#: pyconca/templates/learn.mako:92
+#: pyconca/templates/learn.mako:104
 msgid "LEARN_BRANDON_RHODES"
 msgstr ""
 "<a href='http://twitter.com/brandon_rhodes'>Brandon Rhodes</a> started "
@@ -592,7 +602,7 @@ msgstr ""
 "the <a href='http://rhodesmill.org/pyephem/'>PyEphem</a> module for "
 "amateur astronomers since 1998. "
 
-#: pyconca/templates/learn.mako:97
+#: pyconca/templates/learn.mako:109
 msgid "LEARN_SANDY_WALSH"
 msgstr ""
 "Basé à Halifax, Alex 'Sandy' Walsh est le propriétaire de Darl Secret "
@@ -607,27 +617,27 @@ msgstr ""
 msgid "Confirmed Speakers"
 msgstr "Présentateurs confirmés"
 
-#: pyconca/templates/schedule.mako:31
+#: pyconca/templates/schedule.mako:32
 msgid "SCHEDULE_PARTY"
 msgstr ""
 "<strong>Enregistrement, maillage et préparation du site</strong>. Venez "
 "vous enregistrer, passer du temps et discuter. De la nourriture et des "
 "rafraîchissements seront servis, et le bar du site sera ouvert. "
 
-#: pyconca/templates/schedule.mako:246 pyconca/templates/schedule.mako:484
+#: pyconca/templates/schedule.mako:258 pyconca/templates/schedule.mako:511
 msgid "SCHEDULE_TALKS_DONE"
 msgstr ""
 "<strong>Fin des présentations, ouverture du bar et des entrées seront "
 "servies</strong>. C'est le temps de rencontrer des gens dans la "
 "perspective du diner. "
 
-#: pyconca/templates/schedule.mako:253 pyconca/templates/schedule.mako:491
+#: pyconca/templates/schedule.mako:265 pyconca/templates/schedule.mako:518
 msgid "SCHEDULE_DINNER"
 msgstr ""
 "<strong>Diner</strong>. Non-inclus. Ramassez des amis et allez à "
 "l'extérieur à un restaurant local. "
 
-#: pyconca/templates/schedule.mako:260 pyconca/templates/schedule.mako:498
+#: pyconca/templates/schedule.mako:272 pyconca/templates/schedule.mako:525
 msgid "SCHEDULE_SPRINTS"
 msgstr ""
 "<strong>Open space, sessions BoF</strong>. Sortir et discuter. Le bar du "
@@ -635,63 +645,63 @@ msgstr ""
 "href='http://en.wikipedia.org/wiki/Birds_of_a_feather_(computing)'> birds"
 " of a feather</a>. "
 
-#: pyconca/templates/schedule.mako:26
+#: pyconca/templates/schedule.mako:27
 msgid "Friday, November 9"
 msgstr "Vendredi, 9 novembre"
 
-#: pyconca/templates/schedule.mako:37 pyconca/templates/schedule.mako:267
-#: pyconca/templates/schedule.mako:505
+#: pyconca/templates/schedule.mako:38 pyconca/templates/schedule.mako:279
+#: pyconca/templates/schedule.mako:532
 msgid "Venue closes"
 msgstr "Fermeture des lieux"
 
-#: pyconca/templates/schedule.mako:44
+#: pyconca/templates/schedule.mako:45
 msgid "Saturday, November 10"
 msgstr "Samedi, 10 novembre"
 
-#: pyconca/templates/schedule.mako:49 pyconca/templates/schedule.mako:279
+#: pyconca/templates/schedule.mako:50 pyconca/templates/schedule.mako:291
 msgid "Registration"
 msgstr "Inscription"
 
-#: pyconca/templates/schedule.mako:71 pyconca/templates/schedule.mako:94
-#: pyconca/templates/schedule.mako:136 pyconca/templates/schedule.mako:175
-#: pyconca/templates/schedule.mako:197 pyconca/templates/schedule.mako:232
-#: pyconca/templates/schedule.mako:301 pyconca/templates/schedule.mako:334
-#: pyconca/templates/schedule.mako:379 pyconca/templates/schedule.mako:427
-#: pyconca/templates/schedule.mako:462
+#: pyconca/templates/schedule.mako:83 pyconca/templates/schedule.mako:106
+#: pyconca/templates/schedule.mako:148 pyconca/templates/schedule.mako:186
+#: pyconca/templates/schedule.mako:207 pyconca/templates/schedule.mako:242
+#: pyconca/templates/schedule.mako:324 pyconca/templates/schedule.mako:357
+#: pyconca/templates/schedule.mako:402 pyconca/templates/schedule.mako:450
+#: pyconca/templates/schedule.mako:485
 #, fuzzy
 msgid "Break"
 msgstr "Présenter"
 
-#: pyconca/templates/schedule.mako:82 pyconca/templates/schedule.mako:105
-#: pyconca/templates/schedule.mako:124 pyconca/templates/schedule.mako:147
-#: pyconca/templates/schedule.mako:167 pyconca/templates/schedule.mako:184
-#: pyconca/templates/schedule.mako:189 pyconca/templates/schedule.mako:312
-#: pyconca/templates/schedule.mako:345 pyconca/templates/schedule.mako:367
-#: pyconca/templates/schedule.mako:390
-msgid " • 5 minutes • "
+#: pyconca/templates/schedule.mako:94 pyconca/templates/schedule.mako:117
+#: pyconca/templates/schedule.mako:136 pyconca/templates/schedule.mako:159
+#: pyconca/templates/schedule.mako:178 pyconca/templates/schedule.mako:194
+#: pyconca/templates/schedule.mako:199 pyconca/templates/schedule.mako:335
+#: pyconca/templates/schedule.mako:368 pyconca/templates/schedule.mako:390
+#: pyconca/templates/schedule.mako:413
+msgid " • 5 min break • "
 msgstr ""
 
-#: pyconca/templates/schedule.mako:113 pyconca/templates/schedule.mako:356
+#: pyconca/templates/schedule.mako:125 pyconca/templates/schedule.mako:379
 msgid "Lunch (provided)"
 msgstr "Lunch (fourni)"
 
-#: pyconca/templates/schedule.mako:155 pyconca/templates/schedule.mako:398
+#: pyconca/templates/schedule.mako:167 pyconca/templates/schedule.mako:421
 msgid "Coffee Break"
 msgstr ""
 
-#: pyconca/templates/schedule.mako:239 pyconca/templates/schedule.mako:477
+#: pyconca/templates/schedule.mako:249 pyconca/templates/schedule.mako:502
 msgid "Closing Messages"
 msgstr ""
 
-#: pyconca/templates/schedule.mako:274
+#: pyconca/templates/schedule.mako:286
 msgid "Sunday, November 11"
 msgstr "Dimanche, 11 novembre"
 
-#: pyconca/templates/schedule.mako:512
+#: pyconca/templates/schedule.mako:539
 msgid "Monday, November 12"
 msgstr "Lundi, 12 novembre"
 
-#: pyconca/templates/schedule.mako:526
+#: pyconca/templates/schedule.mako:553
 msgid "Tuesday, November 13"
 msgstr "Mardi, 13 novembre"
 
@@ -782,8 +792,9 @@ msgid "Outline of the talk/tutorial"
 msgstr "Structure de la présentation/tutoriel"
 
 #: pyconca/templates/sponsor_profile.mako:11
-msgid "Toronto, November 9th - 11th"
-msgstr "Toronto, du 9 au 11 novembre"
+#, fuzzy
+msgid "Toronto, November 9th - 13th"
+msgstr "Toronto, du 9 au 13 novembre"
 
 #: pyconca/templates/sponsors.mako:10
 msgid "SPONSOSORS_EMAIL"
@@ -815,6 +826,10 @@ msgstr ""
 msgid "Mike McDerment, CEO FreshBooks"
 msgstr ""
 
+#: pyconca/templates/sponsors_wave.mako:9
+msgid "Kirk Simpson, CEO Wave"
+msgstr ""
+
 #: pyconca/templates/sprints.mako:10
 msgid "SPRINT_INTRO"
 msgstr ""
@@ -826,6 +841,20 @@ msgstr ""
 "passer bon moment tout en faisant progresser leurs projets."
 
 #: pyconca/templates/sprints.mako:15
+msgid "SPRINT_SCHEDULE"
+msgstr ""
+"Il y aura deux sessions de pré-sprint le dimanche 12 novembre 2012 après "
+"la fin des discours de la conférence:<br><br><b>Intro (16h30-17h)</b> Une"
+" session plénière qui débutera avec un exposé expliquant les bases du "
+"sprint et comment ils fonctionnent à PyCon. Elle sera suivie par une "
+"brève présentation de chaque projet par le leader du "
+"sprint.<br><br><b>Tutoriels (17h - )</b> Les leaders de sprint réuniront "
+"les sprinteurs et se dirigeront vers leurs salles de sprint pour des "
+"séances d'initiation. Les leaders expliqueront leur projet, traverseront "
+"le code, aideront à l'accès aux dépôts, etc. De cette façon, lundi matin "
+"vous serez en mesure de commencer à coder immédiatement."
+
+#: pyconca/templates/sprints.mako:20
 msgid "SPRINT_WHAT"
 msgstr ""
 "Les Sprints de développement à PyCon sont deux jours intensifs "
@@ -842,7 +871,7 @@ msgstr ""
 "vous apportez vos compétences, l'humanité, et l'intelligence (oh, "
 "n'oubliez pas votre ordinateur)."
 
-#: pyconca/templates/sprints.mako:20
+#: pyconca/templates/sprints.mako:25
 msgid "SPRINT_WHO"
 msgstr ""
 "<b>Vous!</b> <br><br>Tous les niveaux d'expérience sont les bienvenus; "
@@ -850,7 +879,7 @@ msgstr ""
 " contribuer à votre projet Python préféré.<br>La participation aux "
 "sprints est gratuite!"
 
-#: pyconca/templates/sprints.mako:25
+#: pyconca/templates/sprints.mako:30
 msgid "SPRINT_PROJECTS"
 msgstr ""
 "Not sure what to sprint on? Want to advertise your project? Head over to "
@@ -858,40 +887,26 @@ msgstr ""
 "wiki</a> to see (and add to) the list of projects which will have people "
 "sprinting."
 
-#: pyconca/templates/sprints.mako:30
-msgid "SPRINT_SCHEDULE"
-msgstr ""
-"Il y aura deux sessions de pré-sprint le dimanche 12 novembre 2012 après "
-"la fin des discours de la conférence:<br><br><b>Intro (16h30-17h)</b> Une"
-" session plénière qui débutera avec un exposé expliquant les bases du "
-"sprint et comment ils fonctionnent à PyCon. Elle sera suivie par une "
-"brève présentation de chaque projet par le leader du "
-"sprint.<br><br><b>Tutoriels (17h - )</b> Les leaders de sprint réuniront "
-"les sprinteurs et se dirigeront vers leurs salles de sprint pour des "
-"séances d'initiation. Les leaders expliqueront leur projet, traverseront "
-"le code, aideront à l'accès aux dépôts, etc. De cette façon, lundi matin "
-"vous serez en mesure de commencer à coder immédiatement."
-
 #: pyconca/templates/sprints.mako:9
 msgid "Development Sprints"
 msgstr "Sprints de développement"
 
 #: pyconca/templates/sprints.mako:14
+msgid "What's the schedule?"
+msgstr "Quel est l'horaire?"
+
+#: pyconca/templates/sprints.mako:19
 msgid "What's a Sprint?"
 msgstr "Qu'est-ce qu'un Sprint?"
 
-#: pyconca/templates/sprints.mako:19
+#: pyconca/templates/sprints.mako:24
 msgid "Who can participate?"
 msgstr "Qui peut participer?"
 
-#: pyconca/templates/sprints.mako:24
+#: pyconca/templates/sprints.mako:29
 #, fuzzy
 msgid "What's there to sprint on?"
 msgstr "Qu'est-ce qu'un Sprint?"
-
-#: pyconca/templates/sprints.mako:29
-msgid "What's the schedule?"
-msgstr "Quel est l'horaire?"
 
 #: pyconca/templates/venue.mako:10
 msgid "VENUE_LOCATION"
@@ -1021,7 +1036,6 @@ msgstr ""
 #: pyconca/templates/talk/talk_edit.mako:5
 #: pyconca/templates/talk/talk_edit.mako:14
 #, fuzzy
-#| msgid "Submit a Talk"
 msgid "Submit Talk"
 msgstr "Soumettre une présentation"
 
@@ -1043,10 +1057,9 @@ msgstr ""
 #: pyconca/templates/user/user_get.mako:4
 #: pyconca/templates/user/user_get.mako:8
 #, fuzzy
-#| msgid "Your Profile"
 msgid "User Profile"
 msgstr "Votre profil"
 
-#~ msgid " --- 5 minutes --- "
+#~ msgid " • 5 minutes • "
 #~ msgstr ""
 

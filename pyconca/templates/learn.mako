@@ -35,6 +35,18 @@
   </article>
 
   <article>
+    <h2>Daniel Lindsley
+        <a href='https://www.ohloh.net/accounts/228442?ref=Rank'
+           style="border-bottom: none;" target='_top'>
+          <img alt='Ohloh profile for daniellindsley' border='0' height='24'
+               src='${request.static_url("pyconca:static/icons/8.gif")}'
+               width='32' />
+        </a>
+    </h2>
+    <p><%block filter="gettext">LEARN_DANIEL_LINDSLEY</%block></p>
+  </article>
+
+  <article>
     <h2>Chris McDonough
         <a href='https://www.ohloh.net/accounts/12691?ref=Rank'
            style="border-bottom: none;" target='_top'>

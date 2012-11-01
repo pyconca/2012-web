@@ -73,6 +73,7 @@ def main(argv=sys.argv):
             title='Title',
             type='talk',
             level='novice',
+            bio='Bio',
             abstract='Abstract',
             outline='Outline',
             schedule_slot=schedule_slot)

@@ -12,8 +12,8 @@ body {
 }
 @media (max-width: 767px) {
   .container {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 
@@ -229,7 +229,6 @@ footer .fake-head {
   color: #fff;
   font-size: 18px;
   text-transform: uppercase;
-  margin-left: 50px;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
 }
@@ -237,14 +236,13 @@ footer .contact-list li {
   margin-bottom: 0;
 }
 footer .contact-list a {
-  font-size: 22px;
+  font-size: 16px;
   font-weight: normal;
 }
 footer .contact-list span {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   display: inline-block;
-  width: 100px;
   text-align: right;
   margin-right: 5px;
   font-size: 12px;
@@ -304,7 +302,7 @@ footer .contact-list span {
 
 @media (min-width: 570px) {
   #Banner h1 {
-    background: none;      
+    background: none;
   }
 }
 @media (max-width: 979px) {
@@ -512,7 +510,7 @@ aside h1,
 }
 @media (max-width: 979px) {
   #MainContent {
-    margin-top: 0;
+    margin-top: 0px;
   }
 }
 #MainContent header h1 {
@@ -576,7 +574,7 @@ article h3 {
   margin-top: 27px;
 }
 
-.sponsors-section article h2 {
+.sponsors-section article h2.level {
   margin-top: 60px;
 }
 

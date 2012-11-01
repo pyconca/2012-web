@@ -17,15 +17,21 @@
     </section>
 
     <aside class="span3">
-      % if request['bfg.routes.route'].name not in ['sponsors', 'sponsors_500px', 'sponsors_freshbooks', 'sponsors_chango']:
+      % if request['bfg.routes.route'].name not in ['sponsors', 'sponsors_500px', 'sponsors_freshbooks', 'sponsors_chango', 'sponsors_wave']:
         <h1>${_(u"Our Sponsors")}</h1>
         <h2>— <b>${_(u"Gold")}</b> —</h2>
         <%include file="pyconca:templates/sponsors/500px.mako"/>
 
         <h2>— <b>${_(u"Silver")}</b> —</h2>
-        <%include file="pyconca:templates/sponsors/freshbooks.mako"/>
-        <%include file="pyconca:templates/sponsors/wave.mako"/>
-        <%include file="pyconca:templates/sponsors/chango.mako"/>
+        <div style="margin-left: 5px">
+          <%include file="pyconca:templates/sponsors/freshbooks.mako"/>
+        </div>
+        <div style="margin-left: 5px">
+          <%include file="pyconca:templates/sponsors/wave.mako"/>
+        </div>
+        <div style="margin-left: 5px">
+          <%include file="pyconca:templates/sponsors/chango.mako"/>
+        </div>
 
         <h2>— <b>${_(u"Our Mothership")}</b> —</h2>
         <%include file="pyconca:templates/sponsors/psf.mako"/>

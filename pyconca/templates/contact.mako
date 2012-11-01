@@ -29,13 +29,13 @@
       height: 400,
       theme: {
         shell: {
-          background: '#423f39',
+          background: '#210D05',
           color: '#ffffff'
         },
         tweets: {
           background: '#ffffff',
           color: '#444444',
-          links: '#FF7000'
+          links: '#0f7774'
         }
       },
       features: {
