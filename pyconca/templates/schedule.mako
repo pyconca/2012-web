@@ -378,9 +378,7 @@
             <br>${_(u" • 5 min break • ")}<br><br>
             ${slot("A20")}
           </td>
-          <td>
-            ${slot("T3")}
-          </td>
+          <td></td>
         </tr>
 
         <tr>
