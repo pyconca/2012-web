@@ -471,7 +471,7 @@
             ${slot("L8")}<br /><br />
             ${slot("L9")}
           </td>
-          <td>
+          <td rowspan="2">
             ${slot("A29")}
           </td>
           <td>
@@ -485,11 +485,7 @@
             ${slot("L11")}<br /><br />
             ${slot("L12")}
           </td>
-          <td>
-            ${slot("A30")}
-          </td>
-          <td>
-          </td>
+          <td></td>
         </tr>
 
         <tr>
