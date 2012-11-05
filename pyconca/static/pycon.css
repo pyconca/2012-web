@@ -578,7 +578,6 @@ article h3 {
   margin-top: 60px;
 }
 
-
 /* AUTH */
 form {
   margin: 50px 0;
@@ -605,3 +604,81 @@ hr {
   font-weight: 400;
   font-size: 14px;
 }
+
+
+/* Schedule */
+
+.schedule-page table tbody .talk-meta-phone {
+  display: none;
+}
+
+.schedule-page table tbody tr .tutorial-plug {
+  margin-top: 1em;
+}
+
+.schedule-page table tbody tr .five-min-break {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.schedule-page table tbody tr .talk-slot {
+  margin-bottom: 1em;
+}
+
+.schedule-page table tbody tr .talk-slot:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 480px) {
+  .schedule-page table thead {
+    display: none;
+  }
+
+  .schedule-page table tbody td,
+  .schedule-page table tbody th {
+    display: block;
+  }
+
+  .schedule-page table tbody th {
+    background-color: #210D05;
+    color: white;
+  }
+  .schedule-page table tbody tr:hover th {
+    background-color: #5C240F;
+  }
+
+  .schedule-page table tbody .talk-meta-desktop {
+    display: none;
+  }
+  .schedule-page table tbody .talk-meta-phone {
+    display: block;
+    font-size: 75%;
+    font-style: italic;
+  }
+
+  .schedule-page table tbody .tutorial-plug {
+    display: none;
+  }
+
+  .schedule-page table tbody td.empty,
+  .schedule-page table tbody th.empty {
+    display: none;
+  }
+
+
+}
+
+/*
+@media (min-width: 481px) and (max-width: 767px) {
+  #slider  { width: 500px; }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  #slider  { width: 740px; }
+}
+@media (min-width: 980px) {
+  #slider  { width: 950px; }
+}
+@media (min-width: 1200px) {
+  #slider  { width: 1200px; }
+}
+*/
