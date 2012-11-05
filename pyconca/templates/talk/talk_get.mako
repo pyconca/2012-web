@@ -44,6 +44,12 @@
         <strong>Speaker: </strong>
         <span>{{talk.speaker_first_name}} {{talk.speaker_last_name}}</span>
         <br>
+        <strong>Video Release:</strong>
+        <span>
+          {{#if_eq talk.video_release compare=true}}yes{{/if_eq}}
+          {{#if_eq talk.video_release compare=false}}no{{/if_eq}}
+        </span>
+        <br>
         <strong>Type:</strong>
         <span>{{talk.type}}</span>
         <br>

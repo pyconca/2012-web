@@ -79,6 +79,35 @@
         </div>
     </div>
 
+    % if is_admin:
+    <div class="control-group">
+        <label class="control-label" for="schedule_slot_id">Schedule Slot</label>
+        <div class="controls">
+          <select name="schedule_slot_id" id="schedule_slot_id_select">
+            <option value="-1">(not scheduled)</option>
+          </select>
+        </div>
+        <div class="help-block" style="display: inline;" id="schedule_slot_id_error">&nbsp;</div>
+    </div>
+    % endif
+
+    <div class="control-group">
+        <label class="control-label" for="video_release">Video Release</label>
+        <div class="controls">
+          <div class="help-block" style="display: inline;" id="video_release_error">&nbsp;</div>
+          <label>
+            <input type="radio" name="video_release" value="1"
+            {{#if_eq talk.video_release compare=true}}checked="checked"{{/if_eq}}>
+            Yes
+          </label>
+          <label>
+            <input type="radio" name="video_release" value="0"
+            {{#if_eq talk.video_release compare=false}}checked="checked"{{/if_eq}}>
+            No
+          </label>
+        </div>
+    </div>
+
     <div class="control-group">
         <label class="control-label" for="type">Type</label>
         <div class="controls">
@@ -100,18 +129,6 @@
           </label>
         </div>
     </div>
-
-    % if is_admin:
-    <div class="control-group">
-        <label class="control-label" for="schedule_slot_id">Schedule slot</label>
-        <div class="controls">
-          <div class="help-block" style="display: inline;" id="schedule_slot_id_error">&nbsp;</div>
-          <select name="schedule_slot_id" id="schedule_slot_id_select">
-            <option value="-1">(not scheduled)</option>
-          </select>
-        </div>
-    </div>
-    % endif
 
     <div class="control-group">
         <label class="control-label" for="level">Difficulty Level</label>

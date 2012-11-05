@@ -66,6 +66,7 @@ class TalkApi(BaseApi):
         talk.bio = form['bio']
         talk.abstract = form['abstract']
         talk.outline = form['outline']
+        talk.video_release = form['video_release']
 
     def _validate(self, model, form):
         super(TalkApi, self)._validate(model, form)
@@ -158,3 +159,4 @@ class TalkSchema(Schema):
         not_empty=False, strip=True, if_missing='')
     schedule_slot_id = validators.Int(not_empty=False, if_missing=0)
     owner_id = validators.Int(not_empty=True)
+    video_release = validators.Int(not_empty=True)

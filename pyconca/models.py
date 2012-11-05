@@ -162,6 +162,7 @@ class Talk(AttrMixIn, Base):
     abstract = Column(String(length=400), nullable=False)
     outline = Column(Text(), nullable=False)
     reviewer_notes = Column(Text(), default='')
+    video_release = Column(Boolean, default=True)
     schedule_slot = relationship('ScheduleSlot',
                                  backref=backref('talk', uselist=False),
                                  secondary='talk_schedule_slot',
@@ -190,6 +191,7 @@ class Talk(AttrMixIn, Base):
             'bio': self.bio,
             'type': self.type,
             'level': self.level,
+            'video_release': self.video_release,
             'abstract': self.abstract,
         }
 
