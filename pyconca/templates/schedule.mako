@@ -40,11 +40,12 @@
     % if talk_url:
         <a href="${talk_url}">
     % endif
-        <strong style="${title_style}">${title}</strong> by
-        <strong>${owner_name}</strong>
+        <strong style="${title_style}">${title}</strong>
     % if talk_url:
         </a>
     % endif
+    by <strong>${owner_name}</strong>
+
     <span class="talk-meta-phone">
       ${room.title()} • ${code}
       % if "T" in code:
