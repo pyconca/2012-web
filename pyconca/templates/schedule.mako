@@ -11,9 +11,11 @@
     slot = slots.get(code)
     talk = slot and slot.talk
     owner = talk and talk.owner
+    talk_url = talk and request.route_url('talk_get', id=talk.id)
   %>
 
   ${render_slot(
+    talk_url,
     (talk and talk.title),
     (owner and "%s %s" %(owner.first_name, owner.last_name)),
     (slot and slot.room),
@@ -21,7 +23,7 @@
   )}
 </%def>
 
-<%def name="render_slot(title, owner_name, room, code)">
+<%def name="render_slot(talk_url, title, owner_name, room, code)">
   <div class="talk-slot">
     % if title is None:
       <strong>TBA</strong> (${code})
@@ -35,8 +37,14 @@
         title_style = "font-style: italic;"
     %>
 
-    <strong style="${title_style}">${title}</strong> by
-    <strong>${owner_name}</strong>
+    % if talk_url:
+        <a href="${talk_url}">
+    % endif
+        <strong style="${title_style}">${title}</strong> by
+        <strong>${owner_name}</strong>
+    % if talk_url:
+        </a>
+    % endif
     <span class="talk-meta-phone">
       ${room.title()} • ${code}
       % if "T" in code:
@@ -108,7 +116,7 @@
           <tr>
             <th>9:30</th>
             <td colspan="3">
-              ${render_slot(_("Morning Keynote"), "Jessica McKellar", "Main Hall", "K1")}
+              ${render_slot('', _("Morning Keynote"), "Jessica McKellar", "Main Hall", "K1")}
             </td>
           </tr>
 
@@ -346,7 +354,7 @@
           <tr>
             <th>9:15</th>
             <td colspan="3">
-              ${render_slot(_("Morning Keynote"), "Michael Feathers", "Main Hall", "K2")}
+              ${render_slot('', _("Morning Keynote"), "Michael Feathers", "Main Hall", "K2")}
             </td>
           </tr>
 
@@ -515,7 +523,7 @@
           <tr>
             <th>4:40</th>
             <td colspan="3">
-              ${render_slot(_("Closing Keynote"), u"Fernando Pérez", "Main Hall", "K3")}
+              ${render_slot('', _("Closing Keynote"), u"Fernando Pérez", "Main Hall", "K3")}
             </td>
           </tr>
 
