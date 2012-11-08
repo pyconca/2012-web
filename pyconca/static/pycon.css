@@ -608,24 +608,24 @@ hr {
 
 /* Schedule */
 
-.schedule-page table tbody .talk-meta-phone {
+.schedule-page .talk-meta-phone {
   display: none;
 }
 
-.schedule-page table tbody tr .tutorial-plug {
+.schedule-page .tutorial-plug {
   margin-top: 1em;
 }
 
-.schedule-page table tbody tr .five-min-break {
+.schedule-page .five-min-break {
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
-.schedule-page table tbody tr .talk-slot {
+.schedule-page .talk-slot {
   margin-bottom: 1em;
 }
 
-.schedule-page table tbody tr .talk-slot:last-child {
+.schedule-page .talk-slot:last-child {
   margin-bottom: 0;
 }
 
