@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pyconca 0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-11-05 18:10-0500\n"
+"POT-Creation-Date: 2012-11-08 13:41-0500\n"
 "PO-Revision-Date: 2012-08-15 22:00-0400\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -116,8 +116,8 @@ msgstr "Horaire"
 msgid "Conference"
 msgstr "Conférence"
 
-#: pyconca/templates/base.mako:92 pyconca/templates/schedule.mako:566
-#: pyconca/templates/schedule.mako:580 pyconca/templates/sprints.mako:3
+#: pyconca/templates/base.mako:92 pyconca/templates/schedule.mako:575
+#: pyconca/templates/schedule.mako:589 pyconca/templates/sprints.mako:3
 #: pyconca/templates/sprints.mako:5
 msgid "Sprints"
 msgstr "Sprints"
@@ -622,27 +622,27 @@ msgstr ""
 msgid "Confirmed Speakers"
 msgstr "Présentateurs confirmés"
 
-#: pyconca/templates/schedule.mako:68
+#: pyconca/templates/schedule.mako:77
 msgid "SCHEDULE_PARTY"
 msgstr ""
 "<strong>Enregistrement, maillage et préparation du site</strong>. Venez "
 "vous enregistrer, passer du temps et discuter. De la nourriture et des "
 "rafraîchissements seront servis, et le bar du site sera ouvert. "
 
-#: pyconca/templates/schedule.mako:291 pyconca/templates/schedule.mako:532
+#: pyconca/templates/schedule.mako:300 pyconca/templates/schedule.mako:541
 msgid "SCHEDULE_TALKS_DONE"
 msgstr ""
 "<strong>Fin des présentations, ouverture du bar et des entrées seront "
 "servies</strong>. C'est le temps de rencontrer des gens dans la "
 "perspective du diner. "
 
-#: pyconca/templates/schedule.mako:298 pyconca/templates/schedule.mako:539
+#: pyconca/templates/schedule.mako:307 pyconca/templates/schedule.mako:548
 msgid "SCHEDULE_DINNER"
 msgstr ""
 "<strong>Diner</strong>. Non-inclus. Ramassez des amis et allez à "
 "l'extérieur à un restaurant local. "
 
-#: pyconca/templates/schedule.mako:305 pyconca/templates/schedule.mako:546
+#: pyconca/templates/schedule.mako:314 pyconca/templates/schedule.mako:555
 msgid "SCHEDULE_SPRINTS"
 msgstr ""
 "<strong>Open space, sessions BoF</strong>. Sortir et discuter. Le bar du "
@@ -650,65 +650,235 @@ msgstr ""
 "href='http://en.wikipedia.org/wiki/Birds_of_a_feather_(computing)'> birds"
 " of a feather</a>. "
 
-#: pyconca/templates/schedule.mako:56
+#: pyconca/templates/schedule.mako:65
 msgid "• 5 minute break •"
 msgstr "• pause de 5 minutes •"
 
-#: pyconca/templates/schedule.mako:63
+#: pyconca/templates/schedule.mako:72
 msgid "Friday, November 9"
 msgstr "Vendredi, 9 novembre"
 
-#: pyconca/templates/schedule.mako:74 pyconca/templates/schedule.mako:312
-#: pyconca/templates/schedule.mako:553
+#: pyconca/templates/schedule.mako:75
+msgid "6:00pm"
+msgstr "18h00"
+
+#: pyconca/templates/schedule.mako:81 pyconca/templates/schedule.mako:319
+#: pyconca/templates/schedule.mako:560
+msgid "11:30pm"
+msgstr "23h30"
+
+#: pyconca/templates/schedule.mako:83 pyconca/templates/schedule.mako:321
+#: pyconca/templates/schedule.mako:562
 msgid "Venue closes"
 msgstr "Fermeture des lieux"
 
-#: pyconca/templates/schedule.mako:81
+#: pyconca/templates/schedule.mako:90
 msgid "Saturday, November 10"
 msgstr "Samedi, 10 novembre"
 
-#: pyconca/templates/schedule.mako:96 pyconca/templates/schedule.mako:335
+#: pyconca/templates/schedule.mako:103 pyconca/templates/schedule.mako:342
+msgid "8:30am"
+msgstr "8h30"
+
+#: pyconca/templates/schedule.mako:105 pyconca/templates/schedule.mako:344
 msgid "Registration"
 msgstr "Inscription"
 
 #: pyconca/templates/schedule.mako:111 pyconca/templates/schedule.mako:349
+msgid "9:00am"
+msgstr "9h00"
+
+#: pyconca/templates/schedule.mako:118
+msgid "9:30am"
+msgstr "9h30"
+
+#: pyconca/templates/schedule.mako:120 pyconca/templates/schedule.mako:358
 msgid "Morning Keynote"
 msgstr ""
 
-#: pyconca/templates/schedule.mako:118 pyconca/templates/schedule.mako:141
-#: pyconca/templates/schedule.mako:183 pyconca/templates/schedule.mako:221
-#: pyconca/templates/schedule.mako:242 pyconca/templates/schedule.mako:277
-#: pyconca/templates/schedule.mako:356 pyconca/templates/schedule.mako:389
-#: pyconca/templates/schedule.mako:432 pyconca/templates/schedule.mako:480
-#: pyconca/templates/schedule.mako:511
+#: pyconca/templates/schedule.mako:125
+msgid "10:15am"
+msgstr "10h15"
+
+#: pyconca/templates/schedule.mako:127 pyconca/templates/schedule.mako:150
+#: pyconca/templates/schedule.mako:192 pyconca/templates/schedule.mako:230
+#: pyconca/templates/schedule.mako:251 pyconca/templates/schedule.mako:286
+#: pyconca/templates/schedule.mako:365 pyconca/templates/schedule.mako:398
+#: pyconca/templates/schedule.mako:441 pyconca/templates/schedule.mako:489
+#: pyconca/templates/schedule.mako:520
 msgid "Break"
 msgstr "Présenter"
 
-#: pyconca/templates/schedule.mako:160 pyconca/templates/schedule.mako:409
+#: pyconca/templates/schedule.mako:132
+msgid "10:25am"
+msgstr "10h25"
+
+#: pyconca/templates/schedule.mako:148 pyconca/templates/schedule.mako:403
+msgid "11:10am"
+msgstr "11h10"
+
+#: pyconca/templates/schedule.mako:155
+msgid "11:20am"
+msgstr "11h20"
+
+#: pyconca/templates/schedule.mako:167
+msgid "12:05pm"
+msgstr "12h05"
+
+#: pyconca/templates/schedule.mako:169 pyconca/templates/schedule.mako:418
 msgid "Lunch (provided)"
 msgstr "Lunch (fourni)"
 
-#: pyconca/templates/schedule.mako:202 pyconca/templates/schedule.mako:451
+#: pyconca/templates/schedule.mako:174
+msgid "1:05pm"
+msgstr "13h05"
+
+#: pyconca/templates/schedule.mako:190 pyconca/templates/schedule.mako:446
+msgid "1:50pm"
+msgstr "13h50"
+
+#: pyconca/templates/schedule.mako:197
+msgid "2:00pm"
+msgstr "14h00"
+
+#: pyconca/templates/schedule.mako:209
+msgid "2:45pm"
+msgstr "14h45"
+
+#: pyconca/templates/schedule.mako:211 pyconca/templates/schedule.mako:460
 msgid "Coffee Break"
 msgstr "Pause Café"
 
-#: pyconca/templates/schedule.mako:284 pyconca/templates/schedule.mako:525
+#: pyconca/templates/schedule.mako:216
+msgid "3:00pm"
+msgstr "15h00"
+
+#: pyconca/templates/schedule.mako:228 pyconca/templates/schedule.mako:494
+msgid "3:45pm"
+msgstr "15h45"
+
+#: pyconca/templates/schedule.mako:235
+msgid "3:55pm"
+msgstr "15h55"
+
+#: pyconca/templates/schedule.mako:249 pyconca/templates/schedule.mako:525
+msgid "4:40pm"
+msgstr "16h40"
+
+#: pyconca/templates/schedule.mako:256
+msgid "4:50pm"
+msgstr "16h50"
+
+#: pyconca/templates/schedule.mako:270
+msgid "5:15pm"
+msgstr "17h15"
+
+#: pyconca/templates/schedule.mako:284
+msgid "5:35pm"
+msgstr "17h35"
+
+#: pyconca/templates/schedule.mako:291
+msgid "5:40pm"
+msgstr "17h40"
+
+#: pyconca/templates/schedule.mako:293 pyconca/templates/schedule.mako:534
 msgid "Closing Messages"
 msgstr "Allocution de fermeture"
 
-#: pyconca/templates/schedule.mako:320
+#: pyconca/templates/schedule.mako:298
+msgid "5:45pm"
+msgstr "17h45"
+
+#: pyconca/templates/schedule.mako:305 pyconca/templates/schedule.mako:546
+msgid "6:30pm"
+msgstr "18h30"
+
+#: pyconca/templates/schedule.mako:312 pyconca/templates/schedule.mako:553
+msgid "7:30pm"
+msgstr "19h30"
+
+#: pyconca/templates/schedule.mako:329
 msgid "Sunday, November 11"
 msgstr "Dimanche, 11 novembre"
 
+#: pyconca/templates/schedule.mako:356
+msgid "9:15am"
+msgstr "9h15"
+
+#: pyconca/templates/schedule.mako:363 pyconca/templates/schedule.mako:573
+#: pyconca/templates/schedule.mako:587
+msgid "10:00am"
+msgstr "10h00"
+
+#: pyconca/templates/schedule.mako:370
+msgid "10:10am"
+msgstr "10h10"
+
+#: pyconca/templates/schedule.mako:384
+msgid "10:55am"
+msgstr "10h55"
+
+#: pyconca/templates/schedule.mako:396
+msgid "11:03am"
+msgstr "11h03"
+
+#: pyconca/templates/schedule.mako:416
+msgid "11:55am"
+msgstr "11h55"
+
+#: pyconca/templates/schedule.mako:423
+msgid "12:55pm"
+msgstr "12h55"
+
+#: pyconca/templates/schedule.mako:439
+msgid "1:40pm"
+msgstr "13h40"
+
+#: pyconca/templates/schedule.mako:458
+msgid "2:35pm"
+msgstr "14h35"
+
+#: pyconca/templates/schedule.mako:465
+msgid "2:50pm"
+msgstr "14h50"
+
+#: pyconca/templates/schedule.mako:475
+msgid "3:15pm"
+msgstr "15h15"
+
+#: pyconca/templates/schedule.mako:487
+msgid "3:35pm"
+msgstr "15h35"
+
+#: pyconca/templates/schedule.mako:508
+msgid "4:10pm"
+msgstr "16h10"
+
 #: pyconca/templates/schedule.mako:518
+msgid "4:30pm"
+msgstr "16h30"
+
+#: pyconca/templates/schedule.mako:527
 msgid "Closing Keynote"
 msgstr ""
 
-#: pyconca/templates/schedule.mako:561
+#: pyconca/templates/schedule.mako:532
+msgid "5:25pm"
+msgstr "17h25"
+
+#: pyconca/templates/schedule.mako:539
+msgid "5:30pm"
+msgstr "17h30"
+
+#: pyconca/templates/schedule.mako:570
 msgid "Monday, November 12"
 msgstr "Lundi, 12 novembre"
 
-#: pyconca/templates/schedule.mako:575
+#: pyconca/templates/schedule.mako:573 pyconca/templates/schedule.mako:587
+msgid "11:00pm"
+msgstr "23h00"
+
+#: pyconca/templates/schedule.mako:584
 msgid "Tuesday, November 13"
 msgstr "Mardi, 13 novembre"
 
