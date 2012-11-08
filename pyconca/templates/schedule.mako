@@ -72,13 +72,13 @@
       <h2 class="header header-first" id="friday">${_(u"Friday, November 9")}</h2>
       <table class="table table-bordered">
         <tr>
-          <th>18:00</th>
+          <th>${_(u"6:00pm")}</th>
           <td>
             <%block filter="gettext">SCHEDULE_PARTY</%block>
           </td>
         </tr>
         <tr>
-          <th>23:30</th>
+          <th>${_(u"11:30pm")}</th>
           <td>
             <strong>${_(u"Venue closes")}</strong>
           </td>
@@ -100,7 +100,7 @@
 
         <tbody>
           <tr>
-            <th>8:30</th>
+            <th>${_(u"8:30am")}</th>
             <td colspan="3">
               <strong>${_(u"Registration")}</strong>
             </td>
@@ -108,28 +108,28 @@
 
 
           <tr>
-            <th>9:00</th>
+            <th>${_(u"9:00am")}</th>
             <td colspan="3">
               <strong>Welcome to PyCon Canada</strong>
             </td>
           </tr>
 
           <tr>
-            <th>9:30</th>
+            <th>${_(u"9:30am")}</th>
             <td colspan="3">
               ${render_slot('', _("Morning Keynote"), "Jessica McKellar", "Main Hall", "K1")}
             </td>
           </tr>
 
           <tr>
-            <th>10:15</th>
+            <th>${_(u"10:15am")}</th>
             <td colspan="3">
               <strong>${_(u"Break")}</strong>
             </td>
           </tr>
 
           <tr>
-            <th>10:25</th>
+            <th>${_(u"10:25am")}</th>
             <td>
               ${slot_from_code("B1")}
             </td>
@@ -145,14 +145,14 @@
           </tr>
 
           <tr>
-            <th>11:10</th>
+            <th>${_(u"11:10am")}</th>
             <td colspan="2">
               <strong>${_(u"Break")}</strong>
             </td>
           </tr>
 
           <tr>
-            <th>11:20</th>
+            <th>${_(u"11:20am")}</th>
             <td>
               ${slot_from_code("B2")}
             </td>
@@ -164,14 +164,14 @@
           </tr>
 
           <tr>
-            <th>12:05</th>
+            <th>${_(u"12:05pm")}</th>
             <td colspan="3">
               <strong>${_(u"Lunch (provided)")}</strong>
             </td>
           </tr>
 
           <tr>
-            <th>1:05</th>
+            <th>${_(u"1:05pm")}</th>
             <td>
               ${slot_from_code("B3")}
             </td>
@@ -187,14 +187,14 @@
           </tr>
 
            <tr>
-            <th>1:50</th>
+            <th>${_(u"1:50pm")}</th>
             <td colspan="2">
               <strong>${_(u"Break")}</strong>
             </td>
           </tr>
 
           <tr>
-            <th>2:00</th>
+            <th>${_(u"2:00pm")}</th>
             <td>
               ${slot_from_code("B4")}
             </td>
@@ -206,14 +206,14 @@
           </tr>
 
            <tr>
-            <th>2:45</th>
+            <th>${_(u"2:45pm")}</th>
             <td colspan="2">
               <strong>${_(u"Coffee Break")}</strong>
             </td>
           </tr>
 
           <tr>
-            <th>3:00</th>
+            <th>${_(u"3:00pm")}</th>
             <td>
               ${slot_from_code("B5")}
             </td>
@@ -225,14 +225,14 @@
           </tr>
 
           <tr>
-            <th>3:45</th>
+            <th>${_(u"3:45pm")}</th>
             <td colspan="2">
               <strong>${_(u"Break")}</strong>
             </td>
           </tr>
 
           <tr>
-            <th>3:55</th>
+            <th>${_(u"3:55pm")}</th>
             <td>
               ${slot_from_code("A11")}
               ${five_min_break()}
@@ -246,14 +246,14 @@
           </tr>
 
           <tr>
-            <th>4:40</th>
+            <th>${_(u"4:40pm")}</th>
             <td colspan="3">
               <strong>${_(u"Break")}</strong>
             </td>
           </tr>
 
           <tr>
-            <th>4:50</th>
+            <th>${_(u"4:50pm")}</th>
             <td>
               ${slot_from_code("L1")}
               ${slot_from_code("L2")}
@@ -267,7 +267,7 @@
           </tr>
 
           <tr>
-            <th>5:15</th>
+            <th>${_(u"5:15pm")}</th>
             <td>
               ${slot_from_code("L4")}
               ${slot_from_code("L5")}
@@ -281,42 +281,42 @@
           </tr>
 
           <tr>
-            <th>5:35</th>
+            <th>${_(u"5:35pm")}</th>
             <td colspan="3">
               <strong>${_(u"Break")}</strong>
             </td>
           </tr>
 
           <tr>
-            <th>5:40</th>
+            <th>${_(u"5:40pm")}</th>
             <td colspan="3">
               <strong>${_(u"Closing Messages")}</strong>
             </td>
           </tr>
 
           <tr>
-            <th>5:45</th>
+            <th>${_(u"5:45pm")}</th>
             <td colspan="3">
               <%block filter="gettext">SCHEDULE_TALKS_DONE</%block>
             </td>
           </tr>
 
           <tr>
-            <th>6:30</th>
+            <th>${_(u"6:30pm")}</th>
             <td colspan="3">
               <%block filter="gettext">SCHEDULE_DINNER</%block>
             </td>
           </tr>
 
           <tr>
-            <th>7:30</th>
+            <th>${_(u"7:30pm")}</th>
             <td colspan="3">
               <%block filter="gettext">SCHEDULE_SPRINTS</%block>
             </td>
           </tr>
 
           <tr>
-            <th>11:30</th>
+            <th>${_(u"11:30pm")}</th>
             <td colspan="3">
               <strong>${_(u"Venue closes")}</strong>
             </td>
@@ -339,35 +339,35 @@
 
         <tbody>
           <tr>
-            <th>8:30</th>
+            <th>${_(u"8:30am")}</th>
             <td colspan="3">
               <strong>${_(u"Registration")}</strong>
             </td>
           </tr>
 
           <tr>
-            <th>9:00</th>
+            <th>${_(u"9:00am")}</th>
             <td colspan="3">
               <strong>Morning Messages</strong>
             </td>
           </tr>
 
           <tr>
-            <th>9:15</th>
+            <th>${_(u"9:15am")}</th>
             <td colspan="3">
               ${render_slot('', _("Morning Keynote"), "Michael Feathers", "Main Hall", "K2")}
             </td>
           </tr>
 
           <tr>
-            <th>10:00</th>
+            <th>${_(u"10:00am")}</th>
             <td colspan="3">
               <strong>${_(u"Break")}</strong>
             </td>
           </tr>
 
           <tr>
-            <th>10:10</th>
+            <th>${_(u"10:10am")}</th>
             <td>
               ${slot_from_code("B6")}
             </td>
@@ -381,7 +381,7 @@
           </tr>
 
           <tr>
-            <th>10:55</th>
+            <th>${_(u"10:55am")}</th>
             <td>
               <strong>Remembrance Day</strong>
             </td>
@@ -393,14 +393,14 @@
           </tr>
 
           <tr>
-            <th>11:03</th>
+            <th>${_(u"11:03am")}</th>
             <td colspan="3">
               <strong>${_(u"Break")}</strong>
             </td>
           </tr>
 
           <tr>
-            <th>11:10</th>
+            <th>${_(u"11:10am")}</th>
             <td>
               ${slot_from_code("B7")}
             </td>
@@ -413,14 +413,14 @@
           </tr>
 
           <tr>
-            <th>11:55</th>
+            <th>${_(u"11:55am")}</th>
             <td colspan="3">
               <strong>${_(u"Lunch (provided)")}</strong>
             </td>
           </tr>
 
           <tr>
-            <th>12:55</th>
+            <th>${_(u"12:55pm")}</th>
             <td>
               ${slot_from_code("B8")}
             </td>
@@ -436,14 +436,14 @@
           </tr>
 
            <tr>
-            <th>1:40</th>
+            <th>${_(u"1:40pm")}</th>
             <td colspan="2">
               <strong>${_(u"Break")}</strong>
             </td>
           </tr>
    
           <tr>
-            <th>1:50</th>
+            <th>${_(u"1:50pm")}</th>
             <td>
               ${slot_from_code("B9")}
             </td>
@@ -455,14 +455,14 @@
           </tr>
 
            <tr>
-            <th>2:35</th>
+            <th>${_(u"2:35pm")}</th>
             <td colspan="2">
               <strong>${_(u"Coffee Break")}</strong>
             </td>
           </tr>
 
           <tr>
-            <th>2:50</th>
+            <th>${_(u"2:50pm")}</th>
             <td>
               ${slot_from_code("A25")}
             </td>
@@ -472,7 +472,7 @@
           </tr>
 
           <tr>
-            <th>3:15</th>
+            <th>${_(u"3:15pm")}</th>
             <td>
               ${slot_from_code("A26")}
             </td>
@@ -484,14 +484,14 @@
           </tr>
 
           <tr>
-            <th>3:35</th>
+            <th>${_(u"3:35pm")}</th>
             <td colspan="3">
               <strong>${_(u"Break")}</strong>
             </td>
           </tr>
 
           <tr>
-            <th>3:45</th>
+            <th>${_(u"3:45pm")}</th>
             <td>
               ${slot_from_code("L7")}
               ${slot_from_code("L8")}
@@ -505,7 +505,7 @@
           </tr>
 
           <tr>
-            <th>4:10</th>
+            <th>${_(u"4:10pm")}</th>
             <td>
               ${slot_from_code("L10")}
               ${slot_from_code("L11")}
@@ -515,49 +515,49 @@
           </tr>
 
           <tr>
-            <th>4:30</th>
+            <th>${_(u"4:30pm")}</th>
             <td colspan="3">
               <strong>${_(u"Break")}</strong>
             </td>
           </tr>
 
           <tr>
-            <th>4:40</th>
+            <th>${_(u"4:40pm")}</th>
             <td colspan="3">
               ${render_slot('', _("Closing Keynote"), u"Fernando Pérez", "Main Hall", "K3")}
             </td>
           </tr>
 
           <tr>
-            <th>5:25</th>
+            <th>${_(u"5:25pm")}</th>
             <td colspan="3">
               <strong>${_(u"Closing Messages")}</strong>
             </td>
           </tr>
 
           <tr>
-            <th>5:30</th>
+            <th>${_(u"5:30pm")}</th>
             <td colspan="3">
               <%block filter="gettext">SCHEDULE_TALKS_DONE</%block>
             </td>
           </tr>
 
           <tr>
-            <th>6:30</th>
+            <th>${_(u"6:30pm")}</th>
             <td colspan="3">
               <%block filter="gettext">SCHEDULE_DINNER</%block>
             </td>
           </tr>
 
           <tr>
-            <th>7:30</th>
+            <th>${_(u"7:30pm")}</th>
             <td colspan="3">
               <%block filter="gettext">SCHEDULE_SPRINTS</%block>
             </td>
           </tr>
 
           <tr>
-            <th>11:30</th>
+            <th>${_(u"11:30pm")}</th>
             <td colspan="3">
               <strong>${_(u"Venue closes")}</strong>
             </td>
@@ -570,7 +570,7 @@
       <h2 class="header" id="monday">${_(u"Monday, November 12")}</h2>
       <table class="table table-bordered">
         <tr>
-          <th>10:00am - 11:00pm</th>
+          <th>${_(u"10:00am")} - ${_(u"11:00pm")}</th>
           <td colspan="3">
             <a href="${request.route_url('sprints')}">${_(u"Sprints")}</a>
             <br>
@@ -584,7 +584,7 @@
       <h2 class="header" id="tuesday">${_(u"Tuesday, November 13")}</h2>
       <table class="table table-bordered">
         <tr>
-          <th>10:00am - 11:00pm</th>
+          <th>${_(u"10:00am")} - ${_(u"11:00pm")}</th>
           <td colspan="3">
             <a href="${request.route_url('sprints')}">${_(u"Sprints")}</a>
             <br>
