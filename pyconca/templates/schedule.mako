@@ -598,10 +598,25 @@
   </div>
 
   <script>
-    $("th, td").each(function() {
-      var $this = $(this);
-      if ($this.text().match(/^\s*$/))
-        $this.addClass("empty");
+    /* Convert the tables to mobile-friendly divs */
+    $("table").each(function() {
+      var table = $(this);
+      var fakeTable = $("<div class='fake-table'></div>");
+      table.find("tbody tr").each(function() {
+        var fakeTr = $("<div class='fake-tr'></div>");
+        $(this).children().each(function() {
+          var cell = $(this);
+          if (cell.text().match(/^\s*$/))
+            return;
+          fakeTr.append(
+            $("<div class='fake-cell'></div>")
+              .html(cell.html())
+              .addClass("fake-" + cell.prop("tagName").toLowerCase())
+          );
+        });
+        fakeTable.append(fakeTr);
+      });
+      table.after(fakeTable);
     });
   </script>
 </%block>

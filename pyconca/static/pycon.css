@@ -629,42 +629,56 @@ hr {
   margin-bottom: 0;
 }
 
-@media (max-width: 480px) {
-  .schedule-page table thead {
+.schedule-page .fake-table {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .schedule-page table {
     display: none;
   }
 
-  .schedule-page table tbody td,
-  .schedule-page table tbody th {
+  .schedule-page .fake-table {
     display: block;
   }
 
-  .schedule-page table tbody th {
+  .schedule-page .fake-table .fake-cell {
+    padding: 8px;
+    line-height: 18px;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #DDD;
+    border-bottom: none;
+  }
+
+  .schedule-page .fake-table .fake-cell:last-child {
+    border-bottom: 1px solid #DDD;
+  }
+
+  .schedule-page .fake-table .fake-th {
     background-color: #210D05;
     color: white;
+    font-weight: bold;
   }
-  .schedule-page table tbody tr:hover th {
+  .schedule-page .fake-table .fake-tr:hover .fake-cell {
+    background-color: whiteSmoke;
+  }
+  .schedule-page .fake-table .fake-tr:hover .fake-th {
     background-color: #5C240F;
   }
 
-  .schedule-page table tbody .talk-meta-desktop {
+  .schedule-page .fake-table .talk-meta-desktop {
     display: none;
   }
-  .schedule-page table tbody .talk-meta-phone {
+  .schedule-page .fake-table .talk-meta-phone {
     display: block;
     font-size: 75%;
     font-style: italic;
   }
 
-  .schedule-page table tbody .tutorial-plug {
+  .schedule-page .fake-table .tutorial-plug {
     display: none;
   }
-
-  .schedule-page table tbody td.empty,
-  .schedule-page table tbody th.empty {
-    display: none;
-  }
-
 
 }
 
