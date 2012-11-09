@@ -16,8 +16,8 @@
       <%block name="info"/>
     </section>
 
-    <aside class="span3">
-      % if request['bfg.routes.route'].name not in ['sponsors', 'sponsors_500px', 'sponsors_freshbooks', 'sponsors_chango', 'sponsors_wave']:
+  % if request['bfg.routes.route'].name not in ['sponsors', 'sponsors_500px', 'sponsors_freshbooks', 'sponsors_chango', 'sponsors_wave']:
+    <aside id="side-sponsors" class="span3">
         <h1>${_(u"Our Sponsors")}</h1>
         <h2>— <b>${_(u"Gold")}</b> —</h2>
         <%include file="pyconca:templates/sponsors/500px.mako"/>
@@ -38,8 +38,8 @@
 
         <p class="gutter-top"><a href="${request.application_url}/sponsors" class="bubble">${_(u"View full list of sponsors")}</a></p>
         <p class="gutter-top"><a href="mailto:sponsorship@pycon.ca" class="bubble">${_(u"Sponsorship details")}</a></p>
-      % endif
     </aside>
+  % endif
   </div>
 </div>
 

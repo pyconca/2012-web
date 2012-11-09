@@ -10,16 +10,26 @@
     <div id="Banner">
         <h1>PyCon.ca</h1>
         <h2>${_(u"Bringing the Canadian Python community together")}</h2>
-        <div id="DateAndPlace">${_(u"November 9 – 13, 2012 • Toronto")}</div>
     </div>
-    <div>
-      <div id="Callout">
-        <p id="Teaser"><%block filter="gettext">INDEX_ABOUT_BLURB</%block></p>
-        <div id="Register">
-          <a href="http://guestlistapp.com/events/116013" class="guestlist-event-116013 register-button-en">${_(u"Register")}</a>
-        </div>
+
+    <div class="row-fluid">
+      <div class="span2"></div>
+      <div class="span8">
+        <p id="Teaser">
+          <span style="color: #E03C31;">
+            ${_(u"November 9 – 13, 2012 • Toronto")}
+            <br>
+          </span>
+          <br>
+          <%block filter="gettext">INDEX_ABOUT_BLURB</%block>
+          <div id="Register">
+              <a href="http://guestlistapp.com/events/116013" class="guestlist-event-116013 register-button-en">${_(u"Register")}</a>
+          </div>
+        </p>
       </div>
+      <div class="span2"></div>
     </div>
+
   </div>
 </section>
 

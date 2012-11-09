@@ -1,5 +1,5 @@
 body {
-  background: #cbc2bc url(bg-grid.png) repeat left top;
+  background: url(snake_background.jpg) repeat left top;
   color: #333;
   font-family: 'Droid Serif', Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 16px;
@@ -246,7 +246,7 @@ footer .contact-list span {
 
 /* HOME PAGE */
 #Intro {
-  background: #eae6e3 url(bg-grunge.jpg) no-repeat center top;
+  background: url(snake_background.jpg) repeat left bottom;
   padding-bottom: 30px;
   text-align: center;
 }
@@ -266,15 +266,15 @@ footer .contact-list span {
 }
 
 #Banner #DateAndPlace {
-	display: inline-block;
-	float: none;
-	font-size: 21px;
-	font-weight: 700;
-	margin-top: 31px;
-	padding: 11px 7px;
-	text-align: center;
-	text-transform: uppercase;
-	width: 410px;
+  display: inline-block;
+  float: none;
+  font-size: 21px;
+  font-weight: 700;
+  margin-top: 31px;
+  padding: 11px 7px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 410px;
 }
 
 #Banner #DateAndPlace b {
@@ -337,14 +337,16 @@ footer .contact-list span {
 }
 
 #Teaser {
+  background: #fff;
   font-size: 24px;
   line-height: 30px;
-  padding: 14px 30px;
   font-family: 'Droid Serif', Georgia, Cambria, "Times New Roman", Times, serif;
-  width: 510px;
   margin: 36px 0px 0px;
-  float: left;
-  text-align: left;
+  text-align: center;
+  border: solid;
+  border-color: #857874;
+  border-radius: 20px;
+  padding: 20px;
 }
 @media (max-width: 979px) {
   #Teaser {
@@ -528,7 +530,9 @@ aside h1,
     width: 100%;
   }
 }
-
+#side-sponsors {
+  background: #cbc2bc url(bg-grid.png) repeat left top;
+}
 address {
   margin-left: 20px;
 }
