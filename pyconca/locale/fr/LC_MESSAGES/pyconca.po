@@ -707,7 +707,7 @@ msgstr "10h15"
 #: pyconca/templates/schedule.mako:441 pyconca/templates/schedule.mako:489
 #: pyconca/templates/schedule.mako:520
 msgid "Break"
-msgstr "Présenter"
+msgstr "Pause"
 
 #: pyconca/templates/schedule.mako:132
 msgid "10:25am"
@@ -1232,4 +1232,3 @@ msgstr "Éditer un profil"
 #: pyconca/templates/user/user_get.mako:8
 msgid "User Profile"
 msgstr "Votre profil"
-
