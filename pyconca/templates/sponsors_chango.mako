@@ -6,10 +6,10 @@
 
 <%block name="info">
   <article>
-    <h2>${_("Chris Sukornyk, CEO Chango")}</h2>
+    <h2>${_("Mazdak Rezvani, CEO Chango")}</h2>
 
-<img src="${request.static_url("pyconca:static/sponsors/chris.jpeg")}"
-     alt="Chris Sukornyk, CEO Chango", 
+<img src="${request.static_url("pyconca:static/sponsors/mazdak.jpg")}"
+     alt="Mazdak Rezvani, CEO Chango"
      height="350" 
      align="left" 
      style="margin-right: 20px;">
@@ -38,7 +38,7 @@ you at Chango?
 
 <p>
 Chris Sukornyk founded or co-founded a number of other tech
-companies including BubbleShare, Fivelimes & X-Stream.  Chris and I
+companies including BubbleShare, Fivelimes &amp; X-Stream.  Chris and I
 were co-founders at BubbleShare. I was the "co-founder" of the Toronto
 chapter of Tall Tree Games, a top 20 Facebook game developer. There
 have been too many other little experiments to list here! Every
