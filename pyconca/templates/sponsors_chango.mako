@@ -6,10 +6,10 @@
 
 <%block name="info">
   <article>
-    <h2>${_("Mazdak Rezvani, CEO Chango")}</h2>
+    <h2>${_("Mazdak Rezvani, CTO Chango")}</h2>
 
 <img src="${request.static_url("pyconca:static/sponsors/mazdak.jpg")}"
-     alt="Mazdak Rezvani, CEO Chango"
+     alt="Mazdak Rezvani, CTO Chango"
      height="350" 
      align="left" 
      style="margin-right: 20px;">
@@ -126,9 +126,10 @@ What other things are you passionate about besides your mission at Chango?
 
 <p>
 Lots - I am a film buff who wishes he had more time to attend the
-Toronto Film Festival. I am also currently playing around 3D printing.  
-Hype aside - it's pretty amazing what you can create and print in 3D 
-these days. We've been experimenting with great services like 
+Toronto Film Festival. I am also an an avid buyer of Apple products.
+Chris, our CEO, is currently playing around 3D printing.  Hype aside -
+it's pretty amazing what you can create and print in 3D these days.
+We've been experimenting with great services like 
 <a href="http://www.shapeways.com/">shapeways.com</a>.
 </p>
 
