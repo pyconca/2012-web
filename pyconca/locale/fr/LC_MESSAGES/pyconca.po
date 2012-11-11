@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pyconca 0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-11-08 13:41-0500\n"
+"POT-Creation-Date: 2012-11-11 10:26-0500\n"
 "PO-Revision-Date: 2012-08-15 22:00-0400\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -101,13 +101,13 @@ msgid "Made in Canada!"
 msgstr "Fait au Canada!"
 
 #: pyconca/templates/base.mako:75 pyconca/templates/base.mako:243
-#: pyconca/templates/index.mako:81 pyconca/templates/venue.mako:3
+#: pyconca/templates/index.mako:91 pyconca/templates/venue.mako:3
 #: pyconca/templates/venue.mako:5
 msgid "Venue"
 msgstr "Lieu"
 
 #: pyconca/templates/base.mako:81 pyconca/templates/base.mako:247
-#: pyconca/templates/index.mako:86 pyconca/templates/schedule.mako:4
+#: pyconca/templates/index.mako:96 pyconca/templates/schedule.mako:4
 #: pyconca/templates/schedule.mako:7
 msgid "Schedule"
 msgstr "Horaire"
@@ -123,12 +123,12 @@ msgid "Sprints"
 msgstr "Sprints"
 
 #: pyconca/templates/base.mako:100 pyconca/templates/base.mako:251
-#: pyconca/templates/index.mako:68
+#: pyconca/templates/index.mako:78
 msgid "Speak"
 msgstr "Présenter"
 
 #: pyconca/templates/base.mako:106 pyconca/templates/base.mako:255
-#: pyconca/templates/index.mako:73
+#: pyconca/templates/index.mako:83
 msgid "Learn"
 msgstr "Apprendre"
 
@@ -372,7 +372,7 @@ msgstr "Rassembler la communauté Python canadienne ensemble"
 msgid "Quick links"
 msgstr "Liens rapides"
 
-#: pyconca/templates/event.mako:21 pyconca/templates/index.mako:27
+#: pyconca/templates/event.mako:21 pyconca/templates/index.mako:37
 msgid "Our Sponsors"
 msgstr "Sponsors"
 
@@ -404,7 +404,7 @@ msgstr "PyCon Canada 2012"
 msgid "November 9 – 13, 2012 • Toronto"
 msgstr "Novembre 9 – 13, 2012 • Toronto"
 
-#: pyconca/templates/index.mako:17
+#: pyconca/templates/index.mako:24
 msgid "INDEX_ABOUT_BLURB"
 msgstr ""
 "Vous êtes invités au lancement de la conférence, du 9 au 13 novembre "
@@ -416,7 +416,7 @@ msgstr ""
 " quand ce sera fait, gardons le momentum en organisant une conférence "
 "annuelle PyCon au Canada. "
 
-#: pyconca/templates/index.mako:69
+#: pyconca/templates/index.mako:79
 msgid "INDEX_SPEAK_BLURB"
 msgstr ""
 "Partager ses connaissances et ses idées. Soumettre une proposition pour "
@@ -424,7 +424,7 @@ msgstr ""
 "organizers@pycon.ca. Nous allons sprinter à la conférence aussi, alors "
 "envoyez nous vos idées de sprints. "
 
-#: pyconca/templates/index.mako:74
+#: pyconca/templates/index.mako:84
 msgid "INDEX_LEARN_BLURB"
 msgstr ""
 "Un des buts de PyCon Canada est d'amener au Canada des experts de "
@@ -433,7 +433,7 @@ msgstr ""
 " présentateurs vedettes, un par un, durant les prochaines semaines. "
 "Restez à l'affût: "
 
-#: pyconca/templates/index.mako:82
+#: pyconca/templates/index.mako:92
 msgid "INDEX_VENUE_BLURB"
 msgstr ""
 "Soyez là du 9 au 13 novembre 2012, au Beverley Halls dans le centre-ville"
@@ -441,7 +441,7 @@ msgstr ""
 "pas occupés à coder ou à discuter avec vos collègues, vous aurez beaucoup"
 " de choses à explorer. "
 
-#: pyconca/templates/index.mako:87
+#: pyconca/templates/index.mako:97
 msgid "INDEX_SCHEDULE_BLURB"
 msgstr ""
 "Le plaisir commence le vendredi avec une soirée de réseautage. Nourrissez"
@@ -453,24 +453,24 @@ msgstr ""
 msgid "Bringing the Canadian Python community together"
 msgstr "Rassembler la communauté Python canadienne ensemble"
 
-#: pyconca/templates/index.mako:13
+#: pyconca/templates/index.mako:20
 msgid "November 9 – 13, 2012 • Toronto"
 msgstr "Novembre 9 – 13, 2012 • Toronto"
 
-#: pyconca/templates/index.mako:19
+#: pyconca/templates/index.mako:26
 msgid "Register"
 msgstr "S'inscrire"
 
-#: pyconca/templates/index.mako:61
+#: pyconca/templates/index.mako:71
 msgid "Interested in a sponsorship opportunity?"
 msgstr "Intéressé par une opportunité de sponsorship?"
 
-#: pyconca/templates/index.mako:61
+#: pyconca/templates/index.mako:71
 msgid "Learn more"
 msgstr "En savoir plus"
 
-#: pyconca/templates/index.mako:70 pyconca/templates/index.mako:75
-#: pyconca/templates/index.mako:83 pyconca/templates/index.mako:88
+#: pyconca/templates/index.mako:80 pyconca/templates/index.mako:85
+#: pyconca/templates/index.mako:93 pyconca/templates/index.mako:98
 msgid "More info"
 msgstr "Plus d'information"
 
@@ -995,8 +995,8 @@ msgid "Oleg Gutsol, CEO 500px"
 msgstr "Oleg Gutsol, CEO 500px"
 
 #: pyconca/templates/sponsors_chango.mako:9
-msgid "Chris Sukornyk, CEO Chango"
-msgstr "Chris Sukornyk, CEO Chango"
+msgid "Mazdak Rezvani, CEO Chango"
+msgstr "Mazdak Rezvani, CEO Chango"
 
 #: pyconca/templates/sponsors_freshbooks.mako:9
 msgid "Mike McDerment, CEO FreshBooks"
@@ -1232,3 +1232,7 @@ msgstr "Éditer un profil"
 #: pyconca/templates/user/user_get.mako:8
 msgid "User Profile"
 msgstr "Votre profil"
+
+#~ msgid "Chris Sukornyk, CEO Chango"
+#~ msgstr "Chris Sukornyk, CEO Chango"
+
