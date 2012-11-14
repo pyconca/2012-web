@@ -37,29 +37,18 @@
 
   <article>
     <h2>${_(u"PyCon Canada Staff")}</h2>
-    <table class="table table-bordered">
-        <tr>
-          <td>Chair: <a href="https://twitter.com/diana_clarke">Diana Clarke</a></td>
-        <tr></tr>
-          <td>Director: <a href="https://twitter.com/wolever">David Wolever</a></td>
-        <tr></tr>
-          <td>Director: <a href="https://twitter.com/ncurious">Nicola Yap</a></td>
-        <tr></tr>
-          <td>Director: <a href="https://twitter.com/mdibernardo">Michael DiBernardo</a></td>
-        <tr></tr>
-          <td>Core Contributor: <a href="https://twitter.com/kayzh">Kay Zhu</a></td>
-        <tr></tr>
-          <td>Core Contributor: <a href="https://twitter.com/jaaaarel">Taavi Burns</a></td>
-        <tr></tr>
-          <td>Core Contributor: <a href="https://twitter.com/dlanger">Daniel Langer</a></td>
-        <tr></tr>
-          <td>Audio: <a href="https://twitter.com/pdmccormick">Peter McCormick</a></td>
-        <tr></tr>
-          <td>Video: <a href="https://twitter.com/cfkarsten">Carl Karsten</a></td>
-        <tr></tr>
-          <td>Volunteer Co-Ordinator: <a href="http://twitter.com/l_c_power">Laura Power</a></td>
-        </tr>
-    </table>
+    <ul>
+      <li>Chair: <a href="https://twitter.com/diana_clarke">Diana Clarke</a></li>
+      <li>Director: <a href="https://twitter.com/wolever">David Wolever</a></li>
+      <li>Director: <a href="https://twitter.com/ncurious">Nicola Yap</a></li>
+      <li>Director: <a href="https://twitter.com/mdibernardo">Michael DiBernardo</a></li>
+      <li>Core Contributor: <a href="https://twitter.com/kayzh">Kay Zhu</a></li>
+      <li>Core Contributor: <a href="https://twitter.com/jaaaarel">Taavi Burns</a></li>
+      <li>Core Contributor: <a href="https://twitter.com/dlanger">Daniel Langer</a></li>
+      <li>Audio: <a href="https://twitter.com/pdmccormick">Peter McCormick</a></li>
+      <li>Video: <a href="https://twitter.com/cfkarsten">Carl Karsten</a></li>
+      <li>Volunteer Co-Ordinator: <a href="http://twitter.com/l_c_power">Laura Power</a></li>
+    </ul>
   </article>
 
   <article>
