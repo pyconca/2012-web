@@ -99,6 +99,11 @@
           <td><a href="https://twitter.com/blaiselaflamme">Blaise Laflamme</a></td>
           <td><a href="http://twitter.com/djoume">Djoume Salvetti</a></td>
         </tr>
+
+        <tr>
+          <td><a href="https://twitter.com/pdmccormick">Peter McCormick</a></td>
+          <td></td>
+        </tr>
     </table>
 
     <p><%block filter="gettext">ABOUT_SHY</%block></p>
