@@ -36,22 +36,39 @@
   </article>
 
   <article>
+    <h2>${_(u"PyCon Canada Staff")}</h2>
+    <table class="table table-bordered">
+        <tr>
+          <td>Chair: <a href="https://twitter.com/diana_clarke">Diana Clarke</a></td>
+        <tr></tr>
+          <td>Director: <a href="https://twitter.com/wolever">David Wolever</a></td>
+        <tr></tr>
+          <td>Director: <a href="https://twitter.com/ncurious">Nicola Yap</a></td>
+        <tr></tr>
+          <td>Director: <a href="https://twitter.com/mdibernardo">Michael DiBernardo</a></td>
+        <tr></tr>
+          <td>Core Contributor: <a href="https://twitter.com/kayzh">Kay Zhu</a></td>
+        <tr></tr>
+          <td>Core Contributor: <a href="https://twitter.com/jaaaarel">Taavi Burns</a></td>
+        <tr></tr>
+          <td>Core Contributor: <a href="https://twitter.com/dlanger">Daniel Langer</a></td>
+        <tr></tr>
+          <td>Audio: <a href="https://twitter.com/pdmccormick">Peter McCormick</a></td>
+        <tr></tr>
+          <td>Video: <a href="https://twitter.com/cfkarsten">Carl Karsten</a></td>
+        <tr></tr>
+          <td>Volunteer Co-Ordinator: Laura Power</td>
+        </tr>
+    </table>
+  </article>
+
+  <article>
     <h2>${_(u"Made in Canada!")}</h2>
     <p><%block filter="gettext">ABOUT_CONTRIBUTIONS</%block></p>
 
     <table class="table table-bordered">
         <tr>
-          <td><a href="https://twitter.com/diana_clarke">Diana Clarke</a></td>
-          <td><a href="https://twitter.com/wolever">David Wolever</a></td>
-        </tr>
-
-        <tr>
-          <td><a href="https://twitter.com/ncurious">Nicola Yap</a></td>
-          <td><a href="https://twitter.com/jaaaarel">Taavi Burns</a></td>
-        </tr>
-
-        <tr>
-          <td><a href="https://twitter.com/kayzh">Kay Zhu</a></td>
+          <td><a href="https://twitter.com/codersquid">Sheila Miguez</a></td>
           <td><a href="https://twitter.com/yiqingsim">Yi Qing Sim</a></td>
         </tr>
 
@@ -66,11 +83,6 @@
         </tr>
 
         <tr>
-          <td><a href="https://twitter.com/mdibernardo">Michael DiBernardo</a></td>
-          <td><a href="https://twitter.com/dlanger">Daniel Langer</a></td>
-        </tr>
-
-        <tr>
           <td><a href="https://twitter.com/dwf">David Warde-Farley</a></td>
           <td><a href="https://twitter.com/mlhamel">Mathieu Leduc-Hamel</a></td>
         </tr>
@@ -78,11 +90,6 @@
         <tr>
           <td><a href="http://www.flickr.com/photos/camstatic">Camilla Bjerke</a></td>
           <td><a href="https://twitter.com/myusuf3">Mahdi Yusuf</a></td>
-        </tr>
-
-        <tr>
-          <td><a href="https://twitter.com/codersquid">Sheila Miguez</a></td>
-          <td><a href="https://twitter.com/cfkarsten">Carl Karsten</a></td>
         </tr>
 
         <tr>
@@ -98,11 +105,6 @@
         <tr>
           <td><a href="https://twitter.com/blaiselaflamme">Blaise Laflamme</a></td>
           <td><a href="http://twitter.com/djoume">Djoume Salvetti</a></td>
-        </tr>
-
-        <tr>
-          <td><a href="https://twitter.com/pdmccormick">Peter McCormick</a></td>
-          <td></td>
         </tr>
     </table>
 
