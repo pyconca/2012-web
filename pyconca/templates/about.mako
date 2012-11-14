@@ -57,7 +57,7 @@
         <tr></tr>
           <td>Video: <a href="https://twitter.com/cfkarsten">Carl Karsten</a></td>
         <tr></tr>
-          <td>Volunteer Co-Ordinator: Laura Power</td>
+          <td>Volunteer Co-Ordinator: <a href="http://twitter.com/l_c_power">Laura Power</a></td>
         </tr>
     </table>
   </article>
