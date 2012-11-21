@@ -1,8 +1,8 @@
 <%inherit file="event.mako"/>
 
-<%block name="head_title">${_("Confirmed Speakers")}</%block>
+<%block name="head_title">${_("Featured Speakers")}</%block>
 <%block name="body_class">learn-section</%block>
-<%block name="title">${_("Confirmed Speakers")}</%block>
+<%block name="title">${_("Featured Speakers")}</%block>
 
 <%block name="info">
   <article>
