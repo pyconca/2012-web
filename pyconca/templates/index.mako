@@ -22,6 +22,15 @@
           </span>
           <br>
           <%block filter="gettext">INDEX_ABOUT_BLURB</%block>
+          <br>
+          <br>
+          <span style="color: #E03C31;">
+            ${_(u"And that's a wrap, PyCon Canada!")}
+            <br>
+            <br>
+          </span>
+          Here are the <a href="http://pyvideo.org/category/25/pycon-ca-2012">videos</a> of the PyCon Canada 2012 talks to tide you over until next year!
+          <br>
           <div id="Register">
               <a href="http://guestlistapp.com/events/116013" class="guestlist-event-116013 register-button-en">${_(u"Register")}</a>
           </div>
