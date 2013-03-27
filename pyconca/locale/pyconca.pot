@@ -1,14 +1,14 @@
 # Translations template for pyconca.
-# Copyright (C) 2012 ORGANIZATION
+# Copyright (C) 2013 ORGANIZATION
 # This file is distributed under the same license as the pyconca project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: pyconca 0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-11-11 10:26-0500\n"
+"POT-Creation-Date: 2013-03-27 14:05-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,11 +33,11 @@ msgstr ""
 msgid "ABOUT_CONDUCT"
 msgstr ""
 
-#: pyconca/templates/about.mako:40
+#: pyconca/templates/about.mako:56
 msgid "ABOUT_CONTRIBUTIONS"
 msgstr ""
 
-#: pyconca/templates/about.mako:104
+#: pyconca/templates/about.mako:100
 msgid "ABOUT_SHY"
 msgstr ""
 
@@ -70,17 +70,21 @@ msgid "Code of Conduct"
 msgstr ""
 
 #: pyconca/templates/about.mako:39
+msgid "PyCon Canada Staff"
+msgstr ""
+
+#: pyconca/templates/about.mako:55
 msgid "Made in Canada!"
 msgstr ""
 
 #: pyconca/templates/base.mako:75 pyconca/templates/base.mako:243
-#: pyconca/templates/index.mako:91 pyconca/templates/venue.mako:3
+#: pyconca/templates/index.mako:100 pyconca/templates/venue.mako:3
 #: pyconca/templates/venue.mako:5
 msgid "Venue"
 msgstr ""
 
 #: pyconca/templates/base.mako:81 pyconca/templates/base.mako:247
-#: pyconca/templates/index.mako:96 pyconca/templates/schedule.mako:4
+#: pyconca/templates/index.mako:105 pyconca/templates/schedule.mako:4
 #: pyconca/templates/schedule.mako:7
 msgid "Schedule"
 msgstr ""
@@ -96,12 +100,12 @@ msgid "Sprints"
 msgstr ""
 
 #: pyconca/templates/base.mako:100 pyconca/templates/base.mako:251
-#: pyconca/templates/index.mako:78
+#: pyconca/templates/index.mako:87
 msgid "Speak"
 msgstr ""
 
 #: pyconca/templates/base.mako:106 pyconca/templates/base.mako:255
-#: pyconca/templates/index.mako:83
+#: pyconca/templates/index.mako:92
 msgid "Learn"
 msgstr ""
 
@@ -277,7 +281,7 @@ msgstr ""
 msgid "Quick links"
 msgstr ""
 
-#: pyconca/templates/event.mako:21 pyconca/templates/index.mako:37
+#: pyconca/templates/event.mako:21 pyconca/templates/index.mako:46
 msgid "Our Sponsors"
 msgstr ""
 
@@ -313,19 +317,19 @@ msgstr ""
 msgid "INDEX_ABOUT_BLURB"
 msgstr ""
 
-#: pyconca/templates/index.mako:79
+#: pyconca/templates/index.mako:88
 msgid "INDEX_SPEAK_BLURB"
 msgstr ""
 
-#: pyconca/templates/index.mako:84
+#: pyconca/templates/index.mako:93
 msgid "INDEX_LEARN_BLURB"
 msgstr ""
 
-#: pyconca/templates/index.mako:92
+#: pyconca/templates/index.mako:101
 msgid "INDEX_VENUE_BLURB"
 msgstr ""
 
-#: pyconca/templates/index.mako:97
+#: pyconca/templates/index.mako:106
 msgid "INDEX_SCHEDULE_BLURB"
 msgstr ""
 
@@ -337,20 +341,24 @@ msgstr ""
 msgid "November 9 – 13, 2012 • Toronto"
 msgstr ""
 
-#: pyconca/templates/index.mako:26
+#: pyconca/templates/index.mako:28
+msgid "And that's a wrap, PyCon Canada!"
+msgstr ""
+
+#: pyconca/templates/index.mako:35
 msgid "Register"
 msgstr ""
 
-#: pyconca/templates/index.mako:71
+#: pyconca/templates/index.mako:80
 msgid "Interested in a sponsorship opportunity?"
 msgstr ""
 
-#: pyconca/templates/index.mako:71
+#: pyconca/templates/index.mako:80
 msgid "Learn more"
 msgstr ""
 
-#: pyconca/templates/index.mako:80 pyconca/templates/index.mako:85
-#: pyconca/templates/index.mako:93 pyconca/templates/index.mako:98
+#: pyconca/templates/index.mako:89 pyconca/templates/index.mako:94
+#: pyconca/templates/index.mako:102 pyconca/templates/index.mako:107
 msgid "More info"
 msgstr ""
 
@@ -399,7 +407,7 @@ msgid "LEARN_SANDY_WALSH"
 msgstr ""
 
 #: pyconca/templates/learn.mako:3 pyconca/templates/learn.mako:5
-msgid "Confirmed Speakers"
+msgid "Featured Speakers"
 msgstr ""
 
 #: pyconca/templates/schedule.mako:77
@@ -732,7 +740,7 @@ msgid "Oleg Gutsol, CEO 500px"
 msgstr ""
 
 #: pyconca/templates/sponsors_chango.mako:9
-msgid "Mazdak Rezvani, CEO Chango"
+msgid "Mazdak Rezvani, CTO Chango"
 msgstr ""
 
 #: pyconca/templates/sponsors_freshbooks.mako:9
