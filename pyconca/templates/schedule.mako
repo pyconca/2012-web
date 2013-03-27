@@ -49,7 +49,7 @@
     <span class="talk-meta-phone">
       ${room.title()} • ${code}
       % if "T" in code:
-        • <a href="https://github.com/pyconca/pyconca2012/wiki/Tutorials">reserve a seat</a>
+        • <a href="https://github.com/pyconca/2012-wiki/wiki/Tutorials">reserve a seat</a>
       % endif
     </span>
     <span class="talk-meta-desktop">(${code})</span>

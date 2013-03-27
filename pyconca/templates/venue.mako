@@ -73,7 +73,7 @@
     <p>
     If you would like to share a hotel room with someone else attending the
     conference, please see the PyCon Canada
-    <a href='https://github.com/pyconca/pyconca2012/wiki/Room-Sharing'>
+    <a href='https://github.com/pyconca/2012-wiki/wiki/Room-Sharing'>
     room sharing wiki</a> page.
 
     <p>

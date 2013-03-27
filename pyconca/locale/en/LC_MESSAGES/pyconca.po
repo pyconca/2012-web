@@ -1038,7 +1038,7 @@ msgstr ""
 msgid "SPRINT_PROJECTS"
 msgstr ""
 "Not sure what to sprint on? Want to advertise your project? Head over to "
-"the <a href='https://github.com/pyconca/pyconca2012/wiki/Sprints'>sprint "
+"the <a href='https://github.com/pyconca/2012-wiki/wiki/Sprints'>sprint "
 "wiki</a> to see (and add to) the list of projects which will have people "
 "sprinting."
 
